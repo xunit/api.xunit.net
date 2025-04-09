@@ -61,8 +61,6 @@ public static partial class Metadata
 					newManifest[prefix + kvp.Key] = kvp.Value;
 		}
 
-		// context.WriteLineColor(ConsoleColor.DarkGray, "  .manifest");
-
 		using (var manifestStream = File.Open(manifestFileName, FileMode.Create))
 		using (var textWriter = new StreamWriter(manifestStream))
 		{
@@ -85,8 +83,6 @@ public static partial class Metadata
 
 		foreach (var ymlFileName in Directory.GetFiles(folder, "*.yml"))
 		{
-			// context.WriteLineColor(ConsoleColor.DarkGray, "  " + Path.GetFileName(ymlFileName));
-
 			var yml = await File.ReadAllLinesAsync(ymlFileName);
 
 			for (var idx = 0; idx < yml.Length; ++idx)
