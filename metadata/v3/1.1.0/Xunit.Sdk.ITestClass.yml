@@ -1,0 +1,154 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Sdk.ITestClass
+  commentId: T:Xunit.Sdk.ITestClass
+  id: ITestClass
+  parent: v3.1.1.0:Xunit.Sdk
+  children:
+  - v3.1.1.0:Xunit.Sdk.ITestClass.TestCollection
+  langs:
+  - csharp
+  - vb
+  name: ITestClass
+  nameWithType: ITestClass
+  fullName: Xunit.Sdk.ITestClass
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestClass.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: ITestClass
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestClass.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Represents a test class, which contributes one or more test cases (usually by
+
+    way of test methods).
+  remarks: >-
+    Not all test frameworks will require that tests come from classes, so this abstraction
+
+    may or many not be used.
+  example: []
+  syntax:
+    content: 'public interface ITestClass : ITestClassMetadata'
+    content.vb: Public Interface ITestClass Inherits ITestClassMetadata
+  inheritedMembers:
+  - v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassName
+  - v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassNamespace
+  - v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassSimpleName
+  - v3.1.1.0:Xunit.Sdk.ITestClassMetadata.Traits
+  - v3.1.1.0:Xunit.Sdk.ITestClassMetadata.UniqueID
+- uid: v3.1.1.0:Xunit.Sdk.ITestClass.TestCollection
+  commentId: P:Xunit.Sdk.ITestClass.TestCollection
+  id: TestCollection
+  parent: v3.1.1.0:Xunit.Sdk.ITestClass
+  langs:
+  - csharp
+  - vb
+  name: TestCollection
+  nameWithType: ITestClass.TestCollection
+  fullName: Xunit.Sdk.ITestClass.TestCollection
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestClass.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: TestCollection
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestClass.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the test collection this test class belongs to.
+  example: []
+  syntax:
+    content: ITestCollection TestCollection { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestCollection
+    content.vb: ReadOnly Property TestCollection As ITestCollection
+  overload: v3.1.1.0:Xunit.Sdk.ITestClass.TestCollection*
+references:
+- uid: v3.1.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassName
+  commentId: P:Xunit.Sdk.ITestClassMetadata.TestClassName
+  parent: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  href: Xunit.Sdk.ITestClassMetadata.TestClassName.html#Xunit_Sdk_ITestClassMetadata_TestClassName
+  name: TestClassName
+  nameWithType: ITestClassMetadata.TestClassName
+  fullName: Xunit.Sdk.ITestClassMetadata.TestClassName
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassNamespace
+  commentId: P:Xunit.Sdk.ITestClassMetadata.TestClassNamespace
+  parent: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  href: Xunit.Sdk.ITestClassMetadata.TestClassNamespace.html#Xunit_Sdk_ITestClassMetadata_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: ITestClassMetadata.TestClassNamespace
+  fullName: Xunit.Sdk.ITestClassMetadata.TestClassNamespace
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata.TestClassSimpleName
+  commentId: P:Xunit.Sdk.ITestClassMetadata.TestClassSimpleName
+  parent: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  href: Xunit.Sdk.ITestClassMetadata.TestClassSimpleName.html#Xunit_Sdk_ITestClassMetadata_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: ITestClassMetadata.TestClassSimpleName
+  fullName: Xunit.Sdk.ITestClassMetadata.TestClassSimpleName
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestClassMetadata.Traits
+  parent: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  href: Xunit.Sdk.ITestClassMetadata.Traits.html#Xunit_Sdk_ITestClassMetadata_Traits
+  name: Traits
+  nameWithType: ITestClassMetadata.Traits
+  fullName: Xunit.Sdk.ITestClassMetadata.Traits
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestClassMetadata.UniqueID
+  parent: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  href: Xunit.Sdk.ITestClassMetadata.UniqueID.html#Xunit_Sdk_ITestClassMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestClassMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestClassMetadata.UniqueID
+- uid: v3.1.1.0:Xunit.Sdk.ITestClassMetadata
+  commentId: T:Xunit.Sdk.ITestClassMetadata
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassMetadata.html
+  name: ITestClassMetadata
+  nameWithType: ITestClassMetadata
+  fullName: Xunit.Sdk.ITestClassMetadata
+- uid: v3.1.1.0:Xunit.Sdk.ITestClass.TestCollection*
+  commentId: Overload:Xunit.Sdk.ITestClass.TestCollection
+  href: Xunit.Sdk.ITestClass.TestCollection.html#Xunit_Sdk_ITestClass_TestCollection
+  name: TestCollection
+  nameWithType: ITestClass.TestCollection
+  fullName: Xunit.Sdk.ITestClass.TestCollection
+- uid: v3.1.1.0:Xunit.Sdk.ITestCollection
+  commentId: T:Xunit.Sdk.ITestCollection
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollection.html
+  name: ITestCollection
+  nameWithType: ITestCollection
+  fullName: Xunit.Sdk.ITestCollection
+memberLayout: SeparatePages

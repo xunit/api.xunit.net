@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.ITestResultMessage
+  commentId: T:Xunit.Sdk.ITestResultMessage
+  id: ITestResultMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.ITestResultMessage.FinishTime
+  langs:
+  - csharp
+  - vb
+  name: ITestResultMessage
+  nameWithType: ITestResultMessage
+  fullName: Xunit.Sdk.ITestResultMessage
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestResultMessage.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ITestResultMessage
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestResultMessage.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Base interface for all individual test results (e.g., tests which pass, fail, skipped, or aren't run).
+  example: []
+  syntax:
+    content: 'public interface ITestResultMessage : ITestMessage, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IExecutionMetadata'
+    content.vb: Public Interface ITestResultMessage Inherits ITestMessage, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IExecutionMetadata
+  inheritedMembers:
+  - v3.1.0.0:Xunit.Sdk.ITestMessage.TestUniqueID
+  - v3.1.0.0:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  - v3.1.0.0:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  - v3.1.0.0:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  - v3.1.0.0:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  - v3.1.0.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.1.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings
+- uid: v3.1.0.0:Xunit.Sdk.ITestResultMessage.FinishTime
+  commentId: P:Xunit.Sdk.ITestResultMessage.FinishTime
+  id: FinishTime
+  parent: v3.1.0.0:Xunit.Sdk.ITestResultMessage
+  langs:
+  - csharp
+  - vb
+  name: FinishTime
+  nameWithType: ITestResultMessage.FinishTime
+  fullName: Xunit.Sdk.ITestResultMessage.FinishTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestResultMessage.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: FinishTime
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestResultMessage.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the date and time when the test execution finished.
+  example: []
+  syntax:
+    content: DateTimeOffset FinishTime { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property FinishTime As DateTimeOffset
+  overload: v3.1.0.0:Xunit.Sdk.ITestResultMessage.FinishTime*
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Sdk.ITestMessage.TestUniqueID
+  commentId: P:Xunit.Sdk.ITestMessage.TestUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestMessage
+  href: Xunit.Sdk.ITestMessage.TestUniqueID.html#Xunit_Sdk_ITestMessage_TestUniqueID
+  name: TestUniqueID
+  nameWithType: ITestMessage.TestUniqueID
+  fullName: Xunit.Sdk.ITestMessage.TestUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestCaseMessage
+  href: Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID.html#Xunit_Sdk_ITestCaseMessage_TestCaseUniqueID
+  name: TestCaseUniqueID
+  nameWithType: ITestCaseMessage.TestCaseUniqueID
+  fullName: Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  commentId: P:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestMethodMessage
+  href: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID.html#Xunit_Sdk_ITestMethodMessage_TestMethodUniqueID
+  name: TestMethodUniqueID
+  nameWithType: ITestMethodMessage.TestMethodUniqueID
+  fullName: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  commentId: P:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestClassMessage
+  href: Xunit.Sdk.ITestClassMessage.TestClassUniqueID.html#Xunit_Sdk_ITestClassMessage_TestClassUniqueID
+  name: TestClassUniqueID
+  nameWithType: ITestClassMessage.TestClassUniqueID
+  fullName: Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  commentId: P:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestCollectionMessage
+  href: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID.html#Xunit_Sdk_ITestCollectionMessage_TestCollectionUniqueID
+  name: TestCollectionUniqueID
+  nameWithType: ITestCollectionMessage.TestCollectionUniqueID
+  fullName: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.1.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.1.0.0:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  commentId: P:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  href: Xunit.Sdk.IExecutionMetadata.ExecutionTime.html#Xunit_Sdk_IExecutionMetadata_ExecutionTime
+  name: ExecutionTime
+  nameWithType: IExecutionMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionMetadata.ExecutionTime
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output
+  commentId: P:Xunit.Sdk.IExecutionMetadata.Output
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  href: Xunit.Sdk.IExecutionMetadata.Output.html#Xunit_Sdk_IExecutionMetadata_Output
+  name: Output
+  nameWithType: IExecutionMetadata.Output
+  fullName: Xunit.Sdk.IExecutionMetadata.Output
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings
+  commentId: P:Xunit.Sdk.IExecutionMetadata.Warnings
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  href: Xunit.Sdk.IExecutionMetadata.Warnings.html#Xunit_Sdk_IExecutionMetadata_Warnings
+  name: Warnings
+  nameWithType: IExecutionMetadata.Warnings
+  fullName: Xunit.Sdk.IExecutionMetadata.Warnings
+- uid: v3.1.0.0:Xunit.Sdk.ITestMessage
+  commentId: T:Xunit.Sdk.ITestMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMessage.html
+  name: ITestMessage
+  nameWithType: ITestMessage
+  fullName: Xunit.Sdk.ITestMessage
+- uid: v3.1.0.0:Xunit.Sdk.ITestCaseMessage
+  commentId: T:Xunit.Sdk.ITestCaseMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMessage.html
+  name: ITestCaseMessage
+  nameWithType: ITestCaseMessage
+  fullName: Xunit.Sdk.ITestCaseMessage
+- uid: v3.1.0.0:Xunit.Sdk.ITestMethodMessage
+  commentId: T:Xunit.Sdk.ITestMethodMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodMessage.html
+  name: ITestMethodMessage
+  nameWithType: ITestMethodMessage
+  fullName: Xunit.Sdk.ITestMethodMessage
+- uid: v3.1.0.0:Xunit.Sdk.ITestClassMessage
+  commentId: T:Xunit.Sdk.ITestClassMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassMessage.html
+  name: ITestClassMessage
+  nameWithType: ITestClassMessage
+  fullName: Xunit.Sdk.ITestClassMessage
+- uid: v3.1.0.0:Xunit.Sdk.ITestCollectionMessage
+  commentId: T:Xunit.Sdk.ITestCollectionMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionMessage.html
+  name: ITestCollectionMessage
+  nameWithType: ITestCollectionMessage
+  fullName: Xunit.Sdk.ITestCollectionMessage
+- uid: v3.1.0.0:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.1.0.0:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  commentId: T:Xunit.Sdk.IExecutionMetadata
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IExecutionMetadata.html
+  name: IExecutionMetadata
+  nameWithType: IExecutionMetadata
+  fullName: Xunit.Sdk.IExecutionMetadata
+- uid: v3.1.0.0:Xunit.Sdk.ITestResultMessage.FinishTime*
+  commentId: Overload:Xunit.Sdk.ITestResultMessage.FinishTime
+  href: Xunit.Sdk.ITestResultMessage.FinishTime.html#Xunit_Sdk_ITestResultMessage_FinishTime
+  name: FinishTime
+  nameWithType: ITestResultMessage.FinishTime
+  fullName: Xunit.Sdk.ITestResultMessage.FinishTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

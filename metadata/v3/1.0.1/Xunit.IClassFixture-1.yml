@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.IClassFixture`1
+  commentId: T:Xunit.IClassFixture`1
+  id: IClassFixture`1
+  parent: v3.1.0.1:Xunit
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IClassFixture<TFixture>
+  nameWithType: IClassFixture<TFixture>
+  fullName: Xunit.IClassFixture<TFixture>
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/IClassFixture.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: IClassFixture
+    path: ../src/xunit.v3.core/IClassFixture.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Used to decorate xUnit.net test classes and collections to indicate a test which has
+
+    per-test-class fixture data. An instance of the fixture data is initialized just before
+
+    the first test in the class is run (including <xref href="v3.1.0.1:Xunit.IAsyncLifetime.InitializeAsync" data-throw-if-not-resolved="false"></xref>
+
+    if it's implemented). After all the tests in the test class have been run, it is cleaned up
+
+    by calling <xref href="System.IAsyncDisposable.DisposeAsync" data-throw-if-not-resolved="false"></xref> if it's implemented, or it falls back
+
+    to <xref href="System.IDisposable.Dispose" data-throw-if-not-resolved="false"></xref> if that's implemented. Class fixtures may have
+
+    a public constructor which is either empty, or accepts one or more assembly and/or collection
+
+    fixture objects as constructor arguments. To gain access to the fixture data from inside the
+
+    test, a constructor argument should be added to the test class which/ exactly matches the
+
+    <code class="typeparamref">TFixture</code>.
+  example: []
+  syntax:
+    content: 'public interface IClassFixture<TFixture> where TFixture : class'
+    typeParameters:
+    - id: TFixture
+      description: The type of the fixture.
+    content.vb: Public Interface IClassFixture(Of TFixture As Class)
+  nameWithType.vb: IClassFixture(Of TFixture)
+  fullName.vb: Xunit.IClassFixture(Of TFixture)
+  name.vb: IClassFixture(Of TFixture)
+references:
+- uid: v3.1.0.1:Xunit.IAsyncLifetime.InitializeAsync
+  commentId: M:Xunit.IAsyncLifetime.InitializeAsync
+  parent: v3.1.0.1:Xunit.IAsyncLifetime
+  href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IAsyncLifetime.InitializeAsync()
+  fullName: Xunit.IAsyncLifetime.InitializeAsync()
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.IAsyncLifetime.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.IAsyncLifetime.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.1.0.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.1.0.1:Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  parent: v3.1.0.1:Xunit
+  href: Xunit.IAsyncLifetime.html
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

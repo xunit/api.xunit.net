@@ -1,0 +1,668 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException
+  commentId: T:Xunit.Sdk.TestPipelineException
+  id: TestPipelineException
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.String)
+  - v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.String,System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: TestPipelineException
+  nameWithType: TestPipelineException
+  fullName: Xunit.Sdk.TestPipelineException
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/TestPipelineException.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TestPipelineException
+    path: ../src/xunit.v3.core/Exceptions/TestPipelineException.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.Sdk
+  summary: >-
+    Represents an exception that happened during the processing of the test pipeline. This typically
+
+    means there were problems identifying the correct test class constructor, problems creating the
+
+    fixture data, etc.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TestPipelineException : Exception, ISerializable
+    content.vb: >-
+      <Serializable>
+
+      Public Class TestPipelineException Inherits Exception Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.String)
+  commentId: M:Xunit.Sdk.TestPipelineException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: v3.1.0.0:Xunit.Sdk.TestPipelineException
+  langs:
+  - csharp
+  - vb
+  name: TestPipelineException(string)
+  nameWithType: TestPipelineException.TestPipelineException(string)
+  fullName: Xunit.Sdk.TestPipelineException.TestPipelineException(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/TestPipelineException.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Exceptions/TestPipelineException.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.Sdk
+  summary: Initializes a new instance of the <xref href="v3.1.0.0:Xunit.Sdk.TestPipelineException" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TestPipelineException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The exception message.
+    content.vb: Public Sub New(message As String)
+  overload: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor*
+  nameWithType.vb: TestPipelineException.New(String)
+  fullName.vb: Xunit.Sdk.TestPipelineException.New(String)
+  name.vb: New(String)
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.String,System.Exception)
+  commentId: M:Xunit.Sdk.TestPipelineException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: v3.1.0.0:Xunit.Sdk.TestPipelineException
+  langs:
+  - csharp
+  - vb
+  name: TestPipelineException(string, Exception)
+  nameWithType: TestPipelineException.TestPipelineException(string, Exception)
+  fullName: Xunit.Sdk.TestPipelineException.TestPipelineException(string, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/TestPipelineException.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Exceptions/TestPipelineException.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.Sdk
+  summary: Initializes a new instance of the <xref href="v3.1.0.0:Xunit.Sdk.TestPipelineException" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TestPipelineException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+      description: The exception message.
+    - id: innerException
+      type: System.Exception
+      description: The inner exception that is being reported.
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor*
+  nameWithType.vb: TestPipelineException.New(String, Exception)
+  fullName.vb: Xunit.Sdk.TestPipelineException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Xunit.Sdk.TestPipelineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: v3.1.0.0:Xunit.Sdk.TestPipelineException
+  langs:
+  - csharp
+  - vb
+  name: TestPipelineException(SerializationInfo, StreamingContext)
+  nameWithType: TestPipelineException.TestPipelineException(SerializationInfo, StreamingContext)
+  fullName: Xunit.Sdk.TestPipelineException.TestPipelineException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/TestPipelineException.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Exceptions/TestPipelineException.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.Sdk
+  example: []
+  syntax:
+    content: protected TestPipelineException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor*
+  nameWithType.vb: TestPipelineException.New(SerializationInfo, StreamingContext)
+  fullName.vb: Xunit.Sdk.TestPipelineException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException
+  commentId: T:Xunit.Sdk.TestPipelineException
+  href: Xunit.Sdk.TestPipelineException.html
+  name: TestPipelineException
+  nameWithType: TestPipelineException
+  fullName: Xunit.Sdk.TestPipelineException
+- uid: v3.1.0.0:Xunit.Sdk.TestPipelineException.#ctor*
+  commentId: Overload:Xunit.Sdk.TestPipelineException.#ctor
+  href: Xunit.Sdk.TestPipelineException.-ctor.html#Xunit_Sdk_TestPipelineException__ctor_System_String_
+  name: TestPipelineException
+  nameWithType: TestPipelineException.TestPipelineException
+  fullName: Xunit.Sdk.TestPipelineException.TestPipelineException
+  nameWithType.vb: TestPipelineException.New
+  fullName.vb: Xunit.Sdk.TestPipelineException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+memberLayout: SeparatePages

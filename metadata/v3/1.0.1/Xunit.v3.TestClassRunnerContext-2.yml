@@ -1,0 +1,790 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+  commentId: T:Xunit.v3.TestClassRunnerContext`2
+  id: TestClassRunnerContext`2
+  parent: v3.1.0.1:Xunit.v3
+  children:
+  - v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  - v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestCases
+  - v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestClass
+  langs:
+  - csharp
+  - vb
+  name: TestClassRunnerContext<TTestClass, TTestCase>
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestClassRunnerContext
+    path: ../src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Base context class for <xref href="v3.1.0.1:Xunit.v3.TestClassRunnerContext%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class TestClassRunnerContext<TTestClass, TTestCase> : ContextBase, IAsyncLifetime, IAsyncDisposable where TTestClass : class, ITestClass where TTestCase : class, ITestCase'
+    typeParameters:
+    - id: TTestClass
+      description: >-
+        The type of the test class used by the test framework.
+            Must derive from <xref href="v3.1.0.1:Xunit.Sdk.ITestClass" data-throw-if-not-resolved="false"></xref>.
+    - id: TTestCase
+      description: >-
+        The type of the test case used by the test framework. Must
+            derive from <xref href="v3.1.0.1:Xunit.Sdk.ITestCase" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Class TestClassRunnerContext(Of TTestClass As {Class, ITestClass}, TTestCase As {Class, ITestCase}) Inherits ContextBase Implements IAsyncLifetime, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - v3.1.0.1:Xunit.v3.ContextBase
+  derivedClasses:
+  - v3.1.0.1:Xunit.v3.XunitTestClassRunnerBaseContext`2
+  implements:
+  - v3.1.0.1:Xunit.IAsyncLifetime
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - v3.1.0.1:Xunit.v3.ContextBase.Aggregator
+  - v3.1.0.1:Xunit.v3.ContextBase.CancellationTokenSource
+  - v3.1.0.1:Xunit.v3.ContextBase.ExplicitOption
+  - v3.1.0.1:Xunit.v3.ContextBase.MessageBus
+  - v3.1.0.1:Xunit.v3.ContextBase.DisposeAsync
+  - v3.1.0.1:Xunit.v3.ContextBase.InitializeAsync
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase)
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase)
+  name.vb: TestClassRunnerContext(Of TTestClass, TTestCase)
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  commentId: M:Xunit.v3.TestClassRunnerContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  id: '#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)'
+  parent: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+  langs:
+  - csharp
+  - vb
+  name: TestClassRunnerContext(TTestClass, IReadOnlyCollection<TTestCase>, ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestClassRunnerContext(TTestClass, IReadOnlyCollection<TTestCase>, ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestClassRunnerContext(TTestClass, System.Collections.Generic.IReadOnlyCollection<TTestCase>, Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Base context class for <xref href="v3.1.0.1:Xunit.v3.TestClassRunnerContext%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public TestClassRunnerContext(TTestClass testClass, IReadOnlyCollection<TTestCase> testCases, ExplicitOption explicitOption, IMessageBus messageBus, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource)
+    parameters:
+    - id: testClass
+      type: '{TTestClass}'
+      description: The test class
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+      description: The test from the test class
+    - id: explicitOption
+      type: Xunit.Sdk.ExplicitOption
+      description: The user's choice on how to treat explicit tests
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send execution messages to
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The exception aggregator
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source
+    content.vb: Public Sub New(testClass As TTestClass, testCases As IReadOnlyCollection(Of TTestCase), explicitOption As ExplicitOption, messageBus As IMessageBus, aggregator As ExceptionAggregator, cancellationTokenSource As CancellationTokenSource)
+  overload: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.#ctor*
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).New(TTestClass, IReadOnlyCollection(Of TTestCase), ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).New(TTestClass, System.Collections.Generic.IReadOnlyCollection(Of TTestCase), Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource)
+  name.vb: New(TTestClass, IReadOnlyCollection(Of TTestCase), ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestCases
+  commentId: P:Xunit.v3.TestClassRunnerContext`2.TestCases
+  id: TestCases
+  parent: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+  langs:
+  - csharp
+  - vb
+  name: TestCases
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestCases
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestCases
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestCases
+    path: ../src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+    startLine: 34
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test cases associated with the test class.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<TTestCase> TestCases { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+    content.vb: Public ReadOnly Property TestCases As IReadOnlyCollection(Of TTestCase)
+  overload: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestCases*
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).TestCases
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).TestCases
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestClass
+  commentId: P:Xunit.v3.TestClassRunnerContext`2.TestClass
+  id: TestClass
+  parent: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+  langs:
+  - csharp
+  - vb
+  name: TestClass
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestClass
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestClass
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestClass
+    path: ../src/xunit.v3.core/Runners/TestClassRunnerContext.cs
+    startLine: 39
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test class that is being executed.
+  example: []
+  syntax:
+    content: public TTestClass TestClass { get; }
+    parameters: []
+    return:
+      type: '{TTestClass}'
+    content.vb: Public ReadOnly Property TestClass As TTestClass
+  overload: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestClass*
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).TestClass
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).TestClass
+references:
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+  commentId: T:Xunit.v3.TestClassRunnerContext`2
+  href: Xunit.v3.TestClassRunnerContext-2.html
+  name: TestClassRunnerContext<TTestClass, TTestCase>
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase)
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase)
+  name.vb: TestClassRunnerContext(Of TTestClass, TTestCase)
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+    name: TestClassRunnerContext
+    href: Xunit.v3.TestClassRunnerContext-2.html
+  - name: <
+  - name: TTestClass
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2
+    name: TestClassRunnerContext
+    href: Xunit.v3.TestClassRunnerContext-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestClass
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.ITestClass
+  commentId: T:Xunit.Sdk.ITestClass
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestClass.html
+  name: ITestClass
+  nameWithType: ITestClass
+  fullName: Xunit.Sdk.ITestClass
+- uid: v3.1.0.1:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+- uid: v3.1.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.1:Xunit.v3.ContextBase
+  commentId: T:Xunit.v3.ContextBase
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.ContextBase.html
+  name: ContextBase
+  nameWithType: ContextBase
+  fullName: Xunit.v3.ContextBase
+- uid: v3.1.0.1:Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  parent: v3.1.0.1:Xunit
+  href: Xunit.IAsyncLifetime.html
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.1.0.1:Xunit.v3.ContextBase.Aggregator
+  commentId: P:Xunit.v3.ContextBase.Aggregator
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.Aggregator.html#Xunit_v3_ContextBase_Aggregator
+  name: Aggregator
+  nameWithType: ContextBase.Aggregator
+  fullName: Xunit.v3.ContextBase.Aggregator
+- uid: v3.1.0.1:Xunit.v3.ContextBase.CancellationTokenSource
+  commentId: P:Xunit.v3.ContextBase.CancellationTokenSource
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.CancellationTokenSource.html#Xunit_v3_ContextBase_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: ContextBase.CancellationTokenSource
+  fullName: Xunit.v3.ContextBase.CancellationTokenSource
+- uid: v3.1.0.1:Xunit.v3.ContextBase.ExplicitOption
+  commentId: P:Xunit.v3.ContextBase.ExplicitOption
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.ExplicitOption.html#Xunit_v3_ContextBase_ExplicitOption
+  name: ExplicitOption
+  nameWithType: ContextBase.ExplicitOption
+  fullName: Xunit.v3.ContextBase.ExplicitOption
+- uid: v3.1.0.1:Xunit.v3.ContextBase.MessageBus
+  commentId: P:Xunit.v3.ContextBase.MessageBus
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.MessageBus.html#Xunit_v3_ContextBase_MessageBus
+  name: MessageBus
+  nameWithType: ContextBase.MessageBus
+  fullName: Xunit.v3.ContextBase.MessageBus
+- uid: v3.1.0.1:Xunit.v3.ContextBase.DisposeAsync
+  commentId: M:Xunit.v3.ContextBase.DisposeAsync
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.DisposeAsync.html#Xunit_v3_ContextBase_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: ContextBase.DisposeAsync()
+  fullName: Xunit.v3.ContextBase.DisposeAsync()
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.v3.ContextBase.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.ContextBase.DisposeAsync.html#Xunit_v3_ContextBase_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.v3.ContextBase.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.ContextBase.DisposeAsync.html#Xunit_v3_ContextBase_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.1.0.1:Xunit.v3.ContextBase.InitializeAsync
+  commentId: M:Xunit.v3.ContextBase.InitializeAsync
+  parent: v3.1.0.1:Xunit.v3.ContextBase
+  href: Xunit.v3.ContextBase.InitializeAsync.html#Xunit_v3_ContextBase_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ContextBase.InitializeAsync()
+  fullName: Xunit.v3.ContextBase.InitializeAsync()
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.v3.ContextBase.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.ContextBase.InitializeAsync.html#Xunit_v3_ContextBase_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.v3.ContextBase.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.ContextBase.InitializeAsync.html#Xunit_v3_ContextBase_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.#ctor*
+  commentId: Overload:Xunit.v3.TestClassRunnerContext`2.#ctor
+  href: Xunit.v3.TestClassRunnerContext-2.-ctor.html#Xunit_v3_TestClassRunnerContext_2__ctor__0_System_Collections_Generic_IReadOnlyCollection__1__Xunit_Sdk_ExplicitOption_Xunit_v3_IMessageBus_Xunit_v3_ExceptionAggregator_System_Threading_CancellationTokenSource_
+  name: TestClassRunnerContext
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestClassRunnerContext
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestClassRunnerContext
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).New
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).New
+  name.vb: New
+- uid: '{TTestClass}'
+  commentId: '!:TTestClass'
+  definition: TTestClass
+  name: TTestClass
+  nameWithType: TTestClass
+  fullName: TTestClass
+- uid: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TTestCase>
+  nameWithType: IReadOnlyCollection<TTestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<TTestCase>
+  nameWithType.vb: IReadOnlyCollection(Of TTestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of TTestCase)
+  name.vb: IReadOnlyCollection(Of TTestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: v3.1.0.1:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: v3.1.0.1:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: TTestClass
+  name: TTestClass
+  nameWithType: TTestClass
+  fullName: TTestClass
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestCases*
+  commentId: Overload:Xunit.v3.TestClassRunnerContext`2.TestCases
+  href: Xunit.v3.TestClassRunnerContext-2.TestCases.html#Xunit_v3_TestClassRunnerContext_2_TestCases
+  name: TestCases
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestCases
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestCases
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).TestCases
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).TestCases
+- uid: v3.1.0.1:Xunit.v3.TestClassRunnerContext`2.TestClass*
+  commentId: Overload:Xunit.v3.TestClassRunnerContext`2.TestClass
+  href: Xunit.v3.TestClassRunnerContext-2.TestClass.html#Xunit_v3_TestClassRunnerContext_2_TestClass
+  name: TestClass
+  nameWithType: TestClassRunnerContext<TTestClass, TTestCase>.TestClass
+  fullName: Xunit.v3.TestClassRunnerContext<TTestClass, TTestCase>.TestClass
+  nameWithType.vb: TestClassRunnerContext(Of TTestClass, TTestCase).TestClass
+  fullName.vb: Xunit.v3.TestClassRunnerContext(Of TTestClass, TTestCase).TestClass
+memberLayout: SeparatePages

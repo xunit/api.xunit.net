@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  id: ISourceInformationProvider
+  parent: v3.1.1.0:Xunit.Runner.Common
+  children:
+  - v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ISourceInformationProvider.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: ISourceInformationProvider
+    path: ../src/xunit.v3.runner.common/Frameworks/ISourceInformationProvider.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Represents a provider which gives source line information for a test case after discovery has
+
+    completed. This is typically provided by a third party runner (for example, the VSTest plugin provides
+
+    this via DiaSession from Visual Studio). It's used to supplement test case metadata when the discovery
+
+    process itself cannot provide source file and line information.
+  example: []
+  syntax:
+    content: 'public interface ISourceInformationProvider : IAsyncDisposable'
+    content.vb: Public Interface ISourceInformationProvider Inherits IAsyncDisposable
+  inheritedMembers:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  commentId: M:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  id: GetSourceInformation(System.String,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetSourceInformation(string?, string?)
+  nameWithType: ISourceInformationProvider.GetSourceInformation(string?, string?)
+  fullName: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ISourceInformationProvider.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: GetSourceInformation
+    path: ../src/xunit.v3.runner.common/Frameworks/ISourceInformationProvider.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Returns the source information for a test case.
+  example: []
+  syntax:
+    content: SourceInformation GetSourceInformation(string? testClassName, string? testMethodName)
+    parameters:
+    - id: testClassName
+      type: System.String
+      description: The test class name, if known
+    - id: testMethodName
+      type: System.String
+      description: The test method name, if known
+    return:
+      type: Xunit.Runner.Common.SourceInformation
+      description: >-
+        The source information, with null string and int values when the information is not available.
+            Note: return value should never be <code>null</code>, only the interior data values inside.
+    content.vb: Function GetSourceInformation(testClassName As String, testMethodName As String) As SourceInformation
+  overload: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation*
+  nameWithType.vb: ISourceInformationProvider.GetSourceInformation(String, String)
+  fullName.vb: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(String, String)
+  name.vb: GetSourceInformation(String, String)
+references:
+- uid: v3.1.1.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation*
+  commentId: Overload:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation
+  href: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation.html#Xunit_Runner_Common_ISourceInformationProvider_GetSourceInformation_System_String_System_String_
+  name: GetSourceInformation
+  nameWithType: ISourceInformationProvider.GetSourceInformation
+  fullName: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation
+  commentId: T:Xunit.Runner.Common.SourceInformation
+  parent: v3.1.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.SourceInformation.html
+  name: SourceInformation
+  nameWithType: SourceInformation
+  fullName: Xunit.Runner.Common.SourceInformation
+memberLayout: SeparatePages

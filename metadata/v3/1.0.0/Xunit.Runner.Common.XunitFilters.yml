@@ -1,0 +1,1020 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  commentId: T:Xunit.Runner.Common.XunitFilters
+  id: XunitFilters
+  parent: v3.1.0.0:Xunit.Runner.Common
+  children:
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter(System.String,System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter(System.String,System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddQueryFilter(System.String)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.Empty
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  - v3.1.0.0:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments
+  langs:
+  - csharp
+  - vb
+  name: XunitFilters
+  nameWithType: XunitFilters
+  fullName: Xunit.Runner.Common.XunitFilters
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: XunitFilters
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Represents the ability to track query filters or simple filters. Any attempt
+
+    to add a mix of the two will result in an exception.
+  example: []
+  syntax:
+    content: 'public class XunitFilters : ITestCaseFilter'
+    content.vb: Public Class XunitFilters Implements ITestCaseFilter
+  inheritance:
+  - System.Object
+  implements:
+  - v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Empty
+  commentId: P:Xunit.Runner.Common.XunitFilters.Empty
+  id: Empty
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: XunitFilters.Empty
+  fullName: Xunit.Runner.Common.XunitFilters.Empty
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Empty
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a flag indicating whether there are any active filters.
+  example: []
+  syntax:
+    content: public bool Empty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Empty As Boolean
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Empty*
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter(System.String)
+  id: AddExcludedClassFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddExcludedClassFilter(string)
+  nameWithType: XunitFilters.AddExcludedClassFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddExcludedClassFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Adds a simple filter which excludes a fully qualified class name.
+  remarks: >-
+    The query may begin and/or end with <code>*</code> to add as a wildcard. No other wildcards
+
+    are permitted in any other locations.
+  example: []
+  syntax:
+    content: public void AddExcludedClassFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddExcludedClassFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter*
+  nameWithType.vb: XunitFilters.AddExcludedClassFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter(String)
+  name.vb: AddExcludedClassFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter(System.String)
+  id: AddExcludedMethodFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddExcludedMethodFilter(string)
+  nameWithType: XunitFilters.AddExcludedMethodFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddExcludedMethodFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddExcludedMethodFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddExcludedMethodFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter*
+  nameWithType.vb: XunitFilters.AddExcludedMethodFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter(String)
+  name.vb: AddExcludedMethodFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter(System.String)
+  id: AddExcludedNamespaceFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddExcludedNamespaceFilter(string)
+  nameWithType: XunitFilters.AddExcludedNamespaceFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddExcludedNamespaceFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 42
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddExcludedNamespaceFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddExcludedNamespaceFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter*
+  nameWithType.vb: XunitFilters.AddExcludedNamespaceFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter(String)
+  name.vb: AddExcludedNamespaceFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter(System.String,System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter(System.String,System.String)
+  id: AddExcludedTraitFilter(System.String,System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddExcludedTraitFilter(string, string)
+  nameWithType: XunitFilters.AddExcludedTraitFilter(string, string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddExcludedTraitFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 49
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddExcludedTraitFilter(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub AddExcludedTraitFilter(name As String, value As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter*
+  nameWithType.vb: XunitFilters.AddExcludedTraitFilter(String, String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter(String, String)
+  name.vb: AddExcludedTraitFilter(String, String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter(System.String)
+  id: AddIncludedClassFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddIncludedClassFilter(string)
+  nameWithType: XunitFilters.AddIncludedClassFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddIncludedClassFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 64
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Adds a simple filter matching a fully qualified class name.
+  remarks: >-
+    The query may begin and/or end with <code>*</code> to add as a wildcard. No other wildcards
+
+    are permitted in any other locations.
+  example: []
+  syntax:
+    content: public void AddIncludedClassFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddIncludedClassFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter*
+  nameWithType.vb: XunitFilters.AddIncludedClassFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter(String)
+  name.vb: AddIncludedClassFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter(System.String)
+  id: AddIncludedMethodFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddIncludedMethodFilter(string)
+  nameWithType: XunitFilters.AddIncludedMethodFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddIncludedMethodFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 71
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddIncludedMethodFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddIncludedMethodFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter*
+  nameWithType.vb: XunitFilters.AddIncludedMethodFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter(String)
+  name.vb: AddIncludedMethodFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter(System.String)
+  id: AddIncludedNamespaceFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddIncludedNamespaceFilter(string)
+  nameWithType: XunitFilters.AddIncludedNamespaceFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddIncludedNamespaceFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 78
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddIncludedNamespaceFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddIncludedNamespaceFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter*
+  nameWithType.vb: XunitFilters.AddIncludedNamespaceFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter(String)
+  name.vb: AddIncludedNamespaceFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter(System.String,System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter(System.String,System.String)
+  id: AddIncludedTraitFilter(System.String,System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddIncludedTraitFilter(string, string)
+  nameWithType: XunitFilters.AddIncludedTraitFilter(string, string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddIncludedTraitFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 85
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: ''
+  example: []
+  syntax:
+    content: public void AddIncludedTraitFilter(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub AddIncludedTraitFilter(name As String, value As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter*
+  nameWithType.vb: XunitFilters.AddIncludedTraitFilter(String, String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter(String, String)
+  name.vb: AddIncludedTraitFilter(String, String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddQueryFilter(System.String)
+  commentId: M:Xunit.Runner.Common.XunitFilters.AddQueryFilter(System.String)
+  id: AddQueryFilter(System.String)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: AddQueryFilter(string)
+  nameWithType: XunitFilters.AddQueryFilter(string)
+  fullName: Xunit.Runner.Common.XunitFilters.AddQueryFilter(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: AddQueryFilter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 99
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Adds a query filter.
+  remarks: For more information on the query syntax, see <a href="https://xunit.net/docs/query-filter-language">https://xunit.net/docs/query-filter-language</a>
+  example: []
+  syntax:
+    content: public void AddQueryFilter(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Public Sub AddQueryFilter(query As String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddQueryFilter*
+  nameWithType.vb: XunitFilters.AddQueryFilter(String)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.AddQueryFilter(String)
+  name.vb: AddQueryFilter(String)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  commentId: M:Xunit.Runner.Common.XunitFilters.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  id: Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: Filter(string, ITestCaseMetadata)
+  nameWithType: XunitFilters.Filter(string, ITestCaseMetadata)
+  fullName: Xunit.Runner.Common.XunitFilters.Filter(string, Xunit.Sdk.ITestCaseMetadata)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Filter
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 106
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Determines whether the given <code class="paramref">testCase</code> passes the filter.
+  example: []
+  syntax:
+    content: public bool Filter(string assemblyName, ITestCaseMetadata testCase)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The simple assembly name without file extension
+    - id: testCase
+      type: Xunit.Sdk.ITestCaseMetadata
+      description: The test case to be checked against the filter
+    return:
+      type: System.Boolean
+    content.vb: Public Function Filter(assemblyName As String, testCase As ITestCaseMetadata) As Boolean
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Filter*
+  implements:
+  - v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  nameWithType.vb: XunitFilters.Filter(String, ITestCaseMetadata)
+  fullName.vb: Xunit.Runner.Common.XunitFilters.Filter(String, Xunit.Sdk.ITestCaseMetadata)
+  name.vb: Filter(String, ITestCaseMetadata)
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments
+  commentId: M:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments
+  id: ToXunit3Arguments
+  parent: v3.1.0.0:Xunit.Runner.Common.XunitFilters
+  langs:
+  - csharp
+  - vb
+  name: ToXunit3Arguments()
+  nameWithType: XunitFilters.ToXunit3Arguments()
+  fullName: Xunit.Runner.Common.XunitFilters.ToXunit3Arguments()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ToXunit3Arguments
+    path: ../src/xunit.v3.runner.common/Filtering/XunitFilters.cs
+    startLine: 129
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the command-line arguments to pass to an xUnit.net v3 test assembly to perform
+
+    the filtering contained within this filter.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<string> ToXunit3Arguments()
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+    content.vb: Public Function ToXunit3Arguments() As IReadOnlyCollection(Of String)
+  overload: v3.1.0.0:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments*
+references:
+- uid: v3.1.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter
+  commentId: T:Xunit.Runner.Common.ITestCaseFilter
+  parent: v3.1.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ITestCaseFilter.html
+  name: ITestCaseFilter
+  nameWithType: ITestCaseFilter
+  fullName: Xunit.Runner.Common.ITestCaseFilter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Empty*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.Empty
+  href: Xunit.Runner.Common.XunitFilters.Empty.html#Xunit_Runner_Common_XunitFilters_Empty
+  name: Empty
+  nameWithType: XunitFilters.Empty
+  fullName: Xunit.Runner.Common.XunitFilters.Empty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter
+  href: Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter.html#Xunit_Runner_Common_XunitFilters_AddExcludedClassFilter_System_String_
+  name: AddExcludedClassFilter
+  nameWithType: XunitFilters.AddExcludedClassFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedClassFilter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter
+  href: Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter.html#Xunit_Runner_Common_XunitFilters_AddExcludedMethodFilter_System_String_
+  name: AddExcludedMethodFilter
+  nameWithType: XunitFilters.AddExcludedMethodFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedMethodFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter
+  href: Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter.html#Xunit_Runner_Common_XunitFilters_AddExcludedNamespaceFilter_System_String_
+  name: AddExcludedNamespaceFilter
+  nameWithType: XunitFilters.AddExcludedNamespaceFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedNamespaceFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter
+  href: Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter.html#Xunit_Runner_Common_XunitFilters_AddExcludedTraitFilter_System_String_System_String_
+  name: AddExcludedTraitFilter
+  nameWithType: XunitFilters.AddExcludedTraitFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddExcludedTraitFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter
+  href: Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter.html#Xunit_Runner_Common_XunitFilters_AddIncludedClassFilter_System_String_
+  name: AddIncludedClassFilter
+  nameWithType: XunitFilters.AddIncludedClassFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedClassFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter
+  href: Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter.html#Xunit_Runner_Common_XunitFilters_AddIncludedMethodFilter_System_String_
+  name: AddIncludedMethodFilter
+  nameWithType: XunitFilters.AddIncludedMethodFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedMethodFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter
+  href: Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter.html#Xunit_Runner_Common_XunitFilters_AddIncludedNamespaceFilter_System_String_
+  name: AddIncludedNamespaceFilter
+  nameWithType: XunitFilters.AddIncludedNamespaceFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedNamespaceFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter
+  href: Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter.html#Xunit_Runner_Common_XunitFilters_AddIncludedTraitFilter_System_String_System_String_
+  name: AddIncludedTraitFilter
+  nameWithType: XunitFilters.AddIncludedTraitFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddIncludedTraitFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.AddQueryFilter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.AddQueryFilter
+  href: Xunit.Runner.Common.XunitFilters.AddQueryFilter.html#Xunit_Runner_Common_XunitFilters_AddQueryFilter_System_String_
+  name: AddQueryFilter
+  nameWithType: XunitFilters.AddQueryFilter
+  fullName: Xunit.Runner.Common.XunitFilters.AddQueryFilter
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.Filter*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.Filter
+  href: Xunit.Runner.Common.XunitFilters.Filter.html#Xunit_Runner_Common_XunitFilters_Filter_System_String_Xunit_Sdk_ITestCaseMetadata_
+  name: Filter
+  nameWithType: XunitFilters.Filter
+  fullName: Xunit.Runner.Common.XunitFilters.Filter
+- uid: v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  commentId: M:Xunit.Runner.Common.ITestCaseFilter.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+  parent: v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter
+  isExternal: true
+  href: Xunit.Runner.Common.ITestCaseFilter.Filter.html#Xunit_Runner_Common_ITestCaseFilter_Filter_System_String_Xunit_Sdk_ITestCaseMetadata_
+  name: Filter(string, ITestCaseMetadata)
+  nameWithType: ITestCaseFilter.Filter(string, ITestCaseMetadata)
+  fullName: Xunit.Runner.Common.ITestCaseFilter.Filter(string, Xunit.Sdk.ITestCaseMetadata)
+  nameWithType.vb: ITestCaseFilter.Filter(String, ITestCaseMetadata)
+  fullName.vb: Xunit.Runner.Common.ITestCaseFilter.Filter(String, Xunit.Sdk.ITestCaseMetadata)
+  name.vb: Filter(String, ITestCaseMetadata)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+    name: Filter
+    href: Xunit.Runner.Common.ITestCaseFilter.Filter.html#Xunit_Runner_Common_ITestCaseFilter_Filter_System_String_Xunit_Sdk_ITestCaseMetadata_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Sdk.ITestCaseMetadata
+    name: ITestCaseMetadata
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Runner.Common.ITestCaseFilter.Filter(System.String,Xunit.Sdk.ITestCaseMetadata)
+    name: Filter
+    href: Xunit.Runner.Common.ITestCaseFilter.Filter.html#Xunit_Runner_Common_ITestCaseFilter_Filter_System_String_Xunit_Sdk_ITestCaseMetadata_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Sdk.ITestCaseMetadata
+    name: ITestCaseMetadata
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments*
+  commentId: Overload:Xunit.Runner.Common.XunitFilters.ToXunit3Arguments
+  href: Xunit.Runner.Common.XunitFilters.ToXunit3Arguments.html#Xunit_Runner_Common_XunitFilters_ToXunit3Arguments
+  name: ToXunit3Arguments
+  nameWithType: XunitFilters.ToXunit3Arguments
+  fullName: Xunit.Runner.Common.XunitFilters.ToXunit3Arguments
+- uid: System.Collections.Generic.IReadOnlyCollection{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<string>
+  nameWithType: IReadOnlyCollection<string>
+  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  nameWithType.vb: IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  name.vb: IReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

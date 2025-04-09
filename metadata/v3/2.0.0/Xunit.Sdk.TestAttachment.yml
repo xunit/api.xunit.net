@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment
+  commentId: T:Xunit.Sdk.TestAttachment
+  id: TestAttachment
+  parent: v3.2.0.0:Xunit.Sdk
+  children:
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.#ctor
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.AsByteArray
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.AsString
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.Create(System.Byte[],System.String)
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.Create(System.String)
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.Parse(System.String)
+  - v3.2.0.0:Xunit.Sdk.TestAttachment.ToString
+  langs:
+  - csharp
+  - vb
+  name: TestAttachment
+  nameWithType: TestAttachment
+  fullName: Xunit.Sdk.TestAttachment
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: TestAttachment
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Represents an attachment to a test result.
+  example: []
+  syntax:
+    content: public class TestAttachment
+    content.vb: Public Class TestAttachment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.#ctor
+  commentId: M:Xunit.Sdk.TestAttachment.#ctor
+  id: '#ctor'
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: TestAttachment()
+  nameWithType: TestAttachment.TestAttachment()
+  fullName: Xunit.Sdk.TestAttachment.TestAttachment()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Called by the de-serializer; should only be called by deriving classes for de-serialization purposes
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Called by the de-serializer; should only be called by deriving classes for de-serialization purposes")]
+
+      public TestAttachment()
+    content.vb: >-
+      <Obsolete("Called by the de-serializer; should only be called by deriving classes for de-serialization purposes")>
+
+      Public Sub New()
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Called by the de-serializer; should only be called by deriving classes for de-serialization purposes
+  nameWithType.vb: TestAttachment.New()
+  fullName.vb: Xunit.Sdk.TestAttachment.New()
+  name.vb: New()
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType
+  commentId: P:Xunit.Sdk.TestAttachment.AttachmentType
+  id: AttachmentType
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: AttachmentType
+  nameWithType: TestAttachment.AttachmentType
+  fullName: Xunit.Sdk.TestAttachment.AttachmentType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: AttachmentType
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 41
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the type of the test attachment.
+  example: []
+  syntax:
+    content: public TestAttachmentType AttachmentType { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.TestAttachmentType
+    content.vb: Public ReadOnly Property AttachmentType As TestAttachmentType
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType*
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AsByteArray
+  commentId: M:Xunit.Sdk.TestAttachment.AsByteArray
+  id: AsByteArray
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: AsByteArray()
+  nameWithType: TestAttachment.AsByteArray()
+  fullName: Xunit.Sdk.TestAttachment.AsByteArray()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: AsByteArray
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 48
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the attachment content as a byte array, along with the media type. Can only be called
+
+    when <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType" data-throw-if-not-resolved="false"></xref> returns <xref href="v3.2.0.0:Xunit.Sdk.TestAttachmentType.ByteArray" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public (byte[] ByteArray, string MediaType) AsByteArray()
+    return:
+      type: System.ValueTuple{System.Byte[],System.String}
+    content.vb: Public Function AsByteArray() As (ByteArray As Byte(), MediaType As String)
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.AsByteArray*
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AsString
+  commentId: M:Xunit.Sdk.TestAttachment.AsString
+  id: AsString
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: AsString()
+  nameWithType: TestAttachment.AsString()
+  fullName: Xunit.Sdk.TestAttachment.AsString()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: AsString
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 58
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the attachment content as a string. Can only be called when <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType" data-throw-if-not-resolved="false"></xref>
+
+    returns <xref href="v3.2.0.0:Xunit.Sdk.TestAttachmentType.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string AsString()
+    return:
+      type: System.String
+    content.vb: Public Function AsString() As String
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.AsString*
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.Create(System.Byte[],System.String)
+  commentId: M:Xunit.Sdk.TestAttachment.Create(System.Byte[],System.String)
+  id: Create(System.Byte[],System.String)
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: Create(byte[], string)
+  nameWithType: TestAttachment.Create(byte[], string)
+  fullName: Xunit.Sdk.TestAttachment.Create(byte[], string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Create
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 72
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Creates an instance of <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment" data-throw-if-not-resolved="false"></xref> that wraps a byte array value.
+  remarks: >-
+    The <code class="paramref">mediaType</code> value must be in the MIME "type/subtype" form, and does not support
+
+    parameter values. The subtype is allowed to have a single "+" to denote specialization of the
+
+    subtype (i.e., "application/xhtml+xml"). For more information on media types, see
+
+    <a href="https://datatracker.ietf.org/doc/html/rfc2045#section-5.1">https://datatracker.ietf.org/doc/html/rfc2045#section-5.1</a>.
+  example: []
+  syntax:
+    content: public static TestAttachment Create(byte[] value, string mediaType)
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: The byte array value
+    - id: mediaType
+      type: System.String
+      description: The media type
+    return:
+      type: Xunit.Sdk.TestAttachment
+    content.vb: Public Shared Function Create(value As Byte(), mediaType As String) As TestAttachment
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.Create*
+  nameWithType.vb: TestAttachment.Create(Byte(), String)
+  fullName.vb: Xunit.Sdk.TestAttachment.Create(Byte(), String)
+  name.vb: Create(Byte(), String)
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.Create(System.String)
+  commentId: M:Xunit.Sdk.TestAttachment.Create(System.String)
+  id: Create(System.String)
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: TestAttachment.Create(string)
+  fullName: Xunit.Sdk.TestAttachment.Create(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Create
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 86
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Creates an instance of <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment" data-throw-if-not-resolved="false"></xref> that wraps a string value.
+  example: []
+  syntax:
+    content: public static TestAttachment Create(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: Xunit.Sdk.TestAttachment
+    content.vb: Public Shared Function Create(value As String) As TestAttachment
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.Create*
+  nameWithType.vb: TestAttachment.Create(String)
+  fullName.vb: Xunit.Sdk.TestAttachment.Create(String)
+  name.vb: Create(String)
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.Parse(System.String)
+  commentId: M:Xunit.Sdk.TestAttachment.Parse(System.String)
+  id: Parse(System.String)
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: Parse(string)
+  nameWithType: TestAttachment.Parse(string)
+  fullName: Xunit.Sdk.TestAttachment.Parse(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Parse
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 92
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Parses a value that was obtained by calling <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment.ToString" data-throw-if-not-resolved="false"></xref> back into a <xref href="v3.2.0.0:Xunit.Sdk.TestAttachment" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static TestAttachment Parse(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: Xunit.Sdk.TestAttachment
+    content.vb: Public Shared Function Parse(value As String) As TestAttachment
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.Parse*
+  nameWithType.vb: TestAttachment.Parse(String)
+  fullName.vb: Xunit.Sdk.TestAttachment.Parse(String)
+  name.vb: Parse(String)
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString
+  commentId: M:Xunit.Sdk.TestAttachment.ToString
+  id: ToString
+  parent: v3.2.0.0:Xunit.Sdk.TestAttachment
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TestAttachment.ToString()
+  fullName: Xunit.Sdk.TestAttachment.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/TestAttachment.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: ToString
+    path: ../src/xunit.v3.common/Options/TestAttachment.cs
+    startLine: 119
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a string value for the test attachment. For string value attachments, will return the string value;
+
+    for byte array values, it will return the base-64 encoded value of the bytes.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString*
+references:
+- uid: v3.2.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.#ctor*
+  commentId: Overload:Xunit.Sdk.TestAttachment.#ctor
+  href: Xunit.Sdk.TestAttachment.-ctor.html#Xunit_Sdk_TestAttachment__ctor
+  name: TestAttachment
+  nameWithType: TestAttachment.TestAttachment
+  fullName: Xunit.Sdk.TestAttachment.TestAttachment
+  nameWithType.vb: TestAttachment.New
+  fullName.vb: Xunit.Sdk.TestAttachment.New
+  name.vb: New
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType*
+  commentId: Overload:Xunit.Sdk.TestAttachment.AttachmentType
+  href: Xunit.Sdk.TestAttachment.AttachmentType.html#Xunit_Sdk_TestAttachment_AttachmentType
+  name: AttachmentType
+  nameWithType: TestAttachment.AttachmentType
+  fullName: Xunit.Sdk.TestAttachment.AttachmentType
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachmentType
+  commentId: T:Xunit.Sdk.TestAttachmentType
+  parent: v3.2.0.0:Xunit.Sdk
+  href: Xunit.Sdk.TestAttachmentType.html
+  name: TestAttachmentType
+  nameWithType: TestAttachmentType
+  fullName: Xunit.Sdk.TestAttachmentType
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AttachmentType
+  commentId: P:Xunit.Sdk.TestAttachment.AttachmentType
+  href: Xunit.Sdk.TestAttachment.AttachmentType.html#Xunit_Sdk_TestAttachment_AttachmentType
+  name: AttachmentType
+  nameWithType: TestAttachment.AttachmentType
+  fullName: Xunit.Sdk.TestAttachment.AttachmentType
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachmentType.ByteArray
+  commentId: F:Xunit.Sdk.TestAttachmentType.ByteArray
+  href: Xunit.Sdk.TestAttachmentType.html#Xunit_Sdk_TestAttachmentType_ByteArray
+  name: ByteArray
+  nameWithType: TestAttachmentType.ByteArray
+  fullName: Xunit.Sdk.TestAttachmentType.ByteArray
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AsByteArray*
+  commentId: Overload:Xunit.Sdk.TestAttachment.AsByteArray
+  href: Xunit.Sdk.TestAttachment.AsByteArray.html#Xunit_Sdk_TestAttachment_AsByteArray
+  name: AsByteArray
+  nameWithType: TestAttachment.AsByteArray
+  fullName: Xunit.Sdk.TestAttachment.AsByteArray
+- uid: System.ValueTuple{System.Byte[],System.String}
+  commentId: T:System.ValueTuple{System.Byte[],System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: (byte[] ByteArray, string MediaType)
+  nameWithType: (byte[] ByteArray, string MediaType)
+  fullName: (byte[] ByteArray, string MediaType)
+  nameWithType.vb: (ByteArray As Byte(), MediaType As String)
+  fullName.vb: (ByteArray As Byte(), MediaType As String)
+  name.vb: (ByteArray As Byte(), MediaType As String)
+  spec.csharp:
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Byte[],System.String}.ByteArray
+    name: ByteArray
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.byte[],system.string-.bytearray
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Byte[],System.String}.MediaType
+    name: MediaType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.byte[],system.string-.mediatype
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Byte[],System.String}.ByteArray
+    name: ByteArray
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.byte[],system.string-.bytearray
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Byte[],System.String}.MediaType
+    name: MediaType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.byte[],system.string-.mediatype
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachmentType.String
+  commentId: F:Xunit.Sdk.TestAttachmentType.String
+  href: Xunit.Sdk.TestAttachmentType.html#Xunit_Sdk_TestAttachmentType_String
+  name: String
+  nameWithType: TestAttachmentType.String
+  fullName: Xunit.Sdk.TestAttachmentType.String
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.AsString*
+  commentId: Overload:Xunit.Sdk.TestAttachment.AsString
+  href: Xunit.Sdk.TestAttachment.AsString.html#Xunit_Sdk_TestAttachment_AsString
+  name: AsString
+  nameWithType: TestAttachment.AsString
+  fullName: Xunit.Sdk.TestAttachment.AsString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment
+  commentId: T:Xunit.Sdk.TestAttachment
+  parent: v3.2.0.0:Xunit.Sdk
+  href: Xunit.Sdk.TestAttachment.html
+  name: TestAttachment
+  nameWithType: TestAttachment
+  fullName: Xunit.Sdk.TestAttachment
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.Create*
+  commentId: Overload:Xunit.Sdk.TestAttachment.Create
+  href: Xunit.Sdk.TestAttachment.Create.html#Xunit_Sdk_TestAttachment_Create_System_Byte___System_String_
+  name: Create
+  nameWithType: TestAttachment.Create
+  fullName: Xunit.Sdk.TestAttachment.Create
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString
+  commentId: M:Xunit.Sdk.TestAttachment.ToString
+  href: Xunit.Sdk.TestAttachment.ToString.html#Xunit_Sdk_TestAttachment_ToString
+  name: ToString()
+  nameWithType: TestAttachment.ToString()
+  fullName: Xunit.Sdk.TestAttachment.ToString()
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString
+    name: ToString
+    href: Xunit.Sdk.TestAttachment.ToString.html#Xunit_Sdk_TestAttachment_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString
+    name: ToString
+    href: Xunit.Sdk.TestAttachment.ToString.html#Xunit_Sdk_TestAttachment_ToString
+  - name: (
+  - name: )
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.Parse*
+  commentId: Overload:Xunit.Sdk.TestAttachment.Parse
+  href: Xunit.Sdk.TestAttachment.Parse.html#Xunit_Sdk_TestAttachment_Parse_System_String_
+  name: Parse
+  nameWithType: TestAttachment.Parse
+  fullName: Xunit.Sdk.TestAttachment.Parse
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.2.0.0:Xunit.Sdk.TestAttachment.ToString*
+  commentId: Overload:Xunit.Sdk.TestAttachment.ToString
+  href: Xunit.Sdk.TestAttachment.ToString.html#Xunit_Sdk_TestAttachment_ToString
+  name: ToString
+  nameWithType: TestAttachment.ToString
+  fullName: Xunit.Sdk.TestAttachment.ToString
+memberLayout: SeparatePages

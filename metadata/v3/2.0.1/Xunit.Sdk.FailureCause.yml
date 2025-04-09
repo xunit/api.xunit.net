@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause
+  commentId: T:Xunit.Sdk.FailureCause
+  id: FailureCause
+  parent: v3.2.0.1:Xunit.Sdk
+  children:
+  - v3.2.0.1:Xunit.Sdk.FailureCause.Assertion
+  - v3.2.0.1:Xunit.Sdk.FailureCause.Exception
+  - v3.2.0.1:Xunit.Sdk.FailureCause.Other
+  - v3.2.0.1:Xunit.Sdk.FailureCause.Timeout
+  - v3.2.0.1:Xunit.Sdk.FailureCause.Unknown
+  langs:
+  - csharp
+  - vb
+  name: FailureCause
+  nameWithType: FailureCause
+  fullName: Xunit.Sdk.FailureCause
+  type: Enum
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: FailureCause
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Indicates the cause of the test failure.
+  example: []
+  syntax:
+    content: public enum FailureCause
+    content.vb: Public Enum FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause.Unknown
+  commentId: F:Xunit.Sdk.FailureCause.Unknown
+  id: Unknown
+  parent: v3.2.0.1:Xunit.Sdk.FailureCause
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: FailureCause.Unknown
+  fullName: Xunit.Sdk.FailureCause.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Unknown
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Indicates the test failure cause is unknown.
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: Xunit.Sdk.FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause.Other
+  commentId: F:Xunit.Sdk.FailureCause.Other
+  id: Other
+  parent: v3.2.0.1:Xunit.Sdk.FailureCause
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: FailureCause.Other
+  fullName: Xunit.Sdk.FailureCause.Other
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Other
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Indicates that a test failed for some reason other than a typical execution failure
+
+    (for example, if a test was skipped but the flag was given to fail all skipped tests,
+
+    or the test passed with warnings but the flag was given to fail tests with warnings).
+  example: []
+  syntax:
+    content: Other = 1
+    return:
+      type: Xunit.Sdk.FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause.Exception
+  commentId: F:Xunit.Sdk.FailureCause.Exception
+  id: Exception
+  parent: v3.2.0.1:Xunit.Sdk.FailureCause
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: FailureCause.Exception
+  fullName: Xunit.Sdk.FailureCause.Exception
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Exception
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Indicates that the test failed because it threw an unhandled exception.
+  example: []
+  syntax:
+    content: Exception = 2
+    return:
+      type: Xunit.Sdk.FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause.Assertion
+  commentId: F:Xunit.Sdk.FailureCause.Assertion
+  id: Assertion
+  parent: v3.2.0.1:Xunit.Sdk.FailureCause
+  langs:
+  - csharp
+  - vb
+  name: Assertion
+  nameWithType: FailureCause.Assertion
+  fullName: Xunit.Sdk.FailureCause.Assertion
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Assertion
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Indicates that the test failed because of an assertion failure (that is, an exception
+
+    was thrown that implements an interface named <code>IAssertionException</code>, regardless of the
+
+    namespace or source assembly of the interface). For built-in exceptions,
+
+    <xref href="v3.2.0.1:Xunit.Sdk.IAssertionException" data-throw-if-not-resolved="false"></xref> serves this purpose, but this is generally
+
+    found by convention rather than type to prevent 3rd party assertion libraries from needing
+
+    to take an explicit references to xUnit.net binaries.
+  example: []
+  syntax:
+    content: Assertion = 3
+    return:
+      type: Xunit.Sdk.FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause.Timeout
+  commentId: F:Xunit.Sdk.FailureCause.Timeout
+  id: Timeout
+  parent: v3.2.0.1:Xunit.Sdk.FailureCause
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: FailureCause.Timeout
+  fullName: Xunit.Sdk.FailureCause.Timeout
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/FailureCause.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.common/Options/FailureCause.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Indicates that the test failed because it exceeded the allowed time to run (typically
+
+    specified via <xref href="v3.2.0.1:Xunit.v3.IFactAttribute.Timeout" data-throw-if-not-resolved="false"></xref>). This is indicated by an
+
+    exception that is thrown which implements an interface named <code>ITestTimeoutException</code>,
+
+    regardless of the namespace or source assembly of the interface. For fact attributes,
+
+    <xref href="v3.2.0.1:Xunit.v3.ITestTimeoutException" data-throw-if-not-resolved="false"></xref> serves this purpose, but this is generally
+
+    found by convention rather than type to prevent 3rd party libraries from needing to
+
+    take an explicit reference to xUnit.net binaries.
+  example: []
+  syntax:
+    content: Timeout = 4
+    return:
+      type: Xunit.Sdk.FailureCause
+references:
+- uid: v3.2.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.1:Xunit.Sdk.FailureCause
+  commentId: T:Xunit.Sdk.FailureCause
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.FailureCause.html
+  name: FailureCause
+  nameWithType: FailureCause
+  fullName: Xunit.Sdk.FailureCause
+- uid: v3.2.0.1:Xunit.Sdk.IAssertionException
+  commentId: T:Xunit.Sdk.IAssertionException
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IAssertionException.html
+  name: IAssertionException
+  nameWithType: IAssertionException
+  fullName: Xunit.Sdk.IAssertionException
+- uid: v3.2.0.1:Xunit.v3.IFactAttribute.Timeout
+  commentId: P:Xunit.v3.IFactAttribute.Timeout
+  parent: v3.2.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Timeout.html#Xunit_v3_IFactAttribute_Timeout
+  name: Timeout
+  nameWithType: IFactAttribute.Timeout
+  fullName: Xunit.v3.IFactAttribute.Timeout
+- uid: v3.2.0.1:Xunit.v3.ITestTimeoutException
+  commentId: T:Xunit.v3.ITestTimeoutException
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.ITestTimeoutException.html
+  name: ITestTimeoutException
+  nameWithType: ITestTimeoutException
+  fullName: Xunit.v3.ITestTimeoutException
+- uid: v3.2.0.1:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: v3.2.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+memberLayout: SeparatePages

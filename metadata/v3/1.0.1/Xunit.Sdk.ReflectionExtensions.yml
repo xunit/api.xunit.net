@@ -1,0 +1,1776 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  commentId: T:Xunit.Sdk.ReflectionExtensions
+  id: ReflectionExtensions
+  parent: v3.1.0.1:Xunit.Sdk
+  children:
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDefaultValue(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments(System.Reflection.MethodInfo,System.String,System.Object[],System.Type[])
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.Implements(System.Type,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullable(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullableEnum(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes(System.Reflection.MethodInfo,System.Object[])
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments(System.Reflection.MethodBase,System.Object[])
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.SafeName(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList(System.Collections.Generic.IEnumerable{System.Type},System.String)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToDisplayName(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToSimpleName(System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName(System.Type,System.Reflection.MethodInfo,System.Type)
+  - v3.1.0.1:Xunit.Sdk.ReflectionExtensions.UnwrapNullable(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: ReflectionExtensions
+  nameWithType: ReflectionExtensions
+  fullName: Xunit.Sdk.ReflectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ReflectionExtensions
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Extension methods for reflection types in .NET.
+  example: []
+  syntax:
+    content: public static class ReflectionExtensions
+    content.vb: Public Module ReflectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDefaultValue(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetDefaultValue(System.Type)
+  id: GetDefaultValue(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultValue(Type)
+  nameWithType: ReflectionExtensions.GetDefaultValue(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetDefaultValue(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetDefaultValue
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 69
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Returns the default value for the given type. For value types, this means a 0-initialized
+
+    instance of the type; for reference types, this means <code>null</code>.
+  example: []
+  syntax:
+    content: public static object? GetDefaultValue(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to get the default value of.
+    return:
+      type: System.Object
+      description: The default value for the given type.
+    content.vb: Public Shared Function GetDefaultValue(type As Type) As Object
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDefaultValue*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments(System.Reflection.MethodInfo,System.String,System.Object[],System.Type[])
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments(System.Reflection.MethodInfo,System.String,System.Object[],System.Type[])
+  id: GetDisplayNameWithArguments(System.Reflection.MethodInfo,System.String,System.Object[],System.Type[])
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDisplayNameWithArguments(MethodInfo, string, object?[]?, Type[]?)
+  nameWithType: ReflectionExtensions.GetDisplayNameWithArguments(MethodInfo, string, object?[]?, Type[]?)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments(System.Reflection.MethodInfo, string, object?[]?, System.Type[]?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetDisplayNameWithArguments
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 84
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Formulates the extended portion of the display name for a test method. For tests with no arguments, this will
+
+    return just the base name; for tests with arguments, attempts to format the arguments and appends the argument
+
+    list to the test name.
+  example: []
+  syntax:
+    content: public static string GetDisplayNameWithArguments(this MethodInfo method, string baseDisplayName, object?[]? arguments, Type[]? genericTypes)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The test method
+    - id: baseDisplayName
+      type: System.String
+      description: The base part of the display name
+    - id: arguments
+      type: System.Object[]
+      description: The test method arguments
+    - id: genericTypes
+      type: System.Type[]
+      description: The test method's generic types
+    return:
+      type: System.String
+      description: The full display name for the test method
+    content.vb: Public Shared Function GetDisplayNameWithArguments(method As MethodInfo, baseDisplayName As String, arguments As Object(), genericTypes As Type()) As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments*
+  nameWithType.vb: ReflectionExtensions.GetDisplayNameWithArguments(MethodInfo, String, Object(), Type())
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments(System.Reflection.MethodInfo, String, Object(), System.Type())
+  name.vb: GetDisplayNameWithArguments(MethodInfo, String, Object(), Type())
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.Type)
+  id: GetMatchingCustomAttributes(System.Reflection.Assembly,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Assembly, Type)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Assembly, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 126
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the assembly that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Assembly assembly, Type attributeType)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to get custom attributes for.
+    - id: attributeType
+      type: System.Type
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the assembly
+    content.vb: Public Shared Function GetMatchingCustomAttributes(assembly As Assembly, attributeType As Type) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly,System.String)
+  id: GetMatchingCustomAttributes(System.Reflection.Assembly,System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Assembly, string)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Assembly, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 139
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the assembly that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Assembly assembly, string assemblyQualifiedTypeName)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to get custom attributes for.
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the assembly
+    content.vb: Public Shared Function GetMatchingCustomAttributes(assembly As Assembly, assemblyQualifiedTypeName As String) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  nameWithType.vb: ReflectionExtensions.GetMatchingCustomAttributes(Assembly, String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.Assembly, String)
+  name.vb: GetMatchingCustomAttributes(Assembly, String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.Type)
+  id: GetMatchingCustomAttributes(System.Attribute,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Attribute, Type)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Attribute, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 152
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the attribute that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Attribute attribute, Type attributeType)
+    parameters:
+    - id: attribute
+      type: System.Attribute
+      description: The attribute to get custom attributes for.
+    - id: attributeType
+      type: System.Type
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the attribute
+    content.vb: Public Shared Function GetMatchingCustomAttributes(attribute As Attribute, attributeType As Type) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute,System.String)
+  id: GetMatchingCustomAttributes(System.Attribute,System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Attribute, string)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Attribute, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 165
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the attribute that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Attribute attribute, string assemblyQualifiedTypeName)
+    parameters:
+    - id: attribute
+      type: System.Attribute
+      description: The attribute to get custom attributes for.
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the attribute
+    content.vb: Public Shared Function GetMatchingCustomAttributes(attribute As Attribute, assemblyQualifiedTypeName As String) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  nameWithType.vb: ReflectionExtensions.GetMatchingCustomAttributes(Attribute, String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Attribute, String)
+  name.vb: GetMatchingCustomAttributes(Attribute, String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.Type)
+  id: GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(MethodInfo, Type)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(MethodInfo, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 178
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the method that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this MethodInfo method, Type attributeType)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to get custom attributes for.
+    - id: attributeType
+      type: System.Type
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the method
+    content.vb: Public Shared Function GetMatchingCustomAttributes(method As MethodInfo, attributeType As Type) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.String)
+  id: GetMatchingCustomAttributes(System.Reflection.MethodInfo,System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(MethodInfo, string)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(MethodInfo, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 191
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the method that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this MethodInfo method, string assemblyQualifiedTypeName)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to get custom attributes for.
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the method
+    content.vb: Public Shared Function GetMatchingCustomAttributes(method As MethodInfo, assemblyQualifiedTypeName As String) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  nameWithType.vb: ReflectionExtensions.GetMatchingCustomAttributes(MethodInfo, String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.MethodInfo, String)
+  name.vb: GetMatchingCustomAttributes(MethodInfo, String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  id: GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(ParameterInfo, Type)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(ParameterInfo, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 204
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the parameter that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this ParameterInfo parameter, Type attributeType)
+    parameters:
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+      description: The parameter to get custom attributes for.
+    - id: attributeType
+      type: System.Type
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the parameter
+    content.vb: Public Shared Function GetMatchingCustomAttributes(parameter As ParameterInfo, attributeType As Type) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.String)
+  id: GetMatchingCustomAttributes(System.Reflection.ParameterInfo,System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(ParameterInfo, string)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(ParameterInfo, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 217
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the parameter that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this ParameterInfo parameter, string assemblyQualifiedTypeName)
+    parameters:
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+      description: The parameter to get custom attributes for.
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the parameter
+    content.vb: Public Shared Function GetMatchingCustomAttributes(parameter As ParameterInfo, assemblyQualifiedTypeName As String) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  nameWithType.vb: ReflectionExtensions.GetMatchingCustomAttributes(ParameterInfo, String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Reflection.ParameterInfo, String)
+  name.vb: GetMatchingCustomAttributes(ParameterInfo, String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.Type)
+  id: GetMatchingCustomAttributes(System.Type,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Type, Type)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Type, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 230
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the type that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Type type, Type attributeType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to get custom attributes for.
+    - id: attributeType
+      type: System.Type
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the type
+    content.vb: Public Shared Function GetMatchingCustomAttributes(type As Type, attributeType As Type) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type,System.String)
+  id: GetMatchingCustomAttributes(System.Type,System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingCustomAttributes(Type, string)
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes(Type, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: GetMatchingCustomAttributes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 243
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets all the custom attributes for the type that are of the given attribute type.
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<Attribute> GetMatchingCustomAttributes(this Type type, string assemblyQualifiedTypeName)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to get custom attributes for.
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: >-
+        The type of the attribute to find. Will accept attribute types that are concrete,
+            closed generic, and open generic. When provided an open generic type (e.g., MyAttribute&lt;&gt;) it will
+            return matching closed generic attributes (e.g., MyAttribute&gt;int&lt;)
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+      description: The matching attributes that decorate the type
+    content.vb: Public Shared Function GetMatchingCustomAttributes(type As Type, assemblyQualifiedTypeName As String) As IReadOnlyCollection(Of Attribute)
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  nameWithType.vb: ReflectionExtensions.GetMatchingCustomAttributes(Type, String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes(System.Type, String)
+  name.vb: GetMatchingCustomAttributes(Type, String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.Implements(System.Type,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.Implements(System.Type,System.Type)
+  id: Implements(System.Type,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Implements(Type, Type)
+  nameWithType: ReflectionExtensions.Implements(Type, Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.Implements(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Implements
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 261
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Determines if the given type implements the given interface.
+  example: []
+  syntax:
+    content: public static bool Implements(this Type type, Type interfaceType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to check
+    - id: interfaceType
+      type: System.Type
+      description: The interface type to look for
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the type implements the interface; <code>false</code>, otherwise
+    content.vb: Public Shared Function [Implements](type As Type, interfaceType As Type) As Boolean
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.Implements*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly(System.Type)
+  id: IsFromLocalAssembly(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsFromLocalAssembly(Type)
+  nameWithType: ReflectionExtensions.IsFromLocalAssembly(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: IsFromLocalAssembly
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 281
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Determines if the given type is from a local assembly.
+  example: []
+  syntax:
+    content: public static bool IsFromLocalAssembly(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to verify
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the type originates in a local assembly; <code>false</code> if the type originates in the GAC.
+    content.vb: Public Shared Function IsFromLocalAssembly(type As Type) As Boolean
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullable(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.IsNullable(System.Type)
+  id: IsNullable(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullable(Type)
+  nameWithType: ReflectionExtensions.IsNullable(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.IsNullable(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: IsNullable
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 304
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Determines whether <code class="paramref">type</code> is a nullable type; that is, whether it
+
+    is a reference type or it represents <xref href="System.Nullable%601" data-throw-if-not-resolved="false"></xref> for a value type.
+  example: []
+  syntax:
+    content: public static bool IsNullable(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNullable(type As Type) As Boolean
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullable*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullableEnum(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.IsNullableEnum(System.Type)
+  id: IsNullableEnum(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullableEnum(Type)
+  nameWithType: ReflectionExtensions.IsNullableEnum(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.IsNullableEnum(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: IsNullableEnum
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 313
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Determines whether <code class="paramref">type</code> represents a nullable enum value.
+  example: []
+  syntax:
+    content: public static bool IsNullableEnum(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNullableEnum(type As Type) As Boolean
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullableEnum*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes(System.Reflection.MethodInfo,System.Object[])
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes(System.Reflection.MethodInfo,System.Object[])
+  id: ResolveGenericTypes(System.Reflection.MethodInfo,System.Object[])
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ResolveGenericTypes(MethodInfo, object?[])
+  nameWithType: ReflectionExtensions.ResolveGenericTypes(MethodInfo, object?[])
+  fullName: Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes(System.Reflection.MethodInfo, object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ResolveGenericTypes
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 419
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Resolves all the generic types for a test method. The arguments are used to determine
+
+    the best matching generic types for the method that can be satisfied by all the generic
+
+    parameters and their argument values.
+  example: []
+  syntax:
+    content: public static Type[] ResolveGenericTypes(this MethodInfo method, object?[] arguments)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method
+    - id: arguments
+      type: System.Object[]
+      description: The argument values being passed to the method
+    return:
+      type: System.Type[]
+      description: The best matching generic types
+    content.vb: Public Shared Function ResolveGenericTypes(method As MethodInfo, arguments As Object()) As Type()
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes*
+  nameWithType.vb: ReflectionExtensions.ResolveGenericTypes(MethodInfo, Object())
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes(System.Reflection.MethodInfo, Object())
+  name.vb: ResolveGenericTypes(MethodInfo, Object())
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments(System.Reflection.MethodBase,System.Object[])
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments(System.Reflection.MethodBase,System.Object[])
+  id: ResolveMethodArguments(System.Reflection.MethodBase,System.Object[])
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ResolveMethodArguments(MethodBase, object?[])
+  nameWithType: ReflectionExtensions.ResolveMethodArguments(MethodBase, object?[])
+  fullName: Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments(System.Reflection.MethodBase, object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ResolveMethodArguments
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 519
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Resolves argument values for the test method, ensuring they are the correct type,
+
+    including support for optional method arguments.
+  example: []
+  syntax:
+    content: public static object?[] ResolveMethodArguments(this MethodBase testMethod, object?[] arguments)
+    parameters:
+    - id: testMethod
+      type: System.Reflection.MethodBase
+      description: The test method to resolve.
+    - id: arguments
+      type: System.Object[]
+      description: The user-supplied method arguments.
+    return:
+      type: System.Object[]
+      description: The argument values
+    content.vb: Public Shared Function ResolveMethodArguments(testMethod As MethodBase, arguments As Object()) As Object()
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments*
+  nameWithType.vb: ReflectionExtensions.ResolveMethodArguments(MethodBase, Object())
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments(System.Reflection.MethodBase, Object())
+  name.vb: ResolveMethodArguments(MethodBase, Object())
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.SafeName(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.SafeName(System.Type)
+  id: SafeName(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SafeName(Type)
+  nameWithType: ReflectionExtensions.SafeName(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.SafeName(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: SafeName
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 615
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a fully qualified type name (i.e., <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref>), falling back to a simple
+
+    type name (i.e., <xref href="System.Reflection.MemberInfo.Name" data-throw-if-not-resolved="false"></xref>) when a fully qualified name is not available. Typically
+
+    used when presenting type names to the user, or to guarantee the type name is never <code>null</code>.
+  example: []
+  syntax:
+    content: public static string SafeName(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function SafeName(type As Type) As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.SafeName*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList(System.Collections.Generic.IEnumerable{System.Type},System.String)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList(System.Collections.Generic.IEnumerable{System.Type},System.String)
+  id: ToCommaSeparatedList(System.Collections.Generic.IEnumerable{System.Type},System.String)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCommaSeparatedList(IEnumerable<Type?>, string)
+  nameWithType: ReflectionExtensions.ToCommaSeparatedList(IEnumerable<Type?>, string)
+  fullName: Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList(System.Collections.Generic.IEnumerable<System.Type?>, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ToCommaSeparatedList
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 626
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Convert a collection of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> objects into a comma-separated list
+
+    for display purposes.
+  example: []
+  syntax:
+    content: public static string ToCommaSeparatedList(this IEnumerable<Type?> types, string nullDisplay = "(null)")
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+    - id: nullDisplay
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToCommaSeparatedList(types As IEnumerable(Of Type), nullDisplay As String = "(null)") As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList*
+  nameWithType.vb: ReflectionExtensions.ToCommaSeparatedList(IEnumerable(Of Type), String)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList(System.Collections.Generic.IEnumerable(Of System.Type), String)
+  name.vb: ToCommaSeparatedList(IEnumerable(Of Type), String)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToDisplayName(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ToDisplayName(System.Type)
+  id: ToDisplayName(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDisplayName(Type)
+  nameWithType: ReflectionExtensions.ToDisplayName(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.ToDisplayName(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ToDisplayName
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 635
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Converts a type into a name string for display purposes. It attempts to make a more user friendly
+
+    name than <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref> would give, especially when the type is generic.
+  example: []
+  syntax:
+    content: public static string ToDisplayName(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToDisplayName(type As Type) As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToDisplayName*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToSimpleName(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ToSimpleName(System.Type)
+  id: ToSimpleName(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSimpleName(Type)
+  nameWithType: ReflectionExtensions.ToSimpleName(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.ToSimpleName(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ToSimpleName
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 664
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the simple name for a type, suitable for use with <xref href="v3.1.0.1:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static string ToSimpleName(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToSimpleName(type As Type) As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToSimpleName*
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName(System.Type,System.Reflection.MethodInfo,System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName(System.Type,System.Reflection.MethodInfo,System.Type)
+  id: ToVSTestTypeName(System.Type,System.Reflection.MethodInfo,System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToVSTestTypeName(Type, MethodInfo?, Type?)
+  nameWithType: ReflectionExtensions.ToVSTestTypeName(Type, MethodInfo?, Type?)
+  fullName: Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName(System.Type, System.Reflection.MethodInfo?, System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ToVSTestTypeName
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 685
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Converts a <xref href="System.Type" data-throw-if-not-resolved="false"></xref> name into the correct form for VSTest managed type name for
+
+    using in managed TestCase properties and by xunit.runner.visualstudio.
+  remarks: See <a href="https://github.com/microsoft/vstest/blob/main/docs/RFCs/0017-Managed-TestCase-Properties.md">https://github.com/microsoft/vstest/blob/main/docs/RFCs/0017-Managed-TestCase-Properties.md</a>
+  example: []
+  syntax:
+    content: public static string ToVSTestTypeName(this Type type, MethodInfo? testMethod = null, Type? testClass = null)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: testMethod
+      type: System.Reflection.MethodInfo
+    - id: testClass
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToVSTestTypeName(type As Type, testMethod As MethodInfo = Nothing, testClass As Type = Nothing) As String
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName*
+  nameWithType.vb: ReflectionExtensions.ToVSTestTypeName(Type, MethodInfo, Type)
+  fullName.vb: Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName(System.Type, System.Reflection.MethodInfo, System.Type)
+  name.vb: ToVSTestTypeName(Type, MethodInfo, Type)
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.UnwrapNullable(System.Type)
+  commentId: M:Xunit.Sdk.ReflectionExtensions.UnwrapNullable(System.Type)
+  id: UnwrapNullable(System.Type)
+  isExtensionMethod: true
+  parent: v3.1.0.1:Xunit.Sdk.ReflectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnwrapNullable(Type)
+  nameWithType: ReflectionExtensions.UnwrapNullable(Type)
+  fullName: Xunit.Sdk.ReflectionExtensions.UnwrapNullable(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: UnwrapNullable
+    path: ../src/xunit.v3.common/Extensions/ReflectionExtensions.cs
+    startLine: 761
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Attempts to strip <xref href="System.Nullable%601" data-throw-if-not-resolved="false"></xref> from a type value and just return T.
+
+    For non-nullable types, will return the type that was passed in.
+  example: []
+  syntax:
+    content: public static Type UnwrapNullable(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Type
+    content.vb: Public Shared Function UnwrapNullable(type As Type) As Type
+  overload: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.UnwrapNullable*
+references:
+- uid: v3.1.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDefaultValue*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.GetDefaultValue
+  href: Xunit.Sdk.ReflectionExtensions.GetDefaultValue.html#Xunit_Sdk_ReflectionExtensions_GetDefaultValue_System_Type_
+  name: GetDefaultValue
+  nameWithType: ReflectionExtensions.GetDefaultValue
+  fullName: Xunit.Sdk.ReflectionExtensions.GetDefaultValue
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments
+  href: Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments.html#Xunit_Sdk_ReflectionExtensions_GetDisplayNameWithArguments_System_Reflection_MethodInfo_System_String_System_Object___System_Type___
+  name: GetDisplayNameWithArguments
+  nameWithType: ReflectionExtensions.GetDisplayNameWithArguments
+  fullName: Xunit.Sdk.ReflectionExtensions.GetDisplayNameWithArguments
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes
+  href: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes.html#Xunit_Sdk_ReflectionExtensions_GetMatchingCustomAttributes_System_Reflection_Assembly_System_Type_
+  name: GetMatchingCustomAttributes
+  nameWithType: ReflectionExtensions.GetMatchingCustomAttributes
+  fullName: Xunit.Sdk.ReflectionExtensions.GetMatchingCustomAttributes
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Attribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<Attribute>
+  nameWithType: IReadOnlyCollection<Attribute>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Attribute>
+  nameWithType.vb: IReadOnlyCollection(Of Attribute)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Attribute)
+  name.vb: IReadOnlyCollection(Of Attribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: System.Reflection.ParameterInfo
+  commentId: T:System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo
+  nameWithType: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.Implements*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.Implements
+  href: Xunit.Sdk.ReflectionExtensions.Implements.html#Xunit_Sdk_ReflectionExtensions_Implements_System_Type_System_Type_
+  name: Implements
+  nameWithType: ReflectionExtensions.Implements
+  fullName: Xunit.Sdk.ReflectionExtensions.Implements
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly
+  href: Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly.html#Xunit_Sdk_ReflectionExtensions_IsFromLocalAssembly_System_Type_
+  name: IsFromLocalAssembly
+  nameWithType: ReflectionExtensions.IsFromLocalAssembly
+  fullName: Xunit.Sdk.ReflectionExtensions.IsFromLocalAssembly
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullable*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.IsNullable
+  href: Xunit.Sdk.ReflectionExtensions.IsNullable.html#Xunit_Sdk_ReflectionExtensions_IsNullable_System_Type_
+  name: IsNullable
+  nameWithType: ReflectionExtensions.IsNullable
+  fullName: Xunit.Sdk.ReflectionExtensions.IsNullable
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.IsNullableEnum*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.IsNullableEnum
+  href: Xunit.Sdk.ReflectionExtensions.IsNullableEnum.html#Xunit_Sdk_ReflectionExtensions_IsNullableEnum_System_Type_
+  name: IsNullableEnum
+  nameWithType: ReflectionExtensions.IsNullableEnum
+  fullName: Xunit.Sdk.ReflectionExtensions.IsNullableEnum
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes
+  href: Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes.html#Xunit_Sdk_ReflectionExtensions_ResolveGenericTypes_System_Reflection_MethodInfo_System_Object___
+  name: ResolveGenericTypes
+  nameWithType: ReflectionExtensions.ResolveGenericTypes
+  fullName: Xunit.Sdk.ReflectionExtensions.ResolveGenericTypes
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments
+  href: Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments.html#Xunit_Sdk_ReflectionExtensions_ResolveMethodArguments_System_Reflection_MethodBase_System_Object___
+  name: ResolveMethodArguments
+  nameWithType: ReflectionExtensions.ResolveMethodArguments
+  fullName: Xunit.Sdk.ReflectionExtensions.ResolveMethodArguments
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Type.FullName
+  commentId: P:System.Type.FullName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type.fullname
+  name: FullName
+  nameWithType: Type.FullName
+  fullName: System.Type.FullName
+- uid: System.Reflection.MemberInfo.Name
+  commentId: P:System.Reflection.MemberInfo.Name
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.name
+  name: Name
+  nameWithType: MemberInfo.Name
+  fullName: System.Reflection.MemberInfo.Name
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.SafeName*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.SafeName
+  href: Xunit.Sdk.ReflectionExtensions.SafeName.html#Xunit_Sdk_ReflectionExtensions_SafeName_System_Type_
+  name: SafeName
+  nameWithType: ReflectionExtensions.SafeName
+  fullName: Xunit.Sdk.ReflectionExtensions.SafeName
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList
+  href: Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList.html#Xunit_Sdk_ReflectionExtensions_ToCommaSeparatedList_System_Collections_Generic_IEnumerable_System_Type__System_String_
+  name: ToCommaSeparatedList
+  nameWithType: ReflectionExtensions.ToCommaSeparatedList
+  fullName: Xunit.Sdk.ReflectionExtensions.ToCommaSeparatedList
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Type>
+  nameWithType: IEnumerable<Type>
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  nameWithType.vb: IEnumerable(Of Type)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  name.vb: IEnumerable(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToDisplayName*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ToDisplayName
+  href: Xunit.Sdk.ReflectionExtensions.ToDisplayName.html#Xunit_Sdk_ReflectionExtensions_ToDisplayName_System_Type_
+  name: ToDisplayName
+  nameWithType: ReflectionExtensions.ToDisplayName
+  fullName: Xunit.Sdk.ReflectionExtensions.ToDisplayName
+- uid: v3.1.0.1:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  parent: v3.1.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName.html#Xunit_Sdk_ITestCaseMetadata_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: ITestCaseMetadata.TestClassSimpleName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToSimpleName*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ToSimpleName
+  href: Xunit.Sdk.ReflectionExtensions.ToSimpleName.html#Xunit_Sdk_ReflectionExtensions_ToSimpleName_System_Type_
+  name: ToSimpleName
+  nameWithType: ReflectionExtensions.ToSimpleName
+  fullName: Xunit.Sdk.ReflectionExtensions.ToSimpleName
+- uid: v3.1.0.1:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName
+  href: Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName.html#Xunit_Sdk_ReflectionExtensions_ToVSTestTypeName_System_Type_System_Reflection_MethodInfo_System_Type_
+  name: ToVSTestTypeName
+  nameWithType: ReflectionExtensions.ToVSTestTypeName
+  fullName: Xunit.Sdk.ReflectionExtensions.ToVSTestTypeName
+- uid: v3.1.0.1:Xunit.Sdk.ReflectionExtensions.UnwrapNullable*
+  commentId: Overload:Xunit.Sdk.ReflectionExtensions.UnwrapNullable
+  href: Xunit.Sdk.ReflectionExtensions.UnwrapNullable.html#Xunit_Sdk_ReflectionExtensions_UnwrapNullable_System_Type_
+  name: UnwrapNullable
+  nameWithType: ReflectionExtensions.UnwrapNullable
+  fullName: Xunit.Sdk.ReflectionExtensions.UnwrapNullable
+memberLayout: SeparatePages

@@ -1,0 +1,752 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  commentId: T:Xunit.Runner.Common.TransformFactory
+  id: TransformFactory
+  parent: v3.2.0.0:Xunit.Runner.Common
+  children:
+  - v3.2.0.0:Xunit.Runner.Common.TransformFactory.AvailableTransforms
+  - v3.2.0.0:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement
+  - v3.2.0.0:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement(System.Xml.Linq.XElement)
+  - v3.2.0.0:Xunit.Runner.Common.TransformFactory.GetXmlTransformers(Xunit.Runner.Common.XunitProject)
+  - v3.2.0.0:Xunit.Runner.Common.TransformFactory.Transform(System.String,System.Xml.Linq.XElement,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TransformFactory
+  nameWithType: TransformFactory
+  fullName: Xunit.Runner.Common.TransformFactory
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: TransformFactory
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Used to retrieve a list of available
+  example: []
+  syntax:
+    content: public class TransformFactory
+    content.vb: Public Class TransformFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.AvailableTransforms
+  commentId: P:Xunit.Runner.Common.TransformFactory.AvailableTransforms
+  id: AvailableTransforms
+  parent: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  langs:
+  - csharp
+  - vb
+  name: AvailableTransforms
+  nameWithType: TransformFactory.AvailableTransforms
+  fullName: Xunit.Runner.Common.TransformFactory.AvailableTransforms
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: AvailableTransforms
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 67
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the list of available transforms.
+  example: []
+  syntax:
+    content: public static IReadOnlyList<Transform> AvailableTransforms { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Xunit.Runner.Common.Transform}
+    content.vb: Public Shared ReadOnly Property AvailableTransforms As IReadOnlyList(Of Transform)
+  overload: v3.2.0.0:Xunit.Runner.Common.TransformFactory.AvailableTransforms*
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement
+  commentId: M:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement
+  id: CreateAssembliesElement
+  parent: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAssembliesElement()
+  nameWithType: TransformFactory.CreateAssembliesElement()
+  fullName: Xunit.Runner.Common.TransformFactory.CreateAssembliesElement()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: CreateAssembliesElement
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 74
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Creates the root "assemblies" XML element.
+  example: []
+  syntax:
+    content: public static XElement CreateAssembliesElement()
+    return:
+      type: System.Xml.Linq.XElement
+      description: ''
+    content.vb: Public Shared Function CreateAssembliesElement() As XElement
+  overload: v3.2.0.0:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement*
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement(System.Xml.Linq.XElement)
+  commentId: M:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement(System.Xml.Linq.XElement)
+  id: FinishAssembliesElement(System.Xml.Linq.XElement)
+  parent: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  langs:
+  - csharp
+  - vb
+  name: FinishAssembliesElement(XElement)
+  nameWithType: TransformFactory.FinishAssembliesElement(XElement)
+  fullName: Xunit.Runner.Common.TransformFactory.FinishAssembliesElement(System.Xml.Linq.XElement)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: FinishAssembliesElement
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 111
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Finishes the assemblies element by supplementing with summary attributes.
+  example: []
+  syntax:
+    content: public static void FinishAssembliesElement(XElement assembliesElement)
+    parameters:
+    - id: assembliesElement
+      type: System.Xml.Linq.XElement
+      description: ''
+    content.vb: Public Shared Sub FinishAssembliesElement(assembliesElement As XElement)
+  overload: v3.2.0.0:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement*
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.GetXmlTransformers(Xunit.Runner.Common.XunitProject)
+  commentId: M:Xunit.Runner.Common.TransformFactory.GetXmlTransformers(Xunit.Runner.Common.XunitProject)
+  id: GetXmlTransformers(Xunit.Runner.Common.XunitProject)
+  parent: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  langs:
+  - csharp
+  - vb
+  name: GetXmlTransformers(XunitProject)
+  nameWithType: TransformFactory.GetXmlTransformers(XunitProject)
+  fullName: Xunit.Runner.Common.TransformFactory.GetXmlTransformers(Xunit.Runner.Common.XunitProject)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: GetXmlTransformers
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 143
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the list of XML transformer functions for the given project.
+  example: []
+  syntax:
+    content: public static List<Action<XElement>> GetXmlTransformers(XunitProject project)
+    parameters:
+    - id: project
+      type: Xunit.Runner.Common.XunitProject
+      description: The project to get transforms for.
+    return:
+      type: System.Collections.Generic.List{System.Action{System.Xml.Linq.XElement}}
+      description: The list of transform functions.
+    content.vb: Public Shared Function GetXmlTransformers(project As XunitProject) As List(Of Action(Of XElement))
+  overload: v3.2.0.0:Xunit.Runner.Common.TransformFactory.GetXmlTransformers*
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.Transform(System.String,System.Xml.Linq.XElement,System.String)
+  commentId: M:Xunit.Runner.Common.TransformFactory.Transform(System.String,System.Xml.Linq.XElement,System.String)
+  id: Transform(System.String,System.Xml.Linq.XElement,System.String)
+  parent: v3.2.0.0:Xunit.Runner.Common.TransformFactory
+  langs:
+  - csharp
+  - vb
+  name: Transform(string, XElement, string)
+  nameWithType: TransformFactory.Transform(string, XElement, string)
+  fullName: Xunit.Runner.Common.TransformFactory.Transform(string, System.Xml.Linq.XElement, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Transform
+    path: ../src/xunit.v3.runner.common/Transforms/TransformFactory.cs
+    startLine: 447
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Runs the transformation for the given ID and XML, and writes it to the given output file.
+  example: []
+  syntax:
+    content: public static void Transform(string id, XElement assembliesElement, string outputFileName)
+    parameters:
+    - id: id
+      type: System.String
+      description: The transform ID
+    - id: assembliesElement
+      type: System.Xml.Linq.XElement
+      description: The assembly XML to transform
+    - id: outputFileName
+      type: System.String
+      description: The output file name
+    content.vb: Public Shared Sub Transform(id As String, assembliesElement As XElement, outputFileName As String)
+  overload: v3.2.0.0:Xunit.Runner.Common.TransformFactory.Transform*
+  nameWithType.vb: TransformFactory.Transform(String, XElement, String)
+  fullName.vb: Xunit.Runner.Common.TransformFactory.Transform(String, System.Xml.Linq.XElement, String)
+  name.vb: Transform(String, XElement, String)
+references:
+- uid: v3.2.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.AvailableTransforms*
+  commentId: Overload:Xunit.Runner.Common.TransformFactory.AvailableTransforms
+  href: Xunit.Runner.Common.TransformFactory.AvailableTransforms.html#Xunit_Runner_Common_TransformFactory_AvailableTransforms
+  name: AvailableTransforms
+  nameWithType: TransformFactory.AvailableTransforms
+  fullName: Xunit.Runner.Common.TransformFactory.AvailableTransforms
+- uid: System.Collections.Generic.IReadOnlyList{Xunit.Runner.Common.Transform}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Xunit.Runner.Common.Transform}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Transform>
+  nameWithType: IReadOnlyList<Transform>
+  fullName: System.Collections.Generic.IReadOnlyList<Xunit.Runner.Common.Transform>
+  nameWithType.vb: IReadOnlyList(Of Transform)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Xunit.Runner.Common.Transform)
+  name.vb: IReadOnlyList(Of Transform)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: v3.2.0.0:Xunit.Runner.Common.Transform
+    name: Transform
+    href: Xunit.Runner.Common.Transform.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.0:Xunit.Runner.Common.Transform
+    name: Transform
+    href: Xunit.Runner.Common.Transform.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement*
+  commentId: Overload:Xunit.Runner.Common.TransformFactory.CreateAssembliesElement
+  href: Xunit.Runner.Common.TransformFactory.CreateAssembliesElement.html#Xunit_Runner_Common_TransformFactory_CreateAssembliesElement
+  name: CreateAssembliesElement
+  nameWithType: TransformFactory.CreateAssembliesElement
+  fullName: Xunit.Runner.Common.TransformFactory.CreateAssembliesElement
+- uid: System.Xml.Linq.XElement
+  commentId: T:System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.xml.linq.xelement
+  name: XElement
+  nameWithType: XElement
+  fullName: System.Xml.Linq.XElement
+- uid: System.Xml.Linq
+  commentId: N:System.Xml.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Xml.Linq
+  nameWithType: System.Xml.Linq
+  fullName: System.Xml.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml
+  - name: .
+  - uid: System.Xml.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml
+  - name: .
+  - uid: System.Xml.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml.linq
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement*
+  commentId: Overload:Xunit.Runner.Common.TransformFactory.FinishAssembliesElement
+  href: Xunit.Runner.Common.TransformFactory.FinishAssembliesElement.html#Xunit_Runner_Common_TransformFactory_FinishAssembliesElement_System_Xml_Linq_XElement_
+  name: FinishAssembliesElement
+  nameWithType: TransformFactory.FinishAssembliesElement
+  fullName: Xunit.Runner.Common.TransformFactory.FinishAssembliesElement
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.GetXmlTransformers*
+  commentId: Overload:Xunit.Runner.Common.TransformFactory.GetXmlTransformers
+  href: Xunit.Runner.Common.TransformFactory.GetXmlTransformers.html#Xunit_Runner_Common_TransformFactory_GetXmlTransformers_Xunit_Runner_Common_XunitProject_
+  name: GetXmlTransformers
+  nameWithType: TransformFactory.GetXmlTransformers
+  fullName: Xunit.Runner.Common.TransformFactory.GetXmlTransformers
+- uid: v3.2.0.0:Xunit.Runner.Common.XunitProject
+  commentId: T:Xunit.Runner.Common.XunitProject
+  parent: v3.2.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProject.html
+  name: XunitProject
+  nameWithType: XunitProject
+  fullName: Xunit.Runner.Common.XunitProject
+- uid: System.Collections.Generic.List{System.Action{System.Xml.Linq.XElement}}
+  commentId: T:System.Collections.Generic.List{System.Action{System.Xml.Linq.XElement}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Action<XElement>>
+  nameWithType: List<Action<XElement>>
+  fullName: System.Collections.Generic.List<System.Action<System.Xml.Linq.XElement>>
+  nameWithType.vb: List(Of Action(Of XElement))
+  fullName.vb: System.Collections.Generic.List(Of System.Action(Of System.Xml.Linq.XElement))
+  name.vb: List(Of Action(Of XElement))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Xml.Linq.XElement
+    name: XElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml.linq.xelement
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Xml.Linq.XElement
+    name: XElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.xml.linq.xelement
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.2.0.0:Xunit.Runner.Common.TransformFactory.Transform*
+  commentId: Overload:Xunit.Runner.Common.TransformFactory.Transform
+  href: Xunit.Runner.Common.TransformFactory.Transform.html#Xunit_Runner_Common_TransformFactory_Transform_System_String_System_Xml_Linq_XElement_System_String_
+  name: Transform
+  nameWithType: TransformFactory.Transform
+  fullName: Xunit.Runner.Common.TransformFactory.Transform
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+memberLayout: SeparatePages

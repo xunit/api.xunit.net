@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase
+  commentId: T:Xunit.v3.IXunitDelayEnumeratedTestCase
+  id: IXunitDelayEnumeratedTestCase
+  parent: v3.2.0.1:Xunit.v3
+  children:
+  - v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  langs:
+  - csharp
+  - vb
+  name: IXunitDelayEnumeratedTestCase
+  nameWithType: IXunitDelayEnumeratedTestCase
+  fullName: Xunit.v3.IXunitDelayEnumeratedTestCase
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitDelayEnumeratedTestCase.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: IXunitDelayEnumeratedTestCase
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitDelayEnumeratedTestCase.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Indicates a test case which delays enumeration of tests until execution time.
+  remarks: >-
+    This is normally used when theory data enumeration is performed at execution time, either because theory
+
+    data pre-enumeration was disabled, or data found during discovery was not serializable.
+  example: []
+  syntax:
+    content: 'public interface IXunitDelayEnumeratedTestCase : IXunitTestCase, ITestCase, ITestCaseMetadata'
+    content.vb: Public Interface IXunitDelayEnumeratedTestCase Inherits IXunitTestCase, ITestCase, ITestCaseMetadata
+  inheritedMembers:
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.SkipExceptions
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.SkipReason
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.SkipType
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.SkipUnless
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.SkipWhen
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestClass
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassName
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestCollection
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethod
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodName
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.Timeout
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.CreateTests
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.PostInvoke
+  - v3.2.0.1:Xunit.v3.IXunitTestCase.PreInvoke
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.Explicit
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.Traits
+  - v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  commentId: P:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  id: SkipTestWithoutData
+  parent: v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipTestWithoutData
+  nameWithType: IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  fullName: Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitDelayEnumeratedTestCase.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: SkipTestWithoutData
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitDelayEnumeratedTestCase.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Get a flag to indicate whether test cases with no data should be skipped (instead
+
+    of failed, which is the default behavior).
+  example: []
+  syntax:
+    content: bool SkipTestWithoutData { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SkipTestWithoutData As Boolean
+  overload: v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData*
+references:
+- uid: v3.2.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.SkipExceptions
+  commentId: P:Xunit.v3.IXunitTestCase.SkipExceptions
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipExceptions.html#Xunit_v3_IXunitTestCase_SkipExceptions
+  name: SkipExceptions
+  nameWithType: IXunitTestCase.SkipExceptions
+  fullName: Xunit.v3.IXunitTestCase.SkipExceptions
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.SkipReason
+  commentId: P:Xunit.v3.IXunitTestCase.SkipReason
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipReason.html#Xunit_v3_IXunitTestCase_SkipReason
+  name: SkipReason
+  nameWithType: IXunitTestCase.SkipReason
+  fullName: Xunit.v3.IXunitTestCase.SkipReason
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.SkipType
+  commentId: P:Xunit.v3.IXunitTestCase.SkipType
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipType.html#Xunit_v3_IXunitTestCase_SkipType
+  name: SkipType
+  nameWithType: IXunitTestCase.SkipType
+  fullName: Xunit.v3.IXunitTestCase.SkipType
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.SkipUnless
+  commentId: P:Xunit.v3.IXunitTestCase.SkipUnless
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipUnless.html#Xunit_v3_IXunitTestCase_SkipUnless
+  name: SkipUnless
+  nameWithType: IXunitTestCase.SkipUnless
+  fullName: Xunit.v3.IXunitTestCase.SkipUnless
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.SkipWhen
+  commentId: P:Xunit.v3.IXunitTestCase.SkipWhen
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipWhen.html#Xunit_v3_IXunitTestCase_SkipWhen
+  name: SkipWhen
+  nameWithType: IXunitTestCase.SkipWhen
+  fullName: Xunit.v3.IXunitTestCase.SkipWhen
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestClass
+  commentId: P:Xunit.v3.IXunitTestCase.TestClass
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClass.html#Xunit_v3_IXunitTestCase_TestClass
+  name: TestClass
+  nameWithType: IXunitTestCase.TestClass
+  fullName: Xunit.v3.IXunitTestCase.TestClass
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassMetadataToken.html#Xunit_v3_IXunitTestCase_TestClassMetadataToken
+  name: TestClassMetadataToken
+  nameWithType: IXunitTestCase.TestClassMetadataToken
+  fullName: Xunit.v3.IXunitTestCase.TestClassMetadataToken
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassName
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassName
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassName.html#Xunit_v3_IXunitTestCase_TestClassName
+  name: TestClassName
+  nameWithType: IXunitTestCase.TestClassName
+  fullName: Xunit.v3.IXunitTestCase.TestClassName
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassSimpleName.html#Xunit_v3_IXunitTestCase_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: IXunitTestCase.TestClassSimpleName
+  fullName: Xunit.v3.IXunitTestCase.TestClassSimpleName
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestCollection
+  commentId: P:Xunit.v3.IXunitTestCase.TestCollection
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestCollection.html#Xunit_v3_IXunitTestCase_TestCollection
+  name: TestCollection
+  nameWithType: IXunitTestCase.TestCollection
+  fullName: Xunit.v3.IXunitTestCase.TestCollection
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethod
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethod
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethod.html#Xunit_v3_IXunitTestCase_TestMethod
+  name: TestMethod
+  nameWithType: IXunitTestCase.TestMethod
+  fullName: Xunit.v3.IXunitTestCase.TestMethod
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodMetadataToken.html#Xunit_v3_IXunitTestCase_TestMethodMetadataToken
+  name: TestMethodMetadataToken
+  nameWithType: IXunitTestCase.TestMethodMetadataToken
+  fullName: Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodName
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodName
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodName.html#Xunit_v3_IXunitTestCase_TestMethodName
+  name: TestMethodName
+  nameWithType: IXunitTestCase.TestMethodName
+  fullName: Xunit.v3.IXunitTestCase.TestMethodName
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest.html#Xunit_v3_IXunitTestCase_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: IXunitTestCase.TestMethodParameterTypesVSTest
+  fullName: Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest.html#Xunit_v3_IXunitTestCase_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: IXunitTestCase.TestMethodReturnTypeVSTest
+  fullName: Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.Timeout
+  commentId: P:Xunit.v3.IXunitTestCase.Timeout
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.Timeout.html#Xunit_v3_IXunitTestCase_Timeout
+  name: Timeout
+  nameWithType: IXunitTestCase.Timeout
+  fullName: Xunit.v3.IXunitTestCase.Timeout
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.CreateTests
+  commentId: M:Xunit.v3.IXunitTestCase.CreateTests
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  name: CreateTests()
+  nameWithType: IXunitTestCase.CreateTests()
+  fullName: Xunit.v3.IXunitTestCase.CreateTests()
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  - name: (
+  - name: )
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PostInvoke
+  commentId: M:Xunit.v3.IXunitTestCase.PostInvoke
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  name: PostInvoke()
+  nameWithType: IXunitTestCase.PostInvoke()
+  fullName: Xunit.v3.IXunitTestCase.PostInvoke()
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  - name: (
+  - name: )
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PreInvoke
+  commentId: M:Xunit.v3.IXunitTestCase.PreInvoke
+  parent: v3.2.0.1:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  name: PreInvoke()
+  nameWithType: IXunitTestCase.PreInvoke()
+  fullName: Xunit.v3.IXunitTestCase.PreInvoke()
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.v3.IXunitTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  - name: (
+  - name: )
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.Explicit
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Explicit
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Explicit.html#Xunit_Sdk_ITestCaseMetadata_Explicit
+  name: Explicit
+  nameWithType: ITestCaseMetadata.Explicit
+  fullName: Xunit.Sdk.ITestCaseMetadata.Explicit
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceFilePath.html#Xunit_Sdk_ITestCaseMetadata_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ITestCaseMetadata.SourceFilePath
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber.html#Xunit_Sdk_ITestCaseMetadata_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: ITestCaseMetadata.SourceLineNumber
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName.html#Xunit_Sdk_ITestCaseMetadata_TestCaseDisplayName
+  name: TestCaseDisplayName
+  nameWithType: ITestCaseMetadata.TestCaseDisplayName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace.html#Xunit_Sdk_ITestCaseMetadata_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: ITestCaseMetadata.TestClassNamespace
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Traits
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Traits.html#Xunit_Sdk_ITestCaseMetadata_Traits
+  name: Traits
+  nameWithType: ITestCaseMetadata.Traits
+  fullName: Xunit.Sdk.ITestCaseMetadata.Traits
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  parent: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.UniqueID.html#Xunit_Sdk_ITestCaseMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestCaseMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.2.0.1:Xunit.v3.IXunitTestCase
+  commentId: T:Xunit.v3.IXunitTestCase
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.IXunitTestCase.html
+  name: IXunitTestCase
+  nameWithType: IXunitTestCase
+  fullName: Xunit.v3.IXunitTestCase
+- uid: v3.2.0.1:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3.2.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.1:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData*
+  commentId: Overload:Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  href: Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData.html#Xunit_v3_IXunitDelayEnumeratedTestCase_SkipTestWithoutData
+  name: SkipTestWithoutData
+  nameWithType: IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+  fullName: Xunit.v3.IXunitDelayEnumeratedTestCase.SkipTestWithoutData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

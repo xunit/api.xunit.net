@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.ITestOutputHelper
+  commentId: T:Xunit.ITestOutputHelper
+  id: ITestOutputHelper
+  parent: v3.1.0.1:Xunit
+  children:
+  - v3.1.0.1:Xunit.ITestOutputHelper.Output
+  - v3.1.0.1:Xunit.ITestOutputHelper.Write(System.String)
+  - v3.1.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  - v3.1.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+  - v3.1.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: ITestOutputHelper
+  nameWithType: ITestOutputHelper
+  fullName: Xunit.ITestOutputHelper
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ITestOutputHelper
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Represents a class which can be used to provide test output.
+  example: []
+  syntax:
+    content: public interface ITestOutputHelper
+    content.vb: Public Interface ITestOutputHelper
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.Output
+  commentId: P:Xunit.ITestOutputHelper.Output
+  id: Output
+  parent: v3.1.0.1:Xunit.ITestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Output
+  nameWithType: ITestOutputHelper.Output
+  fullName: Xunit.ITestOutputHelper.Output
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Output
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the output provided by the test.
+  remarks: >-
+    Note: This also ensures that any partial output that hasn't been reported yet gets reported.
+
+    Calling in the middle of test execution is therefore not recommend.
+  example: []
+  syntax:
+    content: string Output { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Output As String
+  overload: v3.1.0.1:Xunit.ITestOutputHelper.Output*
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.Write(System.String)
+  commentId: M:Xunit.ITestOutputHelper.Write(System.String)
+  id: Write(System.String)
+  parent: v3.1.0.1:Xunit.ITestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: ITestOutputHelper.Write(string)
+  fullName: Xunit.ITestOutputHelper.Write(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds text to the output.
+  example: []
+  syntax:
+    content: void Write(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message
+    content.vb: Sub Write(message As String)
+  overload: v3.1.0.1:Xunit.ITestOutputHelper.Write*
+  nameWithType.vb: ITestOutputHelper.Write(String)
+  fullName.vb: Xunit.ITestOutputHelper.Write(String)
+  name.vb: Write(String)
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  commentId: M:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  id: Write(System.String,System.Object[])
+  parent: v3.1.0.1:Xunit.ITestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, params object[])
+  nameWithType: ITestOutputHelper.Write(string, params object[])
+  fullName: Xunit.ITestOutputHelper.Write(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds formatted text to the output.
+  example: []
+  syntax:
+    content: void Write(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format
+    - id: args
+      type: System.Object[]
+      description: The format arguments
+    content.vb: Sub Write(format As String, ParamArray args As Object())
+  overload: v3.1.0.1:Xunit.ITestOutputHelper.Write*
+  nameWithType.vb: ITestOutputHelper.Write(String, ParamArray Object())
+  fullName.vb: Xunit.ITestOutputHelper.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+  commentId: M:Xunit.ITestOutputHelper.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: v3.1.0.1:Xunit.ITestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string)
+  nameWithType: ITestOutputHelper.WriteLine(string)
+  fullName: Xunit.ITestOutputHelper.WriteLine(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 37
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds text to the output, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: void WriteLine(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message
+    content.vb: Sub WriteLine(message As String)
+  overload: v3.1.0.1:Xunit.ITestOutputHelper.WriteLine*
+  nameWithType.vb: ITestOutputHelper.WriteLine(String)
+  fullName.vb: Xunit.ITestOutputHelper.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  commentId: M:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  id: WriteLine(System.String,System.Object[])
+  parent: v3.1.0.1:Xunit.ITestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, params object[])
+  nameWithType: ITestOutputHelper.WriteLine(string, params object[])
+  fullName: Xunit.ITestOutputHelper.WriteLine(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestOutputHelper.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.core/ITestOutputHelper.cs
+    startLine: 44
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds formatted text to the output, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: void WriteLine(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format
+    - id: args
+      type: System.Object[]
+      description: The format arguments
+    content.vb: Sub WriteLine(format As String, ParamArray args As Object())
+  overload: v3.1.0.1:Xunit.ITestOutputHelper.WriteLine*
+  nameWithType.vb: ITestOutputHelper.WriteLine(String, ParamArray Object())
+  fullName.vb: Xunit.ITestOutputHelper.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+references:
+- uid: v3.1.0.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.Output*
+  commentId: Overload:Xunit.ITestOutputHelper.Output
+  href: Xunit.ITestOutputHelper.Output.html#Xunit_ITestOutputHelper_Output
+  name: Output
+  nameWithType: ITestOutputHelper.Output
+  fullName: Xunit.ITestOutputHelper.Output
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.Write*
+  commentId: Overload:Xunit.ITestOutputHelper.Write
+  href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_
+  name: Write
+  nameWithType: ITestOutputHelper.Write
+  fullName: Xunit.ITestOutputHelper.Write
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.newline
+  name: NewLine
+  nameWithType: Environment.NewLine
+  fullName: System.Environment.NewLine
+- uid: v3.1.0.1:Xunit.ITestOutputHelper.WriteLine*
+  commentId: Overload:Xunit.ITestOutputHelper.WriteLine
+  href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_
+  name: WriteLine
+  nameWithType: ITestOutputHelper.WriteLine
+  fullName: Xunit.ITestOutputHelper.WriteLine
+memberLayout: SeparatePages

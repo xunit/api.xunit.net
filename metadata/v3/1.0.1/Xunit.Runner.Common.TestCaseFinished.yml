@@ -1,0 +1,1281 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  commentId: T:Xunit.Runner.Common.TestCaseFinished
+  id: TestCaseFinished
+  parent: v3.1.0.1:Xunit.Runner.Common
+  children:
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsFailed
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsTotal
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ToString
+  langs:
+  - csharp
+  - vb
+  name: TestCaseFinished
+  nameWithType: TestCaseFinished
+  fullName: Xunit.Runner.Common.TestCaseFinished
+  type: Class
+  source:
+    remote:
+      path: src/common/MessagePartials/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestCaseFinished
+    path: ../src/common/MessagePartials/TestCaseFinished.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Default implementation of <xref href="v3.1.0.1:Xunit.Sdk.ITestCaseFinished" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [JsonTypeID("test-case-finished")]
+
+      public sealed class TestCaseFinished : TestCaseMessage, IJsonDeserializable, ITestCaseFinished, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IExecutionSummaryMetadata
+    content.vb: >-
+      <JsonTypeID("test-case-finished")>
+
+      Public NotInheritable Class TestCaseFinished Inherits TestCaseMessage Implements IJsonDeserializable, ITestCaseFinished, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IExecutionSummaryMetadata
+  inheritance:
+  - System.Object
+  - v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage
+  - v3.1.0.1:Xunit.Runner.Common.TestAssemblyMessage
+  - v3.1.0.1:Xunit.Runner.Common.TestCollectionMessage
+  - v3.1.0.1:Xunit.Runner.Common.TestClassMessage
+  - v3.1.0.1:Xunit.Runner.Common.TestMethodMessage
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IJsonDeserializable
+  - v3.1.0.1:Xunit.Sdk.ITestCaseFinished
+  - v3.1.0.1:Xunit.Sdk.ITestCaseMessage
+  - v3.1.0.1:Xunit.Sdk.ITestMethodMessage
+  - v3.1.0.1:Xunit.Sdk.ITestClassMessage
+  - v3.1.0.1:Xunit.Sdk.ITestCollectionMessage
+  - v3.1.0.1:Xunit.Sdk.ITestAssemblyMessage
+  - v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+  - v3.1.0.1:Xunit.Sdk.IJsonSerializable
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  inheritedMembers:
+  - v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.TestCaseUniqueID
+  - v3.1.0.1:Xunit.Runner.Common.TestMethodMessage.TestMethodUniqueID
+  - v3.1.0.1:Xunit.Runner.Common.TestClassMessage.TestClassUniqueID
+  - v3.1.0.1:Xunit.Runner.Common.TestCollectionMessage.TestCollectionUniqueID
+  - v3.1.0.1:Xunit.Runner.Common.TestAssemblyMessage.AssemblyUniqueID
+  - v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.UnsetStringPropertyValue
+  - v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  - v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.ToJson
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - v3.1.0.1:Xunit.Sdk.IMessageSinkMessage.Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Runner.Common.MessageHandler{{TMessage}})
+  attributes:
+  - type: Xunit.Sdk.JsonTypeIDAttribute
+    ctor: Xunit.Sdk.JsonTypeIDAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: test-case-finished
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+  commentId: P:Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+  id: ExecutionTime
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: ExecutionTime
+  nameWithType: TestCaseFinished.ExecutionTime
+  fullName: Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ExecutionTime
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the execution time (in seconds) for this execution.
+  remarks: 'Note: Will be <code>0</code> if there was no value provided during deserialization.'
+  example: []
+  syntax:
+    content: public required decimal ExecutionTime { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property ExecutionTime As Decimal
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ExecutionTime*
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsFailed
+  commentId: P:Xunit.Runner.Common.TestCaseFinished.TestsFailed
+  id: TestsFailed
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: TestsFailed
+  nameWithType: TestCaseFinished.TestsFailed
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsFailed
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestsFailed
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the number of failing tests.
+  remarks: 'Note: Will be <code>0</code> if there was no value provided during deserialization.'
+  example: []
+  syntax:
+    content: public required int TestsFailed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TestsFailed As Integer
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsFailed*
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+  commentId: P:Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+  id: TestsNotRun
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: TestsNotRun
+  nameWithType: TestCaseFinished.TestsNotRun
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestsNotRun
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the number of tests that were not run. This includes explicit tests when explicit tests are not run,
+
+    or non-expicit tests when non-explicit tests are not run.
+  remarks: 'Note: Will be <code>0</code> if there was no value provided during deserialization.'
+  example: []
+  syntax:
+    content: public required int TestsNotRun { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TestsNotRun As Integer
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsNotRun*
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+  commentId: P:Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+  id: TestsSkipped
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: TestsSkipped
+  nameWithType: TestCaseFinished.TestsSkipped
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestsSkipped
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 30
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the number of skipped tests.
+  remarks: 'Note: Will be <code>0</code> if there was no value provided during deserialization.'
+  example: []
+  syntax:
+    content: public required int TestsSkipped { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TestsSkipped As Integer
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsSkipped*
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsTotal
+  commentId: P:Xunit.Runner.Common.TestCaseFinished.TestsTotal
+  id: TestsTotal
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: TestsTotal
+  nameWithType: TestCaseFinished.TestsTotal
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsTotal
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: TestsTotal
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the total number of tests run and not run.
+  remarks: 'Note: Will be <code>0</code> if there was no value provided during deserialization.'
+  example: []
+  syntax:
+    content: public required int TestsTotal { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TestsTotal As Integer
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsTotal*
+  implements:
+  - v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  commentId: M:Xunit.Runner.Common.TestCaseFinished.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  id: Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(IReadOnlyDictionary<string, object?>)
+  nameWithType: TestCaseFinished.Deserialize(IReadOnlyDictionary<string, object?>)
+  fullName: Xunit.Runner.Common.TestCaseFinished.Deserialize(System.Collections.Generic.IReadOnlyDictionary<string, object?>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.runner.common/Messages/TestCaseFinished.cs
+    startLine: 39
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Override to deserialize the values in the dictionary into the message.
+  example: []
+  syntax:
+    content: protected override void Deserialize(IReadOnlyDictionary<string, object?> root)
+    parameters:
+    - id: root
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+      description: The root of the JSON object
+    content.vb: Protected Overrides Sub Deserialize(root As IReadOnlyDictionary(Of String, Object))
+  overridden: Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Deserialize*
+  nameWithType.vb: TestCaseFinished.Deserialize(IReadOnlyDictionary(Of String, Object))
+  fullName.vb: Xunit.Runner.Common.TestCaseFinished.Deserialize(System.Collections.Generic.IReadOnlyDictionary(Of String, Object))
+  name.vb: Deserialize(IReadOnlyDictionary(Of String, Object))
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  commentId: M:Xunit.Runner.Common.TestCaseFinished.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  id: Serialize(Xunit.Sdk.JsonObjectSerializer)
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: Serialize(JsonObjectSerializer)
+  nameWithType: TestCaseFinished.Serialize(JsonObjectSerializer)
+  fullName: Xunit.Runner.Common.TestCaseFinished.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/common/MessagePartials/TestCaseFinished.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Override to serialize the values in the message into JSON.
+  example: []
+  syntax:
+    content: protected override void Serialize(JsonObjectSerializer serializer)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: The serializer to write values to.
+    content.vb: Protected Overrides Sub Serialize(serializer As JsonObjectSerializer)
+  overridden: Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Serialize*
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ToString
+  commentId: M:Xunit.Runner.Common.TestCaseFinished.ToString
+  id: ToString
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TestCaseFinished.ToString()
+  fullName: Xunit.Runner.Common.TestCaseFinished.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/TestCaseFinished.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ToString
+    path: ../src/common/MessagePartials/TestCaseFinished.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Xunit.Runner.Common.TestCaseMessage.ToString
+  overload: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ToString*
+references:
+- uid: v3.1.0.1:Xunit.Sdk.ITestCaseFinished
+  commentId: T:Xunit.Sdk.ITestCaseFinished
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseFinished.html
+  name: ITestCaseFinished
+  nameWithType: ITestCaseFinished
+  fullName: Xunit.Sdk.ITestCaseFinished
+- uid: v3.1.0.1:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage
+  commentId: T:Xunit.Runner.Common.MessageSinkMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.MessageSinkMessage.html
+  name: MessageSinkMessage
+  nameWithType: MessageSinkMessage
+  fullName: Xunit.Runner.Common.MessageSinkMessage
+- uid: v3.1.0.1:Xunit.Runner.Common.TestAssemblyMessage
+  commentId: T:Xunit.Runner.Common.TestAssemblyMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestAssemblyMessage.html
+  name: TestAssemblyMessage
+  nameWithType: TestAssemblyMessage
+  fullName: Xunit.Runner.Common.TestAssemblyMessage
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCollectionMessage
+  commentId: T:Xunit.Runner.Common.TestCollectionMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestCollectionMessage.html
+  name: TestCollectionMessage
+  nameWithType: TestCollectionMessage
+  fullName: Xunit.Runner.Common.TestCollectionMessage
+- uid: v3.1.0.1:Xunit.Runner.Common.TestClassMessage
+  commentId: T:Xunit.Runner.Common.TestClassMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestClassMessage.html
+  name: TestClassMessage
+  nameWithType: TestClassMessage
+  fullName: Xunit.Runner.Common.TestClassMessage
+- uid: v3.1.0.1:Xunit.Runner.Common.TestMethodMessage
+  commentId: T:Xunit.Runner.Common.TestMethodMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestMethodMessage.html
+  name: TestMethodMessage
+  nameWithType: TestMethodMessage
+  fullName: Xunit.Runner.Common.TestMethodMessage
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  commentId: T:Xunit.Runner.Common.TestCaseMessage
+  parent: v3.1.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestCaseMessage.html
+  name: TestCaseMessage
+  nameWithType: TestCaseMessage
+  fullName: Xunit.Runner.Common.TestCaseMessage
+- uid: v3.1.0.1:Xunit.Sdk.IJsonDeserializable
+  commentId: T:Xunit.Sdk.IJsonDeserializable
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IJsonDeserializable.html
+  name: IJsonDeserializable
+  nameWithType: IJsonDeserializable
+  fullName: Xunit.Sdk.IJsonDeserializable
+- uid: v3.1.0.1:Xunit.Sdk.ITestCaseMessage
+  commentId: T:Xunit.Sdk.ITestCaseMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMessage.html
+  name: ITestCaseMessage
+  nameWithType: ITestCaseMessage
+  fullName: Xunit.Sdk.ITestCaseMessage
+- uid: v3.1.0.1:Xunit.Sdk.ITestMethodMessage
+  commentId: T:Xunit.Sdk.ITestMethodMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodMessage.html
+  name: ITestMethodMessage
+  nameWithType: ITestMethodMessage
+  fullName: Xunit.Sdk.ITestMethodMessage
+- uid: v3.1.0.1:Xunit.Sdk.ITestClassMessage
+  commentId: T:Xunit.Sdk.ITestClassMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassMessage.html
+  name: ITestClassMessage
+  nameWithType: ITestClassMessage
+  fullName: Xunit.Sdk.ITestClassMessage
+- uid: v3.1.0.1:Xunit.Sdk.ITestCollectionMessage
+  commentId: T:Xunit.Sdk.ITestCollectionMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionMessage.html
+  name: ITestCollectionMessage
+  nameWithType: ITestCollectionMessage
+  fullName: Xunit.Sdk.ITestCollectionMessage
+- uid: v3.1.0.1:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: v3.1.0.1:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  commentId: T:Xunit.Sdk.IExecutionSummaryMetadata
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IExecutionSummaryMetadata.html
+  name: IExecutionSummaryMetadata
+  nameWithType: IExecutionSummaryMetadata
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.TestCaseUniqueID
+  commentId: P:Xunit.Runner.Common.TestCaseMessage.TestCaseUniqueID
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  href: Xunit.Runner.Common.TestCaseMessage.TestCaseUniqueID.html#Xunit_Runner_Common_TestCaseMessage_TestCaseUniqueID
+  name: TestCaseUniqueID
+  nameWithType: TestCaseMessage.TestCaseUniqueID
+  fullName: Xunit.Runner.Common.TestCaseMessage.TestCaseUniqueID
+- uid: v3.1.0.1:Xunit.Runner.Common.TestMethodMessage.TestMethodUniqueID
+  commentId: P:Xunit.Runner.Common.TestMethodMessage.TestMethodUniqueID
+  parent: v3.1.0.1:Xunit.Runner.Common.TestMethodMessage
+  href: Xunit.Runner.Common.TestMethodMessage.TestMethodUniqueID.html#Xunit_Runner_Common_TestMethodMessage_TestMethodUniqueID
+  name: TestMethodUniqueID
+  nameWithType: TestMethodMessage.TestMethodUniqueID
+  fullName: Xunit.Runner.Common.TestMethodMessage.TestMethodUniqueID
+- uid: v3.1.0.1:Xunit.Runner.Common.TestClassMessage.TestClassUniqueID
+  commentId: P:Xunit.Runner.Common.TestClassMessage.TestClassUniqueID
+  parent: v3.1.0.1:Xunit.Runner.Common.TestClassMessage
+  href: Xunit.Runner.Common.TestClassMessage.TestClassUniqueID.html#Xunit_Runner_Common_TestClassMessage_TestClassUniqueID
+  name: TestClassUniqueID
+  nameWithType: TestClassMessage.TestClassUniqueID
+  fullName: Xunit.Runner.Common.TestClassMessage.TestClassUniqueID
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCollectionMessage.TestCollectionUniqueID
+  commentId: P:Xunit.Runner.Common.TestCollectionMessage.TestCollectionUniqueID
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCollectionMessage
+  href: Xunit.Runner.Common.TestCollectionMessage.TestCollectionUniqueID.html#Xunit_Runner_Common_TestCollectionMessage_TestCollectionUniqueID
+  name: TestCollectionUniqueID
+  nameWithType: TestCollectionMessage.TestCollectionUniqueID
+  fullName: Xunit.Runner.Common.TestCollectionMessage.TestCollectionUniqueID
+- uid: v3.1.0.1:Xunit.Runner.Common.TestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Runner.Common.TestAssemblyMessage.AssemblyUniqueID
+  parent: v3.1.0.1:Xunit.Runner.Common.TestAssemblyMessage
+  href: Xunit.Runner.Common.TestAssemblyMessage.AssemblyUniqueID.html#Xunit_Runner_Common_TestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: TestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Runner.Common.TestAssemblyMessage.AssemblyUniqueID
+- uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.UnsetStringPropertyValue
+  commentId: F:Xunit.Runner.Common.MessageSinkMessage.UnsetStringPropertyValue
+  parent: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage
+  href: Xunit.Runner.Common.MessageSinkMessage.UnsetStringPropertyValue.html#Xunit_Runner_Common_MessageSinkMessage_UnsetStringPropertyValue
+  name: UnsetStringPropertyValue
+  nameWithType: MessageSinkMessage.UnsetStringPropertyValue
+  fullName: Xunit.Runner.Common.MessageSinkMessage.UnsetStringPropertyValue
+- uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  commentId: M:Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  parent: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage
+  isExternal: true
+  href: Xunit.Runner.Common.MessageSinkMessage.FromJson.html#Xunit_Runner_Common_MessageSinkMessage_FromJson_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  name: FromJson(IReadOnlyDictionary<string, object>)
+  nameWithType: MessageSinkMessage.FromJson(IReadOnlyDictionary<string, object>)
+  fullName: Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary<string, object>)
+  nameWithType.vb: MessageSinkMessage.FromJson(IReadOnlyDictionary(Of String, Object))
+  fullName.vb: Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary(Of String, Object))
+  name.vb: FromJson(IReadOnlyDictionary(Of String, Object))
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    name: FromJson
+    href: Xunit.Runner.Common.MessageSinkMessage.FromJson.html#Xunit_Runner_Common_MessageSinkMessage_FromJson_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.FromJson(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    name: FromJson
+    href: Xunit.Runner.Common.MessageSinkMessage.FromJson.html#Xunit_Runner_Common_MessageSinkMessage_FromJson_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.ToJson
+  commentId: M:Xunit.Runner.Common.MessageSinkMessage.ToJson
+  parent: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage
+  href: Xunit.Runner.Common.MessageSinkMessage.ToJson.html#Xunit_Runner_Common_MessageSinkMessage_ToJson
+  name: ToJson()
+  nameWithType: MessageSinkMessage.ToJson()
+  fullName: Xunit.Runner.Common.MessageSinkMessage.ToJson()
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.ToJson
+    name: ToJson
+    href: Xunit.Runner.Common.MessageSinkMessage.ToJson.html#Xunit_Runner_Common_MessageSinkMessage_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageSinkMessage.ToJson
+    name: ToJson
+    href: Xunit.Runner.Common.MessageSinkMessage.ToJson.html#Xunit_Runner_Common_MessageSinkMessage_ToJson
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage.Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Runner.Common.MessageHandler{{TMessage}})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  parent: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions
+  definition: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  name: DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen<TMessage>(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler<TMessage>)
+  nameWithType.vb: MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler(Of TMessage))
+  name.vb: DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  name: DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen<TMessage>(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler<TMessage>)
+  nameWithType.vb: MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler(Of TMessage))
+  name.vb: DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.1:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: v3.1.0.1:Xunit.Sdk.MessageSinkMessageExtensions
+  commentId: T:Xunit.Sdk.MessageSinkMessageExtensions
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.MessageSinkMessageExtensions.html
+  name: MessageSinkMessageExtensions
+  nameWithType: MessageSinkMessageExtensions
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ExecutionTime*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+  href: Xunit.Runner.Common.TestCaseFinished.ExecutionTime.html#Xunit_Runner_Common_TestCaseFinished_ExecutionTime
+  name: ExecutionTime
+  nameWithType: TestCaseFinished.ExecutionTime
+  fullName: Xunit.Runner.Common.TestCaseFinished.ExecutionTime
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  parent: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  href: Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime.html#Xunit_Sdk_IExecutionSummaryMetadata_ExecutionTime
+  name: ExecutionTime
+  nameWithType: IExecutionSummaryMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsFailed*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.TestsFailed
+  href: Xunit.Runner.Common.TestCaseFinished.TestsFailed.html#Xunit_Runner_Common_TestCaseFinished_TestsFailed
+  name: TestsFailed
+  nameWithType: TestCaseFinished.TestsFailed
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsFailed
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  parent: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsFailed
+  name: TestsFailed
+  nameWithType: IExecutionSummaryMetadata.TestsFailed
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsNotRun*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+  href: Xunit.Runner.Common.TestCaseFinished.TestsNotRun.html#Xunit_Runner_Common_TestCaseFinished_TestsNotRun
+  name: TestsNotRun
+  nameWithType: TestCaseFinished.TestsNotRun
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsNotRun
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  parent: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsNotRun
+  name: TestsNotRun
+  nameWithType: IExecutionSummaryMetadata.TestsNotRun
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsSkipped*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+  href: Xunit.Runner.Common.TestCaseFinished.TestsSkipped.html#Xunit_Runner_Common_TestCaseFinished_TestsSkipped
+  name: TestsSkipped
+  nameWithType: TestCaseFinished.TestsSkipped
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsSkipped
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  parent: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsSkipped
+  name: TestsSkipped
+  nameWithType: IExecutionSummaryMetadata.TestsSkipped
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.TestsTotal*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.TestsTotal
+  href: Xunit.Runner.Common.TestCaseFinished.TestsTotal.html#Xunit_Runner_Common_TestCaseFinished_TestsTotal
+  name: TestsTotal
+  nameWithType: TestCaseFinished.TestsTotal
+  fullName: Xunit.Runner.Common.TestCaseFinished.TestsTotal
+- uid: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  parent: v3.1.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsTotal
+  name: TestsTotal
+  nameWithType: IExecutionSummaryMetadata.TestsTotal
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  commentId: M:Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  isExternal: true
+  href: Xunit.Runner.Common.TestCaseMessage.Deserialize.html#Xunit_Runner_Common_TestCaseMessage_Deserialize_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  name: Deserialize(IReadOnlyDictionary<string, object>)
+  nameWithType: TestCaseMessage.Deserialize(IReadOnlyDictionary<string, object>)
+  fullName: Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary<string, object>)
+  nameWithType.vb: TestCaseMessage.Deserialize(IReadOnlyDictionary(Of String, Object))
+  fullName.vb: Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary(Of String, Object))
+  name.vb: Deserialize(IReadOnlyDictionary(Of String, Object))
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    name: Deserialize
+    href: Xunit.Runner.Common.TestCaseMessage.Deserialize.html#Xunit_Runner_Common_TestCaseMessage_Deserialize_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Deserialize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    name: Deserialize
+    href: Xunit.Runner.Common.TestCaseMessage.Deserialize.html#Xunit_Runner_Common_TestCaseMessage_Deserialize_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Deserialize*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.Deserialize
+  href: Xunit.Runner.Common.TestCaseFinished.Deserialize.html#Xunit_Runner_Common_TestCaseFinished_Deserialize_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  name: Deserialize
+  nameWithType: TestCaseFinished.Deserialize
+  fullName: Xunit.Runner.Common.TestCaseFinished.Deserialize
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, object>
+  nameWithType: IReadOnlyDictionary<string, object>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, object>
+  nameWithType.vb: IReadOnlyDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Object)
+  name.vb: IReadOnlyDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  commentId: M:Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  href: Xunit.Runner.Common.TestCaseMessage.Serialize.html#Xunit_Runner_Common_TestCaseMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  name: Serialize(JsonObjectSerializer)
+  nameWithType: TestCaseMessage.Serialize(JsonObjectSerializer)
+  fullName: Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+    name: Serialize
+    href: Xunit.Runner.Common.TestCaseMessage.Serialize.html#Xunit_Runner_Common_TestCaseMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.JsonObjectSerializer
+    name: JsonObjectSerializer
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+    name: Serialize
+    href: Xunit.Runner.Common.TestCaseMessage.Serialize.html#Xunit_Runner_Common_TestCaseMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  - name: (
+  - uid: v3.1.0.1:Xunit.Sdk.JsonObjectSerializer
+    name: JsonObjectSerializer
+  - name: )
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.Serialize*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.Serialize
+  href: Xunit.Runner.Common.TestCaseFinished.Serialize.html#Xunit_Runner_Common_TestCaseFinished_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  name: Serialize
+  nameWithType: TestCaseFinished.Serialize
+  fullName: Xunit.Runner.Common.TestCaseFinished.Serialize
+- uid: v3.1.0.1:Xunit.Sdk.JsonObjectSerializer
+  commentId: T:Xunit.Sdk.JsonObjectSerializer
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.JsonObjectSerializer.html
+  name: JsonObjectSerializer
+  nameWithType: JsonObjectSerializer
+  fullName: Xunit.Sdk.JsonObjectSerializer
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.ToString
+  commentId: M:Xunit.Runner.Common.TestCaseMessage.ToString
+  parent: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage
+  href: Xunit.Runner.Common.TestCaseMessage.ToString.html#Xunit_Runner_Common_TestCaseMessage_ToString
+  name: ToString()
+  nameWithType: TestCaseMessage.ToString()
+  fullName: Xunit.Runner.Common.TestCaseMessage.ToString()
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.ToString
+    name: ToString
+    href: Xunit.Runner.Common.TestCaseMessage.ToString.html#Xunit_Runner_Common_TestCaseMessage_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.1:Xunit.Runner.Common.TestCaseMessage.ToString
+    name: ToString
+    href: Xunit.Runner.Common.TestCaseMessage.ToString.html#Xunit_Runner_Common_TestCaseMessage_ToString
+  - name: (
+  - name: )
+- uid: v3.1.0.1:Xunit.Runner.Common.TestCaseFinished.ToString*
+  commentId: Overload:Xunit.Runner.Common.TestCaseFinished.ToString
+  href: Xunit.Runner.Common.TestCaseFinished.ToString.html#Xunit_Runner_Common_TestCaseFinished_ToString
+  name: ToString
+  nameWithType: TestCaseFinished.ToString
+  fullName: Xunit.Runner.Common.TestCaseFinished.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+memberLayout: SeparatePages

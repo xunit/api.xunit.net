@@ -1,0 +1,933 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  commentId: T:Xunit.v3.MaxConcurrencySyncContext
+  id: MaxConcurrencySyncContext
+  parent: v3.2.0.0:Xunit.v3
+  children:
+  - v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.#ctor(System.Int32)
+  - v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Dispose
+  - v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  - v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: MaxConcurrencySyncContext
+  nameWithType: MaxConcurrencySyncContext
+  fullName: Xunit.v3.MaxConcurrencySyncContext
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: MaxConcurrencySyncContext
+    path: ../src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    An implementation of <xref href="System.Threading.SynchronizationContext" data-throw-if-not-resolved="false"></xref> which runs work on custom threads
+
+    rather than in the thread pool, and limits the number of in-flight actions.
+  example: []
+  syntax:
+    content: 'public class MaxConcurrencySyncContext : SynchronizationContext, IDisposable'
+    content.vb: Public Class MaxConcurrencySyncContext Inherits SynchronizationContext Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.SynchronizationContext
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.SynchronizationContext.CreateCopy
+  - System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  - System.Threading.SynchronizationContext.OperationCompleted
+  - System.Threading.SynchronizationContext.OperationStarted
+  - System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  - System.Threading.SynchronizationContext.SetWaitNotificationRequired
+  - System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  - System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[],System.Boolean,System.Int32)
+  - System.Threading.SynchronizationContext.Current
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.#ctor(System.Int32)
+  commentId: M:Xunit.v3.MaxConcurrencySyncContext.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  langs:
+  - csharp
+  - vb
+  name: MaxConcurrencySyncContext(int)
+  nameWithType: MaxConcurrencySyncContext.MaxConcurrencySyncContext(int)
+  fullName: Xunit.v3.MaxConcurrencySyncContext.MaxConcurrencySyncContext(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MaxConcurrencySyncContext(int maximumConcurrencyLevel)
+    parameters:
+    - id: maximumConcurrencyLevel
+      type: System.Int32
+      description: The maximum number of tasks to run at any one time.
+    content.vb: Public Sub New(maximumConcurrencyLevel As Integer)
+  overload: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.#ctor*
+  nameWithType.vb: MaxConcurrencySyncContext.New(Integer)
+  fullName.vb: Xunit.v3.MaxConcurrencySyncContext.New(Integer)
+  name.vb: New(Integer)
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Dispose
+  commentId: M:Xunit.v3.MaxConcurrencySyncContext.Dispose
+  id: Dispose
+  parent: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MaxConcurrencySyncContext.Dispose()
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+    startLine: 34
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:Xunit.v3.MaxConcurrencySyncContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  id: Post(System.Threading.SendOrPostCallback,System.Object)
+  parent: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  langs:
+  - csharp
+  - vb
+  name: Post(SendOrPostCallback, object?)
+  nameWithType: MaxConcurrencySyncContext.Post(SendOrPostCallback, object?)
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Post(System.Threading.SendOrPostCallback, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Post
+    path: ../src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public override void Post(SendOrPostCallback d, object? state)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+    - id: state
+      type: System.Object
+    content.vb: Public Overrides Sub Post(d As SendOrPostCallback, state As Object)
+  overridden: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  overload: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Post*
+  nameWithType.vb: MaxConcurrencySyncContext.Post(SendOrPostCallback, Object)
+  fullName.vb: Xunit.v3.MaxConcurrencySyncContext.Post(System.Threading.SendOrPostCallback, Object)
+  name.vb: Post(SendOrPostCallback, Object)
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:Xunit.v3.MaxConcurrencySyncContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  id: Send(System.Threading.SendOrPostCallback,System.Object)
+  parent: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  langs:
+  - csharp
+  - vb
+  name: Send(SendOrPostCallback, object?)
+  nameWithType: MaxConcurrencySyncContext.Send(SendOrPostCallback, object?)
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Send(System.Threading.SendOrPostCallback, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Send
+    path: ../src/xunit.v3.core/Utility/MaxConcurrencySyncContext.cs
+    startLine: 71
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public override void Send(SendOrPostCallback d, object? state)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+    - id: state
+      type: System.Object
+    content.vb: Public Overrides Sub Send(d As SendOrPostCallback, state As Object)
+  overridden: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  overload: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Send*
+  nameWithType.vb: MaxConcurrencySyncContext.Send(SendOrPostCallback, Object)
+  fullName.vb: Xunit.v3.MaxConcurrencySyncContext.Send(System.Threading.SendOrPostCallback, Object)
+  name.vb: Send(SendOrPostCallback, Object)
+references:
+- uid: System.Threading.SynchronizationContext
+  commentId: T:System.Threading.SynchronizationContext
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  name: SynchronizationContext
+  nameWithType: SynchronizationContext
+  fullName: System.Threading.SynchronizationContext
+- uid: v3.2.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.SynchronizationContext.CreateCopy
+  commentId: M:System.Threading.SynchronizationContext.CreateCopy
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  name: CreateCopy()
+  nameWithType: SynchronizationContext.CreateCopy()
+  fullName: System.Threading.SynchronizationContext.CreateCopy()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.CreateCopy
+    name: CreateCopy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.CreateCopy
+    name: CreateCopy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  commentId: M:System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  name: IsWaitNotificationRequired()
+  nameWithType: SynchronizationContext.IsWaitNotificationRequired()
+  fullName: System.Threading.SynchronizationContext.IsWaitNotificationRequired()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+    name: IsWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+    name: IsWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.OperationCompleted
+  commentId: M:System.Threading.SynchronizationContext.OperationCompleted
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  name: OperationCompleted()
+  nameWithType: SynchronizationContext.OperationCompleted()
+  fullName: System.Threading.SynchronizationContext.OperationCompleted()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.OperationCompleted
+    name: OperationCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.OperationCompleted
+    name: OperationCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.OperationStarted
+  commentId: M:System.Threading.SynchronizationContext.OperationStarted
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  name: OperationStarted()
+  nameWithType: SynchronizationContext.OperationStarted()
+  fullName: System.Threading.SynchronizationContext.OperationStarted()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.OperationStarted
+    name: OperationStarted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.OperationStarted
+    name: OperationStarted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  commentId: M:System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  name: SetSynchronizationContext(SynchronizationContext)
+  nameWithType: SynchronizationContext.SetSynchronizationContext(SynchronizationContext)
+  fullName: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+    name: SetSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  - name: (
+  - uid: System.Threading.SynchronizationContext
+    name: SynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+    name: SetSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  - name: (
+  - uid: System.Threading.SynchronizationContext
+    name: SynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  - name: )
+- uid: System.Threading.SynchronizationContext.SetWaitNotificationRequired
+  commentId: M:System.Threading.SynchronizationContext.SetWaitNotificationRequired
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setwaitnotificationrequired
+  name: SetWaitNotificationRequired()
+  nameWithType: SynchronizationContext.SetWaitNotificationRequired()
+  fullName: System.Threading.SynchronizationContext.SetWaitNotificationRequired()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.SetWaitNotificationRequired
+    name: SetWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setwaitnotificationrequired
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.SetWaitNotificationRequired
+    name: SetWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setwaitnotificationrequired
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  commentId: M:System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  name: Wait(IntPtr[], bool, int)
+  nameWithType: SynchronizationContext.Wait(IntPtr[], bool, int)
+  fullName: System.Threading.SynchronizationContext.Wait(System.IntPtr[], bool, int)
+  nameWithType.vb: SynchronizationContext.Wait(IntPtr(), Boolean, Integer)
+  fullName.vb: System.Threading.SynchronizationContext.Wait(System.IntPtr(), Boolean, Integer)
+  name.vb: Wait(IntPtr(), Boolean, Integer)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+    name: Wait
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+    name: Wait
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[],System.Boolean,System.Int32)
+  commentId: M:System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[],System.Boolean,System.Int32)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.waithelper
+  name: WaitHelper(IntPtr[], bool, int)
+  nameWithType: SynchronizationContext.WaitHelper(IntPtr[], bool, int)
+  fullName: System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[], bool, int)
+  nameWithType.vb: SynchronizationContext.WaitHelper(IntPtr(), Boolean, Integer)
+  fullName.vb: System.Threading.SynchronizationContext.WaitHelper(System.IntPtr(), Boolean, Integer)
+  name.vb: WaitHelper(IntPtr(), Boolean, Integer)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[],System.Boolean,System.Int32)
+    name: WaitHelper
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.waithelper
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.WaitHelper(System.IntPtr[],System.Boolean,System.Int32)
+    name: WaitHelper
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.waithelper
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.SynchronizationContext.Current
+  commentId: P:System.Threading.SynchronizationContext.Current
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.current
+  name: Current
+  nameWithType: SynchronizationContext.Current
+  fullName: System.Threading.SynchronizationContext.Current
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext
+  commentId: T:Xunit.v3.MaxConcurrencySyncContext
+  href: Xunit.v3.MaxConcurrencySyncContext.html
+  name: MaxConcurrencySyncContext
+  nameWithType: MaxConcurrencySyncContext
+  fullName: Xunit.v3.MaxConcurrencySyncContext
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.#ctor*
+  commentId: Overload:Xunit.v3.MaxConcurrencySyncContext.#ctor
+  href: Xunit.v3.MaxConcurrencySyncContext.-ctor.html#Xunit_v3_MaxConcurrencySyncContext__ctor_System_Int32_
+  name: MaxConcurrencySyncContext
+  nameWithType: MaxConcurrencySyncContext.MaxConcurrencySyncContext
+  fullName: Xunit.v3.MaxConcurrencySyncContext.MaxConcurrencySyncContext
+  nameWithType.vb: MaxConcurrencySyncContext.New
+  fullName.vb: Xunit.v3.MaxConcurrencySyncContext.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Dispose*
+  commentId: Overload:Xunit.v3.MaxConcurrencySyncContext.Dispose
+  href: Xunit.v3.MaxConcurrencySyncContext.Dispose.html#Xunit_v3_MaxConcurrencySyncContext_Dispose
+  name: Dispose
+  nameWithType: MaxConcurrencySyncContext.Dispose
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  name: Post(SendOrPostCallback, object)
+  nameWithType: SynchronizationContext.Post(SendOrPostCallback, object)
+  fullName: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback, object)
+  nameWithType.vb: SynchronizationContext.Post(SendOrPostCallback, Object)
+  fullName.vb: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback, Object)
+  name.vb: Post(SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+    name: Post
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+    name: Post
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Post*
+  commentId: Overload:Xunit.v3.MaxConcurrencySyncContext.Post
+  href: Xunit.v3.MaxConcurrencySyncContext.Post.html#Xunit_v3_MaxConcurrencySyncContext_Post_System_Threading_SendOrPostCallback_System_Object_
+  name: Post
+  nameWithType: MaxConcurrencySyncContext.Post
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Post
+- uid: System.Threading.SendOrPostCallback
+  commentId: T:System.Threading.SendOrPostCallback
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  name: SendOrPostCallback
+  nameWithType: SendOrPostCallback
+  fullName: System.Threading.SendOrPostCallback
+- uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  name: Send(SendOrPostCallback, object)
+  nameWithType: SynchronizationContext.Send(SendOrPostCallback, object)
+  fullName: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback, object)
+  nameWithType.vb: SynchronizationContext.Send(SendOrPostCallback, Object)
+  fullName.vb: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback, Object)
+  name.vb: Send(SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+    name: Send
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+    name: Send
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.2.0.0:Xunit.v3.MaxConcurrencySyncContext.Send*
+  commentId: Overload:Xunit.v3.MaxConcurrencySyncContext.Send
+  href: Xunit.v3.MaxConcurrencySyncContext.Send.html#Xunit_v3_MaxConcurrencySyncContext_Send_System_Threading_SendOrPostCallback_System_Object_
+  name: Send
+  nameWithType: MaxConcurrencySyncContext.Send
+  fullName: Xunit.v3.MaxConcurrencySyncContext.Send
+memberLayout: SeparatePages

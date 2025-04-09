@@ -1,0 +1,892 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess
+  commentId: T:Xunit.v3.LocalTestProcess
+  id: LocalTestProcess
+  parent: v3.2.0.1:Xunit.v3
+  children:
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.Attach(System.Int32,System.String)
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.Cancel(System.Boolean)
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.Dispose
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.HasExited
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.ProcessID
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.StandardInput
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.StandardOutput
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.Start(System.String,System.String,System.String)
+  - v3.2.0.1:Xunit.v3.LocalTestProcess.WaitForExit(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: LocalTestProcess
+  nameWithType: LocalTestProcess
+  fullName: Xunit.v3.LocalTestProcess
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: LocalTestProcess
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Implementation of <xref href="v3.2.0.1:Xunit.v3.ITestProcess" data-throw-if-not-resolved="false"></xref> for a process running on the local machine.
+  example: []
+  syntax:
+    content: 'public sealed class LocalTestProcess : ITestProcess, ITestProcessBase, IDisposable'
+    content.vb: Public NotInheritable Class LocalTestProcess Implements ITestProcess, ITestProcessBase, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcess
+  - v3.2.0.1:Xunit.v3.ITestProcessBase
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.HasExited
+  commentId: P:Xunit.v3.LocalTestProcess.HasExited
+  id: HasExited
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: HasExited
+  nameWithType: LocalTestProcess.HasExited
+  fullName: Xunit.v3.LocalTestProcess.HasExited
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: HasExited
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Gets a flag to indicate whether the test process has exited or not yet.
+  example: []
+  syntax:
+    content: public bool HasExited { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasExited As Boolean
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.HasExited*
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcessBase.HasExited
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.ProcessID
+  commentId: P:Xunit.v3.LocalTestProcess.ProcessID
+  id: ProcessID
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: ProcessID
+  nameWithType: LocalTestProcess.ProcessID
+  fullName: Xunit.v3.LocalTestProcess.ProcessID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: ProcessID
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 30
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Gets the process ID of the local process.
+  example: []
+  syntax:
+    content: public int ProcessID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ProcessID As Integer
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.ProcessID*
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardInput
+  commentId: P:Xunit.v3.LocalTestProcess.StandardInput
+  id: StandardInput
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: StandardInput
+  nameWithType: LocalTestProcess.StandardInput
+  fullName: Xunit.v3.LocalTestProcess.StandardInput
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: StandardInput
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 34
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    Gets a <xref href="System.IO.TextWriter" data-throw-if-not-resolved="false"></xref> that can be used to write text from the standard
+
+    input of the test process.
+  example: []
+  syntax:
+    content: public TextWriter StandardInput { get; }
+    parameters: []
+    return:
+      type: System.IO.TextWriter
+    content.vb: Public ReadOnly Property StandardInput As TextWriter
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardInput*
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcess.StandardInput
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardOutput
+  commentId: P:Xunit.v3.LocalTestProcess.StandardOutput
+  id: StandardOutput
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: StandardOutput
+  nameWithType: LocalTestProcess.StandardOutput
+  fullName: Xunit.v3.LocalTestProcess.StandardOutput
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: StandardOutput
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 38
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    Gets a <xref href="System.IO.TextReader" data-throw-if-not-resolved="false"></xref> that can be used to read text from the standard
+
+    output of the test process.
+  example: []
+  syntax:
+    content: public TextReader StandardOutput { get; }
+    parameters: []
+    return:
+      type: System.IO.TextReader
+    content.vb: Public ReadOnly Property StandardOutput As TextReader
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardOutput*
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcess.StandardOutput
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Attach(System.Int32,System.String)
+  commentId: M:Xunit.v3.LocalTestProcess.Attach(System.Int32,System.String)
+  id: Attach(System.Int32,System.String)
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: Attach(int, string?)
+  nameWithType: LocalTestProcess.Attach(int, string?)
+  fullName: Xunit.v3.LocalTestProcess.Attach(int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Attach
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 46
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Returns a test process for an existing process based on process ID.
+  example: []
+  syntax:
+    content: public static LocalTestProcess Attach(int processID, string? responseFile)
+    parameters:
+    - id: processID
+      type: System.Int32
+      description: The process ID
+    - id: responseFile
+      type: System.String
+      description: The response file (to be cleaned up during disposal)
+    return:
+      type: Xunit.v3.LocalTestProcess
+    content.vb: Public Shared Function Attach(processID As Integer, responseFile As String) As LocalTestProcess
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.Attach*
+  nameWithType.vb: LocalTestProcess.Attach(Integer, String)
+  fullName.vb: Xunit.v3.LocalTestProcess.Attach(Integer, String)
+  name.vb: Attach(Integer, String)
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Cancel(System.Boolean)
+  commentId: M:Xunit.v3.LocalTestProcess.Cancel(System.Boolean)
+  id: Cancel(System.Boolean)
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: Cancel(bool)
+  nameWithType: LocalTestProcess.Cancel(bool)
+  fullName: Xunit.v3.LocalTestProcess.Cancel(bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Cancel
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 52
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Cancels the test pipeline, forcefully if necessary.
+  remarks: >-
+    Note that repeated calls to this method with <code class="paramref">forceCancellation</code> set to <code>false</code>
+
+    may be possible, since it may be dispatched every time a remote runner returns <code>false</code> from
+
+    a message sink/message bus call. For out of process runners using Ctrl+C via standard input, it
+
+    should only send Ctrl+C the first time this is called (since double Ctrl+C is the forceful
+
+    cancellation signal).
+  example: []
+  syntax:
+    content: public void Cancel(bool forceCancellation)
+    parameters:
+    - id: forceCancellation
+      type: System.Boolean
+      description: >-
+        When set to <code>false</code>, this should request graceful termination
+            of the test pipeline; when set to <code>true</code>, the test process should be forcefully shut down as
+            quickly as possible.
+    content.vb: Public Sub Cancel(forceCancellation As Boolean)
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.Cancel*
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  nameWithType.vb: LocalTestProcess.Cancel(Boolean)
+  fullName.vb: Xunit.v3.LocalTestProcess.Cancel(Boolean)
+  name.vb: Cancel(Boolean)
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Dispose
+  commentId: M:Xunit.v3.LocalTestProcess.Dispose
+  id: Dispose
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: LocalTestProcess.Dispose()
+  fullName: Xunit.v3.LocalTestProcess.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 77
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Start(System.String,System.String,System.String)
+  commentId: M:Xunit.v3.LocalTestProcess.Start(System.String,System.String,System.String)
+  id: Start(System.String,System.String,System.String)
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: Start(string, string, string?)
+  nameWithType: LocalTestProcess.Start(string, string, string?)
+  fullName: Xunit.v3.LocalTestProcess.Start(string, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Start
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 95
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Starts a new test process.
+  example: []
+  syntax:
+    content: public static LocalTestProcess? Start(string executable, string executableArguments, string? responseFile)
+    parameters:
+    - id: executable
+      type: System.String
+      description: The executable to be launched
+    - id: executableArguments
+      type: System.String
+      description: The arguments to the executable
+    - id: responseFile
+      type: System.String
+      description: The response file (to be cleaned up during disposal)
+    return:
+      type: Xunit.v3.LocalTestProcess
+    content.vb: Public Shared Function Start(executable As String, executableArguments As String, responseFile As String) As LocalTestProcess
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.Start*
+  nameWithType.vb: LocalTestProcess.Start(String, String, String)
+  fullName.vb: Xunit.v3.LocalTestProcess.Start(String, String, String)
+  name.vb: Start(String, String, String)
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.WaitForExit(System.Int32)
+  commentId: M:Xunit.v3.LocalTestProcess.WaitForExit(System.Int32)
+  id: WaitForExit(System.Int32)
+  parent: v3.2.0.1:Xunit.v3.LocalTestProcess
+  langs:
+  - csharp
+  - vb
+  name: WaitForExit(int)
+  nameWithType: LocalTestProcess.WaitForExit(int)
+  fullName: Xunit.v3.LocalTestProcess.WaitForExit(int)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: WaitForExit
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalTestProcess.cs
+    startLine: 116
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Wait for the specified number of milliseconds for the test process to exit.
+  example: []
+  syntax:
+    content: public bool WaitForExit(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: The amount of time, in milliseconds, to wait
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the process exited; <code>false</code>, otherwise
+    content.vb: Public Function WaitForExit(milliseconds As Integer) As Boolean
+  overload: v3.2.0.1:Xunit.v3.LocalTestProcess.WaitForExit*
+  implements:
+  - v3.2.0.1:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  nameWithType.vb: LocalTestProcess.WaitForExit(Integer)
+  fullName.vb: Xunit.v3.LocalTestProcess.WaitForExit(Integer)
+  name.vb: WaitForExit(Integer)
+references:
+- uid: v3.2.0.1:Xunit.v3.ITestProcess
+  commentId: T:Xunit.v3.ITestProcess
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.ITestProcess.html
+  name: ITestProcess
+  nameWithType: ITestProcess
+  fullName: Xunit.v3.ITestProcess
+- uid: v3.2.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.2.0.1:Xunit.v3.ITestProcessBase
+  commentId: T:Xunit.v3.ITestProcessBase
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.ITestProcessBase.html
+  name: ITestProcessBase
+  nameWithType: ITestProcessBase
+  fullName: Xunit.v3.ITestProcessBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.HasExited*
+  commentId: Overload:Xunit.v3.LocalTestProcess.HasExited
+  href: Xunit.v3.LocalTestProcess.HasExited.html#Xunit_v3_LocalTestProcess_HasExited
+  name: HasExited
+  nameWithType: LocalTestProcess.HasExited
+  fullName: Xunit.v3.LocalTestProcess.HasExited
+- uid: v3.2.0.1:Xunit.v3.ITestProcessBase.HasExited
+  commentId: P:Xunit.v3.ITestProcessBase.HasExited
+  parent: v3.2.0.1:Xunit.v3.ITestProcessBase
+  href: Xunit.v3.ITestProcessBase.HasExited.html#Xunit_v3_ITestProcessBase_HasExited
+  name: HasExited
+  nameWithType: ITestProcessBase.HasExited
+  fullName: Xunit.v3.ITestProcessBase.HasExited
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.ProcessID*
+  commentId: Overload:Xunit.v3.LocalTestProcess.ProcessID
+  href: Xunit.v3.LocalTestProcess.ProcessID.html#Xunit_v3_LocalTestProcess_ProcessID
+  name: ProcessID
+  nameWithType: LocalTestProcess.ProcessID
+  fullName: Xunit.v3.LocalTestProcess.ProcessID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardInput*
+  commentId: Overload:Xunit.v3.LocalTestProcess.StandardInput
+  href: Xunit.v3.LocalTestProcess.StandardInput.html#Xunit_v3_LocalTestProcess_StandardInput
+  name: StandardInput
+  nameWithType: LocalTestProcess.StandardInput
+  fullName: Xunit.v3.LocalTestProcess.StandardInput
+- uid: v3.2.0.1:Xunit.v3.ITestProcess.StandardInput
+  commentId: P:Xunit.v3.ITestProcess.StandardInput
+  parent: v3.2.0.1:Xunit.v3.ITestProcess
+  href: Xunit.v3.ITestProcess.StandardInput.html#Xunit_v3_ITestProcess_StandardInput
+  name: StandardInput
+  nameWithType: ITestProcess.StandardInput
+  fullName: Xunit.v3.ITestProcess.StandardInput
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.IO.TextReader
+  commentId: T:System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  name: TextReader
+  nameWithType: TextReader
+  fullName: System.IO.TextReader
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.StandardOutput*
+  commentId: Overload:Xunit.v3.LocalTestProcess.StandardOutput
+  href: Xunit.v3.LocalTestProcess.StandardOutput.html#Xunit_v3_LocalTestProcess_StandardOutput
+  name: StandardOutput
+  nameWithType: LocalTestProcess.StandardOutput
+  fullName: Xunit.v3.LocalTestProcess.StandardOutput
+- uid: v3.2.0.1:Xunit.v3.ITestProcess.StandardOutput
+  commentId: P:Xunit.v3.ITestProcess.StandardOutput
+  parent: v3.2.0.1:Xunit.v3.ITestProcess
+  href: Xunit.v3.ITestProcess.StandardOutput.html#Xunit_v3_ITestProcess_StandardOutput
+  name: StandardOutput
+  nameWithType: ITestProcess.StandardOutput
+  fullName: Xunit.v3.ITestProcess.StandardOutput
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Attach*
+  commentId: Overload:Xunit.v3.LocalTestProcess.Attach
+  href: Xunit.v3.LocalTestProcess.Attach.html#Xunit_v3_LocalTestProcess_Attach_System_Int32_System_String_
+  name: Attach
+  nameWithType: LocalTestProcess.Attach
+  fullName: Xunit.v3.LocalTestProcess.Attach
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess
+  commentId: T:Xunit.v3.LocalTestProcess
+  parent: v3.2.0.1:Xunit.v3
+  href: Xunit.v3.LocalTestProcess.html
+  name: LocalTestProcess
+  nameWithType: LocalTestProcess
+  fullName: Xunit.v3.LocalTestProcess
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Cancel*
+  commentId: Overload:Xunit.v3.LocalTestProcess.Cancel
+  href: Xunit.v3.LocalTestProcess.Cancel.html#Xunit_v3_LocalTestProcess_Cancel_System_Boolean_
+  name: Cancel
+  nameWithType: LocalTestProcess.Cancel
+  fullName: Xunit.v3.LocalTestProcess.Cancel
+- uid: v3.2.0.1:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  commentId: M:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  parent: v3.2.0.1:Xunit.v3.ITestProcessBase
+  isExternal: true
+  href: Xunit.v3.ITestProcessBase.Cancel.html#Xunit_v3_ITestProcessBase_Cancel_System_Boolean_
+  name: Cancel(bool)
+  nameWithType: ITestProcessBase.Cancel(bool)
+  fullName: Xunit.v3.ITestProcessBase.Cancel(bool)
+  nameWithType.vb: ITestProcessBase.Cancel(Boolean)
+  fullName.vb: Xunit.v3.ITestProcessBase.Cancel(Boolean)
+  name.vb: Cancel(Boolean)
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+    name: Cancel
+    href: Xunit.v3.ITestProcessBase.Cancel.html#Xunit_v3_ITestProcessBase_Cancel_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+    name: Cancel
+    href: Xunit.v3.ITestProcessBase.Cancel.html#Xunit_v3_ITestProcessBase_Cancel_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Dispose*
+  commentId: Overload:Xunit.v3.LocalTestProcess.Dispose
+  href: Xunit.v3.LocalTestProcess.Dispose.html#Xunit_v3_LocalTestProcess_Dispose
+  name: Dispose
+  nameWithType: LocalTestProcess.Dispose
+  fullName: Xunit.v3.LocalTestProcess.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.Start*
+  commentId: Overload:Xunit.v3.LocalTestProcess.Start
+  href: Xunit.v3.LocalTestProcess.Start.html#Xunit_v3_LocalTestProcess_Start_System_String_System_String_System_String_
+  name: Start
+  nameWithType: LocalTestProcess.Start
+  fullName: Xunit.v3.LocalTestProcess.Start
+- uid: v3.2.0.1:Xunit.v3.LocalTestProcess.WaitForExit*
+  commentId: Overload:Xunit.v3.LocalTestProcess.WaitForExit
+  href: Xunit.v3.LocalTestProcess.WaitForExit.html#Xunit_v3_LocalTestProcess_WaitForExit_System_Int32_
+  name: WaitForExit
+  nameWithType: LocalTestProcess.WaitForExit
+  fullName: Xunit.v3.LocalTestProcess.WaitForExit
+- uid: v3.2.0.1:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  commentId: M:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  parent: v3.2.0.1:Xunit.v3.ITestProcessBase
+  isExternal: true
+  href: Xunit.v3.ITestProcessBase.WaitForExit.html#Xunit_v3_ITestProcessBase_WaitForExit_System_Int32_
+  name: WaitForExit(int)
+  nameWithType: ITestProcessBase.WaitForExit(int)
+  fullName: Xunit.v3.ITestProcessBase.WaitForExit(int)
+  nameWithType.vb: ITestProcessBase.WaitForExit(Integer)
+  fullName.vb: Xunit.v3.ITestProcessBase.WaitForExit(Integer)
+  name.vb: WaitForExit(Integer)
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+    name: WaitForExit
+    href: Xunit.v3.ITestProcessBase.WaitForExit.html#Xunit_v3_ITestProcessBase_WaitForExit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+    name: WaitForExit
+    href: Xunit.v3.ITestProcessBase.WaitForExit.html#Xunit_v3_ITestProcessBase_WaitForExit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+memberLayout: SeparatePages

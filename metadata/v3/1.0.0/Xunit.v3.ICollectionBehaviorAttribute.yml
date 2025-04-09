@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute
+  commentId: T:Xunit.v3.ICollectionBehaviorAttribute
+  id: ICollectionBehaviorAttribute
+  parent: v3.1.0.0:Xunit.v3
+  children:
+  - v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+  - v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+  - v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+  - v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: ICollectionBehaviorAttribute
+  nameWithType: ICollectionBehaviorAttribute
+  fullName: Xunit.v3.ICollectionBehaviorAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ICollectionBehaviorAttribute
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Used to declare the default test collection behavior for the assembly. This is only valid at the assembly level,
+
+    and there can be only one.
+  example: []
+  syntax:
+    content: public interface ICollectionBehaviorAttribute
+    content.vb: Public Interface ICollectionBehaviorAttribute
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+  commentId: P:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+  id: CollectionFactoryType
+  parent: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute
+  langs:
+  - csharp
+  - vb
+  name: CollectionFactoryType
+  nameWithType: ICollectionBehaviorAttribute.CollectionFactoryType
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: CollectionFactoryType
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the collection factory type specified by this collection behavior attribute.
+  example: []
+  syntax:
+    content: Type? CollectionFactoryType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property CollectionFactoryType As Type
+  overload: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType*
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+  commentId: P:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+  id: DisableTestParallelization
+  parent: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute
+  langs:
+  - csharp
+  - vb
+  name: DisableTestParallelization
+  nameWithType: ICollectionBehaviorAttribute.DisableTestParallelization
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: DisableTestParallelization
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Determines whether tests in this assembly are run in parallel.
+  example: []
+  syntax:
+    content: bool DisableTestParallelization { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DisableTestParallelization As Boolean
+  overload: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization*
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+  commentId: P:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+  id: MaxParallelThreads
+  parent: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute
+  langs:
+  - csharp
+  - vb
+  name: MaxParallelThreads
+  nameWithType: ICollectionBehaviorAttribute.MaxParallelThreads
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: MaxParallelThreads
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Determines how many tests can run in parallel with each other. If set to 0, the system will
+
+    use <xref href="System.Environment.ProcessorCount" data-throw-if-not-resolved="false"></xref>. If set to a negative number, then there will
+
+    be no limit to the number of threads.
+  example: []
+  syntax:
+    content: int MaxParallelThreads { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxParallelThreads As Integer
+  overload: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads*
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+  commentId: P:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+  id: ParallelAlgorithm
+  parent: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute
+  langs:
+  - csharp
+  - vb
+  name: ParallelAlgorithm
+  nameWithType: ICollectionBehaviorAttribute.ParallelAlgorithm
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ParallelAlgorithm
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ICollectionBehaviorAttribute.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Determines the parallel algorithm used when running tests in parallel.
+  example: []
+  syntax:
+    content: ParallelAlgorithm ParallelAlgorithm { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ParallelAlgorithm
+    content.vb: ReadOnly Property ParallelAlgorithm As ParallelAlgorithm
+  overload: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm*
+references:
+- uid: v3.1.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType*
+  commentId: Overload:Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+  href: Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType.html#Xunit_v3_ICollectionBehaviorAttribute_CollectionFactoryType
+  name: CollectionFactoryType
+  nameWithType: ICollectionBehaviorAttribute.CollectionFactoryType
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.CollectionFactoryType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization*
+  commentId: Overload:Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+  href: Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization.html#Xunit_v3_ICollectionBehaviorAttribute_DisableTestParallelization
+  name: DisableTestParallelization
+  nameWithType: ICollectionBehaviorAttribute.DisableTestParallelization
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.DisableTestParallelization
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Environment.ProcessorCount
+  commentId: P:System.Environment.ProcessorCount
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.processorcount
+  name: ProcessorCount
+  nameWithType: Environment.ProcessorCount
+  fullName: System.Environment.ProcessorCount
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads*
+  commentId: Overload:Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+  href: Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads.html#Xunit_v3_ICollectionBehaviorAttribute_MaxParallelThreads
+  name: MaxParallelThreads
+  nameWithType: ICollectionBehaviorAttribute.MaxParallelThreads
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.MaxParallelThreads
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.1.0.0:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm*
+  commentId: Overload:Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+  href: Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm.html#Xunit_v3_ICollectionBehaviorAttribute_ParallelAlgorithm
+  name: ParallelAlgorithm
+  nameWithType: ICollectionBehaviorAttribute.ParallelAlgorithm
+  fullName: Xunit.v3.ICollectionBehaviorAttribute.ParallelAlgorithm
+- uid: v3.1.0.0:Xunit.Sdk.ParallelAlgorithm
+  commentId: T:Xunit.Sdk.ParallelAlgorithm
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelAlgorithm.html
+  name: ParallelAlgorithm
+  nameWithType: ParallelAlgorithm
+  fullName: Xunit.Sdk.ParallelAlgorithm
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+memberLayout: SeparatePages

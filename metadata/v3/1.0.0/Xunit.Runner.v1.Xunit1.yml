@@ -1,0 +1,1470 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  commentId: T:Xunit.Runner.v1.Xunit1
+  id: Xunit1
+  parent: v3.1.0.0:Xunit.Runner.v1
+  children:
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.#ctor(Xunit.Sdk.IMessageSink,Xunit.Runner.Common.AppDomainSupport,Xunit.Runner.Common.ISourceInformationProvider,System.String,System.String,System.Boolean,System.String)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.CanUseAppDomains
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.CreateExecutor
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.DisposeAsync
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered})
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered},System.Boolean)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.ISourceInformationProvider,Xunit.Sdk.IMessageSink)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.Run(System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase},Xunit.Sdk.IMessageSink,System.Boolean)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.TargetFramework
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+  - v3.1.0.0:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: Xunit1
+  nameWithType: Xunit1
+  fullName: Xunit.Runner.v1.Xunit1
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Xunit1
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    This class is used to do discovery and execution of xUnit.net v1 tests.
+
+    Runner authors are strongly encouraged to use <xref href="v3.1.0.0:Xunit.XunitFrontController" data-throw-if-not-resolved="false"></xref>
+
+    instead of using this class directly.
+  example: []
+  syntax:
+    content: 'public class Xunit1 : IFrontController, IFrontControllerDiscoverer, IAsyncDisposable'
+    content.vb: Public Class Xunit1 Implements IFrontController, IFrontControllerDiscoverer, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.1.0.0:Xunit.IFrontController
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.#ctor(Xunit.Sdk.IMessageSink,Xunit.Runner.Common.AppDomainSupport,Xunit.Runner.Common.ISourceInformationProvider,System.String,System.String,System.Boolean,System.String)
+  commentId: M:Xunit.Runner.v1.Xunit1.#ctor(Xunit.Sdk.IMessageSink,Xunit.Runner.Common.AppDomainSupport,Xunit.Runner.Common.ISourceInformationProvider,System.String,System.String,System.Boolean,System.String)
+  id: '#ctor(Xunit.Sdk.IMessageSink,Xunit.Runner.Common.AppDomainSupport,Xunit.Runner.Common.ISourceInformationProvider,System.String,System.String,System.Boolean,System.String)'
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: Xunit1(IMessageSink, AppDomainSupport, ISourceInformationProvider, string, string?, bool, string?)
+  nameWithType: Xunit1.Xunit1(IMessageSink, AppDomainSupport, ISourceInformationProvider, string, string?, bool, string?)
+  fullName: Xunit.Runner.v1.Xunit1.Xunit1(Xunit.Sdk.IMessageSink, Xunit.Runner.Common.AppDomainSupport, Xunit.Runner.Common.ISourceInformationProvider, string, string?, bool, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 40
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: This constructor is used by factory methods and unit tests only.
+  example: []
+  syntax:
+    content: protected Xunit1(IMessageSink diagnosticMessageSink, AppDomainSupport appDomainSupport, ISourceInformationProvider sourceInformationProvider, string assemblyFileName, string? configFileName = null, bool shadowCopy = true, string? shadowCopyFolder = null)
+    parameters:
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+    - id: appDomainSupport
+      type: Xunit.Runner.Common.AppDomainSupport
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+    - id: assemblyFileName
+      type: System.String
+    - id: configFileName
+      type: System.String
+    - id: shadowCopy
+      type: System.Boolean
+    - id: shadowCopyFolder
+      type: System.String
+    content.vb: Protected Sub New(diagnosticMessageSink As IMessageSink, appDomainSupport As AppDomainSupport, sourceInformationProvider As ISourceInformationProvider, assemblyFileName As String, configFileName As String = Nothing, shadowCopy As Boolean = True, shadowCopyFolder As String = Nothing)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.#ctor*
+  nameWithType.vb: Xunit1.New(IMessageSink, AppDomainSupport, ISourceInformationProvider, String, String, Boolean, String)
+  fullName.vb: Xunit.Runner.v1.Xunit1.New(Xunit.Sdk.IMessageSink, Xunit.Runner.Common.AppDomainSupport, Xunit.Runner.Common.ISourceInformationProvider, String, String, Boolean, String)
+  name.vb: New(IMessageSink, AppDomainSupport, ISourceInformationProvider, String, String, Boolean, String)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.CanUseAppDomains
+  commentId: P:Xunit.Runner.v1.Xunit1.CanUseAppDomains
+  id: CanUseAppDomains
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: CanUseAppDomains
+  nameWithType: Xunit1.CanUseAppDomains
+  fullName: Xunit.Runner.v1.Xunit1.CanUseAppDomains
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: CanUseAppDomains
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 65
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Gets a flag indicating whether this discovery/execution can use app domains.
+  example: []
+  syntax:
+    content: public bool CanUseAppDomains { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanUseAppDomains As Boolean
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.CanUseAppDomains*
+  implements:
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TargetFramework
+  commentId: P:Xunit.Runner.v1.Xunit1.TargetFramework
+  id: TargetFramework
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: Xunit1.TargetFramework
+  fullName: Xunit.Runner.v1.Xunit1.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 73
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Gets the target framework that the test assembly is linked against.
+  example: []
+  syntax:
+    content: public string TargetFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TargetFramework As String
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.TargetFramework*
+  implements:
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer.TargetFramework
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+  commentId: P:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+  id: TestAssemblyUniqueID
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyUniqueID
+  nameWithType: Xunit1.TestAssemblyUniqueID
+  fullName: Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TestAssemblyUniqueID
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 76
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Gets the unique ID for the test assembly provided to the discoverer.
+  example: []
+  syntax:
+    content: public string TestAssemblyUniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestAssemblyUniqueID As String
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID*
+  implements:
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+  commentId: P:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: Xunit1.TestFrameworkDisplayName
+  fullName: Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 79
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Returns the display name of the test framework that this discoverer is running tests for.
+  example: []
+  syntax:
+    content: public string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestFrameworkDisplayName As String
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName*
+  implements:
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.CreateExecutor
+  commentId: M:Xunit.Runner.v1.Xunit1.CreateExecutor
+  id: CreateExecutor
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: CreateExecutor()
+  nameWithType: Xunit1.CreateExecutor()
+  fullName: Xunit.Runner.v1.Xunit1.CreateExecutor()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: CreateExecutor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 85
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Creates a wrapper to call the Executor call from xUnit.net v1.
+  example: []
+  syntax:
+    content: protected virtual IXunit1Executor CreateExecutor()
+    return:
+      type: Xunit.Runner.v1.IXunit1Executor
+      description: The executor wrapper.
+    content.vb: Protected Overridable Function CreateExecutor() As IXunit1Executor
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.CreateExecutor*
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.DisposeAsync
+  commentId: M:Xunit.Runner.v1.Xunit1.DisposeAsync
+  id: DisposeAsync
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: Xunit1.DisposeAsync()
+  fullName: Xunit.Runner.v1.Xunit1.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 89
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered})
+  commentId: M:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered})
+  id: Find(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered})
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: Find(IMessageSink, bool, Predicate<ITestCaseDiscovered>?)
+  nameWithType: Xunit1.Find(IMessageSink, bool, Predicate<ITestCaseDiscovered>?)
+  fullName: Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink, bool, System.Predicate<Xunit.Sdk.ITestCaseDiscovered>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 105
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: INTERNAL METHOD, FOR TESTING PURPOSES ONLY. DO NOT CALL.
+  example: []
+  syntax:
+    content: protected void Find(IMessageSink messageSink, bool includeSourceInformation, Predicate<ITestCaseDiscovered>? filter)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+    - id: includeSourceInformation
+      type: System.Boolean
+    - id: filter
+      type: System.Predicate{Xunit.Sdk.ITestCaseDiscovered}
+    content.vb: Protected Sub Find(messageSink As IMessageSink, includeSourceInformation As Boolean, filter As Predicate(Of ITestCaseDiscovered))
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.Find*
+  nameWithType.vb: Xunit1.Find(IMessageSink, Boolean, Predicate(Of ITestCaseDiscovered))
+  fullName.vb: Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink, Boolean, System.Predicate(Of Xunit.Sdk.ITestCaseDiscovered))
+  name.vb: Find(IMessageSink, Boolean, Predicate(Of ITestCaseDiscovered))
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  commentId: M:Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  id: Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: Find(IMessageSink, FrontControllerFindSettings)
+  nameWithType: Xunit1.Find(IMessageSink, FrontControllerFindSettings)
+  fullName: Xunit.Runner.v1.Xunit1.Find(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindSettings)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 140
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Starts the process of finding tests in an assembly. Typically only used by
+
+    runners which discover tests and present them into a UI for the user to interactively
+
+    choose for selective run (via <xref href="v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerRunSettings)" data-throw-if-not-resolved="false"></xref>). For runners which
+
+    simply wish to discover and immediately run tests, they should instead
+
+    use <xref href="v3.1.0.0:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerFindAndRunSettings)" data-throw-if-not-resolved="false"></xref>, which permits the same filtering logic
+
+    as this method.
+  example: []
+  syntax:
+    content: public void Find(IMessageSink messageSink, FrontControllerFindSettings settings)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: settings
+      type: Xunit.FrontControllerFindSettings
+      description: The settings used during discovery.
+    content.vb: Public Sub Find(messageSink As IMessageSink, settings As FrontControllerFindSettings)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.Find*
+  implements:
+  - v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered},System.Boolean)
+  commentId: M:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered},System.Boolean)
+  id: FindAndRun(Xunit.Sdk.IMessageSink,System.Boolean,System.Predicate{Xunit.Sdk.ITestCaseDiscovered},System.Boolean)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: FindAndRun(IMessageSink, bool, Predicate<ITestCaseDiscovered>?, bool)
+  nameWithType: Xunit1.FindAndRun(IMessageSink, bool, Predicate<ITestCaseDiscovered>?, bool)
+  fullName: Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink, bool, System.Predicate<Xunit.Sdk.ITestCaseDiscovered>?, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: FindAndRun
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 238
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: INTERNAL METHOD, FOR TESTING PURPOSES ONLY. DO NOT CALL.
+  example: []
+  syntax:
+    content: protected void FindAndRun(IMessageSink messageSink, bool includeSourceInformation, Predicate<ITestCaseDiscovered>? filter, bool markAllAsNotRun)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+    - id: includeSourceInformation
+      type: System.Boolean
+    - id: filter
+      type: System.Predicate{Xunit.Sdk.ITestCaseDiscovered}
+    - id: markAllAsNotRun
+      type: System.Boolean
+    content.vb: Protected Sub FindAndRun(messageSink As IMessageSink, includeSourceInformation As Boolean, filter As Predicate(Of ITestCaseDiscovered), markAllAsNotRun As Boolean)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun*
+  nameWithType.vb: Xunit1.FindAndRun(IMessageSink, Boolean, Predicate(Of ITestCaseDiscovered), Boolean)
+  fullName.vb: Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink, Boolean, System.Predicate(Of Xunit.Sdk.ITestCaseDiscovered), Boolean)
+  name.vb: FindAndRun(IMessageSink, Boolean, Predicate(Of ITestCaseDiscovered), Boolean)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  commentId: M:Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  id: FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  nameWithType: Xunit1.FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  fullName: Xunit.Runner.v1.Xunit1.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindAndRunSettings)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: FindAndRun
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 280
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Starts the process of finding and running tests in an assembly. Typically only used
+
+    by runner which do not present test discovery UIs to users that allow them to run
+
+    selected tests (those should instead use <xref href="v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerFindSettings)" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerRunSettings)" data-throw-if-not-resolved="false"></xref> as separate operations).
+  example: []
+  syntax:
+    content: public void FindAndRun(IMessageSink messageSink, FrontControllerFindAndRunSettings settings)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: settings
+      type: Xunit.FrontControllerFindAndRunSettings
+      description: The settings used during discovery and execution.
+    content.vb: Public Sub FindAndRun(messageSink As IMessageSink, settings As FrontControllerFindAndRunSettings)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun*
+  implements:
+  - v3.1.0.0:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Run(System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase},Xunit.Sdk.IMessageSink,System.Boolean)
+  commentId: M:Xunit.Runner.v1.Xunit1.Run(System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase},Xunit.Sdk.IMessageSink,System.Boolean)
+  id: Run(System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase},Xunit.Sdk.IMessageSink,System.Boolean)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: Run(IReadOnlyCollection<Xunit1TestCase>, IMessageSink, bool)
+  nameWithType: Xunit1.Run(IReadOnlyCollection<Xunit1TestCase>, IMessageSink, bool)
+  fullName: Xunit.Runner.v1.Xunit1.Run(System.Collections.Generic.IReadOnlyCollection<Xunit.Runner.v1.Xunit1TestCase>, Xunit.Sdk.IMessageSink, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 299
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: INTERNAL METHOD, FOR TESTING PURPOSES ONLY. DO NOT CALL.
+  example: []
+  syntax:
+    content: protected void Run(IReadOnlyCollection<Xunit1TestCase> testCases, IMessageSink messageSink, bool markAllAsNotRun)
+    parameters:
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase}
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+    - id: markAllAsNotRun
+      type: System.Boolean
+    content.vb: Protected Sub Run(testCases As IReadOnlyCollection(Of Xunit1TestCase), messageSink As IMessageSink, markAllAsNotRun As Boolean)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.Run*
+  nameWithType.vb: Xunit1.Run(IReadOnlyCollection(Of Xunit1TestCase), IMessageSink, Boolean)
+  fullName.vb: Xunit.Runner.v1.Xunit1.Run(System.Collections.Generic.IReadOnlyCollection(Of Xunit.Runner.v1.Xunit1TestCase), Xunit.Sdk.IMessageSink, Boolean)
+  name.vb: Run(IReadOnlyCollection(Of Xunit1TestCase), IMessageSink, Boolean)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  commentId: M:Xunit.Runner.v1.Xunit1.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  id: Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: Run(IMessageSink, FrontControllerRunSettings)
+  nameWithType: Xunit1.Run(IMessageSink, FrontControllerRunSettings)
+  fullName: Xunit.Runner.v1.Xunit1.Run(Xunit.Sdk.IMessageSink, Xunit.FrontControllerRunSettings)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 363
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Starts the process of running selected tests in the assembly. The serialized test
+
+    cases to run come from calling <xref href="v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerFindSettings)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Run(IMessageSink messageSink, FrontControllerRunSettings settings)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: settings
+      type: Xunit.FrontControllerRunSettings
+      description: The settings used during execution.
+    content.vb: Public Sub Run(messageSink As IMessageSink, settings As FrontControllerRunSettings)
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.Run*
+  implements:
+  - v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.ISourceInformationProvider,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.ISourceInformationProvider,Xunit.Sdk.IMessageSink)
+  id: ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.ISourceInformationProvider,Xunit.Sdk.IMessageSink)
+  parent: v3.1.0.0:Xunit.Runner.v1.Xunit1
+  langs:
+  - csharp
+  - vb
+  name: ForDiscoveryAndExecution(XunitProjectAssembly, ISourceInformationProvider?, IMessageSink?)
+  nameWithType: Xunit1.ForDiscoveryAndExecution(XunitProjectAssembly, ISourceInformationProvider?, IMessageSink?)
+  fullName: Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.ISourceInformationProvider?, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ForDiscoveryAndExecution
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1.cs
+    startLine: 516
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Returns an implementation of <xref href="v3.1.0.0:Xunit.IFrontController" data-throw-if-not-resolved="false"></xref> which can be used
+
+    for both discovery and execution of xUnit.net v1 tests.
+  example: []
+  syntax:
+    content: public static IFrontController ForDiscoveryAndExecution(XunitProjectAssembly projectAssembly, ISourceInformationProvider? sourceInformationProvider = null, IMessageSink? diagnosticMessageSink = null)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test project assembly.
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+      description: The optional source information provider.
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: >-
+        The optional message sink which receives <xref href="v3.1.0.0:Xunit.Sdk.IDiagnosticMessage" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.1.0.0:Xunit.Sdk.IInternalDiagnosticMessage" data-throw-if-not-resolved="false"></xref> messages.
+    return:
+      type: Xunit.IFrontController
+    content.vb: Public Shared Function ForDiscoveryAndExecution(projectAssembly As XunitProjectAssembly, sourceInformationProvider As ISourceInformationProvider = Nothing, diagnosticMessageSink As IMessageSink = Nothing) As IFrontController
+  overload: v3.1.0.0:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution*
+  nameWithType.vb: Xunit1.ForDiscoveryAndExecution(XunitProjectAssembly, ISourceInformationProvider, IMessageSink)
+  fullName.vb: Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.ISourceInformationProvider, Xunit.Sdk.IMessageSink)
+  name.vb: ForDiscoveryAndExecution(XunitProjectAssembly, ISourceInformationProvider, IMessageSink)
+references:
+- uid: v3.1.0.0:Xunit.XunitFrontController
+  commentId: T:Xunit.XunitFrontController
+  href: Xunit.XunitFrontController.html
+  name: XunitFrontController
+  nameWithType: XunitFrontController
+  fullName: Xunit.XunitFrontController
+- uid: v3.1.0.0:Xunit.Runner.v1
+  commentId: N:Xunit.Runner.v1
+  href: Xunit.html
+  name: Xunit.Runner.v1
+  nameWithType: Xunit.Runner.v1
+  fullName: Xunit.Runner.v1
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.v1
+    name: v1
+    href: Xunit.Runner.v1.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.v1
+    name: v1
+    href: Xunit.Runner.v1.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.0:Xunit.IFrontController
+  commentId: T:Xunit.IFrontController
+  parent: v3.1.0.0:Xunit
+  href: Xunit.IFrontController.html
+  name: IFrontController
+  nameWithType: IFrontController
+  fullName: Xunit.IFrontController
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  commentId: T:Xunit.IFrontControllerDiscoverer
+  parent: v3.1.0.0:Xunit
+  href: Xunit.IFrontControllerDiscoverer.html
+  name: IFrontControllerDiscoverer
+  nameWithType: IFrontControllerDiscoverer
+  fullName: Xunit.IFrontControllerDiscoverer
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.#ctor*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.#ctor
+  href: Xunit.Runner.v1.Xunit1.-ctor.html#Xunit_Runner_v1_Xunit1__ctor_Xunit_Sdk_IMessageSink_Xunit_Runner_Common_AppDomainSupport_Xunit_Runner_Common_ISourceInformationProvider_System_String_System_String_System_Boolean_System_String_
+  name: Xunit1
+  nameWithType: Xunit1.Xunit1
+  fullName: Xunit.Runner.v1.Xunit1.Xunit1
+  nameWithType.vb: Xunit1.New
+  fullName.vb: Xunit.Runner.v1.Xunit1.New
+  name.vb: New
+- uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.1.0.0:Xunit.Runner.Common.AppDomainSupport
+  commentId: T:Xunit.Runner.Common.AppDomainSupport
+  parent: v3.1.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.AppDomainSupport.html
+  name: AppDomainSupport
+  nameWithType: AppDomainSupport
+  fullName: Xunit.Runner.Common.AppDomainSupport
+- uid: v3.1.0.0:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  parent: v3.1.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ISourceInformationProvider.html
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.CanUseAppDomains*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.CanUseAppDomains
+  href: Xunit.Runner.v1.Xunit1.CanUseAppDomains.html#Xunit_Runner_v1_Xunit1_CanUseAppDomains
+  name: CanUseAppDomains
+  nameWithType: Xunit1.CanUseAppDomains
+  fullName: Xunit.Runner.v1.Xunit1.CanUseAppDomains
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  commentId: P:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  parent: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  href: Xunit.IFrontControllerDiscoverer.CanUseAppDomains.html#Xunit_IFrontControllerDiscoverer_CanUseAppDomains
+  name: CanUseAppDomains
+  nameWithType: IFrontControllerDiscoverer.CanUseAppDomains
+  fullName: Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TargetFramework*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.TargetFramework
+  href: Xunit.Runner.v1.Xunit1.TargetFramework.html#Xunit_Runner_v1_Xunit1_TargetFramework
+  name: TargetFramework
+  nameWithType: Xunit1.TargetFramework
+  fullName: Xunit.Runner.v1.Xunit1.TargetFramework
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.TargetFramework
+  commentId: P:Xunit.IFrontControllerDiscoverer.TargetFramework
+  parent: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  href: Xunit.IFrontControllerDiscoverer.TargetFramework.html#Xunit_IFrontControllerDiscoverer_TargetFramework
+  name: TargetFramework
+  nameWithType: IFrontControllerDiscoverer.TargetFramework
+  fullName: Xunit.IFrontControllerDiscoverer.TargetFramework
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+  href: Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID.html#Xunit_Runner_v1_Xunit1_TestAssemblyUniqueID
+  name: TestAssemblyUniqueID
+  nameWithType: Xunit1.TestAssemblyUniqueID
+  fullName: Xunit.Runner.v1.Xunit1.TestAssemblyUniqueID
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  commentId: P:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  parent: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  href: Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID.html#Xunit_IFrontControllerDiscoverer_TestAssemblyUniqueID
+  name: TestAssemblyUniqueID
+  nameWithType: IFrontControllerDiscoverer.TestAssemblyUniqueID
+  fullName: Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+  href: Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName.html#Xunit_Runner_v1_Xunit1_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: Xunit1.TestFrameworkDisplayName
+  fullName: Xunit.Runner.v1.Xunit1.TestFrameworkDisplayName
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  commentId: P:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  parent: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  href: Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName.html#Xunit_IFrontControllerDiscoverer_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: IFrontControllerDiscoverer.TestFrameworkDisplayName
+  fullName: Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.CreateExecutor*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.CreateExecutor
+  href: Xunit.Runner.v1.Xunit1.CreateExecutor.html#Xunit_Runner_v1_Xunit1_CreateExecutor
+  name: CreateExecutor
+  nameWithType: Xunit1.CreateExecutor
+  fullName: Xunit.Runner.v1.Xunit1.CreateExecutor
+- uid: v3.1.0.0:Xunit.Runner.v1.IXunit1Executor
+  commentId: T:Xunit.Runner.v1.IXunit1Executor
+  parent: v3.1.0.0:Xunit.Runner.v1
+  href: Xunit.Runner.v1.IXunit1Executor.html
+  name: IXunit1Executor
+  nameWithType: IXunit1Executor
+  fullName: Xunit.Runner.v1.IXunit1Executor
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.DisposeAsync*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.DisposeAsync
+  href: Xunit.Runner.v1.Xunit1.DisposeAsync.html#Xunit_Runner_v1_Xunit1_DisposeAsync
+  name: DisposeAsync
+  nameWithType: Xunit1.DisposeAsync
+  fullName: Xunit.Runner.v1.Xunit1.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Find*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.Find
+  href: Xunit.Runner.v1.Xunit1.Find.html#Xunit_Runner_v1_Xunit1_Find_Xunit_Sdk_IMessageSink_System_Boolean_System_Predicate_Xunit_Sdk_ITestCaseDiscovered__
+  name: Find
+  nameWithType: Xunit1.Find
+  fullName: Xunit.Runner.v1.Xunit1.Find
+- uid: System.Predicate{Xunit.Sdk.ITestCaseDiscovered}
+  commentId: T:System.Predicate{Xunit.Sdk.ITestCaseDiscovered}
+  parent: System
+  definition: System.Predicate`1
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<ITestCaseDiscovered>
+  nameWithType: Predicate<ITestCaseDiscovered>
+  fullName: System.Predicate<Xunit.Sdk.ITestCaseDiscovered>
+  nameWithType.vb: Predicate(Of ITestCaseDiscovered)
+  fullName.vb: System.Predicate(Of Xunit.Sdk.ITestCaseDiscovered)
+  name.vb: Predicate(Of ITestCaseDiscovered)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - uid: v3.1.0.0:Xunit.Sdk.ITestCaseDiscovered
+    name: ITestCaseDiscovered
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Sdk.ITestCaseDiscovered
+    name: ITestCaseDiscovered
+  - name: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  commentId: M:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  parent: v3.1.0.0:Xunit.IFrontController
+  href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  name: Run(IMessageSink, FrontControllerRunSettings)
+  nameWithType: IFrontController.Run(IMessageSink, FrontControllerRunSettings)
+  fullName: Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.FrontControllerRunSettings)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+    name: Run
+    href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerRunSettings
+    name: FrontControllerRunSettings
+    href: Xunit.FrontControllerRunSettings.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+    name: Run
+    href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerRunSettings
+    name: FrontControllerRunSettings
+    href: Xunit.FrontControllerRunSettings.html
+  - name: )
+- uid: v3.1.0.0:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  commentId: M:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  parent: v3.1.0.0:Xunit.IFrontController
+  href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  name: FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  nameWithType: IFrontController.FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  fullName: Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindAndRunSettings)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+    name: FindAndRun
+    href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerFindAndRunSettings
+    name: FrontControllerFindAndRunSettings
+    href: Xunit.FrontControllerFindAndRunSettings.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+    name: FindAndRun
+    href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerFindAndRunSettings
+    name: FrontControllerFindAndRunSettings
+    href: Xunit.FrontControllerFindAndRunSettings.html
+  - name: )
+- uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  commentId: M:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  parent: v3.1.0.0:Xunit.IFrontControllerDiscoverer
+  href: Xunit.IFrontControllerDiscoverer.Find.html#Xunit_IFrontControllerDiscoverer_Find_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindSettings_
+  name: Find(IMessageSink, FrontControllerFindSettings)
+  nameWithType: IFrontControllerDiscoverer.Find(IMessageSink, FrontControllerFindSettings)
+  fullName: Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindSettings)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+    name: Find
+    href: Xunit.IFrontControllerDiscoverer.Find.html#Xunit_IFrontControllerDiscoverer_Find_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerFindSettings
+    name: FrontControllerFindSettings
+    href: Xunit.FrontControllerFindSettings.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+    name: Find
+    href: Xunit.IFrontControllerDiscoverer.Find.html#Xunit_IFrontControllerDiscoverer_Find_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindSettings_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.FrontControllerFindSettings
+    name: FrontControllerFindSettings
+    href: Xunit.FrontControllerFindSettings.html
+  - name: )
+- uid: v3.1.0.0:Xunit.FrontControllerFindSettings
+  commentId: T:Xunit.FrontControllerFindSettings
+  parent: v3.1.0.0:Xunit
+  href: Xunit.FrontControllerFindSettings.html
+  name: FrontControllerFindSettings
+  nameWithType: FrontControllerFindSettings
+  fullName: Xunit.FrontControllerFindSettings
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.FindAndRun*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.FindAndRun
+  href: Xunit.Runner.v1.Xunit1.FindAndRun.html#Xunit_Runner_v1_Xunit1_FindAndRun_Xunit_Sdk_IMessageSink_System_Boolean_System_Predicate_Xunit_Sdk_ITestCaseDiscovered__System_Boolean_
+  name: FindAndRun
+  nameWithType: Xunit1.FindAndRun
+  fullName: Xunit.Runner.v1.Xunit1.FindAndRun
+- uid: v3.1.0.0:Xunit.FrontControllerFindAndRunSettings
+  commentId: T:Xunit.FrontControllerFindAndRunSettings
+  parent: v3.1.0.0:Xunit
+  href: Xunit.FrontControllerFindAndRunSettings.html
+  name: FrontControllerFindAndRunSettings
+  nameWithType: FrontControllerFindAndRunSettings
+  fullName: Xunit.FrontControllerFindAndRunSettings
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.Run*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.Run
+  href: Xunit.Runner.v1.Xunit1.Run.html#Xunit_Runner_v1_Xunit1_Run_System_Collections_Generic_IReadOnlyCollection_Xunit_Runner_v1_Xunit1TestCase__Xunit_Sdk_IMessageSink_System_Boolean_
+  name: Run
+  nameWithType: Xunit1.Run
+  fullName: Xunit.Runner.v1.Xunit1.Run
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.Runner.v1.Xunit1TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<Xunit1TestCase>
+  nameWithType: IReadOnlyCollection<Xunit1TestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.Runner.v1.Xunit1TestCase>
+  nameWithType.vb: IReadOnlyCollection(Of Xunit1TestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.Runner.v1.Xunit1TestCase)
+  name.vb: IReadOnlyCollection(Of Xunit1TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.1.0.0:Xunit.Runner.v1.Xunit1TestCase
+    name: Xunit1TestCase
+    href: Xunit.Runner.v1.Xunit1TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Runner.v1.Xunit1TestCase
+    name: Xunit1TestCase
+    href: Xunit.Runner.v1.Xunit1TestCase.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.1.0.0:Xunit.FrontControllerRunSettings
+  commentId: T:Xunit.FrontControllerRunSettings
+  parent: v3.1.0.0:Xunit
+  href: Xunit.FrontControllerRunSettings.html
+  name: FrontControllerRunSettings
+  nameWithType: FrontControllerRunSettings
+  fullName: Xunit.FrontControllerRunSettings
+- uid: v3.1.0.0:Xunit.Sdk.IDiagnosticMessage
+  commentId: T:Xunit.Sdk.IDiagnosticMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IDiagnosticMessage.html
+  name: IDiagnosticMessage
+  nameWithType: IDiagnosticMessage
+  fullName: Xunit.Sdk.IDiagnosticMessage
+- uid: v3.1.0.0:Xunit.Sdk.IInternalDiagnosticMessage
+  commentId: T:Xunit.Sdk.IInternalDiagnosticMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IInternalDiagnosticMessage.html
+  name: IInternalDiagnosticMessage
+  nameWithType: IInternalDiagnosticMessage
+  fullName: Xunit.Sdk.IInternalDiagnosticMessage
+- uid: v3.1.0.0:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution*
+  commentId: Overload:Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution
+  href: Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution.html#Xunit_Runner_v1_Xunit1_ForDiscoveryAndExecution_Xunit_Runner_Common_XunitProjectAssembly_Xunit_Runner_Common_ISourceInformationProvider_Xunit_Sdk_IMessageSink_
+  name: ForDiscoveryAndExecution
+  nameWithType: Xunit1.ForDiscoveryAndExecution
+  fullName: Xunit.Runner.v1.Xunit1.ForDiscoveryAndExecution
+- uid: v3.1.0.0:Xunit.Runner.Common.XunitProjectAssembly
+  commentId: T:Xunit.Runner.Common.XunitProjectAssembly
+  parent: v3.1.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProjectAssembly.html
+  name: XunitProjectAssembly
+  nameWithType: XunitProjectAssembly
+  fullName: Xunit.Runner.Common.XunitProjectAssembly
+memberLayout: SeparatePages

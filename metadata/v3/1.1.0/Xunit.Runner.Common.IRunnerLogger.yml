@@ -1,0 +1,1937 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  commentId: T:Xunit.Runner.Common.IRunnerLogger
+  id: IRunnerLogger
+  parent: v3.1.1.0:Xunit.Runner.Common
+  children:
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LockObject
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogError(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogRaw(System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment
+  langs:
+  - csharp
+  - vb
+  name: IRunnerLogger
+  nameWithType: IRunnerLogger
+  fullName: Xunit.Runner.Common.IRunnerLogger
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: IRunnerLogger
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Interface implemented by runners, passed to <xref href="v3.1.1.0:Xunit.Runner.Common.IRunnerReporter" data-throw-if-not-resolved="false"></xref>, so that the
+
+    report can log lines of text to the output device.
+  example: []
+  syntax:
+    content: public interface IRunnerLogger
+    content.vb: Public Interface IRunnerLogger
+  extensionMethods:
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(System.String)
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(System.String,System.Object[])
+  - v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LockObject
+  commentId: P:Xunit.Runner.Common.IRunnerLogger.LockObject
+  id: LockObject
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LockObject
+  nameWithType: IRunnerLogger.LockObject
+  fullName: Xunit.Runner.Common.IRunnerLogger.LockObject
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LockObject
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets a lock object that can be used to ensure that multiple calls to
+
+    log messages will always be grouped together.
+  example: []
+  syntax:
+    content: object LockObject { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property LockObject As Object
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LockObject*
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  id: LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LogMessage(StackFrameInfo, string)
+  nameWithType: IRunnerLogger.LogMessage(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogMessage(Xunit.Runner.Common.StackFrameInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LogMessage
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Logs a normal-priority message with stack frame.
+  example: []
+  syntax:
+    content: void LogMessage(StackFrameInfo stackFrame, string message)
+    parameters:
+    - id: stackFrame
+      type: Xunit.Runner.Common.StackFrameInfo
+      description: The stack frame information
+    - id: message
+      type: System.String
+      description: The message to be logged
+    content.vb: Sub LogMessage(stackFrame As StackFrameInfo, message As String)
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogMessage*
+  nameWithType.vb: IRunnerLogger.LogMessage(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLogger.LogMessage(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogMessage(StackFrameInfo, String)
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  id: LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LogImportantMessage(StackFrameInfo, string)
+  nameWithType: IRunnerLogger.LogImportantMessage(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LogImportantMessage
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Logs a high-priority message with stack frame.
+  example: []
+  syntax:
+    content: void LogImportantMessage(StackFrameInfo stackFrame, string message)
+    parameters:
+    - id: stackFrame
+      type: Xunit.Runner.Common.StackFrameInfo
+      description: The stack frame information
+    - id: message
+      type: System.String
+      description: The message to be logged
+    content.vb: Sub LogImportantMessage(stackFrame As StackFrameInfo, message As String)
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage*
+  nameWithType.vb: IRunnerLogger.LogImportantMessage(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLogger.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogImportantMessage(StackFrameInfo, String)
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String)
+  id: LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(StackFrameInfo, string)
+  nameWithType: IRunnerLogger.LogWarning(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogWarning(Xunit.Runner.Common.StackFrameInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LogWarning
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 39
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Logs a warning message with stack frame.
+  example: []
+  syntax:
+    content: void LogWarning(StackFrameInfo stackFrame, string message)
+    parameters:
+    - id: stackFrame
+      type: Xunit.Runner.Common.StackFrameInfo
+      description: The stack frame information
+    - id: message
+      type: System.String
+      description: The message to be logged
+    content.vb: Sub LogWarning(stackFrame As StackFrameInfo, message As String)
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogWarning*
+  nameWithType.vb: IRunnerLogger.LogWarning(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLogger.LogWarning(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogWarning(StackFrameInfo, String)
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogError(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.LogError(Xunit.Runner.Common.StackFrameInfo,System.String)
+  id: LogError(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(StackFrameInfo, string)
+  nameWithType: IRunnerLogger.LogError(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogError(Xunit.Runner.Common.StackFrameInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LogError
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 49
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Logs an error message with stack frame.
+  example: []
+  syntax:
+    content: void LogError(StackFrameInfo stackFrame, string message)
+    parameters:
+    - id: stackFrame
+      type: Xunit.Runner.Common.StackFrameInfo
+      description: The stack frame information
+    - id: message
+      type: System.String
+      description: The message to be logged
+    content.vb: Sub LogError(stackFrame As StackFrameInfo, message As String)
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogError*
+  nameWithType.vb: IRunnerLogger.LogError(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLogger.LogError(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogError(StackFrameInfo, String)
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogRaw(System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.LogRaw(System.String)
+  id: LogRaw(System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: LogRaw(string)
+  nameWithType: IRunnerLogger.LogRaw(string)
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogRaw(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: LogRaw
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 60
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Logs a messages with as little processing as possible. For example, the console runner will
+
+    not attempt to set the color of the text that's being logged. This is most useful when attempting
+
+    to render text lines that will be processed, like for TeamCity.
+  example: []
+  syntax:
+    content: void LogRaw(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Sub LogRaw(message As String)
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogRaw*
+  nameWithType.vb: IRunnerLogger.LogRaw(String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLogger.LogRaw(String)
+  name.vb: LogRaw(String)
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment
+  commentId: M:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment
+  id: WaitForAcknowledgment
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+  langs:
+  - csharp
+  - vb
+  name: WaitForAcknowledgment()
+  nameWithType: IRunnerLogger.WaitForAcknowledgment()
+  fullName: Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: WaitForAcknowledgment
+    path: ../src/xunit.v3.runner.common/Abstractions/Reporters/IRunnerLogger.cs
+    startLine: 70
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Waits for an acknowledgement of a message.
+  remarks: >-
+    This is primarily for use by <xref href="v3.1.1.0:Xunit.Runner.Common.JsonReporterMessageHandler" data-throw-if-not-resolved="false"></xref> so that it can wait for acknowledgment
+
+    of messages when running in synchronous mode by the in-process runner. Other runner loggers running outside
+
+    this context (and/or when not in synchronous automated mode) should NOOP for this.
+  example: []
+  syntax:
+    content: void WaitForAcknowledgment()
+    content.vb: Sub WaitForAcknowledgment()
+  overload: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment*
+references:
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerReporter
+  commentId: T:Xunit.Runner.Common.IRunnerReporter
+  parent: v3.1.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IRunnerReporter.html
+  name: IRunnerReporter
+  nameWithType: IRunnerReporter
+  fullName: Xunit.Runner.Common.IRunnerReporter
+- uid: v3.1.1.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogError(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogError(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogError(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogError(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogError(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogError(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogImportantMessage(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogImportantMessage(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogImportantMessage(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogImportantMessage(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogImportantMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogImportantMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogMessage(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogMessage(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogMessage(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogMessage(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogRaw(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogRaw(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogRaw(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogRaw(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogRaw
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogRaw
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogWarning(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogWarning(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogWarning(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogWarning(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  parent: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  definition: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogWarning(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogWarning(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogError(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogError(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions
+  commentId: T:Xunit.Runner.Common.IRunnerLoggerExtensions
+  parent: v3.1.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.html
+  name: IRunnerLoggerExtensions
+  nameWithType: IRunnerLoggerExtensions
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogError(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogError(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogError(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogError(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogError(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogError(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogError(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogError.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogError_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogImportantMessage(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogImportantMessage(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogImportantMessage(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogImportantMessage(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogImportantMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogImportantMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogImportantMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogImportantMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogImportantMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogMessage(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogMessage(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogMessage(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogMessage(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogMessage(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogMessage
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogMessage.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogMessage_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogRaw(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogRaw(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogRaw(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogRaw(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogRaw
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogRaw
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogRaw.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogRaw_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: LogWarning(IRunnerLogger, string)
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, string)
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: LogWarning(IRunnerLogger, String)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String)
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  name: LogWarning(IRunnerLogger, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, String, ParamArray Object())
+  name.vb: LogWarning(IRunnerLogger, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+  isExternal: true
+  href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  name: LogWarning(IRunnerLogger, StackFrameInfo, string, params object[])
+  nameWithType: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, StackFrameInfo, string, params object[])
+  fullName: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, string, params object[])
+  nameWithType.vb: IRunnerLoggerExtensions.LogWarning(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.StackFrameInfo, String, ParamArray Object())
+  name.vb: LogWarning(IRunnerLogger, StackFrameInfo, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.StackFrameInfo,System.String,System.Object[])
+    name: LogWarning
+    href: Xunit.Runner.Common.IRunnerLoggerExtensions.LogWarning.html#Xunit_Runner_Common_IRunnerLoggerExtensions_LogWarning_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_StackFrameInfo_System_String_System_Object___
+  - name: (
+  - uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LockObject*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LockObject
+  href: Xunit.Runner.Common.IRunnerLogger.LockObject.html#Xunit_Runner_Common_IRunnerLogger_LockObject
+  name: LockObject
+  nameWithType: IRunnerLogger.LockObject
+  fullName: Xunit.Runner.Common.IRunnerLogger.LockObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogMessage*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LogMessage
+  href: Xunit.Runner.Common.IRunnerLogger.LogMessage.html#Xunit_Runner_Common_IRunnerLogger_LogMessage_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogMessage
+  nameWithType: IRunnerLogger.LogMessage
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogMessage
+- uid: v3.1.1.0:Xunit.Runner.Common.StackFrameInfo
+  commentId: T:Xunit.Runner.Common.StackFrameInfo
+  parent: v3.1.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.StackFrameInfo.html
+  name: StackFrameInfo
+  nameWithType: StackFrameInfo
+  fullName: Xunit.Runner.Common.StackFrameInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LogImportantMessage
+  href: Xunit.Runner.Common.IRunnerLogger.LogImportantMessage.html#Xunit_Runner_Common_IRunnerLogger_LogImportantMessage_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogImportantMessage
+  nameWithType: IRunnerLogger.LogImportantMessage
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogImportantMessage
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogWarning*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LogWarning
+  href: Xunit.Runner.Common.IRunnerLogger.LogWarning.html#Xunit_Runner_Common_IRunnerLogger_LogWarning_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogWarning
+  nameWithType: IRunnerLogger.LogWarning
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogWarning
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogError*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LogError
+  href: Xunit.Runner.Common.IRunnerLogger.LogError.html#Xunit_Runner_Common_IRunnerLogger_LogError_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogError
+  nameWithType: IRunnerLogger.LogError
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogError
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.LogRaw*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.LogRaw
+  href: Xunit.Runner.Common.IRunnerLogger.LogRaw.html#Xunit_Runner_Common_IRunnerLogger_LogRaw_System_String_
+  name: LogRaw
+  nameWithType: IRunnerLogger.LogRaw
+  fullName: Xunit.Runner.Common.IRunnerLogger.LogRaw
+- uid: v3.1.1.0:Xunit.Runner.Common.JsonReporterMessageHandler
+  commentId: T:Xunit.Runner.Common.JsonReporterMessageHandler
+  href: Xunit.Runner.Common.JsonReporterMessageHandler.html
+  name: JsonReporterMessageHandler
+  nameWithType: JsonReporterMessageHandler
+  fullName: Xunit.Runner.Common.JsonReporterMessageHandler
+- uid: v3.1.1.0:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment*
+  commentId: Overload:Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment
+  href: Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment.html#Xunit_Runner_Common_IRunnerLogger_WaitForAcknowledgment
+  name: WaitForAcknowledgment
+  nameWithType: IRunnerLogger.WaitForAcknowledgment
+  fullName: Xunit.Runner.Common.IRunnerLogger.WaitForAcknowledgment
+memberLayout: SeparatePages

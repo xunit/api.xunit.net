@@ -1,0 +1,1918 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  commentId: T:Xunit.Sdk.CollectionTracker`1
+  id: CollectionTracker`1
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Dispose
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.ReadOnlySpan{`0},System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Collections.Generic.IEnumerable{`0},System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.ReadOnlySpan{`0},System.Int32)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.IterationCount
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.TypeAt(System.Nullable{System.Int32})
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Wrap(System.Collections.Generic.IEnumerable{`0})
+  langs:
+  - csharp
+  - vb
+  name: CollectionTracker<T>
+  nameWithType: CollectionTracker<T>
+  fullName: Xunit.Sdk.CollectionTracker<T>
+  type: Class
+  source:
+    id: CollectionTracker
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 432
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    A utility class that can be used to wrap enumerables to prevent double enumeration.
+
+    It offers the ability to safely print parts of the collection when failures are
+
+    encountered, as well as some static versions of the printing functionality.
+  example: []
+  syntax:
+    content: 'public sealed class CollectionTracker<T> : CollectionTracker, IDisposable, IEnumerable<T>, IEnumerable'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class CollectionTracker(Of T) Inherits CollectionTracker Implements IDisposable, IEnumerable(Of T), IEnumerable
+  inheritance:
+  - System.Object
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker
+  implements:
+  - System.IDisposable
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker,Xunit.Sdk.CollectionTracker,System.Collections.IEqualityComparer,System.Boolean,System.Nullable{System.Int32}@)
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{`0}.Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1
+  - System.Collections.IEnumerable.Xunit.Sdk.CollectionTrackerExtensions.AsTracker
+  - v3.1.0.0:Xunit.Sdk.CollectionTracker.Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator
+  nameWithType.vb: CollectionTracker(Of T)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T)
+  name.vb: CollectionTracker(Of T)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.IterationCount
+  commentId: P:Xunit.Sdk.CollectionTracker`1.IterationCount
+  id: IterationCount
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: IterationCount
+  nameWithType: CollectionTracker<T>.IterationCount
+  fullName: Xunit.Sdk.CollectionTracker<T>.IterationCount
+  type: Property
+  source:
+    id: IterationCount
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 474
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Gets the number of iterations that have happened so far.
+  example: []
+  syntax:
+    content: public int IterationCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property IterationCount As Integer
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.IterationCount*
+  nameWithType.vb: CollectionTracker(Of T).IterationCount
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).IterationCount
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Dispose
+  commentId: M:Xunit.Sdk.CollectionTracker`1.Dispose
+  id: Dispose
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: CollectionTracker<T>.Dispose()
+  fullName: Xunit.Sdk.CollectionTracker<T>.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 478
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: Xunit.Sdk.CollectionTracker.Dispose
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Dispose*
+  nameWithType.vb: CollectionTracker(Of T).Dispose()
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).Dispose()
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  id: FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatIndexedMismatch(int?, out int?, int)
+  nameWithType: CollectionTracker<T>.FormatIndexedMismatch(int?, out int?, int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatIndexedMismatch(int?, out int?, int)
+  type: Method
+  source:
+    id: FormatIndexedMismatch
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 482
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Formats the collection when you have a mismatched index. The formatted result will be the section of the
+
+    collection surrounded by the mismatched item.
+  example: []
+  syntax:
+    content: public override string FormatIndexedMismatch(int? mismatchedIndex, out int? pointerIndent, int depth = 1)
+    parameters:
+    - id: mismatchedIndex
+      type: System.Nullable{System.Int32}
+      description: The index of the mismatched item
+    - id: pointerIndent
+      type: System.Nullable{System.Int32}
+      description: How many spaces into the output value the pointed-to item begins at
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted collection
+    content.vb: Public Overrides Function FormatIndexedMismatch(mismatchedIndex As Integer?, pointerIndent As Integer?, depth As Integer = 1) As String
+  overridden: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch*
+  nameWithType.vb: CollectionTracker(Of T).FormatIndexedMismatch(Integer?, Integer?, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatIndexedMismatch(Integer?, Integer?, Integer)
+  name.vb: FormatIndexedMismatch(Integer?, Integer?, Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  id: FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatIndexedMismatch(int, int, int?, out int?, int)
+  nameWithType: CollectionTracker<T>.FormatIndexedMismatch(int, int, int?, out int?, int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatIndexedMismatch(int, int, int?, out int?, int)
+  type: Method
+  source:
+    id: FormatIndexedMismatch
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 514
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Formats the collection when you have a mismatched index. The formatted result will be the section of the
+
+    collection from <code class="paramref">startIndex</code> to <code class="paramref">endIndex</code>. These indices are usually
+
+    obtained by calling <xref href="v3.1.0.0:Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable%7bSystem.Int32%7d%2cSystem.Int32%40%2cSystem.Int32%40)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override string FormatIndexedMismatch(int startIndex, int endIndex, int? mismatchedIndex, out int? pointerIndent, int depth = 1)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The start index of the collection to print
+    - id: endIndex
+      type: System.Int32
+      description: The end index of the collection to print
+    - id: mismatchedIndex
+      type: System.Nullable{System.Int32}
+      description: The mismatched item index
+    - id: pointerIndent
+      type: System.Nullable{System.Int32}
+      description: How many spaces into the output value the pointed-to item begins at
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted collection
+    content.vb: Public Overrides Function FormatIndexedMismatch(startIndex As Integer, endIndex As Integer, mismatchedIndex As Integer?, pointerIndent As Integer?, depth As Integer = 1) As String
+  overridden: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch*
+  nameWithType.vb: CollectionTracker(Of T).FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+  name.vb: FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.ReadOnlySpan{`0},System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch(System.ReadOnlySpan{`0},System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  id: FormatIndexedMismatch(System.ReadOnlySpan{`0},System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatIndexedMismatch(ReadOnlySpan<T>, int?, out int?, int)
+  nameWithType: CollectionTracker<T>.FormatIndexedMismatch(ReadOnlySpan<T>, int?, out int?, int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatIndexedMismatch(System.ReadOnlySpan<T>, int?, out int?, int)
+  type: Method
+  source:
+    id: FormatIndexedMismatch
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 544
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Formats a span with a mismatched index.
+  example: []
+  syntax:
+    content: public static string FormatIndexedMismatch(ReadOnlySpan<T> span, int? mismatchedIndex, out int? pointerIndent, int depth = 1)
+    parameters:
+    - id: span
+      type: System.ReadOnlySpan{{T}}
+      description: The span to be formatted
+    - id: mismatchedIndex
+      type: System.Nullable{System.Int32}
+      description: The mismatched index point
+    - id: pointerIndent
+      type: System.Nullable{System.Int32}
+      description: How many spaces into the output value the pointed-to item begins at
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted span
+    content.vb: Public Shared Function FormatIndexedMismatch(span As ReadOnlySpan(Of T), mismatchedIndex As Integer?, pointerIndent As Integer?, depth As Integer = 1) As String
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch*
+  nameWithType.vb: CollectionTracker(Of T).FormatIndexedMismatch(ReadOnlySpan(Of T), Integer?, Integer?, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatIndexedMismatch(System.ReadOnlySpan(Of T), Integer?, Integer?, Integer)
+  name.vb: FormatIndexedMismatch(ReadOnlySpan(Of T), Integer?, Integer?, Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Int32)
+  id: FormatStart(System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatStart(int)
+  nameWithType: CollectionTracker<T>.FormatStart(int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatStart(int)
+  type: Method
+  source:
+    id: FormatStart
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 612
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Formats the beginning part of the collection.
+  example: []
+  syntax:
+    content: public override string FormatStart(int depth = 1)
+    parameters:
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted collection
+    content.vb: Public Overrides Function FormatStart(depth As Integer = 1) As String
+  overridden: Xunit.Sdk.CollectionTracker.FormatStart(System.Int32)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart*
+  nameWithType.vb: CollectionTracker(Of T).FormatStart(Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatStart(Integer)
+  name.vb: FormatStart(Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Collections.Generic.IEnumerable{`0},System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatStart(System.Collections.Generic.IEnumerable{`0},System.Int32)
+  id: FormatStart(System.Collections.Generic.IEnumerable{`0},System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatStart(IEnumerable<T>, int)
+  nameWithType: CollectionTracker<T>.FormatStart(IEnumerable<T>, int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatStart(System.Collections.Generic.IEnumerable<T>, int)
+  type: Method
+  source:
+    id: FormatStart
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 634
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Formats the beginning part of a collection.
+  example: []
+  syntax:
+    content: public static string FormatStart(IEnumerable<T> collection, int depth = 1)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to be formatted
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted collection
+    content.vb: Public Shared Function FormatStart(collection As IEnumerable(Of T), depth As Integer = 1) As String
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart*
+  nameWithType.vb: CollectionTracker(Of T).FormatStart(IEnumerable(Of T), Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatStart(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: FormatStart(IEnumerable(Of T), Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart(System.ReadOnlySpan{`0},System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.FormatStart(System.ReadOnlySpan{`0},System.Int32)
+  id: FormatStart(System.ReadOnlySpan{`0},System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: FormatStart(ReadOnlySpan<T>, int)
+  nameWithType: CollectionTracker<T>.FormatStart(ReadOnlySpan<T>, int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatStart(System.ReadOnlySpan<T>, int)
+  type: Method
+  source:
+    id: FormatStart
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 667
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Formats the beginning part of a span.
+  example: []
+  syntax:
+    content: public static string FormatStart(ReadOnlySpan<T> span, int depth = 1)
+    parameters:
+    - id: span
+      type: System.ReadOnlySpan{{T}}
+      description: The span to be formatted
+    - id: depth
+      type: System.Int32
+      description: The optional printing depth (1 indicates a top-level value)
+    return:
+      type: System.String
+      description: The formatted span
+    content.vb: Public Shared Function FormatStart(span As ReadOnlySpan(Of T), depth As Integer = 1) As String
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart*
+  nameWithType.vb: CollectionTracker(Of T).FormatStart(ReadOnlySpan(Of T), Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatStart(System.ReadOnlySpan(Of T), Integer)
+  name.vb: FormatStart(ReadOnlySpan(Of T), Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  commentId: M:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  id: GetEnumerator
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CollectionTracker<T>.GetEnumerator()
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 716
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  example: []
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of T)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: CollectionTracker(Of T).GetEnumerator()
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetEnumerator()
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator
+  commentId: M:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator
+  id: GetSafeEnumerator
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: GetSafeEnumerator()
+  nameWithType: CollectionTracker<T>.GetSafeEnumerator()
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetSafeEnumerator()
+  type: Method
+  source:
+    id: GetSafeEnumerator
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 729
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a safe version of <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> that prevents double enumeration and does all
+
+    the necessary tracking required for collection formatting. Should should be the same value
+
+    returned by <xref href="v3.1.0.0:Xunit.Sdk.CollectionTracker%601.GetEnumerator" data-throw-if-not-resolved="false"></xref>, except non-generic.
+  example: []
+  syntax:
+    content: protected override IEnumerator GetSafeEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Protected Overrides Function GetSafeEnumerator() As IEnumerator
+  overridden: Xunit.Sdk.CollectionTracker.GetSafeEnumerator
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator*
+  nameWithType.vb: CollectionTracker(Of T).GetSafeEnumerator()
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetSafeEnumerator()
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  commentId: M:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  id: GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: GetMismatchExtents(int?, out int, out int)
+  nameWithType: CollectionTracker<T>.GetMismatchExtents(int?, out int, out int)
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetMismatchExtents(int?, out int, out int)
+  type: Method
+  source:
+    id: GetMismatchExtents
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 733
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the extents to print when you find a mismatched index, in the form of
+
+    a <code class="paramref">startIndex</code> and <code class="paramref">endIndex</code>. If the mismatched
+
+    index is <code>null</code>, the extents will start at index 0.
+  example: []
+  syntax:
+    content: public override void GetMismatchExtents(int? mismatchedIndex, out int startIndex, out int endIndex)
+    parameters:
+    - id: mismatchedIndex
+      type: System.Nullable{System.Int32}
+      description: The mismatched item index
+    - id: startIndex
+      type: System.Int32
+      description: The start index that should be used for printing
+    - id: endIndex
+      type: System.Int32
+      description: The end index that should be used for printing
+    content.vb: Public Overrides Sub GetMismatchExtents(mismatchedIndex As Integer?, startIndex As Integer, endIndex As Integer)
+  overridden: Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents*
+  nameWithType.vb: CollectionTracker(Of T).GetMismatchExtents(Integer?, Integer, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetMismatchExtents(Integer?, Integer, Integer)
+  name.vb: GetMismatchExtents(Integer?, Integer, Integer)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.TypeAt(System.Nullable{System.Int32})
+  commentId: M:Xunit.Sdk.CollectionTracker`1.TypeAt(System.Nullable{System.Int32})
+  id: TypeAt(System.Nullable{System.Int32})
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: TypeAt(int?)
+  nameWithType: CollectionTracker<T>.TypeAt(int?)
+  fullName: Xunit.Sdk.CollectionTracker<T>.TypeAt(int?)
+  type: Method
+  source:
+    id: TypeAt
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 755
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the full name of the type of the element at the given index, if known.
+
+    Since this uses the item cache produced by enumeration, it may return <code>null</code>
+
+    when we haven't enumerated enough to see the given element, or if we enumerated
+
+    so much that the item has left the cache, or if the item at the given index
+
+    is <code>null</code>. It will also return <code>null</code> when the <code class="paramref">index</code>
+
+    is <code>null</code>.
+  example: []
+  syntax:
+    content: public override string? TypeAt(int? index)
+    parameters:
+    - id: index
+      type: System.Nullable{System.Int32}
+      description: The item index
+    return:
+      type: System.String
+    content.vb: Public Overrides Function TypeAt(index As Integer?) As String
+  overridden: Xunit.Sdk.CollectionTracker.TypeAt(System.Nullable{System.Int32})
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.TypeAt*
+  nameWithType.vb: CollectionTracker(Of T).TypeAt(Integer?)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).TypeAt(Integer?)
+  name.vb: TypeAt(Integer?)
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Wrap(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Xunit.Sdk.CollectionTracker`1.Wrap(System.Collections.Generic.IEnumerable{`0})
+  id: Wrap(System.Collections.Generic.IEnumerable{`0})
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  langs:
+  - csharp
+  - vb
+  name: Wrap(IEnumerable<T>)
+  nameWithType: CollectionTracker<T>.Wrap(IEnumerable<T>)
+  fullName: Xunit.Sdk.CollectionTracker<T>.Wrap(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: Wrap
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\CollectionTracker.cs
+    startLine: 778
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Wraps the given collection inside of a <xref href="v3.1.0.0:Xunit.Sdk.CollectionTracker%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static CollectionTracker<T> Wrap(IEnumerable<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to be wrapped
+    return:
+      type: Xunit.Sdk.CollectionTracker`1
+    content.vb: Public Shared Function Wrap(collection As IEnumerable(Of T)) As CollectionTracker(Of T)
+  overload: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Wrap*
+  nameWithType.vb: CollectionTracker(Of T).Wrap(IEnumerable(Of T))
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).Wrap(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Wrap(IEnumerable(Of T))
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  commentId: T:Xunit.Sdk.CollectionTracker
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.CollectionTracker.html
+  name: CollectionTracker
+  nameWithType: CollectionTracker
+  fullName: Xunit.Sdk.CollectionTracker
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker,Xunit.Sdk.CollectionTracker,System.Collections.IEqualityComparer,System.Boolean,System.Nullable{System.Int32}@)
+  commentId: M:Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker,Xunit.Sdk.CollectionTracker,System.Collections.IEqualityComparer,System.Boolean,System.Nullable{System.Int32}@)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.AreCollectionsEqual.html#Xunit_Sdk_CollectionTracker_AreCollectionsEqual_Xunit_Sdk_CollectionTracker_Xunit_Sdk_CollectionTracker_System_Collections_IEqualityComparer_System_Boolean_System_Nullable_System_Int32___
+  name: AreCollectionsEqual(CollectionTracker, CollectionTracker, IEqualityComparer, bool, out int?)
+  nameWithType: CollectionTracker.AreCollectionsEqual(CollectionTracker, CollectionTracker, IEqualityComparer, bool, out int?)
+  fullName: Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker, Xunit.Sdk.CollectionTracker, System.Collections.IEqualityComparer, bool, out int?)
+  nameWithType.vb: CollectionTracker.AreCollectionsEqual(CollectionTracker, CollectionTracker, IEqualityComparer, Boolean, Integer?)
+  fullName.vb: Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker, Xunit.Sdk.CollectionTracker, System.Collections.IEqualityComparer, Boolean, Integer?)
+  name.vb: AreCollectionsEqual(CollectionTracker, CollectionTracker, IEqualityComparer, Boolean, Integer?)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker,Xunit.Sdk.CollectionTracker,System.Collections.IEqualityComparer,System.Boolean,System.Nullable{System.Int32}@)
+    name: AreCollectionsEqual
+    href: Xunit.Sdk.CollectionTracker.AreCollectionsEqual.html#Xunit_Sdk_CollectionTracker_AreCollectionsEqual_Xunit_Sdk_CollectionTracker_Xunit_Sdk_CollectionTracker_System_Collections_IEqualityComparer_System_Boolean_System_Nullable_System_Int32___
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IEqualityComparer
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.iequalitycomparer
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.AreCollectionsEqual(Xunit.Sdk.CollectionTracker,Xunit.Sdk.CollectionTracker,System.Collections.IEqualityComparer,System.Boolean,System.Nullable{System.Int32}@)
+    name: AreCollectionsEqual
+    href: Xunit.Sdk.CollectionTracker.AreCollectionsEqual.html#Xunit_Sdk_CollectionTracker_AreCollectionsEqual_Xunit_Sdk_CollectionTracker_Xunit_Sdk_CollectionTracker_System_Collections_IEqualityComparer_System_Boolean_System_Nullable_System_Int32___
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: ','
+  - name: " "
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IEqualityComparer
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.iequalitycomparer
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+  commentId: M:Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.Wrap.html#Xunit_Sdk_CollectionTracker_Wrap_System_Collections_IEnumerable_
+  name: Wrap(IEnumerable)
+  nameWithType: CollectionTracker.Wrap(IEnumerable)
+  fullName: Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+    name: Wrap
+    href: Xunit.Sdk.CollectionTracker.Wrap.html#Xunit_Sdk_CollectionTracker_Wrap_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Wrap(System.Collections.IEnumerable)
+    name: Wrap
+    href: Xunit.Sdk.CollectionTracker.Wrap.html#Xunit_Sdk_CollectionTracker_Wrap_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions
+  definition: Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+  href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  name: AsTracker<T>(IEnumerable<T>)
+  nameWithType: CollectionTrackerExtensions.AsTracker<T>(IEnumerable<T>)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.AsTracker<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: CollectionTrackerExtensions.AsTracker(Of T)(IEnumerable(Of T))
+  fullName.vb: Xunit.Sdk.CollectionTrackerExtensions.AsTracker(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AsTracker(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{`0})
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{`0})
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable.Xunit.Sdk.CollectionTrackerExtensions.AsTracker
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions
+  definition: Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  name: AsTracker(IEnumerable)
+  nameWithType: CollectionTrackerExtensions.AsTracker(IEnumerable)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions
+  definition: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  name: GetEnumerator(CollectionTracker)
+  nameWithType: CollectionTrackerExtensions.GetEnumerator(CollectionTracker)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  name: AsTracker<T>(IEnumerable<T>)
+  nameWithType: CollectionTrackerExtensions.AsTracker<T>(IEnumerable<T>)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.AsTracker<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: CollectionTrackerExtensions.AsTracker(Of T)(IEnumerable(Of T))
+  fullName.vb: Xunit.Sdk.CollectionTrackerExtensions.AsTracker(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AsTracker(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions
+  commentId: T:Xunit.Sdk.CollectionTrackerExtensions
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.CollectionTrackerExtensions.html
+  name: CollectionTrackerExtensions
+  nameWithType: CollectionTrackerExtensions
+  fullName: Xunit.Sdk.CollectionTrackerExtensions
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  isExternal: true
+  href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  name: AsTracker(IEnumerable)
+  nameWithType: CollectionTrackerExtensions.AsTracker(IEnumerable)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.AsTracker(System.Collections.IEnumerable)
+    name: AsTracker
+    href: Xunit.Sdk.CollectionTrackerExtensions.AsTracker.html#Xunit_Sdk_CollectionTrackerExtensions_AsTracker_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  commentId: M:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  name: GetEnumerator(CollectionTracker)
+  nameWithType: CollectionTrackerExtensions.GetEnumerator(CollectionTracker)
+  fullName: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator(Xunit.Sdk.CollectionTracker)
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTrackerExtensions.GetEnumerator.html#Xunit_Sdk_CollectionTrackerExtensions_GetEnumerator_Xunit_Sdk_CollectionTracker_
+  - name: (
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker.html
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.IterationCount*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.IterationCount
+  href: Xunit.Sdk.CollectionTracker-1.IterationCount.html#Xunit_Sdk_CollectionTracker_1_IterationCount
+  name: IterationCount
+  nameWithType: CollectionTracker<T>.IterationCount
+  fullName: Xunit.Sdk.CollectionTracker<T>.IterationCount
+  nameWithType.vb: CollectionTracker(Of T).IterationCount
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).IterationCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Dispose
+  commentId: M:Xunit.Sdk.CollectionTracker.Dispose
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  href: Xunit.Sdk.CollectionTracker.Dispose.html#Xunit_Sdk_CollectionTracker_Dispose
+  name: Dispose()
+  nameWithType: CollectionTracker.Dispose()
+  fullName: Xunit.Sdk.CollectionTracker.Dispose()
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Dispose
+    name: Dispose
+    href: Xunit.Sdk.CollectionTracker.Dispose.html#Xunit_Sdk_CollectionTracker_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.Dispose
+    name: Dispose
+    href: Xunit.Sdk.CollectionTracker.Dispose.html#Xunit_Sdk_CollectionTracker_Dispose
+  - name: (
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Dispose*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.Dispose
+  href: Xunit.Sdk.CollectionTracker-1.Dispose.html#Xunit_Sdk_CollectionTracker_1_Dispose
+  name: Dispose
+  nameWithType: CollectionTracker<T>.Dispose
+  fullName: Xunit.Sdk.CollectionTracker<T>.Dispose
+  nameWithType.vb: CollectionTracker(Of T).Dispose
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).Dispose
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  name: FormatIndexedMismatch(int?, out int?, int)
+  nameWithType: CollectionTracker.FormatIndexedMismatch(int?, out int?, int)
+  fullName: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(int?, out int?, int)
+  nameWithType.vb: CollectionTracker.FormatIndexedMismatch(Integer?, Integer?, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(Integer?, Integer?, Integer)
+  name.vb: FormatIndexedMismatch(Integer?, Integer?, Integer)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+    name: FormatIndexedMismatch
+    href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+    name: FormatIndexedMismatch
+    href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.FormatIndexedMismatch
+  href: Xunit.Sdk.CollectionTracker-1.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_1_FormatIndexedMismatch_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  name: FormatIndexedMismatch
+  nameWithType: CollectionTracker<T>.FormatIndexedMismatch
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatIndexedMismatch
+  nameWithType.vb: CollectionTracker(Of T).FormatIndexedMismatch
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatIndexedMismatch
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  commentId: M:Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.GetMismatchExtents.html#Xunit_Sdk_CollectionTracker_GetMismatchExtents_System_Nullable_System_Int32__System_Int32__System_Int32__
+  name: GetMismatchExtents(int?, out int, out int)
+  nameWithType: CollectionTracker.GetMismatchExtents(int?, out int, out int)
+  fullName: Xunit.Sdk.CollectionTracker.GetMismatchExtents(int?, out int, out int)
+  nameWithType.vb: CollectionTracker.GetMismatchExtents(Integer?, Integer, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker.GetMismatchExtents(Integer?, Integer, Integer)
+  name.vb: GetMismatchExtents(Integer?, Integer, Integer)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+    name: GetMismatchExtents
+    href: Xunit.Sdk.CollectionTracker.GetMismatchExtents.html#Xunit_Sdk_CollectionTracker_GetMismatchExtents_System_Nullable_System_Int32__System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetMismatchExtents(System.Nullable{System.Int32},System.Int32@,System.Int32@)
+    name: GetMismatchExtents
+    href: Xunit.Sdk.CollectionTracker.GetMismatchExtents.html#Xunit_Sdk_CollectionTracker_GetMismatchExtents_System_Nullable_System_Int32__System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  name: FormatIndexedMismatch(int, int, int?, out int?, int)
+  nameWithType: CollectionTracker.FormatIndexedMismatch(int, int, int?, out int?, int)
+  fullName: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(int, int, int?, out int?, int)
+  nameWithType.vb: CollectionTracker.FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+  name.vb: FormatIndexedMismatch(Integer, Integer, Integer?, Integer?, Integer)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+    name: FormatIndexedMismatch
+    href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatIndexedMismatch(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32}@,System.Int32)
+    name: FormatIndexedMismatch
+    href: Xunit.Sdk.CollectionTracker.FormatIndexedMismatch.html#Xunit_Sdk_CollectionTracker_FormatIndexedMismatch_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ReadOnlySpan{{T}}
+  commentId: T:System.ReadOnlySpan{``0}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatStart(System.Int32)
+  commentId: M:Xunit.Sdk.CollectionTracker.FormatStart(System.Int32)
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.FormatStart.html#Xunit_Sdk_CollectionTracker_FormatStart_System_Int32_
+  name: FormatStart(int)
+  nameWithType: CollectionTracker.FormatStart(int)
+  fullName: Xunit.Sdk.CollectionTracker.FormatStart(int)
+  nameWithType.vb: CollectionTracker.FormatStart(Integer)
+  fullName.vb: Xunit.Sdk.CollectionTracker.FormatStart(Integer)
+  name.vb: FormatStart(Integer)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatStart(System.Int32)
+    name: FormatStart
+    href: Xunit.Sdk.CollectionTracker.FormatStart.html#Xunit_Sdk_CollectionTracker_FormatStart_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.FormatStart(System.Int32)
+    name: FormatStart
+    href: Xunit.Sdk.CollectionTracker.FormatStart.html#Xunit_Sdk_CollectionTracker_FormatStart_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.FormatStart*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.FormatStart
+  href: Xunit.Sdk.CollectionTracker-1.FormatStart.html#Xunit_Sdk_CollectionTracker_1_FormatStart_System_Int32_
+  name: FormatStart
+  nameWithType: CollectionTracker<T>.FormatStart
+  fullName: Xunit.Sdk.CollectionTracker<T>.FormatStart
+  nameWithType.vb: CollectionTracker(Of T).FormatStart
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).FormatStart
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  href: Xunit.Sdk.CollectionTracker-1.GetEnumerator.html#Xunit_Sdk_CollectionTracker_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: CollectionTracker<T>.GetEnumerator
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetEnumerator
+  nameWithType.vb: CollectionTracker(Of T).GetEnumerator
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  commentId: M:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+  href: Xunit.Sdk.CollectionTracker-1.GetEnumerator.html#Xunit_Sdk_CollectionTracker_1_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: CollectionTracker<T>.GetEnumerator()
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetEnumerator()
+  nameWithType.vb: CollectionTracker(Of T).GetEnumerator()
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTracker-1.GetEnumerator.html#Xunit_Sdk_CollectionTracker_1_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetEnumerator
+    name: GetEnumerator
+    href: Xunit.Sdk.CollectionTracker-1.GetEnumerator.html#Xunit_Sdk_CollectionTracker_1_GetEnumerator
+  - name: (
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetSafeEnumerator
+  commentId: M:Xunit.Sdk.CollectionTracker.GetSafeEnumerator
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  href: Xunit.Sdk.CollectionTracker.GetSafeEnumerator.html#Xunit_Sdk_CollectionTracker_GetSafeEnumerator
+  name: GetSafeEnumerator()
+  nameWithType: CollectionTracker.GetSafeEnumerator()
+  fullName: Xunit.Sdk.CollectionTracker.GetSafeEnumerator()
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetSafeEnumerator
+    name: GetSafeEnumerator
+    href: Xunit.Sdk.CollectionTracker.GetSafeEnumerator.html#Xunit_Sdk_CollectionTracker_GetSafeEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.GetSafeEnumerator
+    name: GetSafeEnumerator
+    href: Xunit.Sdk.CollectionTracker.GetSafeEnumerator.html#Xunit_Sdk_CollectionTracker_GetSafeEnumerator
+  - name: (
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.GetSafeEnumerator
+  href: Xunit.Sdk.CollectionTracker-1.GetSafeEnumerator.html#Xunit_Sdk_CollectionTracker_1_GetSafeEnumerator
+  name: GetSafeEnumerator
+  nameWithType: CollectionTracker<T>.GetSafeEnumerator
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetSafeEnumerator
+  nameWithType.vb: CollectionTracker(Of T).GetSafeEnumerator
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetSafeEnumerator
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.GetMismatchExtents
+  href: Xunit.Sdk.CollectionTracker-1.GetMismatchExtents.html#Xunit_Sdk_CollectionTracker_1_GetMismatchExtents_System_Nullable_System_Int32__System_Int32__System_Int32__
+  name: GetMismatchExtents
+  nameWithType: CollectionTracker<T>.GetMismatchExtents
+  fullName: Xunit.Sdk.CollectionTracker<T>.GetMismatchExtents
+  nameWithType.vb: CollectionTracker(Of T).GetMismatchExtents
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).GetMismatchExtents
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.TypeAt(System.Nullable{System.Int32})
+  commentId: M:Xunit.Sdk.CollectionTracker.TypeAt(System.Nullable{System.Int32})
+  parent: v3.1.0.0:Xunit.Sdk.CollectionTracker
+  isExternal: true
+  href: Xunit.Sdk.CollectionTracker.TypeAt.html#Xunit_Sdk_CollectionTracker_TypeAt_System_Nullable_System_Int32__
+  name: TypeAt(int?)
+  nameWithType: CollectionTracker.TypeAt(int?)
+  fullName: Xunit.Sdk.CollectionTracker.TypeAt(int?)
+  nameWithType.vb: CollectionTracker.TypeAt(Integer?)
+  fullName.vb: Xunit.Sdk.CollectionTracker.TypeAt(Integer?)
+  name.vb: TypeAt(Integer?)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.TypeAt(System.Nullable{System.Int32})
+    name: TypeAt
+    href: Xunit.Sdk.CollectionTracker.TypeAt.html#Xunit_Sdk_CollectionTracker_TypeAt_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker.TypeAt(System.Nullable{System.Int32})
+    name: TypeAt
+    href: Xunit.Sdk.CollectionTracker.TypeAt.html#Xunit_Sdk_CollectionTracker_TypeAt_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.TypeAt*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.TypeAt
+  href: Xunit.Sdk.CollectionTracker-1.TypeAt.html#Xunit_Sdk_CollectionTracker_1_TypeAt_System_Nullable_System_Int32__
+  name: TypeAt
+  nameWithType: CollectionTracker<T>.TypeAt
+  fullName: Xunit.Sdk.CollectionTracker<T>.TypeAt
+  nameWithType.vb: CollectionTracker(Of T).TypeAt
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).TypeAt
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+  commentId: T:Xunit.Sdk.CollectionTracker`1
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.CollectionTracker-1.html
+  name: CollectionTracker<T>
+  nameWithType: CollectionTracker<T>
+  fullName: Xunit.Sdk.CollectionTracker<T>
+  nameWithType.vb: CollectionTracker(Of T)
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T)
+  name.vb: CollectionTracker(Of T)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1
+    name: CollectionTracker
+    href: Xunit.Sdk.CollectionTracker-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk.CollectionTracker`1.Wrap*
+  commentId: Overload:Xunit.Sdk.CollectionTracker`1.Wrap
+  href: Xunit.Sdk.CollectionTracker-1.Wrap.html#Xunit_Sdk_CollectionTracker_1_Wrap_System_Collections_Generic_IEnumerable__0__
+  name: Wrap
+  nameWithType: CollectionTracker<T>.Wrap
+  fullName: Xunit.Sdk.CollectionTracker<T>.Wrap
+  nameWithType.vb: CollectionTracker(Of T).Wrap
+  fullName.vb: Xunit.Sdk.CollectionTracker(Of T).Wrap
+memberLayout: SeparatePages

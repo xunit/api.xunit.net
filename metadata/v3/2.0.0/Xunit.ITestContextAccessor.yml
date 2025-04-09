@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.0:Xunit.ITestContextAccessor
+  commentId: T:Xunit.ITestContextAccessor
+  id: ITestContextAccessor
+  parent: v3.2.0.0:Xunit
+  children:
+  - v3.2.0.0:Xunit.ITestContextAccessor.Current
+  langs:
+  - csharp
+  - vb
+  name: ITestContextAccessor
+  nameWithType: ITestContextAccessor
+  fullName: Xunit.ITestContextAccessor
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestContextAccessor.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: ITestContextAccessor
+    path: ../src/xunit.v3.core/ITestContextAccessor.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gives access to the current test context, which is considered to be an immutable snapshot of
+
+    the current test state at the time it's retrieved.
+  example: []
+  syntax:
+    content: public interface ITestContextAccessor
+    content.vb: Public Interface ITestContextAccessor
+- uid: v3.2.0.0:Xunit.ITestContextAccessor.Current
+  commentId: P:Xunit.ITestContextAccessor.Current
+  id: Current
+  parent: v3.2.0.0:Xunit.ITestContextAccessor
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: ITestContextAccessor.Current
+  fullName: Xunit.ITestContextAccessor.Current
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITestContextAccessor.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Current
+    path: ../src/xunit.v3.core/ITestContextAccessor.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test context. If called outside of the text discovery or execution path,
+
+    will return a test context that is in the <xref href="v3.2.0.0:Xunit.TestPipelineStage.Unknown" data-throw-if-not-resolved="false"></xref> stage.
+
+    The current test context is a "snapshot in time" for when this/ property is called, so do
+
+    not cache the instance across a single method boundary (or else/ you run the risk of having
+
+    an out-of-date context).
+  example: []
+  syntax:
+    content: ITestContext Current { get; }
+    parameters: []
+    return:
+      type: Xunit.ITestContext
+    content.vb: ReadOnly Property Current As ITestContext
+  overload: v3.2.0.0:Xunit.ITestContextAccessor.Current*
+references:
+- uid: v3.2.0.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.2.0.0:Xunit.TestPipelineStage.Unknown
+  commentId: F:Xunit.TestPipelineStage.Unknown
+  href: Xunit.TestPipelineStage.html#Xunit_TestPipelineStage_Unknown
+  name: Unknown
+  nameWithType: TestPipelineStage.Unknown
+  fullName: Xunit.TestPipelineStage.Unknown
+- uid: v3.2.0.0:Xunit.ITestContextAccessor.Current*
+  commentId: Overload:Xunit.ITestContextAccessor.Current
+  href: Xunit.ITestContextAccessor.Current.html#Xunit_ITestContextAccessor_Current
+  name: Current
+  nameWithType: ITestContextAccessor.Current
+  fullName: Xunit.ITestContextAccessor.Current
+- uid: v3.2.0.0:Xunit.ITestContext
+  commentId: T:Xunit.ITestContext
+  parent: v3.2.0.0:Xunit
+  href: Xunit.ITestContext.html
+  name: ITestContext
+  nameWithType: ITestContext
+  fullName: Xunit.ITestContext
+memberLayout: SeparatePages

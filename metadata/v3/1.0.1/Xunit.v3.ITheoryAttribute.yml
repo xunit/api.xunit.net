@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.v3.ITheoryAttribute
+  commentId: T:Xunit.v3.ITheoryAttribute
+  id: ITheoryAttribute
+  parent: v3.1.0.1:Xunit.v3
+  children:
+  - v3.1.0.1:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+  - v3.1.0.1:Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+  langs:
+  - csharp
+  - vb
+  name: ITheoryAttribute
+  nameWithType: ITheoryAttribute
+  fullName: Xunit.v3.ITheoryAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: ITheoryAttribute
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Marks a test method as being a data theory. Data theories are tests which are fed
+
+    various bits of data from a data source, mapping to parameters on the test method.
+
+    If the data source contains multiple rows, then the test method is executed
+
+    multiple times (once with each data row). Data is provided by attributes which
+
+    implement <xref href="v3.1.0.1:Xunit.v3.IDataAttribute" data-throw-if-not-resolved="false"></xref> (most commonly, <xref href="v3.1.0.1:Xunit.InlineDataAttribute" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.1.0.1:Xunit.MemberDataAttribute" data-throw-if-not-resolved="false"></xref>). Implementations must be decorated by
+
+    <xref href="v3.1.0.1:Xunit.v3.XunitTestCaseDiscovererAttribute" data-throw-if-not-resolved="false"></xref> to indicate which class is responsible
+
+    for converting the test method into one or more tests.
+  remarks: The attribute can only be applied to methods, and only one attribute is allowed.
+  example: []
+  syntax:
+    content: 'public interface ITheoryAttribute : IFactAttribute'
+    content.vb: Public Interface ITheoryAttribute Inherits IFactAttribute
+  inheritedMembers:
+  - v3.1.0.1:Xunit.v3.IFactAttribute.DisplayName
+  - v3.1.0.1:Xunit.v3.IFactAttribute.Explicit
+  - v3.1.0.1:Xunit.v3.IFactAttribute.Skip
+  - v3.1.0.1:Xunit.v3.IFactAttribute.SkipType
+  - v3.1.0.1:Xunit.v3.IFactAttribute.SkipUnless
+  - v3.1.0.1:Xunit.v3.IFactAttribute.SkipWhen
+  - v3.1.0.1:Xunit.v3.IFactAttribute.Timeout
+- uid: v3.1.0.1:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+  commentId: P:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+  id: DisableDiscoveryEnumeration
+  parent: v3.1.0.1:Xunit.v3.ITheoryAttribute
+  langs:
+  - csharp
+  - vb
+  name: DisableDiscoveryEnumeration
+  nameWithType: ITheoryAttribute.DisableDiscoveryEnumeration
+  fullName: Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: DisableDiscoveryEnumeration
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets a flag which indicates whether the test method wants to skip enumerating data during
+
+    discovery. This will cause the theory to yield a single test case for all data, and the
+
+    data discovery will be performed during test execution instead of discovery.
+  example: []
+  syntax:
+    content: bool DisableDiscoveryEnumeration { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DisableDiscoveryEnumeration As Boolean
+  overload: v3.1.0.1:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration*
+- uid: v3.1.0.1:Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+  commentId: P:Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+  id: SkipTestWithoutData
+  parent: v3.1.0.1:Xunit.v3.ITheoryAttribute
+  langs:
+  - csharp
+  - vb
+  name: SkipTestWithoutData
+  nameWithType: ITheoryAttribute.SkipTestWithoutData
+  fullName: Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: SkipTestWithoutData
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ITheoryAttribute.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets a flag which indicates whether the test should be skipped (rather than failed) for
+
+    a lack of data.
+  example: []
+  syntax:
+    content: bool SkipTestWithoutData { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SkipTestWithoutData As Boolean
+  overload: v3.1.0.1:Xunit.v3.ITheoryAttribute.SkipTestWithoutData*
+references:
+- uid: v3.1.0.1:Xunit.v3.IDataAttribute
+  commentId: T:Xunit.v3.IDataAttribute
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.IDataAttribute.html
+  name: IDataAttribute
+  nameWithType: IDataAttribute
+  fullName: Xunit.v3.IDataAttribute
+- uid: v3.1.0.1:Xunit.InlineDataAttribute
+  commentId: T:Xunit.InlineDataAttribute
+  href: Xunit.InlineDataAttribute.html
+  name: InlineDataAttribute
+  nameWithType: InlineDataAttribute
+  fullName: Xunit.InlineDataAttribute
+- uid: v3.1.0.1:Xunit.MemberDataAttribute
+  commentId: T:Xunit.MemberDataAttribute
+  href: Xunit.MemberDataAttribute.html
+  name: MemberDataAttribute
+  nameWithType: MemberDataAttribute
+  fullName: Xunit.MemberDataAttribute
+- uid: v3.1.0.1:Xunit.v3.XunitTestCaseDiscovererAttribute
+  commentId: T:Xunit.v3.XunitTestCaseDiscovererAttribute
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.XunitTestCaseDiscovererAttribute.html
+  name: XunitTestCaseDiscovererAttribute
+  nameWithType: XunitTestCaseDiscovererAttribute
+  fullName: Xunit.v3.XunitTestCaseDiscovererAttribute
+- uid: v3.1.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.DisplayName
+  commentId: P:Xunit.v3.IFactAttribute.DisplayName
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.DisplayName.html#Xunit_v3_IFactAttribute_DisplayName
+  name: DisplayName
+  nameWithType: IFactAttribute.DisplayName
+  fullName: Xunit.v3.IFactAttribute.DisplayName
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.Explicit
+  commentId: P:Xunit.v3.IFactAttribute.Explicit
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Explicit.html#Xunit_v3_IFactAttribute_Explicit
+  name: Explicit
+  nameWithType: IFactAttribute.Explicit
+  fullName: Xunit.v3.IFactAttribute.Explicit
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.Skip
+  commentId: P:Xunit.v3.IFactAttribute.Skip
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Skip.html#Xunit_v3_IFactAttribute_Skip
+  name: Skip
+  nameWithType: IFactAttribute.Skip
+  fullName: Xunit.v3.IFactAttribute.Skip
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.SkipType
+  commentId: P:Xunit.v3.IFactAttribute.SkipType
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipType.html#Xunit_v3_IFactAttribute_SkipType
+  name: SkipType
+  nameWithType: IFactAttribute.SkipType
+  fullName: Xunit.v3.IFactAttribute.SkipType
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.SkipUnless
+  commentId: P:Xunit.v3.IFactAttribute.SkipUnless
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipUnless.html#Xunit_v3_IFactAttribute_SkipUnless
+  name: SkipUnless
+  nameWithType: IFactAttribute.SkipUnless
+  fullName: Xunit.v3.IFactAttribute.SkipUnless
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.SkipWhen
+  commentId: P:Xunit.v3.IFactAttribute.SkipWhen
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipWhen.html#Xunit_v3_IFactAttribute_SkipWhen
+  name: SkipWhen
+  nameWithType: IFactAttribute.SkipWhen
+  fullName: Xunit.v3.IFactAttribute.SkipWhen
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute.Timeout
+  commentId: P:Xunit.v3.IFactAttribute.Timeout
+  parent: v3.1.0.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Timeout.html#Xunit_v3_IFactAttribute_Timeout
+  name: Timeout
+  nameWithType: IFactAttribute.Timeout
+  fullName: Xunit.v3.IFactAttribute.Timeout
+- uid: v3.1.0.1:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.1.0.1:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: v3.1.0.1:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration*
+  commentId: Overload:Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+  href: Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration.html#Xunit_v3_ITheoryAttribute_DisableDiscoveryEnumeration
+  name: DisableDiscoveryEnumeration
+  nameWithType: ITheoryAttribute.DisableDiscoveryEnumeration
+  fullName: Xunit.v3.ITheoryAttribute.DisableDiscoveryEnumeration
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit.v3.ITheoryAttribute.SkipTestWithoutData*
+  commentId: Overload:Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+  href: Xunit.v3.ITheoryAttribute.SkipTestWithoutData.html#Xunit_v3_ITheoryAttribute_SkipTestWithoutData
+  name: SkipTestWithoutData
+  nameWithType: ITheoryAttribute.SkipTestWithoutData
+  fullName: Xunit.v3.ITheoryAttribute.SkipTestWithoutData
+memberLayout: SeparatePages

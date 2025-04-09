@@ -1,0 +1,782 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.0:Xunit.v3.ContextBase
+  commentId: T:Xunit.v3.ContextBase
+  id: ContextBase
+  parent: v3.2.0.0:Xunit.v3
+  children:
+  - v3.2.0.0:Xunit.v3.ContextBase.#ctor(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  - v3.2.0.0:Xunit.v3.ContextBase.Aggregator
+  - v3.2.0.0:Xunit.v3.ContextBase.CancellationTokenSource
+  - v3.2.0.0:Xunit.v3.ContextBase.DisposeAsync
+  - v3.2.0.0:Xunit.v3.ContextBase.ExplicitOption
+  - v3.2.0.0:Xunit.v3.ContextBase.InitializeAsync
+  - v3.2.0.0:Xunit.v3.ContextBase.MessageBus
+  langs:
+  - csharp
+  - vb
+  name: ContextBase
+  nameWithType: ContextBase
+  fullName: Xunit.v3.ContextBase
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: ContextBase
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Base class for all execution pipeline context classes.
+  example: []
+  syntax:
+    content: 'public class ContextBase : IAsyncLifetime, IAsyncDisposable'
+    content.vb: Public Class ContextBase Implements IAsyncLifetime, IAsyncDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.2.0.0:Xunit.v3.TestCaseRunnerBaseContext`1
+  - v3.2.0.0:Xunit.v3.TestClassRunnerContext`2
+  - v3.2.0.0:Xunit.v3.TestCollectionRunnerContext`2
+  - v3.2.0.0:Xunit.v3.TestMethodRunnerContext`2
+  - v3.2.0.0:Xunit.v3.TestRunnerBaseContext`1
+  implements:
+  - v3.2.0.0:Xunit.IAsyncLifetime
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.0:Xunit.v3.ContextBase.#ctor(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  commentId: M:Xunit.v3.ContextBase.#ctor(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)
+  id: '#ctor(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource)'
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: ContextBase(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  nameWithType: ContextBase.ContextBase(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  fullName: Xunit.v3.ContextBase.ContextBase(Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Base class for all execution pipeline context classes.
+  example: []
+  syntax:
+    content: public ContextBase(ExplicitOption explicitOption, IMessageBus messageBus, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource)
+    parameters:
+    - id: explicitOption
+      type: Xunit.Sdk.ExplicitOption
+      description: The user's choice on how to treat explicit tests
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send execution messages to
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The exception aggregator
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source
+    content.vb: Public Sub New(explicitOption As ExplicitOption, messageBus As IMessageBus, aggregator As ExceptionAggregator, cancellationTokenSource As CancellationTokenSource)
+  overload: v3.2.0.0:Xunit.v3.ContextBase.#ctor*
+  nameWithType.vb: ContextBase.New(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+  fullName.vb: Xunit.v3.ContextBase.New(Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource)
+  name.vb: New(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource)
+- uid: v3.2.0.0:Xunit.v3.ContextBase.Aggregator
+  commentId: P:Xunit.v3.ContextBase.Aggregator
+  id: Aggregator
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: Aggregator
+  nameWithType: ContextBase.Aggregator
+  fullName: Xunit.v3.ContextBase.Aggregator
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: Aggregator
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the aggregator used for reporting exceptions.
+  example: []
+  syntax:
+    content: public ExceptionAggregator Aggregator { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ExceptionAggregator
+    content.vb: Public ReadOnly Property Aggregator As ExceptionAggregator
+  overload: v3.2.0.0:Xunit.v3.ContextBase.Aggregator*
+- uid: v3.2.0.0:Xunit.v3.ContextBase.CancellationTokenSource
+  commentId: P:Xunit.v3.ContextBase.CancellationTokenSource
+  id: CancellationTokenSource
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: CancellationTokenSource
+  nameWithType: ContextBase.CancellationTokenSource
+  fullName: Xunit.v3.ContextBase.CancellationTokenSource
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: CancellationTokenSource
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 30
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the cancellation token source used for cancelling test execution.
+  example: []
+  syntax:
+    content: public CancellationTokenSource CancellationTokenSource { get; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public ReadOnly Property CancellationTokenSource As CancellationTokenSource
+  overload: v3.2.0.0:Xunit.v3.ContextBase.CancellationTokenSource*
+- uid: v3.2.0.0:Xunit.v3.ContextBase.ExplicitOption
+  commentId: P:Xunit.v3.ContextBase.ExplicitOption
+  id: ExplicitOption
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: ExplicitOption
+  nameWithType: ContextBase.ExplicitOption
+  fullName: Xunit.v3.ContextBase.ExplicitOption
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: ExplicitOption
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a flag which indicates how explicit tests should be handled.
+  example: []
+  syntax:
+    content: public ExplicitOption ExplicitOption { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ExplicitOption
+    content.vb: Public ReadOnly Property ExplicitOption As ExplicitOption
+  overload: v3.2.0.0:Xunit.v3.ContextBase.ExplicitOption*
+- uid: v3.2.0.0:Xunit.v3.ContextBase.MessageBus
+  commentId: P:Xunit.v3.ContextBase.MessageBus
+  id: MessageBus
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: MessageBus
+  nameWithType: ContextBase.MessageBus
+  fullName: Xunit.v3.ContextBase.MessageBus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: MessageBus
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 40
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the message bus to send execution engine messages to.
+  example: []
+  syntax:
+    content: public IMessageBus MessageBus { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IMessageBus
+    content.vb: Public ReadOnly Property MessageBus As IMessageBus
+  overload: v3.2.0.0:Xunit.v3.ContextBase.MessageBus*
+- uid: v3.2.0.0:Xunit.v3.ContextBase.DisposeAsync
+  commentId: M:Xunit.v3.ContextBase.DisposeAsync
+  id: DisposeAsync
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: ContextBase.DisposeAsync()
+  fullName: Xunit.v3.ContextBase.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public virtual ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overridable Function DisposeAsync() As ValueTask
+  overload: v3.2.0.0:Xunit.v3.ContextBase.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.2.0.0:Xunit.v3.ContextBase.InitializeAsync
+  commentId: M:Xunit.v3.ContextBase.InitializeAsync
+  id: InitializeAsync
+  parent: v3.2.0.0:Xunit.v3.ContextBase
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: ContextBase.InitializeAsync()
+  fullName: Xunit.v3.ContextBase.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/ContextBase.cs
+      branch: 229879b7653ec0573f36ca4759ccfc915be11a21
+      repo: https://github.com/xunit/xunit
+    id: InitializeAsync
+    path: ../src/xunit.v3.core/Runners/ContextBase.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Called immediately after the class has been created, before it is used.
+  example: []
+  syntax:
+    content: public virtual ValueTask InitializeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overridable Function InitializeAsync() As ValueTask
+  overload: v3.2.0.0:Xunit.v3.ContextBase.InitializeAsync*
+  implements:
+  - v3.2.0.0:Xunit.IAsyncLifetime.InitializeAsync
+references:
+- uid: v3.2.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.2.0.0:Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  parent: v3.2.0.0:Xunit
+  href: Xunit.IAsyncLifetime.html
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.2.0.0:Xunit.v3.ContextBase.#ctor*
+  commentId: Overload:Xunit.v3.ContextBase.#ctor
+  href: Xunit.v3.ContextBase.-ctor.html#Xunit_v3_ContextBase__ctor_Xunit_Sdk_ExplicitOption_Xunit_v3_IMessageBus_Xunit_v3_ExceptionAggregator_System_Threading_CancellationTokenSource_
+  name: ContextBase
+  nameWithType: ContextBase.ContextBase
+  fullName: Xunit.v3.ContextBase.ContextBase
+  nameWithType.vb: ContextBase.New
+  fullName.vb: Xunit.v3.ContextBase.New
+  name.vb: New
+- uid: v3.2.0.0:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3.2.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: v3.2.0.0:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3.2.0.0:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: v3.2.0.0:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3.2.0.0:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: v3.2.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: v3.2.0.0:Xunit.v3.ContextBase.Aggregator*
+  commentId: Overload:Xunit.v3.ContextBase.Aggregator
+  href: Xunit.v3.ContextBase.Aggregator.html#Xunit_v3_ContextBase_Aggregator
+  name: Aggregator
+  nameWithType: ContextBase.Aggregator
+  fullName: Xunit.v3.ContextBase.Aggregator
+- uid: v3.2.0.0:Xunit.v3.ContextBase.CancellationTokenSource*
+  commentId: Overload:Xunit.v3.ContextBase.CancellationTokenSource
+  href: Xunit.v3.ContextBase.CancellationTokenSource.html#Xunit_v3_ContextBase_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: ContextBase.CancellationTokenSource
+  fullName: Xunit.v3.ContextBase.CancellationTokenSource
+- uid: v3.2.0.0:Xunit.v3.ContextBase.ExplicitOption*
+  commentId: Overload:Xunit.v3.ContextBase.ExplicitOption
+  href: Xunit.v3.ContextBase.ExplicitOption.html#Xunit_v3_ContextBase_ExplicitOption
+  name: ExplicitOption
+  nameWithType: ContextBase.ExplicitOption
+  fullName: Xunit.v3.ContextBase.ExplicitOption
+- uid: v3.2.0.0:Xunit.v3.ContextBase.MessageBus*
+  commentId: Overload:Xunit.v3.ContextBase.MessageBus
+  href: Xunit.v3.ContextBase.MessageBus.html#Xunit_v3_ContextBase_MessageBus
+  name: MessageBus
+  nameWithType: ContextBase.MessageBus
+  fullName: Xunit.v3.ContextBase.MessageBus
+- uid: v3.2.0.0:Xunit.v3.ContextBase.DisposeAsync*
+  commentId: Overload:Xunit.v3.ContextBase.DisposeAsync
+  href: Xunit.v3.ContextBase.DisposeAsync.html#Xunit_v3_ContextBase_DisposeAsync
+  name: DisposeAsync
+  nameWithType: ContextBase.DisposeAsync
+  fullName: Xunit.v3.ContextBase.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.2.0.0:Xunit.v3.ContextBase.InitializeAsync*
+  commentId: Overload:Xunit.v3.ContextBase.InitializeAsync
+  href: Xunit.v3.ContextBase.InitializeAsync.html#Xunit_v3_ContextBase_InitializeAsync
+  name: InitializeAsync
+  nameWithType: ContextBase.InitializeAsync
+  fullName: Xunit.v3.ContextBase.InitializeAsync
+- uid: v3.2.0.0:Xunit.IAsyncLifetime.InitializeAsync
+  commentId: M:Xunit.IAsyncLifetime.InitializeAsync
+  parent: v3.2.0.0:Xunit.IAsyncLifetime
+  href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IAsyncLifetime.InitializeAsync()
+  fullName: Xunit.IAsyncLifetime.InitializeAsync()
+  spec.csharp:
+  - uid: v3.2.0.0:Xunit.IAsyncLifetime.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.0:Xunit.IAsyncLifetime.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  - name: (
+  - name: )
+memberLayout: SeparatePages

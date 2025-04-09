@@ -1,0 +1,333 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  commentId: T:Xunit.Sdk.ITestMetadata
+  id: ITestMetadata
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+  langs:
+  - csharp
+  - vb
+  name: ITestMetadata
+  nameWithType: ITestMetadata
+  fullName: Xunit.Sdk.ITestMetadata
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ITestMetadata
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Represents metadata about a test.
+  example: []
+  syntax:
+    content: public interface ITestMetadata
+    content.vb: Public Interface ITestMetadata
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  commentId: P:Xunit.Sdk.ITestMetadata.TestDisplayName
+  id: TestDisplayName
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  langs:
+  - csharp
+  - vb
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TestDisplayName
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the display name of the test.
+  example: []
+  syntax:
+    content: string TestDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestDisplayName As String
+  overload: v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName*
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMetadata.Traits
+  id: Traits
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  langs:
+  - csharp
+  - vb
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Traits
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the trait values associated with this test case. If
+
+    there are none, or the framework does not support traits,
+
+    this should return an empty dictionary (not <code>null</code>).
+  example: []
+  syntax:
+    content: IReadOnlyDictionary<string, IReadOnlyCollection<string>> Traits { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+    content.vb: ReadOnly Property Traits As IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  overload: v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits*
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMetadata.UniqueID
+  id: UniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  langs:
+  - csharp
+  - vb
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: UniqueID
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/ITestMetadata.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a unique identifier for the test.
+  remarks: >-
+    The unique identifier for a test should be able to discriminate among test, even those which are
+
+    varied invocations against the same test method (i.e., theories). This identifier should remain
+
+    stable until such time as the developer changes some fundamental part of the identity (assembly,
+
+    class name, test name, or test data). Recompilation of the test assembly is reasonable as a
+
+    stability changing event.
+  example: []
+  syntax:
+    content: string UniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property UniqueID As String
+  overload: v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID*
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName*
+  commentId: Overload:Xunit.Sdk.ITestMetadata.TestDisplayName
+  href: Xunit.Sdk.ITestMetadata.TestDisplayName.html#Xunit_Sdk_ITestMetadata_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits*
+  commentId: Overload:Xunit.Sdk.ITestMetadata.Traits
+  href: Xunit.Sdk.ITestMetadata.Traits.html#Xunit_Sdk_ITestMetadata_Traits
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  nameWithType: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IReadOnlyCollection<string>>
+  nameWithType.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, System.Collections.Generic.IReadOnlyCollection(Of String))
+  name.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID*
+  commentId: Overload:Xunit.Sdk.ITestMetadata.UniqueID
+  href: Xunit.Sdk.ITestMetadata.UniqueID.html#Xunit_Sdk_ITestMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+memberLayout: SeparatePages

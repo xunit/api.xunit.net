@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  commentId: T:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  id: LocalOutOfProcessTestProcessLauncher
+  parent: v3.1.0.0:Xunit.v3
+  children:
+  - v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+  - v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: LocalOutOfProcessTestProcessLauncher
+  nameWithType: LocalOutOfProcessTestProcessLauncher
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: LocalOutOfProcessTestProcessLauncher
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    Implementation of <xref href="v3.1.0.0:Xunit.v3.ITestProcessLauncher" data-throw-if-not-resolved="false"></xref> that will launch an xUnit.net v3 test
+
+    project out-of-process on the local machine.
+  example: []
+  syntax:
+    content: 'public sealed class LocalOutOfProcessTestProcessLauncher : OutOfProcessTestProcessLauncherBase, ITestProcessLauncher'
+    content.vb: Public NotInheritable Class LocalOutOfProcessTestProcessLauncher Inherits OutOfProcessTestProcessLauncherBase Implements ITestProcessLauncher
+  inheritance:
+  - System.Object
+  - v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  implements:
+  - v3.1.0.0:Xunit.v3.ITestProcessLauncher
+  inheritedMembers:
+  - v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.IsWindows
+  - v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+  commentId: P:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+  id: Instance
+  parent: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: LocalOutOfProcessTestProcessLauncher.Instance
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Instance
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Gets the singleton instance of <xref href="v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static LocalOutOfProcessTestProcessLauncher Instance { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.LocalOutOfProcessTestProcessLauncher
+    content.vb: Public Shared ReadOnly Property Instance As LocalOutOfProcessTestProcessLauncher
+  overload: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance*
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess(System.String,System.String,System.String)
+  commentId: M:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess(System.String,System.String,System.String)
+  id: StartTestProcess(System.String,System.String,System.String)
+  parent: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  langs:
+  - csharp
+  - vb
+  name: StartTestProcess(string, string, string?)
+  nameWithType: LocalOutOfProcessTestProcessLauncher.StartTestProcess(string, string, string?)
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess(string, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: StartTestProcess
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/LocalOutOfProcessTestProcessLauncher.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Starts the test process.
+  remarks: >-
+    The response file will be part of the <code class="paramref">executableArguments</code>, but the actual path to
+
+    the response file is provided here in the even that it needs to be modified or copied elsewhere (at
+
+    which point the developer is responsible for updating <code class="paramref">executableArguments</code> to point
+
+    to the new response file location). Additionally, the developer is responsible for deleting the
+
+    response file from the disk when the execution is complete.
+  example: []
+  syntax:
+    content: protected override sealed ITestProcess? StartTestProcess(string executable, string executableArguments, string? responseFile)
+    parameters:
+    - id: executable
+      type: System.String
+      description: >-
+        The executable to be launched (note that this may not be a fully qualified path name, as it
+            may be depending on the system path to locate the executable)
+    - id: executableArguments
+      type: System.String
+      description: The arguments to pass to the executable
+    - id: responseFile
+      type: System.String
+      description: The response file that's being used, if present
+    return:
+      type: Xunit.v3.ITestProcess
+    content.vb: Protected NotOverridable Overrides Function StartTestProcess(executable As String, executableArguments As String, responseFile As String) As ITestProcess
+  overridden: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(System.String,System.String,System.String)
+  overload: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess*
+  nameWithType.vb: LocalOutOfProcessTestProcessLauncher.StartTestProcess(String, String, String)
+  fullName.vb: Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess(String, String, String)
+  name.vb: StartTestProcess(String, String, String)
+references:
+- uid: v3.1.0.0:Xunit.v3.ITestProcessLauncher
+  commentId: T:Xunit.v3.ITestProcessLauncher
+  parent: v3.1.0.0:Xunit.v3
+  href: Xunit.v3.ITestProcessLauncher.html
+  name: ITestProcessLauncher
+  nameWithType: ITestProcessLauncher
+  fullName: Xunit.v3.ITestProcessLauncher
+- uid: v3.1.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  commentId: T:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  parent: v3.1.0.0:Xunit.v3
+  href: Xunit.v3.OutOfProcessTestProcessLauncherBase.html
+  name: OutOfProcessTestProcessLauncherBase
+  nameWithType: OutOfProcessTestProcessLauncherBase
+  fullName: Xunit.v3.OutOfProcessTestProcessLauncherBase
+- uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.IsWindows
+  commentId: P:Xunit.v3.OutOfProcessTestProcessLauncherBase.IsWindows
+  parent: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  href: Xunit.v3.OutOfProcessTestProcessLauncherBase.IsWindows.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_IsWindows
+  name: IsWindows
+  nameWithType: OutOfProcessTestProcessLauncherBase.IsWindows
+  fullName: Xunit.v3.OutOfProcessTestProcessLauncherBase.IsWindows
+- uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  parent: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  isExternal: true
+  href: Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_Launch_Xunit_Runner_Common_XunitProjectAssembly_System_Collections_Generic_IReadOnlyList_System_String__
+  name: Launch(XunitProjectAssembly, IReadOnlyList<string>)
+  nameWithType: OutOfProcessTestProcessLauncherBase.Launch(XunitProjectAssembly, IReadOnlyList<string>)
+  fullName: Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly, System.Collections.Generic.IReadOnlyList<string>)
+  nameWithType.vb: OutOfProcessTestProcessLauncherBase.Launch(XunitProjectAssembly, IReadOnlyList(Of String))
+  fullName.vb: Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly, System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Launch(XunitProjectAssembly, IReadOnlyList(Of String))
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+    name: Launch
+    href: Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_Launch_Xunit_Runner_Common_XunitProjectAssembly_System_Collections_Generic_IReadOnlyList_System_String__
+  - name: (
+  - uid: v3.1.0.0:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+    name: Launch
+    href: Xunit.v3.OutOfProcessTestProcessLauncherBase.Launch.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_Launch_Xunit_Runner_Common_XunitProjectAssembly_System_Collections_Generic_IReadOnlyList_System_String__
+  - name: (
+  - uid: v3.1.0.0:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  commentId: T:Xunit.v3.LocalOutOfProcessTestProcessLauncher
+  parent: v3.1.0.0:Xunit.v3
+  href: Xunit.v3.LocalOutOfProcessTestProcessLauncher.html
+  name: LocalOutOfProcessTestProcessLauncher
+  nameWithType: LocalOutOfProcessTestProcessLauncher
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance*
+  commentId: Overload:Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+  href: Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance.html#Xunit_v3_LocalOutOfProcessTestProcessLauncher_Instance
+  name: Instance
+  nameWithType: LocalOutOfProcessTestProcessLauncher.Instance
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher.Instance
+- uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(System.String,System.String,System.String)
+  commentId: M:Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(System.String,System.String,System.String)
+  parent: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase
+  isExternal: true
+  href: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_StartTestProcess_System_String_System_String_System_String_
+  name: StartTestProcess(string, string, string)
+  nameWithType: OutOfProcessTestProcessLauncherBase.StartTestProcess(string, string, string)
+  fullName: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(string, string, string)
+  nameWithType.vb: OutOfProcessTestProcessLauncherBase.StartTestProcess(String, String, String)
+  fullName.vb: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(String, String, String)
+  name.vb: StartTestProcess(String, String, String)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(System.String,System.String,System.String)
+    name: StartTestProcess
+    href: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_StartTestProcess_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess(System.String,System.String,System.String)
+    name: StartTestProcess
+    href: Xunit.v3.OutOfProcessTestProcessLauncherBase.StartTestProcess.html#Xunit_v3_OutOfProcessTestProcessLauncherBase_StartTestProcess_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.0.0:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess*
+  commentId: Overload:Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess
+  href: Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess.html#Xunit_v3_LocalOutOfProcessTestProcessLauncher_StartTestProcess_System_String_System_String_System_String_
+  name: StartTestProcess
+  nameWithType: LocalOutOfProcessTestProcessLauncher.StartTestProcess
+  fullName: Xunit.v3.LocalOutOfProcessTestProcessLauncher.StartTestProcess
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.0.0:Xunit.v3.ITestProcess
+  commentId: T:Xunit.v3.ITestProcess
+  parent: v3.1.0.0:Xunit.v3
+  href: Xunit.v3.ITestProcess.html
+  name: ITestProcess
+  nameWithType: ITestProcess
+  fullName: Xunit.v3.ITestProcess
+memberLayout: SeparatePages

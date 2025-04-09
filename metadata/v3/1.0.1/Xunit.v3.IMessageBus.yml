@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.1:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  id: IMessageBus
+  parent: v3.1.0.1:Xunit.v3
+  children:
+  - v3.1.0.1:Xunit.v3.IMessageBus.QueueMessage(Xunit.Sdk.IMessageSinkMessage)
+  langs:
+  - csharp
+  - vb
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/IMessageBus.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: IMessageBus
+    path: ../src/xunit.v3.core/Abstractions/Framework/IMessageBus.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Used by discovery, execution, and extensibility code to send messages to the runner.
+  example: []
+  syntax:
+    content: 'public interface IMessageBus : IDisposable'
+    content.vb: Public Interface IMessageBus Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: v3.1.0.1:Xunit.v3.IMessageBus.QueueMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.v3.IMessageBus.QueueMessage(Xunit.Sdk.IMessageSinkMessage)
+  id: QueueMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.1.0.1:Xunit.v3.IMessageBus
+  langs:
+  - csharp
+  - vb
+  name: QueueMessage(IMessageSinkMessage)
+  nameWithType: IMessageBus.QueueMessage(IMessageSinkMessage)
+  fullName: Xunit.v3.IMessageBus.QueueMessage(Xunit.Sdk.IMessageSinkMessage)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/IMessageBus.cs
+      branch: 654c6156d8b2f9cf91e691d6366cd78be8ae2a63
+      repo: https://github.com/xunit/xunit
+    id: QueueMessage
+    path: ../src/xunit.v3.core/Abstractions/Framework/IMessageBus.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Queues a message to be sent to the runner.
+  example: []
+  syntax:
+    content: bool QueueMessage(IMessageSinkMessage message)
+    parameters:
+    - id: message
+      type: Xunit.Sdk.IMessageSinkMessage
+      description: The message to be sent to the runner
+    return:
+      type: System.Boolean
+      description: >-
+        Returns <code>true</code> if discovery/execution should continue; <code>false</code>, otherwise.
+
+        The return value may be safely ignored by components which are not directly responsible
+
+        for discovery or execution, and this is intended to communicate to those sub-systems that
+
+        that they should short circuit and stop their work as quickly as is reasonable.
+    content.vb: Function QueueMessage(message As IMessageSinkMessage) As Boolean
+  overload: v3.1.0.1:Xunit.v3.IMessageBus.QueueMessage*
+references:
+- uid: v3.1.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.1:Xunit.v3.IMessageBus.QueueMessage*
+  commentId: Overload:Xunit.v3.IMessageBus.QueueMessage
+  href: Xunit.v3.IMessageBus.QueueMessage.html#Xunit_v3_IMessageBus_QueueMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: QueueMessage
+  nameWithType: IMessageBus.QueueMessage
+  fullName: Xunit.v3.IMessageBus.QueueMessage
+- uid: v3.1.0.1:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.1.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.1.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+memberLayout: SeparatePages

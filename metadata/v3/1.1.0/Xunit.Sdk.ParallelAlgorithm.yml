@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm
+  commentId: T:Xunit.Sdk.ParallelAlgorithm
+  id: ParallelAlgorithm
+  parent: v3.1.1.0:Xunit.Sdk
+  children:
+  - v3.1.1.0:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  - v3.1.1.0:Xunit.Sdk.ParallelAlgorithm.Conservative
+  langs:
+  - csharp
+  - vb
+  name: ParallelAlgorithm
+  nameWithType: ParallelAlgorithm
+  fullName: Xunit.Sdk.ParallelAlgorithm
+  type: Enum
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelAlgorithm.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: ParallelAlgorithm
+    path: ../src/xunit.v3.common/Options/ParallelAlgorithm.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Indicates the parallelization algorithm to use.
+  example: []
+  syntax:
+    content: public enum ParallelAlgorithm
+    content.vb: Public Enum ParallelAlgorithm
+- uid: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm.Conservative
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Conservative
+  id: Conservative
+  parent: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Conservative
+  nameWithType: ParallelAlgorithm.Conservative
+  fullName: Xunit.Sdk.ParallelAlgorithm.Conservative
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelAlgorithm.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: Conservative
+    path: ../src/xunit.v3.common/Options/ParallelAlgorithm.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    The conservative parallelization algorithm uses a semaphore to limit the number of started tests to be equal
+
+    to the desired parallel thread count. This has the effect of allowing tests that have started to finish faster,
+
+    since there are no extra tests competing for a chance to run, at the expense that CPU utilization will be lowered
+
+    if the test project spaws a lot of async tests that have significant wait times.
+  example: []
+  syntax:
+    content: Conservative = 0
+    return:
+      type: Xunit.Sdk.ParallelAlgorithm
+- uid: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  id: Aggressive
+  parent: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Aggressive
+  nameWithType: ParallelAlgorithm.Aggressive
+  fullName: Xunit.Sdk.ParallelAlgorithm.Aggressive
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelAlgorithm.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: Aggressive
+    path: ../src/xunit.v3.common/Options/ParallelAlgorithm.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    The aggressive parallelization algorithm uses a synchronization context to limit the number of running tests
+
+    to be equal to the desired parallel thread count. This has the effect of being able to use the CPU more
+
+    effectively since there are typically most tests capable of running than there are CPU cores, at the
+
+    expense of tests that have already started being put into the back of a long queue before they can run
+
+    again.
+  example: []
+  syntax:
+    content: Aggressive = 1
+    return:
+      type: Xunit.Sdk.ParallelAlgorithm
+references:
+- uid: v3.1.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.1.0:Xunit.Sdk.ParallelAlgorithm
+  commentId: T:Xunit.Sdk.ParallelAlgorithm
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelAlgorithm.html
+  name: ParallelAlgorithm
+  nameWithType: ParallelAlgorithm
+  fullName: Xunit.Sdk.ParallelAlgorithm
+memberLayout: SeparatePages

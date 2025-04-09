@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.ITest
+  commentId: T:Xunit.Sdk.ITest
+  id: ITest
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.ITest.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ITest
+  nameWithType: ITest
+  fullName: Xunit.Sdk.ITest
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITest.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ITest
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITest.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Represents a single test in the system. A test case typically contains only a single test,
+
+    but may contain many if circumstances warrant it (for example, test data for a theory cannot
+
+    be pre-enumerated, so the theory yields a single test case with multiple tests).
+  example: []
+  syntax:
+    content: 'public interface ITest : ITestMetadata'
+    content.vb: Public Interface ITest Inherits ITestMetadata
+  inheritedMembers:
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits
+  - v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITest.TestCase
+  commentId: P:Xunit.Sdk.ITest.TestCase
+  id: TestCase
+  parent: v3.1.0.0:Xunit.Sdk.ITest
+  langs:
+  - csharp
+  - vb
+  name: TestCase
+  nameWithType: ITest.TestCase
+  fullName: Xunit.Sdk.ITest.TestCase
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITest.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: TestCase
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITest.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the test case this test belongs to.
+  example: []
+  syntax:
+    content: ITestCase TestCase { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestCase
+    content.vb: ReadOnly Property TestCase As ITestCase
+  overload: v3.1.0.0:Xunit.Sdk.ITest.TestCase*
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  commentId: P:Xunit.Sdk.ITestMetadata.TestDisplayName
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestDisplayName.html#Xunit_Sdk_ITestMetadata_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMetadata.Traits
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.Traits.html#Xunit_Sdk_ITestMetadata_Traits
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMetadata.UniqueID
+  parent: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.UniqueID.html#Xunit_Sdk_ITestMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.1.0.0:Xunit.Sdk.ITestMetadata
+  commentId: T:Xunit.Sdk.ITestMetadata
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMetadata.html
+  name: ITestMetadata
+  nameWithType: ITestMetadata
+  fullName: Xunit.Sdk.ITestMetadata
+- uid: v3.1.0.0:Xunit.Sdk.ITest.TestCase*
+  commentId: Overload:Xunit.Sdk.ITest.TestCase
+  href: Xunit.Sdk.ITest.TestCase.html#Xunit_Sdk_ITest_TestCase
+  name: TestCase
+  nameWithType: ITest.TestCase
+  fullName: Xunit.Sdk.ITest.TestCase
+- uid: v3.1.0.0:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+memberLayout: SeparatePages

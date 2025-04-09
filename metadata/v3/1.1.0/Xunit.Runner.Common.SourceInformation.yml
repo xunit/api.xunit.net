@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation
+  commentId: T:Xunit.Runner.Common.SourceInformation
+  id: SourceInformation
+  parent: v3.1.1.0:Xunit.Runner.Common
+  children:
+  - v3.1.1.0:Xunit.Runner.Common.SourceInformation.#ctor(System.String,System.Nullable{System.Int32})
+  - v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceFile
+  - v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceLine
+  langs:
+  - csharp
+  - vb
+  name: SourceInformation
+  nameWithType: SourceInformation
+  fullName: Xunit.Runner.Common.SourceInformation
+  type: Struct
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: SourceInformation
+    path: ../src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Source information returned by <xref href="v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly struct SourceInformation
+    content.vb: Public Structure SourceInformation
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.#ctor(System.String,System.Nullable{System.Int32})
+  commentId: M:Xunit.Runner.Common.SourceInformation.#ctor(System.String,System.Nullable{System.Int32})
+  id: '#ctor(System.String,System.Nullable{System.Int32})'
+  parent: v3.1.1.0:Xunit.Runner.Common.SourceInformation
+  langs:
+  - csharp
+  - vb
+  name: SourceInformation(string?, int?)
+  nameWithType: SourceInformation.SourceInformation(string?, int?)
+  fullName: Xunit.Runner.Common.SourceInformation.SourceInformation(string?, int?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Source information returned by <xref href="v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public SourceInformation(string? sourceFile, int? sourceLine)
+    parameters:
+    - id: sourceFile
+      type: System.String
+      description: The source file, if known
+    - id: sourceLine
+      type: System.Nullable{System.Int32}
+      description: The line number, if known
+    content.vb: Public Sub New(sourceFile As String, sourceLine As Integer?)
+  overload: v3.1.1.0:Xunit.Runner.Common.SourceInformation.#ctor*
+  nameWithType.vb: SourceInformation.New(String, Integer?)
+  fullName.vb: Xunit.Runner.Common.SourceInformation.New(String, Integer?)
+  name.vb: New(String, Integer?)
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceFile
+  commentId: P:Xunit.Runner.Common.SourceInformation.SourceFile
+  id: SourceFile
+  parent: v3.1.1.0:Xunit.Runner.Common.SourceInformation
+  langs:
+  - csharp
+  - vb
+  name: SourceFile
+  nameWithType: SourceInformation.SourceFile
+  fullName: Xunit.Runner.Common.SourceInformation.SourceFile
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: SourceFile
+    path: ../src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the source file, if known; <code>null</code>, otherwise
+  example: []
+  syntax:
+    content: public string? SourceFile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SourceFile As String
+  overload: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceFile*
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceLine
+  commentId: P:Xunit.Runner.Common.SourceInformation.SourceLine
+  id: SourceLine
+  parent: v3.1.1.0:Xunit.Runner.Common.SourceInformation
+  langs:
+  - csharp
+  - vb
+  name: SourceLine
+  nameWithType: SourceInformation.SourceLine
+  fullName: Xunit.Runner.Common.SourceInformation.SourceLine
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: SourceLine
+    path: ../src/xunit.v3.runner.common/Frameworks/SourceInformation.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the source line number, if known; <code>null</code>, otherwise
+  example: []
+  syntax:
+    content: public int? SourceLine { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property SourceLine As Integer?
+  overload: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceLine*
+references:
+- uid: v3.1.1.0:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  parent: v3.1.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ISourceInformationProvider.html
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+- uid: v3.1.1.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.#ctor*
+  commentId: Overload:Xunit.Runner.Common.SourceInformation.#ctor
+  href: Xunit.Runner.Common.SourceInformation.-ctor.html#Xunit_Runner_Common_SourceInformation__ctor_System_String_System_Nullable_System_Int32__
+  name: SourceInformation
+  nameWithType: SourceInformation.SourceInformation
+  fullName: Xunit.Runner.Common.SourceInformation.SourceInformation
+  nameWithType.vb: SourceInformation.New
+  fullName.vb: Xunit.Runner.Common.SourceInformation.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceFile*
+  commentId: Overload:Xunit.Runner.Common.SourceInformation.SourceFile
+  href: Xunit.Runner.Common.SourceInformation.SourceFile.html#Xunit_Runner_Common_SourceInformation_SourceFile
+  name: SourceFile
+  nameWithType: SourceInformation.SourceFile
+  fullName: Xunit.Runner.Common.SourceInformation.SourceFile
+- uid: v3.1.1.0:Xunit.Runner.Common.SourceInformation.SourceLine*
+  commentId: Overload:Xunit.Runner.Common.SourceInformation.SourceLine
+  href: Xunit.Runner.Common.SourceInformation.SourceLine.html#Xunit_Runner_Common_SourceInformation_SourceLine
+  name: SourceLine
+  nameWithType: SourceInformation.SourceLine
+  fullName: Xunit.Runner.Common.SourceInformation.SourceLine
+memberLayout: SeparatePages

@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  commentId: T:Xunit.Sdk.IExecutionMetadata
+  id: IExecutionMetadata
+  parent: v3.1.0.0:Xunit.Sdk
+  children:
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output
+  - v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings
+  langs:
+  - csharp
+  - vb
+  name: IExecutionMetadata
+  nameWithType: IExecutionMetadata
+  fullName: Xunit.Sdk.IExecutionMetadata
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: IExecutionMetadata
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: This is metadata describing the execution of a single test.
+  example: []
+  syntax:
+    content: public interface IExecutionMetadata
+    content.vb: Public Interface IExecutionMetadata
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  commentId: P:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  id: ExecutionTime
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  langs:
+  - csharp
+  - vb
+  name: ExecutionTime
+  nameWithType: IExecutionMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ExecutionTime
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: The time spent executing the test, in seconds. Will be 0 if the test was not executed.
+  example: []
+  syntax:
+    content: decimal ExecutionTime { get; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: ReadOnly Property ExecutionTime As Decimal
+  overload: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime*
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output
+  commentId: P:Xunit.Sdk.IExecutionMetadata.Output
+  id: Output
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  langs:
+  - csharp
+  - vb
+  name: Output
+  nameWithType: IExecutionMetadata.Output
+  fullName: Xunit.Sdk.IExecutionMetadata.Output
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Output
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: The captured output of the test. Will be <xref href="System.String.Empty" data-throw-if-not-resolved="false"></xref> if there was no output.
+  example: []
+  syntax:
+    content: string Output { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Output As String
+  overload: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output*
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings
+  commentId: P:Xunit.Sdk.IExecutionMetadata.Warnings
+  id: Warnings
+  parent: v3.1.0.0:Xunit.Sdk.IExecutionMetadata
+  langs:
+  - csharp
+  - vb
+  name: Warnings
+  nameWithType: IExecutionMetadata.Warnings
+  fullName: Xunit.Sdk.IExecutionMetadata.Warnings
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Warnings
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionMetadata.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a list of the warning messages that were recorded during execution. Will be <code>null</code>
+
+    if there were no warnings.
+  example: []
+  syntax:
+    content: string[]? Warnings { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: ReadOnly Property Warnings As String()
+  overload: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings*
+references:
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.ExecutionTime*
+  commentId: Overload:Xunit.Sdk.IExecutionMetadata.ExecutionTime
+  href: Xunit.Sdk.IExecutionMetadata.ExecutionTime.html#Xunit_Sdk_IExecutionMetadata_ExecutionTime
+  name: ExecutionTime
+  nameWithType: IExecutionMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionMetadata.ExecutionTime
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String.Empty
+  commentId: F:System.String.Empty
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string.empty
+  name: Empty
+  nameWithType: string.Empty
+  fullName: string.Empty
+  nameWithType.vb: String.Empty
+  fullName.vb: String.Empty
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Output*
+  commentId: Overload:Xunit.Sdk.IExecutionMetadata.Output
+  href: Xunit.Sdk.IExecutionMetadata.Output.html#Xunit_Sdk_IExecutionMetadata_Output
+  name: Output
+  nameWithType: IExecutionMetadata.Output
+  fullName: Xunit.Sdk.IExecutionMetadata.Output
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.0.0:Xunit.Sdk.IExecutionMetadata.Warnings*
+  commentId: Overload:Xunit.Sdk.IExecutionMetadata.Warnings
+  href: Xunit.Sdk.IExecutionMetadata.Warnings.html#Xunit_Sdk_IExecutionMetadata_Warnings
+  name: Warnings
+  nameWithType: IExecutionMetadata.Warnings
+  fullName: Xunit.Sdk.IExecutionMetadata.Warnings
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+memberLayout: SeparatePages

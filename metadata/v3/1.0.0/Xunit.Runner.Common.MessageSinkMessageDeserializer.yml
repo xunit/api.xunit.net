@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer
+  commentId: T:Xunit.Runner.Common.MessageSinkMessageDeserializer
+  id: MessageSinkMessageDeserializer
+  parent: v3.1.0.0:Xunit.Runner.Common
+  children:
+  - v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize(System.String,Xunit.Sdk.IMessageSink)
+  - v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: MessageSinkMessageDeserializer
+  nameWithType: MessageSinkMessageDeserializer
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: MessageSinkMessageDeserializer
+    path: ../src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    A class which understands how to deserialize <xref href="v3.1.0.0:Xunit.Sdk.IMessageSinkMessage" data-throw-if-not-resolved="false"></xref> instances that are decorated
+
+    with <xref href="v3.1.0.0:Xunit.Sdk.JsonTypeIDAttribute" data-throw-if-not-resolved="false"></xref>. The built-in messages are registered by default, and additional messages
+
+    can be registered via <xref href="v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class MessageSinkMessageDeserializer
+    content.vb: Public Module MessageSinkMessageDeserializer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize(System.String,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize(System.String,Xunit.Sdk.IMessageSink)
+  id: Deserialize(System.String,Xunit.Sdk.IMessageSink)
+  parent: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(string, IMessageSink?)
+  nameWithType: MessageSinkMessageDeserializer.Deserialize(string, IMessageSink?)
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize(string, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+    startLine: 66
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Parses a previously serialized <xref href="v3.1.0.0:Xunit.Sdk.IMessageSinkMessage" data-throw-if-not-resolved="false"></xref>-derived object.
+  example: []
+  syntax:
+    content: public static IMessageSinkMessage? Deserialize(string serialization, IMessageSink? diagnosticMessageSink)
+    parameters:
+    - id: serialization
+      type: System.String
+      description: The serialized value
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The mesage sink to report
+    return:
+      type: Xunit.Sdk.IMessageSinkMessage
+      description: The deserialized object
+    content.vb: Public Shared Function Deserialize(serialization As String, diagnosticMessageSink As IMessageSink) As IMessageSinkMessage
+  overload: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize*
+  nameWithType.vb: MessageSinkMessageDeserializer.Deserialize(String, IMessageSink)
+  fullName.vb: Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize(String, Xunit.Sdk.IMessageSink)
+  name.vb: Deserialize(String, IMessageSink)
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  commentId: M:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  id: RegisterMessageSinkMessageType(System.Type)
+  parent: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: RegisterMessageSinkMessageType(Type)
+  nameWithType: MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(Type)
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: RegisterMessageSinkMessageType
+    path: ../src/xunit.v3.runner.common/Utility/MessageSinkMessageDeserializer.cs
+    startLine: 112
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Registers an implementation of <xref href="v3.1.0.0:Xunit.Sdk.IMessageSinkMessage" data-throw-if-not-resolved="false"></xref> and <xref href="v3.1.0.0:Xunit.Sdk.IJsonDeserializable" data-throw-if-not-resolved="false"></xref>, decorated
+
+    with <xref href="v3.1.0.0:Xunit.Sdk.JsonTypeIDAttribute" data-throw-if-not-resolved="false"></xref> so that it can be deserialized by the runner pipeline.
+  example: []
+  syntax:
+    content: public static void RegisterMessageSinkMessageType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The message type to register
+    content.vb: Public Shared Sub RegisterMessageSinkMessageType(type As Type)
+  overload: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType*
+references:
+- uid: v3.1.0.0:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: v3.1.0.0:Xunit.Sdk.JsonTypeIDAttribute
+  commentId: T:Xunit.Sdk.JsonTypeIDAttribute
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.JsonTypeIDAttribute.html
+  name: JsonTypeIDAttribute
+  nameWithType: JsonTypeIDAttribute
+  fullName: Xunit.Sdk.JsonTypeIDAttribute
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  commentId: M:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  isExternal: true
+  href: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType.html#Xunit_Runner_Common_MessageSinkMessageDeserializer_RegisterMessageSinkMessageType_System_Type_
+  name: RegisterMessageSinkMessageType(Type)
+  nameWithType: MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(Type)
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+    name: RegisterMessageSinkMessageType
+    href: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType.html#Xunit_Runner_Common_MessageSinkMessageDeserializer_RegisterMessageSinkMessageType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType(System.Type)
+    name: RegisterMessageSinkMessageType
+    href: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType.html#Xunit_Runner_Common_MessageSinkMessageDeserializer_RegisterMessageSinkMessageType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: v3.1.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.1.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize*
+  commentId: Overload:Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize
+  href: Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize.html#Xunit_Runner_Common_MessageSinkMessageDeserializer_Deserialize_System_String_Xunit_Sdk_IMessageSink_
+  name: Deserialize
+  nameWithType: MessageSinkMessageDeserializer.Deserialize
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer.Deserialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.0.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.1.0.0:Xunit.Sdk.IJsonDeserializable
+  commentId: T:Xunit.Sdk.IJsonDeserializable
+  parent: v3.1.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonDeserializable.html
+  name: IJsonDeserializable
+  nameWithType: IJsonDeserializable
+  fullName: Xunit.Sdk.IJsonDeserializable
+- uid: v3.1.0.0:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType*
+  commentId: Overload:Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType
+  href: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType.html#Xunit_Runner_Common_MessageSinkMessageDeserializer_RegisterMessageSinkMessageType_System_Type_
+  name: RegisterMessageSinkMessageType
+  nameWithType: MessageSinkMessageDeserializer.RegisterMessageSinkMessageType
+  fullName: Xunit.Runner.Common.MessageSinkMessageDeserializer.RegisterMessageSinkMessageType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+memberLayout: SeparatePages

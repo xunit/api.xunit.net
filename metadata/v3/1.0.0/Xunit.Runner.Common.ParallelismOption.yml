@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  commentId: T:Xunit.Runner.Common.ParallelismOption
+  id: ParallelismOption
+  parent: v3.1.0.0:Xunit.Runner.Common
+  children:
+  - v3.1.0.0:Xunit.Runner.Common.ParallelismOption.all
+  - v3.1.0.0:Xunit.Runner.Common.ParallelismOption.assemblies
+  - v3.1.0.0:Xunit.Runner.Common.ParallelismOption.collections
+  - v3.1.0.0:Xunit.Runner.Common.ParallelismOption.none
+  langs:
+  - csharp
+  - vb
+  name: ParallelismOption
+  nameWithType: ParallelismOption
+  fullName: Xunit.Runner.Common.ParallelismOption
+  type: Enum
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: ParallelismOption
+    path: ../src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Represents available parallelism options
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ParallelismOption
+    content.vb: >-
+      <Flags>
+
+      Public Enum ParallelismOption
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption.none
+  commentId: F:Xunit.Runner.Common.ParallelismOption.none
+  id: none
+  parent: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  langs:
+  - csharp
+  - vb
+  name: none
+  nameWithType: ParallelismOption.none
+  fullName: Xunit.Runner.Common.ParallelismOption.none
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: none
+    path: ../src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Do not parallelize any tests.
+  example: []
+  syntax:
+    content: none = 0
+    return:
+      type: Xunit.Runner.Common.ParallelismOption
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption.assemblies
+  commentId: F:Xunit.Runner.Common.ParallelismOption.assemblies
+  id: assemblies
+  parent: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  langs:
+  - csharp
+  - vb
+  name: assemblies
+  nameWithType: ParallelismOption.assemblies
+  fullName: Xunit.Runner.Common.ParallelismOption.assemblies
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: assemblies
+    path: ../src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Run tests in different assemblies in parallel
+  example: []
+  syntax:
+    content: assemblies = 1
+    return:
+      type: Xunit.Runner.Common.ParallelismOption
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption.collections
+  commentId: F:Xunit.Runner.Common.ParallelismOption.collections
+  id: collections
+  parent: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  langs:
+  - csharp
+  - vb
+  name: collections
+  nameWithType: ParallelismOption.collections
+  fullName: Xunit.Runner.Common.ParallelismOption.collections
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: collections
+    path: ../src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Run tests in different test collections in parallel
+  example: []
+  syntax:
+    content: collections = 2
+    return:
+      type: Xunit.Runner.Common.ParallelismOption
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption.all
+  commentId: F:Xunit.Runner.Common.ParallelismOption.all
+  id: all
+  parent: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  langs:
+  - csharp
+  - vb
+  name: all
+  nameWithType: ParallelismOption.all
+  fullName: Xunit.Runner.Common.ParallelismOption.all
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+      branch: 5b41c61aa173b9f17ecedfd886891917b8528a87
+      repo: https://github.com/xunit/xunit
+    id: all
+    path: ../src/xunit.v3.runner.common/Frameworks/ParallelismOption.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Enable maximum parallelization
+  example: []
+  syntax:
+    content: all = assemblies | collections
+    return:
+      type: Xunit.Runner.Common.ParallelismOption
+    content.vb: all = assemblies Or collections
+references:
+- uid: v3.1.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.1.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.1.0.0:Xunit.Runner.Common.ParallelismOption
+  commentId: T:Xunit.Runner.Common.ParallelismOption
+  parent: v3.1.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ParallelismOption.html
+  name: ParallelismOption
+  nameWithType: ParallelismOption
+  fullName: Xunit.Runner.Common.ParallelismOption
+memberLayout: SeparatePages

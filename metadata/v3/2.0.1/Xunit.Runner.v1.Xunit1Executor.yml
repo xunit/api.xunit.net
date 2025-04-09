@@ -1,0 +1,907 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  commentId: T:Xunit.Runner.v1.Xunit1Executor
+  id: Xunit1Executor
+  parent: v3.2.0.1:Xunit.Runner.v1
+  children:
+  - v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.#ctor(Xunit.Sdk.IMessageSink,System.Boolean,System.String,System.String,System.Boolean,System.String)
+  - v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.Dispose
+  - v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  - v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  - v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: Xunit1Executor
+  nameWithType: Xunit1Executor
+  fullName: Xunit.Runner.v1.Xunit1Executor
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Xunit1Executor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: >-
+    Default implementation of <xref href="v3.2.0.1:Xunit.Runner.v1.IXunit1Executor" data-throw-if-not-resolved="false"></xref>. Creates a remote app domain for the test
+
+    assembly to be loaded into. Disposing of the executor releases the app domain.
+  example: []
+  syntax:
+    content: 'public class Xunit1Executor : IXunit1Executor, IDisposable'
+    content.vb: Public Class Xunit1Executor Implements IXunit1Executor, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.2.0.1:Xunit.Runner.v1.IXunit1Executor
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.#ctor(Xunit.Sdk.IMessageSink,System.Boolean,System.String,System.String,System.Boolean,System.String)
+  commentId: M:Xunit.Runner.v1.Xunit1Executor.#ctor(Xunit.Sdk.IMessageSink,System.Boolean,System.String,System.String,System.Boolean,System.String)
+  id: '#ctor(Xunit.Sdk.IMessageSink,System.Boolean,System.String,System.String,System.Boolean,System.String)'
+  parent: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  langs:
+  - csharp
+  - vb
+  name: Xunit1Executor(IMessageSink, bool, string, string?, bool, string?)
+  nameWithType: Xunit1Executor.Xunit1Executor(IMessageSink, bool, string, string?, bool, string?)
+  fullName: Xunit.Runner.v1.Xunit1Executor.Xunit1Executor(Xunit.Sdk.IMessageSink, bool, string, string?, bool, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Initializes a new instance of the <xref href="v3.2.0.1:Xunit.Runner.v1.Xunit1Executor" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public Xunit1Executor(IMessageSink diagnosticMessageSink, bool useAppDomain, string testAssemblyFileName, string? configFileName = null, bool shadowCopy = true, string? shadowCopyFolder = null)
+    parameters:
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: >-
+        The message sink which receives <xref href="v3.2.0.1:Xunit.Sdk.IDiagnosticMessage" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.2.0.1:Xunit.Sdk.IInternalDiagnosticMessage" data-throw-if-not-resolved="false"></xref> messages.
+    - id: useAppDomain
+      type: System.Boolean
+      description: Determines whether tests should be run in a separate app domain.
+    - id: testAssemblyFileName
+      type: System.String
+      description: The filename of the test assembly.
+    - id: configFileName
+      type: System.String
+      description: The filename of the configuration file.
+    - id: shadowCopy
+      type: System.Boolean
+      description: Set to <code>true</code> to enable shadow copying the assemblies.
+    - id: shadowCopyFolder
+      type: System.String
+      description: >-
+        The path on disk to use for shadow copying; if <code>null</code>, a folder
+            will be automatically (randomly) generated
+    content.vb: Public Sub New(diagnosticMessageSink As IMessageSink, useAppDomain As Boolean, testAssemblyFileName As String, configFileName As String = Nothing, shadowCopy As Boolean = True, shadowCopyFolder As String = Nothing)
+  overload: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.#ctor*
+  nameWithType.vb: Xunit1Executor.New(IMessageSink, Boolean, String, String, Boolean, String)
+  fullName.vb: Xunit.Runner.v1.Xunit1Executor.New(Xunit.Sdk.IMessageSink, Boolean, String, String, Boolean, String)
+  name.vb: New(IMessageSink, Boolean, String, String, Boolean, String)
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+  commentId: P:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: Xunit1Executor.TestFrameworkDisplayName
+  fullName: Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 54
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Gets the display name of the test framework.
+  example: []
+  syntax:
+    content: public string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TestFrameworkDisplayName As String
+  overload: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName*
+  implements:
+  - v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.TestFrameworkDisplayName
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.Dispose
+  commentId: M:Xunit.Runner.v1.Xunit1Executor.Dispose
+  id: Dispose
+  parent: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Xunit1Executor.Dispose()
+  fullName: Xunit.Runner.v1.Xunit1Executor.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 62
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  commentId: M:Xunit.Runner.v1.Xunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  id: EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  parent: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  langs:
+  - csharp
+  - vb
+  name: EnumerateTests(ICallbackEventHandler?)
+  nameWithType: Xunit1Executor.EnumerateTests(ICallbackEventHandler?)
+  fullName: Xunit.Runner.v1.Xunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: EnumerateTests
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 75
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Enumerates the tests in the assembly.
+  example: []
+  syntax:
+    content: public void EnumerateTests(ICallbackEventHandler? handler)
+    parameters:
+    - id: handler
+      type: System.Web.UI.ICallbackEventHandler
+      description: The optional callback handler used to return information.
+    content.vb: Public Sub EnumerateTests(handler As ICallbackEventHandler)
+  overload: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.EnumerateTests*
+  implements:
+  - v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  nameWithType.vb: Xunit1Executor.EnumerateTests(ICallbackEventHandler)
+  fullName.vb: Xunit.Runner.v1.Xunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  name.vb: EnumerateTests(ICallbackEventHandler)
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  commentId: M:Xunit.Runner.v1.Xunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  id: RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  parent: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  langs:
+  - csharp
+  - vb
+  name: RunTests(string, List<string>, ICallbackEventHandler)
+  nameWithType: Xunit1Executor.RunTests(string, List<string>, ICallbackEventHandler)
+  fullName: Xunit.Runner.v1.Xunit1Executor.RunTests(string, System.Collections.Generic.List<string>, System.Web.UI.ICallbackEventHandler)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+      branch: b2368b05c70a2b4bdc024d177ce7f1a0982eeaae
+      repo: https://github.com/xunit/xunit
+    id: RunTests
+    path: ../src/xunit.v3.runner.utility/Frameworks/v1/Xunit1Executor.cs
+    startLine: 89
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v1
+  summary: Runs the tests in a class.
+  example: []
+  syntax:
+    content: public void RunTests(string type, List<string> methods, ICallbackEventHandler handler)
+    parameters:
+    - id: type
+      type: System.String
+      description: The class to run.
+    - id: methods
+      type: System.Collections.Generic.List{System.String}
+      description: The methods in the class to run.
+    - id: handler
+      type: System.Web.UI.ICallbackEventHandler
+      description: The callback handler used to return information.
+    content.vb: Public Sub RunTests(type As String, methods As List(Of String), handler As ICallbackEventHandler)
+  overload: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.RunTests*
+  implements:
+  - v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  nameWithType.vb: Xunit1Executor.RunTests(String, List(Of String), ICallbackEventHandler)
+  fullName.vb: Xunit.Runner.v1.Xunit1Executor.RunTests(String, System.Collections.Generic.List(Of String), System.Web.UI.ICallbackEventHandler)
+  name.vb: RunTests(String, List(Of String), ICallbackEventHandler)
+references:
+- uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor
+  commentId: T:Xunit.Runner.v1.IXunit1Executor
+  parent: v3.2.0.1:Xunit.Runner.v1
+  href: Xunit.Runner.v1.IXunit1Executor.html
+  name: IXunit1Executor
+  nameWithType: IXunit1Executor
+  fullName: Xunit.Runner.v1.IXunit1Executor
+- uid: v3.2.0.1:Xunit.Runner.v1
+  commentId: N:Xunit.Runner.v1
+  href: Xunit.html
+  name: Xunit.Runner.v1
+  nameWithType: Xunit.Runner.v1
+  fullName: Xunit.Runner.v1
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Runner.v1
+    name: v1
+    href: Xunit.Runner.v1.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Runner.v1
+    name: v1
+    href: Xunit.Runner.v1.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor
+  commentId: T:Xunit.Runner.v1.Xunit1Executor
+  href: Xunit.Runner.v1.Xunit1Executor.html
+  name: Xunit1Executor
+  nameWithType: Xunit1Executor
+  fullName: Xunit.Runner.v1.Xunit1Executor
+- uid: v3.2.0.1:Xunit.Sdk.IDiagnosticMessage
+  commentId: T:Xunit.Sdk.IDiagnosticMessage
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IDiagnosticMessage.html
+  name: IDiagnosticMessage
+  nameWithType: IDiagnosticMessage
+  fullName: Xunit.Sdk.IDiagnosticMessage
+- uid: v3.2.0.1:Xunit.Sdk.IInternalDiagnosticMessage
+  commentId: T:Xunit.Sdk.IInternalDiagnosticMessage
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IInternalDiagnosticMessage.html
+  name: IInternalDiagnosticMessage
+  nameWithType: IInternalDiagnosticMessage
+  fullName: Xunit.Sdk.IInternalDiagnosticMessage
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.#ctor*
+  commentId: Overload:Xunit.Runner.v1.Xunit1Executor.#ctor
+  href: Xunit.Runner.v1.Xunit1Executor.-ctor.html#Xunit_Runner_v1_Xunit1Executor__ctor_Xunit_Sdk_IMessageSink_System_Boolean_System_String_System_String_System_Boolean_System_String_
+  name: Xunit1Executor
+  nameWithType: Xunit1Executor.Xunit1Executor
+  fullName: Xunit.Runner.v1.Xunit1Executor.Xunit1Executor
+  nameWithType.vb: Xunit1Executor.New
+  fullName.vb: Xunit.Runner.v1.Xunit1Executor.New
+  name.vb: New
+- uid: v3.2.0.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+  href: Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName.html#Xunit_Runner_v1_Xunit1Executor_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: Xunit1Executor.TestFrameworkDisplayName
+  fullName: Xunit.Runner.v1.Xunit1Executor.TestFrameworkDisplayName
+- uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.TestFrameworkDisplayName
+  commentId: P:Xunit.Runner.v1.IXunit1Executor.TestFrameworkDisplayName
+  parent: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor
+  href: Xunit.Runner.v1.IXunit1Executor.TestFrameworkDisplayName.html#Xunit_Runner_v1_IXunit1Executor_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: IXunit1Executor.TestFrameworkDisplayName
+  fullName: Xunit.Runner.v1.IXunit1Executor.TestFrameworkDisplayName
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.Dispose*
+  commentId: Overload:Xunit.Runner.v1.Xunit1Executor.Dispose
+  href: Xunit.Runner.v1.Xunit1Executor.Dispose.html#Xunit_Runner_v1_Xunit1Executor_Dispose
+  name: Dispose
+  nameWithType: Xunit1Executor.Dispose
+  fullName: Xunit.Runner.v1.Xunit1Executor.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.EnumerateTests*
+  commentId: Overload:Xunit.Runner.v1.Xunit1Executor.EnumerateTests
+  href: Xunit.Runner.v1.Xunit1Executor.EnumerateTests.html#Xunit_Runner_v1_Xunit1Executor_EnumerateTests_System_Web_UI_ICallbackEventHandler_
+  name: EnumerateTests
+  nameWithType: Xunit1Executor.EnumerateTests
+  fullName: Xunit.Runner.v1.Xunit1Executor.EnumerateTests
+- uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  commentId: M:Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  parent: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor
+  isExternal: true
+  href: Xunit.Runner.v1.IXunit1Executor.EnumerateTests.html#Xunit_Runner_v1_IXunit1Executor_EnumerateTests_System_Web_UI_ICallbackEventHandler_
+  name: EnumerateTests(ICallbackEventHandler)
+  nameWithType: IXunit1Executor.EnumerateTests(ICallbackEventHandler)
+  fullName: Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+    name: EnumerateTests
+    href: Xunit.Runner.v1.IXunit1Executor.EnumerateTests.html#Xunit_Runner_v1_IXunit1Executor_EnumerateTests_System_Web_UI_ICallbackEventHandler_
+  - name: (
+  - uid: System.Web.UI.ICallbackEventHandler
+    name: ICallbackEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui.icallbackeventhandler
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.EnumerateTests(System.Web.UI.ICallbackEventHandler)
+    name: EnumerateTests
+    href: Xunit.Runner.v1.IXunit1Executor.EnumerateTests.html#Xunit_Runner_v1_IXunit1Executor_EnumerateTests_System_Web_UI_ICallbackEventHandler_
+  - name: (
+  - uid: System.Web.UI.ICallbackEventHandler
+    name: ICallbackEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui.icallbackeventhandler
+  - name: )
+- uid: System.Web.UI.ICallbackEventHandler
+  commentId: T:System.Web.UI.ICallbackEventHandler
+  parent: System.Web.UI
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.ui.icallbackeventhandler
+  name: ICallbackEventHandler
+  nameWithType: ICallbackEventHandler
+  fullName: System.Web.UI.ICallbackEventHandler
+- uid: System.Web.UI
+  commentId: N:System.Web.UI
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Web.UI
+  nameWithType: System.Web.UI
+  fullName: System.Web.UI
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+  - name: .
+  - uid: System.Web.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+  - name: .
+  - uid: System.Web.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui
+- uid: v3.2.0.1:Xunit.Runner.v1.Xunit1Executor.RunTests*
+  commentId: Overload:Xunit.Runner.v1.Xunit1Executor.RunTests
+  href: Xunit.Runner.v1.Xunit1Executor.RunTests.html#Xunit_Runner_v1_Xunit1Executor_RunTests_System_String_System_Collections_Generic_List_System_String__System_Web_UI_ICallbackEventHandler_
+  name: RunTests
+  nameWithType: Xunit1Executor.RunTests
+  fullName: Xunit.Runner.v1.Xunit1Executor.RunTests
+- uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  commentId: M:Xunit.Runner.v1.IXunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+  parent: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor
+  isExternal: true
+  href: Xunit.Runner.v1.IXunit1Executor.RunTests.html#Xunit_Runner_v1_IXunit1Executor_RunTests_System_String_System_Collections_Generic_List_System_String__System_Web_UI_ICallbackEventHandler_
+  name: RunTests(string, List<string>, ICallbackEventHandler)
+  nameWithType: IXunit1Executor.RunTests(string, List<string>, ICallbackEventHandler)
+  fullName: Xunit.Runner.v1.IXunit1Executor.RunTests(string, System.Collections.Generic.List<string>, System.Web.UI.ICallbackEventHandler)
+  nameWithType.vb: IXunit1Executor.RunTests(String, List(Of String), ICallbackEventHandler)
+  fullName.vb: Xunit.Runner.v1.IXunit1Executor.RunTests(String, System.Collections.Generic.List(Of String), System.Web.UI.ICallbackEventHandler)
+  name.vb: RunTests(String, List(Of String), ICallbackEventHandler)
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+    name: RunTests
+    href: Xunit.Runner.v1.IXunit1Executor.RunTests.html#Xunit_Runner_v1_IXunit1Executor_RunTests_System_String_System_Collections_Generic_List_System_String__System_Web_UI_ICallbackEventHandler_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Web.UI.ICallbackEventHandler
+    name: ICallbackEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui.icallbackeventhandler
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Runner.v1.IXunit1Executor.RunTests(System.String,System.Collections.Generic.List{System.String},System.Web.UI.ICallbackEventHandler)
+    name: RunTests
+    href: Xunit.Runner.v1.IXunit1Executor.RunTests.html#Xunit_Runner_v1_IXunit1Executor_RunTests_System_String_System_Collections_Generic_List_System_String__System_Web_UI_ICallbackEventHandler_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Web.UI.ICallbackEventHandler
+    name: ICallbackEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.ui.icallbackeventhandler
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

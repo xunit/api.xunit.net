@@ -1,0 +1,1029 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.1:Xunit.Sdk.AllException
+  commentId: T:Xunit.Sdk.AllException
+  id: AllException
+  parent: v3.2.0.1:Xunit.Sdk
+  children:
+  - v3.2.0.1:Xunit.Sdk.AllException.ForFailures(System.Int32,System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}})
+  langs:
+  - csharp
+  - vb
+  name: AllException
+  nameWithType: AllException
+  fullName: Xunit.Sdk.AllException
+  type: Class
+  source:
+    id: AllException
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\Exceptions\AllException.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: Exception thrown when Assert.All fails.
+  example: []
+  syntax:
+    content: 'public class AllException : XunitException, ISerializable, IAssertionException'
+    content.vb: Public Class AllException Inherits XunitException Implements ISerializable, IAssertionException
+  inheritance:
+  - System.Object
+  - System.Exception
+  - v3.2.0.1:Xunit.Sdk.XunitException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - v3.2.0.1:Xunit.Sdk.IAssertionException
+  inheritedMembers:
+  - v3.2.0.1:Xunit.Sdk.XunitException.ToString
+  - System.Exception.GetBaseException
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: v3.2.0.1:Xunit.Sdk.AllException.ForFailures(System.Int32,System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}})
+  commentId: M:Xunit.Sdk.AllException.ForFailures(System.Int32,System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}})
+  id: ForFailures(System.Int32,System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}})
+  parent: v3.2.0.1:Xunit.Sdk.AllException
+  langs:
+  - csharp
+  - vb
+  name: ForFailures(int, IReadOnlyList<Tuple<int, string, Exception>>)
+  nameWithType: AllException.ForFailures(int, IReadOnlyList<Tuple<int, string, Exception>>)
+  fullName: Xunit.Sdk.AllException.ForFailures(int, System.Collections.Generic.IReadOnlyList<System.Tuple<int, string, System.Exception>>)
+  type: Method
+  source:
+    id: ForFailures
+    path: C:\Dev\xunit\xunit\src\xunit.v3.assert\Asserts\Sdk\Exceptions\AllException.cs
+    startLine: 37
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit.Sdk
+  summary: >-
+    Creates a new instance of the <xref href="v3.2.0.1:Xunit.Sdk.AllException" data-throw-if-not-resolved="false"></xref> class to be thrown when one or
+
+    more items failed during <xref href="v3.2.0.1:Xunit.Assert.All%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Action%7b%60%600%7d)" data-throw-if-not-resolved="false"></xref>
+
+    or <xref href="v3.2.0.1:Xunit.Assert.All%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Action%7b%60%600%2cSystem.Int32%7d)" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="v3.2.0.1:Xunit.Assert.AllAsync%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Func%7b%60%600%2cSystem.Threading.Tasks.Task%7d)" data-throw-if-not-resolved="false"></xref>,
+
+    or <xref href="v3.2.0.1:Xunit.Assert.AllAsync%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Func%7b%60%600%2cSystem.Int32%2cSystem.Threading.Tasks.Task%7d)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static AllException ForFailures(int totalItems, IReadOnlyList<Tuple<int, string, Exception>> errors)
+    parameters:
+    - id: totalItems
+      type: System.Int32
+      description: The total number of items in the collection
+    - id: errors
+      type: System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}}
+      description: The list of failures (as index, value, and exception)
+    return:
+      type: Xunit.Sdk.AllException
+    content.vb: Public Shared Function ForFailures(totalItems As Integer, errors As IReadOnlyList(Of Tuple(Of Integer, String, Exception))) As AllException
+  overload: v3.2.0.1:Xunit.Sdk.AllException.ForFailures*
+  nameWithType.vb: AllException.ForFailures(Integer, IReadOnlyList(Of Tuple(Of Integer, String, Exception)))
+  fullName.vb: Xunit.Sdk.AllException.ForFailures(Integer, System.Collections.Generic.IReadOnlyList(Of System.Tuple(Of Integer, String, System.Exception)))
+  name.vb: ForFailures(Integer, IReadOnlyList(Of Tuple(Of Integer, String, Exception)))
+references:
+- uid: v3.2.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: v3.2.0.1:Xunit.Sdk.XunitException
+  commentId: T:Xunit.Sdk.XunitException
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.XunitException.html
+  name: XunitException
+  nameWithType: XunitException
+  fullName: Xunit.Sdk.XunitException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: v3.2.0.1:Xunit.Sdk.IAssertionException
+  commentId: T:Xunit.Sdk.IAssertionException
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IAssertionException.html
+  name: IAssertionException
+  nameWithType: IAssertionException
+  fullName: Xunit.Sdk.IAssertionException
+- uid: v3.2.0.1:Xunit.Sdk.XunitException.ToString
+  commentId: M:Xunit.Sdk.XunitException.ToString
+  parent: v3.2.0.1:Xunit.Sdk.XunitException
+  href: Xunit.Sdk.XunitException.ToString.html#Xunit_Sdk_XunitException_ToString
+  name: ToString()
+  nameWithType: XunitException.ToString()
+  fullName: Xunit.Sdk.XunitException.ToString()
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Sdk.XunitException.ToString
+    name: ToString
+    href: Xunit.Sdk.XunitException.ToString.html#Xunit_Sdk_XunitException_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Sdk.XunitException.ToString
+    name: ToString
+    href: Xunit.Sdk.XunitException.ToString.html#Xunit_Sdk_XunitException_ToString
+  - name: (
+  - name: )
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: v3.2.0.1:Xunit.Sdk.AllException
+  commentId: T:Xunit.Sdk.AllException
+  parent: v3.2.0.1:Xunit.Sdk
+  href: Xunit.Sdk.AllException.html
+  name: AllException
+  nameWithType: AllException
+  fullName: Xunit.Sdk.AllException
+- uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExternal: true
+  href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: All<T>(IEnumerable<T>, Action<T>)
+  nameWithType: Assert.All<T>(IEnumerable<T>, Action<T>)
+  fullName: Xunit.Assert.All<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  nameWithType.vb: Assert.All(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: Xunit.Assert.All(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: All(Of T)(IEnumerable(Of T), Action(Of T))
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: All
+    href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: All
+    href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+  commentId: M:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+  isExternal: true
+  href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0_System_Int32__
+  name: All<T>(IEnumerable<T>, Action<T, int>)
+  nameWithType: Assert.All<T>(IEnumerable<T>, Action<T, int>)
+  fullName: Xunit.Assert.All<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T, int>)
+  nameWithType.vb: Assert.All(Of T)(IEnumerable(Of T), Action(Of T, Integer))
+  fullName.vb: Xunit.Assert.All(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T, Integer))
+  name.vb: All(Of T)(IEnumerable(Of T), Action(Of T, Integer))
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+    name: All
+    href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0_System_Int32__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Assert.All``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+    name: All
+    href: Xunit.Assert.All.html#Xunit_Assert_All__1_System_Collections_Generic_IEnumerable___0__System_Action___0_System_Int32__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task})
+  commentId: M:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task})
+  isExternal: true
+  href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__
+  name: AllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  nameWithType: Assert.AllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  fullName: Xunit.Assert.AllAsync<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Threading.Tasks.Task>)
+  nameWithType.vb: Assert.AllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+  fullName.vb: Xunit.Assert.AllAsync(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Threading.Tasks.Task))
+  name.vb: AllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task})
+    name: AllAsync
+    href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task})
+    name: AllAsync
+    href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32,System.Threading.Tasks.Task})
+  commentId: M:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32,System.Threading.Tasks.Task})
+  isExternal: true
+  href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32_System_Threading_Tasks_Task__
+  name: AllAsync<T>(IEnumerable<T>, Func<T, int, Task>)
+  nameWithType: Assert.AllAsync<T>(IEnumerable<T>, Func<T, int, Task>)
+  fullName: Xunit.Assert.AllAsync<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, int, System.Threading.Tasks.Task>)
+  nameWithType.vb: Assert.AllAsync(Of T)(IEnumerable(Of T), Func(Of T, Integer, Task))
+  fullName.vb: Xunit.Assert.AllAsync(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Integer, System.Threading.Tasks.Task))
+  name.vb: AllAsync(Of T)(IEnumerable(Of T), Func(Of T, Integer, Task))
+  spec.csharp:
+  - uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32,System.Threading.Tasks.Task})
+    name: AllAsync
+    href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32_System_Threading_Tasks_Task__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.1:Xunit.Assert.AllAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32,System.Threading.Tasks.Task})
+    name: AllAsync
+    href: Xunit.Assert.AllAsync.html#Xunit_Assert_AllAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32_System_Threading_Tasks_Task__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: v3.2.0.1:Xunit.Sdk.AllException.ForFailures*
+  commentId: Overload:Xunit.Sdk.AllException.ForFailures
+  href: Xunit.Sdk.AllException.ForFailures.html#Xunit_Sdk_AllException_ForFailures_System_Int32_System_Collections_Generic_IReadOnlyList_System_Tuple_System_Int32_System_String_System_Exception___
+  name: ForFailures
+  nameWithType: AllException.ForFailures
+  fullName: Xunit.Sdk.AllException.ForFailures
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Tuple{System.Int32,System.String,System.Exception}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Tuple<int, string, Exception>>
+  nameWithType: IReadOnlyList<Tuple<int, string, Exception>>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Tuple<int, string, System.Exception>>
+  nameWithType.vb: IReadOnlyList(Of Tuple(Of Integer, String, Exception))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Tuple(Of Integer, String, System.Exception))
+  name.vb: IReadOnlyList(Of Tuple(Of Integer, String, Exception))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Tuple`3
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-3
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Tuple`3
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

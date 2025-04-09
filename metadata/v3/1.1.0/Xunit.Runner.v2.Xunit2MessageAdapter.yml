@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter
+  commentId: T:Xunit.Runner.v2.Xunit2MessageAdapter
+  id: Xunit2MessageAdapter
+  parent: v3.1.1.0:Xunit.Runner.v2
+  children:
+  - v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor(System.String,Xunit.Abstractions.ITestFrameworkDiscoverer)
+  - v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt(Xunit.Abstractions.IMessageSinkMessage,System.Collections.Generic.HashSet{System.String})
+  langs:
+  - csharp
+  - vb
+  name: Xunit2MessageAdapter
+  nameWithType: Xunit2MessageAdapter
+  fullName: Xunit.Runner.v2.Xunit2MessageAdapter
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: Xunit2MessageAdapter
+    path: ../src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v2
+  summary: A class which adapts xUnit.net v2 messages to xUnit.net v3 messages.
+  example: []
+  syntax:
+    content: public class Xunit2MessageAdapter
+    content.vb: Public Class Xunit2MessageAdapter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor(System.String,Xunit.Abstractions.ITestFrameworkDiscoverer)
+  commentId: M:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor(System.String,Xunit.Abstractions.ITestFrameworkDiscoverer)
+  id: '#ctor(System.String,Xunit.Abstractions.ITestFrameworkDiscoverer)'
+  parent: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter
+  langs:
+  - csharp
+  - vb
+  name: Xunit2MessageAdapter(string?, ITestFrameworkDiscoverer?)
+  nameWithType: Xunit2MessageAdapter.Xunit2MessageAdapter(string?, ITestFrameworkDiscoverer?)
+  fullName: Xunit.Runner.v2.Xunit2MessageAdapter.Xunit2MessageAdapter(string?, Xunit.Abstractions.ITestFrameworkDiscoverer?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v2
+  summary: A class which adapts xUnit.net v2 messages to xUnit.net v3 messages.
+  example: []
+  syntax:
+    content: public Xunit2MessageAdapter(string? assemblyUniqueID = null, ITestFrameworkDiscoverer? discoverer = null)
+    parameters:
+    - id: assemblyUniqueID
+      type: System.String
+      description: The unique ID of the assembly these message belong to
+    - id: discoverer
+      type: Xunit.Abstractions.ITestFrameworkDiscoverer
+      description: The discoverer used to serialize test cases
+    content.vb: Public Sub New(assemblyUniqueID As String = Nothing, discoverer As ITestFrameworkDiscoverer = Nothing)
+  overload: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor*
+  nameWithType.vb: Xunit2MessageAdapter.New(String, ITestFrameworkDiscoverer)
+  fullName.vb: Xunit.Runner.v2.Xunit2MessageAdapter.New(String, Xunit.Abstractions.ITestFrameworkDiscoverer)
+  name.vb: New(String, ITestFrameworkDiscoverer)
+- uid: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt(Xunit.Abstractions.IMessageSinkMessage,System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt(Xunit.Abstractions.IMessageSinkMessage,System.Collections.Generic.HashSet{System.String})
+  id: Adapt(Xunit.Abstractions.IMessageSinkMessage,System.Collections.Generic.HashSet{System.String})
+  parent: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter
+  langs:
+  - csharp
+  - vb
+  name: Adapt(IMessageSinkMessage, HashSet<string>?)
+  nameWithType: Xunit2MessageAdapter.Adapt(IMessageSinkMessage, HashSet<string>?)
+  fullName: Xunit.Runner.v2.Xunit2MessageAdapter.Adapt(Xunit.Abstractions.IMessageSinkMessage, System.Collections.Generic.HashSet<string>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: Adapt
+    path: ../src/xunit.v3.runner.utility/Frameworks/v2/Xunit2MessageAdapter.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.Runner.v2
+  summary: Adapts a v2 message to a v3 message.
+  example: []
+  syntax:
+    content: public IMessageSinkMessage Adapt(IMessageSinkMessage message, HashSet<string>? messageTypes = null)
+    parameters:
+    - id: message
+      type: Xunit.Abstractions.IMessageSinkMessage
+    - id: messageTypes
+      type: System.Collections.Generic.HashSet{System.String}
+    return:
+      type: Xunit.Sdk.IMessageSinkMessage
+    content.vb: Public Function Adapt(message As IMessageSinkMessage, messageTypes As HashSet(Of String) = Nothing) As IMessageSinkMessage
+  overload: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the message is not of a known type.
+  nameWithType.vb: Xunit2MessageAdapter.Adapt(IMessageSinkMessage, HashSet(Of String))
+  fullName.vb: Xunit.Runner.v2.Xunit2MessageAdapter.Adapt(Xunit.Abstractions.IMessageSinkMessage, System.Collections.Generic.HashSet(Of String))
+  name.vb: Adapt(IMessageSinkMessage, HashSet(Of String))
+references:
+- uid: v3.1.1.0:Xunit.Runner.v2
+  commentId: N:Xunit.Runner.v2
+  href: Xunit.html
+  name: Xunit.Runner.v2
+  nameWithType: Xunit.Runner.v2
+  fullName: Xunit.Runner.v2
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.v2
+    name: v2
+    href: Xunit.Runner.v2.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Runner.v2
+    name: v2
+    href: Xunit.Runner.v2.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor*
+  commentId: Overload:Xunit.Runner.v2.Xunit2MessageAdapter.#ctor
+  href: Xunit.Runner.v2.Xunit2MessageAdapter.-ctor.html#Xunit_Runner_v2_Xunit2MessageAdapter__ctor_System_String_Xunit_Abstractions_ITestFrameworkDiscoverer_
+  name: Xunit2MessageAdapter
+  nameWithType: Xunit2MessageAdapter.Xunit2MessageAdapter
+  fullName: Xunit.Runner.v2.Xunit2MessageAdapter.Xunit2MessageAdapter
+  nameWithType.vb: Xunit2MessageAdapter.New
+  fullName.vb: Xunit.Runner.v2.Xunit2MessageAdapter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.1.1.0:Xunit.Abstractions.ITestFrameworkDiscoverer
+  commentId: T:Xunit.Abstractions.ITestFrameworkDiscoverer
+  parent: v3.1.1.0:Xunit.Abstractions
+  isExternal: true
+  name: ITestFrameworkDiscoverer
+  nameWithType: ITestFrameworkDiscoverer
+  fullName: Xunit.Abstractions.ITestFrameworkDiscoverer
+- uid: v3.1.1.0:Xunit.Abstractions
+  commentId: N:Xunit.Abstractions
+  isExternal: true
+  name: Xunit.Abstractions
+  nameWithType: Xunit.Abstractions
+  fullName: Xunit.Abstractions
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    isExternal: true
+  - name: .
+  - uid: v3.1.1.0:Xunit.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    isExternal: true
+  - name: .
+  - uid: v3.1.1.0:Xunit.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: v3.1.1.0:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt*
+  commentId: Overload:Xunit.Runner.v2.Xunit2MessageAdapter.Adapt
+  href: Xunit.Runner.v2.Xunit2MessageAdapter.Adapt.html#Xunit_Runner_v2_Xunit2MessageAdapter_Adapt_Xunit_Abstractions_IMessageSinkMessage_System_Collections_Generic_HashSet_System_String__
+  name: Adapt
+  nameWithType: Xunit2MessageAdapter.Adapt
+  fullName: Xunit.Runner.v2.Xunit2MessageAdapter.Adapt
+- uid: v3.1.1.0:Xunit.Abstractions.IMessageSinkMessage
+  commentId: T:Xunit.Abstractions.IMessageSinkMessage
+  parent: v3.1.1.0:Xunit.Abstractions
+  isExternal: true
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Abstractions.IMessageSinkMessage
+- uid: System.Collections.Generic.HashSet{System.String}
+  commentId: T:System.Collections.Generic.HashSet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<string>
+  nameWithType: HashSet<string>
+  fullName: System.Collections.Generic.HashSet<string>
+  nameWithType.vb: HashSet(Of String)
+  fullName.vb: System.Collections.Generic.HashSet(Of String)
+  name.vb: HashSet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.1.1.0:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.1.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+memberLayout: SeparatePages

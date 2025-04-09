@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.1.1.0:Xunit.Sdk.ITestAssembly
+  commentId: T:Xunit.Sdk.ITestAssembly
+  id: ITestAssembly
+  parent: v3.1.1.0:Xunit.Sdk
+  children:
+  - v3.1.1.0:Xunit.Sdk.ITestAssembly.ModuleVersionID
+  langs:
+  - csharp
+  - vb
+  name: ITestAssembly
+  nameWithType: ITestAssembly
+  fullName: Xunit.Sdk.ITestAssembly
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestAssembly.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: ITestAssembly
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestAssembly.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Represents a test assembly.
+  remarks: >-
+    Although most test frameworks will use an <xref href="System.Reflection.Assembly" data-throw-if-not-resolved="false"></xref> for the test assembly,
+
+    this is not a requirement at this layer. Assembly is just an abstraction that represents
+
+    a group of zero or more <xref href="v3.1.1.0:Xunit.Sdk.ITestCollection" data-throw-if-not-resolved="false"></xref>s.
+  example: []
+  syntax:
+    content: 'public interface ITestAssembly : IAssemblyMetadata'
+    content.vb: Public Interface ITestAssembly Inherits IAssemblyMetadata
+  inheritedMembers:
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.Traits
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  extensionMethods:
+  - v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+- uid: v3.1.1.0:Xunit.Sdk.ITestAssembly.ModuleVersionID
+  commentId: P:Xunit.Sdk.ITestAssembly.ModuleVersionID
+  id: ModuleVersionID
+  parent: v3.1.1.0:Xunit.Sdk.ITestAssembly
+  langs:
+  - csharp
+  - vb
+  name: ModuleVersionID
+  nameWithType: ITestAssembly.ModuleVersionID
+  fullName: Xunit.Sdk.ITestAssembly.ModuleVersionID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestAssembly.cs
+      branch: 7ad077d8526cb36497a764422ea9b16ed75813d4
+      repo: https://github.com/xunit/xunit
+    id: ModuleVersionID
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestAssembly.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Returns the module version ID of the test assembly. Used as the basis for randomization.
+  example: []
+  syntax:
+    content: Guid ModuleVersionID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property ModuleVersionID As Guid
+  overload: v3.1.1.0:Xunit.Sdk.ITestAssembly.ModuleVersionID*
+references:
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: v3.1.1.0:Xunit.Sdk.ITestCollection
+  commentId: T:Xunit.Sdk.ITestCollection
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollection.html
+  name: ITestCollection
+  nameWithType: ITestCollection
+  fullName: Xunit.Sdk.ITestCollection
+- uid: v3.1.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.1.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.1.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyName.html#Xunit_Sdk_IAssemblyMetadata_AssemblyName
+  name: AssemblyName
+  nameWithType: IAssemblyMetadata.AssemblyName
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyName
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyPath.html#Xunit_Sdk_IAssemblyMetadata_AssemblyPath
+  name: AssemblyPath
+  nameWithType: IAssemblyMetadata.AssemblyPath
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath.html#Xunit_Sdk_IAssemblyMetadata_ConfigFilePath
+  name: ConfigFilePath
+  nameWithType: IAssemblyMetadata.ConfigFilePath
+  fullName: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.Traits
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.Traits
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.Traits.html#Xunit_Sdk_IAssemblyMetadata_Traits
+  name: Traits
+  nameWithType: IAssemblyMetadata.Traits
+  fullName: Xunit.Sdk.IAssemblyMetadata.Traits
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.UniqueID.html#Xunit_Sdk_IAssemblyMetadata_UniqueID
+  name: UniqueID
+  nameWithType: IAssemblyMetadata.UniqueID
+  fullName: Xunit.Sdk.IAssemblyMetadata.UniqueID
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  parent: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions
+  definition: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+  commentId: T:Xunit.Sdk.IAssemblyMetadata
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IAssemblyMetadata.html
+  name: IAssemblyMetadata
+  nameWithType: IAssemblyMetadata
+  fullName: Xunit.Sdk.IAssemblyMetadata
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: v3.1.1.0:Xunit.Sdk.IAssemblyMetadataExtensions
+  commentId: T:Xunit.Sdk.IAssemblyMetadataExtensions
+  parent: v3.1.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.html
+  name: IAssemblyMetadataExtensions
+  nameWithType: IAssemblyMetadataExtensions
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions
+- uid: v3.1.1.0:Xunit.Sdk.ITestAssembly.ModuleVersionID*
+  commentId: Overload:Xunit.Sdk.ITestAssembly.ModuleVersionID
+  href: Xunit.Sdk.ITestAssembly.ModuleVersionID.html#Xunit_Sdk_ITestAssembly_ModuleVersionID
+  name: ModuleVersionID
+  nameWithType: ITestAssembly.ModuleVersionID
+  fullName: Xunit.Sdk.ITestAssembly.ModuleVersionID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages
