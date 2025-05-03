@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  id: IFactAttribute
+  parent: v3.2.0.2:Xunit.v3
+  children:
+  - v3.2.0.2:Xunit.v3.IFactAttribute.DisplayName
+  - v3.2.0.2:Xunit.v3.IFactAttribute.Explicit
+  - v3.2.0.2:Xunit.v3.IFactAttribute.Skip
+  - v3.2.0.2:Xunit.v3.IFactAttribute.SkipExceptions
+  - v3.2.0.2:Xunit.v3.IFactAttribute.SkipType
+  - v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless
+  - v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen
+  - v3.2.0.2:Xunit.v3.IFactAttribute.Timeout
+  langs:
+  - csharp
+  - vb
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: IFactAttribute
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Attribute that is applied to a method to indicate that it is a test method that should
+
+    be run by the default test runner. Implementations must be decorated by
+
+    <xref href="v3.2.0.2:Xunit.v3.XunitTestCaseDiscovererAttribute" data-throw-if-not-resolved="false"></xref> to indicate which class is responsible
+
+    for converting the test method into one or more tests.
+  remarks: The attribute can only be applied to methods, and only one attribute is allowed.
+  example: []
+  syntax:
+    content: public interface IFactAttribute
+    content.vb: Public Interface IFactAttribute
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.DisplayName
+  commentId: P:Xunit.v3.IFactAttribute.DisplayName
+  id: DisplayName
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: IFactAttribute.DisplayName
+  fullName: Xunit.v3.IFactAttribute.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: DisplayName
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the name of the test to be used when the test is skipped. When <code>null</code>
+
+    is returned, will cause a default display name to be used.
+  example: []
+  syntax:
+    content: string? DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DisplayName As String
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.DisplayName*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Explicit
+  commentId: P:Xunit.v3.IFactAttribute.Explicit
+  id: Explicit
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: IFactAttribute.Explicit
+  fullName: Xunit.v3.IFactAttribute.Explicit
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Explicit
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets a flag which indicates whether the test should only be run explicitly.
+
+    An explicit test is skipped by default unless explicit tests are requested
+
+    to be run.
+  example: []
+  syntax:
+    content: bool Explicit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Explicit As Boolean
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.Explicit*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Skip
+  commentId: P:Xunit.v3.IFactAttribute.Skip
+  id: Skip
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: Skip
+  nameWithType: IFactAttribute.Skip
+  fullName: Xunit.v3.IFactAttribute.Skip
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Skip
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the skip reason for the test. When <code>null</code> is returned, the test is
+
+    not skipped.
+  remarks: >-
+    Skipping is conditional based on whether <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen" data-throw-if-not-resolved="false"></xref> or <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless" data-throw-if-not-resolved="false"></xref>
+
+    is set.
+  example: []
+  syntax:
+    content: string? Skip { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Skip As String
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.Skip*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipExceptions
+  commentId: P:Xunit.v3.IFactAttribute.SkipExceptions
+  id: SkipExceptions
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: SkipExceptions
+  nameWithType: IFactAttribute.SkipExceptions
+  fullName: Xunit.v3.IFactAttribute.SkipExceptions
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SkipExceptions
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets exceptions that, when thrown, will cause the test to be skipped rather than failed.
+  remarks: The skip reason will be the exception's message.
+  example: []
+  syntax:
+    content: Type[]? SkipExceptions { get; }
+    parameters: []
+    return:
+      type: System.Type[]
+    content.vb: ReadOnly Property SkipExceptions As Type()
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.SkipExceptions*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipType
+  commentId: P:Xunit.v3.IFactAttribute.SkipType
+  id: SkipType
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: SkipType
+  nameWithType: IFactAttribute.SkipType
+  fullName: Xunit.v3.IFactAttribute.SkipType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SkipType
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 49
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the type to retrieve <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless" data-throw-if-not-resolved="false"></xref> or <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen" data-throw-if-not-resolved="false"></xref> from. If not set,
+
+    then the property will be retrieved from the unit test class.
+  example: []
+  syntax:
+    content: Type? SkipType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property SkipType As Type
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.SkipType*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless
+  commentId: P:Xunit.v3.IFactAttribute.SkipUnless
+  id: SkipUnless
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: SkipUnless
+  nameWithType: IFactAttribute.SkipUnless
+  fullName: Xunit.v3.IFactAttribute.SkipUnless
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SkipUnless
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the name of a public static property on the test class which returns <code>bool</code>
+
+    to indicate whether the test should be skipped (<code>false</code>) or not (<code>true</code>).
+  remarks: >-
+    This property cannot be set if <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen" data-throw-if-not-resolved="false"></xref> is set. Setting both will
+
+    result in a failed test.
+
+    To ensure compile-time safety and easier refactoring, use the <code>nameof</code> operator,
+
+    e.g., <code>SkipUnless = nameof(IsConditionMet)</code>.
+  example: []
+  syntax:
+    content: string? SkipUnless { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SkipUnless As String
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen
+  commentId: P:Xunit.v3.IFactAttribute.SkipWhen
+  id: SkipWhen
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: SkipWhen
+  nameWithType: IFactAttribute.SkipWhen
+  fullName: Xunit.v3.IFactAttribute.SkipWhen
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SkipWhen
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 73
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the name of a public static property on the test class which returns <code>bool</code>
+
+    to indicate whether the test should be skipped (<code>true</code>) or not (<code>false</code>).
+  remarks: >-
+    This property cannot be set if <xref href="v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless" data-throw-if-not-resolved="false"></xref> is set. Setting both will
+
+    result in a failed test.
+
+    To avoid issues during refactoring, it is recommended to use the <code>nameof</code> operator
+
+    to reference the property, e.g., <code>SkipWhen = nameof(IsTestSkipped)</code>.
+  example: []
+  syntax:
+    content: string? SkipWhen { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SkipWhen As String
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen*
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Timeout
+  commentId: P:Xunit.v3.IFactAttribute.Timeout
+  id: Timeout
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: IFactAttribute.Timeout
+  fullName: Xunit.v3.IFactAttribute.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IFactAttribute.cs
+    startLine: 85
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the timeout for test (in milliseconds). When <code>0</code> is returned, the test
+
+    will not have a timeout.
+  remarks: >-
+    WARNING: Using this with <xref href="v3.2.0.2:Xunit.Sdk.ParallelAlgorithm.Aggressive" data-throw-if-not-resolved="false"></xref> will result
+
+    in undefined behavior. Test timing and timeouts are only reliable when using
+
+    <xref href="v3.2.0.2:Xunit.Sdk.ParallelAlgorithm.Conservative" data-throw-if-not-resolved="false"></xref> (or when parallelization is disabled
+
+    completely).
+  example: []
+  syntax:
+    content: int Timeout { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Timeout As Integer
+  overload: v3.2.0.2:Xunit.v3.IFactAttribute.Timeout*
+references:
+- uid: v3.2.0.2:Xunit.v3.XunitTestCaseDiscovererAttribute
+  commentId: T:Xunit.v3.XunitTestCaseDiscovererAttribute
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.XunitTestCaseDiscovererAttribute.html
+  name: XunitTestCaseDiscovererAttribute
+  nameWithType: XunitTestCaseDiscovererAttribute
+  fullName: Xunit.v3.XunitTestCaseDiscovererAttribute
+- uid: v3.2.0.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.DisplayName*
+  commentId: Overload:Xunit.v3.IFactAttribute.DisplayName
+  href: Xunit.v3.IFactAttribute.DisplayName.html#Xunit_v3_IFactAttribute_DisplayName
+  name: DisplayName
+  nameWithType: IFactAttribute.DisplayName
+  fullName: Xunit.v3.IFactAttribute.DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Explicit*
+  commentId: Overload:Xunit.v3.IFactAttribute.Explicit
+  href: Xunit.v3.IFactAttribute.Explicit.html#Xunit_v3_IFactAttribute_Explicit
+  name: Explicit
+  nameWithType: IFactAttribute.Explicit
+  fullName: Xunit.v3.IFactAttribute.Explicit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen
+  commentId: P:Xunit.v3.IFactAttribute.SkipWhen
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipWhen.html#Xunit_v3_IFactAttribute_SkipWhen
+  name: SkipWhen
+  nameWithType: IFactAttribute.SkipWhen
+  fullName: Xunit.v3.IFactAttribute.SkipWhen
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless
+  commentId: P:Xunit.v3.IFactAttribute.SkipUnless
+  parent: v3.2.0.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipUnless.html#Xunit_v3_IFactAttribute_SkipUnless
+  name: SkipUnless
+  nameWithType: IFactAttribute.SkipUnless
+  fullName: Xunit.v3.IFactAttribute.SkipUnless
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Skip*
+  commentId: Overload:Xunit.v3.IFactAttribute.Skip
+  href: Xunit.v3.IFactAttribute.Skip.html#Xunit_v3_IFactAttribute_Skip
+  name: Skip
+  nameWithType: IFactAttribute.Skip
+  fullName: Xunit.v3.IFactAttribute.Skip
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipExceptions*
+  commentId: Overload:Xunit.v3.IFactAttribute.SkipExceptions
+  href: Xunit.v3.IFactAttribute.SkipExceptions.html#Xunit_v3_IFactAttribute_SkipExceptions
+  name: SkipExceptions
+  nameWithType: IFactAttribute.SkipExceptions
+  fullName: Xunit.v3.IFactAttribute.SkipExceptions
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipType*
+  commentId: Overload:Xunit.v3.IFactAttribute.SkipType
+  href: Xunit.v3.IFactAttribute.SkipType.html#Xunit_v3_IFactAttribute_SkipType
+  name: SkipType
+  nameWithType: IFactAttribute.SkipType
+  fullName: Xunit.v3.IFactAttribute.SkipType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipUnless*
+  commentId: Overload:Xunit.v3.IFactAttribute.SkipUnless
+  href: Xunit.v3.IFactAttribute.SkipUnless.html#Xunit_v3_IFactAttribute_SkipUnless
+  name: SkipUnless
+  nameWithType: IFactAttribute.SkipUnless
+  fullName: Xunit.v3.IFactAttribute.SkipUnless
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.SkipWhen*
+  commentId: Overload:Xunit.v3.IFactAttribute.SkipWhen
+  href: Xunit.v3.IFactAttribute.SkipWhen.html#Xunit_v3_IFactAttribute_SkipWhen
+  name: SkipWhen
+  nameWithType: IFactAttribute.SkipWhen
+  fullName: Xunit.v3.IFactAttribute.SkipWhen
+- uid: v3.2.0.2:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  name: Aggressive
+  nameWithType: ParallelAlgorithm.Aggressive
+  fullName: Xunit.Sdk.ParallelAlgorithm.Aggressive
+- uid: v3.2.0.2:Xunit.Sdk.ParallelAlgorithm.Conservative
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Conservative
+  name: Conservative
+  nameWithType: ParallelAlgorithm.Conservative
+  fullName: Xunit.Sdk.ParallelAlgorithm.Conservative
+- uid: v3.2.0.2:Xunit.v3.IFactAttribute.Timeout*
+  commentId: Overload:Xunit.v3.IFactAttribute.Timeout
+  href: Xunit.v3.IFactAttribute.Timeout.html#Xunit_v3_IFactAttribute_Timeout
+  name: Timeout
+  nameWithType: IFactAttribute.Timeout
+  fullName: Xunit.v3.IFactAttribute.Timeout
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+memberLayout: SeparatePages

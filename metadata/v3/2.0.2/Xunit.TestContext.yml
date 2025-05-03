@@ -1,0 +1,3605 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.TestContext
+  commentId: T:Xunit.TestContext
+  id: TestContext
+  parent: v3.2.0.2:Xunit
+  children:
+  - v3.2.0.2:Xunit.TestContext.AddAttachment(System.String,System.Byte[],System.String)
+  - v3.2.0.2:Xunit.TestContext.AddAttachment(System.String,System.String)
+  - v3.2.0.2:Xunit.TestContext.AddWarning(System.String)
+  - v3.2.0.2:Xunit.TestContext.Attachments
+  - v3.2.0.2:Xunit.TestContext.CancelCurrentTest
+  - v3.2.0.2:Xunit.TestContext.CancellationToken
+  - v3.2.0.2:Xunit.TestContext.Current
+  - v3.2.0.2:Xunit.TestContext.Dispose
+  - v3.2.0.2:Xunit.TestContext.GetFixture(System.Type)
+  - v3.2.0.2:Xunit.TestContext.KeyValueStorage
+  - v3.2.0.2:Xunit.TestContext.PipelineStage
+  - v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String)
+  - v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object)
+  - v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  - v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  - v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object[])
+  - v3.2.0.2:Xunit.TestContext.SetForInitialization(Xunit.Sdk.IMessageSink,System.Boolean,System.Boolean)
+  - v3.2.0.2:Xunit.TestContext.SetForTest(Xunit.Sdk.ITest,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.TestResultState,Xunit.ITestOutputHelper,System.Object)
+  - v3.2.0.2:Xunit.TestContext.SetForTestAssembly(Xunit.Sdk.ITestAssembly,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  - v3.2.0.2:Xunit.TestContext.SetForTestCase(Xunit.Sdk.ITestCase,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  - v3.2.0.2:Xunit.TestContext.SetForTestClass(Xunit.Sdk.ITestClass,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.v3.FixtureMappingManager)
+  - v3.2.0.2:Xunit.TestContext.SetForTestCollection(Xunit.Sdk.ITestCollection,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  - v3.2.0.2:Xunit.TestContext.SetForTestMethod(Xunit.Sdk.ITestMethod,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  - v3.2.0.2:Xunit.TestContext.Test
+  - v3.2.0.2:Xunit.TestContext.TestAssembly
+  - v3.2.0.2:Xunit.TestContext.TestAssemblyStatus
+  - v3.2.0.2:Xunit.TestContext.TestCase
+  - v3.2.0.2:Xunit.TestContext.TestCaseStatus
+  - v3.2.0.2:Xunit.TestContext.TestClass
+  - v3.2.0.2:Xunit.TestContext.TestClassInstance
+  - v3.2.0.2:Xunit.TestContext.TestClassStatus
+  - v3.2.0.2:Xunit.TestContext.TestCollection
+  - v3.2.0.2:Xunit.TestContext.TestCollectionStatus
+  - v3.2.0.2:Xunit.TestContext.TestMethod
+  - v3.2.0.2:Xunit.TestContext.TestMethodStatus
+  - v3.2.0.2:Xunit.TestContext.TestOutputHelper
+  - v3.2.0.2:Xunit.TestContext.TestState
+  - v3.2.0.2:Xunit.TestContext.TestStatus
+  - v3.2.0.2:Xunit.TestContext.Warnings
+  langs:
+  - csharp
+  - vb
+  name: TestContext
+  nameWithType: TestContext
+  fullName: Xunit.TestContext
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestContext
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Represents information about the current state of the test engine. It may be available at
+
+    various points during the execution pipeline, so consumers must always take care to ensure
+
+    that they check for <code>null</code> values from the various properties.
+  example: []
+  syntax:
+    content: 'public sealed class TestContext : ITestContext, IDisposable'
+    content.vb: Public NotInheritable Class TestContext Implements ITestContext, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.2.0.2:Xunit.ITestContext
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - v3.2.0.2:Xunit.ITestContext.Xunit.TestContextExtensions.GetFixture``1
+- uid: v3.2.0.2:Xunit.TestContext.Attachments
+  commentId: P:Xunit.TestContext.Attachments
+  id: Attachments
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: Attachments
+  nameWithType: TestContext.Attachments
+  fullName: Xunit.TestContext.Attachments
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Attachments
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the attachments for the current test, if the engine is currently in the process of running a test;
+
+    will return <code>null</code> outside of the context of a test.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, TestAttachment>? Attachments { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Xunit.Sdk.TestAttachment}
+    content.vb: Public ReadOnly Property Attachments As IReadOnlyDictionary(Of String, TestAttachment)
+  overload: v3.2.0.2:Xunit.TestContext.Attachments*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.Attachments
+- uid: v3.2.0.2:Xunit.TestContext.CancellationToken
+  commentId: P:Xunit.TestContext.CancellationToken
+  id: CancellationToken
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: TestContext.CancellationToken
+  fullName: Xunit.TestContext.CancellationToken
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: CancellationToken
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 54
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the cancellation token that is used to indicate that the test run should be
+
+    aborted. Async tests should pass this along to any async functions that support
+
+    cancellation tokens, to help speed up the cancellation process.
+  example: []
+  syntax:
+    content: public CancellationToken CancellationToken { get; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public ReadOnly Property CancellationToken As CancellationToken
+  overload: v3.2.0.2:Xunit.TestContext.CancellationToken*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.CancellationToken
+- uid: v3.2.0.2:Xunit.TestContext.Current
+  commentId: P:Xunit.TestContext.Current
+  id: Current
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: TestContext.Current
+  fullName: Xunit.TestContext.Current
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Current
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 63
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test context. If called outside of the test discovery or execution path,
+
+    will return a test context that is in the <xref href="v3.2.0.2:Xunit.TestPipelineStage.Unknown" data-throw-if-not-resolved="false"></xref> stage.
+
+    The current test context is a "snapshot in time" for when this property is called, so do
+
+    not cache the instance across a single method boundary (or else you run the risk of having
+
+    an out-of-date context).
+  example: []
+  syntax:
+    content: public static ITestContext Current { get; }
+    parameters: []
+    return:
+      type: Xunit.ITestContext
+    content.vb: Public Shared ReadOnly Property Current As ITestContext
+  overload: v3.2.0.2:Xunit.TestContext.Current*
+- uid: v3.2.0.2:Xunit.TestContext.KeyValueStorage
+  commentId: P:Xunit.TestContext.KeyValueStorage
+  id: KeyValueStorage
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: KeyValueStorage
+  nameWithType: TestContext.KeyValueStorage
+  fullName: Xunit.TestContext.KeyValueStorage
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: KeyValueStorage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 94
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Stores key/value pairs that are available across all stages of the pipeline. Can be used
+
+    to communicate between extensions at different execution stages, in both directions, as
+
+    a single storage container is used for the entire pipeline.
+  remarks: >-
+    This storage system is purely for communication between extension points. The values in here
+
+    are thrown away after the pipeline execution is complete. It is strongly recommend that
+
+    extensions either prefix their key names or use guaranteed unique IDs like GUIDs, to prevent
+
+    collisions with other extension authors.
+  example: []
+  syntax:
+    content: public Dictionary<string, object?> KeyValueStorage { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public ReadOnly Property KeyValueStorage As Dictionary(Of String, Object)
+  overload: v3.2.0.2:Xunit.TestContext.KeyValueStorage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.KeyValueStorage
+- uid: v3.2.0.2:Xunit.TestContext.PipelineStage
+  commentId: P:Xunit.TestContext.PipelineStage
+  id: PipelineStage
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: PipelineStage
+  nameWithType: TestContext.PipelineStage
+  fullName: Xunit.TestContext.PipelineStage
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: PipelineStage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 98
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the current test pipeline stage.
+  example: []
+  syntax:
+    content: public TestPipelineStage PipelineStage { get; }
+    parameters: []
+    return:
+      type: Xunit.TestPipelineStage
+    content.vb: Public Property PipelineStage As TestPipelineStage
+  overload: v3.2.0.2:Xunit.TestContext.PipelineStage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.PipelineStage
+- uid: v3.2.0.2:Xunit.TestContext.Test
+  commentId: P:Xunit.TestContext.Test
+  id: Test
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: Test
+  nameWithType: TestContext.Test
+  fullName: Xunit.TestContext.Test
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Test
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 101
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test, if the engine is currently in the process of running a test;
+
+    will return <code>null</code> outside of the context of a test.
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTest" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITest? Test { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITest
+    content.vb: Public Property Test As ITest
+  overload: v3.2.0.2:Xunit.TestContext.Test*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.Test
+- uid: v3.2.0.2:Xunit.TestContext.TestAssembly
+  commentId: P:Xunit.TestContext.TestAssembly
+  id: TestAssembly
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: TestContext.TestAssembly
+  fullName: Xunit.TestContext.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 104
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test assembly, if the engine is currently in the process of running or
+
+    discovering tests in assembly; will return <code>null</code> out of this context (this typically
+
+    means the test framework itself is being created and initialized).
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTestAssembly" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITestAssembly? TestAssembly { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestAssembly
+    content.vb: Public Property TestAssembly As ITestAssembly
+  overload: v3.2.0.2:Xunit.TestContext.TestAssembly*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestAssembly
+- uid: v3.2.0.2:Xunit.TestContext.TestAssemblyStatus
+  commentId: P:Xunit.TestContext.TestAssemblyStatus
+  id: TestAssemblyStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyStatus
+  nameWithType: TestContext.TestAssemblyStatus
+  fullName: Xunit.TestContext.TestAssemblyStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestAssemblyStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 107
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the current test engine status for the test assembly.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestAssemblyStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestAssemblyStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestAssemblyStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestAssemblyStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestCase
+  commentId: P:Xunit.TestContext.TestCase
+  id: TestCase
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestCase
+  nameWithType: TestContext.TestCase
+  fullName: Xunit.TestContext.TestCase
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestCase
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 110
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test case, if the engine is currently in the process of running a
+
+    test case; will return <code>null</code> outside of the context of a test case.
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTestCase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITestCase? TestCase { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestCase
+    content.vb: Public Property TestCase As ITestCase
+  overload: v3.2.0.2:Xunit.TestContext.TestCase*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestCase
+- uid: v3.2.0.2:Xunit.TestContext.TestCaseStatus
+  commentId: P:Xunit.TestContext.TestCaseStatus
+  id: TestCaseStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestCaseStatus
+  nameWithType: TestContext.TestCaseStatus
+  fullName: Xunit.TestContext.TestCaseStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestCaseStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 113
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test engine status for the test case. Will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.TestCase" data-throw-if-not-resolved="false"></xref>
+
+    is not <code>null</code>.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestCaseStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestCaseStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestCaseStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestCaseStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestClass
+  commentId: P:Xunit.TestContext.TestClass
+  id: TestClass
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestClass
+  nameWithType: TestContext.TestClass
+  fullName: Xunit.TestContext.TestClass
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestClass
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 116
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test method, if the engine is currently in the process of running
+
+    a test class; will return <code>null</code> outside of the context of a test class. Note that
+
+    not all test framework implementations require that tests be based on classes, so this
+
+    value may be <code>null</code> even if <xref href="v3.2.0.2:Xunit.ITestContext.TestCase" data-throw-if-not-resolved="false"></xref> is not <code>null</code>.
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTestClass" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITestClass? TestClass { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestClass
+    content.vb: Public Property TestClass As ITestClass
+  overload: v3.2.0.2:Xunit.TestContext.TestClass*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestClass
+- uid: v3.2.0.2:Xunit.TestContext.TestClassInstance
+  commentId: P:Xunit.TestContext.TestClassInstance
+  id: TestClassInstance
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestClassInstance
+  nameWithType: TestContext.TestClassInstance
+  fullName: Xunit.TestContext.TestClassInstance
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestClassInstance
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 119
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the instance of the test class; will return <code>null</code> outside of the context of
+
+    a test. Static test methods do not create test class instances, so this will always be <code>null</code>
+
+    for static test methods.
+  remarks: >-
+    This value will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.PipelineStage" data-throw-if-not-resolved="false"></xref> is <xref href="v3.2.0.2:Xunit.TestPipelineStage.TestExecution" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.2.0.2:Xunit.ITestContext.TestStatus" data-throw-if-not-resolved="false"></xref> is <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and only after the test class has been
+
+    created. It will become <code>null</code> again immediately after the test class has been disposed.
+  example: []
+  syntax:
+    content: public object? TestClassInstance { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property TestClassInstance As Object
+  overload: v3.2.0.2:Xunit.TestContext.TestClassInstance*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestClassInstance
+- uid: v3.2.0.2:Xunit.TestContext.TestClassStatus
+  commentId: P:Xunit.TestContext.TestClassStatus
+  id: TestClassStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestClassStatus
+  nameWithType: TestContext.TestClassStatus
+  fullName: Xunit.TestContext.TestClassStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestClassStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 122
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test engine status for the test class. Will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.TestClass" data-throw-if-not-resolved="false"></xref>
+
+    is not <code>null</code>.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestClassStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestClassStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestClassStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestClassStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestCollection
+  commentId: P:Xunit.TestContext.TestCollection
+  id: TestCollection
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestCollection
+  nameWithType: TestContext.TestCollection
+  fullName: Xunit.TestContext.TestCollection
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestCollection
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 125
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test collection, if the engine is currently in the process of running
+
+    a test collection; will return <code>null</code> outside of the context of a test collection.
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTestCollection" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITestCollection? TestCollection { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestCollection
+    content.vb: Public Property TestCollection As ITestCollection
+  overload: v3.2.0.2:Xunit.TestContext.TestCollection*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestCollection
+- uid: v3.2.0.2:Xunit.TestContext.TestCollectionStatus
+  commentId: P:Xunit.TestContext.TestCollectionStatus
+  id: TestCollectionStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestCollectionStatus
+  nameWithType: TestContext.TestCollectionStatus
+  fullName: Xunit.TestContext.TestCollectionStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestCollectionStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 128
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test engine status for the test collection. Will only be available when
+
+    <xref href="v3.2.0.2:Xunit.ITestContext.TestCollection" data-throw-if-not-resolved="false"></xref> is not <code>null</code>.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestCollectionStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestCollectionStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestCollectionStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestCollectionStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestMethod
+  commentId: P:Xunit.TestContext.TestMethod
+  id: TestMethod
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestMethod
+  nameWithType: TestContext.TestMethod
+  fullName: Xunit.TestContext.TestMethod
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestMethod
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 131
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test method, if the engine is currently in the process of running
+
+    a test method; will return <code>null</code> outside of the context of a test method. Note that
+
+    not all test framework implementations require that tests be based on methods, so this
+
+    value may be <code>null</code> even if <xref href="v3.2.0.2:Xunit.ITestContext.TestCase" data-throw-if-not-resolved="false"></xref> is not <code>null</code>.
+  remarks: >-
+    When running with the default test framework implementation, the value here is likely
+
+    to implement <xref href="v3.2.0.2:Xunit.v3.IXunitTestMethod" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ITestMethod? TestMethod { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestMethod
+    content.vb: Public Property TestMethod As ITestMethod
+  overload: v3.2.0.2:Xunit.TestContext.TestMethod*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestMethod
+- uid: v3.2.0.2:Xunit.TestContext.TestMethodStatus
+  commentId: P:Xunit.TestContext.TestMethodStatus
+  id: TestMethodStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestMethodStatus
+  nameWithType: TestContext.TestMethodStatus
+  fullName: Xunit.TestContext.TestMethodStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestMethodStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 134
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test engine status for the test method. Will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.TestMethod" data-throw-if-not-resolved="false"></xref>
+
+    is not <code>null</code>.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestMethodStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestMethodStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestMethodStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestMethodStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestOutputHelper
+  commentId: P:Xunit.TestContext.TestOutputHelper
+  id: TestOutputHelper
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestOutputHelper
+  nameWithType: TestContext.TestOutputHelper
+  fullName: Xunit.TestContext.TestOutputHelper
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestOutputHelper
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 137
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the output helper, which can be used to add output to the test. Will only be
+
+    available when <xref href="v3.2.0.2:Xunit.ITestContext.Test" data-throw-if-not-resolved="false"></xref> is not <code>null</code>. Note that the value may still
+
+    be <code>null</code> when <xref href="v3.2.0.2:Xunit.ITestContext.Test" data-throw-if-not-resolved="false"></xref> is not <code>null</code>, if the test framework
+
+    implementation does not provide output helper support.
+  example: []
+  syntax:
+    content: public ITestOutputHelper? TestOutputHelper { get; }
+    parameters: []
+    return:
+      type: Xunit.ITestOutputHelper
+    content.vb: Public Property TestOutputHelper As ITestOutputHelper
+  overload: v3.2.0.2:Xunit.TestContext.TestOutputHelper*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestOutputHelper
+- uid: v3.2.0.2:Xunit.TestContext.TestState
+  commentId: P:Xunit.TestContext.TestState
+  id: TestState
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestState
+  nameWithType: TestContext.TestState
+  fullName: Xunit.TestContext.TestState
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestState
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 140
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the current state of the test. Will only be available after the test has finished running.
+  example: []
+  syntax:
+    content: public TestResultState? TestState { get; }
+    parameters: []
+    return:
+      type: Xunit.TestResultState
+    content.vb: Public Property TestState As TestResultState
+  overload: v3.2.0.2:Xunit.TestContext.TestState*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestState
+- uid: v3.2.0.2:Xunit.TestContext.TestStatus
+  commentId: P:Xunit.TestContext.TestStatus
+  id: TestStatus
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: TestStatus
+  nameWithType: TestContext.TestStatus
+  fullName: Xunit.TestContext.TestStatus
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestStatus
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 143
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the current test engine status for the test. Will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.Test" data-throw-if-not-resolved="false"></xref>
+
+    is not <code>null</code>.
+  example: []
+  syntax:
+    content: public TestEngineStatus? TestStatus { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Xunit.TestEngineStatus}
+    content.vb: Public Property TestStatus As TestEngineStatus?
+  overload: v3.2.0.2:Xunit.TestContext.TestStatus*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.TestStatus
+- uid: v3.2.0.2:Xunit.TestContext.Warnings
+  commentId: P:Xunit.TestContext.Warnings
+  id: Warnings
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: Warnings
+  nameWithType: TestContext.Warnings
+  fullName: Xunit.TestContext.Warnings
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Warnings
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 146
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the set of warnings associated with the current test. Will only be available when <xref href="v3.2.0.2:Xunit.ITestContext.Test" data-throw-if-not-resolved="false"></xref>
+
+    is not <code>null</code>; will also return <code>null</code> if there have been no warnings issued.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string>? Warnings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public ReadOnly Property Warnings As IReadOnlyList(Of String)
+  overload: v3.2.0.2:Xunit.TestContext.Warnings*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.Warnings
+- uid: v3.2.0.2:Xunit.TestContext.AddAttachment(System.String,System.String)
+  commentId: M:Xunit.TestContext.AddAttachment(System.String,System.String)
+  id: AddAttachment(System.String,System.String)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: AddAttachment(string, string)
+  nameWithType: TestContext.AddAttachment(string, string)
+  fullName: Xunit.TestContext.AddAttachment(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: AddAttachment
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 150
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds an attachment that is a string value.
+  example: []
+  syntax:
+    content: public void AddAttachment(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the attachment
+    - id: value
+      type: System.String
+      description: The value of the attachment
+    content.vb: Public Sub AddAttachment(name As String, value As String)
+  overload: v3.2.0.2:Xunit.TestContext.AddAttachment*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.String)
+  nameWithType.vb: TestContext.AddAttachment(String, String)
+  fullName.vb: Xunit.TestContext.AddAttachment(String, String)
+  name.vb: AddAttachment(String, String)
+- uid: v3.2.0.2:Xunit.TestContext.AddAttachment(System.String,System.Byte[],System.String)
+  commentId: M:Xunit.TestContext.AddAttachment(System.String,System.Byte[],System.String)
+  id: AddAttachment(System.String,System.Byte[],System.String)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: AddAttachment(string, byte[], string)
+  nameWithType: TestContext.AddAttachment(string, byte[], string)
+  fullName: Xunit.TestContext.AddAttachment(string, byte[], string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: AddAttachment
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 170
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds an attachment that is a binary value (represented by a byte array and media type).
+  remarks: >-
+    The <code class="paramref">mediaType</code> value must be in the MIME "type/subtype" form, and does not support
+
+    parameter values. The subtype is allowed to have a single "+" to denote specialization of the
+
+    subtype (i.e., "application/xhtml+xml"). For more information on media types, see
+
+    <a href="https://datatracker.ietf.org/doc/html/rfc2045#section-5.1">https://datatracker.ietf.org/doc/html/rfc2045#section-5.1</a>.
+  example: []
+  syntax:
+    content: public void AddAttachment(string name, byte[] value, string mediaType = "application/octet-stream")
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the attachment
+    - id: value
+      type: System.Byte[]
+      description: The value of the attachment
+    - id: mediaType
+      type: System.String
+      description: The media type of the attachment; defaults to "application/octet-stream"
+    content.vb: Public Sub AddAttachment(name As String, value As Byte(), mediaType As String = "application/octet-stream")
+  overload: v3.2.0.2:Xunit.TestContext.AddAttachment*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.Byte[],System.String)
+  nameWithType.vb: TestContext.AddAttachment(String, Byte(), String)
+  fullName.vb: Xunit.TestContext.AddAttachment(String, Byte(), String)
+  name.vb: AddAttachment(String, Byte(), String)
+- uid: v3.2.0.2:Xunit.TestContext.AddWarning(System.String)
+  commentId: M:Xunit.TestContext.AddWarning(System.String)
+  id: AddWarning(System.String)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: AddWarning(string)
+  nameWithType: TestContext.AddWarning(string)
+  fullName: Xunit.TestContext.AddWarning(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: AddWarning
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 191
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Adds a warning to the test result.
+  example: []
+  syntax:
+    content: public void AddWarning(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The warning message to be reported
+    content.vb: Public Sub AddWarning(message As String)
+  overload: v3.2.0.2:Xunit.TestContext.AddWarning*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.AddWarning(System.String)
+  nameWithType.vb: TestContext.AddWarning(String)
+  fullName.vb: Xunit.TestContext.AddWarning(String)
+  name.vb: AddWarning(String)
+- uid: v3.2.0.2:Xunit.TestContext.CancelCurrentTest
+  commentId: M:Xunit.TestContext.CancelCurrentTest
+  id: CancelCurrentTest
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: CancelCurrentTest()
+  nameWithType: TestContext.CancelCurrentTest()
+  fullName: Xunit.TestContext.CancelCurrentTest()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: CancelCurrentTest
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 200
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Attempt to cancel the currently executing test, if one is executing. This will
+
+    signal the <xref href="v3.2.0.2:Xunit.ITestContext.CancellationToken" data-throw-if-not-resolved="false"></xref> for cancellation.
+  example: []
+  syntax:
+    content: public void CancelCurrentTest()
+    content.vb: Public Sub CancelCurrentTest()
+  overload: v3.2.0.2:Xunit.TestContext.CancelCurrentTest*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.CancelCurrentTest
+- uid: v3.2.0.2:Xunit.TestContext.Dispose
+  commentId: M:Xunit.TestContext.Dispose
+  id: Dispose
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: TestContext.Dispose()
+  fullName: Xunit.TestContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 204
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.2.0.2:Xunit.TestContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.2.0.2:Xunit.TestContext.GetFixture(System.Type)
+  commentId: M:Xunit.TestContext.GetFixture(System.Type)
+  id: GetFixture(System.Type)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: GetFixture(Type)
+  nameWithType: TestContext.GetFixture(Type)
+  fullName: Xunit.TestContext.GetFixture(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: GetFixture
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 208
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets a fixture that was attached to the test class. Will return <code>null</code> if there is
+
+    no exact match for the requested fixture type, or if there is no test class (that is,
+
+    if <xref href="v3.2.0.2:Xunit.ITestContext.TestClass" data-throw-if-not-resolved="false"></xref> returns <code>null</code>).
+  remarks: >-
+    This may be a fixture attached via <xref href="v3.2.0.2:Xunit.IClassFixture%601" data-throw-if-not-resolved="false"></xref>, <xref href="v3.2.0.2:Xunit.ICollectionFixture%601" data-throw-if-not-resolved="false"></xref>,
+
+    or <xref href="v3.2.0.2:Xunit.AssemblyFixtureAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ValueTask<object?> GetFixture(Type fixtureType)
+    parameters:
+    - id: fixtureType
+      type: System.Type
+      description: The exact type of the fixture
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Object}
+      description: The fixture, if available; <code>null</code>, otherwise
+    content.vb: Public Function GetFixture(fixtureType As Type) As ValueTask(Of Object)
+  overload: v3.2.0.2:Xunit.TestContext.GetFixture*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.GetFixture(System.Type)
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String)
+  commentId: M:Xunit.TestContext.SendDiagnosticMessage(System.String)
+  id: SendDiagnosticMessage(System.String)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SendDiagnosticMessage(string)
+  nameWithType: TestContext.SendDiagnosticMessage(string)
+  fullName: Xunit.TestContext.SendDiagnosticMessage(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SendDiagnosticMessage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 217
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sends a diagnostic message. Will only be visible if the end user has enabled diagnostic messages.
+
+    See https://xunit.net/docs/configuration-files for configuration information.
+  example: []
+  syntax:
+    content: public void SendDiagnosticMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to send
+    content.vb: Public Sub SendDiagnosticMessage(message As String)
+  overload: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String)
+  nameWithType.vb: TestContext.SendDiagnosticMessage(String)
+  fullName.vb: Xunit.TestContext.SendDiagnosticMessage(String)
+  name.vb: SendDiagnosticMessage(String)
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object)
+  commentId: M:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object)
+  id: SendDiagnosticMessage(System.String,System.Object)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SendDiagnosticMessage(string, object?)
+  nameWithType: TestContext.SendDiagnosticMessage(string, object?)
+  fullName: Xunit.TestContext.SendDiagnosticMessage(string, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SendDiagnosticMessage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 221
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sends a formatted diagnostic message. Will only be visible if the end user has enabled diagnostic messages.
+
+    See https://xunit.net/docs/configuration-files for configuration information.
+  example: []
+  syntax:
+    content: public void SendDiagnosticMessage(string format, object? arg0)
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string.
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    content.vb: Public Sub SendDiagnosticMessage(format As String, arg0 As Object)
+  overload: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object)
+  nameWithType.vb: TestContext.SendDiagnosticMessage(String, Object)
+  fullName.vb: Xunit.TestContext.SendDiagnosticMessage(String, Object)
+  name.vb: SendDiagnosticMessage(String, Object)
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  commentId: M:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  id: SendDiagnosticMessage(System.String,System.Object,System.Object)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SendDiagnosticMessage(string, object?, object?)
+  nameWithType: TestContext.SendDiagnosticMessage(string, object?, object?)
+  fullName: Xunit.TestContext.SendDiagnosticMessage(string, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SendDiagnosticMessage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 227
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sends a formatted diagnostic message. Will only be visible if the end user has enabled diagnostic messages.
+
+    See https://xunit.net/docs/configuration-files for configuration information.
+  example: []
+  syntax:
+    content: public void SendDiagnosticMessage(string format, object? arg0, object? arg1)
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string.
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string.
+    content.vb: Public Sub SendDiagnosticMessage(format As String, arg0 As Object, arg1 As Object)
+  overload: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  nameWithType.vb: TestContext.SendDiagnosticMessage(String, Object, Object)
+  fullName.vb: Xunit.TestContext.SendDiagnosticMessage(String, Object, Object)
+  name.vb: SendDiagnosticMessage(String, Object, Object)
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  commentId: M:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  id: SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SendDiagnosticMessage(string, object?, object?, object?)
+  nameWithType: TestContext.SendDiagnosticMessage(string, object?, object?, object?)
+  fullName: Xunit.TestContext.SendDiagnosticMessage(string, object?, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SendDiagnosticMessage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 234
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sends a formatted diagnostic message. Will only be visible if the end user has enabled diagnostic messages.
+
+    See https://xunit.net/docs/configuration-files for configuration information.
+  example: []
+  syntax:
+    content: public void SendDiagnosticMessage(string format, object? arg0, object? arg1, object? arg2)
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string.
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string.
+    - id: arg2
+      type: System.Object
+      description: The value to replace {2} in the format string.
+    content.vb: Public Sub SendDiagnosticMessage(format As String, arg0 As Object, arg1 As Object, arg2 As Object)
+  overload: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  nameWithType.vb: TestContext.SendDiagnosticMessage(String, Object, Object, Object)
+  fullName.vb: Xunit.TestContext.SendDiagnosticMessage(String, Object, Object, Object)
+  name.vb: SendDiagnosticMessage(String, Object, Object, Object)
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object[])
+  commentId: M:Xunit.TestContext.SendDiagnosticMessage(System.String,System.Object[])
+  id: SendDiagnosticMessage(System.String,System.Object[])
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SendDiagnosticMessage(string, params object?[])
+  nameWithType: TestContext.SendDiagnosticMessage(string, params object?[])
+  fullName: Xunit.TestContext.SendDiagnosticMessage(string, params object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SendDiagnosticMessage
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 242
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sends a formatted diagnostic message. Will only be visible if the end user has enabled diagnostic messages.
+
+    See https://xunit.net/docs/configuration-files for configuration information.
+  example: []
+  syntax:
+    content: public void SendDiagnosticMessage(string format, params object?[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string.
+    - id: args
+      type: System.Object[]
+      description: An object array that contains zero or more objects to format.
+    content.vb: Public Sub SendDiagnosticMessage(format As String, ParamArray args As Object())
+  overload: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  implements:
+  - v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object[])
+  nameWithType.vb: TestContext.SendDiagnosticMessage(String, ParamArray Object())
+  fullName.vb: Xunit.TestContext.SendDiagnosticMessage(String, ParamArray Object())
+  name.vb: SendDiagnosticMessage(String, ParamArray Object())
+- uid: v3.2.0.2:Xunit.TestContext.SetForInitialization(Xunit.Sdk.IMessageSink,System.Boolean,System.Boolean)
+  commentId: M:Xunit.TestContext.SetForInitialization(Xunit.Sdk.IMessageSink,System.Boolean,System.Boolean)
+  id: SetForInitialization(Xunit.Sdk.IMessageSink,System.Boolean,System.Boolean)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForInitialization(IMessageSink?, bool, bool)
+  nameWithType: TestContext.SetForInitialization(IMessageSink?, bool, bool)
+  fullName: Xunit.TestContext.SetForInitialization(Xunit.Sdk.IMessageSink?, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForInitialization
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 282
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for test framework initialization. This is the moment before any specific assembly is
+
+    being discovered or run. This is typically used by custom runners just before they create the test framework
+
+    via a call to <xref href="v3.2.0.2:Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void SetForInitialization(IMessageSink? diagnosticMessageSink, bool diagnosticMessages, bool internalDiagnosticMessages)
+    parameters:
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: >-
+        The optional message sink used to receive <xref href="v3.2.0.2:Xunit.Sdk.IDiagnosticMessage" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.2.0.2:Xunit.Sdk.IInternalDiagnosticMessage" data-throw-if-not-resolved="false"></xref> instances.
+    - id: diagnosticMessages
+      type: System.Boolean
+      description: A flag to indicate whether the user wants to receive diagnostic messages
+    - id: internalDiagnosticMessages
+      type: System.Boolean
+      description: A flag to indicate whether the user wants to receive internal diagnostic messages
+    content.vb: Public Shared Sub SetForInitialization(diagnosticMessageSink As IMessageSink, diagnosticMessages As Boolean, internalDiagnosticMessages As Boolean)
+  overload: v3.2.0.2:Xunit.TestContext.SetForInitialization*
+  nameWithType.vb: TestContext.SetForInitialization(IMessageSink, Boolean, Boolean)
+  fullName.vb: Xunit.TestContext.SetForInitialization(Xunit.Sdk.IMessageSink, Boolean, Boolean)
+  name.vb: SetForInitialization(IMessageSink, Boolean, Boolean)
+- uid: v3.2.0.2:Xunit.TestContext.SetForTest(Xunit.Sdk.ITest,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.TestResultState,Xunit.ITestOutputHelper,System.Object)
+  commentId: M:Xunit.TestContext.SetForTest(Xunit.Sdk.ITest,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.TestResultState,Xunit.ITestOutputHelper,System.Object)
+  id: SetForTest(Xunit.Sdk.ITest,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.TestResultState,Xunit.ITestOutputHelper,System.Object)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTest(ITest, TestEngineStatus, CancellationToken, TestResultState?, ITestOutputHelper?, object?)
+  nameWithType: TestContext.SetForTest(ITest, TestEngineStatus, CancellationToken, TestResultState?, ITestOutputHelper?, object?)
+  fullName: Xunit.TestContext.SetForTest(Xunit.Sdk.ITest, Xunit.TestEngineStatus, System.Threading.CancellationToken, Xunit.TestResultState?, Xunit.ITestOutputHelper?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTest
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 303
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for execution of a test. This assumes an existing test context already exists from which
+
+    it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTest(ITest test, TestEngineStatus testStatus, CancellationToken cancellationToken, TestResultState? testState = null, ITestOutputHelper? testOutputHelper = null, object? testClassInstance = null)
+    parameters:
+    - id: test
+      type: Xunit.Sdk.ITest
+      description: The test that is being executed
+    - id: testStatus
+      type: Xunit.TestEngineStatus
+      description: >-
+        The test status (valid values: <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>,
+            <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    - id: testState
+      type: Xunit.TestResultState
+      description: >-
+        The state of the test (only required when <code class="paramref">testStatus</code>
+            is <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>).
+    - id: testOutputHelper
+      type: Xunit.ITestOutputHelper
+      description: >-
+        The test output helper that the test can use to write output. Must be passed
+            when <code class="paramref">testStatus</code> is <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>; can be <code>null</code> for
+            other statuses (as it will be pulled from the existing test context).
+    - id: testClassInstance
+      type: System.Object
+      description: >-
+        The instance of the test class (may be <code>null</code> for static class and
+            before the test class has been created)
+    content.vb: Public Shared Sub SetForTest(test As ITest, testStatus As TestEngineStatus, cancellationToken As CancellationToken, testState As TestResultState = Nothing, testOutputHelper As ITestOutputHelper = Nothing, testClassInstance As Object = Nothing)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTest*
+  nameWithType.vb: TestContext.SetForTest(ITest, TestEngineStatus, CancellationToken, TestResultState, ITestOutputHelper, Object)
+  fullName.vb: Xunit.TestContext.SetForTest(Xunit.Sdk.ITest, Xunit.TestEngineStatus, System.Threading.CancellationToken, Xunit.TestResultState, Xunit.ITestOutputHelper, Object)
+  name.vb: SetForTest(ITest, TestEngineStatus, CancellationToken, TestResultState, ITestOutputHelper, Object)
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestAssembly(Xunit.Sdk.ITestAssembly,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  commentId: M:Xunit.TestContext.SetForTestAssembly(Xunit.Sdk.ITestAssembly,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  id: SetForTestAssembly(Xunit.Sdk.ITestAssembly,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTestAssembly(ITestAssembly, TestEngineStatus, CancellationToken)
+  nameWithType: TestContext.SetForTestAssembly(ITestAssembly, TestEngineStatus, CancellationToken)
+  fullName: Xunit.TestContext.SetForTestAssembly(Xunit.Sdk.ITestAssembly, Xunit.TestEngineStatus, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTestAssembly
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 352
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for discovery or execution of a test assembly. This assumes an existing test context already exists
+
+    from which it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTestAssembly(ITestAssembly testAssembly, TestEngineStatus testAssemblyStatus, CancellationToken cancellationToken)
+    parameters:
+    - id: testAssembly
+      type: Xunit.Sdk.ITestAssembly
+      description: The test assembly that is being executed
+    - id: testAssemblyStatus
+      type: Xunit.TestEngineStatus
+      description: The test assembly status
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    content.vb: Public Shared Sub SetForTestAssembly(testAssembly As ITestAssembly, testAssemblyStatus As TestEngineStatus, cancellationToken As CancellationToken)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTestAssembly*
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestCase(Xunit.Sdk.ITestCase,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  commentId: M:Xunit.TestContext.SetForTestCase(Xunit.Sdk.ITestCase,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  id: SetForTestCase(Xunit.Sdk.ITestCase,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTestCase(ITestCase, TestEngineStatus, CancellationToken)
+  nameWithType: TestContext.SetForTestCase(ITestCase, TestEngineStatus, CancellationToken)
+  fullName: Xunit.TestContext.SetForTestCase(Xunit.Sdk.ITestCase, Xunit.TestEngineStatus, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTestCase
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 379
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for execution of a test case. This assumes an existing test context already exists from which
+
+    it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTestCase(ITestCase testCase, TestEngineStatus testCaseStatus, CancellationToken cancellationToken)
+    parameters:
+    - id: testCase
+      type: Xunit.Sdk.ITestCase
+      description: The test case that is being executed
+    - id: testCaseStatus
+      type: Xunit.TestEngineStatus
+      description: >-
+        The test case status (valid values: <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>,
+            <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    content.vb: Public Shared Sub SetForTestCase(testCase As ITestCase, testCaseStatus As TestEngineStatus, cancellationToken As CancellationToken)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTestCase*
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestClass(Xunit.Sdk.ITestClass,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.v3.FixtureMappingManager)
+  commentId: M:Xunit.TestContext.SetForTestClass(Xunit.Sdk.ITestClass,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.v3.FixtureMappingManager)
+  id: SetForTestClass(Xunit.Sdk.ITestClass,Xunit.TestEngineStatus,System.Threading.CancellationToken,Xunit.v3.FixtureMappingManager)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTestClass(ITestClass, TestEngineStatus, CancellationToken, FixtureMappingManager?)
+  nameWithType: TestContext.SetForTestClass(ITestClass, TestEngineStatus, CancellationToken, FixtureMappingManager?)
+  fullName: Xunit.TestContext.SetForTestClass(Xunit.Sdk.ITestClass, Xunit.TestEngineStatus, System.Threading.CancellationToken, Xunit.v3.FixtureMappingManager?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTestClass
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 415
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for execution of a test class. This assumes an existing test context already exists from which
+
+    it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTestClass(ITestClass testClass, TestEngineStatus testClassStatus, CancellationToken cancellationToken, FixtureMappingManager? fixtures = null)
+    parameters:
+    - id: testClass
+      type: Xunit.Sdk.ITestClass
+      description: The test class that is being executed
+    - id: testClassStatus
+      type: Xunit.TestEngineStatus
+      description: >-
+        The test class status (valid values: <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>,
+            <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    - id: fixtures
+      type: Xunit.v3.FixtureMappingManager
+      description: The fixtures that are available to the test class
+    content.vb: Public Shared Sub SetForTestClass(testClass As ITestClass, testClassStatus As TestEngineStatus, cancellationToken As CancellationToken, fixtures As FixtureMappingManager = Nothing)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTestClass*
+  nameWithType.vb: TestContext.SetForTestClass(ITestClass, TestEngineStatus, CancellationToken, FixtureMappingManager)
+  fullName.vb: Xunit.TestContext.SetForTestClass(Xunit.Sdk.ITestClass, Xunit.TestEngineStatus, System.Threading.CancellationToken, Xunit.v3.FixtureMappingManager)
+  name.vb: SetForTestClass(ITestClass, TestEngineStatus, CancellationToken, FixtureMappingManager)
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestCollection(Xunit.Sdk.ITestCollection,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  commentId: M:Xunit.TestContext.SetForTestCollection(Xunit.Sdk.ITestCollection,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  id: SetForTestCollection(Xunit.Sdk.ITestCollection,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTestCollection(ITestCollection, TestEngineStatus, CancellationToken)
+  nameWithType: TestContext.SetForTestCollection(ITestCollection, TestEngineStatus, CancellationToken)
+  fullName: Xunit.TestContext.SetForTestCollection(Xunit.Sdk.ITestCollection, Xunit.TestEngineStatus, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTestCollection
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 445
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for execution of a test collection. This assumes an existing test context already exists from which
+
+    it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTestCollection(ITestCollection testCollection, TestEngineStatus testCollectionStatus, CancellationToken cancellationToken)
+    parameters:
+    - id: testCollection
+      type: Xunit.Sdk.ITestCollection
+      description: The test collection that is being executed
+    - id: testCollectionStatus
+      type: Xunit.TestEngineStatus
+      description: >-
+        The test collection status (valid values: <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>,
+            <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    content.vb: Public Shared Sub SetForTestCollection(testCollection As ITestCollection, testCollectionStatus As TestEngineStatus, cancellationToken As CancellationToken)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTestCollection*
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestMethod(Xunit.Sdk.ITestMethod,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  commentId: M:Xunit.TestContext.SetForTestMethod(Xunit.Sdk.ITestMethod,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  id: SetForTestMethod(Xunit.Sdk.ITestMethod,Xunit.TestEngineStatus,System.Threading.CancellationToken)
+  parent: v3.2.0.2:Xunit.TestContext
+  langs:
+  - csharp
+  - vb
+  name: SetForTestMethod(ITestMethod, TestEngineStatus, CancellationToken)
+  nameWithType: TestContext.SetForTestMethod(ITestMethod, TestEngineStatus, CancellationToken)
+  fullName: Xunit.TestContext.SetForTestMethod(Xunit.Sdk.ITestMethod, Xunit.TestEngineStatus, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TestContext.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: SetForTestMethod
+    path: ../src/xunit.v3.core/TestContext.cs
+    startLine: 471
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Sets the test context for execution of a test method. This assumes an existing test context already exists from which
+
+    it can pull the diagnostic and internal diagnostic message sinks.
+  example: []
+  syntax:
+    content: public static void SetForTestMethod(ITestMethod testMethod, TestEngineStatus testMethodStatus, CancellationToken cancellationToken)
+    parameters:
+    - id: testMethod
+      type: Xunit.Sdk.ITestMethod
+      description: The test method that is being executed
+    - id: testMethodStatus
+      type: Xunit.TestEngineStatus
+      description: >-
+        The test method status (valid values: <xref href="v3.2.0.2:Xunit.TestEngineStatus.Initializing" data-throw-if-not-resolved="false"></xref>,
+            <xref href="v3.2.0.2:Xunit.TestEngineStatus.Running" data-throw-if-not-resolved="false"></xref>, and <xref href="v3.2.0.2:Xunit.TestEngineStatus.CleaningUp" data-throw-if-not-resolved="false"></xref>)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    content.vb: Public Shared Sub SetForTestMethod(testMethod As ITestMethod, testMethodStatus As TestEngineStatus, cancellationToken As CancellationToken)
+  overload: v3.2.0.2:Xunit.TestContext.SetForTestMethod*
+references:
+- uid: v3.2.0.2:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.2.0.2:Xunit.ITestContext
+  commentId: T:Xunit.ITestContext
+  parent: v3.2.0.2:Xunit
+  href: Xunit.ITestContext.html
+  name: ITestContext
+  nameWithType: ITestContext
+  fullName: Xunit.ITestContext
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.ITestContext.Xunit.TestContextExtensions.GetFixture``1
+  commentId: M:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+  parent: v3.2.0.2:Xunit.TestContextExtensions
+  definition: Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+  href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  name: GetFixture<TFixture>(ITestContext)
+  nameWithType: TestContextExtensions.GetFixture<TFixture>(ITestContext)
+  fullName: Xunit.TestContextExtensions.GetFixture<TFixture>(Xunit.ITestContext)
+  nameWithType.vb: TestContextExtensions.GetFixture(Of TFixture)(ITestContext)
+  fullName.vb: Xunit.TestContextExtensions.GetFixture(Of TFixture)(Xunit.ITestContext)
+  name.vb: GetFixture(Of TFixture)(ITestContext)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+    name: GetFixture
+    href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  - name: <
+  - name: TFixture
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.ITestContext
+    name: ITestContext
+    href: Xunit.ITestContext.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+    name: GetFixture
+    href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.ITestContext
+    name: ITestContext
+    href: Xunit.ITestContext.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+  commentId: M:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+  href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  name: GetFixture<TFixture>(ITestContext)
+  nameWithType: TestContextExtensions.GetFixture<TFixture>(ITestContext)
+  fullName: Xunit.TestContextExtensions.GetFixture<TFixture>(Xunit.ITestContext)
+  nameWithType.vb: TestContextExtensions.GetFixture(Of TFixture)(ITestContext)
+  fullName.vb: Xunit.TestContextExtensions.GetFixture(Of TFixture)(Xunit.ITestContext)
+  name.vb: GetFixture(Of TFixture)(ITestContext)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+    name: GetFixture
+    href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  - name: <
+  - name: TFixture
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.ITestContext
+    name: ITestContext
+    href: Xunit.ITestContext.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TestContextExtensions.GetFixture``1(Xunit.ITestContext)
+    name: GetFixture
+    href: Xunit.TestContextExtensions.GetFixture.html#Xunit_TestContextExtensions_GetFixture__1_Xunit_ITestContext_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.ITestContext
+    name: ITestContext
+    href: Xunit.ITestContext.html
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContextExtensions
+  commentId: T:Xunit.TestContextExtensions
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TestContextExtensions.html
+  name: TestContextExtensions
+  nameWithType: TestContextExtensions
+  fullName: Xunit.TestContextExtensions
+- uid: v3.2.0.2:Xunit.TestContext.Attachments*
+  commentId: Overload:Xunit.TestContext.Attachments
+  href: Xunit.TestContext.Attachments.html#Xunit_TestContext_Attachments
+  name: Attachments
+  nameWithType: TestContext.Attachments
+  fullName: Xunit.TestContext.Attachments
+- uid: v3.2.0.2:Xunit.ITestContext.Attachments
+  commentId: P:Xunit.ITestContext.Attachments
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.Attachments.html#Xunit_ITestContext_Attachments
+  name: Attachments
+  nameWithType: ITestContext.Attachments
+  fullName: Xunit.ITestContext.Attachments
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Xunit.Sdk.TestAttachment}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Xunit.Sdk.TestAttachment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, TestAttachment>
+  nameWithType: IReadOnlyDictionary<string, TestAttachment>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Xunit.Sdk.TestAttachment>
+  nameWithType.vb: IReadOnlyDictionary(Of String, TestAttachment)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Xunit.Sdk.TestAttachment)
+  name.vb: IReadOnlyDictionary(Of String, TestAttachment)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3.2.0.2:Xunit.Sdk.TestAttachment
+    name: TestAttachment
+    href: Xunit.Sdk.TestAttachment.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3.2.0.2:Xunit.Sdk.TestAttachment
+    name: TestAttachment
+    href: Xunit.Sdk.TestAttachment.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.2.0.2:Xunit.TestContext.CancellationToken*
+  commentId: Overload:Xunit.TestContext.CancellationToken
+  href: Xunit.TestContext.CancellationToken.html#Xunit_TestContext_CancellationToken
+  name: CancellationToken
+  nameWithType: TestContext.CancellationToken
+  fullName: Xunit.TestContext.CancellationToken
+- uid: v3.2.0.2:Xunit.ITestContext.CancellationToken
+  commentId: P:Xunit.ITestContext.CancellationToken
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.CancellationToken.html#Xunit_ITestContext_CancellationToken
+  name: CancellationToken
+  nameWithType: ITestContext.CancellationToken
+  fullName: Xunit.ITestContext.CancellationToken
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: v3.2.0.2:Xunit.TestPipelineStage.Unknown
+  commentId: F:Xunit.TestPipelineStage.Unknown
+  href: Xunit.TestPipelineStage.html#Xunit_TestPipelineStage_Unknown
+  name: Unknown
+  nameWithType: TestPipelineStage.Unknown
+  fullName: Xunit.TestPipelineStage.Unknown
+- uid: v3.2.0.2:Xunit.TestContext.Current*
+  commentId: Overload:Xunit.TestContext.Current
+  href: Xunit.TestContext.Current.html#Xunit_TestContext_Current
+  name: Current
+  nameWithType: TestContext.Current
+  fullName: Xunit.TestContext.Current
+- uid: v3.2.0.2:Xunit.TestContext.KeyValueStorage*
+  commentId: Overload:Xunit.TestContext.KeyValueStorage
+  href: Xunit.TestContext.KeyValueStorage.html#Xunit_TestContext_KeyValueStorage
+  name: KeyValueStorage
+  nameWithType: TestContext.KeyValueStorage
+  fullName: Xunit.TestContext.KeyValueStorage
+- uid: v3.2.0.2:Xunit.ITestContext.KeyValueStorage
+  commentId: P:Xunit.ITestContext.KeyValueStorage
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.KeyValueStorage.html#Xunit_ITestContext_KeyValueStorage
+  name: KeyValueStorage
+  nameWithType: ITestContext.KeyValueStorage
+  fullName: Xunit.ITestContext.KeyValueStorage
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContext.PipelineStage*
+  commentId: Overload:Xunit.TestContext.PipelineStage
+  href: Xunit.TestContext.PipelineStage.html#Xunit_TestContext_PipelineStage
+  name: PipelineStage
+  nameWithType: TestContext.PipelineStage
+  fullName: Xunit.TestContext.PipelineStage
+- uid: v3.2.0.2:Xunit.ITestContext.PipelineStage
+  commentId: P:Xunit.ITestContext.PipelineStage
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.PipelineStage.html#Xunit_ITestContext_PipelineStage
+  name: PipelineStage
+  nameWithType: ITestContext.PipelineStage
+  fullName: Xunit.ITestContext.PipelineStage
+- uid: v3.2.0.2:Xunit.TestPipelineStage
+  commentId: T:Xunit.TestPipelineStage
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TestPipelineStage.html
+  name: TestPipelineStage
+  nameWithType: TestPipelineStage
+  fullName: Xunit.TestPipelineStage
+- uid: v3.2.0.2:Xunit.v3.IXunitTest
+  commentId: T:Xunit.v3.IXunitTest
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTest.html
+  name: IXunitTest
+  nameWithType: IXunitTest
+  fullName: Xunit.v3.IXunitTest
+- uid: v3.2.0.2:Xunit.TestContext.Test*
+  commentId: Overload:Xunit.TestContext.Test
+  href: Xunit.TestContext.Test.html#Xunit_TestContext_Test
+  name: Test
+  nameWithType: TestContext.Test
+  fullName: Xunit.TestContext.Test
+- uid: v3.2.0.2:Xunit.ITestContext.Test
+  commentId: P:Xunit.ITestContext.Test
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.Test.html#Xunit_ITestContext_Test
+  name: Test
+  nameWithType: ITestContext.Test
+  fullName: Xunit.ITestContext.Test
+- uid: v3.2.0.2:Xunit.Sdk.ITest
+  commentId: T:Xunit.Sdk.ITest
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITest.html
+  name: ITest
+  nameWithType: ITest
+  fullName: Xunit.Sdk.ITest
+- uid: v3.2.0.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.2.0.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.2:Xunit.v3.IXunitTestAssembly
+  commentId: T:Xunit.v3.IXunitTestAssembly
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTestAssembly.html
+  name: IXunitTestAssembly
+  nameWithType: IXunitTestAssembly
+  fullName: Xunit.v3.IXunitTestAssembly
+- uid: v3.2.0.2:Xunit.TestContext.TestAssembly*
+  commentId: Overload:Xunit.TestContext.TestAssembly
+  href: Xunit.TestContext.TestAssembly.html#Xunit_TestContext_TestAssembly
+  name: TestAssembly
+  nameWithType: TestContext.TestAssembly
+  fullName: Xunit.TestContext.TestAssembly
+- uid: v3.2.0.2:Xunit.ITestContext.TestAssembly
+  commentId: P:Xunit.ITestContext.TestAssembly
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestAssembly.html#Xunit_ITestContext_TestAssembly
+  name: TestAssembly
+  nameWithType: ITestContext.TestAssembly
+  fullName: Xunit.ITestContext.TestAssembly
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssembly
+  commentId: T:Xunit.Sdk.ITestAssembly
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssembly.html
+  name: ITestAssembly
+  nameWithType: ITestAssembly
+  fullName: Xunit.Sdk.ITestAssembly
+- uid: v3.2.0.2:Xunit.TestContext.TestAssemblyStatus*
+  commentId: Overload:Xunit.TestContext.TestAssemblyStatus
+  href: Xunit.TestContext.TestAssemblyStatus.html#Xunit_TestContext_TestAssemblyStatus
+  name: TestAssemblyStatus
+  nameWithType: TestContext.TestAssemblyStatus
+  fullName: Xunit.TestContext.TestAssemblyStatus
+- uid: v3.2.0.2:Xunit.ITestContext.TestAssemblyStatus
+  commentId: P:Xunit.ITestContext.TestAssemblyStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestAssemblyStatus.html#Xunit_ITestContext_TestAssemblyStatus
+  name: TestAssemblyStatus
+  nameWithType: ITestContext.TestAssemblyStatus
+  fullName: Xunit.ITestContext.TestAssemblyStatus
+- uid: System.Nullable{Xunit.TestEngineStatus}
+  commentId: T:System.Nullable{Xunit.TestEngineStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: Xunit.TestEngineStatus.html
+  name: TestEngineStatus?
+  nameWithType: TestEngineStatus?
+  fullName: Xunit.TestEngineStatus?
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: '?'
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.2.0.2:Xunit.v3.IXunitTestCase
+  commentId: T:Xunit.v3.IXunitTestCase
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTestCase.html
+  name: IXunitTestCase
+  nameWithType: IXunitTestCase
+  fullName: Xunit.v3.IXunitTestCase
+- uid: v3.2.0.2:Xunit.TestContext.TestCase*
+  commentId: Overload:Xunit.TestContext.TestCase
+  href: Xunit.TestContext.TestCase.html#Xunit_TestContext_TestCase
+  name: TestCase
+  nameWithType: TestContext.TestCase
+  fullName: Xunit.TestContext.TestCase
+- uid: v3.2.0.2:Xunit.ITestContext.TestCase
+  commentId: P:Xunit.ITestContext.TestCase
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestCase.html#Xunit_ITestContext_TestCase
+  name: TestCase
+  nameWithType: ITestContext.TestCase
+  fullName: Xunit.ITestContext.TestCase
+- uid: v3.2.0.2:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+- uid: v3.2.0.2:Xunit.TestContext.TestCaseStatus*
+  commentId: Overload:Xunit.TestContext.TestCaseStatus
+  href: Xunit.TestContext.TestCaseStatus.html#Xunit_TestContext_TestCaseStatus
+  name: TestCaseStatus
+  nameWithType: TestContext.TestCaseStatus
+  fullName: Xunit.TestContext.TestCaseStatus
+- uid: v3.2.0.2:Xunit.ITestContext.TestCaseStatus
+  commentId: P:Xunit.ITestContext.TestCaseStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestCaseStatus.html#Xunit_ITestContext_TestCaseStatus
+  name: TestCaseStatus
+  nameWithType: ITestContext.TestCaseStatus
+  fullName: Xunit.ITestContext.TestCaseStatus
+- uid: v3.2.0.2:Xunit.v3.IXunitTestClass
+  commentId: T:Xunit.v3.IXunitTestClass
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTestClass.html
+  name: IXunitTestClass
+  nameWithType: IXunitTestClass
+  fullName: Xunit.v3.IXunitTestClass
+- uid: v3.2.0.2:Xunit.TestContext.TestClass*
+  commentId: Overload:Xunit.TestContext.TestClass
+  href: Xunit.TestContext.TestClass.html#Xunit_TestContext_TestClass
+  name: TestClass
+  nameWithType: TestContext.TestClass
+  fullName: Xunit.TestContext.TestClass
+- uid: v3.2.0.2:Xunit.ITestContext.TestClass
+  commentId: P:Xunit.ITestContext.TestClass
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestClass.html#Xunit_ITestContext_TestClass
+  name: TestClass
+  nameWithType: ITestContext.TestClass
+  fullName: Xunit.ITestContext.TestClass
+- uid: v3.2.0.2:Xunit.Sdk.ITestClass
+  commentId: T:Xunit.Sdk.ITestClass
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestClass.html
+  name: ITestClass
+  nameWithType: ITestClass
+  fullName: Xunit.Sdk.ITestClass
+- uid: v3.2.0.2:Xunit.TestPipelineStage.TestExecution
+  commentId: F:Xunit.TestPipelineStage.TestExecution
+  href: Xunit.TestPipelineStage.html#Xunit_TestPipelineStage_TestExecution
+  name: TestExecution
+  nameWithType: TestPipelineStage.TestExecution
+  fullName: Xunit.TestPipelineStage.TestExecution
+- uid: v3.2.0.2:Xunit.ITestContext.TestStatus
+  commentId: P:Xunit.ITestContext.TestStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestStatus.html#Xunit_ITestContext_TestStatus
+  name: TestStatus
+  nameWithType: ITestContext.TestStatus
+  fullName: Xunit.ITestContext.TestStatus
+- uid: v3.2.0.2:Xunit.TestEngineStatus.Running
+  commentId: F:Xunit.TestEngineStatus.Running
+  href: Xunit.TestEngineStatus.html#Xunit_TestEngineStatus_Running
+  name: Running
+  nameWithType: TestEngineStatus.Running
+  fullName: Xunit.TestEngineStatus.Running
+- uid: v3.2.0.2:Xunit.TestContext.TestClassInstance*
+  commentId: Overload:Xunit.TestContext.TestClassInstance
+  href: Xunit.TestContext.TestClassInstance.html#Xunit_TestContext_TestClassInstance
+  name: TestClassInstance
+  nameWithType: TestContext.TestClassInstance
+  fullName: Xunit.TestContext.TestClassInstance
+- uid: v3.2.0.2:Xunit.ITestContext.TestClassInstance
+  commentId: P:Xunit.ITestContext.TestClassInstance
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestClassInstance.html#Xunit_ITestContext_TestClassInstance
+  name: TestClassInstance
+  nameWithType: ITestContext.TestClassInstance
+  fullName: Xunit.ITestContext.TestClassInstance
+- uid: v3.2.0.2:Xunit.TestContext.TestClassStatus*
+  commentId: Overload:Xunit.TestContext.TestClassStatus
+  href: Xunit.TestContext.TestClassStatus.html#Xunit_TestContext_TestClassStatus
+  name: TestClassStatus
+  nameWithType: TestContext.TestClassStatus
+  fullName: Xunit.TestContext.TestClassStatus
+- uid: v3.2.0.2:Xunit.ITestContext.TestClassStatus
+  commentId: P:Xunit.ITestContext.TestClassStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestClassStatus.html#Xunit_ITestContext_TestClassStatus
+  name: TestClassStatus
+  nameWithType: ITestContext.TestClassStatus
+  fullName: Xunit.ITestContext.TestClassStatus
+- uid: v3.2.0.2:Xunit.v3.IXunitTestCollection
+  commentId: T:Xunit.v3.IXunitTestCollection
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTestCollection.html
+  name: IXunitTestCollection
+  nameWithType: IXunitTestCollection
+  fullName: Xunit.v3.IXunitTestCollection
+- uid: v3.2.0.2:Xunit.TestContext.TestCollection*
+  commentId: Overload:Xunit.TestContext.TestCollection
+  href: Xunit.TestContext.TestCollection.html#Xunit_TestContext_TestCollection
+  name: TestCollection
+  nameWithType: TestContext.TestCollection
+  fullName: Xunit.TestContext.TestCollection
+- uid: v3.2.0.2:Xunit.ITestContext.TestCollection
+  commentId: P:Xunit.ITestContext.TestCollection
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestCollection.html#Xunit_ITestContext_TestCollection
+  name: TestCollection
+  nameWithType: ITestContext.TestCollection
+  fullName: Xunit.ITestContext.TestCollection
+- uid: v3.2.0.2:Xunit.Sdk.ITestCollection
+  commentId: T:Xunit.Sdk.ITestCollection
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollection.html
+  name: ITestCollection
+  nameWithType: ITestCollection
+  fullName: Xunit.Sdk.ITestCollection
+- uid: v3.2.0.2:Xunit.TestContext.TestCollectionStatus*
+  commentId: Overload:Xunit.TestContext.TestCollectionStatus
+  href: Xunit.TestContext.TestCollectionStatus.html#Xunit_TestContext_TestCollectionStatus
+  name: TestCollectionStatus
+  nameWithType: TestContext.TestCollectionStatus
+  fullName: Xunit.TestContext.TestCollectionStatus
+- uid: v3.2.0.2:Xunit.ITestContext.TestCollectionStatus
+  commentId: P:Xunit.ITestContext.TestCollectionStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestCollectionStatus.html#Xunit_ITestContext_TestCollectionStatus
+  name: TestCollectionStatus
+  nameWithType: ITestContext.TestCollectionStatus
+  fullName: Xunit.ITestContext.TestCollectionStatus
+- uid: v3.2.0.2:Xunit.v3.IXunitTestMethod
+  commentId: T:Xunit.v3.IXunitTestMethod
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.IXunitTestMethod.html
+  name: IXunitTestMethod
+  nameWithType: IXunitTestMethod
+  fullName: Xunit.v3.IXunitTestMethod
+- uid: v3.2.0.2:Xunit.TestContext.TestMethod*
+  commentId: Overload:Xunit.TestContext.TestMethod
+  href: Xunit.TestContext.TestMethod.html#Xunit_TestContext_TestMethod
+  name: TestMethod
+  nameWithType: TestContext.TestMethod
+  fullName: Xunit.TestContext.TestMethod
+- uid: v3.2.0.2:Xunit.ITestContext.TestMethod
+  commentId: P:Xunit.ITestContext.TestMethod
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestMethod.html#Xunit_ITestContext_TestMethod
+  name: TestMethod
+  nameWithType: ITestContext.TestMethod
+  fullName: Xunit.ITestContext.TestMethod
+- uid: v3.2.0.2:Xunit.Sdk.ITestMethod
+  commentId: T:Xunit.Sdk.ITestMethod
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethod.html
+  name: ITestMethod
+  nameWithType: ITestMethod
+  fullName: Xunit.Sdk.ITestMethod
+- uid: v3.2.0.2:Xunit.TestContext.TestMethodStatus*
+  commentId: Overload:Xunit.TestContext.TestMethodStatus
+  href: Xunit.TestContext.TestMethodStatus.html#Xunit_TestContext_TestMethodStatus
+  name: TestMethodStatus
+  nameWithType: TestContext.TestMethodStatus
+  fullName: Xunit.TestContext.TestMethodStatus
+- uid: v3.2.0.2:Xunit.ITestContext.TestMethodStatus
+  commentId: P:Xunit.ITestContext.TestMethodStatus
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestMethodStatus.html#Xunit_ITestContext_TestMethodStatus
+  name: TestMethodStatus
+  nameWithType: ITestContext.TestMethodStatus
+  fullName: Xunit.ITestContext.TestMethodStatus
+- uid: v3.2.0.2:Xunit.TestContext.TestOutputHelper*
+  commentId: Overload:Xunit.TestContext.TestOutputHelper
+  href: Xunit.TestContext.TestOutputHelper.html#Xunit_TestContext_TestOutputHelper
+  name: TestOutputHelper
+  nameWithType: TestContext.TestOutputHelper
+  fullName: Xunit.TestContext.TestOutputHelper
+- uid: v3.2.0.2:Xunit.ITestContext.TestOutputHelper
+  commentId: P:Xunit.ITestContext.TestOutputHelper
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestOutputHelper.html#Xunit_ITestContext_TestOutputHelper
+  name: TestOutputHelper
+  nameWithType: ITestContext.TestOutputHelper
+  fullName: Xunit.ITestContext.TestOutputHelper
+- uid: v3.2.0.2:Xunit.ITestOutputHelper
+  commentId: T:Xunit.ITestOutputHelper
+  parent: v3.2.0.2:Xunit
+  href: Xunit.ITestOutputHelper.html
+  name: ITestOutputHelper
+  nameWithType: ITestOutputHelper
+  fullName: Xunit.ITestOutputHelper
+- uid: v3.2.0.2:Xunit.TestContext.TestState*
+  commentId: Overload:Xunit.TestContext.TestState
+  href: Xunit.TestContext.TestState.html#Xunit_TestContext_TestState
+  name: TestState
+  nameWithType: TestContext.TestState
+  fullName: Xunit.TestContext.TestState
+- uid: v3.2.0.2:Xunit.ITestContext.TestState
+  commentId: P:Xunit.ITestContext.TestState
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.TestState.html#Xunit_ITestContext_TestState
+  name: TestState
+  nameWithType: ITestContext.TestState
+  fullName: Xunit.ITestContext.TestState
+- uid: v3.2.0.2:Xunit.TestResultState
+  commentId: T:Xunit.TestResultState
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TestResultState.html
+  name: TestResultState
+  nameWithType: TestResultState
+  fullName: Xunit.TestResultState
+- uid: v3.2.0.2:Xunit.TestContext.TestStatus*
+  commentId: Overload:Xunit.TestContext.TestStatus
+  href: Xunit.TestContext.TestStatus.html#Xunit_TestContext_TestStatus
+  name: TestStatus
+  nameWithType: TestContext.TestStatus
+  fullName: Xunit.TestContext.TestStatus
+- uid: v3.2.0.2:Xunit.TestContext.Warnings*
+  commentId: Overload:Xunit.TestContext.Warnings
+  href: Xunit.TestContext.Warnings.html#Xunit_TestContext_Warnings
+  name: Warnings
+  nameWithType: TestContext.Warnings
+  fullName: Xunit.TestContext.Warnings
+- uid: v3.2.0.2:Xunit.ITestContext.Warnings
+  commentId: P:Xunit.ITestContext.Warnings
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.Warnings.html#Xunit_ITestContext_Warnings
+  name: Warnings
+  nameWithType: ITestContext.Warnings
+  fullName: Xunit.ITestContext.Warnings
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContext.AddAttachment*
+  commentId: Overload:Xunit.TestContext.AddAttachment
+  href: Xunit.TestContext.AddAttachment.html#Xunit_TestContext_AddAttachment_System_String_System_String_
+  name: AddAttachment
+  nameWithType: TestContext.AddAttachment
+  fullName: Xunit.TestContext.AddAttachment
+- uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.String)
+  commentId: M:Xunit.ITestContext.AddAttachment(System.String,System.String)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_String_
+  name: AddAttachment(string, string)
+  nameWithType: ITestContext.AddAttachment(string, string)
+  fullName: Xunit.ITestContext.AddAttachment(string, string)
+  nameWithType.vb: ITestContext.AddAttachment(String, String)
+  fullName.vb: Xunit.ITestContext.AddAttachment(String, String)
+  name.vb: AddAttachment(String, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.String)
+    name: AddAttachment
+    href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.String)
+    name: AddAttachment
+    href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.Byte[],System.String)
+  commentId: M:Xunit.ITestContext.AddAttachment(System.String,System.Byte[],System.String)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_Byte___System_String_
+  name: AddAttachment(string, byte[], string)
+  nameWithType: ITestContext.AddAttachment(string, byte[], string)
+  fullName: Xunit.ITestContext.AddAttachment(string, byte[], string)
+  nameWithType.vb: ITestContext.AddAttachment(String, Byte(), String)
+  fullName.vb: Xunit.ITestContext.AddAttachment(String, Byte(), String)
+  name.vb: AddAttachment(String, Byte(), String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.Byte[],System.String)
+    name: AddAttachment
+    href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_Byte___System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddAttachment(System.String,System.Byte[],System.String)
+    name: AddAttachment
+    href: Xunit.ITestContext.AddAttachment.html#Xunit_ITestContext_AddAttachment_System_String_System_Byte___System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContext.AddWarning*
+  commentId: Overload:Xunit.TestContext.AddWarning
+  href: Xunit.TestContext.AddWarning.html#Xunit_TestContext_AddWarning_System_String_
+  name: AddWarning
+  nameWithType: TestContext.AddWarning
+  fullName: Xunit.TestContext.AddWarning
+- uid: v3.2.0.2:Xunit.ITestContext.AddWarning(System.String)
+  commentId: M:Xunit.ITestContext.AddWarning(System.String)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.AddWarning.html#Xunit_ITestContext_AddWarning_System_String_
+  name: AddWarning(string)
+  nameWithType: ITestContext.AddWarning(string)
+  fullName: Xunit.ITestContext.AddWarning(string)
+  nameWithType.vb: ITestContext.AddWarning(String)
+  fullName.vb: Xunit.ITestContext.AddWarning(String)
+  name.vb: AddWarning(String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddWarning(System.String)
+    name: AddWarning
+    href: Xunit.ITestContext.AddWarning.html#Xunit_ITestContext_AddWarning_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.AddWarning(System.String)
+    name: AddWarning
+    href: Xunit.ITestContext.AddWarning.html#Xunit_ITestContext_AddWarning_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContext.CancelCurrentTest*
+  commentId: Overload:Xunit.TestContext.CancelCurrentTest
+  href: Xunit.TestContext.CancelCurrentTest.html#Xunit_TestContext_CancelCurrentTest
+  name: CancelCurrentTest
+  nameWithType: TestContext.CancelCurrentTest
+  fullName: Xunit.TestContext.CancelCurrentTest
+- uid: v3.2.0.2:Xunit.ITestContext.CancelCurrentTest
+  commentId: M:Xunit.ITestContext.CancelCurrentTest
+  parent: v3.2.0.2:Xunit.ITestContext
+  href: Xunit.ITestContext.CancelCurrentTest.html#Xunit_ITestContext_CancelCurrentTest
+  name: CancelCurrentTest()
+  nameWithType: ITestContext.CancelCurrentTest()
+  fullName: Xunit.ITestContext.CancelCurrentTest()
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.CancelCurrentTest
+    name: CancelCurrentTest
+    href: Xunit.ITestContext.CancelCurrentTest.html#Xunit_ITestContext_CancelCurrentTest
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.CancelCurrentTest
+    name: CancelCurrentTest
+    href: Xunit.ITestContext.CancelCurrentTest.html#Xunit_ITestContext_CancelCurrentTest
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TestContext.Dispose*
+  commentId: Overload:Xunit.TestContext.Dispose
+  href: Xunit.TestContext.Dispose.html#Xunit_TestContext_Dispose
+  name: Dispose
+  nameWithType: TestContext.Dispose
+  fullName: Xunit.TestContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.IClassFixture`1
+  commentId: T:Xunit.IClassFixture`1
+  href: Xunit.IClassFixture-1.html
+  name: IClassFixture<TFixture>
+  nameWithType: IClassFixture<TFixture>
+  fullName: Xunit.IClassFixture<TFixture>
+  nameWithType.vb: IClassFixture(Of TFixture)
+  fullName.vb: Xunit.IClassFixture(Of TFixture)
+  name.vb: IClassFixture(Of TFixture)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.IClassFixture`1
+    name: IClassFixture
+    href: Xunit.IClassFixture-1.html
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.IClassFixture`1
+    name: IClassFixture
+    href: Xunit.IClassFixture-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: v3.2.0.2:Xunit.ICollectionFixture`1
+  commentId: T:Xunit.ICollectionFixture`1
+  href: Xunit.ICollectionFixture-1.html
+  name: ICollectionFixture<TFixture>
+  nameWithType: ICollectionFixture<TFixture>
+  fullName: Xunit.ICollectionFixture<TFixture>
+  nameWithType.vb: ICollectionFixture(Of TFixture)
+  fullName.vb: Xunit.ICollectionFixture(Of TFixture)
+  name.vb: ICollectionFixture(Of TFixture)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: v3.2.0.2:Xunit.AssemblyFixtureAttribute
+  commentId: T:Xunit.AssemblyFixtureAttribute
+  href: Xunit.AssemblyFixtureAttribute.html
+  name: AssemblyFixtureAttribute
+  nameWithType: AssemblyFixtureAttribute
+  fullName: Xunit.AssemblyFixtureAttribute
+- uid: v3.2.0.2:Xunit.TestContext.GetFixture*
+  commentId: Overload:Xunit.TestContext.GetFixture
+  href: Xunit.TestContext.GetFixture.html#Xunit_TestContext_GetFixture_System_Type_
+  name: GetFixture
+  nameWithType: TestContext.GetFixture
+  fullName: Xunit.TestContext.GetFixture
+- uid: v3.2.0.2:Xunit.ITestContext.GetFixture(System.Type)
+  commentId: M:Xunit.ITestContext.GetFixture(System.Type)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.GetFixture.html#Xunit_ITestContext_GetFixture_System_Type_
+  name: GetFixture(Type)
+  nameWithType: ITestContext.GetFixture(Type)
+  fullName: Xunit.ITestContext.GetFixture(System.Type)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.GetFixture(System.Type)
+    name: GetFixture
+    href: Xunit.ITestContext.GetFixture.html#Xunit_ITestContext_GetFixture_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.GetFixture(System.Type)
+    name: GetFixture
+    href: Xunit.ITestContext.GetFixture.html#Xunit_ITestContext_GetFixture_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Threading.Tasks.ValueTask{System.Object}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Object}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<object>
+  nameWithType: ValueTask<object>
+  fullName: System.Threading.Tasks.ValueTask<object>
+  nameWithType.vb: ValueTask(Of Object)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Object)
+  name.vb: ValueTask(Of Object)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.2.0.2:Xunit.TestContext.SendDiagnosticMessage*
+  commentId: Overload:Xunit.TestContext.SendDiagnosticMessage
+  href: Xunit.TestContext.SendDiagnosticMessage.html#Xunit_TestContext_SendDiagnosticMessage_System_String_
+  name: SendDiagnosticMessage
+  nameWithType: TestContext.SendDiagnosticMessage
+  fullName: Xunit.TestContext.SendDiagnosticMessage
+- uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String)
+  commentId: M:Xunit.ITestContext.SendDiagnosticMessage(System.String)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_
+  name: SendDiagnosticMessage(string)
+  nameWithType: ITestContext.SendDiagnosticMessage(string)
+  fullName: Xunit.ITestContext.SendDiagnosticMessage(string)
+  nameWithType.vb: ITestContext.SendDiagnosticMessage(String)
+  fullName.vb: Xunit.ITestContext.SendDiagnosticMessage(String)
+  name.vb: SendDiagnosticMessage(String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object)
+  commentId: M:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_
+  name: SendDiagnosticMessage(string, object)
+  nameWithType: ITestContext.SendDiagnosticMessage(string, object)
+  fullName: Xunit.ITestContext.SendDiagnosticMessage(string, object)
+  nameWithType.vb: ITestContext.SendDiagnosticMessage(String, Object)
+  fullName.vb: Xunit.ITestContext.SendDiagnosticMessage(String, Object)
+  name.vb: SendDiagnosticMessage(String, Object)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  commentId: M:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_
+  name: SendDiagnosticMessage(string, object, object)
+  nameWithType: ITestContext.SendDiagnosticMessage(string, object, object)
+  fullName: Xunit.ITestContext.SendDiagnosticMessage(string, object, object)
+  nameWithType.vb: ITestContext.SendDiagnosticMessage(String, Object, Object)
+  fullName.vb: Xunit.ITestContext.SendDiagnosticMessage(String, Object, Object)
+  name.vb: SendDiagnosticMessage(String, Object, Object)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  commentId: M:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_System_Object_
+  name: SendDiagnosticMessage(string, object, object, object)
+  nameWithType: ITestContext.SendDiagnosticMessage(string, object, object, object)
+  fullName: Xunit.ITestContext.SendDiagnosticMessage(string, object, object, object)
+  nameWithType.vb: ITestContext.SendDiagnosticMessage(String, Object, Object, Object)
+  fullName.vb: Xunit.ITestContext.SendDiagnosticMessage(String, Object, Object, Object)
+  name.vb: SendDiagnosticMessage(String, Object, Object, Object)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object,System.Object,System.Object)
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object[])
+  commentId: M:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object[])
+  parent: v3.2.0.2:Xunit.ITestContext
+  isExternal: true
+  href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object___
+  name: SendDiagnosticMessage(string, params object[])
+  nameWithType: ITestContext.SendDiagnosticMessage(string, params object[])
+  fullName: Xunit.ITestContext.SendDiagnosticMessage(string, params object[])
+  nameWithType.vb: ITestContext.SendDiagnosticMessage(String, ParamArray Object())
+  fullName.vb: Xunit.ITestContext.SendDiagnosticMessage(String, ParamArray Object())
+  name.vb: SendDiagnosticMessage(String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object[])
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITestContext.SendDiagnosticMessage(System.String,System.Object[])
+    name: SendDiagnosticMessage
+    href: Xunit.ITestContext.SendDiagnosticMessage.html#Xunit_ITestContext_SendDiagnosticMessage_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)
+  commentId: M:Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)
+  isExternal: true
+  href: Xunit.v3.ExtensibilityPointFactory.GetTestFramework.html#Xunit_v3_ExtensibilityPointFactory_GetTestFramework_System_Reflection_Assembly_
+  name: GetTestFramework(Assembly)
+  nameWithType: ExtensibilityPointFactory.GetTestFramework(Assembly)
+  fullName: Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)
+    name: GetTestFramework
+    href: Xunit.v3.ExtensibilityPointFactory.GetTestFramework.html#Xunit_v3_ExtensibilityPointFactory_GetTestFramework_System_Reflection_Assembly_
+  - name: (
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.v3.ExtensibilityPointFactory.GetTestFramework(System.Reflection.Assembly)
+    name: GetTestFramework
+    href: Xunit.v3.ExtensibilityPointFactory.GetTestFramework.html#Xunit_v3_ExtensibilityPointFactory_GetTestFramework_System_Reflection_Assembly_
+  - name: (
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.IDiagnosticMessage
+  commentId: T:Xunit.Sdk.IDiagnosticMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IDiagnosticMessage.html
+  name: IDiagnosticMessage
+  nameWithType: IDiagnosticMessage
+  fullName: Xunit.Sdk.IDiagnosticMessage
+- uid: v3.2.0.2:Xunit.Sdk.IInternalDiagnosticMessage
+  commentId: T:Xunit.Sdk.IInternalDiagnosticMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IInternalDiagnosticMessage.html
+  name: IInternalDiagnosticMessage
+  nameWithType: IInternalDiagnosticMessage
+  fullName: Xunit.Sdk.IInternalDiagnosticMessage
+- uid: v3.2.0.2:Xunit.TestContext.SetForInitialization*
+  commentId: Overload:Xunit.TestContext.SetForInitialization
+  href: Xunit.TestContext.SetForInitialization.html#Xunit_TestContext_SetForInitialization_Xunit_Sdk_IMessageSink_System_Boolean_System_Boolean_
+  name: SetForInitialization
+  nameWithType: TestContext.SetForInitialization
+  fullName: Xunit.TestContext.SetForInitialization
+- uid: v3.2.0.2:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.2.0.2:Xunit.TestEngineStatus.Initializing
+  commentId: F:Xunit.TestEngineStatus.Initializing
+  href: Xunit.TestEngineStatus.html#Xunit_TestEngineStatus_Initializing
+  name: Initializing
+  nameWithType: TestEngineStatus.Initializing
+  fullName: Xunit.TestEngineStatus.Initializing
+- uid: v3.2.0.2:Xunit.TestEngineStatus.CleaningUp
+  commentId: F:Xunit.TestEngineStatus.CleaningUp
+  href: Xunit.TestEngineStatus.html#Xunit_TestEngineStatus_CleaningUp
+  name: CleaningUp
+  nameWithType: TestEngineStatus.CleaningUp
+  fullName: Xunit.TestEngineStatus.CleaningUp
+- uid: v3.2.0.2:Xunit.TestContext.SetForTest*
+  commentId: Overload:Xunit.TestContext.SetForTest
+  href: Xunit.TestContext.SetForTest.html#Xunit_TestContext_SetForTest_Xunit_Sdk_ITest_Xunit_TestEngineStatus_System_Threading_CancellationToken_Xunit_TestResultState_Xunit_ITestOutputHelper_System_Object_
+  name: SetForTest
+  nameWithType: TestContext.SetForTest
+  fullName: Xunit.TestContext.SetForTest
+- uid: v3.2.0.2:Xunit.TestEngineStatus
+  commentId: T:Xunit.TestEngineStatus
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TestEngineStatus.html
+  name: TestEngineStatus
+  nameWithType: TestEngineStatus
+  fullName: Xunit.TestEngineStatus
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestAssembly*
+  commentId: Overload:Xunit.TestContext.SetForTestAssembly
+  href: Xunit.TestContext.SetForTestAssembly.html#Xunit_TestContext_SetForTestAssembly_Xunit_Sdk_ITestAssembly_Xunit_TestEngineStatus_System_Threading_CancellationToken_
+  name: SetForTestAssembly
+  nameWithType: TestContext.SetForTestAssembly
+  fullName: Xunit.TestContext.SetForTestAssembly
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestCase*
+  commentId: Overload:Xunit.TestContext.SetForTestCase
+  href: Xunit.TestContext.SetForTestCase.html#Xunit_TestContext_SetForTestCase_Xunit_Sdk_ITestCase_Xunit_TestEngineStatus_System_Threading_CancellationToken_
+  name: SetForTestCase
+  nameWithType: TestContext.SetForTestCase
+  fullName: Xunit.TestContext.SetForTestCase
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestClass*
+  commentId: Overload:Xunit.TestContext.SetForTestClass
+  href: Xunit.TestContext.SetForTestClass.html#Xunit_TestContext_SetForTestClass_Xunit_Sdk_ITestClass_Xunit_TestEngineStatus_System_Threading_CancellationToken_Xunit_v3_FixtureMappingManager_
+  name: SetForTestClass
+  nameWithType: TestContext.SetForTestClass
+  fullName: Xunit.TestContext.SetForTestClass
+- uid: v3.2.0.2:Xunit.v3.FixtureMappingManager
+  commentId: T:Xunit.v3.FixtureMappingManager
+  parent: v3.2.0.2:Xunit.v3
+  href: Xunit.v3.FixtureMappingManager.html
+  name: FixtureMappingManager
+  nameWithType: FixtureMappingManager
+  fullName: Xunit.v3.FixtureMappingManager
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestCollection*
+  commentId: Overload:Xunit.TestContext.SetForTestCollection
+  href: Xunit.TestContext.SetForTestCollection.html#Xunit_TestContext_SetForTestCollection_Xunit_Sdk_ITestCollection_Xunit_TestEngineStatus_System_Threading_CancellationToken_
+  name: SetForTestCollection
+  nameWithType: TestContext.SetForTestCollection
+  fullName: Xunit.TestContext.SetForTestCollection
+- uid: v3.2.0.2:Xunit.TestContext.SetForTestMethod*
+  commentId: Overload:Xunit.TestContext.SetForTestMethod
+  href: Xunit.TestContext.SetForTestMethod.html#Xunit_TestContext_SetForTestMethod_Xunit_Sdk_ITestMethod_Xunit_TestEngineStatus_System_Threading_CancellationToken_
+  name: SetForTestMethod
+  nameWithType: TestContext.SetForTestMethod
+  fullName: Xunit.TestContext.SetForTestMethod
+memberLayout: SeparatePages

@@ -1,0 +1,775 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  commentId: T:Xunit.Sdk.MessageSinkMessageExtensions
+  id: MessageSinkMessageExtensions
+  parent: v3.2.0.2:Xunit.Sdk
+  children:
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,System.String,System.Nullable{System.Int32})
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,Xunit.Runner.Common.ISourceInformationProvider)
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,System.String,System.Nullable{System.Int32})
+  - v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,Xunit.Runner.Common.ISourceInformationProvider)
+  langs:
+  - csharp
+  - vb
+  name: MessageSinkMessageExtensions
+  nameWithType: MessageSinkMessageExtensions
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: MessageSinkMessageExtensions
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: Extension methods for <xref href="v3.2.0.2:Xunit.Sdk.IMessageSinkMessage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class MessageSinkMessageExtensions
+    content.vb: Public Module MessageSinkMessageExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  id: DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>?)
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>?)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen<TMessage>(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler<TMessage>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: DispatchWhen
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Handles a message of a specific type by testing it for the type, as well as verifying that there
+
+    is a registered callback.
+  example: []
+  syntax:
+    content: 'public static bool DispatchWhen<TMessage>(this IMessageSinkMessage message, MessageHandler<TMessage>? callback) where TMessage : IMessageSinkMessage'
+    parameters:
+    - id: message
+      type: Xunit.Sdk.IMessageSinkMessage
+      description: The message to dispatch.
+    - id: callback
+      type: Xunit.Runner.Common.MessageHandler{{TMessage}}
+      description: The callback to dispatch the message to.
+    typeParameters:
+    - id: TMessage
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if processing should continue; <code>false</code> otherwise.
+    content.vb: Public Shared Function DispatchWhen(Of TMessage As IMessageSinkMessage)(message As IMessageSinkMessage, callback As MessageHandler(Of TMessage)) As Boolean
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen*
+  nameWithType.vb: MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler(Of TMessage))
+  name.vb: DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  id: ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTestCaseDiscovered(ITestCase)
+  nameWithType: MessageSinkMessageExtensions.ToTestCaseDiscovered(ITestCase)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: ToTestCaseDiscovered
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 38
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Converts an instance of <xref href="v3.2.0.2:Xunit.Sdk.ITestCase" data-throw-if-not-resolved="false"></xref> into <xref href="v3.2.0.2:Xunit.Sdk.ITestCaseDiscovered" data-throw-if-not-resolved="false"></xref> for reporting
+
+    back to a remote meta-runner.
+  example: []
+  syntax:
+    content: public static ITestCaseDiscovered ToTestCaseDiscovered(this ITestCase testCase)
+    parameters:
+    - id: testCase
+      type: Xunit.Sdk.ITestCase
+    return:
+      type: Xunit.Sdk.ITestCaseDiscovered
+    content.vb: Public Shared Function ToTestCaseDiscovered(testCase As ITestCase) As ITestCaseDiscovered
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered*
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,System.String,System.Nullable{System.Int32})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,System.String,System.Nullable{System.Int32})
+  id: WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,System.String,System.Nullable{System.Int32})
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithSourceInfo(ITestCaseDiscovered, string?, int?)
+  nameWithType: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseDiscovered, string?, int?)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered, string?, int?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: WithSourceInfo
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 74
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Creates a new <xref href="v3.2.0.2:Xunit.Sdk.ITestCaseDiscovered" data-throw-if-not-resolved="false"></xref>, replacing the source file and line number information
+
+    with the provided values.
+  example: []
+  syntax:
+    content: public static ITestCaseDiscovered WithSourceInfo(this ITestCaseDiscovered discovered, string? sourceFilePath, int? sourceLineNumber)
+    parameters:
+    - id: discovered
+      type: Xunit.Sdk.ITestCaseDiscovered
+      description: ''
+    - id: sourceFilePath
+      type: System.String
+      description: The source file
+    - id: sourceLineNumber
+      type: System.Nullable{System.Int32}
+      description: The line number
+    return:
+      type: Xunit.Sdk.ITestCaseDiscovered
+    content.vb: Public Shared Function WithSourceInfo(discovered As ITestCaseDiscovered, sourceFilePath As String, sourceLineNumber As Integer?) As ITestCaseDiscovered
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo*
+  nameWithType.vb: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseDiscovered, String, Integer?)
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered, String, Integer?)
+  name.vb: WithSourceInfo(ITestCaseDiscovered, String, Integer?)
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,Xunit.Runner.Common.ISourceInformationProvider)
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,Xunit.Runner.Common.ISourceInformationProvider)
+  id: WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered,Xunit.Runner.Common.ISourceInformationProvider)
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithSourceInfo(ITestCaseDiscovered, ISourceInformationProvider)
+  nameWithType: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseDiscovered, ISourceInformationProvider)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseDiscovered, Xunit.Runner.Common.ISourceInformationProvider)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: WithSourceInfo
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 110
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Creates a new <xref href="v3.2.0.2:Xunit.Sdk.ITestCaseDiscovered" data-throw-if-not-resolved="false"></xref>, replacing the source file and line number information
+
+    with values from the source information provider.
+  example: []
+  syntax:
+    content: public static ITestCaseDiscovered WithSourceInfo(this ITestCaseDiscovered discovered, ISourceInformationProvider sourceInformationProvider)
+    parameters:
+    - id: discovered
+      type: Xunit.Sdk.ITestCaseDiscovered
+      description: ''
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+      description: The source information provider
+    return:
+      type: Xunit.Sdk.ITestCaseDiscovered
+    content.vb: Public Shared Function WithSourceInfo(discovered As ITestCaseDiscovered, sourceInformationProvider As ISourceInformationProvider) As ITestCaseDiscovered
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo*
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,System.String,System.Nullable{System.Int32})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,System.String,System.Nullable{System.Int32})
+  id: WithSourceInfo(Xunit.Sdk.ITestCaseStarting,System.String,System.Nullable{System.Int32})
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithSourceInfo(ITestCaseStarting, string?, int?)
+  nameWithType: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseStarting, string?, int?)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting, string?, int?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: WithSourceInfo
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 132
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Creates a new <xref href="v3.2.0.2:Xunit.Sdk.ITestCaseStarting" data-throw-if-not-resolved="false"></xref>, replacing the source file and line number information
+
+    with the provided values.
+  example: []
+  syntax:
+    content: public static ITestCaseStarting WithSourceInfo(this ITestCaseStarting starting, string? sourceFilePath, int? sourceLineNumber)
+    parameters:
+    - id: starting
+      type: Xunit.Sdk.ITestCaseStarting
+      description: ''
+    - id: sourceFilePath
+      type: System.String
+      description: The source file
+    - id: sourceLineNumber
+      type: System.Nullable{System.Int32}
+      description: The line number
+    return:
+      type: Xunit.Sdk.ITestCaseStarting
+    content.vb: Public Shared Function WithSourceInfo(starting As ITestCaseStarting, sourceFilePath As String, sourceLineNumber As Integer?) As ITestCaseStarting
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo*
+  nameWithType.vb: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseStarting, String, Integer?)
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting, String, Integer?)
+  name.vb: WithSourceInfo(ITestCaseStarting, String, Integer?)
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,Xunit.Runner.Common.ISourceInformationProvider)
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting,Xunit.Runner.Common.ISourceInformationProvider)
+  id: WithSourceInfo(Xunit.Sdk.ITestCaseStarting,Xunit.Runner.Common.ISourceInformationProvider)
+  isExtensionMethod: true
+  parent: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithSourceInfo(ITestCaseStarting, ISourceInformationProvider)
+  nameWithType: MessageSinkMessageExtensions.WithSourceInfo(ITestCaseStarting, ISourceInformationProvider)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo(Xunit.Sdk.ITestCaseStarting, Xunit.Runner.Common.ISourceInformationProvider)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: WithSourceInfo
+    path: ../src/xunit.v3.runner.common/Extensions/MessageSinkMessageExtensions.cs
+    startLine: 167
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Creates a new <xref href="v3.2.0.2:Xunit.Sdk.ITestCaseDiscovered" data-throw-if-not-resolved="false"></xref>, replacing the source file and line number information
+
+    with values from the source information provider.
+  example: []
+  syntax:
+    content: public static ITestCaseStarting WithSourceInfo(this ITestCaseStarting starting, ISourceInformationProvider sourceInformationProvider)
+    parameters:
+    - id: starting
+      type: Xunit.Sdk.ITestCaseStarting
+      description: ''
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+      description: The source information provider
+    return:
+      type: Xunit.Sdk.ITestCaseStarting
+    content.vb: Public Shared Function WithSourceInfo(starting As ITestCaseStarting, sourceInformationProvider As ISourceInformationProvider) As ITestCaseStarting
+  overload: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo*
+references:
+- uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: v3.2.0.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen*
+  commentId: Overload:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen
+  href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  name: DispatchWhen
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen
+- uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler{{TMessage}}
+  commentId: T:Xunit.Runner.Common.MessageHandler{``0}
+  parent: v3.2.0.2:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandler`1
+  href: Xunit.Runner.Common.MessageHandler-1.html
+  name: MessageHandler<TMessage>
+  nameWithType: MessageHandler<TMessage>
+  fullName: Xunit.Runner.Common.MessageHandler<TMessage>
+  nameWithType.vb: MessageHandler(Of TMessage)
+  fullName.vb: Xunit.Runner.Common.MessageHandler(Of TMessage)
+  name.vb: MessageHandler(Of TMessage)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler`1
+  commentId: T:Xunit.Runner.Common.MessageHandler`1
+  href: Xunit.Runner.Common.MessageHandler-1.html
+  name: MessageHandler<TMessage>
+  nameWithType: MessageHandler<TMessage>
+  fullName: Xunit.Runner.Common.MessageHandler<TMessage>
+  nameWithType.vb: MessageHandler(Of TMessage)
+  fullName.vb: Xunit.Runner.Common.MessageHandler(Of TMessage)
+  name.vb: MessageHandler(Of TMessage)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: v3.2.0.2:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.2.0.2:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+- uid: v3.2.0.2:Xunit.Sdk.ITestCaseDiscovered
+  commentId: T:Xunit.Sdk.ITestCaseDiscovered
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseDiscovered.html
+  name: ITestCaseDiscovered
+  nameWithType: ITestCaseDiscovered
+  fullName: Xunit.Sdk.ITestCaseDiscovered
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered*
+  commentId: Overload:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+  href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  name: ToTestCaseDiscovered
+  nameWithType: MessageSinkMessageExtensions.ToTestCaseDiscovered
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+- uid: v3.2.0.2:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo*
+  commentId: Overload:Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo
+  href: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo.html#Xunit_Sdk_MessageSinkMessageExtensions_WithSourceInfo_Xunit_Sdk_ITestCaseDiscovered_System_String_System_Nullable_System_Int32__
+  name: WithSourceInfo
+  nameWithType: MessageSinkMessageExtensions.WithSourceInfo
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.WithSourceInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.2.0.2:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  parent: v3.2.0.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ISourceInformationProvider.html
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+- uid: v3.2.0.2:Xunit.Sdk.ITestCaseStarting
+  commentId: T:Xunit.Sdk.ITestCaseStarting
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseStarting.html
+  name: ITestCaseStarting
+  nameWithType: ITestCaseStarting
+  fullName: Xunit.Sdk.ITestCaseStarting
+memberLayout: SeparatePages

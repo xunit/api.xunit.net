@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.Sdk.ITestMethodMessage
+  commentId: T:Xunit.Sdk.ITestMethodMessage
+  id: ITestMethodMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  children:
+  - v3.2.0.2:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  langs:
+  - csharp
+  - vb
+  name: ITestMethodMessage
+  nameWithType: ITestMethodMessage
+  fullName: Xunit.Sdk.ITestMethodMessage
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestMethodMessage.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: ITestMethodMessage
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestMethodMessage.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Base interface for all messages related to test methods.
+  example: []
+  syntax:
+    content: 'public interface ITestMethodMessage : ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable'
+    content.vb: Public Interface ITestMethodMessage Inherits ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable
+  inheritedMembers:
+  - v3.2.0.2:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  - v3.2.0.2:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+- uid: v3.2.0.2:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  commentId: P:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  id: TestMethodUniqueID
+  parent: v3.2.0.2:Xunit.Sdk.ITestMethodMessage
+  langs:
+  - csharp
+  - vb
+  name: TestMethodUniqueID
+  nameWithType: ITestMethodMessage.TestMethodUniqueID
+  fullName: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestMethodMessage.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestMethodUniqueID
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/ITestMethodMessage.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the test method's unique ID. Can be used to correlate test messages with the appropriate
+
+    test method that they're related to. Will be <code>null</code> if the test did not originate from a method.
+  example: []
+  syntax:
+    content: string? TestMethodUniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestMethodUniqueID As String
+  overload: v3.2.0.2:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID*
+references:
+- uid: v3.2.0.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.2:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  commentId: P:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  parent: v3.2.0.2:Xunit.Sdk.ITestClassMessage
+  href: Xunit.Sdk.ITestClassMessage.TestClassUniqueID.html#Xunit_Sdk_ITestClassMessage_TestClassUniqueID
+  name: TestClassUniqueID
+  nameWithType: ITestClassMessage.TestClassUniqueID
+  fullName: Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+- uid: v3.2.0.2:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  commentId: P:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  parent: v3.2.0.2:Xunit.Sdk.ITestCollectionMessage
+  href: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID.html#Xunit_Sdk_ITestCollectionMessage_TestCollectionUniqueID
+  name: TestCollectionUniqueID
+  nameWithType: ITestCollectionMessage.TestCollectionUniqueID
+  fullName: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.2.0.2:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.ITestClassMessage
+  commentId: T:Xunit.Sdk.ITestClassMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassMessage.html
+  name: ITestClassMessage
+  nameWithType: ITestClassMessage
+  fullName: Xunit.Sdk.ITestClassMessage
+- uid: v3.2.0.2:Xunit.Sdk.ITestCollectionMessage
+  commentId: T:Xunit.Sdk.ITestCollectionMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionMessage.html
+  name: ITestCollectionMessage
+  nameWithType: ITestCollectionMessage
+  fullName: Xunit.Sdk.ITestCollectionMessage
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.2.0.2:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID*
+  commentId: Overload:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  href: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID.html#Xunit_Sdk_ITestMethodMessage_TestMethodUniqueID
+  name: TestMethodUniqueID
+  nameWithType: ITestMethodMessage.TestMethodUniqueID
+  fullName: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

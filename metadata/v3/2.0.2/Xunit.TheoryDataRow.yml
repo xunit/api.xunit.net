@@ -1,0 +1,1065 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.TheoryDataRow
+  commentId: T:Xunit.TheoryDataRow
+  id: TheoryDataRow
+  parent: v3.2.0.2:Xunit
+  children:
+  - v3.2.0.2:Xunit.TheoryDataRow.#ctor(System.Object[])
+  - v3.2.0.2:Xunit.TheoryDataRow.Data
+  - v3.2.0.2:Xunit.TheoryDataRow.GetData
+  langs:
+  - csharp
+  - vb
+  name: TheoryDataRow
+  nameWithType: TheoryDataRow
+  fullName: Xunit.TheoryDataRow
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/TheoryDataRow.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TheoryDataRow
+    path: ../src/xunit.v3.core/TheoryDataRow.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Implementation of <xref href="v3.2.0.2:Xunit.ITheoryDataRow" data-throw-if-not-resolved="false"></xref> which accepts untyped pre-enumerated data.
+  remarks: >-
+    It is strongly recommended that you use one of the generic typed variations when possible,
+
+    as this provides type-safety from the compiler and allows the analyzers to flag instances
+
+    where data types from theory data don't match the data types in theory parameters.
+  example: []
+  syntax:
+    content: 'public class TheoryDataRow : TheoryDataRowBase, ITheoryDataRow'
+    content.vb: Public Class TheoryDataRow Inherits TheoryDataRowBase Implements ITheoryDataRow
+  inheritance:
+  - System.Object
+  - v3.2.0.2:Xunit.TheoryDataRowBase
+  implements:
+  - v3.2.0.2:Xunit.ITheoryDataRow
+  inheritedMembers:
+  - v3.2.0.2:Xunit.TheoryDataRowBase.Explicit
+  - v3.2.0.2:Xunit.TheoryDataRowBase.Skip
+  - v3.2.0.2:Xunit.TheoryDataRowBase.TestDisplayName
+  - v3.2.0.2:Xunit.TheoryDataRowBase.Timeout
+  - v3.2.0.2:Xunit.TheoryDataRowBase.Traits
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(System.Nullable{System.Boolean})
+  - v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithSkip``1(System.String)
+  - v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(System.String)
+  - v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(System.Nullable{System.Int32})
+  - v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTrait``1(System.String,System.String)
+- uid: v3.2.0.2:Xunit.TheoryDataRow.#ctor(System.Object[])
+  commentId: M:Xunit.TheoryDataRow.#ctor(System.Object[])
+  id: '#ctor(System.Object[])'
+  parent: v3.2.0.2:Xunit.TheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: TheoryDataRow(params object?[])
+  nameWithType: TheoryDataRow.TheoryDataRow(params object?[])
+  fullName: Xunit.TheoryDataRow.TheoryDataRow(params object?[])
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/TheoryDataRow.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/TheoryDataRow.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Implementation of <xref href="v3.2.0.2:Xunit.ITheoryDataRow" data-throw-if-not-resolved="false"></xref> which accepts untyped pre-enumerated data.
+  remarks: >-
+    It is strongly recommended that you use one of the generic typed variations when possible,
+
+    as this provides type-safety from the compiler and allows the analyzers to flag instances
+
+    where data types from theory data don't match the data types in theory parameters.
+  example: []
+  syntax:
+    content: public TheoryDataRow(params object?[] data)
+    parameters:
+    - id: data
+      type: System.Object[]
+      description: The data for the theory row
+    content.vb: Public Sub New(ParamArray data As Object())
+  overload: v3.2.0.2:Xunit.TheoryDataRow.#ctor*
+  nameWithType.vb: TheoryDataRow.New(ParamArray Object())
+  fullName.vb: Xunit.TheoryDataRow.New(ParamArray Object())
+  name.vb: New(ParamArray Object())
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Data
+  commentId: P:Xunit.TheoryDataRow.Data
+  id: Data
+  parent: v3.2.0.2:Xunit.TheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: TheoryDataRow.Data
+  fullName: Xunit.TheoryDataRow.Data
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/TheoryDataRow.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Data
+    path: ../src/xunit.v3.core/TheoryDataRow.cs
+    startLine: 59
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the row of data.
+  example: []
+  syntax:
+    content: public object?[] Data { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly Property Data As Object()
+  overload: v3.2.0.2:Xunit.TheoryDataRow.Data*
+- uid: v3.2.0.2:Xunit.TheoryDataRow.GetData
+  commentId: M:Xunit.TheoryDataRow.GetData
+  id: GetData
+  parent: v3.2.0.2:Xunit.TheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: GetData()
+  nameWithType: TheoryDataRow.GetData()
+  fullName: Xunit.TheoryDataRow.GetData()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/TheoryDataRow.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: GetData
+    path: ../src/xunit.v3.core/TheoryDataRow.cs
+    startLine: 63
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Override to implement <xref href="v3.2.0.2:Xunit.ITheoryDataRow.GetData" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override object?[] GetData()
+    return:
+      type: System.Object[]
+    content.vb: Protected Overrides Function GetData() As Object()
+  overridden: Xunit.TheoryDataRowBase.GetData
+  overload: v3.2.0.2:Xunit.TheoryDataRow.GetData*
+references:
+- uid: v3.2.0.2:Xunit.ITheoryDataRow
+  commentId: T:Xunit.ITheoryDataRow
+  parent: v3.2.0.2:Xunit
+  href: Xunit.ITheoryDataRow.html
+  name: ITheoryDataRow
+  nameWithType: ITheoryDataRow
+  fullName: Xunit.ITheoryDataRow
+- uid: v3.2.0.2:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase
+  commentId: T:Xunit.TheoryDataRowBase
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TheoryDataRowBase.html
+  name: TheoryDataRowBase
+  nameWithType: TheoryDataRowBase
+  fullName: Xunit.TheoryDataRowBase
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.Explicit
+  commentId: P:Xunit.TheoryDataRowBase.Explicit
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.Explicit.html#Xunit_TheoryDataRowBase_Explicit
+  name: Explicit
+  nameWithType: TheoryDataRowBase.Explicit
+  fullName: Xunit.TheoryDataRowBase.Explicit
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.Skip
+  commentId: P:Xunit.TheoryDataRowBase.Skip
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.Skip.html#Xunit_TheoryDataRowBase_Skip
+  name: Skip
+  nameWithType: TheoryDataRowBase.Skip
+  fullName: Xunit.TheoryDataRowBase.Skip
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.TestDisplayName
+  commentId: P:Xunit.TheoryDataRowBase.TestDisplayName
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.TestDisplayName.html#Xunit_TheoryDataRowBase_TestDisplayName
+  name: TestDisplayName
+  nameWithType: TheoryDataRowBase.TestDisplayName
+  fullName: Xunit.TheoryDataRowBase.TestDisplayName
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.Timeout
+  commentId: P:Xunit.TheoryDataRowBase.Timeout
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.Timeout.html#Xunit_TheoryDataRowBase_Timeout
+  name: Timeout
+  nameWithType: TheoryDataRowBase.Timeout
+  fullName: Xunit.TheoryDataRowBase.Timeout
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.Traits
+  commentId: P:Xunit.TheoryDataRowBase.Traits
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.Traits.html#Xunit_TheoryDataRowBase_Traits
+  name: Traits
+  nameWithType: TheoryDataRowBase.Traits
+  fullName: Xunit.TheoryDataRowBase.Traits
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(System.Nullable{System.Boolean})
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+  parent: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  definition: Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+  href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  name: WithExplicit<TheoryDataRow>(TheoryDataRow, bool?)
+  nameWithType: TheoryDataRowBaseExtensions.WithExplicit<TheoryDataRow>(TheoryDataRow, bool?)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithExplicit<Xunit.TheoryDataRow>(Xunit.TheoryDataRow, bool?)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithExplicit(Of TheoryDataRow)(TheoryDataRow, Boolean?)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithExplicit(Of Xunit.TheoryDataRow)(Xunit.TheoryDataRow, Boolean?)
+  name.vb: WithExplicit(Of TheoryDataRow)(TheoryDataRow, Boolean?)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(Xunit.TheoryDataRow,System.Nullable{System.Boolean})
+    name: WithExplicit
+    href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  - name: <
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(Xunit.TheoryDataRow,System.Nullable{System.Boolean})
+    name: WithExplicit
+    href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithSkip``1(System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+  parent: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  definition: Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+  href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  name: WithSkip<TheoryDataRow>(TheoryDataRow, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithSkip<TheoryDataRow>(TheoryDataRow, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithSkip<Xunit.TheoryDataRow>(Xunit.TheoryDataRow, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithSkip(Of TheoryDataRow)(TheoryDataRow, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithSkip(Of Xunit.TheoryDataRow)(Xunit.TheoryDataRow, String)
+  name.vb: WithSkip(Of TheoryDataRow)(TheoryDataRow, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(Xunit.TheoryDataRow,System.String)
+    name: WithSkip
+    href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  - name: <
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(Xunit.TheoryDataRow,System.String)
+    name: WithSkip
+    href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+  parent: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  definition: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+  href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  name: WithTestDisplayName<TheoryDataRow>(TheoryDataRow, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithTestDisplayName<TheoryDataRow>(TheoryDataRow, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName<Xunit.TheoryDataRow>(Xunit.TheoryDataRow, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTestDisplayName(Of TheoryDataRow)(TheoryDataRow, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName(Of Xunit.TheoryDataRow)(Xunit.TheoryDataRow, String)
+  name.vb: WithTestDisplayName(Of TheoryDataRow)(TheoryDataRow, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(Xunit.TheoryDataRow,System.String)
+    name: WithTestDisplayName
+    href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  - name: <
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(Xunit.TheoryDataRow,System.String)
+    name: WithTestDisplayName
+    href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(System.Nullable{System.Int32})
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+  parent: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  definition: Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+  href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  name: WithTimeout<TheoryDataRow>(TheoryDataRow, int?)
+  nameWithType: TheoryDataRowBaseExtensions.WithTimeout<TheoryDataRow>(TheoryDataRow, int?)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTimeout<Xunit.TheoryDataRow>(Xunit.TheoryDataRow, int?)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTimeout(Of TheoryDataRow)(TheoryDataRow, Integer?)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTimeout(Of Xunit.TheoryDataRow)(Xunit.TheoryDataRow, Integer?)
+  name.vb: WithTimeout(Of TheoryDataRow)(TheoryDataRow, Integer?)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(Xunit.TheoryDataRow,System.Nullable{System.Int32})
+    name: WithTimeout
+    href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  - name: <
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(Xunit.TheoryDataRow,System.Nullable{System.Int32})
+    name: WithTimeout
+    href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Xunit.TheoryDataRowBaseExtensions.WithTrait``1(System.String,System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+  parent: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  definition: Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+  href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  name: WithTrait<TheoryDataRow>(TheoryDataRow, string, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithTrait<TheoryDataRow>(TheoryDataRow, string, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTrait<Xunit.TheoryDataRow>(Xunit.TheoryDataRow, string, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTrait(Of TheoryDataRow)(TheoryDataRow, String, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTrait(Of Xunit.TheoryDataRow)(Xunit.TheoryDataRow, String, String)
+  name.vb: WithTrait(Of TheoryDataRow)(TheoryDataRow, String, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(Xunit.TheoryDataRow,System.String,System.String)
+    name: WithTrait
+    href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  - name: <
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: '>'
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(Xunit.TheoryDataRow,System.String,System.String)
+    name: WithTrait
+    href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: )
+  - name: (
+  - uid: v3.2.0.2:Xunit.TheoryDataRow
+    name: TheoryDataRow
+    href: Xunit.TheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+  isExternal: true
+  href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  name: WithExplicit<TTheoryDataRow>(TTheoryDataRow, bool?)
+  nameWithType: TheoryDataRowBaseExtensions.WithExplicit<TTheoryDataRow>(TTheoryDataRow, bool?)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithExplicit<TTheoryDataRow>(TTheoryDataRow, bool?)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithExplicit(Of TTheoryDataRow)(TTheoryDataRow, Boolean?)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithExplicit(Of TTheoryDataRow)(TTheoryDataRow, Boolean?)
+  name.vb: WithExplicit(Of TTheoryDataRow)(TTheoryDataRow, Boolean?)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+    name: WithExplicit
+    href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  - name: <
+  - name: TTheoryDataRow
+  - name: '>'
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithExplicit``1(``0,System.Nullable{System.Boolean})
+    name: WithExplicit
+    href: Xunit.TheoryDataRowBaseExtensions.WithExplicit.html#Xunit_TheoryDataRowBaseExtensions_WithExplicit__1___0_System_Nullable_System_Boolean__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTheoryDataRow
+  - name: )
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions
+  commentId: T:Xunit.TheoryDataRowBaseExtensions
+  parent: v3.2.0.2:Xunit
+  href: Xunit.TheoryDataRowBaseExtensions.html
+  name: TheoryDataRowBaseExtensions
+  nameWithType: TheoryDataRowBaseExtensions
+  fullName: Xunit.TheoryDataRowBaseExtensions
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+  isExternal: true
+  href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  name: WithSkip<TTheoryDataRow>(TTheoryDataRow, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithSkip<TTheoryDataRow>(TTheoryDataRow, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithSkip<TTheoryDataRow>(TTheoryDataRow, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithSkip(Of TTheoryDataRow)(TTheoryDataRow, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithSkip(Of TTheoryDataRow)(TTheoryDataRow, String)
+  name.vb: WithSkip(Of TTheoryDataRow)(TTheoryDataRow, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+    name: WithSkip
+    href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  - name: <
+  - name: TTheoryDataRow
+  - name: '>'
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithSkip``1(``0,System.String)
+    name: WithSkip
+    href: Xunit.TheoryDataRowBaseExtensions.WithSkip.html#Xunit_TheoryDataRowBaseExtensions_WithSkip__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTheoryDataRow
+  - name: )
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+  isExternal: true
+  href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  name: WithTestDisplayName<TTheoryDataRow>(TTheoryDataRow, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithTestDisplayName<TTheoryDataRow>(TTheoryDataRow, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName<TTheoryDataRow>(TTheoryDataRow, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTestDisplayName(Of TTheoryDataRow)(TTheoryDataRow, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName(Of TTheoryDataRow)(TTheoryDataRow, String)
+  name.vb: WithTestDisplayName(Of TTheoryDataRow)(TTheoryDataRow, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+    name: WithTestDisplayName
+    href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  - name: <
+  - name: TTheoryDataRow
+  - name: '>'
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName``1(``0,System.String)
+    name: WithTestDisplayName
+    href: Xunit.TheoryDataRowBaseExtensions.WithTestDisplayName.html#Xunit_TheoryDataRowBaseExtensions_WithTestDisplayName__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTheoryDataRow
+  - name: )
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+  isExternal: true
+  href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  name: WithTimeout<TTheoryDataRow>(TTheoryDataRow, int?)
+  nameWithType: TheoryDataRowBaseExtensions.WithTimeout<TTheoryDataRow>(TTheoryDataRow, int?)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTimeout<TTheoryDataRow>(TTheoryDataRow, int?)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTimeout(Of TTheoryDataRow)(TTheoryDataRow, Integer?)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTimeout(Of TTheoryDataRow)(TTheoryDataRow, Integer?)
+  name.vb: WithTimeout(Of TTheoryDataRow)(TTheoryDataRow, Integer?)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+    name: WithTimeout
+    href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  - name: <
+  - name: TTheoryDataRow
+  - name: '>'
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTimeout``1(``0,System.Nullable{System.Int32})
+    name: WithTimeout
+    href: Xunit.TheoryDataRowBaseExtensions.WithTimeout.html#Xunit_TheoryDataRowBaseExtensions_WithTimeout__1___0_System_Nullable_System_Int32__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTheoryDataRow
+  - name: )
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+  commentId: M:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+  isExternal: true
+  href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  name: WithTrait<TTheoryDataRow>(TTheoryDataRow, string, string)
+  nameWithType: TheoryDataRowBaseExtensions.WithTrait<TTheoryDataRow>(TTheoryDataRow, string, string)
+  fullName: Xunit.TheoryDataRowBaseExtensions.WithTrait<TTheoryDataRow>(TTheoryDataRow, string, string)
+  nameWithType.vb: TheoryDataRowBaseExtensions.WithTrait(Of TTheoryDataRow)(TTheoryDataRow, String, String)
+  fullName.vb: Xunit.TheoryDataRowBaseExtensions.WithTrait(Of TTheoryDataRow)(TTheoryDataRow, String, String)
+  name.vb: WithTrait(Of TTheoryDataRow)(TTheoryDataRow, String, String)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+    name: WithTrait
+    href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  - name: <
+  - name: TTheoryDataRow
+  - name: '>'
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBaseExtensions.WithTrait``1(``0,System.String,System.String)
+    name: WithTrait
+    href: Xunit.TheoryDataRowBaseExtensions.WithTrait.html#Xunit_TheoryDataRowBaseExtensions_WithTrait__1___0_System_String_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTheoryDataRow
+  - name: )
+  - name: (
+  - name: TTheoryDataRow
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.#ctor*
+  commentId: Overload:Xunit.TheoryDataRow.#ctor
+  href: Xunit.TheoryDataRow.-ctor.html#Xunit_TheoryDataRow__ctor_System_Object___
+  name: TheoryDataRow
+  nameWithType: TheoryDataRow.TheoryDataRow
+  fullName: Xunit.TheoryDataRow.TheoryDataRow
+  nameWithType.vb: TheoryDataRow.New
+  fullName.vb: Xunit.TheoryDataRow.New
+  name.vb: New
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.Data*
+  commentId: Overload:Xunit.TheoryDataRow.Data
+  href: Xunit.TheoryDataRow.Data.html#Xunit_TheoryDataRow_Data
+  name: Data
+  nameWithType: TheoryDataRow.Data
+  fullName: Xunit.TheoryDataRow.Data
+- uid: v3.2.0.2:Xunit.ITheoryDataRow.GetData
+  commentId: M:Xunit.ITheoryDataRow.GetData
+  href: Xunit.ITheoryDataRow.GetData.html#Xunit_ITheoryDataRow_GetData
+  name: GetData()
+  nameWithType: ITheoryDataRow.GetData()
+  fullName: Xunit.ITheoryDataRow.GetData()
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.ITheoryDataRow.GetData
+    name: GetData
+    href: Xunit.ITheoryDataRow.GetData.html#Xunit_ITheoryDataRow_GetData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.ITheoryDataRow.GetData
+    name: GetData
+    href: Xunit.ITheoryDataRow.GetData.html#Xunit_ITheoryDataRow_GetData
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRowBase.GetData
+  commentId: M:Xunit.TheoryDataRowBase.GetData
+  parent: v3.2.0.2:Xunit.TheoryDataRowBase
+  href: Xunit.TheoryDataRowBase.GetData.html#Xunit_TheoryDataRowBase_GetData
+  name: GetData()
+  nameWithType: TheoryDataRowBase.GetData()
+  fullName: Xunit.TheoryDataRowBase.GetData()
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBase.GetData
+    name: GetData
+    href: Xunit.TheoryDataRowBase.GetData.html#Xunit_TheoryDataRowBase_GetData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.TheoryDataRowBase.GetData
+    name: GetData
+    href: Xunit.TheoryDataRowBase.GetData.html#Xunit_TheoryDataRowBase_GetData
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.TheoryDataRow.GetData*
+  commentId: Overload:Xunit.TheoryDataRow.GetData
+  href: Xunit.TheoryDataRow.GetData.html#Xunit_TheoryDataRow_GetData
+  name: GetData
+  nameWithType: TheoryDataRow.GetData
+  fullName: Xunit.TheoryDataRow.GetData
+memberLayout: SeparatePages

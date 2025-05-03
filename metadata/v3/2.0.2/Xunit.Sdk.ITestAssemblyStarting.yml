@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  commentId: T:Xunit.Sdk.ITestAssemblyStarting
+  id: ITestAssemblyStarting
+  parent: v3.2.0.2:Xunit.Sdk
+  children:
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.Seed
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.StartTime
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: ITestAssemblyStarting
+  nameWithType: ITestAssemblyStarting
+  fullName: Xunit.Sdk.ITestAssemblyStarting
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: ITestAssemblyStarting
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This message indicates that the execution process is about to start for
+
+    the requested assembly.
+  example: []
+  syntax:
+    content: 'public interface ITestAssemblyStarting : ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IAssemblyMetadata'
+    content.vb: Public Interface ITestAssemblyStarting Inherits ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IAssemblyMetadata
+  inheritedMembers:
+  - v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.Traits
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  extensionMethods:
+  - v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.Seed
+  commentId: P:Xunit.Sdk.ITestAssemblyStarting.Seed
+  id: Seed
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: ITestAssemblyStarting.Seed
+  fullName: Xunit.Sdk.ITestAssemblyStarting.Seed
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Seed
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the seed value used for randomization. If <code>null</code>, then the test framework
+
+    does not support getting or setting a randomization seed. (For stock versions of xUnit.net,
+
+    support for settable randomization seeds started with v3.)
+  example: []
+  syntax:
+    content: int? Seed { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: ReadOnly Property Seed As Integer?
+  overload: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.Seed*
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.StartTime
+  commentId: P:Xunit.Sdk.ITestAssemblyStarting.StartTime
+  id: StartTime
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: ITestAssemblyStarting.StartTime
+  fullName: Xunit.Sdk.ITestAssemblyStarting.StartTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: StartTime
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the date and time when the test assembly execution began.
+  example: []
+  syntax:
+    content: DateTimeOffset StartTime { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property StartTime As DateTimeOffset
+  overload: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.StartTime*
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+  commentId: P:Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+  id: TargetFramework
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: ITestAssemblyStarting.TargetFramework
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the target framework that the assembly was compiled against.
+
+    Examples: ".NETFramework,Version=v4.7.2", ".NETCoreApp,Version=v6.0". This information
+
+    is read from <xref href="System.Runtime.Versioning.TargetFrameworkAttribute" data-throw-if-not-resolved="false"></xref> on the test assembly, which
+
+    is normally auto-generated (but could be missing or empty).
+  example: []
+  syntax:
+    content: string? TargetFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TargetFramework As String
+  overload: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TargetFramework*
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+  commentId: P:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+  id: TestEnvironment
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  langs:
+  - csharp
+  - vb
+  name: TestEnvironment
+  nameWithType: ITestAssemblyStarting.TestEnvironment
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestEnvironment
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a display string that describes the test execution environment.
+
+    Examples: "32-bit .NET Framework 4.8.4220.0", "64-bit .NET Core 4.6.29220.03"
+  example: []
+  syntax:
+    content: string TestEnvironment { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestEnvironment As String
+  overload: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment*
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+  commentId: P:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: ITestAssemblyStarting.TestFrameworkDisplayName
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestAssemblyStarting.cs
+    startLine: 41
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets a display string which describes the test framework and version number.
+
+    Examples: "xUnit.net v3 0.1.0-pre.15", "xUnit.net 2.4.1"
+  example: []
+  syntax:
+    content: string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestFrameworkDisplayName As String
+  overload: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName*
+references:
+- uid: v3.2.0.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.2.0.2:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyName.html#Xunit_Sdk_IAssemblyMetadata_AssemblyName
+  name: AssemblyName
+  nameWithType: IAssemblyMetadata.AssemblyName
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyName
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyPath.html#Xunit_Sdk_IAssemblyMetadata_AssemblyPath
+  name: AssemblyPath
+  nameWithType: IAssemblyMetadata.AssemblyPath
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath.html#Xunit_Sdk_IAssemblyMetadata_ConfigFilePath
+  name: ConfigFilePath
+  nameWithType: IAssemblyMetadata.ConfigFilePath
+  fullName: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.Traits
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.Traits
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.Traits.html#Xunit_Sdk_IAssemblyMetadata_Traits
+  name: Traits
+  nameWithType: IAssemblyMetadata.Traits
+  fullName: Xunit.Sdk.IAssemblyMetadata.Traits
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  href: Xunit.Sdk.IAssemblyMetadata.UniqueID.html#Xunit_Sdk_IAssemblyMetadata_UniqueID
+  name: UniqueID
+  nameWithType: IAssemblyMetadata.UniqueID
+  fullName: Xunit.Sdk.IAssemblyMetadata.UniqueID
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  parent: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions
+  definition: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.2.0.2:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+  commentId: T:Xunit.Sdk.IAssemblyMetadata
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IAssemblyMetadata.html
+  name: IAssemblyMetadata
+  nameWithType: IAssemblyMetadata
+  fullName: Xunit.Sdk.IAssemblyMetadata
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.IAssemblyMetadataExtensions
+  commentId: T:Xunit.Sdk.IAssemblyMetadataExtensions
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.html
+  name: IAssemblyMetadataExtensions
+  nameWithType: IAssemblyMetadataExtensions
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.Seed*
+  commentId: Overload:Xunit.Sdk.ITestAssemblyStarting.Seed
+  href: Xunit.Sdk.ITestAssemblyStarting.Seed.html#Xunit_Sdk_ITestAssemblyStarting_Seed
+  name: Seed
+  nameWithType: ITestAssemblyStarting.Seed
+  fullName: Xunit.Sdk.ITestAssemblyStarting.Seed
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.StartTime*
+  commentId: Overload:Xunit.Sdk.ITestAssemblyStarting.StartTime
+  href: Xunit.Sdk.ITestAssemblyStarting.StartTime.html#Xunit_Sdk_ITestAssemblyStarting_StartTime
+  name: StartTime
+  nameWithType: ITestAssemblyStarting.StartTime
+  fullName: Xunit.Sdk.ITestAssemblyStarting.StartTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Runtime.Versioning.TargetFrameworkAttribute
+  commentId: T:System.Runtime.Versioning.TargetFrameworkAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute
+  name: TargetFrameworkAttribute
+  nameWithType: TargetFrameworkAttribute
+  fullName: System.Runtime.Versioning.TargetFrameworkAttribute
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TargetFramework*
+  commentId: Overload:Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+  href: Xunit.Sdk.ITestAssemblyStarting.TargetFramework.html#Xunit_Sdk_ITestAssemblyStarting_TargetFramework
+  name: TargetFramework
+  nameWithType: ITestAssemblyStarting.TargetFramework
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TargetFramework
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment*
+  commentId: Overload:Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+  href: Xunit.Sdk.ITestAssemblyStarting.TestEnvironment.html#Xunit_Sdk_ITestAssemblyStarting_TestEnvironment
+  name: TestEnvironment
+  nameWithType: ITestAssemblyStarting.TestEnvironment
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TestEnvironment
+- uid: v3.2.0.2:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+  href: Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName.html#Xunit_Sdk_ITestAssemblyStarting_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: ITestAssemblyStarting.TestFrameworkDisplayName
+  fullName: Xunit.Sdk.ITestAssemblyStarting.TestFrameworkDisplayName
+memberLayout: SeparatePages

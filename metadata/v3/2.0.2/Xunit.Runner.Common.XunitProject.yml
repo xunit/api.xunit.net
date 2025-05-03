@@ -1,0 +1,744 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  commentId: T:Xunit.Runner.Common.XunitProject
+  id: XunitProject
+  parent: v3.2.0.2:Xunit.Runner.Common
+  children:
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.#ctor
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.Add(Xunit.Runner.Common.XunitProjectAssembly)
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.Assemblies
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.Configuration
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.HasRunnerReporter
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter
+  - v3.2.0.2:Xunit.Runner.Common.XunitProject.WithLaunchOptions(Xunit.Runner.Common.XunitProject,Xunit.FrontControllerLaunchOptions)
+  langs:
+  - csharp
+  - vb
+  name: XunitProject
+  nameWithType: XunitProject
+  fullName: Xunit.Runner.Common.XunitProject
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: XunitProject
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Represents a project which contains zero or more test assemblies, as well as global
+
+    (cross-assembly) configuration settings.
+  example: []
+  syntax:
+    content: public class XunitProject
+    content.vb: Public Class XunitProject
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.#ctor
+  commentId: M:Xunit.Runner.Common.XunitProject.#ctor
+  id: '#ctor'
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: XunitProject()
+  nameWithType: XunitProject.XunitProject()
+  fullName: Xunit.Runner.Common.XunitProject.XunitProject()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Initializes a new instance of the <xref href="v3.2.0.2:Xunit.Runner.Common.XunitProject" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public XunitProject()
+    content.vb: Public Sub New()
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.#ctor*
+  nameWithType.vb: XunitProject.New()
+  fullName.vb: Xunit.Runner.Common.XunitProject.New()
+  name.vb: New()
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Assemblies
+  commentId: P:Xunit.Runner.Common.XunitProject.Assemblies
+  id: Assemblies
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: Assemblies
+  nameWithType: XunitProject.Assemblies
+  fullName: Xunit.Runner.Common.XunitProject.Assemblies
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Assemblies
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the assemblies that are in the project.
+  example: []
+  syntax:
+    content: public ICollection<XunitProjectAssembly> Assemblies { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Xunit.Runner.Common.XunitProjectAssembly}
+    content.vb: Public ReadOnly Property Assemblies As ICollection(Of XunitProjectAssembly)
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.Assemblies*
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Configuration
+  commentId: P:Xunit.Runner.Common.XunitProject.Configuration
+  id: Configuration
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: XunitProject.Configuration
+  fullName: Xunit.Runner.Common.XunitProject.Configuration
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Configuration
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 37
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the configuration values for the test project.
+  example: []
+  syntax:
+    content: public TestProjectConfiguration Configuration { get; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.TestProjectConfiguration
+    content.vb: Public ReadOnly Property Configuration As TestProjectConfiguration
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.Configuration*
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.HasRunnerReporter
+  commentId: P:Xunit.Runner.Common.XunitProject.HasRunnerReporter
+  id: HasRunnerReporter
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: HasRunnerReporter
+  nameWithType: XunitProject.HasRunnerReporter
+  fullName: Xunit.Runner.Common.XunitProject.HasRunnerReporter
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: HasRunnerReporter
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 42
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a flag indicating whether <xref href="v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter" data-throw-if-not-resolved="false"></xref> has been set yet or not.
+  example: []
+  syntax:
+    content: public bool HasRunnerReporter { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasRunnerReporter As Boolean
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.HasRunnerReporter*
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter
+  commentId: P:Xunit.Runner.Common.XunitProject.RunnerReporter
+  id: RunnerReporter
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: RunnerReporter
+  nameWithType: XunitProject.RunnerReporter
+  fullName: Xunit.Runner.Common.XunitProject.RunnerReporter
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: RunnerReporter
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 47
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets or sets the runner reporter.
+  example: []
+  syntax:
+    content: public IRunnerReporter RunnerReporter { get; set; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.IRunnerReporter
+    content.vb: Public Property RunnerReporter As IRunnerReporter
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter*
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Add(Xunit.Runner.Common.XunitProjectAssembly)
+  commentId: M:Xunit.Runner.Common.XunitProject.Add(Xunit.Runner.Common.XunitProjectAssembly)
+  id: Add(Xunit.Runner.Common.XunitProjectAssembly)
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: Add(XunitProjectAssembly)
+  nameWithType: XunitProject.Add(XunitProjectAssembly)
+  fullName: Xunit.Runner.Common.XunitProject.Add(Xunit.Runner.Common.XunitProjectAssembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: Add
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 57
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Adds an assembly to the project.
+  example: []
+  syntax:
+    content: public void Add(XunitProjectAssembly assembly)
+    parameters:
+    - id: assembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The assembly to add to the project.
+    content.vb: Public Sub Add(assembly As XunitProjectAssembly)
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.Add*
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.WithLaunchOptions(Xunit.Runner.Common.XunitProject,Xunit.FrontControllerLaunchOptions)
+  commentId: M:Xunit.Runner.Common.XunitProject.WithLaunchOptions(Xunit.Runner.Common.XunitProject,Xunit.FrontControllerLaunchOptions)
+  id: WithLaunchOptions(Xunit.Runner.Common.XunitProject,Xunit.FrontControllerLaunchOptions)
+  parent: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  langs:
+  - csharp
+  - vb
+  name: WithLaunchOptions(XunitProject, FrontControllerLaunchOptions)
+  nameWithType: XunitProject.WithLaunchOptions(XunitProject, FrontControllerLaunchOptions)
+  fullName: Xunit.Runner.Common.XunitProject.WithLaunchOptions(Xunit.Runner.Common.XunitProject, Xunit.FrontControllerLaunchOptions)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: WithLaunchOptions
+    path: ../src/xunit.v3.runner.common/Frameworks/XunitProject.cs
+    startLine: 69
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Create an instance of <xref href="v3.2.0.2:Xunit.Runner.Common.XunitProject" data-throw-if-not-resolved="false"></xref> populated by launch options.
+  example: []
+  syntax:
+    content: public static XunitProject WithLaunchOptions(XunitProject other, FrontControllerLaunchOptions launchOptions)
+    parameters:
+    - id: other
+      type: Xunit.Runner.Common.XunitProject
+      description: The project that is our template to copy from
+    - id: launchOptions
+      type: Xunit.FrontControllerLaunchOptions
+      description: The launch options
+    return:
+      type: Xunit.Runner.Common.XunitProject
+    content.vb: Public Shared Function WithLaunchOptions(other As XunitProject, launchOptions As FrontControllerLaunchOptions) As XunitProject
+  overload: v3.2.0.2:Xunit.Runner.Common.XunitProject.WithLaunchOptions*
+references:
+- uid: v3.2.0.2:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject
+  commentId: T:Xunit.Runner.Common.XunitProject
+  parent: v3.2.0.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProject.html
+  name: XunitProject
+  nameWithType: XunitProject
+  fullName: Xunit.Runner.Common.XunitProject
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.#ctor*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.#ctor
+  href: Xunit.Runner.Common.XunitProject.-ctor.html#Xunit_Runner_Common_XunitProject__ctor
+  name: XunitProject
+  nameWithType: XunitProject.XunitProject
+  fullName: Xunit.Runner.Common.XunitProject.XunitProject
+  nameWithType.vb: XunitProject.New
+  fullName.vb: Xunit.Runner.Common.XunitProject.New
+  name.vb: New
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Assemblies*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.Assemblies
+  href: Xunit.Runner.Common.XunitProject.Assemblies.html#Xunit_Runner_Common_XunitProject_Assemblies
+  name: Assemblies
+  nameWithType: XunitProject.Assemblies
+  fullName: Xunit.Runner.Common.XunitProject.Assemblies
+- uid: System.Collections.Generic.ICollection{Xunit.Runner.Common.XunitProjectAssembly}
+  commentId: T:System.Collections.Generic.ICollection{Xunit.Runner.Common.XunitProjectAssembly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<XunitProjectAssembly>
+  nameWithType: ICollection<XunitProjectAssembly>
+  fullName: System.Collections.Generic.ICollection<Xunit.Runner.Common.XunitProjectAssembly>
+  nameWithType.vb: ICollection(Of XunitProjectAssembly)
+  fullName.vb: System.Collections.Generic.ICollection(Of Xunit.Runner.Common.XunitProjectAssembly)
+  name.vb: ICollection(Of XunitProjectAssembly)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: v3.2.0.2:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+    href: Xunit.Runner.Common.XunitProjectAssembly.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+    href: Xunit.Runner.Common.XunitProjectAssembly.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Configuration*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.Configuration
+  href: Xunit.Runner.Common.XunitProject.Configuration.html#Xunit_Runner_Common_XunitProject_Configuration
+  name: Configuration
+  nameWithType: XunitProject.Configuration
+  fullName: Xunit.Runner.Common.XunitProject.Configuration
+- uid: v3.2.0.2:Xunit.Runner.Common.TestProjectConfiguration
+  commentId: T:Xunit.Runner.Common.TestProjectConfiguration
+  parent: v3.2.0.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestProjectConfiguration.html
+  name: TestProjectConfiguration
+  nameWithType: TestProjectConfiguration
+  fullName: Xunit.Runner.Common.TestProjectConfiguration
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter
+  commentId: P:Xunit.Runner.Common.XunitProject.RunnerReporter
+  href: Xunit.Runner.Common.XunitProject.RunnerReporter.html#Xunit_Runner_Common_XunitProject_RunnerReporter
+  name: RunnerReporter
+  nameWithType: XunitProject.RunnerReporter
+  fullName: Xunit.Runner.Common.XunitProject.RunnerReporter
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.HasRunnerReporter*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.HasRunnerReporter
+  href: Xunit.Runner.Common.XunitProject.HasRunnerReporter.html#Xunit_Runner_Common_XunitProject_HasRunnerReporter
+  name: HasRunnerReporter
+  nameWithType: XunitProject.HasRunnerReporter
+  fullName: Xunit.Runner.Common.XunitProject.HasRunnerReporter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.RunnerReporter*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.RunnerReporter
+  href: Xunit.Runner.Common.XunitProject.RunnerReporter.html#Xunit_Runner_Common_XunitProject_RunnerReporter
+  name: RunnerReporter
+  nameWithType: XunitProject.RunnerReporter
+  fullName: Xunit.Runner.Common.XunitProject.RunnerReporter
+- uid: v3.2.0.2:Xunit.Runner.Common.IRunnerReporter
+  commentId: T:Xunit.Runner.Common.IRunnerReporter
+  parent: v3.2.0.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IRunnerReporter.html
+  name: IRunnerReporter
+  nameWithType: IRunnerReporter
+  fullName: Xunit.Runner.Common.IRunnerReporter
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.Add*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.Add
+  href: Xunit.Runner.Common.XunitProject.Add.html#Xunit_Runner_Common_XunitProject_Add_Xunit_Runner_Common_XunitProjectAssembly_
+  name: Add
+  nameWithType: XunitProject.Add
+  fullName: Xunit.Runner.Common.XunitProject.Add
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProjectAssembly
+  commentId: T:Xunit.Runner.Common.XunitProjectAssembly
+  parent: v3.2.0.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProjectAssembly.html
+  name: XunitProjectAssembly
+  nameWithType: XunitProjectAssembly
+  fullName: Xunit.Runner.Common.XunitProjectAssembly
+- uid: v3.2.0.2:Xunit.Runner.Common.XunitProject.WithLaunchOptions*
+  commentId: Overload:Xunit.Runner.Common.XunitProject.WithLaunchOptions
+  href: Xunit.Runner.Common.XunitProject.WithLaunchOptions.html#Xunit_Runner_Common_XunitProject_WithLaunchOptions_Xunit_Runner_Common_XunitProject_Xunit_FrontControllerLaunchOptions_
+  name: WithLaunchOptions
+  nameWithType: XunitProject.WithLaunchOptions
+  fullName: Xunit.Runner.Common.XunitProject.WithLaunchOptions
+- uid: v3.2.0.2:Xunit.FrontControllerLaunchOptions
+  commentId: T:Xunit.FrontControllerLaunchOptions
+  parent: v3.2.0.2:Xunit
+  href: Xunit.FrontControllerLaunchOptions.html
+  name: FrontControllerLaunchOptions
+  nameWithType: FrontControllerLaunchOptions
+  fullName: Xunit.FrontControllerLaunchOptions
+- uid: v3.2.0.2:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+memberLayout: SeparatePages

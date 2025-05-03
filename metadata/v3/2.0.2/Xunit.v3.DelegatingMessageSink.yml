@@ -1,0 +1,537 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.2:Xunit.v3.DelegatingMessageSink
+  commentId: T:Xunit.v3.DelegatingMessageSink
+  id: DelegatingMessageSink
+  parent: v3.2.0.2:Xunit.v3
+  children:
+  - v3.2.0.2:Xunit.v3.DelegatingMessageSink.#ctor(Xunit.Sdk.IMessageSink,System.Action{Xunit.Sdk.IMessageSinkMessage})
+  - v3.2.0.2:Xunit.v3.DelegatingMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  langs:
+  - csharp
+  - vb
+  name: DelegatingMessageSink
+  nameWithType: DelegatingMessageSink
+  fullName: Xunit.v3.DelegatingMessageSink
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: DelegatingMessageSink
+    path: ../src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Implementation of <xref href="v3.2.0.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> that delegates to another implementation of
+
+    <xref href="v3.2.0.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> while calling into an optional callback for each message.
+  example: []
+  syntax:
+    content: 'public class DelegatingMessageSink : IMessageSink'
+    content.vb: Public Class DelegatingMessageSink Implements IMessageSink
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.2.0.2:Xunit.v3.DelegatingMessageSink`1
+  implements:
+  - v3.2.0.2:Xunit.Sdk.IMessageSink
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.2:Xunit.v3.DelegatingMessageSink.#ctor(Xunit.Sdk.IMessageSink,System.Action{Xunit.Sdk.IMessageSinkMessage})
+  commentId: M:Xunit.v3.DelegatingMessageSink.#ctor(Xunit.Sdk.IMessageSink,System.Action{Xunit.Sdk.IMessageSinkMessage})
+  id: '#ctor(Xunit.Sdk.IMessageSink,System.Action{Xunit.Sdk.IMessageSinkMessage})'
+  parent: v3.2.0.2:Xunit.v3.DelegatingMessageSink
+  langs:
+  - csharp
+  - vb
+  name: DelegatingMessageSink(IMessageSink, Action<IMessageSinkMessage>?)
+  nameWithType: DelegatingMessageSink.DelegatingMessageSink(IMessageSink, Action<IMessageSinkMessage>?)
+  fullName: Xunit.v3.DelegatingMessageSink.DelegatingMessageSink(Xunit.Sdk.IMessageSink, System.Action<Xunit.Sdk.IMessageSinkMessage>?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Implementation of <xref href="v3.2.0.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> that delegates to another implementation of
+
+    <xref href="v3.2.0.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> while calling into an optional callback for each message.
+  example: []
+  syntax:
+    content: public DelegatingMessageSink(IMessageSink innerSink, Action<IMessageSinkMessage>? callback = null)
+    parameters:
+    - id: innerSink
+      type: Xunit.Sdk.IMessageSink
+      description: The inner message sink.
+    - id: callback
+      type: System.Action{Xunit.Sdk.IMessageSinkMessage}
+      description: The callback.
+    content.vb: Public Sub New(innerSink As IMessageSink, callback As Action(Of IMessageSinkMessage) = Nothing)
+  overload: v3.2.0.2:Xunit.v3.DelegatingMessageSink.#ctor*
+  nameWithType.vb: DelegatingMessageSink.New(IMessageSink, Action(Of IMessageSinkMessage))
+  fullName.vb: Xunit.v3.DelegatingMessageSink.New(Xunit.Sdk.IMessageSink, System.Action(Of Xunit.Sdk.IMessageSinkMessage))
+  name.vb: New(IMessageSink, Action(Of IMessageSinkMessage))
+- uid: v3.2.0.2:Xunit.v3.DelegatingMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.v3.DelegatingMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  id: OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.2.0.2:Xunit.v3.DelegatingMessageSink
+  langs:
+  - csharp
+  - vb
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: DelegatingMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.v3.DelegatingMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+      branch: ccd27e9792077b9ee82f40320c6f414e6a0338de
+      repo: https://github.com/xunit/xunit
+    id: OnMessage
+    path: ../src/xunit.v3.core/Utility/DelegatingMessageSink.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Reports the presence of a message on the message bus. This method should
+
+    never throw exceptions.
+  example: []
+  syntax:
+    content: public virtual bool OnMessage(IMessageSinkMessage message)
+    parameters:
+    - id: message
+      type: Xunit.Sdk.IMessageSinkMessage
+      description: The message from the message bus
+    return:
+      type: System.Boolean
+      description: Return <code>true</code> to continue running tests, or <code>false</code> to stop.
+    content.vb: Public Overridable Function OnMessage(message As IMessageSinkMessage) As Boolean
+  overload: v3.2.0.2:Xunit.v3.DelegatingMessageSink.OnMessage*
+  implements:
+  - v3.2.0.2:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+references:
+- uid: v3.2.0.2:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.2.0.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.2:Xunit.v3.DelegatingMessageSink.#ctor*
+  commentId: Overload:Xunit.v3.DelegatingMessageSink.#ctor
+  href: Xunit.v3.DelegatingMessageSink.-ctor.html#Xunit_v3_DelegatingMessageSink__ctor_Xunit_Sdk_IMessageSink_System_Action_Xunit_Sdk_IMessageSinkMessage__
+  name: DelegatingMessageSink
+  nameWithType: DelegatingMessageSink.DelegatingMessageSink
+  fullName: Xunit.v3.DelegatingMessageSink.DelegatingMessageSink
+  nameWithType.vb: DelegatingMessageSink.New
+  fullName.vb: Xunit.v3.DelegatingMessageSink.New
+  name.vb: New
+- uid: System.Action{Xunit.Sdk.IMessageSinkMessage}
+  commentId: T:System.Action{Xunit.Sdk.IMessageSinkMessage}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IMessageSinkMessage>
+  nameWithType: Action<IMessageSinkMessage>
+  fullName: System.Action<Xunit.Sdk.IMessageSinkMessage>
+  nameWithType.vb: Action(Of IMessageSinkMessage)
+  fullName.vb: System.Action(Of Xunit.Sdk.IMessageSinkMessage)
+  name.vb: Action(Of IMessageSinkMessage)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.2.0.2:Xunit.v3.DelegatingMessageSink.OnMessage*
+  commentId: Overload:Xunit.v3.DelegatingMessageSink.OnMessage
+  href: Xunit.v3.DelegatingMessageSink.OnMessage.html#Xunit_v3_DelegatingMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage
+  nameWithType: DelegatingMessageSink.OnMessage
+  fullName: Xunit.v3.DelegatingMessageSink.OnMessage
+- uid: v3.2.0.2:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.2.0.2:Xunit.Sdk.IMessageSink
+  href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: IMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: )
+- uid: v3.2.0.2:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.2.0.2:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages
