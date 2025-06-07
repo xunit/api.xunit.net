@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  commentId: T:Xunit.Sdk.IAssemblyMetadata
+  id: IAssemblyMetadata
+  parent: v3.2.0.3:Xunit.Sdk
+  children:
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Traits
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  langs:
+  - csharp
+  - vb
+  name: IAssemblyMetadata
+  nameWithType: IAssemblyMetadata
+  fullName: Xunit.Sdk.IAssemblyMetadata
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: IAssemblyMetadata
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Represents metadata about a test assembly.
+  example: []
+  syntax:
+    content: public interface IAssemblyMetadata
+    content.vb: Public Interface IAssemblyMetadata
+  extensionMethods:
+  - v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  id: AssemblyName
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: AssemblyName
+  nameWithType: IAssemblyMetadata.AssemblyName
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: AssemblyName
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the assembly name. May return a simple assembly name (i.e., "mscorlib"), or may return a
+
+    fully qualified name (i.e., "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089").
+  example: []
+  syntax:
+    content: string AssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyName As String
+  overload: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyName*
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  id: AssemblyPath
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: AssemblyPath
+  nameWithType: IAssemblyMetadata.AssemblyPath
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: AssemblyPath
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the on-disk location of the assembly under test.
+  example: []
+  syntax:
+    content: string AssemblyPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyPath As String
+  overload: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyPath*
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  id: ConfigFilePath
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: ConfigFilePath
+  nameWithType: IAssemblyMetadata.ConfigFilePath
+  fullName: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ConfigFilePath
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the full path of the configuration file name, if one is present.
+
+    May be <code>null</code> if there is no configuration file.
+  example: []
+  syntax:
+    content: string? ConfigFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ConfigFilePath As String
+  overload: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath*
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Traits
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.Traits
+  id: Traits
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Traits
+  nameWithType: IAssemblyMetadata.Traits
+  fullName: Xunit.Sdk.IAssemblyMetadata.Traits
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: Traits
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the trait values associated with this test assembly. If
+
+    there are none, or the framework does not support traits,
+
+    this should return an empty dictionary (not <code>null</code>).
+  example: []
+  syntax:
+    content: IReadOnlyDictionary<string, IReadOnlyCollection<string>> Traits { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+    content.vb: ReadOnly Property Traits As IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  overload: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Traits*
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  commentId: P:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  id: UniqueID
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: UniqueID
+  nameWithType: IAssemblyMetadata.UniqueID
+  fullName: Xunit.Sdk.IAssemblyMetadata.UniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: UniqueID
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IAssemblyMetadata.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the unique ID for this test assembly.
+  remarks: >-
+    The unique identifier for a test assembly should be able to discriminate among test assemblies with
+
+    their associated configuration file (so the same assembly with two different configuration files
+
+    should have two different unique IDs). This identifier should remain stable until such time as
+
+    the developer changes some fundamental part of the identity. Recompilation of the test assembly
+
+    is reasonable as a stability changing event.
+  example: []
+  syntax:
+    content: string UniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property UniqueID As String
+  overload: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.UniqueID*
+references:
+- uid: v3.2.0.3:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  parent: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions
+  definition: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  commentId: M:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  name: SimpleAssemblyName(IAssemblyMetadata)
+  nameWithType: IAssemblyMetadataExtensions.SimpleAssemblyName(IAssemblyMetadata)
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName(Xunit.Sdk.IAssemblyMetadata)
+    name: SimpleAssemblyName
+    href: Xunit.Sdk.IAssemblyMetadataExtensions.SimpleAssemblyName.html#Xunit_Sdk_IAssemblyMetadataExtensions_SimpleAssemblyName_Xunit_Sdk_IAssemblyMetadata_
+  - name: (
+  - uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata
+    name: IAssemblyMetadata
+    href: Xunit.Sdk.IAssemblyMetadata.html
+  - name: )
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadataExtensions
+  commentId: T:Xunit.Sdk.IAssemblyMetadataExtensions
+  parent: v3.2.0.3:Xunit.Sdk
+  href: Xunit.Sdk.IAssemblyMetadataExtensions.html
+  name: IAssemblyMetadataExtensions
+  nameWithType: IAssemblyMetadataExtensions
+  fullName: Xunit.Sdk.IAssemblyMetadataExtensions
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyName*
+  commentId: Overload:Xunit.Sdk.IAssemblyMetadata.AssemblyName
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyName.html#Xunit_Sdk_IAssemblyMetadata_AssemblyName
+  name: AssemblyName
+  nameWithType: IAssemblyMetadata.AssemblyName
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.AssemblyPath*
+  commentId: Overload:Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+  href: Xunit.Sdk.IAssemblyMetadata.AssemblyPath.html#Xunit_Sdk_IAssemblyMetadata_AssemblyPath
+  name: AssemblyPath
+  nameWithType: IAssemblyMetadata.AssemblyPath
+  fullName: Xunit.Sdk.IAssemblyMetadata.AssemblyPath
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath*
+  commentId: Overload:Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+  href: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath.html#Xunit_Sdk_IAssemblyMetadata_ConfigFilePath
+  name: ConfigFilePath
+  nameWithType: IAssemblyMetadata.ConfigFilePath
+  fullName: Xunit.Sdk.IAssemblyMetadata.ConfigFilePath
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.Traits*
+  commentId: Overload:Xunit.Sdk.IAssemblyMetadata.Traits
+  href: Xunit.Sdk.IAssemblyMetadata.Traits.html#Xunit_Sdk_IAssemblyMetadata_Traits
+  name: Traits
+  nameWithType: IAssemblyMetadata.Traits
+  fullName: Xunit.Sdk.IAssemblyMetadata.Traits
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  nameWithType: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IReadOnlyCollection<string>>
+  nameWithType.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, System.Collections.Generic.IReadOnlyCollection(Of String))
+  name.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.2.0.3:Xunit.Sdk.IAssemblyMetadata.UniqueID*
+  commentId: Overload:Xunit.Sdk.IAssemblyMetadata.UniqueID
+  href: Xunit.Sdk.IAssemblyMetadata.UniqueID.html#Xunit_Sdk_IAssemblyMetadata_UniqueID
+  name: UniqueID
+  nameWithType: IAssemblyMetadata.UniqueID
+  fullName: Xunit.Sdk.IAssemblyMetadata.UniqueID
+memberLayout: SeparatePages

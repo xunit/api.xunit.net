@@ -1,0 +1,872 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  commentId: T:Xunit.Runner.Common.TestAssemblyInfo
+  id: TestAssemblyInfo
+  parent: v3.2.0.3:Xunit.Runner.Common
+  children:
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.#ctor(System.Version,System.String,System.String,System.String)
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+  - v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ToJson
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyInfo
+  nameWithType: TestAssemblyInfo
+  fullName: Xunit.Runner.Common.TestAssemblyInfo
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: TestAssemblyInfo
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    This is the class that wraps the data expected to be returned when invoking a v3 test project with
+
+    the <code>-assemblyInfo</code> switch.
+  example: []
+  syntax:
+    content: public class TestAssemblyInfo
+    content.vb: Public Class TestAssemblyInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.#ctor(System.Version,System.String,System.String,System.String)
+  commentId: M:Xunit.Runner.Common.TestAssemblyInfo.#ctor(System.Version,System.String,System.String,System.String)
+  id: '#ctor(System.Version,System.String,System.String,System.String)'
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyInfo(Version, string, string, string)
+  nameWithType: TestAssemblyInfo.TestAssemblyInfo(Version, string, string, string)
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TestAssemblyInfo(System.Version, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Initializes a new instance of the <xref href="v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TestAssemblyInfo(Version coreFramework, string coreFrameworkInformational, string targetFramework, string testFramework)
+    parameters:
+    - id: coreFramework
+      type: System.Version
+      description: The version of <code>xunit.v3.core</code>
+    - id: coreFrameworkInformational
+      type: System.String
+      description: The informational verison of <code>xunit.v3.core</code>
+    - id: targetFramework
+      type: System.String
+      description: The target framework the test assembly was built against
+    - id: testFramework
+      type: System.String
+      description: The display name of the test framework
+    content.vb: Public Sub New(coreFramework As Version, coreFrameworkInformational As String, targetFramework As String, testFramework As String)
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.#ctor*
+  nameWithType.vb: TestAssemblyInfo.New(Version, String, String, String)
+  fullName.vb: Xunit.Runner.Common.TestAssemblyInfo.New(System.Version, String, String, String)
+  name.vb: New(Version, String, String, String)
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+  id: ArchOS
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: ArchOS
+  nameWithType: TestAssemblyInfo.ArchOS
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ArchOS
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 67
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the value returned by <xref href="System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This is returned as a string value rather than the enum value, given the variance of available values spanning
+
+    across operating systems and frameworks.
+  example: []
+  syntax:
+    content: public string ArchOS { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ArchOS As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchOS*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+  id: ArchProcess
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: ArchProcess
+  nameWithType: TestAssemblyInfo.ArchProcess
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ArchProcess
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 76
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the value returned by <xref href="System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This is returned as a string value rather than the enum value, given the variance of available values spanning
+
+    across operating systems and frameworks.
+  example: []
+  syntax:
+    content: public string ArchProcess { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ArchProcess As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+  id: CoreFramework
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: CoreFramework
+  nameWithType: TestAssemblyInfo.CoreFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: CoreFramework
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 81
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the assembly version of <code>xunit.v3.core.dll</code>.
+  example: []
+  syntax:
+    content: public Version CoreFramework { get; }
+    parameters: []
+    return:
+      type: System.Version
+    content.vb: Public ReadOnly Property CoreFramework As Version
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+  id: CoreFrameworkInformational
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: CoreFrameworkInformational
+  nameWithType: TestAssemblyInfo.CoreFrameworkInformational
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: CoreFrameworkInformational
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 86
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the informational assembly version of <code>xunit.v3.core.dll</code>.
+  example: []
+  syntax:
+    content: public string CoreFrameworkInformational { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CoreFrameworkInformational As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+  id: PointerSize
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: PointerSize
+  nameWithType: TestAssemblyInfo.PointerSize
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: PointerSize
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 91
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the bit-size of pointers in the test process (i.e., <code><xref href="System.IntPtr.Size" data-throw-if-not-resolved="false"></xref> * 8</code>).
+  example: []
+  syntax:
+    content: public int PointerSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property PointerSize As Integer
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.PointerSize*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+  id: RuntimeFramework
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: RuntimeFramework
+  nameWithType: TestAssemblyInfo.RuntimeFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: RuntimeFramework
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 96
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets the value returned by <xref href="System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string RuntimeFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RuntimeFramework As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+  id: TargetFramework
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: TestAssemblyInfo.TargetFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 103
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the target framework the test process was built for, as embedded into the assembly-level
+
+    attribute <xref href="System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" data-throw-if-not-resolved="false"></xref>. In the rare condition that
+
+    this attribute is missing, this will return <code>UnknownTargetFramework</code>.
+  example: []
+  syntax:
+    content: public string TargetFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TargetFramework As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+  commentId: P:Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+  id: TestFramework
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: TestFramework
+  nameWithType: TestAssemblyInfo.TestFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: TestFramework
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 109
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the value returned by <xref href="ITestFramework.TestFrameworkDisplayName" data-throw-if-not-resolved="false"></xref>. The default
+
+    test framework will return a value like <code>"xUnit.net v3 &lt;core-framework-informational&gt;"</code>.
+  example: []
+  syntax:
+    content: public string TestFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestFramework As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TestFramework*
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+  commentId: M:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+  id: FromJson(System.String)
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: FromJson(string)
+  nameWithType: TestAssemblyInfo.FromJson(string)
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.FromJson(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: FromJson
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 115
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Rehydrates an instance of <xref href="v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo" data-throw-if-not-resolved="false"></xref> from the given JSON.
+  example: []
+  syntax:
+    content: public static TestAssemblyInfo FromJson(string serialization)
+    parameters:
+    - id: serialization
+      type: System.String
+      description: The JSON serialization
+    return:
+      type: Xunit.Runner.Common.TestAssemblyInfo
+    content.vb: Public Shared Function FromJson(serialization As String) As TestAssemblyInfo
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson*
+  nameWithType.vb: TestAssemblyInfo.FromJson(String)
+  fullName.vb: Xunit.Runner.Common.TestAssemblyInfo.FromJson(String)
+  name.vb: FromJson(String)
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ToJson
+  commentId: M:Xunit.Runner.Common.TestAssemblyInfo.ToJson
+  id: ToJson
+  parent: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: ToJson()
+  nameWithType: TestAssemblyInfo.ToJson()
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ToJson()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ToJson
+    path: ../src/xunit.v3.runner.common/Utility/TestAssemblyInfo.cs
+    startLine: 135
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets this object in JSON format, which can be rehydrated with <xref href="v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string ToJson()
+    return:
+      type: System.String
+    content.vb: Public Function ToJson() As String
+  overload: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ToJson*
+references:
+- uid: v3.2.0.3:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo
+  commentId: T:Xunit.Runner.Common.TestAssemblyInfo
+  parent: v3.2.0.3:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestAssemblyInfo.html
+  name: TestAssemblyInfo
+  nameWithType: TestAssemblyInfo
+  fullName: Xunit.Runner.Common.TestAssemblyInfo
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.#ctor*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.#ctor
+  href: Xunit.Runner.Common.TestAssemblyInfo.-ctor.html#Xunit_Runner_Common_TestAssemblyInfo__ctor_System_Version_System_String_System_String_System_String_
+  name: TestAssemblyInfo
+  nameWithType: TestAssemblyInfo.TestAssemblyInfo
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TestAssemblyInfo
+  nameWithType.vb: TestAssemblyInfo.New
+  fullName.vb: Xunit.Runner.Common.TestAssemblyInfo.New
+  name.vb: New
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.version
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Runtime.InteropServices.RuntimeInformation.OSArchitecture
+  commentId: P:System.Runtime.InteropServices.RuntimeInformation.OSArchitecture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.runtimeinformation.osarchitecture
+  name: OSArchitecture
+  nameWithType: RuntimeInformation.OSArchitecture
+  fullName: System.Runtime.InteropServices.RuntimeInformation.OSArchitecture
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchOS*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+  href: Xunit.Runner.Common.TestAssemblyInfo.ArchOS.html#Xunit_Runner_Common_TestAssemblyInfo_ArchOS
+  name: ArchOS
+  nameWithType: TestAssemblyInfo.ArchOS
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ArchOS
+- uid: System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture
+  commentId: P:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.runtimeinformation.processarchitecture
+  name: ProcessArchitecture
+  nameWithType: RuntimeInformation.ProcessArchitecture
+  fullName: System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+  href: Xunit.Runner.Common.TestAssemblyInfo.ArchProcess.html#Xunit_Runner_Common_TestAssemblyInfo_ArchProcess
+  name: ArchProcess
+  nameWithType: TestAssemblyInfo.ArchProcess
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ArchProcess
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+  href: Xunit.Runner.Common.TestAssemblyInfo.CoreFramework.html#Xunit_Runner_Common_TestAssemblyInfo_CoreFramework
+  name: CoreFramework
+  nameWithType: TestAssemblyInfo.CoreFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.CoreFramework
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+  href: Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational.html#Xunit_Runner_Common_TestAssemblyInfo_CoreFrameworkInformational
+  name: CoreFrameworkInformational
+  nameWithType: TestAssemblyInfo.CoreFrameworkInformational
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.CoreFrameworkInformational
+- uid: System.IntPtr.Size
+  commentId: P:System.IntPtr.Size
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr.size
+  name: Size
+  nameWithType: IntPtr.Size
+  fullName: System.IntPtr.Size
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.PointerSize*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+  href: Xunit.Runner.Common.TestAssemblyInfo.PointerSize.html#Xunit_Runner_Common_TestAssemblyInfo_PointerSize
+  name: PointerSize
+  nameWithType: TestAssemblyInfo.PointerSize
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.PointerSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+  commentId: P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.runtimeinformation.frameworkdescription
+  name: FrameworkDescription
+  nameWithType: RuntimeInformation.FrameworkDescription
+  fullName: System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+  href: Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework.html#Xunit_Runner_Common_TestAssemblyInfo_RuntimeFramework
+  name: RuntimeFramework
+  nameWithType: TestAssemblyInfo.RuntimeFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.RuntimeFramework
+- uid: System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName
+  commentId: P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute.frameworkname
+  name: FrameworkName
+  nameWithType: TargetFrameworkAttribute.FrameworkName
+  fullName: System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+  href: Xunit.Runner.Common.TestAssemblyInfo.TargetFramework.html#Xunit_Runner_Common_TestAssemblyInfo_TargetFramework
+  name: TargetFramework
+  nameWithType: TestAssemblyInfo.TargetFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TargetFramework
+- uid: ITestFramework.TestFrameworkDisplayName
+  commentId: P:ITestFramework.TestFrameworkDisplayName
+  isExternal: true
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.TestFramework*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+  href: Xunit.Runner.Common.TestAssemblyInfo.TestFramework.html#Xunit_Runner_Common_TestAssemblyInfo_TestFramework
+  name: TestFramework
+  nameWithType: TestAssemblyInfo.TestFramework
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.TestFramework
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.FromJson
+  href: Xunit.Runner.Common.TestAssemblyInfo.FromJson.html#Xunit_Runner_Common_TestAssemblyInfo_FromJson_System_String_
+  name: FromJson
+  nameWithType: TestAssemblyInfo.FromJson
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.FromJson
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+  commentId: M:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+  isExternal: true
+  href: Xunit.Runner.Common.TestAssemblyInfo.FromJson.html#Xunit_Runner_Common_TestAssemblyInfo_FromJson_System_String_
+  name: FromJson(string)
+  nameWithType: TestAssemblyInfo.FromJson(string)
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.FromJson(string)
+  nameWithType.vb: TestAssemblyInfo.FromJson(String)
+  fullName.vb: Xunit.Runner.Common.TestAssemblyInfo.FromJson(String)
+  name.vb: FromJson(String)
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+    name: FromJson
+    href: Xunit.Runner.Common.TestAssemblyInfo.FromJson.html#Xunit_Runner_Common_TestAssemblyInfo_FromJson_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.FromJson(System.String)
+    name: FromJson
+    href: Xunit.Runner.Common.TestAssemblyInfo.FromJson.html#Xunit_Runner_Common_TestAssemblyInfo_FromJson_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.3:Xunit.Runner.Common.TestAssemblyInfo.ToJson*
+  commentId: Overload:Xunit.Runner.Common.TestAssemblyInfo.ToJson
+  href: Xunit.Runner.Common.TestAssemblyInfo.ToJson.html#Xunit_Runner_Common_TestAssemblyInfo_ToJson
+  name: ToJson
+  nameWithType: TestAssemblyInfo.ToJson
+  fullName: Xunit.Runner.Common.TestAssemblyInfo.ToJson
+memberLayout: SeparatePages

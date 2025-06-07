@@ -1,0 +1,775 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.AssemblyHelper
+  commentId: T:Xunit.AssemblyHelper
+  id: AssemblyHelper
+  parent: v3.2.0.3:Xunit
+  children:
+  - v3.2.0.3:Xunit.AssemblyHelper.#ctor(System.String)
+  - v3.2.0.3:Xunit.AssemblyHelper.#ctor(System.String,Xunit.Sdk.IMessageSink)
+  - v3.2.0.3:Xunit.AssemblyHelper.Dispose
+  - v3.2.0.3:Xunit.AssemblyHelper.InitializeLifetimeService
+  - v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  - v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  langs:
+  - csharp
+  - vb
+  name: AssemblyHelper
+  nameWithType: AssemblyHelper
+  fullName: Xunit.AssemblyHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: AssemblyHelper
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: This class provides assistance with assembly resolution for missing assemblies.
+  example: []
+  syntax:
+    content: 'public class AssemblyHelper : MarshalByRefObject, IDisposable'
+    content.vb: Public Class AssemblyHelper Inherits MarshalByRefObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.2.0.3:Xunit.AssemblyHelper.#ctor(System.String)
+  commentId: M:Xunit.AssemblyHelper.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: AssemblyHelper(string)
+  nameWithType: AssemblyHelper.AssemblyHelper(string)
+  fullName: Xunit.AssemblyHelper.AssemblyHelper(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 34
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: Constructs an instance using the given <code class="paramref">directory</code> for resolution.
+  example: []
+  syntax:
+    content: public AssemblyHelper(string directory)
+    parameters:
+    - id: directory
+      type: System.String
+      description: The directory to use for resolving assemblies.
+    content.vb: Public Sub New(directory As String)
+  overload: v3.2.0.3:Xunit.AssemblyHelper.#ctor*
+  nameWithType.vb: AssemblyHelper.New(String)
+  fullName.vb: Xunit.AssemblyHelper.New(String)
+  name.vb: New(String)
+- uid: v3.2.0.3:Xunit.AssemblyHelper.#ctor(System.String,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.AssemblyHelper.#ctor(System.String,Xunit.Sdk.IMessageSink)
+  id: '#ctor(System.String,Xunit.Sdk.IMessageSink)'
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: AssemblyHelper(string, IMessageSink?)
+  nameWithType: AssemblyHelper.AssemblyHelper(string, IMessageSink?)
+  fullName: Xunit.AssemblyHelper.AssemblyHelper(string, Xunit.Sdk.IMessageSink?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: Constructs an instance using the given <code class="paramref">directory</code> for resolution.
+  example: []
+  syntax:
+    content: public AssemblyHelper(string directory, IMessageSink? diagnosticMessageSink)
+    parameters:
+    - id: directory
+      type: System.String
+      description: The directory to use for resolving assemblies.
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to send diagnostics messages to.
+    content.vb: Public Sub New(directory As String, diagnosticMessageSink As IMessageSink)
+  overload: v3.2.0.3:Xunit.AssemblyHelper.#ctor*
+  nameWithType.vb: AssemblyHelper.New(String, IMessageSink)
+  fullName.vb: Xunit.AssemblyHelper.New(String, Xunit.Sdk.IMessageSink)
+  name.vb: New(String, IMessageSink)
+- uid: v3.2.0.3:Xunit.AssemblyHelper.Dispose
+  commentId: M:Xunit.AssemblyHelper.Dispose
+  id: Dispose
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AssemblyHelper.Dispose()
+  fullName: Xunit.AssemblyHelper.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 54
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.2.0.3:Xunit.AssemblyHelper.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.2.0.3:Xunit.AssemblyHelper.InitializeLifetimeService
+  commentId: M:Xunit.AssemblyHelper.InitializeLifetimeService
+  id: InitializeLifetimeService
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: InitializeLifetimeService()
+  nameWithType: AssemblyHelper.InitializeLifetimeService()
+  fullName: Xunit.AssemblyHelper.InitializeLifetimeService()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: InitializeLifetimeService
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 67
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: Obtains a lifetime service object to control the lifetime policy for this instance.
+  example: []
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public override sealed object InitializeLifetimeService()
+    return:
+      type: System.Object
+      description: An object of type <xref href="System.Runtime.Remoting.Lifetime.ILease" data-throw-if-not-resolved="false"></xref> used to control the lifetime policy for this instance. This is the current lifetime service object for this instance if one exists; otherwise, a new lifetime service object initialized to the value of the <xref href="System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime" data-throw-if-not-resolved="false"></xref> property.
+    content.vb: >-
+      <SecurityCritical>
+
+      Public NotOverridable Overrides Function InitializeLifetimeService() As Object
+  overridden: System.MarshalByRefObject.InitializeLifetimeService
+  overload: v3.2.0.3:Xunit.AssemblyHelper.InitializeLifetimeService*
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: The immediate caller does not have infrastructure permission.
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+- uid: v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  id: SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: SubscribeResolveForAssembly(string, IMessageSink?)
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly(string, IMessageSink?)
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly(string, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: SubscribeResolveForAssembly
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 126
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: >-
+    Subscribes to the appropriate assembly resolution event, to provide automatic assembly resolution for
+
+    an assembly and any of its dependencies. Depending on the target platform, this may include the use
+
+    of the .deps.json file generated during the build process.
+  example: []
+  syntax:
+    content: public static IDisposable? SubscribeResolveForAssembly(string assemblyFileName, IMessageSink? diagnosticMessageSink = null)
+    parameters:
+    - id: assemblyFileName
+      type: System.String
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+    return:
+      type: System.IDisposable
+      description: An object which, when disposed, un-subscribes.
+    content.vb: Public Shared Function SubscribeResolveForAssembly(assemblyFileName As String, diagnosticMessageSink As IMessageSink = Nothing) As IDisposable
+  overload: v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  nameWithType.vb: AssemblyHelper.SubscribeResolveForAssembly(String, IMessageSink)
+  fullName.vb: Xunit.AssemblyHelper.SubscribeResolveForAssembly(String, Xunit.Sdk.IMessageSink)
+  name.vb: SubscribeResolveForAssembly(String, IMessageSink)
+- uid: v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  id: SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  parent: v3.2.0.3:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: SubscribeResolveForAssembly(Type, IMessageSink?)
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly(Type, IMessageSink?)
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: SubscribeResolveForAssembly
+    path: ../src/xunit.v3.runner.utility/AssemblyResolution/AssemblyHelper_NetFx.cs
+    startLine: 141
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit
+  summary: >-
+    Subscribes to the appropriate assembly resolution event, to provide automatic assembly resolution for
+
+    an assembly and any of its dependencies. Depending on the target platform, this may include the use
+
+    of the .deps.json file generated during the build process.
+  example: []
+  syntax:
+    content: public static IDisposable? SubscribeResolveForAssembly(Type typeInAssembly, IMessageSink? diagnosticMessageSink = null)
+    parameters:
+    - id: typeInAssembly
+      type: System.Type
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+    return:
+      type: System.IDisposable
+      description: An object which, when disposed, un-subscribes.
+    content.vb: Public Shared Function SubscribeResolveForAssembly(typeInAssembly As Type, diagnosticMessageSink As IMessageSink = Nothing) As IDisposable
+  overload: v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  nameWithType.vb: AssemblyHelper.SubscribeResolveForAssembly(Type, IMessageSink)
+  fullName.vb: Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type, Xunit.Sdk.IMessageSink)
+  name.vb: SubscribeResolveForAssembly(Type, IMessageSink)
+references:
+- uid: v3.2.0.3:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.3:Xunit.AssemblyHelper.#ctor*
+  commentId: Overload:Xunit.AssemblyHelper.#ctor
+  href: Xunit.AssemblyHelper.-ctor.html#Xunit_AssemblyHelper__ctor_System_String_
+  name: AssemblyHelper
+  nameWithType: AssemblyHelper.AssemblyHelper
+  fullName: Xunit.AssemblyHelper.AssemblyHelper
+  nameWithType.vb: AssemblyHelper.New
+  fullName.vb: Xunit.AssemblyHelper.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.2.0.3:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.2.0.3:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.2.0.3:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.2.0.3:Xunit.AssemblyHelper.Dispose*
+  commentId: Overload:Xunit.AssemblyHelper.Dispose
+  href: Xunit.AssemblyHelper.Dispose.html#Xunit_AssemblyHelper_Dispose
+  name: Dispose
+  nameWithType: AssemblyHelper.Dispose
+  fullName: Xunit.AssemblyHelper.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Runtime.Remoting.Lifetime.ILease
+  commentId: T:System.Runtime.Remoting.Lifetime.ILease
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.remoting.lifetime.ilease
+  name: ILease
+  nameWithType: ILease
+  fullName: System.Runtime.Remoting.Lifetime.ILease
+- uid: System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime
+  commentId: P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.remoting.lifetime.lifetimeservices.leasemanagerpolltime
+  name: LeaseManagerPollTime
+  nameWithType: LifetimeServices.LeaseManagerPollTime
+  fullName: System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime
+- uid: System.Security.SecurityException
+  commentId: T:System.Security.SecurityException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.securityexception
+  name: SecurityException
+  nameWithType: SecurityException
+  fullName: System.Security.SecurityException
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: v3.2.0.3:Xunit.AssemblyHelper.InitializeLifetimeService*
+  commentId: Overload:Xunit.AssemblyHelper.InitializeLifetimeService
+  href: Xunit.AssemblyHelper.InitializeLifetimeService.html#Xunit_AssemblyHelper_InitializeLifetimeService
+  name: InitializeLifetimeService
+  nameWithType: AssemblyHelper.InitializeLifetimeService
+  fullName: Xunit.AssemblyHelper.InitializeLifetimeService
+- uid: v3.2.0.3:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  commentId: Overload:Xunit.AssemblyHelper.SubscribeResolveForAssembly
+  href: Xunit.AssemblyHelper.SubscribeResolveForAssembly.html#Xunit_AssemblyHelper_SubscribeResolveForAssembly_System_String_Xunit_Sdk_IMessageSink_
+  name: SubscribeResolveForAssembly
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+memberLayout: SeparatePages

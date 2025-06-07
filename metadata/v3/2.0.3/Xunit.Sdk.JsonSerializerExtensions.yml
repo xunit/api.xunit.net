@@ -1,0 +1,716 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions
+  commentId: T:Xunit.Sdk.JsonSerializerExtensions
+  id: JsonSerializerExtensions
+  parent: v3.2.0.3:Xunit.Sdk
+  children:
+  - v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)
+  - v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  - v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: JsonSerializerExtensions
+  nameWithType: JsonSerializerExtensions
+  fullName: Xunit.Sdk.JsonSerializerExtensions
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: JsonSerializerExtensions
+    path: ../src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Extension methods for the JSON serialization types.
+  example: []
+  syntax:
+    content: public static class JsonSerializerExtensions
+    content.vb: Public Module JsonSerializerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)
+  commentId: M:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)
+  id: SerializeIntArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)
+  isExtensionMethod: true
+  parent: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions
+  langs:
+  - csharp
+  - vb
+  name: SerializeIntArray(JsonObjectSerializer, string, IEnumerable<int>?, bool)
+  nameWithType: JsonSerializerExtensions.SerializeIntArray(JsonObjectSerializer, string, IEnumerable<int>?, bool)
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray(Xunit.Sdk.JsonObjectSerializer, string, System.Collections.Generic.IEnumerable<int>?, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: SerializeIntArray
+    path: ../src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Serializes an array of integers into the object.
+  example: []
+  syntax:
+    content: public static void SerializeIntArray(this JsonObjectSerializer serializer, string key, IEnumerable<int>? values, bool includeNullArray = false)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: ''
+    - id: key
+      type: System.String
+      description: The key to serialize the array to
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: The values in the array
+    - id: includeNullArray
+      type: System.Boolean
+      description: Whether to serialize the array if it's null
+    content.vb: Public Shared Sub SerializeIntArray(serializer As JsonObjectSerializer, key As String, values As IEnumerable(Of Integer), includeNullArray As Boolean = False)
+  overload: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray*
+  nameWithType.vb: JsonSerializerExtensions.SerializeIntArray(JsonObjectSerializer, String, IEnumerable(Of Integer), Boolean)
+  fullName.vb: Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray(Xunit.Sdk.JsonObjectSerializer, String, System.Collections.Generic.IEnumerable(Of Integer), Boolean)
+  name.vb: SerializeIntArray(JsonObjectSerializer, String, IEnumerable(Of Integer), Boolean)
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  commentId: M:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  id: SerializeStringArray(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  isExtensionMethod: true
+  parent: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions
+  langs:
+  - csharp
+  - vb
+  name: SerializeStringArray(JsonObjectSerializer, string, IEnumerable<string?>?, bool)
+  nameWithType: JsonSerializerExtensions.SerializeStringArray(JsonObjectSerializer, string, IEnumerable<string?>?, bool)
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray(Xunit.Sdk.JsonObjectSerializer, string, System.Collections.Generic.IEnumerable<string?>?, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: SerializeStringArray
+    path: ../src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+    startLine: 46
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Serializes an array of strings into the object.
+  example: []
+  syntax:
+    content: public static void SerializeStringArray(this JsonObjectSerializer serializer, string key, IEnumerable<string?>? values, bool includeNullArray = false)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: ''
+    - id: key
+      type: System.String
+      description: The key to serialize the array to
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The values in the array
+    - id: includeNullArray
+      type: System.Boolean
+      description: Whether to serialize the array if it's null
+    content.vb: Public Shared Sub SerializeStringArray(serializer As JsonObjectSerializer, key As String, values As IEnumerable(Of String), includeNullArray As Boolean = False)
+  overload: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray*
+  nameWithType.vb: JsonSerializerExtensions.SerializeStringArray(JsonObjectSerializer, String, IEnumerable(Of String), Boolean)
+  fullName.vb: Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray(Xunit.Sdk.JsonObjectSerializer, String, System.Collections.Generic.IEnumerable(Of String), Boolean)
+  name.vb: SerializeStringArray(JsonObjectSerializer, String, IEnumerable(Of String), Boolean)
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Boolean)
+  commentId: M:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Boolean)
+  id: SerializeTraits(Xunit.Sdk.JsonObjectSerializer,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Boolean)
+  isExtensionMethod: true
+  parent: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions
+  langs:
+  - csharp
+  - vb
+  name: SerializeTraits(JsonObjectSerializer, string, IReadOnlyDictionary<string, IReadOnlyCollection<string>>, bool)
+  nameWithType: JsonSerializerExtensions.SerializeTraits(JsonObjectSerializer, string, IReadOnlyDictionary<string, IReadOnlyCollection<string>>, bool)
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeTraits(Xunit.Sdk.JsonObjectSerializer, string, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IReadOnlyCollection<string>>, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: SerializeTraits
+    path: ../src/xunit.v3.common/Extensions/JsonSerializerExtensions.cs
+    startLine: 74
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Serialize a trait dictionary value into the object.
+  example: []
+  syntax:
+    content: public static void SerializeTraits(this JsonObjectSerializer serializer, string key, IReadOnlyDictionary<string, IReadOnlyCollection<string>> dictionary, bool includeEmptyTraits = false)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: ''
+    - id: key
+      type: System.String
+      description: The name of the value
+    - id: dictionary
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+      description: The trait dictionary
+    - id: includeEmptyTraits
+      type: System.Boolean
+      description: A flag to indicate whether to render empty traits
+    content.vb: Public Shared Sub SerializeTraits(serializer As JsonObjectSerializer, key As String, dictionary As IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String)), includeEmptyTraits As Boolean = False)
+  overload: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits*
+  nameWithType.vb: JsonSerializerExtensions.SerializeTraits(JsonObjectSerializer, String, IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String)), Boolean)
+  fullName.vb: Xunit.Sdk.JsonSerializerExtensions.SerializeTraits(Xunit.Sdk.JsonObjectSerializer, String, System.Collections.Generic.IReadOnlyDictionary(Of String, System.Collections.Generic.IReadOnlyCollection(Of String)), Boolean)
+  name.vb: SerializeTraits(JsonObjectSerializer, String, IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String)), Boolean)
+references:
+- uid: v3.2.0.3:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray*
+  commentId: Overload:Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray
+  href: Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray.html#Xunit_Sdk_JsonSerializerExtensions_SerializeIntArray_Xunit_Sdk_JsonObjectSerializer_System_String_System_Collections_Generic_IEnumerable_System_Int32__System_Boolean_
+  name: SerializeIntArray
+  nameWithType: JsonSerializerExtensions.SerializeIntArray
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeIntArray
+- uid: v3.2.0.3:Xunit.Sdk.JsonObjectSerializer
+  commentId: T:Xunit.Sdk.JsonObjectSerializer
+  parent: v3.2.0.3:Xunit.Sdk
+  href: Xunit.Sdk.JsonObjectSerializer.html
+  name: JsonObjectSerializer
+  nameWithType: JsonObjectSerializer
+  fullName: Xunit.Sdk.JsonObjectSerializer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray*
+  commentId: Overload:Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray
+  href: Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray.html#Xunit_Sdk_JsonSerializerExtensions_SerializeStringArray_Xunit_Sdk_JsonObjectSerializer_System_String_System_Collections_Generic_IEnumerable_System_String__System_Boolean_
+  name: SerializeStringArray
+  nameWithType: JsonSerializerExtensions.SerializeStringArray
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeStringArray
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.2.0.3:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits*
+  commentId: Overload:Xunit.Sdk.JsonSerializerExtensions.SerializeTraits
+  href: Xunit.Sdk.JsonSerializerExtensions.SerializeTraits.html#Xunit_Sdk_JsonSerializerExtensions_SerializeTraits_Xunit_Sdk_JsonObjectSerializer_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Collections_Generic_IReadOnlyCollection_System_String___System_Boolean_
+  name: SerializeTraits
+  nameWithType: JsonSerializerExtensions.SerializeTraits
+  fullName: Xunit.Sdk.JsonSerializerExtensions.SerializeTraits
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  nameWithType: IReadOnlyDictionary<string, IReadOnlyCollection<string>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IReadOnlyCollection<string>>
+  nameWithType.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, System.Collections.Generic.IReadOnlyCollection(Of String))
+  name.vb: IReadOnlyDictionary(Of String, IReadOnlyCollection(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+memberLayout: SeparatePages

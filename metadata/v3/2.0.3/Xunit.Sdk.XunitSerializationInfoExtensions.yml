@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions
+  commentId: T:Xunit.Sdk.XunitSerializationInfoExtensions
+  id: XunitSerializationInfoExtensions
+  parent: v3.2.0.3:Xunit.Sdk
+  children:
+  - v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  - v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  langs:
+  - csharp
+  - vb
+  name: XunitSerializationInfoExtensions
+  nameWithType: XunitSerializationInfoExtensions
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: XunitSerializationInfoExtensions
+    path: ../src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Extension methods for <xref href="v3.2.0.3:Xunit.Sdk.IXunitSerializationInfo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class XunitSerializationInfoExtensions
+    content.vb: Public Module XunitSerializationInfoExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  id: AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  isExtensionMethod: true
+  parent: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddValue<T>(IXunitSerializationInfo, string, T)
+  nameWithType: XunitSerializationInfoExtensions.AddValue<T>(IXunitSerializationInfo, string, T)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue<T>(Xunit.Sdk.IXunitSerializationInfo, string, T)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: AddValue
+    path: ../src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Adds a value to the serialization. Supported value types include the built-in
+
+    intrinsics (string, int, long, float, double, and decimal, including nullable
+
+    versions of those), any class which implements <xref href="v3.2.0.3:Xunit.Sdk.IXunitSerializable" data-throw-if-not-resolved="false"></xref>),
+
+    or arrays of any supported types.
+  example: []
+  syntax:
+    content: public static void AddValue<T>(this IXunitSerializationInfo info, string key, T value)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: ''
+    - id: key
+      type: System.String
+      description: The key to store the value with
+    - id: value
+      type: '{T}'
+      description: The value to be stored
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub AddValue(Of T)(info As IXunitSerializationInfo, key As String, value As T)
+  overload: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue*
+  nameWithType.vb: XunitSerializationInfoExtensions.AddValue(Of T)(IXunitSerializationInfo, String, T)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String, T)
+  name.vb: AddValue(Of T)(IXunitSerializationInfo, String, T)
+- uid: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  id: GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  isExtensionMethod: true
+  parent: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetValue<T>(IXunitSerializationInfo, string)
+  nameWithType: XunitSerializationInfoExtensions.GetValue<T>(IXunitSerializationInfo, string)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue<T>(Xunit.Sdk.IXunitSerializationInfo, string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: GetValue
+    path: ../src/xunit.v3.common/Serialization/XunitSerializationInfoExtensions.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a strongly-typed value from the serialization.
+  example: []
+  syntax:
+    content: public static T? GetValue<T>(this IXunitSerializationInfo info, string key)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: ''
+    - id: key
+      type: System.String
+      description: The key of the value to retrieve
+    typeParameters:
+    - id: T
+      description: The type of the value
+    return:
+      type: '{T}'
+      description: The value, if present; default(T), otherwise
+    content.vb: Public Shared Function GetValue(Of T)(info As IXunitSerializationInfo, key As String) As T
+  overload: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue*
+  nameWithType.vb: XunitSerializationInfoExtensions.GetValue(Of T)(IXunitSerializationInfo, String)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String)
+  name.vb: GetValue(Of T)(IXunitSerializationInfo, String)
+references:
+- uid: v3.2.0.3:Xunit.Sdk.IXunitSerializationInfo
+  commentId: T:Xunit.Sdk.IXunitSerializationInfo
+  parent: v3.2.0.3:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializationInfo.html
+  name: IXunitSerializationInfo
+  nameWithType: IXunitSerializationInfo
+  fullName: Xunit.Sdk.IXunitSerializationInfo
+- uid: v3.2.0.3:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.2.0.3:Xunit.Sdk.IXunitSerializable
+  commentId: T:Xunit.Sdk.IXunitSerializable
+  parent: v3.2.0.3:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializable.html
+  name: IXunitSerializable
+  nameWithType: IXunitSerializable
+  fullName: Xunit.Sdk.IXunitSerializable
+- uid: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue*
+  commentId: Overload:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  name: AddValue
+  nameWithType: XunitSerializationInfoExtensions.AddValue
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: v3.2.0.3:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue*
+  commentId: Overload:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  name: GetValue
+  nameWithType: XunitSerializationInfoExtensions.GetValue
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue
+memberLayout: SeparatePages

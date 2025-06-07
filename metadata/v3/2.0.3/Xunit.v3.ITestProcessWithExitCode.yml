@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.2.0.3:Xunit.v3.ITestProcessWithExitCode
+  commentId: T:Xunit.v3.ITestProcessWithExitCode
+  id: ITestProcessWithExitCode
+  parent: v3.2.0.3:Xunit.v3
+  children:
+  - v3.2.0.3:Xunit.v3.ITestProcessWithExitCode.ExitCode
+  langs:
+  - csharp
+  - vb
+  name: ITestProcessWithExitCode
+  nameWithType: ITestProcessWithExitCode
+  fullName: Xunit.v3.ITestProcessWithExitCode
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessWithExitCode.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ITestProcessWithExitCode
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessWithExitCode.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Marks a test process which has an exit code after it has completed.
+  example: []
+  syntax:
+    content: public interface ITestProcessWithExitCode
+    content.vb: Public Interface ITestProcessWithExitCode
+- uid: v3.2.0.3:Xunit.v3.ITestProcessWithExitCode.ExitCode
+  commentId: P:Xunit.v3.ITestProcessWithExitCode.ExitCode
+  id: ExitCode
+  parent: v3.2.0.3:Xunit.v3.ITestProcessWithExitCode
+  langs:
+  - csharp
+  - vb
+  name: ExitCode
+  nameWithType: ITestProcessWithExitCode.ExitCode
+  fullName: Xunit.v3.ITestProcessWithExitCode.ExitCode
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessWithExitCode.cs
+      branch: 216a74a29281094873c8be5b9a9d755fc534bd9e
+      repo: https://github.com/xunit/xunit
+    id: ExitCode
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessWithExitCode.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    Gets the exit code that the process exited with. If the process has not yet exited,
+
+    or the exit code was unknown, will return <code>null</code>.
+  remarks: >-
+    Since disposing of <xref href="v3.2.0.3:Xunit.v3.ITestProcess" data-throw-if-not-resolved="false"></xref> ensures for the orderly shutdown of the
+
+    process (for example, ensuring that all the standard output has been consumed after the
+
+    process has exited), it should remain legal to retrieve the exit code even after the
+
+    original process object has been disposed.
+  example: []
+  syntax:
+    content: int? ExitCode { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: ReadOnly Property ExitCode As Integer?
+  overload: v3.2.0.3:Xunit.v3.ITestProcessWithExitCode.ExitCode*
+references:
+- uid: v3.2.0.3:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.2.0.3:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.2.0.3:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.2.0.3:Xunit.v3.ITestProcess
+  commentId: T:Xunit.v3.ITestProcess
+  parent: v3.2.0.3:Xunit.v3
+  href: Xunit.v3.ITestProcess.html
+  name: ITestProcess
+  nameWithType: ITestProcess
+  fullName: Xunit.v3.ITestProcess
+- uid: v3.2.0.3:Xunit.v3.ITestProcessWithExitCode.ExitCode*
+  commentId: Overload:Xunit.v3.ITestProcessWithExitCode.ExitCode
+  href: Xunit.v3.ITestProcessWithExitCode.ExitCode.html#Xunit_v3_ITestProcessWithExitCode_ExitCode
+  name: ExitCode
+  nameWithType: ITestProcessWithExitCode.ExitCode
+  fullName: Xunit.v3.ITestProcessWithExitCode.ExitCode
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages
