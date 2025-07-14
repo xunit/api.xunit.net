@@ -1,0 +1,1042 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  commentId: T:Xunit.Sdk.DisposalTracker
+  id: DisposalTracker
+  parent: v3.3.0.0:Xunit.Sdk
+  children:
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.Add(System.Object)
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.AddRange(System.Collections.Generic.IEnumerable{System.Object})
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.Clear
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync
+  - v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects
+  langs:
+  - csharp
+  - vb
+  name: DisposalTracker
+  nameWithType: DisposalTracker
+  fullName: Xunit.Sdk.DisposalTracker
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: DisposalTracker
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Tracks disposable objects, and disposes them in the reverse order they were added to
+
+    the tracker. Supports both <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> and <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>.
+
+    You can either directly dispose this object (via <xref href="v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync" data-throw-if-not-resolved="false"></xref>), or you
+
+    can enumerate the items contained inside of it (via <xref href="v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects" data-throw-if-not-resolved="false"></xref>).
+
+    Also supports hand-registering disposal actions via <xref href="v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func%7bSystem.Threading.Tasks.ValueTask%7d)" data-throw-if-not-resolved="false"></xref>. Note that an object implements both interfaces,
+
+    this will *only* call <xref href="System.IAsyncDisposable.DisposeAsync" data-throw-if-not-resolved="false"></xref> and will not
+
+    call <xref href="System.IDisposable.Dispose" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class DisposalTracker : IAsyncDisposable'
+    content.vb: Public Class DisposalTracker Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects
+  commentId: P:Xunit.Sdk.DisposalTracker.TrackedObjects
+  id: TrackedObjects
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: TrackedObjects
+  nameWithType: DisposalTracker.TrackedObjects
+  fullName: Xunit.Sdk.DisposalTracker.TrackedObjects
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: TrackedObjects
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 27
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a list of the items that are currently being tracked.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<object> TrackedObjects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Object}
+    content.vb: Public ReadOnly Property TrackedObjects As IReadOnlyCollection(Of Object)
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects*
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.Add(System.Object)
+  commentId: M:Xunit.Sdk.DisposalTracker.Add(System.Object)
+  id: Add(System.Object)
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: Add(object?)
+  nameWithType: DisposalTracker.Add(object?)
+  fullName: Xunit.Sdk.DisposalTracker.Add(object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: Add
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 45
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Add an object to be disposed. It may optionally support <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref>
+
+    and/or <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(object? @object)
+    parameters:
+    - id: object
+      type: System.Object
+      description: The object to be disposed.
+    content.vb: Public Sub Add([object] As Object)
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.Add*
+  nameWithType.vb: DisposalTracker.Add(Object)
+  fullName.vb: Xunit.Sdk.DisposalTracker.Add(Object)
+  name.vb: Add(Object)
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  commentId: M:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  id: AddAction(System.Action)
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: AddAction(Action)
+  nameWithType: DisposalTracker.AddAction(Action)
+  fullName: Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: AddAction
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Add an action to the list of things to be done during disposal.
+  example: []
+  syntax:
+    content: public void AddAction(Action cleanupAction)
+    parameters:
+    - id: cleanupAction
+      type: System.Action
+      description: The cleanup action.
+    content.vb: Public Sub AddAction(cleanupAction As Action)
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction*
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  commentId: M:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  id: AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: AddAsyncAction(Func<ValueTask>)
+  nameWithType: DisposalTracker.AddAsyncAction(Func<ValueTask>)
+  fullName: Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func<System.Threading.Tasks.ValueTask>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: AddAsyncAction
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 68
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Add an action to the list of things to be done during disposal.
+  example: []
+  syntax:
+    content: public void AddAsyncAction(Func<ValueTask> cleanupAction)
+    parameters:
+    - id: cleanupAction
+      type: System.Func{System.Threading.Tasks.ValueTask}
+      description: The cleanup action.
+    content.vb: Public Sub AddAsyncAction(cleanupAction As Func(Of ValueTask))
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction*
+  nameWithType.vb: DisposalTracker.AddAsyncAction(Func(Of ValueTask))
+  fullName.vb: Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func(Of System.Threading.Tasks.ValueTask))
+  name.vb: AddAsyncAction(Func(Of ValueTask))
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddRange(System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:Xunit.Sdk.DisposalTracker.AddRange(System.Collections.Generic.IEnumerable{System.Object})
+  id: AddRange(System.Collections.Generic.IEnumerable{System.Object})
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<object?>)
+  nameWithType: DisposalTracker.AddRange(IEnumerable<object?>)
+  fullName: Xunit.Sdk.DisposalTracker.AddRange(System.Collections.Generic.IEnumerable<object?>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: AddRange
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 85
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Add a collection of objects to be disposed. They may optionally support <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref>
+
+    and/or <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void AddRange(IEnumerable<object?> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: The objects to be disposed.
+    content.vb: Public Sub AddRange(collection As IEnumerable(Of Object))
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddRange*
+  nameWithType.vb: DisposalTracker.AddRange(IEnumerable(Of Object))
+  fullName.vb: Xunit.Sdk.DisposalTracker.AddRange(System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: AddRange(IEnumerable(Of Object))
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.Clear
+  commentId: M:Xunit.Sdk.DisposalTracker.Clear
+  id: Clear
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: DisposalTracker.Clear()
+  fullName: Xunit.Sdk.DisposalTracker.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: Clear
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 101
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Removes all objects from the disposal tracker.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.Clear*
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync
+  commentId: M:Xunit.Sdk.DisposalTracker.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.0.0:Xunit.Sdk.DisposalTracker
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: DisposalTracker.DisposeAsync()
+  fullName: Xunit.Sdk.DisposalTracker.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/DisposalTracker.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.common/Utility/DisposalTracker.cs
+    startLine: 117
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Disposes all the objects that were added to the disposal tracker, in the reverse order
+
+    of which they were added. For any object which implements both <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref> we will favor <xref href="System.IAsyncDisposable.DisposeAsync" data-throw-if-not-resolved="false"></xref>
+
+    and not call <xref href="System.IDisposable.Dispose" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync
+  commentId: M:Xunit.Sdk.DisposalTracker.DisposeAsync
+  href: Xunit.Sdk.DisposalTracker.DisposeAsync.html#Xunit_Sdk_DisposalTracker_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: DisposalTracker.DisposeAsync()
+  fullName: Xunit.Sdk.DisposalTracker.DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Sdk.DisposalTracker.DisposeAsync.html#Xunit_Sdk_DisposalTracker_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Sdk.DisposalTracker.DisposeAsync.html#Xunit_Sdk_DisposalTracker_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects
+  commentId: P:Xunit.Sdk.DisposalTracker.TrackedObjects
+  href: Xunit.Sdk.DisposalTracker.TrackedObjects.html#Xunit_Sdk_DisposalTracker_TrackedObjects
+  name: TrackedObjects
+  nameWithType: DisposalTracker.TrackedObjects
+  fullName: Xunit.Sdk.DisposalTracker.TrackedObjects
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  commentId: M:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  isExternal: true
+  href: Xunit.Sdk.DisposalTracker.AddAction.html#Xunit_Sdk_DisposalTracker_AddAction_System_Action_
+  name: AddAction(Action)
+  nameWithType: DisposalTracker.AddAction(Action)
+  fullName: Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+    name: AddAction
+    href: Xunit.Sdk.DisposalTracker.AddAction.html#Xunit_Sdk_DisposalTracker_AddAction_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction(System.Action)
+    name: AddAction
+    href: Xunit.Sdk.DisposalTracker.AddAction.html#Xunit_Sdk_DisposalTracker_AddAction_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  commentId: M:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+  isExternal: true
+  href: Xunit.Sdk.DisposalTracker.AddAsyncAction.html#Xunit_Sdk_DisposalTracker_AddAsyncAction_System_Func_System_Threading_Tasks_ValueTask__
+  name: AddAsyncAction(Func<ValueTask>)
+  nameWithType: DisposalTracker.AddAsyncAction(Func<ValueTask>)
+  fullName: Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func<System.Threading.Tasks.ValueTask>)
+  nameWithType.vb: DisposalTracker.AddAsyncAction(Func(Of ValueTask))
+  fullName.vb: Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func(Of System.Threading.Tasks.ValueTask))
+  name.vb: AddAsyncAction(Func(Of ValueTask))
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+    name: AddAsyncAction
+    href: Xunit.Sdk.DisposalTracker.AddAsyncAction.html#Xunit_Sdk_DisposalTracker_AddAsyncAction_System_Func_System_Threading_Tasks_ValueTask__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction(System.Func{System.Threading.Tasks.ValueTask})
+    name: AddAsyncAction
+    href: Xunit.Sdk.DisposalTracker.AddAsyncAction.html#Xunit_Sdk_DisposalTracker_AddAsyncAction_System_Func_System_Threading_Tasks_ValueTask__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: )
+  - name: )
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.3.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.TrackedObjects*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.TrackedObjects
+  href: Xunit.Sdk.DisposalTracker.TrackedObjects.html#Xunit_Sdk_DisposalTracker_TrackedObjects
+  name: TrackedObjects
+  nameWithType: DisposalTracker.TrackedObjects
+  fullName: Xunit.Sdk.DisposalTracker.TrackedObjects
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Object}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<object>
+  nameWithType: IReadOnlyCollection<object>
+  fullName: System.Collections.Generic.IReadOnlyCollection<object>
+  nameWithType.vb: IReadOnlyCollection(Of Object)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Object)
+  name.vb: IReadOnlyCollection(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.Add*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.Add
+  href: Xunit.Sdk.DisposalTracker.Add.html#Xunit_Sdk_DisposalTracker_Add_System_Object_
+  name: Add
+  nameWithType: DisposalTracker.Add
+  fullName: Xunit.Sdk.DisposalTracker.Add
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAction*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.AddAction
+  href: Xunit.Sdk.DisposalTracker.AddAction.html#Xunit_Sdk_DisposalTracker_AddAction_System_Action_
+  name: AddAction
+  nameWithType: DisposalTracker.AddAction
+  fullName: Xunit.Sdk.DisposalTracker.AddAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddAsyncAction*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.AddAsyncAction
+  href: Xunit.Sdk.DisposalTracker.AddAsyncAction.html#Xunit_Sdk_DisposalTracker_AddAsyncAction_System_Func_System_Threading_Tasks_ValueTask__
+  name: AddAsyncAction
+  nameWithType: DisposalTracker.AddAsyncAction
+  fullName: Xunit.Sdk.DisposalTracker.AddAsyncAction
+- uid: System.Func{System.Threading.Tasks.ValueTask}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask>
+  nameWithType: Func<ValueTask>
+  fullName: System.Func<System.Threading.Tasks.ValueTask>
+  nameWithType.vb: Func(Of ValueTask)
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask)
+  name.vb: Func(Of ValueTask)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.AddRange*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.AddRange
+  href: Xunit.Sdk.DisposalTracker.AddRange.html#Xunit_Sdk_DisposalTracker_AddRange_System_Collections_Generic_IEnumerable_System_Object__
+  name: AddRange
+  nameWithType: DisposalTracker.AddRange
+  fullName: Xunit.Sdk.DisposalTracker.AddRange
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.Clear*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.Clear
+  href: Xunit.Sdk.DisposalTracker.Clear.html#Xunit_Sdk_DisposalTracker_Clear
+  name: Clear
+  nameWithType: DisposalTracker.Clear
+  fullName: Xunit.Sdk.DisposalTracker.Clear
+- uid: v3.3.0.0:Xunit.Sdk.DisposalTracker.DisposeAsync*
+  commentId: Overload:Xunit.Sdk.DisposalTracker.DisposeAsync
+  href: Xunit.Sdk.DisposalTracker.DisposeAsync.html#Xunit_Sdk_DisposalTracker_DisposeAsync
+  name: DisposeAsync
+  nameWithType: DisposalTracker.DisposeAsync
+  fullName: Xunit.Sdk.DisposalTracker.DisposeAsync
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

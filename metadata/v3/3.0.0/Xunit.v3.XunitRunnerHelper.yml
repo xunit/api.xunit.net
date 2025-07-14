@@ -1,0 +1,1067 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  commentId: T:Xunit.v3.XunitRunnerHelper
+  id: XunitRunnerHelper
+  parent: v3.3.0.0:Xunit.v3
+  children:
+  - v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTest(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.Sdk.ITest,System.Exception)
+  - v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Exception,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - v3.3.0.0:Xunit.v3.XunitRunnerHelper.RunXunitTestCase(Xunit.v3.IXunitTestCase,Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.v3.ExceptionAggregator,Xunit.Sdk.ExplicitOption,System.Object[])
+  - v3.3.0.0:Xunit.v3.XunitRunnerHelper.SkipTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: XunitRunnerHelper
+  nameWithType: XunitRunnerHelper
+  fullName: Xunit.v3.XunitRunnerHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: XunitRunnerHelper
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Helper functions for xUnit.net v3 runners.
+  example: []
+  syntax:
+    content: public static class XunitRunnerHelper
+    content.vb: Public Module XunitRunnerHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTest(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.Sdk.ITest,System.Exception)
+  commentId: M:Xunit.v3.XunitRunnerHelper.FailTest(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.Sdk.ITest,System.Exception)
+  id: FailTest(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.Sdk.ITest,System.Exception)
+  parent: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  langs:
+  - csharp
+  - vb
+  name: FailTest(IMessageBus, CancellationTokenSource, ITest, Exception)
+  nameWithType: XunitRunnerHelper.FailTest(IMessageBus, CancellationTokenSource, ITest, Exception)
+  fullName: Xunit.v3.XunitRunnerHelper.FailTest(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, Xunit.Sdk.ITest, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: FailTest
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Fail a test with the given exception.
+  example: []
+  syntax:
+    content: public static RunSummary FailTest(IMessageBus messageBus, CancellationTokenSource cancellationTokenSource, ITest test, Exception exception)
+    parameters:
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send the messages to
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source to cancel if requested
+    - id: test
+      type: Xunit.Sdk.ITest
+      description: The test to fail
+    - id: exception
+      type: System.Exception
+      description: The exception to fail the test cases with
+    return:
+      type: Xunit.v3.RunSummary
+    content.vb: Public Shared Function FailTest(messageBus As IMessageBus, cancellationTokenSource As CancellationTokenSource, test As ITest, exception As Exception) As RunSummary
+  overload: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTest*
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  langs:
+  - csharp
+  - vb
+  name: FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, string, bool, bool, bool, bool, bool)
+  nameWithType: XunitRunnerHelper.FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, string, bool, bool, bool, bool, bool)
+  fullName: Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, string, bool, bool, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: FailTestCases
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 117
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Fail a set of test cases with the given message.
+  example: []
+  syntax:
+    content: public static RunSummary FailTestCases(IMessageBus messageBus, CancellationTokenSource cancellationTokenSource, IReadOnlyCollection<ITestCase> testCases, string messageFormat, bool sendTestCollectionMessages = false, bool sendTestClassMessages = false, bool sendTestMethodMessages = false, bool sendTestCaseMessages = true, bool sendTestMessages = true)
+    parameters:
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send the messages to
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source to cancel if requested
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+      description: The test cases to fail
+    - id: messageFormat
+      type: System.String
+      description: >-
+        A message template where <code>{0}</code> will be replaced with the
+            display name of the test case during failure processing
+    - id: sendTestCollectionMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestClassMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestClassStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestClassFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMethodMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestCaseMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    return:
+      type: Xunit.v3.RunSummary
+    content.vb: Public Shared Function FailTestCases(messageBus As IMessageBus, cancellationTokenSource As CancellationTokenSource, testCases As IReadOnlyCollection(Of ITestCase), messageFormat As String, sendTestCollectionMessages As Boolean = False, sendTestClassMessages As Boolean = False, sendTestMethodMessages As Boolean = False, sendTestCaseMessages As Boolean = True, sendTestMessages As Boolean = True) As RunSummary
+  overload: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases*
+  nameWithType.vb: XunitRunnerHelper.FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  name.vb: FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Exception,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Exception,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: FailTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Exception,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  langs:
+  - csharp
+  - vb
+  name: FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, Exception, bool, bool, bool, bool, bool)
+  nameWithType: XunitRunnerHelper.FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, Exception, bool, bool, bool, bool, bool)
+  fullName: Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, System.Exception, bool, bool, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: FailTestCases
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 167
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Fail a set of test cases with the given exception.
+  example: []
+  syntax:
+    content: public static RunSummary FailTestCases(IMessageBus messageBus, CancellationTokenSource cancellationTokenSource, IReadOnlyCollection<ITestCase> testCases, Exception exception, bool sendTestCollectionMessages = false, bool sendTestClassMessages = false, bool sendTestMethodMessages = false, bool sendTestCaseMessages = true, bool sendTestMessages = true)
+    parameters:
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send the messages to
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source to cancel if requested
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+      description: The test cases to fail
+    - id: exception
+      type: System.Exception
+      description: The exception to fail the test cases with
+    - id: sendTestCollectionMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestClassMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestClassStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestClassFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMethodMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestCaseMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    return:
+      type: Xunit.v3.RunSummary
+    content.vb: Public Shared Function FailTestCases(messageBus As IMessageBus, cancellationTokenSource As CancellationTokenSource, testCases As IReadOnlyCollection(Of ITestCase), exception As Exception, sendTestCollectionMessages As Boolean = False, sendTestClassMessages As Boolean = False, sendTestMethodMessages As Boolean = False, sendTestCaseMessages As Boolean = True, sendTestMessages As Boolean = True) As RunSummary
+  overload: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases*
+  nameWithType.vb: XunitRunnerHelper.FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), Exception, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: Xunit.v3.XunitRunnerHelper.FailTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), System.Exception, Boolean, Boolean, Boolean, Boolean, Boolean)
+  name.vb: FailTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), Exception, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.RunXunitTestCase(Xunit.v3.IXunitTestCase,Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.v3.ExceptionAggregator,Xunit.Sdk.ExplicitOption,System.Object[])
+  commentId: M:Xunit.v3.XunitRunnerHelper.RunXunitTestCase(Xunit.v3.IXunitTestCase,Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.v3.ExceptionAggregator,Xunit.Sdk.ExplicitOption,System.Object[])
+  id: RunXunitTestCase(Xunit.v3.IXunitTestCase,Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,Xunit.v3.ExceptionAggregator,Xunit.Sdk.ExplicitOption,System.Object[])
+  parent: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  langs:
+  - csharp
+  - vb
+  name: RunXunitTestCase(IXunitTestCase, IMessageBus, CancellationTokenSource, ExceptionAggregator, ExplicitOption, object?[])
+  nameWithType: XunitRunnerHelper.RunXunitTestCase(IXunitTestCase, IMessageBus, CancellationTokenSource, ExceptionAggregator, ExplicitOption, object?[])
+  fullName: Xunit.v3.XunitRunnerHelper.RunXunitTestCase(Xunit.v3.IXunitTestCase, Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, Xunit.v3.ExceptionAggregator, Xunit.Sdk.ExplicitOption, object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: RunXunitTestCase
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 213
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Runs a single test case (which implements <xref href="v3.3.0.0:Xunit.v3.IXunitTestCase" data-throw-if-not-resolved="false"></xref>) using
+
+    the <xref href="v3.3.0.0:Xunit.v3.XunitTestCaseRunner" data-throw-if-not-resolved="false"></xref> after enumerating all tests.
+  example: []
+  syntax:
+    content: public static ValueTask<RunSummary> RunXunitTestCase(IXunitTestCase testCase, IMessageBus messageBus, CancellationTokenSource cancellationTokenSource, ExceptionAggregator aggregator, ExplicitOption explicitOption, object?[] constructorArguments)
+    parameters:
+    - id: testCase
+      type: Xunit.v3.IXunitTestCase
+      description: The test case to run
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send the messages to
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source to cancel if requested
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The exception aggregator to record exceptions to
+    - id: explicitOption
+      type: Xunit.Sdk.ExplicitOption
+      description: A flag to indicate which types of tests to run (non-explicit, explicit, or both)
+    - id: constructorArguments
+      type: System.Object[]
+      description: The arguments to pass to the test class constructor
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+      description: ''
+    content.vb: Public Shared Function RunXunitTestCase(testCase As IXunitTestCase, messageBus As IMessageBus, cancellationTokenSource As CancellationTokenSource, aggregator As ExceptionAggregator, explicitOption As ExplicitOption, constructorArguments As Object()) As ValueTask(Of RunSummary)
+  overload: v3.3.0.0:Xunit.v3.XunitRunnerHelper.RunXunitTestCase*
+  nameWithType.vb: XunitRunnerHelper.RunXunitTestCase(IXunitTestCase, IMessageBus, CancellationTokenSource, ExceptionAggregator, ExplicitOption, Object())
+  fullName.vb: Xunit.v3.XunitRunnerHelper.RunXunitTestCase(Xunit.v3.IXunitTestCase, Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, Xunit.v3.ExceptionAggregator, Xunit.Sdk.ExplicitOption, Object())
+  name.vb: RunXunitTestCase(IXunitTestCase, IMessageBus, CancellationTokenSource, ExceptionAggregator, ExplicitOption, Object())
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.SkipTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Xunit.v3.XunitRunnerHelper.SkipTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: SkipTestCases(Xunit.v3.IMessageBus,System.Threading.CancellationTokenSource,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: v3.3.0.0:Xunit.v3.XunitRunnerHelper
+  langs:
+  - csharp
+  - vb
+  name: SkipTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, string, bool, bool, bool, bool, bool)
+  nameWithType: XunitRunnerHelper.SkipTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection<ITestCase>, string, bool, bool, bool, bool, bool)
+  fullName: Xunit.v3.XunitRunnerHelper.SkipTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, string, bool, bool, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: SkipTestCases
+    path: ../src/xunit.v3.core/Internal/XunitRunnerHelper.cs
+    startLine: 283
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Skips a set of test cases with the given skip reason.
+  example: []
+  syntax:
+    content: public static RunSummary SkipTestCases(IMessageBus messageBus, CancellationTokenSource cancellationTokenSource, IReadOnlyCollection<ITestCase> testCases, string skipReason, bool sendTestCollectionMessages = false, bool sendTestClassMessages = false, bool sendTestMethodMessages = false, bool sendTestCaseMessages = true, bool sendTestMessages = true)
+    parameters:
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to send the messages to
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source to cancel if requested
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+      description: The test cases to fail
+    - id: skipReason
+      type: System.String
+      description: The skip reason
+    - id: sendTestCollectionMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCollectionFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestClassMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestClassStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestClassFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMethodMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestMethodFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestCaseMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestCaseFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    - id: sendTestMessages
+      type: System.Boolean
+      description: >-
+        Set to <code>true</code> to send <xref href="v3.3.0.0:Xunit.Sdk.ITestStarting" data-throw-if-not-resolved="false"></xref>
+            and <xref href="v3.3.0.0:Xunit.Sdk.ITestFinished" data-throw-if-not-resolved="false"></xref> messages; set to <code>false</code> to skip
+    return:
+      type: Xunit.v3.RunSummary
+    content.vb: Public Shared Function SkipTestCases(messageBus As IMessageBus, cancellationTokenSource As CancellationTokenSource, testCases As IReadOnlyCollection(Of ITestCase), skipReason As String, sendTestCollectionMessages As Boolean = False, sendTestClassMessages As Boolean = False, sendTestMethodMessages As Boolean = False, sendTestCaseMessages As Boolean = True, sendTestMessages As Boolean = True) As RunSummary
+  overload: v3.3.0.0:Xunit.v3.XunitRunnerHelper.SkipTestCases*
+  nameWithType.vb: XunitRunnerHelper.SkipTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: Xunit.v3.XunitRunnerHelper.SkipTestCases(Xunit.v3.IMessageBus, System.Threading.CancellationTokenSource, System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  name.vb: SkipTestCases(IMessageBus, CancellationTokenSource, IReadOnlyCollection(Of ITestCase), String, Boolean, Boolean, Boolean, Boolean, Boolean)
+references:
+- uid: v3.3.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTest*
+  commentId: Overload:Xunit.v3.XunitRunnerHelper.FailTest
+  href: Xunit.v3.XunitRunnerHelper.FailTest.html#Xunit_v3_XunitRunnerHelper_FailTest_Xunit_v3_IMessageBus_System_Threading_CancellationTokenSource_Xunit_Sdk_ITest_System_Exception_
+  name: FailTest
+  nameWithType: XunitRunnerHelper.FailTest
+  fullName: Xunit.v3.XunitRunnerHelper.FailTest
+- uid: v3.3.0.0:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3.3.0.0:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: v3.3.0.0:Xunit.Sdk.ITest
+  commentId: T:Xunit.Sdk.ITest
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITest.html
+  name: ITest
+  nameWithType: ITest
+  fullName: Xunit.Sdk.ITest
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: v3.3.0.0:Xunit.v3.RunSummary
+  commentId: T:Xunit.v3.RunSummary
+  parent: v3.3.0.0:Xunit.v3
+  href: Xunit.v3.RunSummary.html
+  name: RunSummary
+  nameWithType: RunSummary
+  fullName: Xunit.v3.RunSummary
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: v3.3.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.0:Xunit.Sdk.ITestCollectionStarting
+  commentId: T:Xunit.Sdk.ITestCollectionStarting
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionStarting.html
+  name: ITestCollectionStarting
+  nameWithType: ITestCollectionStarting
+  fullName: Xunit.Sdk.ITestCollectionStarting
+- uid: v3.3.0.0:Xunit.Sdk.ITestCollectionFinished
+  commentId: T:Xunit.Sdk.ITestCollectionFinished
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionFinished.html
+  name: ITestCollectionFinished
+  nameWithType: ITestCollectionFinished
+  fullName: Xunit.Sdk.ITestCollectionFinished
+- uid: v3.3.0.0:Xunit.Sdk.ITestClassStarting
+  commentId: T:Xunit.Sdk.ITestClassStarting
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassStarting.html
+  name: ITestClassStarting
+  nameWithType: ITestClassStarting
+  fullName: Xunit.Sdk.ITestClassStarting
+- uid: v3.3.0.0:Xunit.Sdk.ITestClassFinished
+  commentId: T:Xunit.Sdk.ITestClassFinished
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassFinished.html
+  name: ITestClassFinished
+  nameWithType: ITestClassFinished
+  fullName: Xunit.Sdk.ITestClassFinished
+- uid: v3.3.0.0:Xunit.Sdk.ITestMethodStarting
+  commentId: T:Xunit.Sdk.ITestMethodStarting
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodStarting.html
+  name: ITestMethodStarting
+  nameWithType: ITestMethodStarting
+  fullName: Xunit.Sdk.ITestMethodStarting
+- uid: v3.3.0.0:Xunit.Sdk.ITestMethodFinished
+  commentId: T:Xunit.Sdk.ITestMethodFinished
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodFinished.html
+  name: ITestMethodFinished
+  nameWithType: ITestMethodFinished
+  fullName: Xunit.Sdk.ITestMethodFinished
+- uid: v3.3.0.0:Xunit.Sdk.ITestCaseStarting
+  commentId: T:Xunit.Sdk.ITestCaseStarting
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseStarting.html
+  name: ITestCaseStarting
+  nameWithType: ITestCaseStarting
+  fullName: Xunit.Sdk.ITestCaseStarting
+- uid: v3.3.0.0:Xunit.Sdk.ITestCaseFinished
+  commentId: T:Xunit.Sdk.ITestCaseFinished
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseFinished.html
+  name: ITestCaseFinished
+  nameWithType: ITestCaseFinished
+  fullName: Xunit.Sdk.ITestCaseFinished
+- uid: v3.3.0.0:Xunit.Sdk.ITestStarting
+  commentId: T:Xunit.Sdk.ITestStarting
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestStarting.html
+  name: ITestStarting
+  nameWithType: ITestStarting
+  fullName: Xunit.Sdk.ITestStarting
+- uid: v3.3.0.0:Xunit.Sdk.ITestFinished
+  commentId: T:Xunit.Sdk.ITestFinished
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFinished.html
+  name: ITestFinished
+  nameWithType: ITestFinished
+  fullName: Xunit.Sdk.ITestFinished
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.FailTestCases*
+  commentId: Overload:Xunit.v3.XunitRunnerHelper.FailTestCases
+  href: Xunit.v3.XunitRunnerHelper.FailTestCases.html#Xunit_v3_XunitRunnerHelper_FailTestCases_Xunit_v3_IMessageBus_System_Threading_CancellationTokenSource_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: FailTestCases
+  nameWithType: XunitRunnerHelper.FailTestCases
+  fullName: Xunit.v3.XunitRunnerHelper.FailTestCases
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ITestCase>
+  nameWithType: IReadOnlyCollection<ITestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>
+  nameWithType.vb: IReadOnlyCollection(Of ITestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase)
+  name.vb: IReadOnlyCollection(Of ITestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.0.0:Xunit.v3.IXunitTestCase
+  commentId: T:Xunit.v3.IXunitTestCase
+  parent: v3.3.0.0:Xunit.v3
+  href: Xunit.v3.IXunitTestCase.html
+  name: IXunitTestCase
+  nameWithType: IXunitTestCase
+  fullName: Xunit.v3.IXunitTestCase
+- uid: v3.3.0.0:Xunit.v3.XunitTestCaseRunner
+  commentId: T:Xunit.v3.XunitTestCaseRunner
+  parent: v3.3.0.0:Xunit.v3
+  href: Xunit.v3.XunitTestCaseRunner.html
+  name: XunitTestCaseRunner
+  nameWithType: XunitTestCaseRunner
+  fullName: Xunit.v3.XunitTestCaseRunner
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.RunXunitTestCase*
+  commentId: Overload:Xunit.v3.XunitRunnerHelper.RunXunitTestCase
+  href: Xunit.v3.XunitRunnerHelper.RunXunitTestCase.html#Xunit_v3_XunitRunnerHelper_RunXunitTestCase_Xunit_v3_IXunitTestCase_Xunit_v3_IMessageBus_System_Threading_CancellationTokenSource_Xunit_v3_ExceptionAggregator_Xunit_Sdk_ExplicitOption_System_Object___
+  name: RunXunitTestCase
+  nameWithType: XunitRunnerHelper.RunXunitTestCase
+  fullName: Xunit.v3.XunitRunnerHelper.RunXunitTestCase
+- uid: v3.3.0.0:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3.3.0.0:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: v3.3.0.0:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<RunSummary>
+  nameWithType: ValueTask<RunSummary>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.RunSummary>
+  nameWithType.vb: ValueTask(Of RunSummary)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.RunSummary)
+  name.vb: ValueTask(Of RunSummary)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3.3.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.0.0:Xunit.v3.XunitRunnerHelper.SkipTestCases*
+  commentId: Overload:Xunit.v3.XunitRunnerHelper.SkipTestCases
+  href: Xunit.v3.XunitRunnerHelper.SkipTestCases.html#Xunit_v3_XunitRunnerHelper_SkipTestCases_Xunit_v3_IMessageBus_System_Threading_CancellationTokenSource_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: SkipTestCases
+  nameWithType: XunitRunnerHelper.SkipTestCases
+  fullName: Xunit.v3.XunitRunnerHelper.SkipTestCases
+memberLayout: SeparatePages

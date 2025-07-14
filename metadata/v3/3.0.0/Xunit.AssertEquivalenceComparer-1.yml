@@ -1,0 +1,847 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+  commentId: T:Xunit.AssertEquivalenceComparer`1
+  id: AssertEquivalenceComparer`1
+  parent: v3.3.0.0:Xunit
+  children:
+  - v3.3.0.0:Xunit.AssertEquivalenceComparer`1.#ctor(System.Boolean)
+  - v3.3.0.0:Xunit.AssertEquivalenceComparer`1.Equals(`0,`0)
+  - v3.3.0.0:Xunit.AssertEquivalenceComparer`1.GetHashCode(`0)
+  langs:
+  - csharp
+  - vb
+  name: AssertEquivalenceComparer<T>
+  nameWithType: AssertEquivalenceComparer<T>
+  fullName: Xunit.AssertEquivalenceComparer<T>
+  type: Class
+  source:
+    remote:
+      path: Sdk/AssertEquivalenceComparer.cs
+      branch: fc9ea5773e97df5cfb3f146493406365fe0d5a9f
+      repo: https://github.com/xunit/assert.xunit
+    id: AssertEquivalenceComparer
+    path: ../src/xunit.v3.assert/Asserts/Sdk/AssertEquivalenceComparer.cs
+    startLine: 68
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit
+  summary: >-
+    An implementation of <xref href="System.Collections.Generic.IEqualityComparer%601" data-throw-if-not-resolved="false"></xref> that uses the same logic
+
+    from <xref href="v3.3.0.0:Xunit.Assert.Equivalent(System.Object%2cSystem.Object%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    A generic version of this is provided so that it can be used with
+
+    <xref href="v3.3.0.0:Xunit.Assert.Equal%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.Collections.Generic.IEqualityComparer%7b%60%600%7d)" data-throw-if-not-resolved="false"></xref>
+
+    to ensure strict ordering of collections while doing equivalence comparisons for
+
+    the items inside the collection, per <a href="https://github.com/xunit/xunit/discussions/3186">https://github.com/xunit/xunit/discussions/3186</a>.
+  example: []
+  syntax:
+    content: 'public class AssertEquivalenceComparer<T> : IEqualityComparer<T>'
+    typeParameters:
+    - id: T
+      description: The item type being compared
+    content.vb: Public Class AssertEquivalenceComparer(Of T) Implements IEqualityComparer(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AssertEquivalenceComparer(Of T)
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T)
+  name.vb: AssertEquivalenceComparer(Of T)
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.#ctor(System.Boolean)
+  commentId: M:Xunit.AssertEquivalenceComparer`1.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+  langs:
+  - csharp
+  - vb
+  name: AssertEquivalenceComparer(bool)
+  nameWithType: AssertEquivalenceComparer<T>.AssertEquivalenceComparer(bool)
+  fullName: Xunit.AssertEquivalenceComparer<T>.AssertEquivalenceComparer(bool)
+  type: Constructor
+  source:
+    remote:
+      path: Sdk/AssertEquivalenceComparer.cs
+      branch: fc9ea5773e97df5cfb3f146493406365fe0d5a9f
+      repo: https://github.com/xunit/assert.xunit
+    id: .ctor
+    path: ../src/xunit.v3.assert/Asserts/Sdk/AssertEquivalenceComparer.cs
+    startLine: 78
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit
+  summary: Initializes a new instance of the <xref href="v3.3.0.0:Xunit.AssertEquivalenceComparer%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AssertEquivalenceComparer(bool strict)
+    parameters:
+    - id: strict
+      type: System.Boolean
+      description: A flag indicating whether comparisons should be strict.
+    content.vb: Public Sub New(strict As Boolean)
+  overload: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.#ctor*
+  nameWithType.vb: AssertEquivalenceComparer(Of T).New(Boolean)
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).New(Boolean)
+  name.vb: New(Boolean)
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.Equals(`0,`0)
+  commentId: M:Xunit.AssertEquivalenceComparer`1.Equals(`0,`0)
+  id: Equals(`0,`0)
+  parent: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(T?, T?)
+  nameWithType: AssertEquivalenceComparer<T>.Equals(T?, T?)
+  fullName: Xunit.AssertEquivalenceComparer<T>.Equals(T?, T?)
+  type: Method
+  source:
+    remote:
+      path: Sdk/AssertEquivalenceComparer.cs
+      branch: fc9ea5773e97df5cfb3f146493406365fe0d5a9f
+      repo: https://github.com/xunit/assert.xunit
+    id: Equals
+    path: ../src/xunit.v3.assert/Asserts/Sdk/AssertEquivalenceComparer.cs
+    startLine: 82
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit
+  example: []
+  syntax:
+    content: public bool Equals(T? x, T? y)
+    parameters:
+    - id: x
+      type: '{T}'
+    - id: y
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(x As T, y As T) As Boolean
+  overload: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.Equals*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}.Equals({T},{T})
+  nameWithType.vb: AssertEquivalenceComparer(Of T).Equals(T, T)
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).Equals(T, T)
+  name.vb: Equals(T, T)
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.GetHashCode(`0)
+  commentId: M:Xunit.AssertEquivalenceComparer`1.GetHashCode(`0)
+  id: GetHashCode(`0)
+  parent: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(T)
+  nameWithType: AssertEquivalenceComparer<T>.GetHashCode(T)
+  fullName: Xunit.AssertEquivalenceComparer<T>.GetHashCode(T)
+  type: Method
+  source:
+    remote:
+      path: Sdk/AssertEquivalenceComparer.cs
+      branch: fc9ea5773e97df5cfb3f146493406365fe0d5a9f
+      repo: https://github.com/xunit/assert.xunit
+    id: GetHashCode
+    path: ../src/xunit.v3.assert/Asserts/Sdk/AssertEquivalenceComparer.cs
+    startLine: 96
+  assemblies:
+  - xunit.v3.assert
+  namespace: Xunit
+  example: []
+  syntax:
+    content: public int GetHashCode(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    return:
+      type: System.Int32
+    content.vb: Public Function GetHashCode(obj As T) As Integer
+  overload: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.GetHashCode*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}.GetHashCode({T})
+  nameWithType.vb: AssertEquivalenceComparer(Of T).GetHashCode(T)
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).GetHashCode(T)
+references:
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.0.0:Xunit.Assert.Equivalent(System.Object,System.Object,System.Boolean)
+  commentId: M:Xunit.Assert.Equivalent(System.Object,System.Object,System.Boolean)
+  isExternal: true
+  href: Xunit.Assert.Equivalent.html#Xunit_Assert_Equivalent_System_Object_System_Object_System_Boolean_
+  name: Equivalent(object, object, bool)
+  nameWithType: Assert.Equivalent(object, object, bool)
+  fullName: Xunit.Assert.Equivalent(object, object, bool)
+  nameWithType.vb: Assert.Equivalent(Object, Object, Boolean)
+  fullName.vb: Xunit.Assert.Equivalent(Object, Object, Boolean)
+  name.vb: Equivalent(Object, Object, Boolean)
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.Assert.Equivalent(System.Object,System.Object,System.Boolean)
+    name: Equivalent
+    href: Xunit.Assert.Equivalent.html#Xunit_Assert_Equivalent_System_Object_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.Assert.Equivalent(System.Object,System.Object,System.Boolean)
+    name: Equivalent
+    href: Xunit.Assert.Equivalent.html#Xunit_Assert_Equivalent_System_Object_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: v3.3.0.0:Xunit.Assert.Equal``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.Assert.Equal``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.Assert.Equal.html#Xunit_Assert_Equal__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
+  name: Equal<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  nameWithType: Assert.Equal<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  fullName: Xunit.Assert.Equal<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: Assert.Equal(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName.vb: Xunit.Assert.Equal(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Equal(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.Assert.Equal``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+    name: Equal
+    href: Xunit.Assert.Equal.html#Xunit_Assert_Equal__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.Assert.Equal``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+    name: Equal
+    href: Xunit.Assert.Equal.html#Xunit_Assert_Equal__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: v3.3.0.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  commentId: T:System.Collections.Generic.IEqualityComparer{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+  commentId: T:Xunit.AssertEquivalenceComparer`1
+  href: Xunit.AssertEquivalenceComparer-1.html
+  name: AssertEquivalenceComparer<T>
+  nameWithType: AssertEquivalenceComparer<T>
+  fullName: Xunit.AssertEquivalenceComparer<T>
+  nameWithType.vb: AssertEquivalenceComparer(Of T)
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T)
+  name.vb: AssertEquivalenceComparer(Of T)
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+    name: AssertEquivalenceComparer
+    href: Xunit.AssertEquivalenceComparer-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1
+    name: AssertEquivalenceComparer
+    href: Xunit.AssertEquivalenceComparer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.#ctor*
+  commentId: Overload:Xunit.AssertEquivalenceComparer`1.#ctor
+  href: Xunit.AssertEquivalenceComparer-1.-ctor.html#Xunit_AssertEquivalenceComparer_1__ctor_System_Boolean_
+  name: AssertEquivalenceComparer
+  nameWithType: AssertEquivalenceComparer<T>.AssertEquivalenceComparer
+  fullName: Xunit.AssertEquivalenceComparer<T>.AssertEquivalenceComparer
+  nameWithType.vb: AssertEquivalenceComparer(Of T).New
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.Equals*
+  commentId: Overload:Xunit.AssertEquivalenceComparer`1.Equals
+  href: Xunit.AssertEquivalenceComparer-1.Equals.html#Xunit_AssertEquivalenceComparer_1_Equals__0__0_
+  name: Equals
+  nameWithType: AssertEquivalenceComparer<T>.Equals
+  fullName: Xunit.AssertEquivalenceComparer<T>.Equals
+  nameWithType.vb: AssertEquivalenceComparer(Of T).Equals
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).Equals
+- uid: System.Collections.Generic.IEqualityComparer{{T}}.Equals({T},{T})
+  commentId: M:System.Collections.Generic.IEqualityComparer{`0}.Equals(`0,`0)
+  parent: System.Collections.Generic.IEqualityComparer{{T}}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  name: Equals(T, T)
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{`0}.Equals(`0,`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{`0}.Equals(`0,`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  name: Equals(T, T)
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: v3.3.0.0:Xunit.AssertEquivalenceComparer`1.GetHashCode*
+  commentId: Overload:Xunit.AssertEquivalenceComparer`1.GetHashCode
+  href: Xunit.AssertEquivalenceComparer-1.GetHashCode.html#Xunit_AssertEquivalenceComparer_1_GetHashCode__0_
+  name: GetHashCode
+  nameWithType: AssertEquivalenceComparer<T>.GetHashCode
+  fullName: Xunit.AssertEquivalenceComparer<T>.GetHashCode
+  nameWithType.vb: AssertEquivalenceComparer(Of T).GetHashCode
+  fullName.vb: Xunit.AssertEquivalenceComparer(Of T).GetHashCode
+- uid: System.Collections.Generic.IEqualityComparer{{T}}.GetHashCode({T})
+  commentId: M:System.Collections.Generic.IEqualityComparer{`0}.GetHashCode(`0)
+  parent: System.Collections.Generic.IEqualityComparer{{T}}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  name: GetHashCode(T)
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{`0}.GetHashCode(`0)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{`0}.GetHashCode(`0)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  name: GetHashCode(T)
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - name: T
+  - name: )
+memberLayout: SeparatePages

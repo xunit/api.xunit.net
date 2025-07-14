@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkOptions
+  id: ITestFrameworkOptions
+  parent: v3.3.0.0:Xunit.Sdk
+  children:
+  - v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.GetValue``1(System.String)
+  - v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.SetValue``1(System.String,``0)
+  - v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.ToJson
+  langs:
+  - csharp
+  - vb
+  name: ITestFrameworkOptions
+  nameWithType: ITestFrameworkOptions
+  fullName: Xunit.Sdk.ITestFrameworkOptions
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: ITestFrameworkOptions
+    path: ../src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This interface should not be consumed directly; instead, you should
+
+    consume <xref href="v3.3.0.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions" data-throw-if-not-resolved="false"></xref>
+
+    or <xref href="v3.3.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface ITestFrameworkOptions
+    content.vb: Public Interface ITestFrameworkOptions
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.GetValue``1(System.String)
+  commentId: M:Xunit.Sdk.ITestFrameworkOptions.GetValue``1(System.String)
+  id: GetValue``1(System.String)
+  parent: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions
+  langs:
+  - csharp
+  - vb
+  name: GetValue<TValue>(string)
+  nameWithType: ITestFrameworkOptions.GetValue<TValue>(string)
+  fullName: Xunit.Sdk.ITestFrameworkOptions.GetValue<TValue>(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: GetValue
+    path: ../src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets an option value.
+  example: []
+  syntax:
+    content: TValue? GetValue<TValue>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the value.
+    typeParameters:
+    - id: TValue
+      description: The type of the value.
+    return:
+      type: '{TValue}'
+      description: The value.
+    content.vb: Function GetValue(Of TValue)(name As String) As TValue
+  overload: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.GetValue*
+  nameWithType.vb: ITestFrameworkOptions.GetValue(Of TValue)(String)
+  fullName.vb: Xunit.Sdk.ITestFrameworkOptions.GetValue(Of TValue)(String)
+  name.vb: GetValue(Of TValue)(String)
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.SetValue``1(System.String,``0)
+  commentId: M:Xunit.Sdk.ITestFrameworkOptions.SetValue``1(System.String,``0)
+  id: SetValue``1(System.String,``0)
+  parent: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions
+  langs:
+  - csharp
+  - vb
+  name: SetValue<TValue>(string, TValue)
+  nameWithType: ITestFrameworkOptions.SetValue<TValue>(string, TValue)
+  fullName: Xunit.Sdk.ITestFrameworkOptions.SetValue<TValue>(string, TValue)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: SetValue
+    path: ../src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Sets an option value.
+  example: []
+  syntax:
+    content: void SetValue<TValue>(string name, TValue value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the value.
+    - id: value
+      type: '{TValue}'
+      description: The value to be set.
+    typeParameters:
+    - id: TValue
+      description: The type of the value.
+    content.vb: Sub SetValue(Of TValue)(name As String, value As TValue)
+  overload: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.SetValue*
+  nameWithType.vb: ITestFrameworkOptions.SetValue(Of TValue)(String, TValue)
+  fullName.vb: Xunit.Sdk.ITestFrameworkOptions.SetValue(Of TValue)(String, TValue)
+  name.vb: SetValue(Of TValue)(String, TValue)
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.ToJson
+  commentId: M:Xunit.Sdk.ITestFrameworkOptions.ToJson
+  id: ToJson
+  parent: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions
+  langs:
+  - csharp
+  - vb
+  name: ToJson()
+  nameWithType: ITestFrameworkOptions.ToJson()
+  fullName: Xunit.Sdk.ITestFrameworkOptions.ToJson()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+      branch: d0213fc4e5d673d4c3abcb807d2eab72cfd80fe9
+      repo: https://github.com/xunit/xunit
+    id: ToJson
+    path: ../src/xunit.v3.common/Abstractions/Options/ITestFrameworkOptions.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Converts the test framework options into JSON. Used for serializing the options
+
+    for sending across a process boundary.
+  example: []
+  syntax:
+    content: string ToJson()
+    return:
+      type: System.String
+      description: The serialized framework options.
+    content.vb: Function ToJson() As String
+  overload: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.ToJson*
+references:
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkExecutionOptions
+  parent: v3.3.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkExecutionOptions.html
+  name: ITestFrameworkExecutionOptions
+  nameWithType: ITestFrameworkExecutionOptions
+  fullName: Xunit.Sdk.ITestFrameworkExecutionOptions
+- uid: v3.3.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.GetValue*
+  commentId: Overload:Xunit.Sdk.ITestFrameworkOptions.GetValue
+  href: Xunit.Sdk.ITestFrameworkOptions.GetValue.html#Xunit_Sdk_ITestFrameworkOptions_GetValue__1_System_String_
+  name: GetValue
+  nameWithType: ITestFrameworkOptions.GetValue
+  fullName: Xunit.Sdk.ITestFrameworkOptions.GetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.SetValue*
+  commentId: Overload:Xunit.Sdk.ITestFrameworkOptions.SetValue
+  href: Xunit.Sdk.ITestFrameworkOptions.SetValue.html#Xunit_Sdk_ITestFrameworkOptions_SetValue__1_System_String___0_
+  name: SetValue
+  nameWithType: ITestFrameworkOptions.SetValue
+  fullName: Xunit.Sdk.ITestFrameworkOptions.SetValue
+- uid: v3.3.0.0:Xunit.Sdk.ITestFrameworkOptions.ToJson*
+  commentId: Overload:Xunit.Sdk.ITestFrameworkOptions.ToJson
+  href: Xunit.Sdk.ITestFrameworkOptions.ToJson.html#Xunit_Sdk_ITestFrameworkOptions_ToJson
+  name: ToJson
+  nameWithType: ITestFrameworkOptions.ToJson
+  fullName: Xunit.Sdk.ITestFrameworkOptions.ToJson
+memberLayout: SeparatePages
