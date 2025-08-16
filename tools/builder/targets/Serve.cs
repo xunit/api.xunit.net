@@ -16,6 +16,6 @@ public static class Serve
 		if (!Directory.Exists(sitePath))
 			Directory.CreateDirectory(sitePath);
 
-		await context.Exec("docker", $"run --rm --name api.xunit.net -p 4000:80 -v {sitePath}:/usr/share/nginx/html:ro nginx");
+		await context.Exec("docker", $"run --rm --name api.xunit.net -p 4001:80 -v {sitePath}:/usr/share/nginx/html:ro nginx");
 	}
 }

@@ -21,7 +21,7 @@ We have verified this works using both Windows and Linux.
 
 To build the static content for the site, run `./build`. This will run DocFX to convert the Markdown and YAML files into static content, under a top-level `_site` folder.
 
-To serve the `_site` folder locally, you can run `./build serve` which will launch nginx in a Docker container, and serve the content [locally on port 4000](http://127.0.0.1:4000/).
+To serve the `_site` folder locally, you can run `./build serve` which will launch nginx in a Docker container, and serve the content [locally on port 4001](http://127.0.0.1:4001/).
 
 _Important note: You must rebuild the site manually when making changes either to the site or the metadata. The nginx container merely serves whatever lives in `/_site`._
 
