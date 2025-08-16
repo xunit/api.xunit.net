@@ -1,0 +1,281 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  commentId: T:Xunit.Sdk.IExecutionSummaryMetadata
+  id: IExecutionSummaryMetadata
+  parent: v3.3.0.1:Xunit.Sdk
+  children:
+  - v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  - v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  - v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  - v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  - v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  langs:
+  - csharp
+  - vb
+  name: IExecutionSummaryMetadata
+  nameWithType: IExecutionSummaryMetadata
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: IExecutionSummaryMetadata
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This is metadata describing the summary during various phases of execution process (e.g.,
+
+    test case, test class, test collection, and assembly). It describes the aggregation of
+
+    zero or more tests being executed.
+  example: []
+  syntax:
+    content: public interface IExecutionSummaryMetadata
+    content.vb: Public Interface IExecutionSummaryMetadata
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  id: ExecutionTime
+  parent: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  langs:
+  - csharp
+  - vb
+  name: ExecutionTime
+  nameWithType: IExecutionSummaryMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ExecutionTime
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the execution time (in seconds) for this execution.
+  example: []
+  syntax:
+    content: decimal ExecutionTime { get; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: ReadOnly Property ExecutionTime As Decimal
+  overload: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime*
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  id: TestsFailed
+  parent: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  langs:
+  - csharp
+  - vb
+  name: TestsFailed
+  nameWithType: IExecutionSummaryMetadata.TestsFailed
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: TestsFailed
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the number of failing tests.
+  example: []
+  syntax:
+    content: int TestsFailed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TestsFailed As Integer
+  overload: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed*
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  id: TestsNotRun
+  parent: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  langs:
+  - csharp
+  - vb
+  name: TestsNotRun
+  nameWithType: IExecutionSummaryMetadata.TestsNotRun
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: TestsNotRun
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the number of tests that were not run. This includes explicit tests when explicit tests are not run,
+
+    or non-expicit tests when non-explicit tests are not run.
+  example: []
+  syntax:
+    content: int TestsNotRun { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TestsNotRun As Integer
+  overload: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun*
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  id: TestsSkipped
+  parent: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  langs:
+  - csharp
+  - vb
+  name: TestsSkipped
+  nameWithType: IExecutionSummaryMetadata.TestsSkipped
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: TestsSkipped
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the number of skipped tests.
+  example: []
+  syntax:
+    content: int TestsSkipped { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TestsSkipped As Integer
+  overload: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped*
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  commentId: P:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  id: TestsTotal
+  parent: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata
+  langs:
+  - csharp
+  - vb
+  name: TestsTotal
+  nameWithType: IExecutionSummaryMetadata.TestsTotal
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: TestsTotal
+    path: ../src/xunit.v3.common/Abstractions/Messages/Metadata/IExecutionSummaryMetadata.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the total number of tests run and not run.
+  example: []
+  syntax:
+    content: int TestsTotal { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TestsTotal As Integer
+  overload: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal*
+references:
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime*
+  commentId: Overload:Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+  href: Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime.html#Xunit_Sdk_IExecutionSummaryMetadata_ExecutionTime
+  name: ExecutionTime
+  nameWithType: IExecutionSummaryMetadata.ExecutionTime
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.ExecutionTime
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed*
+  commentId: Overload:Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsFailed
+  name: TestsFailed
+  nameWithType: IExecutionSummaryMetadata.TestsFailed
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsFailed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun*
+  commentId: Overload:Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsNotRun
+  name: TestsNotRun
+  nameWithType: IExecutionSummaryMetadata.TestsNotRun
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsNotRun
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped*
+  commentId: Overload:Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsSkipped
+  name: TestsSkipped
+  nameWithType: IExecutionSummaryMetadata.TestsSkipped
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsSkipped
+- uid: v3.3.0.1:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal*
+  commentId: Overload:Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+  href: Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal.html#Xunit_Sdk_IExecutionSummaryMetadata_TestsTotal
+  name: TestsTotal
+  nameWithType: IExecutionSummaryMetadata.TestsTotal
+  fullName: Xunit.Sdk.IExecutionSummaryMetadata.TestsTotal
+memberLayout: SeparatePages

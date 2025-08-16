@@ -1,0 +1,2716 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  commentId: T:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  id: AppVeyorReporterMessageHandler
+  parent: v3.3.0.1:Xunit.Runner.Common
+  children:
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor(Xunit.Runner.Common.IRunnerLogger,System.String)
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  - v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  langs:
+  - csharp
+  - vb
+  name: AppVeyorReporterMessageHandler
+  nameWithType: AppVeyorReporterMessageHandler
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AppVeyorReporterMessageHandler
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: An implementation of <xref href="v3.3.0.1:Xunit.Runner.Common.IRunnerReporterMessageHandler" data-throw-if-not-resolved="false"></xref> that supports <xref href="v3.3.0.1:Xunit.Runner.Common.AppVeyorReporter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class AppVeyorReporterMessageHandler : DefaultRunnerReporterMessageHandler, IRunnerReporterMessageHandler, IMessageSink, IAsyncDisposable'
+    content.vb: Public Class AppVeyorReporterMessageHandler Inherits DefaultRunnerReporterMessageHandler Implements IRunnerReporterMessageHandler, IMessageSink, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  - v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  implements:
+  - v3.3.0.1:Xunit.Runner.Common.IRunnerReporterMessageHandler
+  - v3.3.0.1:Xunit.Sdk.IMessageSink
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Logger
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.MetadataCache
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(System.String,System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String,System.Object[])
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo,System.String)
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo,System.String[])
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.IErrorMessage})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestExecutionSummaries})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodCleanupFailure})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodFinished})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodStarting})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestOutput})
+  - v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.TestExecutionSummaries)
+  - v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  - v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Discovery
+  - v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Execution
+  - v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Runner
+  - v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  - v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1({TDispatcher}@)
+  - v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor(Xunit.Runner.Common.IRunnerLogger,System.String)
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor(Xunit.Runner.Common.IRunnerLogger,System.String)
+  id: '#ctor(Xunit.Runner.Common.IRunnerLogger,System.String)'
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: AppVeyorReporterMessageHandler(IRunnerLogger, string)
+  nameWithType: AppVeyorReporterMessageHandler.AppVeyorReporterMessageHandler(IRunnerLogger, string)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.AppVeyorReporterMessageHandler(Xunit.Runner.Common.IRunnerLogger, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Initializes a new instance of the <xref href="v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AppVeyorReporterMessageHandler(IRunnerLogger logger, string baseUri)
+    parameters:
+    - id: logger
+      type: Xunit.Runner.Common.IRunnerLogger
+      description: The logger used to report messages
+    - id: baseUri
+      type: System.String
+      description: The base AppVeyor API URI
+    content.vb: Public Sub New(logger As IRunnerLogger, baseUri As String)
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor*
+  nameWithType.vb: AppVeyorReporterMessageHandler.New(IRunnerLogger, String)
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.New(Xunit.Runner.Common.IRunnerLogger, String)
+  name.vb: New(IRunnerLogger, String)
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: AppVeyorReporterMessageHandler.DisposeAsync()
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public override ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overrides Function DisposeAsync() As ValueTask
+  overridden: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync*
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  id: HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestAssemblyFinished(MessageHandlerArgs<ITestAssemblyFinished>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(MessageHandlerArgs<ITestAssemblyFinished>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyFinished>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestAssemblyFinished
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 75
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestAssemblyFinished(MessageHandlerArgs<ITestAssemblyFinished> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestAssemblyFinished(args As MessageHandlerArgs(Of ITestAssemblyFinished))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(MessageHandlerArgs(Of ITestAssemblyFinished))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyFinished))
+  name.vb: HandleTestAssemblyFinished(MessageHandlerArgs(Of ITestAssemblyFinished))
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  id: HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestAssemblyStarting(MessageHandlerArgs<ITestAssemblyStarting>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(MessageHandlerArgs<ITestAssemblyStarting>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyStarting>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestAssemblyStarting
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 94
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestAssemblyStarting(MessageHandlerArgs<ITestAssemblyStarting> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestAssemblyStarting(args As MessageHandlerArgs(Of ITestAssemblyStarting))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(MessageHandlerArgs(Of ITestAssemblyStarting))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyStarting))
+  name.vb: HandleTestAssemblyStarting(MessageHandlerArgs(Of ITestAssemblyStarting))
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  id: HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestStarting(MessageHandlerArgs<ITestStarting>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestStarting(MessageHandlerArgs<ITestStarting>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestStarting>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestStarting
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 115
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestStarting" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestStarting(MessageHandlerArgs<ITestStarting> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestStarting(args As MessageHandlerArgs(Of ITestStarting))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestStarting(MessageHandlerArgs(Of ITestStarting))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestStarting))
+  name.vb: HandleTestStarting(MessageHandlerArgs(Of ITestStarting))
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  id: HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestPassed(MessageHandlerArgs<ITestPassed>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestPassed(MessageHandlerArgs<ITestPassed>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestPassed>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestPassed
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 137
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestPassed" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestPassed(MessageHandlerArgs<ITestPassed> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestPassed(args As MessageHandlerArgs(Of ITestPassed))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestPassed(MessageHandlerArgs(Of ITestPassed))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestPassed))
+  name.vb: HandleTestPassed(MessageHandlerArgs(Of ITestPassed))
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  id: HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestSkipped(MessageHandlerArgs<ITestSkipped>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestSkipped(MessageHandlerArgs<ITestSkipped>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestSkipped>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestSkipped
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 162
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestSkipped" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestSkipped(MessageHandlerArgs<ITestSkipped> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestSkipped(args As MessageHandlerArgs(Of ITestSkipped))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestSkipped(MessageHandlerArgs(Of ITestSkipped))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestSkipped))
+  name.vb: HandleTestSkipped(MessageHandlerArgs(Of ITestSkipped))
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  commentId: M:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  id: HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  parent: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestFailed(MessageHandlerArgs<ITestFailed>)
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestFailed(MessageHandlerArgs<ITestFailed>)
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestFailed>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HandleTestFailed
+    path: ../src/xunit.v3.runner.common/Reporters/Builtin/AppVeyorReporterMessageHandler.cs
+    startLine: 187
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Called when <xref href="v3.3.0.1:Xunit.Sdk.ITestFailed" data-throw-if-not-resolved="false"></xref> is raised.
+  example: []
+  syntax:
+    content: protected override void HandleTestFailed(MessageHandlerArgs<ITestFailed> args)
+    parameters:
+    - id: args
+      type: Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed}
+      description: An object that contains the event data.
+    content.vb: Protected Overrides Sub HandleTestFailed(args As MessageHandlerArgs(Of ITestFailed))
+  overridden: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  overload: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed*
+  nameWithType.vb: AppVeyorReporterMessageHandler.HandleTestFailed(MessageHandlerArgs(Of ITestFailed))
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestFailed))
+  name.vb: HandleTestFailed(MessageHandlerArgs(Of ITestFailed))
+references:
+- uid: v3.3.0.1:Xunit.Runner.Common.IRunnerReporterMessageHandler
+  commentId: T:Xunit.Runner.Common.IRunnerReporterMessageHandler
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IRunnerReporterMessageHandler.html
+  name: IRunnerReporterMessageHandler
+  nameWithType: IRunnerReporterMessageHandler
+  fullName: Xunit.Runner.Common.IRunnerReporterMessageHandler
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporter
+  commentId: T:Xunit.Runner.Common.AppVeyorReporter
+  href: Xunit.Runner.Common.AppVeyorReporter.html
+  name: AppVeyorReporter
+  nameWithType: AppVeyorReporter
+  fullName: Xunit.Runner.Common.AppVeyorReporter
+- uid: v3.3.0.1:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  commentId: T:Xunit.Runner.Common.AggregateMessageSink
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.AggregateMessageSink.html
+  name: AggregateMessageSink
+  nameWithType: AggregateMessageSink
+  fullName: Xunit.Runner.Common.AggregateMessageSink
+- uid: v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  commentId: T:Xunit.Runner.Common.TestMessageSink
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestMessageSink.html
+  name: TestMessageSink
+  nameWithType: TestMessageSink
+  fullName: Xunit.Runner.Common.TestMessageSink
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  commentId: T:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.html
+  name: DefaultRunnerReporterMessageHandler
+  nameWithType: DefaultRunnerReporterMessageHandler
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+- uid: v3.3.0.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput
+  commentId: F:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_EnvVar_HidePassingOutput
+  name: EnvVar_HidePassingOutput
+  nameWithType: DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EnvVar_HidePassingOutput
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Logger
+  commentId: P:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Logger
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Logger.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_Logger
+  name: Logger
+  nameWithType: DefaultRunnerReporterMessageHandler.Logger
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Logger
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.MetadataCache
+  commentId: P:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.MetadataCache
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.MetadataCache.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_MetadataCache
+  name: MetadataCache
+  nameWithType: DefaultRunnerReporterMessageHandler.MetadataCache
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.MetadataCache
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_Escape_System_String_
+  name: Escape(string)
+  nameWithType: DefaultRunnerReporterMessageHandler.Escape(string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.Escape(String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(String)
+  name.vb: Escape(String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(System.String)
+    name: Escape
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_Escape_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape(System.String)
+    name: Escape
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.Escape.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_Escape_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(System.String,System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(System.String,System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_EscapeMultiLineIndent_System_String_System_String_
+  name: EscapeMultiLineIndent(string, string)
+  nameWithType: DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(string, string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(string, string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(String, String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(String, String)
+  name.vb: EscapeMultiLineIndent(String, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(System.String,System.String)
+    name: EscapeMultiLineIndent
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_EscapeMultiLineIndent_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent(System.String,System.String)
+    name: EscapeMultiLineIndent
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.EscapeMultiLineIndent.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_EscapeMultiLineIndent_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetAssemblyDisplayName_Xunit_Runner_Common_XunitProjectAssembly_
+  name: GetAssemblyDisplayName(XunitProjectAssembly)
+  nameWithType: DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(XunitProjectAssembly)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+    name: GetAssemblyDisplayName
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetAssemblyDisplayName_Xunit_Runner_Common_XunitProjectAssembly_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+    href: Xunit.Runner.Common.XunitProjectAssembly.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName(Xunit.Runner.Common.XunitProjectAssembly)
+    name: GetAssemblyDisplayName
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetAssemblyDisplayName.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetAssemblyDisplayName_Xunit_Runner_Common_XunitProjectAssembly_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+    href: Xunit.Runner.Common.XunitProjectAssembly.html
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetExecutionOptions_System_String_
+  name: GetExecutionOptions(string)
+  nameWithType: DefaultRunnerReporterMessageHandler.GetExecutionOptions(string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.GetExecutionOptions(String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(String)
+  name.vb: GetExecutionOptions(String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(System.String)
+    name: GetExecutionOptions
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetExecutionOptions_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions(System.String)
+    name: GetExecutionOptions
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.GetExecutionOptions.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_GetExecutionOptions_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_
+  name: LogError(IErrorMetadata, string)
+  nameWithType: DefaultRunnerReporterMessageHandler.LogError(IErrorMetadata, string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata, string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.LogError(IErrorMetadata, String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata, String)
+  name.vb: LogError(IErrorMetadata, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMetadata
+    name: IErrorMetadata
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String)
+    name: LogError
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMetadata
+    name: IErrorMetadata
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String,System.Object[])
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_System_Object___
+  name: LogError(IErrorMetadata, string, params object[])
+  nameWithType: DefaultRunnerReporterMessageHandler.LogError(IErrorMetadata, string, params object[])
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata, string, params object[])
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.LogError(IErrorMetadata, String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata, String, ParamArray Object())
+  name.vb: LogError(IErrorMetadata, String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_System_Object___
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMetadata
+    name: IErrorMetadata
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError(Xunit.Sdk.IErrorMetadata,System.String,System.Object[])
+    name: LogError
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogError.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogError_Xunit_Sdk_IErrorMetadata_System_String_System_Object___
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMetadata
+    name: IErrorMetadata
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogStackTrace_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogStackTrace(StackFrameInfo, string)
+  nameWithType: DefaultRunnerReporterMessageHandler.LogStackTrace(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo, string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.LogStackTrace(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogStackTrace(StackFrameInfo, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo,System.String)
+    name: LogStackTrace
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogStackTrace_Xunit_Runner_Common_StackFrameInfo_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace(Xunit.Runner.Common.StackFrameInfo,System.String)
+    name: LogStackTrace
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogStackTrace.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogStackTrace_Xunit_Runner_Common_StackFrameInfo_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo,System.String)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo,System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogOutput_Xunit_Runner_Common_StackFrameInfo_System_String_
+  name: LogOutput(StackFrameInfo, string)
+  nameWithType: DefaultRunnerReporterMessageHandler.LogOutput(StackFrameInfo, string)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo, string)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.LogOutput(StackFrameInfo, String)
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo, String)
+  name.vb: LogOutput(StackFrameInfo, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo,System.String)
+    name: LogOutput
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogOutput_Xunit_Runner_Common_StackFrameInfo_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput(Xunit.Runner.Common.StackFrameInfo,System.String)
+    name: LogOutput
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogOutput_Xunit_Runner_Common_StackFrameInfo_System_String_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo,System.String[])
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo,System.String[])
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  isExternal: true
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogWarnings_Xunit_Runner_Common_StackFrameInfo_System_String___
+  name: LogWarnings(StackFrameInfo, string[])
+  nameWithType: DefaultRunnerReporterMessageHandler.LogWarnings(StackFrameInfo, string[])
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo, string[])
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.LogWarnings(StackFrameInfo, String())
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo, String())
+  name.vb: LogWarnings(StackFrameInfo, String())
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo,System.String[])
+    name: LogWarnings
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogWarnings_Xunit_Runner_Common_StackFrameInfo_System_String___
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings(Xunit.Runner.Common.StackFrameInfo,System.String[])
+    name: LogWarnings
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.LogWarnings.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_LogWarnings_Xunit_Runner_Common_StackFrameInfo_System_String___
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.StackFrameInfo
+    name: StackFrameInfo
+    href: Xunit.Runner.Common.StackFrameInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.IErrorMessage})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.IErrorMessage})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleErrorMessage_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_IErrorMessage__
+  name: HandleErrorMessage(MessageHandlerArgs<IErrorMessage>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleErrorMessage(MessageHandlerArgs<IErrorMessage>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.IErrorMessage>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleErrorMessage(MessageHandlerArgs(Of IErrorMessage))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.IErrorMessage))
+  name.vb: HandleErrorMessage(MessageHandlerArgs(Of IErrorMessage))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.IErrorMessage})
+    name: HandleErrorMessage
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleErrorMessage_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_IErrorMessage__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMessage
+    name: IErrorMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.IErrorMessage})
+    name: HandleErrorMessage
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleErrorMessage.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleErrorMessage_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_IErrorMessage__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.IErrorMessage
+    name: IErrorMessage
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryFinished__
+  name: HandleTestAssemblyDiscoveryFinished(MessageHandlerArgs<TestAssemblyDiscoveryFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(MessageHandlerArgs<TestAssemblyDiscoveryFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Runner.Common.TestAssemblyDiscoveryFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(MessageHandlerArgs(Of TestAssemblyDiscoveryFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Runner.Common.TestAssemblyDiscoveryFinished))
+  name.vb: HandleTestAssemblyDiscoveryFinished(MessageHandlerArgs(Of TestAssemblyDiscoveryFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryFinished})
+    name: HandleTestAssemblyDiscoveryFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyDiscoveryFinished
+    name: TestAssemblyDiscoveryFinished
+    href: Xunit.Runner.Common.TestAssemblyDiscoveryFinished.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryFinished})
+    name: HandleTestAssemblyDiscoveryFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyDiscoveryFinished
+    name: TestAssemblyDiscoveryFinished
+    href: Xunit.Runner.Common.TestAssemblyDiscoveryFinished.html
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryStarting__
+  name: HandleTestAssemblyDiscoveryStarting(MessageHandlerArgs<TestAssemblyDiscoveryStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(MessageHandlerArgs<TestAssemblyDiscoveryStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Runner.Common.TestAssemblyDiscoveryStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(MessageHandlerArgs(Of TestAssemblyDiscoveryStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Runner.Common.TestAssemblyDiscoveryStarting))
+  name.vb: HandleTestAssemblyDiscoveryStarting(MessageHandlerArgs(Of TestAssemblyDiscoveryStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryStarting})
+    name: HandleTestAssemblyDiscoveryStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyDiscoveryStarting
+    name: TestAssemblyDiscoveryStarting
+    href: Xunit.Runner.Common.TestAssemblyDiscoveryStarting.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyDiscoveryStarting})
+    name: HandleTestAssemblyDiscoveryStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyDiscoveryStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyDiscoveryStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyDiscoveryStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyDiscoveryStarting
+    name: TestAssemblyDiscoveryStarting
+    href: Xunit.Runner.Common.TestAssemblyDiscoveryStarting.html
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionFinished__
+  name: HandleTestAssemblyExecutionFinished(MessageHandlerArgs<TestAssemblyExecutionFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(MessageHandlerArgs<TestAssemblyExecutionFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Runner.Common.TestAssemblyExecutionFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(MessageHandlerArgs(Of TestAssemblyExecutionFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Runner.Common.TestAssemblyExecutionFinished))
+  name.vb: HandleTestAssemblyExecutionFinished(MessageHandlerArgs(Of TestAssemblyExecutionFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionFinished})
+    name: HandleTestAssemblyExecutionFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyExecutionFinished
+    name: TestAssemblyExecutionFinished
+    href: Xunit.Runner.Common.TestAssemblyExecutionFinished.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionFinished})
+    name: HandleTestAssemblyExecutionFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyExecutionFinished
+    name: TestAssemblyExecutionFinished
+    href: Xunit.Runner.Common.TestAssemblyExecutionFinished.html
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionStarting__
+  name: HandleTestAssemblyExecutionStarting(MessageHandlerArgs<TestAssemblyExecutionStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(MessageHandlerArgs<TestAssemblyExecutionStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Runner.Common.TestAssemblyExecutionStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(MessageHandlerArgs(Of TestAssemblyExecutionStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Runner.Common.TestAssemblyExecutionStarting))
+  name.vb: HandleTestAssemblyExecutionStarting(MessageHandlerArgs(Of TestAssemblyExecutionStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionStarting})
+    name: HandleTestAssemblyExecutionStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyExecutionStarting
+    name: TestAssemblyExecutionStarting
+    href: Xunit.Runner.Common.TestAssemblyExecutionStarting.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestAssemblyExecutionStarting})
+    name: HandleTestAssemblyExecutionStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyExecutionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyExecutionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestAssemblyExecutionStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestAssemblyExecutionStarting
+    name: TestAssemblyExecutionStarting
+    href: Xunit.Runner.Common.TestAssemblyExecutionStarting.html
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyCleanupFailure__
+  name: HandleTestAssemblyCleanupFailure(MessageHandlerArgs<ITestAssemblyCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(MessageHandlerArgs<ITestAssemblyCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(MessageHandlerArgs(Of ITestAssemblyCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyCleanupFailure))
+  name.vb: HandleTestAssemblyCleanupFailure(MessageHandlerArgs(Of ITestAssemblyCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyCleanupFailure})
+    name: HandleTestAssemblyCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyCleanupFailure
+    name: ITestAssemblyCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyCleanupFailure})
+    name: HandleTestAssemblyCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyCleanupFailure
+    name: ITestAssemblyCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseCleanupFailure__
+  name: HandleTestCaseCleanupFailure(MessageHandlerArgs<ITestCaseCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(MessageHandlerArgs<ITestCaseCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCaseCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(MessageHandlerArgs(Of ITestCaseCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCaseCleanupFailure))
+  name.vb: HandleTestCaseCleanupFailure(MessageHandlerArgs(Of ITestCaseCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseCleanupFailure})
+    name: HandleTestCaseCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseCleanupFailure
+    name: ITestCaseCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseCleanupFailure})
+    name: HandleTestCaseCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseCleanupFailure
+    name: ITestCaseCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseFinished__
+  name: HandleTestCaseFinished(MessageHandlerArgs<ITestCaseFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(MessageHandlerArgs<ITestCaseFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCaseFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(MessageHandlerArgs(Of ITestCaseFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCaseFinished))
+  name.vb: HandleTestCaseFinished(MessageHandlerArgs(Of ITestCaseFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseFinished})
+    name: HandleTestCaseFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseFinished
+    name: ITestCaseFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseFinished})
+    name: HandleTestCaseFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseFinished
+    name: ITestCaseFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseStarting__
+  name: HandleTestCaseStarting(MessageHandlerArgs<ITestCaseStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(MessageHandlerArgs<ITestCaseStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCaseStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(MessageHandlerArgs(Of ITestCaseStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCaseStarting))
+  name.vb: HandleTestCaseStarting(MessageHandlerArgs(Of ITestCaseStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseStarting})
+    name: HandleTestCaseStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseStarting
+    name: ITestCaseStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCaseStarting})
+    name: HandleTestCaseStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCaseStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCaseStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCaseStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCaseStarting
+    name: ITestCaseStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassCleanupFailure__
+  name: HandleTestClassCleanupFailure(MessageHandlerArgs<ITestClassCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(MessageHandlerArgs<ITestClassCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestClassCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(MessageHandlerArgs(Of ITestClassCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestClassCleanupFailure))
+  name.vb: HandleTestClassCleanupFailure(MessageHandlerArgs(Of ITestClassCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassCleanupFailure})
+    name: HandleTestClassCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassCleanupFailure
+    name: ITestClassCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassCleanupFailure})
+    name: HandleTestClassCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassCleanupFailure
+    name: ITestClassCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassFinished__
+  name: HandleTestClassFinished(MessageHandlerArgs<ITestClassFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestClassFinished(MessageHandlerArgs<ITestClassFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestClassFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestClassFinished(MessageHandlerArgs(Of ITestClassFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestClassFinished))
+  name.vb: HandleTestClassFinished(MessageHandlerArgs(Of ITestClassFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassFinished})
+    name: HandleTestClassFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassFinished
+    name: ITestClassFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassFinished})
+    name: HandleTestClassFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassFinished
+    name: ITestClassFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassStarting__
+  name: HandleTestClassStarting(MessageHandlerArgs<ITestClassStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestClassStarting(MessageHandlerArgs<ITestClassStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestClassStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestClassStarting(MessageHandlerArgs(Of ITestClassStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestClassStarting))
+  name.vb: HandleTestClassStarting(MessageHandlerArgs(Of ITestClassStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassStarting})
+    name: HandleTestClassStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassStarting
+    name: ITestClassStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestClassStarting})
+    name: HandleTestClassStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestClassStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestClassStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestClassStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestClassStarting
+    name: ITestClassStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCleanupFailure__
+  name: HandleTestCleanupFailure(MessageHandlerArgs<ITestCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(MessageHandlerArgs<ITestCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(MessageHandlerArgs(Of ITestCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCleanupFailure))
+  name.vb: HandleTestCleanupFailure(MessageHandlerArgs(Of ITestCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCleanupFailure})
+    name: HandleTestCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCleanupFailure
+    name: ITestCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCleanupFailure})
+    name: HandleTestCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCleanupFailure
+    name: ITestCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionCleanupFailure__
+  name: HandleTestCollectionCleanupFailure(MessageHandlerArgs<ITestCollectionCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(MessageHandlerArgs<ITestCollectionCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCollectionCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(MessageHandlerArgs(Of ITestCollectionCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCollectionCleanupFailure))
+  name.vb: HandleTestCollectionCleanupFailure(MessageHandlerArgs(Of ITestCollectionCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionCleanupFailure})
+    name: HandleTestCollectionCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionCleanupFailure
+    name: ITestCollectionCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionCleanupFailure})
+    name: HandleTestCollectionCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionCleanupFailure
+    name: ITestCollectionCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionFinished__
+  name: HandleTestCollectionFinished(MessageHandlerArgs<ITestCollectionFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(MessageHandlerArgs<ITestCollectionFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCollectionFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(MessageHandlerArgs(Of ITestCollectionFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCollectionFinished))
+  name.vb: HandleTestCollectionFinished(MessageHandlerArgs(Of ITestCollectionFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionFinished})
+    name: HandleTestCollectionFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionFinished
+    name: ITestCollectionFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionFinished})
+    name: HandleTestCollectionFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionFinished
+    name: ITestCollectionFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionStarting__
+  name: HandleTestCollectionStarting(MessageHandlerArgs<ITestCollectionStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(MessageHandlerArgs<ITestCollectionStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestCollectionStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(MessageHandlerArgs(Of ITestCollectionStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestCollectionStarting))
+  name.vb: HandleTestCollectionStarting(MessageHandlerArgs(Of ITestCollectionStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionStarting})
+    name: HandleTestCollectionStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionStarting
+    name: ITestCollectionStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestCollectionStarting})
+    name: HandleTestCollectionStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestCollectionStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestCollectionStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestCollectionStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestCollectionStarting
+    name: ITestCollectionStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestExecutionSummaries})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestExecutionSummaries})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestExecutionSummaries_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestExecutionSummaries__
+  name: HandleTestExecutionSummaries(MessageHandlerArgs<TestExecutionSummaries>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(MessageHandlerArgs<TestExecutionSummaries>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Runner.Common.TestExecutionSummaries>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(MessageHandlerArgs(Of TestExecutionSummaries))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Runner.Common.TestExecutionSummaries))
+  name.vb: HandleTestExecutionSummaries(MessageHandlerArgs(Of TestExecutionSummaries))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestExecutionSummaries})
+    name: HandleTestExecutionSummaries
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestExecutionSummaries_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestExecutionSummaries__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestExecutionSummaries
+    name: TestExecutionSummaries
+    href: Xunit.Runner.Common.TestExecutionSummaries.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Runner.Common.TestExecutionSummaries})
+    name: HandleTestExecutionSummaries
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestExecutionSummaries.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestExecutionSummaries_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Runner_Common_TestExecutionSummaries__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestExecutionSummaries
+    name: TestExecutionSummaries
+    href: Xunit.Runner.Common.TestExecutionSummaries.html
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFinished__
+  name: HandleTestFinished(MessageHandlerArgs<ITestFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestFinished(MessageHandlerArgs<ITestFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestFinished(MessageHandlerArgs(Of ITestFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestFinished))
+  name.vb: HandleTestFinished(MessageHandlerArgs(Of ITestFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFinished})
+    name: HandleTestFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFinished
+    name: ITestFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFinished})
+    name: HandleTestFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFinished
+    name: ITestFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodCleanupFailure})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodCleanupFailure})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodCleanupFailure__
+  name: HandleTestMethodCleanupFailure(MessageHandlerArgs<ITestMethodCleanupFailure>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(MessageHandlerArgs<ITestMethodCleanupFailure>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestMethodCleanupFailure>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(MessageHandlerArgs(Of ITestMethodCleanupFailure))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestMethodCleanupFailure))
+  name.vb: HandleTestMethodCleanupFailure(MessageHandlerArgs(Of ITestMethodCleanupFailure))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodCleanupFailure})
+    name: HandleTestMethodCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodCleanupFailure
+    name: ITestMethodCleanupFailure
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodCleanupFailure})
+    name: HandleTestMethodCleanupFailure
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodCleanupFailure.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodCleanupFailure_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodCleanupFailure__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodCleanupFailure
+    name: ITestMethodCleanupFailure
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodFinished__
+  name: HandleTestMethodFinished(MessageHandlerArgs<ITestMethodFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(MessageHandlerArgs<ITestMethodFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestMethodFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(MessageHandlerArgs(Of ITestMethodFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestMethodFinished))
+  name.vb: HandleTestMethodFinished(MessageHandlerArgs(Of ITestMethodFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodFinished})
+    name: HandleTestMethodFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodFinished
+    name: ITestMethodFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodFinished})
+    name: HandleTestMethodFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodFinished
+    name: ITestMethodFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodStarting__
+  name: HandleTestMethodStarting(MessageHandlerArgs<ITestMethodStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(MessageHandlerArgs<ITestMethodStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestMethodStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(MessageHandlerArgs(Of ITestMethodStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestMethodStarting))
+  name.vb: HandleTestMethodStarting(MessageHandlerArgs(Of ITestMethodStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodStarting})
+    name: HandleTestMethodStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodStarting
+    name: ITestMethodStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestMethodStarting})
+    name: HandleTestMethodStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestMethodStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestMethodStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestMethodStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestMethodStarting
+    name: ITestMethodStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestOutput})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestOutput})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestOutput_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestOutput__
+  name: HandleTestOutput(MessageHandlerArgs<ITestOutput>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestOutput(MessageHandlerArgs<ITestOutput>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestOutput>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestOutput(MessageHandlerArgs(Of ITestOutput))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestOutput))
+  name.vb: HandleTestOutput(MessageHandlerArgs(Of ITestOutput))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestOutput})
+    name: HandleTestOutput
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestOutput_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestOutput__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestOutput
+    name: ITestOutput
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestOutput})
+    name: HandleTestOutput
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestOutput.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestOutput_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestOutput__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestOutput
+    name: ITestOutput
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.TestExecutionSummaries)
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.TestExecutionSummaries)
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_WriteDefaultSummary_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_TestExecutionSummaries_
+  name: WriteDefaultSummary(IRunnerLogger, TestExecutionSummaries)
+  nameWithType: DefaultRunnerReporterMessageHandler.WriteDefaultSummary(IRunnerLogger, TestExecutionSummaries)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger, Xunit.Runner.Common.TestExecutionSummaries)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.TestExecutionSummaries)
+    name: WriteDefaultSummary
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_WriteDefaultSummary_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_TestExecutionSummaries_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestExecutionSummaries
+    name: TestExecutionSummaries
+    href: Xunit.Runner.Common.TestExecutionSummaries.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary(Xunit.Runner.Common.IRunnerLogger,Xunit.Runner.Common.TestExecutionSummaries)
+    name: WriteDefaultSummary
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.WriteDefaultSummary.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_WriteDefaultSummary_Xunit_Runner_Common_IRunnerLogger_Xunit_Runner_Common_TestExecutionSummaries_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.IRunnerLogger
+    name: IRunnerLogger
+    href: Xunit.Runner.Common.IRunnerLogger.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Runner.Common.TestExecutionSummaries
+    name: TestExecutionSummaries
+    href: Xunit.Runner.Common.TestExecutionSummaries.html
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  parent: v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  href: Xunit.Runner.Common.TestMessageSink.Diagnostics.html#Xunit_Runner_Common_TestMessageSink_Diagnostics
+  name: Diagnostics
+  nameWithType: TestMessageSink.Diagnostics
+  fullName: Xunit.Runner.Common.TestMessageSink.Diagnostics
+- uid: v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Discovery
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Discovery
+  parent: v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  href: Xunit.Runner.Common.TestMessageSink.Discovery.html#Xunit_Runner_Common_TestMessageSink_Discovery
+  name: Discovery
+  nameWithType: TestMessageSink.Discovery
+  fullName: Xunit.Runner.Common.TestMessageSink.Discovery
+- uid: v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Execution
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Execution
+  parent: v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  href: Xunit.Runner.Common.TestMessageSink.Execution.html#Xunit_Runner_Common_TestMessageSink_Execution
+  name: Execution
+  nameWithType: TestMessageSink.Execution
+  fullName: Xunit.Runner.Common.TestMessageSink.Execution
+- uid: v3.3.0.1:Xunit.Runner.Common.TestMessageSink.Runner
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Runner
+  parent: v3.3.0.1:Xunit.Runner.Common.TestMessageSink
+  href: Xunit.Runner.Common.TestMessageSink.Runner.html#Xunit_Runner_Common_TestMessageSink_Runner
+  name: Runner
+  nameWithType: TestMessageSink.Runner
+  fullName: Xunit.Runner.Common.TestMessageSink.Runner
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  commentId: P:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  parent: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks.html#Xunit_Runner_Common_AggregateMessageSink_AggregatedSinks
+  name: AggregatedSinks
+  nameWithType: AggregateMessageSink.AggregatedSinks
+  fullName: Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1({TDispatcher}@)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  parent: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  definition: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  name: GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType: AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType.vb: AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  fullName.vb: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  name.vb: GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: <
+  - name: TDispatcher
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  - name: (
+  - name: TDispatcher
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: AggregateMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  name: GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType: AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType.vb: AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  fullName.vb: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  name.vb: GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: <
+  - name: TDispatcher
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  - name: (
+  - name: TDispatcher
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  commentId: T:Xunit.Runner.Common.AppVeyorReporterMessageHandler
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.html
+  name: AppVeyorReporterMessageHandler
+  nameWithType: AppVeyorReporterMessageHandler
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.#ctor
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.-ctor.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler__ctor_Xunit_Runner_Common_IRunnerLogger_System_String_
+  name: AppVeyorReporterMessageHandler
+  nameWithType: AppVeyorReporterMessageHandler.AppVeyorReporterMessageHandler
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.AppVeyorReporterMessageHandler
+  nameWithType.vb: AppVeyorReporterMessageHandler.New
+  fullName.vb: Xunit.Runner.Common.AppVeyorReporterMessageHandler.New
+  name.vb: New
+- uid: v3.3.0.1:Xunit.Runner.Common.IRunnerLogger
+  commentId: T:Xunit.Runner.Common.IRunnerLogger
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IRunnerLogger.html
+  name: IRunnerLogger
+  nameWithType: IRunnerLogger
+  fullName: Xunit.Runner.Common.IRunnerLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  parent: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: AggregateMessageSink.DisposeAsync()
+  fullName: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_DisposeAsync
+  name: DisposeAsync
+  nameWithType: AppVeyorReporterMessageHandler.DisposeAsync
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.DisposeAsync
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished
+  commentId: T:Xunit.Sdk.ITestAssemblyFinished
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyFinished.html
+  name: ITestAssemblyFinished
+  nameWithType: ITestAssemblyFinished
+  fullName: Xunit.Sdk.ITestAssemblyFinished
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyFinished__
+  name: HandleTestAssemblyFinished(MessageHandlerArgs<ITestAssemblyFinished>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(MessageHandlerArgs<ITestAssemblyFinished>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyFinished>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(MessageHandlerArgs(Of ITestAssemblyFinished))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyFinished))
+  name.vb: HandleTestAssemblyFinished(MessageHandlerArgs(Of ITestAssemblyFinished))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+    name: HandleTestAssemblyFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished})
+    name: HandleTestAssemblyFinished
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyFinished.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyFinished__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestAssemblyFinished_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyFinished__
+  name: HandleTestAssemblyFinished
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestAssemblyFinished
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyFinished
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyFinished}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestAssemblyFinished>
+  nameWithType: MessageHandlerArgs<ITestAssemblyFinished>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyFinished>
+  nameWithType.vb: MessageHandlerArgs(Of ITestAssemblyFinished)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyFinished)
+  name.vb: MessageHandlerArgs(Of ITestAssemblyFinished)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<TMessage>
+  nameWithType: MessageHandlerArgs<TMessage>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<TMessage>
+  nameWithType.vb: MessageHandlerArgs(Of TMessage)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of TMessage)
+  name.vb: MessageHandlerArgs(Of TMessage)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting
+  commentId: T:Xunit.Sdk.ITestAssemblyStarting
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyStarting.html
+  name: ITestAssemblyStarting
+  nameWithType: ITestAssemblyStarting
+  fullName: Xunit.Sdk.ITestAssemblyStarting
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyStarting__
+  name: HandleTestAssemblyStarting(MessageHandlerArgs<ITestAssemblyStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(MessageHandlerArgs<ITestAssemblyStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(MessageHandlerArgs(Of ITestAssemblyStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyStarting))
+  name.vb: HandleTestAssemblyStarting(MessageHandlerArgs(Of ITestAssemblyStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+    name: HandleTestAssemblyStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting})
+    name: HandleTestAssemblyStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestAssemblyStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestAssemblyStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestAssemblyStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestAssemblyStarting__
+  name: HandleTestAssemblyStarting
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestAssemblyStarting
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestAssemblyStarting
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestAssemblyStarting}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestAssemblyStarting>
+  nameWithType: MessageHandlerArgs<ITestAssemblyStarting>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestAssemblyStarting>
+  nameWithType.vb: MessageHandlerArgs(Of ITestAssemblyStarting)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestAssemblyStarting)
+  name.vb: MessageHandlerArgs(Of ITestAssemblyStarting)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+  commentId: T:Xunit.Sdk.ITestStarting
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestStarting.html
+  name: ITestStarting
+  nameWithType: ITestStarting
+  fullName: Xunit.Sdk.ITestStarting
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestStarting__
+  name: HandleTestStarting(MessageHandlerArgs<ITestStarting>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestStarting(MessageHandlerArgs<ITestStarting>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestStarting>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestStarting(MessageHandlerArgs(Of ITestStarting))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestStarting))
+  name.vb: HandleTestStarting(MessageHandlerArgs(Of ITestStarting))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+    name: HandleTestStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+    name: ITestStarting
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting})
+    name: HandleTestStarting
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestStarting.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestStarting__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+    name: ITestStarting
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestStarting_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestStarting__
+  name: HandleTestStarting
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestStarting
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestStarting
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestStarting}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestStarting>
+  nameWithType: MessageHandlerArgs<ITestStarting>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestStarting>
+  nameWithType.vb: MessageHandlerArgs(Of ITestStarting)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestStarting)
+  name.vb: MessageHandlerArgs(Of ITestStarting)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+    name: ITestStarting
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+    name: ITestStarting
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestPassed
+  commentId: T:Xunit.Sdk.ITestPassed
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestPassed.html
+  name: ITestPassed
+  nameWithType: ITestPassed
+  fullName: Xunit.Sdk.ITestPassed
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestPassed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestPassed__
+  name: HandleTestPassed(MessageHandlerArgs<ITestPassed>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestPassed(MessageHandlerArgs<ITestPassed>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestPassed>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestPassed(MessageHandlerArgs(Of ITestPassed))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestPassed))
+  name.vb: HandleTestPassed(MessageHandlerArgs(Of ITestPassed))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+    name: HandleTestPassed
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestPassed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestPassed__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestPassed
+    name: ITestPassed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed})
+    name: HandleTestPassed
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestPassed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestPassed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestPassed__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestPassed
+    name: ITestPassed
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestPassed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestPassed__
+  name: HandleTestPassed
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestPassed
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestPassed
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestPassed}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestPassed>
+  nameWithType: MessageHandlerArgs<ITestPassed>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestPassed>
+  nameWithType.vb: MessageHandlerArgs(Of ITestPassed)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestPassed)
+  name.vb: MessageHandlerArgs(Of ITestPassed)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestPassed
+    name: ITestPassed
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestPassed
+    name: ITestPassed
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestSkipped
+  commentId: T:Xunit.Sdk.ITestSkipped
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestSkipped.html
+  name: ITestSkipped
+  nameWithType: ITestSkipped
+  fullName: Xunit.Sdk.ITestSkipped
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestSkipped_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestSkipped__
+  name: HandleTestSkipped(MessageHandlerArgs<ITestSkipped>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestSkipped(MessageHandlerArgs<ITestSkipped>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestSkipped>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestSkipped(MessageHandlerArgs(Of ITestSkipped))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestSkipped))
+  name.vb: HandleTestSkipped(MessageHandlerArgs(Of ITestSkipped))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+    name: HandleTestSkipped
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestSkipped_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestSkipped__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestSkipped
+    name: ITestSkipped
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped})
+    name: HandleTestSkipped
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestSkipped.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestSkipped_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestSkipped__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestSkipped
+    name: ITestSkipped
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestSkipped_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestSkipped__
+  name: HandleTestSkipped
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestSkipped
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestSkipped
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestSkipped}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestSkipped>
+  nameWithType: MessageHandlerArgs<ITestSkipped>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestSkipped>
+  nameWithType.vb: MessageHandlerArgs(Of ITestSkipped)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestSkipped)
+  name.vb: MessageHandlerArgs(Of ITestSkipped)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestSkipped
+    name: ITestSkipped
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestSkipped
+    name: ITestSkipped
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestFailed
+  commentId: T:Xunit.Sdk.ITestFailed
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestFailed.html
+  name: ITestFailed
+  nameWithType: ITestFailed
+  fullName: Xunit.Sdk.ITestFailed
+- uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  commentId: M:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+  parent: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFailed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFailed__
+  name: HandleTestFailed(MessageHandlerArgs<ITestFailed>)
+  nameWithType: DefaultRunnerReporterMessageHandler.HandleTestFailed(MessageHandlerArgs<ITestFailed>)
+  fullName: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestFailed>)
+  nameWithType.vb: DefaultRunnerReporterMessageHandler.HandleTestFailed(MessageHandlerArgs(Of ITestFailed))
+  fullName.vb: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestFailed))
+  name.vb: HandleTestFailed(MessageHandlerArgs(Of ITestFailed))
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+    name: HandleTestFailed
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFailed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFailed__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFailed
+    name: ITestFailed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed(Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed})
+    name: HandleTestFailed
+    href: Xunit.Runner.Common.DefaultRunnerReporterMessageHandler.HandleTestFailed.html#Xunit_Runner_Common_DefaultRunnerReporterMessageHandler_HandleTestFailed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFailed__
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFailed
+    name: ITestFailed
+  - name: )
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed*
+  commentId: Overload:Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed
+  href: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed.html#Xunit_Runner_Common_AppVeyorReporterMessageHandler_HandleTestFailed_Xunit_Runner_Common_MessageHandlerArgs_Xunit_Sdk_ITestFailed__
+  name: HandleTestFailed
+  nameWithType: AppVeyorReporterMessageHandler.HandleTestFailed
+  fullName: Xunit.Runner.Common.AppVeyorReporterMessageHandler.HandleTestFailed
+- uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed}
+  commentId: T:Xunit.Runner.Common.MessageHandlerArgs{Xunit.Sdk.ITestFailed}
+  parent: v3.3.0.1:Xunit.Runner.Common
+  definition: Xunit.Runner.Common.MessageHandlerArgs`1
+  href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  name: MessageHandlerArgs<ITestFailed>
+  nameWithType: MessageHandlerArgs<ITestFailed>
+  fullName: Xunit.Runner.Common.MessageHandlerArgs<Xunit.Sdk.ITestFailed>
+  nameWithType.vb: MessageHandlerArgs(Of ITestFailed)
+  fullName.vb: Xunit.Runner.Common.MessageHandlerArgs(Of Xunit.Sdk.ITestFailed)
+  name.vb: MessageHandlerArgs(Of ITestFailed)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: <
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFailed
+    name: ITestFailed
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.MessageHandlerArgs`1
+    name: MessageHandlerArgs
+    href: Xunit.Runner.Common.MessageHandlerArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.0.1:Xunit.Sdk.ITestFailed
+    name: ITestFailed
+  - name: )
+memberLayout: SeparatePages

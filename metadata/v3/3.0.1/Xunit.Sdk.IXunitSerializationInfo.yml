@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+  commentId: T:Xunit.Sdk.IXunitSerializationInfo
+  id: IXunitSerializationInfo
+  parent: v3.3.0.1:Xunit.Sdk
+  children:
+  - v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.AddValue(System.String,System.Object,System.Type)
+  - v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.GetValue(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IXunitSerializationInfo
+  nameWithType: IXunitSerializationInfo
+  fullName: Xunit.Sdk.IXunitSerializationInfo
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: IXunitSerializationInfo
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    An interface that is implemented by the serialization infrastructure in xUnit.net.
+
+    This is passed to objects which implement <xref href="v3.3.0.1:Xunit.Sdk.IXunitSerializable" data-throw-if-not-resolved="false"></xref> so they
+
+    can serialize and deserialize themselves from the serialization store.
+  example: []
+  syntax:
+    content: public interface IXunitSerializationInfo
+    content.vb: Public Interface IXunitSerializationInfo
+  extensionMethods:
+  - v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(System.String,{T})
+  - v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(System.String)
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.AddValue(System.String,System.Object,System.Type)
+  commentId: M:Xunit.Sdk.IXunitSerializationInfo.AddValue(System.String,System.Object,System.Type)
+  id: AddValue(System.String,System.Object,System.Type)
+  parent: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, object?, Type?)
+  nameWithType: IXunitSerializationInfo.AddValue(string, object?, Type?)
+  fullName: Xunit.Sdk.IXunitSerializationInfo.AddValue(string, object?, System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AddValue
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Adds a value to the serialization. Supported value types include the built-in
+
+    intrinsics (string, int, long, float, double, and decimal, including nullable
+
+    versions of those), any class which implements <xref href="v3.3.0.1:Xunit.Sdk.IXunitSerializable" data-throw-if-not-resolved="false"></xref>),
+
+    or arrays of any supported types.
+  example: []
+  syntax:
+    content: void AddValue(string key, object? value, Type? valueType)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key to store the value with
+    - id: value
+      type: System.Object
+      description: The value to be stored
+    - id: valueType
+      type: System.Type
+      description: >-
+        The type of the value to be stored; optional, unless the
+            value of <code class="paramref">value</code> is <code>null</code>.
+    content.vb: Sub AddValue(key As String, value As Object, valueType As Type)
+  overload: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.AddValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the value is not a supported type.
+  nameWithType.vb: IXunitSerializationInfo.AddValue(String, Object, Type)
+  fullName.vb: Xunit.Sdk.IXunitSerializationInfo.AddValue(String, Object, System.Type)
+  name.vb: AddValue(String, Object, Type)
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.GetValue(System.String)
+  commentId: M:Xunit.Sdk.IXunitSerializationInfo.GetValue(System.String)
+  id: GetValue(System.String)
+  parent: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+  langs:
+  - csharp
+  - vb
+  name: GetValue(string)
+  nameWithType: IXunitSerializationInfo.GetValue(string)
+  fullName: Xunit.Sdk.IXunitSerializationInfo.GetValue(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: GetValue
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializationInfo.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a value from the serialization.
+  example: []
+  syntax:
+    content: object? GetValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to retrieve
+    return:
+      type: System.Object
+      description: The value, if present; <code>null</code>, otherwise
+    content.vb: Function GetValue(key As String) As Object
+  overload: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.GetValue*
+  nameWithType.vb: IXunitSerializationInfo.GetValue(String)
+  fullName.vb: Xunit.Sdk.IXunitSerializationInfo.GetValue(String)
+  name.vb: GetValue(String)
+references:
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializable
+  commentId: T:Xunit.Sdk.IXunitSerializable
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializable.html
+  name: IXunitSerializable
+  nameWithType: IXunitSerializable
+  fullName: Xunit.Sdk.IXunitSerializable
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(System.String,{T})
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  parent: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions
+  definition: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  name: AddValue<T>(IXunitSerializationInfo, string, T)
+  nameWithType: XunitSerializationInfoExtensions.AddValue<T>(IXunitSerializationInfo, string, T)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue<T>(Xunit.Sdk.IXunitSerializationInfo, string, T)
+  nameWithType.vb: XunitSerializationInfoExtensions.AddValue(Of T)(IXunitSerializationInfo, String, T)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String, T)
+  name.vb: AddValue(Of T)(IXunitSerializationInfo, String, T)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+    name: AddValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+    name: AddValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(System.String)
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  parent: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions
+  definition: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  name: GetValue<T>(IXunitSerializationInfo, string)
+  nameWithType: XunitSerializationInfoExtensions.GetValue<T>(IXunitSerializationInfo, string)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue<T>(Xunit.Sdk.IXunitSerializationInfo, string)
+  nameWithType.vb: XunitSerializationInfoExtensions.GetValue(Of T)(IXunitSerializationInfo, String)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String)
+  name.vb: GetValue(Of T)(IXunitSerializationInfo, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+    name: GetValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+    name: GetValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+  isExternal: true
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  name: AddValue<T>(IXunitSerializationInfo, string, T)
+  nameWithType: XunitSerializationInfoExtensions.AddValue<T>(IXunitSerializationInfo, string, T)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue<T>(Xunit.Sdk.IXunitSerializationInfo, string, T)
+  nameWithType.vb: XunitSerializationInfoExtensions.AddValue(Of T)(IXunitSerializationInfo, String, T)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String, T)
+  name.vb: AddValue(Of T)(IXunitSerializationInfo, String, T)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+    name: AddValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.AddValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String,``0)
+    name: AddValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.AddValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_AddValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions
+  commentId: T:Xunit.Sdk.XunitSerializationInfoExtensions
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.html
+  name: XunitSerializationInfoExtensions
+  nameWithType: XunitSerializationInfoExtensions
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions
+- uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  commentId: M:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+  isExternal: true
+  href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  name: GetValue<T>(IXunitSerializationInfo, string)
+  nameWithType: XunitSerializationInfoExtensions.GetValue<T>(IXunitSerializationInfo, string)
+  fullName: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue<T>(Xunit.Sdk.IXunitSerializationInfo, string)
+  nameWithType.vb: XunitSerializationInfoExtensions.GetValue(Of T)(IXunitSerializationInfo, String)
+  fullName.vb: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue(Of T)(Xunit.Sdk.IXunitSerializationInfo, String)
+  name.vb: GetValue(Of T)(IXunitSerializationInfo, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+    name: GetValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.XunitSerializationInfoExtensions.GetValue``1(Xunit.Sdk.IXunitSerializationInfo,System.String)
+    name: GetValue
+    href: Xunit.Sdk.XunitSerializationInfoExtensions.GetValue.html#Xunit_Sdk_XunitSerializationInfoExtensions_GetValue__1_Xunit_Sdk_IXunitSerializationInfo_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo
+    name: IXunitSerializationInfo
+    href: Xunit.Sdk.IXunitSerializationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.AddValue*
+  commentId: Overload:Xunit.Sdk.IXunitSerializationInfo.AddValue
+  href: Xunit.Sdk.IXunitSerializationInfo.AddValue.html#Xunit_Sdk_IXunitSerializationInfo_AddValue_System_String_System_Object_System_Type_
+  name: AddValue
+  nameWithType: IXunitSerializationInfo.AddValue
+  fullName: Xunit.Sdk.IXunitSerializationInfo.AddValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk.IXunitSerializationInfo.GetValue*
+  commentId: Overload:Xunit.Sdk.IXunitSerializationInfo.GetValue
+  href: Xunit.Sdk.IXunitSerializationInfo.GetValue.html#Xunit_Sdk_IXunitSerializationInfo_GetValue_System_String_
+  name: GetValue
+  nameWithType: IXunitSerializationInfo.GetValue
+  fullName: Xunit.Sdk.IXunitSerializationInfo.GetValue
+memberLayout: SeparatePages

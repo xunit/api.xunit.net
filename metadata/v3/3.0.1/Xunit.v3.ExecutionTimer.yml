@@ -1,0 +1,890 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer
+  commentId: T:Xunit.v3.ExecutionTimer
+  id: ExecutionTimer
+  parent: v3.3.0.1:Xunit.v3
+  children:
+  - v3.3.0.1:Xunit.v3.ExecutionTimer.Measure(System.Action)
+  - v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync(System.Func{System.Threading.Tasks.ValueTask})
+  - v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}})
+  - v3.3.0.1:Xunit.v3.ExecutionTimer.Measure``1(System.Func{``0})
+  langs:
+  - csharp
+  - vb
+  name: ExecutionTimer
+  nameWithType: ExecutionTimer
+  fullName: Xunit.v3.ExecutionTimer
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/ExecutionTimer.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ExecutionTimer
+    path: ../src/xunit.v3.core/Utility/ExecutionTimer.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    The methods on this static class can measure the time taken to execute actions (both synchronous
+
+    and asynchronous).
+  example: []
+  syntax:
+    content: public static class ExecutionTimer
+    content.vb: Public Module ExecutionTimer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.Measure(System.Action)
+  commentId: M:Xunit.v3.ExecutionTimer.Measure(System.Action)
+  id: Measure(System.Action)
+  parent: v3.3.0.1:Xunit.v3.ExecutionTimer
+  langs:
+  - csharp
+  - vb
+  name: Measure(Action)
+  nameWithType: ExecutionTimer.Measure(Action)
+  fullName: Xunit.v3.ExecutionTimer.Measure(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/ExecutionTimer.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Measure
+    path: ../src/xunit.v3.core/Utility/ExecutionTimer.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Executes an action and returns the amount of time it took to execute. Note: time cannot be
+
+    measured for any action that throws an exception, so this should only be called by code that
+
+    is known not to throw (f.e., using <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator" data-throw-if-not-resolved="false"></xref>) or when the execution
+
+    time for throwing code is irrelevant.
+  example: []
+  syntax:
+    content: public static TimeSpan Measure(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: The action to measure.
+    return:
+      type: System.TimeSpan
+    content.vb: Public Shared Function Measure(action As Action) As TimeSpan
+  overload: v3.3.0.1:Xunit.v3.ExecutionTimer.Measure*
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.Measure``1(System.Func{``0})
+  commentId: M:Xunit.v3.ExecutionTimer.Measure``1(System.Func{``0})
+  id: Measure``1(System.Func{``0})
+  parent: v3.3.0.1:Xunit.v3.ExecutionTimer
+  langs:
+  - csharp
+  - vb
+  name: Measure<T>(Func<T>)
+  nameWithType: ExecutionTimer.Measure<T>(Func<T>)
+  fullName: Xunit.v3.ExecutionTimer.Measure<T>(System.Func<T>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/ExecutionTimer.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Measure
+    path: ../src/xunit.v3.core/Utility/ExecutionTimer.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Executes a function and returns the amount of time it took to execute. Note: time cannot be
+
+    measured for any action that throws an exception, so this should only be called by code that
+
+    is known not to throw (f.e., using <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator" data-throw-if-not-resolved="false"></xref>) or when the execution
+
+    time for throwing code is irrelevant.
+  example: []
+  syntax:
+    content: public static (T Result, TimeSpan Elapsed) Measure<T>(Func<T> func)
+    parameters:
+    - id: func
+      type: System.Func{{T}}
+      description: The function to measure.
+    typeParameters:
+    - id: T
+    return:
+      type: System.ValueTuple{{T},System.TimeSpan}
+    content.vb: Public Shared Function Measure(Of T)(func As Func(Of T)) As (Result As T, Elapsed As TimeSpan)
+  overload: v3.3.0.1:Xunit.v3.ExecutionTimer.Measure*
+  nameWithType.vb: ExecutionTimer.Measure(Of T)(Func(Of T))
+  fullName.vb: Xunit.v3.ExecutionTimer.Measure(Of T)(System.Func(Of T))
+  name.vb: Measure(Of T)(Func(Of T))
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync(System.Func{System.Threading.Tasks.ValueTask})
+  commentId: M:Xunit.v3.ExecutionTimer.MeasureAsync(System.Func{System.Threading.Tasks.ValueTask})
+  id: MeasureAsync(System.Func{System.Threading.Tasks.ValueTask})
+  parent: v3.3.0.1:Xunit.v3.ExecutionTimer
+  langs:
+  - csharp
+  - vb
+  name: MeasureAsync(Func<ValueTask>)
+  nameWithType: ExecutionTimer.MeasureAsync(Func<ValueTask>)
+  fullName: Xunit.v3.ExecutionTimer.MeasureAsync(System.Func<System.Threading.Tasks.ValueTask>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/ExecutionTimer.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: MeasureAsync
+    path: ../src/xunit.v3.core/Utility/ExecutionTimer.cs
+    startLine: 52
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Executes an asynchronous action and returns the amount of time it took to execute. Note: time
+
+    cannot be measured for any action that throws an exception, so this should only be called by
+
+    code that is known not to throw (f.e., using <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator" data-throw-if-not-resolved="false"></xref>) or when the
+
+    execution time for throwing code is irrelevant.
+  example: []
+  syntax:
+    content: public static ValueTask<TimeSpan> MeasureAsync(Func<ValueTask> asyncAction)
+    parameters:
+    - id: asyncAction
+      type: System.Func{System.Threading.Tasks.ValueTask}
+      description: The asynchronous action to measure.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.TimeSpan}
+    content.vb: Public Shared Function MeasureAsync(asyncAction As Func(Of ValueTask)) As ValueTask(Of TimeSpan)
+  overload: v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync*
+  nameWithType.vb: ExecutionTimer.MeasureAsync(Func(Of ValueTask))
+  fullName.vb: Xunit.v3.ExecutionTimer.MeasureAsync(System.Func(Of System.Threading.Tasks.ValueTask))
+  name.vb: MeasureAsync(Func(Of ValueTask))
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}})
+  commentId: M:Xunit.v3.ExecutionTimer.MeasureAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}})
+  id: MeasureAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}})
+  parent: v3.3.0.1:Xunit.v3.ExecutionTimer
+  langs:
+  - csharp
+  - vb
+  name: MeasureAsync<T>(Func<ValueTask<T>>)
+  nameWithType: ExecutionTimer.MeasureAsync<T>(Func<ValueTask<T>>)
+  fullName: Xunit.v3.ExecutionTimer.MeasureAsync<T>(System.Func<System.Threading.Tasks.ValueTask<T>>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Utility/ExecutionTimer.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: MeasureAsync
+    path: ../src/xunit.v3.core/Utility/ExecutionTimer.cs
+    startLine: 68
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Executes an asynchronous function and returns the amount of time it took to execute. Note: time
+
+    cannot be measured for any action that throws an exception, so this should only be called by
+
+    code that is known not to throw (f.e., using <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator" data-throw-if-not-resolved="false"></xref>) or when the
+
+    execution time for throwing code is irrelevant.
+  example: []
+  syntax:
+    content: public static ValueTask<(T Result, TimeSpan Elapsed)> MeasureAsync<T>(Func<ValueTask<T>> asyncFunc)
+    parameters:
+    - id: asyncFunc
+      type: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+      description: The asynchronous function to measure.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{System.ValueTuple{{T},System.TimeSpan}}
+    content.vb: Public Shared Function MeasureAsync(Of T)(asyncFunc As Func(Of ValueTask(Of T))) As ValueTask(Of (Result As T, Elapsed As TimeSpan))
+  overload: v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync*
+  nameWithType.vb: ExecutionTimer.MeasureAsync(Of T)(Func(Of ValueTask(Of T)))
+  fullName.vb: Xunit.v3.ExecutionTimer.MeasureAsync(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)))
+  name.vb: MeasureAsync(Of T)(Func(Of ValueTask(Of T)))
+references:
+- uid: v3.3.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3.3.0.1:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.Measure*
+  commentId: Overload:Xunit.v3.ExecutionTimer.Measure
+  href: Xunit.v3.ExecutionTimer.Measure.html#Xunit_v3_ExecutionTimer_Measure_System_Action_
+  name: Measure
+  nameWithType: ExecutionTimer.Measure
+  fullName: Xunit.v3.ExecutionTimer.Measure
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ValueTuple{{T},System.TimeSpan}
+  commentId: T:System.ValueTuple{``0,System.TimeSpan}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.result
+  name: (T Result, TimeSpan Elapsed)
+  nameWithType: (T Result, TimeSpan Elapsed)
+  fullName: (T Result, System.TimeSpan Elapsed)
+  nameWithType.vb: (Result As T, Elapsed As TimeSpan)
+  fullName.vb: (Result As T, Elapsed As System.TimeSpan)
+  name.vb: (Result As T, Elapsed As TimeSpan)
+  spec.csharp:
+  - name: (
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Result
+    name: Result
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.result
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Elapsed
+    name: Elapsed
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.elapsed
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Result
+    name: Result
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.result
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Elapsed
+    name: Elapsed
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.elapsed
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: v3.3.0.1:Xunit.v3.ExecutionTimer.MeasureAsync*
+  commentId: Overload:Xunit.v3.ExecutionTimer.MeasureAsync
+  href: Xunit.v3.ExecutionTimer.MeasureAsync.html#Xunit_v3_ExecutionTimer_MeasureAsync_System_Func_System_Threading_Tasks_ValueTask__
+  name: MeasureAsync
+  nameWithType: ExecutionTimer.MeasureAsync
+  fullName: Xunit.v3.ExecutionTimer.MeasureAsync
+- uid: System.Func{System.Threading.Tasks.ValueTask}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask>
+  nameWithType: Func<ValueTask>
+  fullName: System.Func<System.Threading.Tasks.ValueTask>
+  nameWithType.vb: Func(Of ValueTask)
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask)
+  name.vb: Func(Of ValueTask)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{System.TimeSpan}
+  commentId: T:System.Threading.Tasks.ValueTask{System.TimeSpan}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TimeSpan>
+  nameWithType: ValueTask<TimeSpan>
+  fullName: System.Threading.Tasks.ValueTask<System.TimeSpan>
+  nameWithType.vb: ValueTask(Of TimeSpan)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.TimeSpan)
+  name.vb: ValueTask(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask{``0}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask<T>>
+  nameWithType: Func<ValueTask<T>>
+  fullName: System.Func<System.Threading.Tasks.ValueTask<T>>
+  nameWithType.vb: Func(Of ValueTask(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask(Of T))
+  name.vb: Func(Of ValueTask(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{System.ValueTuple{{T},System.TimeSpan}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.ValueTuple{``0,System.TimeSpan}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<(T Result, TimeSpan Elapsed)>
+  nameWithType: ValueTask<(T Result, TimeSpan Elapsed)>
+  fullName: System.Threading.Tasks.ValueTask<(T Result, System.TimeSpan Elapsed)>
+  nameWithType.vb: ValueTask(Of (Result As T, Elapsed As TimeSpan))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of (Result As T, Elapsed As System.TimeSpan))
+  name.vb: ValueTask(Of (Result As T, Elapsed As TimeSpan))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: (
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Result
+    name: Result
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.result
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Elapsed
+    name: Elapsed
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.elapsed
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Result
+    name: Result
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.result
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,System.TimeSpan}.Elapsed
+    name: Elapsed
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.timespan-.elapsed
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  - name: )
+memberLayout: SeparatePages

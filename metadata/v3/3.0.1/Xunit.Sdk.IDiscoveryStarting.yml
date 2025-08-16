@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting
+  commentId: T:Xunit.Sdk.IDiscoveryStarting
+  id: IDiscoveryStarting
+  parent: v3.3.0.1:Xunit.Sdk
+  children:
+  - v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  - v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  - v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  langs:
+  - csharp
+  - vb
+  name: IDiscoveryStarting
+  nameWithType: IDiscoveryStarting
+  fullName: Xunit.Sdk.IDiscoveryStarting
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: IDiscoveryStarting
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This message indicates that the discovery process is starting for
+
+    the requested assembly.
+  example: []
+  syntax:
+    content: 'public interface IDiscoveryStarting : ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable'
+    content.vb: Public Interface IDiscoveryStarting Inherits ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable
+  inheritedMembers:
+  - v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  id: AssemblyName
+  parent: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: AssemblyName
+  nameWithType: IDiscoveryStarting.AssemblyName
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AssemblyName
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the assembly name. May return a simple assembly name (i.e., "mscorlib"), or may return a
+
+    fully qualified name (i.e., "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089").
+  example: []
+  syntax:
+    content: string AssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyName As String
+  overload: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyName*
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  id: AssemblyPath
+  parent: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: AssemblyPath
+  nameWithType: IDiscoveryStarting.AssemblyPath
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AssemblyPath
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the on-disk location of the assembly under test.
+  example: []
+  syntax:
+    content: string AssemblyPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyPath As String
+  overload: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyPath*
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  id: ConfigFilePath
+  parent: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: ConfigFilePath
+  nameWithType: IDiscoveryStarting.ConfigFilePath
+  fullName: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ConfigFilePath
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the full path of the configuration file name, if one is present.
+
+    May be <code>null</code> if there is no configuration file.
+  example: []
+  syntax:
+    content: string? ConfigFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ConfigFilePath As String
+  overload: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath*
+references:
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.3.0.1:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyName*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  href: Xunit.Sdk.IDiscoveryStarting.AssemblyName.html#Xunit_Sdk_IDiscoveryStarting_AssemblyName
+  name: AssemblyName
+  nameWithType: IDiscoveryStarting.AssemblyName
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.AssemblyPath*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  href: Xunit.Sdk.IDiscoveryStarting.AssemblyPath.html#Xunit_Sdk_IDiscoveryStarting_AssemblyPath
+  name: AssemblyPath
+  nameWithType: IDiscoveryStarting.AssemblyPath
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+- uid: v3.3.0.1:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  href: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath.html#Xunit_Sdk_IDiscoveryStarting_ConfigFilePath
+  name: ConfigFilePath
+  nameWithType: IDiscoveryStarting.ConfigFilePath
+  fullName: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+memberLayout: SeparatePages

@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting
+  commentId: T:Xunit.Sdk.ITestStarting
+  id: ITestStarting
+  parent: v3.3.0.1:Xunit.Sdk
+  children:
+  - v3.3.0.1:Xunit.Sdk.ITestStarting.Explicit
+  - v3.3.0.1:Xunit.Sdk.ITestStarting.StartTime
+  - v3.3.0.1:Xunit.Sdk.ITestStarting.Timeout
+  langs:
+  - csharp
+  - vb
+  name: ITestStarting
+  nameWithType: ITestStarting
+  fullName: Xunit.Sdk.ITestStarting
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ITestStarting
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: This message indicates that a test is about to start executing.
+  example: []
+  syntax:
+    content: 'public interface ITestStarting : ITestMessage, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, ITestMetadata'
+    content.vb: Public Interface ITestStarting Inherits ITestMessage, ITestCaseMessage, ITestMethodMessage, ITestClassMessage, ITestCollectionMessage, ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, ITestMetadata
+  inheritedMembers:
+  - v3.3.0.1:Xunit.Sdk.ITestMessage.TestUniqueID
+  - v3.3.0.1:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  - v3.3.0.1:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  - v3.3.0.1:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  - v3.3.0.1:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  - v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+  - v3.3.0.1:Xunit.Sdk.ITestMetadata.TestDisplayName
+  - v3.3.0.1:Xunit.Sdk.ITestMetadata.Traits
+  - v3.3.0.1:Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.Explicit
+  commentId: P:Xunit.Sdk.ITestStarting.Explicit
+  id: Explicit
+  parent: v3.3.0.1:Xunit.Sdk.ITestStarting
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: ITestStarting.Explicit
+  fullName: Xunit.Sdk.ITestStarting.Explicit
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Explicit
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a flag which indicates whether the test is marked as explicit or not.
+  example: []
+  syntax:
+    content: bool Explicit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Explicit As Boolean
+  overload: v3.3.0.1:Xunit.Sdk.ITestStarting.Explicit*
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.StartTime
+  commentId: P:Xunit.Sdk.ITestStarting.StartTime
+  id: StartTime
+  parent: v3.3.0.1:Xunit.Sdk.ITestStarting
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: ITestStarting.StartTime
+  fullName: Xunit.Sdk.ITestStarting.StartTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: StartTime
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the date and time when the test execution began.
+  example: []
+  syntax:
+    content: DateTimeOffset StartTime { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property StartTime As DateTimeOffset
+  overload: v3.3.0.1:Xunit.Sdk.ITestStarting.StartTime*
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.Timeout
+  commentId: P:Xunit.Sdk.ITestStarting.Timeout
+  id: Timeout
+  parent: v3.3.0.1:Xunit.Sdk.ITestStarting
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: ITestStarting.Timeout
+  fullName: Xunit.Sdk.ITestStarting.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.common/Abstractions/Messages/ITestStarting.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the timeout for the test, in milliseconds; if <code>0</code>, there is no timeout.
+  example: []
+  syntax:
+    content: int Timeout { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Timeout As Integer
+  overload: v3.3.0.1:Xunit.Sdk.ITestStarting.Timeout*
+references:
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.Sdk.ITestMessage.TestUniqueID
+  commentId: P:Xunit.Sdk.ITestMessage.TestUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestMessage
+  href: Xunit.Sdk.ITestMessage.TestUniqueID.html#Xunit_Sdk_ITestMessage_TestUniqueID
+  name: TestUniqueID
+  nameWithType: ITestMessage.TestUniqueID
+  fullName: Xunit.Sdk.ITestMessage.TestUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestCaseMessage
+  href: Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID.html#Xunit_Sdk_ITestCaseMessage_TestCaseUniqueID
+  name: TestCaseUniqueID
+  nameWithType: ITestCaseMessage.TestCaseUniqueID
+  fullName: Xunit.Sdk.ITestCaseMessage.TestCaseUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  commentId: P:Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestMethodMessage
+  href: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID.html#Xunit_Sdk_ITestMethodMessage_TestMethodUniqueID
+  name: TestMethodUniqueID
+  nameWithType: ITestMethodMessage.TestMethodUniqueID
+  fullName: Xunit.Sdk.ITestMethodMessage.TestMethodUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  commentId: P:Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestClassMessage
+  href: Xunit.Sdk.ITestClassMessage.TestClassUniqueID.html#Xunit_Sdk_ITestClassMessage_TestClassUniqueID
+  name: TestClassUniqueID
+  nameWithType: ITestClassMessage.TestClassUniqueID
+  fullName: Xunit.Sdk.ITestClassMessage.TestClassUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  commentId: P:Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestCollectionMessage
+  href: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID.html#Xunit_Sdk_ITestCollectionMessage_TestCollectionUniqueID
+  name: TestCollectionUniqueID
+  nameWithType: ITestCollectionMessage.TestCollectionUniqueID
+  fullName: Xunit.Sdk.ITestCollectionMessage.TestCollectionUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.3.0.1:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.3.0.1:Xunit.Sdk.ITestMetadata.TestDisplayName
+  commentId: P:Xunit.Sdk.ITestMetadata.TestDisplayName
+  parent: v3.3.0.1:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestDisplayName.html#Xunit_Sdk_ITestMetadata_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+- uid: v3.3.0.1:Xunit.Sdk.ITestMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMetadata.Traits
+  parent: v3.3.0.1:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.Traits.html#Xunit_Sdk_ITestMetadata_Traits
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+- uid: v3.3.0.1:Xunit.Sdk.ITestMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMetadata.UniqueID
+  parent: v3.3.0.1:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.UniqueID.html#Xunit_Sdk_ITestMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.3.0.1:Xunit.Sdk.ITestMessage
+  commentId: T:Xunit.Sdk.ITestMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestMessage.html
+  name: ITestMessage
+  nameWithType: ITestMessage
+  fullName: Xunit.Sdk.ITestMessage
+- uid: v3.3.0.1:Xunit.Sdk.ITestCaseMessage
+  commentId: T:Xunit.Sdk.ITestCaseMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMessage.html
+  name: ITestCaseMessage
+  nameWithType: ITestCaseMessage
+  fullName: Xunit.Sdk.ITestCaseMessage
+- uid: v3.3.0.1:Xunit.Sdk.ITestMethodMessage
+  commentId: T:Xunit.Sdk.ITestMethodMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodMessage.html
+  name: ITestMethodMessage
+  nameWithType: ITestMethodMessage
+  fullName: Xunit.Sdk.ITestMethodMessage
+- uid: v3.3.0.1:Xunit.Sdk.ITestClassMessage
+  commentId: T:Xunit.Sdk.ITestClassMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestClassMessage.html
+  name: ITestClassMessage
+  nameWithType: ITestClassMessage
+  fullName: Xunit.Sdk.ITestClassMessage
+- uid: v3.3.0.1:Xunit.Sdk.ITestCollectionMessage
+  commentId: T:Xunit.Sdk.ITestCollectionMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionMessage.html
+  name: ITestCollectionMessage
+  nameWithType: ITestCollectionMessage
+  fullName: Xunit.Sdk.ITestCollectionMessage
+- uid: v3.3.0.1:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.3.0.1:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.3.0.1:Xunit.Sdk.ITestMetadata
+  commentId: T:Xunit.Sdk.ITestMetadata
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestMetadata.html
+  name: ITestMetadata
+  nameWithType: ITestMetadata
+  fullName: Xunit.Sdk.ITestMetadata
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.Explicit*
+  commentId: Overload:Xunit.Sdk.ITestStarting.Explicit
+  href: Xunit.Sdk.ITestStarting.Explicit.html#Xunit_Sdk_ITestStarting_Explicit
+  name: Explicit
+  nameWithType: ITestStarting.Explicit
+  fullName: Xunit.Sdk.ITestStarting.Explicit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.StartTime*
+  commentId: Overload:Xunit.Sdk.ITestStarting.StartTime
+  href: Xunit.Sdk.ITestStarting.StartTime.html#Xunit_Sdk_ITestStarting_StartTime
+  name: StartTime
+  nameWithType: ITestStarting.StartTime
+  fullName: Xunit.Sdk.ITestStarting.StartTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: v3.3.0.1:Xunit.Sdk.ITestStarting.Timeout*
+  commentId: Overload:Xunit.Sdk.ITestStarting.Timeout
+  href: Xunit.Sdk.ITestStarting.Timeout.html#Xunit_Sdk_ITestStarting_Timeout
+  name: Timeout
+  nameWithType: ITestStarting.Timeout
+  fullName: Xunit.Sdk.ITestStarting.Timeout
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+memberLayout: SeparatePages

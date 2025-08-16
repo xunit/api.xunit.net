@@ -1,0 +1,1129 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  id: ExceptionAggregator
+  parent: v3.3.0.1:Xunit.v3
+  children:
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.#ctor
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Add(System.Exception)
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Aggregate(Xunit.v3.ExceptionAggregator)
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Clear
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Clone
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Create
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.HasExceptions
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync(System.Func{System.Threading.Tasks.ValueTask})
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}},``0)
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.Run``1(System.Func{``0},``0)
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.ThrowIfFaulted
+  - v3.3.0.1:Xunit.v3.ExceptionAggregator.ToException
+  langs:
+  - csharp
+  - vb
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+  type: Struct
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ExceptionAggregator
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Aggregates exceptions. Intended to run one or more code blocks, and collect the
+
+    exceptions thrown by those code blocks.
+  example: []
+  syntax:
+    content: public struct ExceptionAggregator
+    content.vb: Public Structure ExceptionAggregator
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.#ctor
+  commentId: M:Xunit.v3.ExceptionAggregator.#ctor
+  id: '#ctor'
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: ExceptionAggregator()
+  nameWithType: ExceptionAggregator.ExceptionAggregator()
+  fullName: Xunit.v3.ExceptionAggregator.ExceptionAggregator()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator" data-throw-if-not-resolved="false"></xref> value type.
+  example: []
+  syntax:
+    content: public ExceptionAggregator()
+    content.vb: Public Sub New()
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.#ctor*
+  nameWithType.vb: ExceptionAggregator.New()
+  fullName.vb: Xunit.v3.ExceptionAggregator.New()
+  name.vb: New()
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.HasExceptions
+  commentId: P:Xunit.v3.ExceptionAggregator.HasExceptions
+  id: HasExceptions
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: HasExceptions
+  nameWithType: ExceptionAggregator.HasExceptions
+  fullName: Xunit.v3.ExceptionAggregator.HasExceptions
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: HasExceptions
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Returns <code>true</code> if the aggregator has at least one exception inside it.
+  example: []
+  syntax:
+    content: public bool HasExceptions { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasExceptions As Boolean
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.HasExceptions*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Add(System.Exception)
+  commentId: M:Xunit.v3.ExceptionAggregator.Add(System.Exception)
+  id: Add(System.Exception)
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Add(Exception)
+  nameWithType: ExceptionAggregator.Add(Exception)
+  fullName: Xunit.v3.ExceptionAggregator.Add(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Add
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 39
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds an exception to the aggregator.
+  example: []
+  syntax:
+    content: public void Add(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception to be added.
+    content.vb: Public Sub Add(ex As Exception)
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Add*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Aggregate(Xunit.v3.ExceptionAggregator)
+  commentId: M:Xunit.v3.ExceptionAggregator.Aggregate(Xunit.v3.ExceptionAggregator)
+  id: Aggregate(Xunit.v3.ExceptionAggregator)
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Aggregate(ExceptionAggregator)
+  nameWithType: ExceptionAggregator.Aggregate(ExceptionAggregator)
+  fullName: Xunit.v3.ExceptionAggregator.Aggregate(Xunit.v3.ExceptionAggregator)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Aggregate
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 46
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds exceptions from another aggregator into this aggregator.
+  example: []
+  syntax:
+    content: public void Aggregate(ExceptionAggregator aggregator)
+    parameters:
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The aggregator whose exceptions should be copied.
+    content.vb: Public Sub Aggregate(aggregator As ExceptionAggregator)
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Aggregate*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clear
+  commentId: M:Xunit.v3.ExceptionAggregator.Clear
+  id: Clear
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ExceptionAggregator.Clear()
+  fullName: Xunit.v3.ExceptionAggregator.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Clear
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 52
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Clears the aggregator.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clear*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clone
+  commentId: M:Xunit.v3.ExceptionAggregator.Clone
+  id: Clone
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ExceptionAggregator.Clone()
+  fullName: Xunit.v3.ExceptionAggregator.Clone()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Clone
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 58
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Clones the aggregator with a copy of the existing exceptions.
+  example: []
+  syntax:
+    content: public ExceptionAggregator Clone()
+    return:
+      type: Xunit.v3.ExceptionAggregator
+    content.vb: Public Function Clone() As ExceptionAggregator
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clone*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Create
+  commentId: M:Xunit.v3.ExceptionAggregator.Create
+  id: Create
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: ExceptionAggregator.Create()
+  fullName: Xunit.v3.ExceptionAggregator.Create()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Create
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 64
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Creates an empty aggregator.
+  example: []
+  syntax:
+    content: public static ExceptionAggregator Create()
+    return:
+      type: Xunit.v3.ExceptionAggregator
+    content.vb: Public Shared Function Create() As ExceptionAggregator
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Create*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)
+  commentId: M:Xunit.v3.ExceptionAggregator.Run(System.Action)
+  id: Run(System.Action)
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Run(Action)
+  nameWithType: ExceptionAggregator.Run(Action)
+  fullName: Xunit.v3.ExceptionAggregator.Run(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 75
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Runs the code, catching the exception that is thrown and adding it to
+
+    the aggregate.
+  example: []
+  syntax:
+    content: public void Run(Action code)
+    parameters:
+    - id: code
+      type: System.Action
+      description: The code to be run.
+    content.vb: Public Sub Run(code As Action)
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run``1(System.Func{``0},``0)
+  commentId: M:Xunit.v3.ExceptionAggregator.Run``1(System.Func{``0},``0)
+  id: Run``1(System.Func{``0},``0)
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: Run<T>(Func<T>, T)
+  nameWithType: ExceptionAggregator.Run<T>(Func<T>, T)
+  fullName: Xunit.v3.ExceptionAggregator.Run<T>(System.Func<T>, T)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 95
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Runs the code, catching the exception that is thrown and adding it to
+
+    the aggregate.
+  example: []
+  syntax:
+    content: public T Run<T>(Func<T> code, T defaultValue)
+    parameters:
+    - id: code
+      type: System.Func{{T}}
+      description: The code to be run.
+    - id: defaultValue
+      type: '{T}'
+      description: The default value to return if the lambda throws an exception
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function Run(Of T)(code As Func(Of T), defaultValue As T) As T
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run*
+  nameWithType.vb: ExceptionAggregator.Run(Of T)(Func(Of T), T)
+  fullName.vb: Xunit.v3.ExceptionAggregator.Run(Of T)(System.Func(Of T), T)
+  name.vb: Run(Of T)(Func(Of T), T)
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync(System.Func{System.Threading.Tasks.ValueTask})
+  commentId: M:Xunit.v3.ExceptionAggregator.RunAsync(System.Func{System.Threading.Tasks.ValueTask})
+  id: RunAsync(System.Func{System.Threading.Tasks.ValueTask})
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: RunAsync(Func<ValueTask>)
+  nameWithType: ExceptionAggregator.RunAsync(Func<ValueTask>)
+  fullName: Xunit.v3.ExceptionAggregator.RunAsync(System.Func<System.Threading.Tasks.ValueTask>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: RunAsync
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 117
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Runs the code, catching the exception that is thrown and adding it to
+
+    the aggregate.
+  example: []
+  syntax:
+    content: public ValueTask RunAsync(Func<ValueTask> code)
+    parameters:
+    - id: code
+      type: System.Func{System.Threading.Tasks.ValueTask}
+      description: The code to be run.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function RunAsync(code As Func(Of ValueTask)) As ValueTask
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync*
+  nameWithType.vb: ExceptionAggregator.RunAsync(Func(Of ValueTask))
+  fullName.vb: Xunit.v3.ExceptionAggregator.RunAsync(System.Func(Of System.Threading.Tasks.ValueTask))
+  name.vb: RunAsync(Func(Of ValueTask))
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}},``0)
+  commentId: M:Xunit.v3.ExceptionAggregator.RunAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}},``0)
+  id: RunAsync``1(System.Func{System.Threading.Tasks.ValueTask{``0}},``0)
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: RunAsync<T>(Func<ValueTask<T>>, T)
+  nameWithType: ExceptionAggregator.RunAsync<T>(Func<ValueTask<T>>, T)
+  fullName: Xunit.v3.ExceptionAggregator.RunAsync<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, T)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: RunAsync
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 137
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Runs the code, catching the exception that is thrown and adding it to
+
+    the aggregate.
+  example: []
+  syntax:
+    content: public ValueTask<T> RunAsync<T>(Func<ValueTask<T>> code, T defaultValue)
+    parameters:
+    - id: code
+      type: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+      description: The code to be run.
+    - id: defaultValue
+      type: '{T}'
+      description: The default value to return if the lambda throws an exception
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{{T}}
+    content.vb: Public Function RunAsync(Of T)(code As Func(Of ValueTask(Of T)), defaultValue As T) As ValueTask(Of T)
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync*
+  nameWithType.vb: ExceptionAggregator.RunAsync(Of T)(Func(Of ValueTask(Of T)), T)
+  fullName.vb: Xunit.v3.ExceptionAggregator.RunAsync(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), T)
+  name.vb: RunAsync(Of T)(Func(Of ValueTask(Of T)), T)
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.ThrowIfFaulted
+  commentId: M:Xunit.v3.ExceptionAggregator.ThrowIfFaulted
+  id: ThrowIfFaulted
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfFaulted()
+  nameWithType: ExceptionAggregator.ThrowIfFaulted()
+  fullName: Xunit.v3.ExceptionAggregator.ThrowIfFaulted()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ThrowIfFaulted
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 160
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Throws an exception if the aggregator contains any exceptions. If the aggregator contains
+
+    a single exception, it will be re-thrown without losing the original stack trace; if
+
+    the aggregator contains more than one exception, then the original exceptions will be
+
+    wrapped up into an instance of <xref href="System.AggregateException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void ThrowIfFaulted()
+    content.vb: Public Sub ThrowIfFaulted()
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.ThrowIfFaulted*
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.ToException
+  commentId: M:Xunit.v3.ExceptionAggregator.ToException
+  id: ToException
+  parent: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  langs:
+  - csharp
+  - vb
+  name: ToException()
+  nameWithType: ExceptionAggregator.ToException()
+  fullName: Xunit.v3.ExceptionAggregator.ToException()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: ToException
+    path: ../src/xunit.v3.core/Exceptions/ExceptionAggregator.cs
+    startLine: 176
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Returns an exception that represents the exceptions thrown by the code
+
+    passed to the <xref href="v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)" data-throw-if-not-resolved="false"></xref> or RunAsync methods.
+  example: []
+  syntax:
+    content: public Exception? ToException()
+    return:
+      type: System.Exception
+      description: >-
+        Returns <code>null</code> if no exceptions were thrown; returns the
+            exact exception if a single exception was thrown; returns <xref href="System.AggregateException" data-throw-if-not-resolved="false"></xref>
+            if more than one exception was thrown.
+    content.vb: Public Function ToException() As Exception
+  overload: v3.3.0.1:Xunit.v3.ExceptionAggregator.ToException*
+references:
+- uid: v3.3.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3.3.0.1:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.#ctor*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.#ctor
+  href: Xunit.v3.ExceptionAggregator.-ctor.html#Xunit_v3_ExceptionAggregator__ctor
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator.ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator.ExceptionAggregator
+  nameWithType.vb: ExceptionAggregator.New
+  fullName.vb: Xunit.v3.ExceptionAggregator.New
+  name.vb: New
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.HasExceptions*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.HasExceptions
+  href: Xunit.v3.ExceptionAggregator.HasExceptions.html#Xunit_v3_ExceptionAggregator_HasExceptions
+  name: HasExceptions
+  nameWithType: ExceptionAggregator.HasExceptions
+  fullName: Xunit.v3.ExceptionAggregator.HasExceptions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Add*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Add
+  href: Xunit.v3.ExceptionAggregator.Add.html#Xunit_v3_ExceptionAggregator_Add_System_Exception_
+  name: Add
+  nameWithType: ExceptionAggregator.Add
+  fullName: Xunit.v3.ExceptionAggregator.Add
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Aggregate*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Aggregate
+  href: Xunit.v3.ExceptionAggregator.Aggregate.html#Xunit_v3_ExceptionAggregator_Aggregate_Xunit_v3_ExceptionAggregator_
+  name: Aggregate
+  nameWithType: ExceptionAggregator.Aggregate
+  fullName: Xunit.v3.ExceptionAggregator.Aggregate
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clear*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Clear
+  href: Xunit.v3.ExceptionAggregator.Clear.html#Xunit_v3_ExceptionAggregator_Clear
+  name: Clear
+  nameWithType: ExceptionAggregator.Clear
+  fullName: Xunit.v3.ExceptionAggregator.Clear
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Clone*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Clone
+  href: Xunit.v3.ExceptionAggregator.Clone.html#Xunit_v3_ExceptionAggregator_Clone
+  name: Clone
+  nameWithType: ExceptionAggregator.Clone
+  fullName: Xunit.v3.ExceptionAggregator.Clone
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Create*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Create
+  href: Xunit.v3.ExceptionAggregator.Create.html#Xunit_v3_ExceptionAggregator_Create
+  name: Create
+  nameWithType: ExceptionAggregator.Create
+  fullName: Xunit.v3.ExceptionAggregator.Create
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.Run
+  href: Xunit.v3.ExceptionAggregator.Run.html#Xunit_v3_ExceptionAggregator_Run_System_Action_
+  name: Run
+  nameWithType: ExceptionAggregator.Run
+  fullName: Xunit.v3.ExceptionAggregator.Run
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.RunAsync*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.RunAsync
+  href: Xunit.v3.ExceptionAggregator.RunAsync.html#Xunit_v3_ExceptionAggregator_RunAsync_System_Func_System_Threading_Tasks_ValueTask__
+  name: RunAsync
+  nameWithType: ExceptionAggregator.RunAsync
+  fullName: Xunit.v3.ExceptionAggregator.RunAsync
+- uid: System.Func{System.Threading.Tasks.ValueTask}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask>
+  nameWithType: Func<ValueTask>
+  fullName: System.Func<System.Threading.Tasks.ValueTask>
+  nameWithType.vb: Func(Of ValueTask)
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask)
+  name.vb: Func(Of ValueTask)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask{``0}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask<T>>
+  nameWithType: Func<ValueTask<T>>
+  fullName: System.Func<System.Threading.Tasks.ValueTask<T>>
+  nameWithType.vb: Func(Of ValueTask(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask(Of T))
+  name.vb: Func(Of ValueTask(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{{T}}
+  commentId: T:System.Threading.Tasks.ValueTask{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<T>
+  nameWithType: ValueTask<T>
+  fullName: System.Threading.Tasks.ValueTask<T>
+  nameWithType.vb: ValueTask(Of T)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of T)
+  name.vb: ValueTask(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.AggregateException
+  commentId: T:System.AggregateException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.aggregateexception
+  name: AggregateException
+  nameWithType: AggregateException
+  fullName: System.AggregateException
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.ThrowIfFaulted*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.ThrowIfFaulted
+  href: Xunit.v3.ExceptionAggregator.ThrowIfFaulted.html#Xunit_v3_ExceptionAggregator_ThrowIfFaulted
+  name: ThrowIfFaulted
+  nameWithType: ExceptionAggregator.ThrowIfFaulted
+  fullName: Xunit.v3.ExceptionAggregator.ThrowIfFaulted
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)
+  commentId: M:Xunit.v3.ExceptionAggregator.Run(System.Action)
+  isExternal: true
+  href: Xunit.v3.ExceptionAggregator.Run.html#Xunit_v3_ExceptionAggregator_Run_System_Action_
+  name: Run(Action)
+  nameWithType: ExceptionAggregator.Run(Action)
+  fullName: Xunit.v3.ExceptionAggregator.Run(System.Action)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)
+    name: Run
+    href: Xunit.v3.ExceptionAggregator.Run.html#Xunit_v3_ExceptionAggregator_Run_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.Run(System.Action)
+    name: Run
+    href: Xunit.v3.ExceptionAggregator.Run.html#Xunit_v3_ExceptionAggregator_Run_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: v3.3.0.1:Xunit.v3.ExceptionAggregator.ToException*
+  commentId: Overload:Xunit.v3.ExceptionAggregator.ToException
+  href: Xunit.v3.ExceptionAggregator.ToException.html#Xunit_v3_ExceptionAggregator_ToException
+  name: ToException
+  nameWithType: ExceptionAggregator.ToException
+  fullName: Xunit.v3.ExceptionAggregator.ToException
+memberLayout: SeparatePages

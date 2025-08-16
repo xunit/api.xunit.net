@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider
+  commentId: T:Xunit.CecilSourceInformationProvider
+  id: CecilSourceInformationProvider
+  parent: v3.3.0.1:Xunit
+  children:
+  - v3.3.0.1:Xunit.CecilSourceInformationProvider.Create(System.String)
+  - v3.3.0.1:Xunit.CecilSourceInformationProvider.DisposeAsync
+  - v3.3.0.1:Xunit.CecilSourceInformationProvider.GetSourceInformation(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CecilSourceInformationProvider
+  nameWithType: CecilSourceInformationProvider
+  fullName: Xunit.CecilSourceInformationProvider
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: CecilSourceInformationProvider
+    path: ../src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: An implementation of <xref href="v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider" data-throw-if-not-resolved="false"></xref> backed by <code>Mono.Cecil</code>.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("This class have been obsoleted by using [CallerFileInfo] and [CallerLineNumber] on FactAttribute. It will be removed in the next major release.")]
+
+      public sealed class CecilSourceInformationProvider : ISourceInformationProvider, IAsyncDisposable
+    content.vb: >-
+      <Obsolete("This class have been obsoleted by using [CallerFileInfo] and [CallerLineNumber] on FactAttribute. It will be removed in the next major release.")>
+
+      Public NotInheritable Class CecilSourceInformationProvider Implements ISourceInformationProvider, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This class have been obsoleted by using [CallerFileInfo] and [CallerLineNumber] on FactAttribute. It will be removed in the next major release.
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.Create(System.String)
+  commentId: M:Xunit.CecilSourceInformationProvider.Create(System.String)
+  id: Create(System.String)
+  parent: v3.3.0.1:Xunit.CecilSourceInformationProvider
+  langs:
+  - csharp
+  - vb
+  name: Create(string?)
+  nameWithType: CecilSourceInformationProvider.Create(string?)
+  fullName: Xunit.CecilSourceInformationProvider.Create(string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Create
+    path: ../src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+    startLine: 96
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Creates a source provider for the given test assembly.
+  remarks: >-
+    This may return an instance of <xref href="v3.3.0.1:Xunit.Runner.Common.NullSourceInformationProvider" data-throw-if-not-resolved="false"></xref> if source information
+
+    collection is turned off, or if the provided assembly does not exist on disk.
+  example: []
+  syntax:
+    content: public static ISourceInformationProvider Create(string? assemblyFileName)
+    parameters:
+    - id: assemblyFileName
+      type: System.String
+      description: The test assembly filename
+    return:
+      type: Xunit.Runner.Common.ISourceInformationProvider
+    content.vb: Public Shared Function Create(assemblyFileName As String) As ISourceInformationProvider
+  overload: v3.3.0.1:Xunit.CecilSourceInformationProvider.Create*
+  nameWithType.vb: CecilSourceInformationProvider.Create(String)
+  fullName.vb: Xunit.CecilSourceInformationProvider.Create(String)
+  name.vb: Create(String)
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.DisposeAsync
+  commentId: M:Xunit.CecilSourceInformationProvider.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.0.1:Xunit.CecilSourceInformationProvider
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: CecilSourceInformationProvider.DisposeAsync()
+  fullName: Xunit.CecilSourceInformationProvider.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+    startLine: 108
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3.3.0.1:Xunit.CecilSourceInformationProvider.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.GetSourceInformation(System.String,System.String)
+  commentId: M:Xunit.CecilSourceInformationProvider.GetSourceInformation(System.String,System.String)
+  id: GetSourceInformation(System.String,System.String)
+  parent: v3.3.0.1:Xunit.CecilSourceInformationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetSourceInformation(string?, string?)
+  nameWithType: CecilSourceInformationProvider.GetSourceInformation(string?, string?)
+  fullName: Xunit.CecilSourceInformationProvider.GetSourceInformation(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: GetSourceInformation
+    path: ../src/xunit.v3.runner.common/Frameworks/CecilSourceInformationProvider.cs
+    startLine: 123
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Returns the source information for a test case.
+  example: []
+  syntax:
+    content: public SourceInformation GetSourceInformation(string? testClassName, string? testMethodName)
+    parameters:
+    - id: testClassName
+      type: System.String
+      description: The test class name, if known
+    - id: testMethodName
+      type: System.String
+      description: The test method name, if known
+    return:
+      type: Xunit.Runner.Common.SourceInformation
+      description: >-
+        The source information, with null string and int values when the information is not available.
+            Note: return value should never be <code>null</code>, only the interior data values inside.
+    content.vb: Public Function GetSourceInformation(testClassName As String, testMethodName As String) As SourceInformation
+  overload: v3.3.0.1:Xunit.CecilSourceInformationProvider.GetSourceInformation*
+  implements:
+  - v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  nameWithType.vb: CecilSourceInformationProvider.GetSourceInformation(String, String)
+  fullName.vb: Xunit.CecilSourceInformationProvider.GetSourceInformation(String, String)
+  name.vb: GetSourceInformation(String, String)
+references:
+- uid: v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ISourceInformationProvider.html
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+- uid: v3.3.0.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Runner.Common.NullSourceInformationProvider
+  commentId: T:Xunit.Runner.Common.NullSourceInformationProvider
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.NullSourceInformationProvider.html
+  name: NullSourceInformationProvider
+  nameWithType: NullSourceInformationProvider
+  fullName: Xunit.Runner.Common.NullSourceInformationProvider
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.Create*
+  commentId: Overload:Xunit.CecilSourceInformationProvider.Create
+  href: Xunit.CecilSourceInformationProvider.Create.html#Xunit_CecilSourceInformationProvider_Create_System_String_
+  name: Create
+  nameWithType: CecilSourceInformationProvider.Create
+  fullName: Xunit.CecilSourceInformationProvider.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.DisposeAsync*
+  commentId: Overload:Xunit.CecilSourceInformationProvider.DisposeAsync
+  href: Xunit.CecilSourceInformationProvider.DisposeAsync.html#Xunit_CecilSourceInformationProvider_DisposeAsync
+  name: DisposeAsync
+  nameWithType: CecilSourceInformationProvider.DisposeAsync
+  fullName: Xunit.CecilSourceInformationProvider.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.0.1:Xunit.CecilSourceInformationProvider.GetSourceInformation*
+  commentId: Overload:Xunit.CecilSourceInformationProvider.GetSourceInformation
+  href: Xunit.CecilSourceInformationProvider.GetSourceInformation.html#Xunit_CecilSourceInformationProvider_GetSourceInformation_System_String_System_String_
+  name: GetSourceInformation
+  nameWithType: CecilSourceInformationProvider.GetSourceInformation
+  fullName: Xunit.CecilSourceInformationProvider.GetSourceInformation
+- uid: v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  commentId: M:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+  parent: v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider
+  isExternal: true
+  href: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation.html#Xunit_Runner_Common_ISourceInformationProvider_GetSourceInformation_System_String_System_String_
+  name: GetSourceInformation(string, string)
+  nameWithType: ISourceInformationProvider.GetSourceInformation(string, string)
+  fullName: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(string, string)
+  nameWithType.vb: ISourceInformationProvider.GetSourceInformation(String, String)
+  fullName.vb: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(String, String)
+  name.vb: GetSourceInformation(String, String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+    name: GetSourceInformation
+    href: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation.html#Xunit_Runner_Common_ISourceInformationProvider_GetSourceInformation_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation(System.String,System.String)
+    name: GetSourceInformation
+    href: Xunit.Runner.Common.ISourceInformationProvider.GetSourceInformation.html#Xunit_Runner_Common_ISourceInformationProvider_GetSourceInformation_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.SourceInformation
+  commentId: T:Xunit.Runner.Common.SourceInformation
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.SourceInformation.html
+  name: SourceInformation
+  nameWithType: SourceInformation
+  fullName: Xunit.Runner.Common.SourceInformation
+memberLayout: SeparatePages

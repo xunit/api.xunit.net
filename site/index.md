@@ -1,3 +1,3 @@
 ---
-redirect_url: "/v3/3.0.0/"
+redirect_url: "/v3/3.0.1/"
 ---

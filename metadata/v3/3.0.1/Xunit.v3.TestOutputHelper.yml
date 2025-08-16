@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper
+  commentId: T:Xunit.v3.TestOutputHelper
+  id: TestOutputHelper
+  parent: v3.3.0.1:Xunit.v3
+  children:
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.Initialize(Xunit.v3.IMessageBus,Xunit.Sdk.ITest)
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.Output
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.Uninitialize
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.Write(System.String)
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.Write(System.String,System.Object[])
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine(System.String)
+  - v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: TestOutputHelper
+  nameWithType: TestOutputHelper
+  fullName: Xunit.v3.TestOutputHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: TestOutputHelper
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Default implementation of <xref href="v3.3.0.1:Xunit.ITestOutputHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class TestOutputHelper : ITestOutputHelper'
+    content.vb: Public Class TestOutputHelper Implements ITestOutputHelper
+  inheritance:
+  - System.Object
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Output
+  commentId: P:Xunit.v3.TestOutputHelper.Output
+  id: Output
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Output
+  nameWithType: TestOutputHelper.Output
+  fullName: Xunit.v3.TestOutputHelper.Output
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Output
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the output provided by the test.
+  remarks: >-
+    Note: This also ensures that any partial output that hasn't been reported yet gets reported.
+
+    Calling in the middle of test execution is therefore not recommend.
+  example: []
+  syntax:
+    content: public string Output { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Output As String
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.Output*
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper.Output
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Initialize(Xunit.v3.IMessageBus,Xunit.Sdk.ITest)
+  commentId: M:Xunit.v3.TestOutputHelper.Initialize(Xunit.v3.IMessageBus,Xunit.Sdk.ITest)
+  id: Initialize(Xunit.v3.IMessageBus,Xunit.Sdk.ITest)
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IMessageBus, ITest)
+  nameWithType: TestOutputHelper.Initialize(IMessageBus, ITest)
+  fullName: Xunit.v3.TestOutputHelper.Initialize(Xunit.v3.IMessageBus, Xunit.Sdk.ITest)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Initialize
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initialize the test output helper with information about a test.
+  example: []
+  syntax:
+    content: public void Initialize(IMessageBus messageBus, ITest test)
+    parameters:
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+    - id: test
+      type: Xunit.Sdk.ITest
+    content.vb: Public Sub Initialize(messageBus As IMessageBus, test As ITest)
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.Initialize*
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Uninitialize
+  commentId: M:Xunit.v3.TestOutputHelper.Uninitialize
+  id: Uninitialize
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Uninitialize()
+  nameWithType: TestOutputHelper.Uninitialize()
+  fullName: Xunit.v3.TestOutputHelper.Uninitialize()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Uninitialize
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Resets the test output helper to its uninitialized state.
+  example: []
+  syntax:
+    content: public void Uninitialize()
+    content.vb: Public Sub Uninitialize()
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.Uninitialize*
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Write(System.String)
+  commentId: M:Xunit.v3.TestOutputHelper.Write(System.String)
+  id: Write(System.String)
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: TestOutputHelper.Write(string)
+  fullName: Xunit.v3.TestOutputHelper.Write(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 58
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds text to the output.
+  example: []
+  syntax:
+    content: public void Write(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message
+    content.vb: Public Sub Write(message As String)
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.Write*
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String)
+  nameWithType.vb: TestOutputHelper.Write(String)
+  fullName.vb: Xunit.v3.TestOutputHelper.Write(String)
+  name.vb: Write(String)
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Write(System.String,System.Object[])
+  commentId: M:Xunit.v3.TestOutputHelper.Write(System.String,System.Object[])
+  id: Write(System.String,System.Object[])
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, params object[])
+  nameWithType: TestOutputHelper.Write(string, params object[])
+  fullName: Xunit.v3.TestOutputHelper.Write(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 66
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds formatted text to the output.
+  example: []
+  syntax:
+    content: public void Write(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format
+    - id: args
+      type: System.Object[]
+      description: The format arguments
+    content.vb: Public Sub Write(format As String, ParamArray args As Object())
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.Write*
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  nameWithType.vb: TestOutputHelper.Write(String, ParamArray Object())
+  fullName.vb: Xunit.v3.TestOutputHelper.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine(System.String)
+  commentId: M:Xunit.v3.TestOutputHelper.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string)
+  nameWithType: TestOutputHelper.WriteLine(string)
+  fullName: Xunit.v3.TestOutputHelper.WriteLine(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 77
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds text to the output, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message
+    content.vb: Public Sub WriteLine(message As String)
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine*
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+  nameWithType.vb: TestOutputHelper.WriteLine(String)
+  fullName.vb: Xunit.v3.TestOutputHelper.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine(System.String,System.Object[])
+  commentId: M:Xunit.v3.TestOutputHelper.WriteLine(System.String,System.Object[])
+  id: WriteLine(System.String,System.Object[])
+  parent: v3.3.0.1:Xunit.v3.TestOutputHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, params object[])
+  nameWithType: TestOutputHelper.WriteLine(string, params object[])
+  fullName: Xunit.v3.TestOutputHelper.WriteLine(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestOutputHelper.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.core/Framework/TestOutputHelper.cs
+    startLine: 85
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Adds formatted text to the output, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format
+    - id: args
+      type: System.Object[]
+      description: The format arguments
+    content.vb: Public Sub WriteLine(format As String, ParamArray args As Object())
+  overload: v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine*
+  implements:
+  - v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  nameWithType.vb: TestOutputHelper.WriteLine(String, ParamArray Object())
+  fullName.vb: Xunit.v3.TestOutputHelper.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+references:
+- uid: v3.3.0.1:Xunit.ITestOutputHelper
+  commentId: T:Xunit.ITestOutputHelper
+  parent: v3.3.0.1:Xunit
+  href: Xunit.ITestOutputHelper.html
+  name: ITestOutputHelper
+  nameWithType: ITestOutputHelper
+  fullName: Xunit.ITestOutputHelper
+- uid: v3.3.0.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.0.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Output*
+  commentId: Overload:Xunit.v3.TestOutputHelper.Output
+  href: Xunit.v3.TestOutputHelper.Output.html#Xunit_v3_TestOutputHelper_Output
+  name: Output
+  nameWithType: TestOutputHelper.Output
+  fullName: Xunit.v3.TestOutputHelper.Output
+- uid: v3.3.0.1:Xunit.ITestOutputHelper.Output
+  commentId: P:Xunit.ITestOutputHelper.Output
+  parent: v3.3.0.1:Xunit.ITestOutputHelper
+  href: Xunit.ITestOutputHelper.Output.html#Xunit_ITestOutputHelper_Output
+  name: Output
+  nameWithType: ITestOutputHelper.Output
+  fullName: Xunit.ITestOutputHelper.Output
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Initialize*
+  commentId: Overload:Xunit.v3.TestOutputHelper.Initialize
+  href: Xunit.v3.TestOutputHelper.Initialize.html#Xunit_v3_TestOutputHelper_Initialize_Xunit_v3_IMessageBus_Xunit_Sdk_ITest_
+  name: Initialize
+  nameWithType: TestOutputHelper.Initialize
+  fullName: Xunit.v3.TestOutputHelper.Initialize
+- uid: v3.3.0.1:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3.3.0.1:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: v3.3.0.1:Xunit.Sdk.ITest
+  commentId: T:Xunit.Sdk.ITest
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.ITest.html
+  name: ITest
+  nameWithType: ITest
+  fullName: Xunit.Sdk.ITest
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Uninitialize*
+  commentId: Overload:Xunit.v3.TestOutputHelper.Uninitialize
+  href: Xunit.v3.TestOutputHelper.Uninitialize.html#Xunit_v3_TestOutputHelper_Uninitialize
+  name: Uninitialize
+  nameWithType: TestOutputHelper.Uninitialize
+  fullName: Xunit.v3.TestOutputHelper.Uninitialize
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.Write*
+  commentId: Overload:Xunit.v3.TestOutputHelper.Write
+  href: Xunit.v3.TestOutputHelper.Write.html#Xunit_v3_TestOutputHelper_Write_System_String_
+  name: Write
+  nameWithType: TestOutputHelper.Write
+  fullName: Xunit.v3.TestOutputHelper.Write
+- uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String)
+  commentId: M:Xunit.ITestOutputHelper.Write(System.String)
+  parent: v3.3.0.1:Xunit.ITestOutputHelper
+  isExternal: true
+  href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_
+  name: Write(string)
+  nameWithType: ITestOutputHelper.Write(string)
+  fullName: Xunit.ITestOutputHelper.Write(string)
+  nameWithType.vb: ITestOutputHelper.Write(String)
+  fullName.vb: Xunit.ITestOutputHelper.Write(String)
+  name.vb: Write(String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String)
+    name: Write
+    href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String)
+    name: Write
+    href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  commentId: M:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+  parent: v3.3.0.1:Xunit.ITestOutputHelper
+  isExternal: true
+  href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_System_Object___
+  name: Write(string, params object[])
+  nameWithType: ITestOutputHelper.Write(string, params object[])
+  fullName: Xunit.ITestOutputHelper.Write(string, params object[])
+  nameWithType.vb: ITestOutputHelper.Write(String, ParamArray Object())
+  fullName.vb: Xunit.ITestOutputHelper.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+    name: Write
+    href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.Write(System.String,System.Object[])
+    name: Write
+    href: Xunit.ITestOutputHelper.Write.html#Xunit_ITestOutputHelper_Write_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.newline
+  name: NewLine
+  nameWithType: Environment.NewLine
+  fullName: System.Environment.NewLine
+- uid: v3.3.0.1:Xunit.v3.TestOutputHelper.WriteLine*
+  commentId: Overload:Xunit.v3.TestOutputHelper.WriteLine
+  href: Xunit.v3.TestOutputHelper.WriteLine.html#Xunit_v3_TestOutputHelper_WriteLine_System_String_
+  name: WriteLine
+  nameWithType: TestOutputHelper.WriteLine
+  fullName: Xunit.v3.TestOutputHelper.WriteLine
+- uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+  commentId: M:Xunit.ITestOutputHelper.WriteLine(System.String)
+  parent: v3.3.0.1:Xunit.ITestOutputHelper
+  isExternal: true
+  href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_
+  name: WriteLine(string)
+  nameWithType: ITestOutputHelper.WriteLine(string)
+  fullName: Xunit.ITestOutputHelper.WriteLine(string)
+  nameWithType.vb: ITestOutputHelper.WriteLine(String)
+  fullName.vb: Xunit.ITestOutputHelper.WriteLine(String)
+  name.vb: WriteLine(String)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+    name: WriteLine
+    href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String)
+    name: WriteLine
+    href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  commentId: M:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+  parent: v3.3.0.1:Xunit.ITestOutputHelper
+  isExternal: true
+  href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_System_Object___
+  name: WriteLine(string, params object[])
+  nameWithType: ITestOutputHelper.WriteLine(string, params object[])
+  fullName: Xunit.ITestOutputHelper.WriteLine(string, params object[])
+  nameWithType.vb: ITestOutputHelper.WriteLine(String, ParamArray Object())
+  fullName.vb: Xunit.ITestOutputHelper.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+    name: WriteLine
+    href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.ITestOutputHelper.WriteLine(System.String,System.Object[])
+    name: WriteLine
+    href: Xunit.ITestOutputHelper.WriteLine.html#Xunit_ITestOutputHelper_WriteLine_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+memberLayout: SeparatePages

@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  commentId: T:Xunit.SimpleRunner.AssemblyRunner
+  id: AssemblyRunner
+  parent: v3.3.0.1:Xunit.SimpleRunner
+  children:
+  - v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.#ctor(Xunit.SimpleRunner.AssemblyRunnerOptions)
+  - v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Cancel
+  - v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync
+  - v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Run
+  langs:
+  - csharp
+  - vb
+  name: AssemblyRunner
+  nameWithType: AssemblyRunner
+  fullName: Xunit.SimpleRunner.AssemblyRunner
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AssemblyRunner
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: A class which makes it simpler for casual runner authors to find and run tests and get results.
+  example: []
+  syntax:
+    content: 'public sealed class AssemblyRunner : IMessageSink, IAsyncDisposable'
+    content.vb: Public NotInheritable Class AssemblyRunner Implements IMessageSink, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - v3.3.0.1:Xunit.Sdk.IMessageSink
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.#ctor(Xunit.SimpleRunner.AssemblyRunnerOptions)
+  commentId: M:Xunit.SimpleRunner.AssemblyRunner.#ctor(Xunit.SimpleRunner.AssemblyRunnerOptions)
+  id: '#ctor(Xunit.SimpleRunner.AssemblyRunnerOptions)'
+  parent: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  langs:
+  - csharp
+  - vb
+  name: AssemblyRunner(AssemblyRunnerOptions)
+  nameWithType: AssemblyRunner.AssemblyRunner(AssemblyRunnerOptions)
+  fullName: Xunit.SimpleRunner.AssemblyRunner.AssemblyRunner(Xunit.SimpleRunner.AssemblyRunnerOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: Initializes a new instance of the <xref href="v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AssemblyRunner(AssemblyRunnerOptions options)
+    parameters:
+    - id: options
+      type: Xunit.SimpleRunner.AssemblyRunnerOptions
+      description: ''
+    content.vb: Public Sub New(options As AssemblyRunnerOptions)
+  overload: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.#ctor*
+  nameWithType.vb: AssemblyRunner.New(AssemblyRunnerOptions)
+  fullName.vb: Xunit.SimpleRunner.AssemblyRunner.New(Xunit.SimpleRunner.AssemblyRunnerOptions)
+  name.vb: New(AssemblyRunnerOptions)
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Cancel
+  commentId: M:Xunit.SimpleRunner.AssemblyRunner.Cancel
+  id: Cancel
+  parent: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: AssemblyRunner.Cancel()
+  fullName: Xunit.SimpleRunner.AssemblyRunner.Cancel()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Cancel
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+    startLine: 47
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: >-
+    Call to request that the current run be cancelled. Note that cancellation may not be
+
+    instantaneous, and even after cancellation has been acknowledged, you can expect to
+
+    receive all the cleanup-related messages.
+  example: []
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Cancel*
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync
+  commentId: M:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: AssemblyRunner.DisposeAsync()
+  fullName: Xunit.SimpleRunner.AssemblyRunner.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+    startLine: 63
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Run
+  commentId: M:Xunit.SimpleRunner.AssemblyRunner.Run
+  id: Run
+  parent: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: AssemblyRunner.Run()
+  fullName: Xunit.SimpleRunner.AssemblyRunner.Run()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/AssemblyRunner.cs
+    startLine: 340
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: Runs the test assembly.
+  example: []
+  syntax:
+    content: public Task Run()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Run() As Task
+  overload: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Run*
+references:
+- uid: v3.3.0.1:Xunit.SimpleRunner
+  commentId: N:Xunit.SimpleRunner
+  href: Xunit.html
+  name: Xunit.SimpleRunner
+  nameWithType: Xunit.SimpleRunner
+  fullName: Xunit.SimpleRunner
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.SimpleRunner
+    name: SimpleRunner
+    href: Xunit.SimpleRunner.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.SimpleRunner
+    name: SimpleRunner
+    href: Xunit.SimpleRunner.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.0.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.0.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.0.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner
+  commentId: T:Xunit.SimpleRunner.AssemblyRunner
+  href: Xunit.SimpleRunner.AssemblyRunner.html
+  name: AssemblyRunner
+  nameWithType: AssemblyRunner
+  fullName: Xunit.SimpleRunner.AssemblyRunner
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.#ctor*
+  commentId: Overload:Xunit.SimpleRunner.AssemblyRunner.#ctor
+  href: Xunit.SimpleRunner.AssemblyRunner.-ctor.html#Xunit_SimpleRunner_AssemblyRunner__ctor_Xunit_SimpleRunner_AssemblyRunnerOptions_
+  name: AssemblyRunner
+  nameWithType: AssemblyRunner.AssemblyRunner
+  fullName: Xunit.SimpleRunner.AssemblyRunner.AssemblyRunner
+  nameWithType.vb: AssemblyRunner.New
+  fullName.vb: Xunit.SimpleRunner.AssemblyRunner.New
+  name.vb: New
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunnerOptions
+  commentId: T:Xunit.SimpleRunner.AssemblyRunnerOptions
+  parent: v3.3.0.1:Xunit.SimpleRunner
+  href: Xunit.SimpleRunner.AssemblyRunnerOptions.html
+  name: AssemblyRunnerOptions
+  nameWithType: AssemblyRunnerOptions
+  fullName: Xunit.SimpleRunner.AssemblyRunnerOptions
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Cancel*
+  commentId: Overload:Xunit.SimpleRunner.AssemblyRunner.Cancel
+  href: Xunit.SimpleRunner.AssemblyRunner.Cancel.html#Xunit_SimpleRunner_AssemblyRunner_Cancel
+  name: Cancel
+  nameWithType: AssemblyRunner.Cancel
+  fullName: Xunit.SimpleRunner.AssemblyRunner.Cancel
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync*
+  commentId: Overload:Xunit.SimpleRunner.AssemblyRunner.DisposeAsync
+  href: Xunit.SimpleRunner.AssemblyRunner.DisposeAsync.html#Xunit_SimpleRunner_AssemblyRunner_DisposeAsync
+  name: DisposeAsync
+  nameWithType: AssemblyRunner.DisposeAsync
+  fullName: Xunit.SimpleRunner.AssemblyRunner.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.0.1:Xunit.SimpleRunner.AssemblyRunner.Run*
+  commentId: Overload:Xunit.SimpleRunner.AssemblyRunner.Run
+  href: Xunit.SimpleRunner.AssemblyRunner.Run.html#Xunit_SimpleRunner_AssemblyRunner_Run
+  name: Run
+  nameWithType: AssemblyRunner.Run
+  fullName: Xunit.SimpleRunner.AssemblyRunner.Run
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+memberLayout: SeparatePages

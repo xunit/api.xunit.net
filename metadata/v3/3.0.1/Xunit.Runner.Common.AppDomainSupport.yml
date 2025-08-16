@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+  commentId: T:Xunit.Runner.Common.AppDomainSupport
+  id: AppDomainSupport
+  parent: v3.3.0.1:Xunit.Runner.Common
+  children:
+  - v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Denied
+  - v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.IfAvailable
+  - v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Required
+  langs:
+  - csharp
+  - vb
+  name: AppDomainSupport
+  nameWithType: AppDomainSupport
+  fullName: Xunit.Runner.Common.AppDomainSupport
+  type: Enum
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: AppDomainSupport
+    path: ../src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Indicates the level of app domain support that the runner is requesting. Note that these values
+
+    are only valid for v1 and v2 tests; v3 tests always run in a separate process rather than
+
+    in the runner process.
+  example: []
+  syntax:
+    content: public enum AppDomainSupport
+    content.vb: Public Enum AppDomainSupport
+  extensionMethods:
+  - v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Xunit.Runner.Common.AppDomainSupportExtensions.IsValid
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.IfAvailable
+  commentId: F:Xunit.Runner.Common.AppDomainSupport.IfAvailable
+  id: IfAvailable
+  parent: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+  langs:
+  - csharp
+  - vb
+  name: IfAvailable
+  nameWithType: AppDomainSupport.IfAvailable
+  fullName: Xunit.Runner.Common.AppDomainSupport.IfAvailable
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: IfAvailable
+    path: ../src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Requests that app domains be used for v1 and v2 tests, if available; if app domains cannot
+
+    be used, then the tests will be discovered and run in the runner's app domain.
+  example: []
+  syntax:
+    content: IfAvailable = 1
+    return:
+      type: Xunit.Runner.Common.AppDomainSupport
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Required
+  commentId: F:Xunit.Runner.Common.AppDomainSupport.Required
+  id: Required
+  parent: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: AppDomainSupport.Required
+  fullName: Xunit.Runner.Common.AppDomainSupport.Required
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Required
+    path: ../src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Requires that v1 and v2 tests run in a separate app domain. Can only be requested by runners
+
+    written in .NET Framework.
+  example: []
+  syntax:
+    content: Required = 2
+    return:
+      type: Xunit.Runner.Common.AppDomainSupport
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Denied
+  commentId: F:Xunit.Runner.Common.AppDomainSupport.Denied
+  id: Denied
+  parent: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+  langs:
+  - csharp
+  - vb
+  name: Denied
+  nameWithType: AppDomainSupport.Denied
+  fullName: Xunit.Runner.Common.AppDomainSupport.Denied
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+      branch: 9214bef1544142cc520bf37a9b4f655aaabfdb0f
+      repo: https://github.com/xunit/xunit
+    id: Denied
+    path: ../src/xunit.v3.runner.common/Frameworks/AppDomainSupport.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Requires that v1 and v2 tests be run in the runner's app domain.
+  example: []
+  syntax:
+    content: Denied = 3
+    return:
+      type: Xunit.Runner.Common.AppDomainSupport
+references:
+- uid: v3.3.0.1:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.0.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.0.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport.Xunit.Runner.Common.AppDomainSupportExtensions.IsValid
+  commentId: M:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  parent: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions
+  definition: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  name: IsValid(AppDomainSupport)
+  nameWithType: AppDomainSupportExtensions.IsValid(AppDomainSupport)
+  fullName: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+    name: IsValid
+    href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+    name: AppDomainSupport
+    href: Xunit.Runner.Common.AppDomainSupport.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+    name: IsValid
+    href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+    name: AppDomainSupport
+    href: Xunit.Runner.Common.AppDomainSupport.html
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  commentId: M:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  name: IsValid(AppDomainSupport)
+  nameWithType: AppDomainSupportExtensions.IsValid(AppDomainSupport)
+  fullName: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+  spec.csharp:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+    name: IsValid
+    href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+    name: AppDomainSupport
+    href: Xunit.Runner.Common.AppDomainSupport.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions.IsValid(Xunit.Runner.Common.AppDomainSupport)
+    name: IsValid
+    href: Xunit.Runner.Common.AppDomainSupportExtensions.IsValid.html#Xunit_Runner_Common_AppDomainSupportExtensions_IsValid_Xunit_Runner_Common_AppDomainSupport_
+  - name: (
+  - uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+    name: AppDomainSupport
+    href: Xunit.Runner.Common.AppDomainSupport.html
+  - name: )
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupportExtensions
+  commentId: T:Xunit.Runner.Common.AppDomainSupportExtensions
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.AppDomainSupportExtensions.html
+  name: AppDomainSupportExtensions
+  nameWithType: AppDomainSupportExtensions
+  fullName: Xunit.Runner.Common.AppDomainSupportExtensions
+- uid: v3.3.0.1:Xunit.Runner.Common.AppDomainSupport
+  commentId: T:Xunit.Runner.Common.AppDomainSupport
+  parent: v3.3.0.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.AppDomainSupport.html
+  name: AppDomainSupport
+  nameWithType: AppDomainSupport
+  fullName: Xunit.Runner.Common.AppDomainSupport
+memberLayout: SeparatePages
