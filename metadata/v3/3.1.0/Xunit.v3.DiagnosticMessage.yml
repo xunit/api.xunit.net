@@ -1,0 +1,1092 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  commentId: T:Xunit.v3.DiagnosticMessage
+  id: DiagnosticMessage
+  parent: v3.3.1.0:Xunit.v3
+  children:
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String)
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object)
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object)
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object,System.Object)
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object[])
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.Message
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.ToString
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage
+  nameWithType: DiagnosticMessage
+  fullName: Xunit.v3.DiagnosticMessage
+  type: Class
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: DiagnosticMessage
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Default implementation of <xref href="v3.3.1.0:Xunit.Sdk.IDiagnosticMessage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [JsonTypeID("diagnostic")]
+
+      public sealed class DiagnosticMessage : MessageSinkMessage, IDiagnosticMessage, IMessageSinkMessage, IJsonSerializable
+    content.vb: >-
+      <JsonTypeID("diagnostic")>
+
+      Public NotInheritable Class DiagnosticMessage Inherits MessageSinkMessage Implements IDiagnosticMessage, IMessageSinkMessage, IJsonSerializable
+  inheritance:
+  - System.Object
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage
+  implements:
+  - v3.3.1.0:Xunit.Sdk.IDiagnosticMessage
+  - v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+  - v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  inheritedMembers:
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: Xunit.Sdk.JsonTypeIDAttribute
+    ctor: Xunit.Sdk.JsonTypeIDAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: diagnostic
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.Message
+  commentId: P:Xunit.v3.DiagnosticMessage.Message
+  id: Message
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: DiagnosticMessage.Message
+  fullName: Xunit.v3.DiagnosticMessage.Message
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Messages/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Message
+    path: ../src/xunit.v3.core/Messages/DiagnosticMessage.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the diagnostic message.
+  example: []
+  syntax:
+    content: public required string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.Message*
+  implements:
+  - v3.3.1.0:Xunit.Sdk.IDiagnosticMessage.Message
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.DiagnosticMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  id: ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: ValidateObjectState(HashSet<string>)
+  nameWithType: DiagnosticMessage.ValidateObjectState(HashSet<string>)
+  fullName: Xunit.v3.DiagnosticMessage.ValidateObjectState(System.Collections.Generic.HashSet<string>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Messages/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ValidateObjectState
+    path: ../src/xunit.v3.core/Messages/DiagnosticMessage.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Called before serializing the message. Implementers are expected to call <xref href="v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object%2cSystem.String%2cSystem.Collections.Generic.HashSet%7bSystem.String%7d)" data-throw-if-not-resolved="false"></xref>
+
+    for each property that must have a value, to record invalid property values into the provided hash set.
+  example: []
+  syntax:
+    content: protected override void ValidateObjectState(HashSet<string> invalidProperties)
+    parameters:
+    - id: invalidProperties
+      type: System.Collections.Generic.HashSet{System.String}
+      description: The hash set to record invalid properties into
+    content.vb: Protected Overrides Sub ValidateObjectState(invalidProperties As HashSet(Of String))
+  overridden: Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.ValidateObjectState*
+  nameWithType.vb: DiagnosticMessage.ValidateObjectState(HashSet(Of String))
+  fullName.vb: Xunit.v3.DiagnosticMessage.ValidateObjectState(System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidateObjectState(HashSet(Of String))
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor
+  id: '#ctor'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage()
+  nameWithType: DiagnosticMessage.DiagnosticMessage()
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage()
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DiagnosticMessage()
+    content.vb: Public Sub New()
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New()
+  fullName.vb: Xunit.v3.DiagnosticMessage.New()
+  name.vb: New()
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String)
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage(string)
+  nameWithType: DiagnosticMessage.DiagnosticMessage(string)
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class with
+
+    the provided message.
+  example: []
+  syntax:
+    content: public DiagnosticMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The diagnostic message
+    content.vb: Public Sub New(message As String)
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New(String)
+  fullName.vb: Xunit.v3.DiagnosticMessage.New(String)
+  name.vb: New(String)
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object)
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object)
+  id: '#ctor(System.String,System.Object)'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage(string, object?)
+  nameWithType: DiagnosticMessage.DiagnosticMessage(string, object?)
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage(string, object?)
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 38
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class with
+
+    the provided message format and single argument.
+  example: []
+  syntax:
+    content: public DiagnosticMessage(string messageFormat, object? arg0)
+    parameters:
+    - id: messageFormat
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    content.vb: Public Sub New(messageFormat As String, arg0 As Object)
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New(String, Object)
+  fullName.vb: Xunit.v3.DiagnosticMessage.New(String, Object)
+  name.vb: New(String, Object)
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object)
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object)
+  id: '#ctor(System.String,System.Object,System.Object)'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage(string, object?, object?)
+  nameWithType: DiagnosticMessage.DiagnosticMessage(string, object?, object?)
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage(string, object?, object?)
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class with
+
+    the provided message format and two arguments.
+  example: []
+  syntax:
+    content: public DiagnosticMessage(string messageFormat, object? arg0, object? arg1)
+    parameters:
+    - id: messageFormat
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string.
+    content.vb: Public Sub New(messageFormat As String, arg0 As Object, arg1 As Object)
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New(String, Object, Object)
+  fullName.vb: Xunit.v3.DiagnosticMessage.New(String, Object, Object)
+  name.vb: New(String, Object, Object)
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object,System.Object)
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object,System.Object,System.Object)
+  id: '#ctor(System.String,System.Object,System.Object,System.Object)'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage(string, object?, object?, object?)
+  nameWithType: DiagnosticMessage.DiagnosticMessage(string, object?, object?, object?)
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage(string, object?, object?, object?)
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 66
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class with
+
+    the provided message format and three arguments.
+  example: []
+  syntax:
+    content: public DiagnosticMessage(string messageFormat, object? arg0, object? arg1, object? arg2)
+    parameters:
+    - id: messageFormat
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string.
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string.
+    - id: arg2
+      type: System.Object
+      description: The value to replace {2} in the format string.
+    content.vb: Public Sub New(messageFormat As String, arg0 As Object, arg1 As Object, arg2 As Object)
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New(String, Object, Object, Object)
+  fullName.vb: Xunit.v3.DiagnosticMessage.New(String, Object, Object, Object)
+  name.vb: New(String, Object, Object, Object)
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object[])
+  commentId: M:Xunit.v3.DiagnosticMessage.#ctor(System.String,System.Object[])
+  id: '#ctor(System.String,System.Object[])'
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticMessage(string, params object?[])
+  nameWithType: DiagnosticMessage.DiagnosticMessage(string, params object?[])
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage(string, params object?[])
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 80
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates a new instance of the <xref href="v3.3.1.0:Xunit.v3.DiagnosticMessage" data-throw-if-not-resolved="false"></xref> class with
+
+    the provided message format and multiple arguments.
+  example: []
+  syntax:
+    content: public DiagnosticMessage(string messageFormat, params object?[] args)
+    parameters:
+    - id: messageFormat
+      type: System.String
+      description: The message format string
+    - id: args
+      type: System.Object[]
+      description: An object array that contains zero or more objects to format.
+    content.vb: Public Sub New(messageFormat As String, ParamArray args As Object())
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  nameWithType.vb: DiagnosticMessage.New(String, ParamArray Object())
+  fullName.vb: Xunit.v3.DiagnosticMessage.New(String, ParamArray Object())
+  name.vb: New(String, ParamArray Object())
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  commentId: M:Xunit.v3.DiagnosticMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  id: Serialize(Xunit.Sdk.JsonObjectSerializer)
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: Serialize(JsonObjectSerializer)
+  nameWithType: DiagnosticMessage.Serialize(JsonObjectSerializer)
+  fullName: Xunit.v3.DiagnosticMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 87
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Override to serialize the values in the message into JSON.
+  example: []
+  syntax:
+    content: protected override void Serialize(JsonObjectSerializer serializer)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: The serializer to write values to.
+    content.vb: Protected Overrides Sub Serialize(serializer As JsonObjectSerializer)
+  overridden: Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.Serialize*
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.ToString
+  commentId: M:Xunit.v3.DiagnosticMessage.ToString
+  id: ToString
+  parent: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DiagnosticMessage.ToString()
+  fullName: Xunit.v3.DiagnosticMessage.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/DiagnosticMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ToString
+    path: ../src/common/MessagePartials/DiagnosticMessage.cs
+    startLine: 95
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: v3.3.1.0:Xunit.v3.DiagnosticMessage.ToString*
+references:
+- uid: v3.3.1.0:Xunit.Sdk.IDiagnosticMessage
+  commentId: T:Xunit.Sdk.IDiagnosticMessage
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IDiagnosticMessage.html
+  name: IDiagnosticMessage
+  nameWithType: IDiagnosticMessage
+  fullName: Xunit.Sdk.IDiagnosticMessage
+- uid: v3.3.1.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  commentId: T:Xunit.v3.MessageSinkMessage
+  parent: v3.3.1.0:Xunit.v3
+  href: Xunit.v3.MessageSinkMessage.html
+  name: MessageSinkMessage
+  nameWithType: MessageSinkMessage
+  fullName: Xunit.v3.MessageSinkMessage
+- uid: v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState
+  name: ValidateObjectState()
+  nameWithType: MessageSinkMessage.ValidateObjectState()
+  fullName: Xunit.v3.MessageSinkMessage.ValidateObjectState()
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+    name: ValidateObjectState
+    href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+    name: ValidateObjectState
+    href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+  commentId: M:Xunit.v3.MessageSinkMessage.ToJson
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  href: Xunit.v3.MessageSinkMessage.ToJson.html#Xunit_v3_MessageSinkMessage_ToJson
+  name: ToJson()
+  nameWithType: MessageSinkMessage.ToJson()
+  fullName: Xunit.v3.MessageSinkMessage.ToJson()
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+    name: ToJson
+    href: Xunit.v3.MessageSinkMessage.ToJson.html#Xunit_v3_MessageSinkMessage_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+    name: ToJson
+    href: Xunit.v3.MessageSinkMessage.ToJson.html#Xunit_v3_MessageSinkMessage_ToJson
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: v3.3.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.Message*
+  commentId: Overload:Xunit.v3.DiagnosticMessage.Message
+  href: Xunit.v3.DiagnosticMessage.Message.html#Xunit_v3_DiagnosticMessage_Message
+  name: Message
+  nameWithType: DiagnosticMessage.Message
+  fullName: Xunit.v3.DiagnosticMessage.Message
+- uid: v3.3.1.0:Xunit.Sdk.IDiagnosticMessage.Message
+  commentId: P:Xunit.Sdk.IDiagnosticMessage.Message
+  parent: v3.3.1.0:Xunit.Sdk.IDiagnosticMessage
+  name: Message
+  nameWithType: IDiagnosticMessage.Message
+  fullName: Xunit.Sdk.IDiagnosticMessage.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  isExternal: true
+  href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  name: ValidatePropertyIsNotNull(object, string, HashSet<string>)
+  nameWithType: MessageSinkMessage.ValidatePropertyIsNotNull(object, string, HashSet<string>)
+  fullName: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(object, string, System.Collections.Generic.HashSet<string>)
+  nameWithType.vb: MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+  fullName.vb: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+    name: ValidatePropertyIsNotNull
+    href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+    name: ValidatePropertyIsNotNull
+    href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  isExternal: true
+  href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState_System_Collections_Generic_HashSet_System_String__
+  name: ValidateObjectState(HashSet<string>)
+  nameWithType: MessageSinkMessage.ValidateObjectState(HashSet<string>)
+  fullName: Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet<string>)
+  nameWithType.vb: MessageSinkMessage.ValidateObjectState(HashSet(Of String))
+  fullName.vb: Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidateObjectState(HashSet(Of String))
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+    name: ValidateObjectState
+    href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+    name: ValidateObjectState
+    href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.ValidateObjectState*
+  commentId: Overload:Xunit.v3.DiagnosticMessage.ValidateObjectState
+  href: Xunit.v3.DiagnosticMessage.ValidateObjectState.html#Xunit_v3_DiagnosticMessage_ValidateObjectState_System_Collections_Generic_HashSet_System_String__
+  name: ValidateObjectState
+  nameWithType: DiagnosticMessage.ValidateObjectState
+  fullName: Xunit.v3.DiagnosticMessage.ValidateObjectState
+- uid: System.Collections.Generic.HashSet{System.String}
+  commentId: T:System.Collections.Generic.HashSet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<string>
+  nameWithType: HashSet<string>
+  fullName: System.Collections.Generic.HashSet<string>
+  nameWithType.vb: HashSet(Of String)
+  fullName.vb: System.Collections.Generic.HashSet(Of String)
+  name.vb: HashSet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage
+  commentId: T:Xunit.v3.DiagnosticMessage
+  href: Xunit.v3.DiagnosticMessage.html
+  name: DiagnosticMessage
+  nameWithType: DiagnosticMessage
+  fullName: Xunit.v3.DiagnosticMessage
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.#ctor*
+  commentId: Overload:Xunit.v3.DiagnosticMessage.#ctor
+  href: Xunit.v3.DiagnosticMessage.-ctor.html#Xunit_v3_DiagnosticMessage__ctor
+  name: DiagnosticMessage
+  nameWithType: DiagnosticMessage.DiagnosticMessage
+  fullName: Xunit.v3.DiagnosticMessage.DiagnosticMessage
+  nameWithType.vb: DiagnosticMessage.New
+  fullName.vb: Xunit.v3.DiagnosticMessage.New
+  name.vb: New
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  commentId: M:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  href: Xunit.v3.MessageSinkMessage.Serialize.html#Xunit_v3_MessageSinkMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  name: Serialize(JsonObjectSerializer)
+  nameWithType: MessageSinkMessage.Serialize(JsonObjectSerializer)
+  fullName: Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+    name: Serialize
+    href: Xunit.v3.MessageSinkMessage.Serialize.html#Xunit_v3_MessageSinkMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.JsonObjectSerializer
+    name: JsonObjectSerializer
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+    name: Serialize
+    href: Xunit.v3.MessageSinkMessage.Serialize.html#Xunit_v3_MessageSinkMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.JsonObjectSerializer
+    name: JsonObjectSerializer
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.Serialize*
+  commentId: Overload:Xunit.v3.DiagnosticMessage.Serialize
+  href: Xunit.v3.DiagnosticMessage.Serialize.html#Xunit_v3_DiagnosticMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  name: Serialize
+  nameWithType: DiagnosticMessage.Serialize
+  fullName: Xunit.v3.DiagnosticMessage.Serialize
+- uid: v3.3.1.0:Xunit.Sdk.JsonObjectSerializer
+  commentId: T:Xunit.Sdk.JsonObjectSerializer
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.JsonObjectSerializer.html
+  name: JsonObjectSerializer
+  nameWithType: JsonObjectSerializer
+  fullName: Xunit.Sdk.JsonObjectSerializer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.DiagnosticMessage.ToString*
+  commentId: Overload:Xunit.v3.DiagnosticMessage.ToString
+  href: Xunit.v3.DiagnosticMessage.ToString.html#Xunit_v3_DiagnosticMessage_ToString
+  name: ToString
+  nameWithType: DiagnosticMessage.ToString
+  fullName: Xunit.v3.DiagnosticMessage.ToString
+memberLayout: SeparatePages

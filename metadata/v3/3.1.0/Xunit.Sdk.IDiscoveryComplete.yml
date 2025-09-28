@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete
+  commentId: T:Xunit.Sdk.IDiscoveryComplete
+  id: IDiscoveryComplete
+  parent: v3.3.1.0:Xunit.Sdk
+  children:
+  - v3.3.1.0:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+  langs:
+  - csharp
+  - vb
+  name: IDiscoveryComplete
+  nameWithType: IDiscoveryComplete
+  fullName: Xunit.Sdk.IDiscoveryComplete
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryComplete.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: IDiscoveryComplete
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryComplete.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This message indicates that the discovery process has been completed for
+
+    the requested assembly.
+  example: []
+  syntax:
+    content: 'public interface IDiscoveryComplete : ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable'
+    content.vb: Public Interface IDiscoveryComplete Inherits ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable
+  inheritedMembers:
+  - v3.3.1.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+- uid: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+  commentId: P:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+  id: TestCasesToRun
+  parent: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete
+  langs:
+  - csharp
+  - vb
+  name: TestCasesToRun
+  nameWithType: IDiscoveryComplete.TestCasesToRun
+  fullName: Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryComplete.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: TestCasesToRun
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryComplete.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets a count of the number of test cases that passed the filter and will be run.
+  example: []
+  syntax:
+    content: int TestCasesToRun { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TestCasesToRun As Integer
+  overload: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun*
+references:
+- uid: v3.3.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.1.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3.3.1.0:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun*
+  commentId: Overload:Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+  href: Xunit.Sdk.IDiscoveryComplete.TestCasesToRun.html#Xunit_Sdk_IDiscoveryComplete_TestCasesToRun
+  name: TestCasesToRun
+  nameWithType: IDiscoveryComplete.TestCasesToRun
+  fullName: Xunit.Sdk.IDiscoveryComplete.TestCasesToRun
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

@@ -1,0 +1,1507 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController
+  commentId: T:Xunit.v3.InProcessFrontController
+  id: InProcessFrontController
+  parent: v3.3.1.0:Xunit.v3
+  children:
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.#ctor(Xunit.v3.ITestFramework,System.Reflection.Assembly,System.String)
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+  - v3.3.1.0:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: InProcessFrontController
+  nameWithType: InProcessFrontController
+  fullName: Xunit.v3.InProcessFrontController
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: InProcessFrontController
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    This class is a "philosophical" implementation of <xref href="v3.3.1.0:Xunit.IFrontController" data-throw-if-not-resolved="false"></xref> (which isn't a type
+
+    that's available here), intended to be used by in-process runners, wrapped around an implementation
+
+    of <xref href="v3.3.1.0:Xunit.v3.ITestFramework" data-throw-if-not-resolved="false"></xref>. The signatures of the methods are slightly different, as they permit
+
+    and require direct access to <xref href="v3.3.1.0:Xunit.Sdk.ITestCase" data-throw-if-not-resolved="false"></xref> instances rather than forcing the test cases through
+
+    a round of serialization and deserialization. It will also manufacture the <xref href="v3.3.1.0:Xunit.Sdk.IDiscoveryStarting" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.3.1.0:Xunit.Sdk.IDiscoveryComplete" data-throw-if-not-resolved="false"></xref> messages that the test framework is not responsible for. When connected
+
+    to remote meta-runners, the in-process runner can convert <xref href="v3.3.1.0:Xunit.Sdk.ITestCase" data-throw-if-not-resolved="false"></xref> instances into
+
+    <xref href="v3.3.1.0:Xunit.Runner.Common.TestCaseDiscovered" data-throw-if-not-resolved="false"></xref> instances by using a converter like
+
+    <xref href="v3.3.1.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered" data-throw-if-not-resolved="false"></xref> (which should be called from a
+
+    callback passed to <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkDiscoveryOptions%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%7d%2cSystem.Threading.CancellationTokenSource%2cSystem.Type%5b%5d%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%2cSystem.Threading.Tasks.ValueTask%7bSystem.Boolean%7d%7d)" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public class InProcessFrontController
+    content.vb: Public Class InProcessFrontController
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.#ctor(Xunit.v3.ITestFramework,System.Reflection.Assembly,System.String)
+  commentId: M:Xunit.v3.InProcessFrontController.#ctor(Xunit.v3.ITestFramework,System.Reflection.Assembly,System.String)
+  id: '#ctor(Xunit.v3.ITestFramework,System.Reflection.Assembly,System.String)'
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: InProcessFrontController(ITestFramework, Assembly, string?)
+  nameWithType: InProcessFrontController.InProcessFrontController(ITestFramework, Assembly, string?)
+  fullName: Xunit.v3.InProcessFrontController.InProcessFrontController(Xunit.v3.ITestFramework, System.Reflection.Assembly, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public InProcessFrontController(ITestFramework testFramework, Assembly testAssembly, string? configFilePath)
+    parameters:
+    - id: testFramework
+      type: Xunit.v3.ITestFramework
+      description: The test framework to be wrapped.
+    - id: testAssembly
+      type: System.Reflection.Assembly
+      description: The assembly under test.
+    - id: configFilePath
+      type: System.String
+      description: The optional configuration file path.
+    content.vb: Public Sub New(testFramework As ITestFramework, testAssembly As Assembly, configFilePath As String)
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.#ctor*
+  nameWithType.vb: InProcessFrontController.New(ITestFramework, Assembly, String)
+  fullName.vb: Xunit.v3.InProcessFrontController.New(Xunit.v3.ITestFramework, System.Reflection.Assembly, String)
+  name.vb: New(ITestFramework, Assembly, String)
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+  commentId: P:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+  id: TestAssemblyUniqueID
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyUniqueID
+  nameWithType: InProcessFrontController.TestAssemblyUniqueID
+  fullName: Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: TestAssemblyUniqueID
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 56
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the unique ID for the test assembly provided to the discoverer.
+  example: []
+  syntax:
+    content: public string TestAssemblyUniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestAssemblyUniqueID As String
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID*
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+  commentId: P:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: InProcessFrontController.TestFrameworkDisplayName
+  fullName: Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Returns the display name of the test framework that this discoverer is running tests for.
+  example: []
+  syntax:
+    content: public string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestFrameworkDisplayName As String
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName*
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  id: Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: Find(IMessageSink?, ITestFrameworkDiscoveryOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[]?, Func<ITestCase, bool, ValueTask<bool>>?)
+  nameWithType: InProcessFrontController.Find(IMessageSink?, ITestFrameworkDiscoveryOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[]?, Func<ITestCase, bool, ValueTask<bool>>?)
+  fullName: Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink?, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, bool>, System.Threading.CancellationTokenSource, System.Type[]?, System.Func<Xunit.Sdk.ITestCase, bool, System.Threading.Tasks.ValueTask<bool>>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 82
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Starts the process of finding tests in an assembly. Typically only used by
+
+    runners which discover tests and present them into a UI for the user to interactively
+
+    choose for selective run (via <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkExecutionOptions%2cSystem.Collections.Generic.IReadOnlyCollection%7bXunit.Sdk.ITestCase%7d%2cSystem.Threading.CancellationTokenSource)" data-throw-if-not-resolved="false"></xref>). For runners which simply wish to
+
+    discover and immediately run tests, they should instead use <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkDiscoveryOptions%2cXunit.Sdk.ITestFrameworkExecutionOptions%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%7d%2cSystem.Threading.CancellationTokenSource%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref>,
+
+    which permits the same filtering logic as this method.
+  example: []
+  syntax:
+    content: public ValueTask Find(IMessageSink? messageSink, ITestFrameworkDiscoveryOptions options, Func<ITestCase, bool> filter, CancellationTokenSource cancellationTokenSource, Type[]? types = null, Func<ITestCase, bool, ValueTask<bool>>? discoveryCallback = null)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: >-
+        The message sink to report discovery starting and discovery complete messages to.
+            Discovered tests are *not* reported to this message sink, since it's also used for <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkDiscoveryOptions%2cXunit.Sdk.ITestFrameworkExecutionOptions%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%7d%2cSystem.Threading.CancellationTokenSource%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref>,
+            so it is assumed that callers to this method will use the <code class="paramref">discoveryCallback</code> to report
+            discovered tests if needed.
+    - id: options
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options to be used for discovery.
+    - id: filter
+      type: System.Func{Xunit.Sdk.ITestCase,System.Boolean}
+      description: The filter function for filtering test cases.
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source used to cancel discovery.
+    - id: types
+      type: System.Type[]
+      description: >-
+        When passed a non-<code>null</code> collection, only returns tests found
+            from one of the provided types; when passed a <code>null</code> collection, discovers all
+            tests in the assembly.
+    - id: discoveryCallback
+      type: System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}}
+      description: >-
+        An optional callback to be called for each discovered test case.
+            It provides both the test case and a flag which indicates if it passed the provided filter.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function Find(messageSink As IMessageSink, options As ITestFrameworkDiscoveryOptions, filter As Func(Of ITestCase, Boolean), cancellationTokenSource As CancellationTokenSource, types As Type() = Nothing, discoveryCallback As Func(Of ITestCase, Boolean, ValueTask(Of Boolean)) = Nothing) As ValueTask
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.Find*
+  nameWithType.vb: InProcessFrontController.Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type(), Func(Of ITestCase, Boolean, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, Boolean), System.Threading.CancellationTokenSource, System.Type(), System.Func(Of Xunit.Sdk.ITestCase, Boolean, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type(), Func(Of ITestCase, Boolean, ValueTask(Of Boolean)))
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  commentId: M:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  id: FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[]?)
+  nameWithType: InProcessFrontController.FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[]?)
+  fullName: Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Func<Xunit.Sdk.ITestCase, bool>, System.Threading.CancellationTokenSource, System.Type[]?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: FindAndRun
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 153
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Starts the process of finding and running tests in an assembly. Typically only used
+
+    by runner which do not present test discovery UIs to users that allow them to run
+
+    selected tests (those should instead use <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkDiscoveryOptions%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%7d%2cSystem.Threading.CancellationTokenSource%2cSystem.Type%5b%5d%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%2cSystem.Threading.Tasks.ValueTask%7bSystem.Boolean%7d%7d)" data-throw-if-not-resolved="false"></xref> and <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkExecutionOptions%2cSystem.Collections.Generic.IReadOnlyCollection%7bXunit.Sdk.ITestCase%7d%2cSystem.Threading.CancellationTokenSource)" data-throw-if-not-resolved="false"></xref>
+
+    as separate operations).
+  example: []
+  syntax:
+    content: public ValueTask FindAndRun(IMessageSink messageSink, ITestFrameworkDiscoveryOptions discoveryOptions, ITestFrameworkExecutionOptions executionOptions, Func<ITestCase, bool> filter, CancellationTokenSource cancellationTokenSource, Type[]? types = null)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report messages to.
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options to be used for discovery.
+    - id: executionOptions
+      type: Xunit.Sdk.ITestFrameworkExecutionOptions
+      description: The options to be used for execution.
+    - id: filter
+      type: System.Func{Xunit.Sdk.ITestCase,System.Boolean}
+      description: The filter function for filtering test cases.
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token sourced used to cancel discovery/execution.
+    - id: types
+      type: System.Type[]
+      description: >-
+        When passed a non-<code>null</code> collection, discovery/filtering/execution
+            only looks for tests from one of the provided types; when passed a <code>null</code> collection,
+            discovery/filtering/execution looks at all types in the assembly.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function FindAndRun(messageSink As IMessageSink, discoveryOptions As ITestFrameworkDiscoveryOptions, executionOptions As ITestFrameworkExecutionOptions, filter As Func(Of ITestCase, Boolean), cancellationTokenSource As CancellationTokenSource, types As Type() = Nothing) As ValueTask
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun*
+  nameWithType.vb: InProcessFrontController.FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type())
+  fullName.vb: Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Func(Of Xunit.Sdk.ITestCase, Boolean), System.Threading.CancellationTokenSource, System.Type())
+  name.vb: FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type())
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  commentId: M:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  id: Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  parent: v3.3.1.0:Xunit.v3.InProcessFrontController
+  langs:
+  - csharp
+  - vb
+  name: Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection<ITestCase>, CancellationTokenSource)
+  nameWithType: InProcessFrontController.Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection<ITestCase>, CancellationTokenSource)
+  fullName: Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, System.Threading.CancellationTokenSource)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/InProcessFrontController.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.core/Framework/InProcessFrontController.cs
+    startLine: 203
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Starts the process of running selected tests in the assembly. The test cases to run come from
+
+    calling <xref href="v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink%2cXunit.Sdk.ITestFrameworkDiscoveryOptions%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%7d%2cSystem.Threading.CancellationTokenSource%2cSystem.Type%5b%5d%2cSystem.Func%7bXunit.Sdk.ITestCase%2cSystem.Boolean%2cSystem.Threading.Tasks.ValueTask%7bSystem.Boolean%7d%7d)" data-throw-if-not-resolved="false"></xref> and collecting the test cases that were returned via the callback.
+  example: []
+  syntax:
+    content: public ValueTask Run(IMessageSink messageSink, ITestFrameworkExecutionOptions executionOptions, IReadOnlyCollection<ITestCase> testCases, CancellationTokenSource cancellationTokenSource)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report messages to.
+    - id: executionOptions
+      type: Xunit.Sdk.ITestFrameworkExecutionOptions
+      description: The options to be used for execution.
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+      description: The test cases to execute.
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source used to cancel discovery.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function Run(messageSink As IMessageSink, executionOptions As ITestFrameworkExecutionOptions, testCases As IReadOnlyCollection(Of ITestCase), cancellationTokenSource As CancellationTokenSource) As ValueTask
+  overload: v3.3.1.0:Xunit.v3.InProcessFrontController.Run*
+  nameWithType.vb: InProcessFrontController.Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection(Of ITestCase), CancellationTokenSource)
+  fullName.vb: Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), System.Threading.CancellationTokenSource)
+  name.vb: Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection(Of ITestCase), CancellationTokenSource)
+references:
+- uid: v3.3.1.0:Xunit.IFrontController
+  commentId: T:Xunit.IFrontController
+  parent: v3.3.1.0:Xunit
+  href: Xunit.IFrontController.html
+  name: IFrontController
+  nameWithType: IFrontController
+  fullName: Xunit.IFrontController
+- uid: v3.3.1.0:Xunit.v3.ITestFramework
+  commentId: T:Xunit.v3.ITestFramework
+  parent: v3.3.1.0:Xunit.v3
+  href: Xunit.v3.ITestFramework.html
+  name: ITestFramework
+  nameWithType: ITestFramework
+  fullName: Xunit.v3.ITestFramework
+- uid: v3.3.1.0:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+- uid: v3.3.1.0:Xunit.Sdk.IDiscoveryStarting
+  commentId: T:Xunit.Sdk.IDiscoveryStarting
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IDiscoveryStarting.html
+  name: IDiscoveryStarting
+  nameWithType: IDiscoveryStarting
+  fullName: Xunit.Sdk.IDiscoveryStarting
+- uid: v3.3.1.0:Xunit.Sdk.IDiscoveryComplete
+  commentId: T:Xunit.Sdk.IDiscoveryComplete
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IDiscoveryComplete.html
+  name: IDiscoveryComplete
+  nameWithType: IDiscoveryComplete
+  fullName: Xunit.Sdk.IDiscoveryComplete
+- uid: v3.3.1.0:Xunit.Runner.Common.TestCaseDiscovered
+  commentId: T:Xunit.Runner.Common.TestCaseDiscovered
+  href: Xunit.Runner.Common.TestCaseDiscovered.html
+  name: TestCaseDiscovered
+  nameWithType: TestCaseDiscovered
+  fullName: Xunit.Runner.Common.TestCaseDiscovered
+- uid: v3.3.1.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+  isExternal: true
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+  isExternal: true
+  href: Xunit.v3.InProcessFrontController.Find.html#Xunit_v3_InProcessFrontController_Find_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___System_Func_Xunit_Sdk_ITestCase_System_Boolean_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[], Func<ITestCase, bool, ValueTask<bool>>)
+  nameWithType: InProcessFrontController.Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[], Func<ITestCase, bool, ValueTask<bool>>)
+  fullName: Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, bool>, System.Threading.CancellationTokenSource, System.Type[], System.Func<Xunit.Sdk.ITestCase, bool, System.Threading.Tasks.ValueTask<bool>>)
+  nameWithType.vb: InProcessFrontController.Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type(), Func(Of ITestCase, Boolean, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, Boolean), System.Threading.CancellationTokenSource, System.Type(), System.Func(Of Xunit.Sdk.ITestCase, Boolean, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: Find(IMessageSink, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type(), Func(Of ITestCase, Boolean, ValueTask(Of Boolean)))
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: Find
+    href: Xunit.v3.InProcessFrontController.Find.html#Xunit_v3_InProcessFrontController_Find_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___System_Func_Xunit_Sdk_ITestCase_System_Boolean_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Find(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[],System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: Find
+    href: Xunit.v3.InProcessFrontController.Find.html#Xunit_v3_InProcessFrontController_Find_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___System_Func_Xunit_Sdk_ITestCase_System_Boolean_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: )
+- uid: v3.3.1.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.3.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController
+  commentId: T:Xunit.v3.InProcessFrontController
+  href: Xunit.v3.InProcessFrontController.html
+  name: InProcessFrontController
+  nameWithType: InProcessFrontController
+  fullName: Xunit.v3.InProcessFrontController
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.#ctor*
+  commentId: Overload:Xunit.v3.InProcessFrontController.#ctor
+  href: Xunit.v3.InProcessFrontController.-ctor.html#Xunit_v3_InProcessFrontController__ctor_Xunit_v3_ITestFramework_System_Reflection_Assembly_System_String_
+  name: InProcessFrontController
+  nameWithType: InProcessFrontController.InProcessFrontController
+  fullName: Xunit.v3.InProcessFrontController.InProcessFrontController
+  nameWithType.vb: InProcessFrontController.New
+  fullName.vb: Xunit.v3.InProcessFrontController.New
+  name.vb: New
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID*
+  commentId: Overload:Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+  href: Xunit.v3.InProcessFrontController.TestAssemblyUniqueID.html#Xunit_v3_InProcessFrontController_TestAssemblyUniqueID
+  name: TestAssemblyUniqueID
+  nameWithType: InProcessFrontController.TestAssemblyUniqueID
+  fullName: Xunit.v3.InProcessFrontController.TestAssemblyUniqueID
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+  href: Xunit.v3.InProcessFrontController.TestFrameworkDisplayName.html#Xunit_v3_InProcessFrontController_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: InProcessFrontController.TestFrameworkDisplayName
+  fullName: Xunit.v3.InProcessFrontController.TestFrameworkDisplayName
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  commentId: M:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+  isExternal: true
+  href: Xunit.v3.InProcessFrontController.Run.html#Xunit_v3_InProcessFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_Threading_CancellationTokenSource_
+  name: Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection<ITestCase>, CancellationTokenSource)
+  nameWithType: InProcessFrontController.Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection<ITestCase>, CancellationTokenSource)
+  fullName: Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, System.Threading.CancellationTokenSource)
+  nameWithType.vb: InProcessFrontController.Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection(Of ITestCase), CancellationTokenSource)
+  fullName.vb: Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), System.Threading.CancellationTokenSource)
+  name.vb: Run(IMessageSink, ITestFrameworkExecutionOptions, IReadOnlyCollection(Of ITestCase), CancellationTokenSource)
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+    name: Run
+    href: Xunit.v3.InProcessFrontController.Run.html#Xunit_v3_InProcessFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_Threading_CancellationTokenSource_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},System.Threading.CancellationTokenSource)
+    name: Run
+    href: Xunit.v3.InProcessFrontController.Run.html#Xunit_v3_InProcessFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_Threading_CancellationTokenSource_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  commentId: M:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+  isExternal: true
+  href: Xunit.v3.InProcessFrontController.FindAndRun.html#Xunit_v3_InProcessFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___
+  name: FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[])
+  nameWithType: InProcessFrontController.FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func<ITestCase, bool>, CancellationTokenSource, Type[])
+  fullName: Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Func<Xunit.Sdk.ITestCase, bool>, System.Threading.CancellationTokenSource, System.Type[])
+  nameWithType.vb: InProcessFrontController.FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type())
+  fullName.vb: Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Func(Of Xunit.Sdk.ITestCase, Boolean), System.Threading.CancellationTokenSource, System.Type())
+  name.vb: FindAndRun(IMessageSink, ITestFrameworkDiscoveryOptions, ITestFrameworkExecutionOptions, Func(Of ITestCase, Boolean), CancellationTokenSource, Type())
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+    name: FindAndRun
+    href: Xunit.v3.InProcessFrontController.FindAndRun.html#Xunit_v3_InProcessFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Func{Xunit.Sdk.ITestCase,System.Boolean},System.Threading.CancellationTokenSource,System.Type[])
+    name: FindAndRun
+    href: Xunit.v3.InProcessFrontController.FindAndRun.html#Xunit_v3_InProcessFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationTokenSource
+    name: CancellationTokenSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Find*
+  commentId: Overload:Xunit.v3.InProcessFrontController.Find
+  href: Xunit.v3.InProcessFrontController.Find.html#Xunit_v3_InProcessFrontController_Find_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___System_Func_Xunit_Sdk_ITestCase_System_Boolean_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: Find
+  nameWithType: InProcessFrontController.Find
+  fullName: Xunit.v3.InProcessFrontController.Find
+- uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: System.Func{Xunit.Sdk.ITestCase,System.Boolean}
+  commentId: T:System.Func{Xunit.Sdk.ITestCase,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ITestCase, bool>
+  nameWithType: Func<ITestCase, bool>
+  fullName: System.Func<Xunit.Sdk.ITestCase, bool>
+  nameWithType.vb: Func(Of ITestCase, Boolean)
+  fullName.vb: System.Func(Of Xunit.Sdk.ITestCase, Boolean)
+  name.vb: Func(Of ITestCase, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}}
+  commentId: T:System.Func{Xunit.Sdk.ITestCase,System.Boolean,System.Threading.Tasks.ValueTask{System.Boolean}}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ITestCase, bool, ValueTask<bool>>
+  nameWithType: Func<ITestCase, bool, ValueTask<bool>>
+  fullName: System.Func<Xunit.Sdk.ITestCase, bool, System.Threading.Tasks.ValueTask<bool>>
+  nameWithType.vb: Func(Of ITestCase, Boolean, ValueTask(Of Boolean))
+  fullName.vb: System.Func(Of Xunit.Sdk.ITestCase, Boolean, System.Threading.Tasks.ValueTask(Of Boolean))
+  name.vb: Func(Of ITestCase, Boolean, ValueTask(Of Boolean))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.FindAndRun*
+  commentId: Overload:Xunit.v3.InProcessFrontController.FindAndRun
+  href: Xunit.v3.InProcessFrontController.FindAndRun.html#Xunit_v3_InProcessFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Func_Xunit_Sdk_ITestCase_System_Boolean__System_Threading_CancellationTokenSource_System_Type___
+  name: FindAndRun
+  nameWithType: InProcessFrontController.FindAndRun
+  fullName: Xunit.v3.InProcessFrontController.FindAndRun
+- uid: v3.3.1.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkExecutionOptions
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkExecutionOptions.html
+  name: ITestFrameworkExecutionOptions
+  nameWithType: ITestFrameworkExecutionOptions
+  fullName: Xunit.Sdk.ITestFrameworkExecutionOptions
+- uid: v3.3.1.0:Xunit.v3.InProcessFrontController.Run*
+  commentId: Overload:Xunit.v3.InProcessFrontController.Run
+  href: Xunit.v3.InProcessFrontController.Run.html#Xunit_v3_InProcessFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__System_Threading_CancellationTokenSource_
+  name: Run
+  nameWithType: InProcessFrontController.Run
+  fullName: Xunit.v3.InProcessFrontController.Run
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ITestCase>
+  nameWithType: IReadOnlyCollection<ITestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>
+  nameWithType.vb: IReadOnlyCollection(Of ITestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase)
+  name.vb: IReadOnlyCollection(Of ITestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.1.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

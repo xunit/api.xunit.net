@@ -1,0 +1,964 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  commentId: T:Xunit.v3.MessageSinkMessage
+  id: MessageSinkMessage
+  parent: v3.3.1.0:Xunit.v3
+  children:
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.#ctor
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString(System.String[])
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString``1(``0[])
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  - v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  langs:
+  - csharp
+  - vb
+  name: MessageSinkMessage
+  nameWithType: MessageSinkMessage
+  fullName: Xunit.v3.MessageSinkMessage
+  type: Class
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: MessageSinkMessage
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Default implementation of <xref href="v3.3.1.0:Xunit.Sdk.IMessageSinkMessage" data-throw-if-not-resolved="false"></xref>, with serialization support.
+  remarks: >-
+    Because of serialization, all concrete message sink message types must be decorated
+
+    with <xref href="v3.3.1.0:Xunit.Sdk.JsonTypeIDAttribute" data-throw-if-not-resolved="false"></xref> to set a unique type ID for serialization purposes.
+  example: []
+  syntax:
+    content: 'public abstract class MessageSinkMessage : IMessageSinkMessage, IJsonSerializable'
+    content.vb: Public MustInherit Class MessageSinkMessage Implements IMessageSinkMessage, IJsonSerializable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.3.1.0:Xunit.v3.DiagnosticMessage
+  - v3.3.1.0:Xunit.v3.ErrorMessage
+  - v3.3.1.0:Xunit.v3.InternalDiagnosticMessage
+  - v3.3.1.0:Xunit.v3.TestAssemblyMessage
+  implements:
+  - v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+  - v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  id: ValidateObjectState
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ValidateObjectState()
+  nameWithType: MessageSinkMessage.ValidateObjectState()
+  fullName: Xunit.v3.MessageSinkMessage.ValidateObjectState()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ValidateObjectState
+    path: ../src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Validates the state of the message object. This should be called just before serializing the message
+
+    or just after deserializing the message to ensure that the message is not missing any required
+
+    property values.
+  example: []
+  syntax:
+    content: public void ValidateObjectState()
+    content.vb: Public Sub ValidateObjectState()
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState*
+  exceptions:
+  - type: Xunit.Sdk.UnsetPropertiesException
+    commentId: T:Xunit.Sdk.UnsetPropertiesException
+    description: Throw when one or more properties are missing values.
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  id: ValidateObjectState(System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ValidateObjectState(HashSet<string>)
+  nameWithType: MessageSinkMessage.ValidateObjectState(HashSet<string>)
+  fullName: Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet<string>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ValidateObjectState
+    path: ../src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Called before serializing the message. Implementers are expected to call <xref href="v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object%2cSystem.String%2cSystem.Collections.Generic.HashSet%7bSystem.String%7d)" data-throw-if-not-resolved="false"></xref>
+
+    for each property that must have a value, to record invalid property values into the provided hash set.
+  example: []
+  syntax:
+    content: protected abstract void ValidateObjectState(HashSet<string> invalidProperties)
+    parameters:
+    - id: invalidProperties
+      type: System.Collections.Generic.HashSet{System.String}
+      description: The hash set to record invalid properties into
+    content.vb: Protected MustOverride Sub ValidateObjectState(invalidProperties As HashSet(Of String))
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState*
+  nameWithType.vb: MessageSinkMessage.ValidateObjectState(HashSet(Of String))
+  fullName.vb: Xunit.v3.MessageSinkMessage.ValidateObjectState(System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidateObjectState(HashSet(Of String))
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  id: ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ValidatePropertyIsNotNull(object?, string, HashSet<string>)
+  nameWithType: MessageSinkMessage.ValidatePropertyIsNotNull(object?, string, HashSet<string>)
+  fullName: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(object?, string, System.Collections.Generic.HashSet<string>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ValidatePropertyIsNotNull
+    path: ../src/xunit.v3.core/Messages/BaseMessages/MessageSinkMessage.cs
+    startLine: 45
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Validates that the property value is not <code>null</code>, and if it is, adds the given
+
+    property name to the invalid property hash set.
+  example: []
+  syntax:
+    content: protected static void ValidatePropertyIsNotNull(object? propertyValue, string propertyName, HashSet<string> invalidProperties)
+    parameters:
+    - id: propertyValue
+      type: System.Object
+      description: The property value
+    - id: propertyName
+      type: System.String
+      description: The property name
+    - id: invalidProperties
+      type: System.Collections.Generic.HashSet{System.String}
+      description: The hash set to contain the invalid property name list
+    content.vb: Protected Shared Sub ValidatePropertyIsNotNull(propertyValue As Object, propertyName As String, invalidProperties As HashSet(Of String))
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull*
+  nameWithType.vb: MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+  fullName.vb: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.#ctor
+  commentId: M:Xunit.v3.MessageSinkMessage.#ctor
+  id: '#ctor'
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: MessageSinkMessage()
+  nameWithType: MessageSinkMessage.MessageSinkMessage()
+  fullName: Xunit.v3.MessageSinkMessage.MessageSinkMessage()
+  type: Constructor
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the see <xref href="v3.3.1.0:Xunit.v3.MessageSinkMessage" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected MessageSinkMessage()
+    content.vb: Protected Sub New()
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.#ctor*
+  nameWithType.vb: MessageSinkMessage.New()
+  fullName.vb: Xunit.v3.MessageSinkMessage.New()
+  name.vb: New()
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  commentId: M:Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  id: Serialize(Xunit.Sdk.JsonObjectSerializer)
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: Serialize(JsonObjectSerializer)
+  nameWithType: MessageSinkMessage.Serialize(JsonObjectSerializer)
+  fullName: Xunit.v3.MessageSinkMessage.Serialize(Xunit.Sdk.JsonObjectSerializer)
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 30
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Override to serialize the values in the message into JSON.
+  example: []
+  syntax:
+    content: protected abstract void Serialize(JsonObjectSerializer serializer)
+    parameters:
+    - id: serializer
+      type: Xunit.Sdk.JsonObjectSerializer
+      description: The serializer to write values to.
+    content.vb: Protected MustOverride Sub Serialize(serializer As JsonObjectSerializer)
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize*
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString(System.String[])
+  commentId: M:Xunit.v3.MessageSinkMessage.ToDisplayString(System.String[])
+  id: ToDisplayString(System.String[])
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ToDisplayString(string?[]?)
+  nameWithType: MessageSinkMessage.ToDisplayString(string?[]?)
+  fullName: Xunit.v3.MessageSinkMessage.ToDisplayString(string?[]?)
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ToDisplayString
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Converts a string array into a display value, for use in an <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> overload.
+  example: []
+  syntax:
+    content: protected static string ToDisplayString(string?[]? array)
+    parameters:
+    - id: array
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: Protected Shared Function ToDisplayString(array As String()) As String
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString*
+  nameWithType.vb: MessageSinkMessage.ToDisplayString(String())
+  fullName.vb: Xunit.v3.MessageSinkMessage.ToDisplayString(String())
+  name.vb: ToDisplayString(String())
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString``1(``0[])
+  commentId: M:Xunit.v3.MessageSinkMessage.ToDisplayString``1(``0[])
+  id: ToDisplayString``1(``0[])
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ToDisplayString<T>(T[]?)
+  nameWithType: MessageSinkMessage.ToDisplayString<T>(T[]?)
+  fullName: Xunit.v3.MessageSinkMessage.ToDisplayString<T>(T[]?)
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ToDisplayString
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Converts am array into a display value, for use in an <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> overload.
+  example: []
+  syntax:
+    content: protected static string ToDisplayString<T>(T[]? array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Protected Shared Function ToDisplayString(Of T)(array As T()) As String
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString*
+  nameWithType.vb: MessageSinkMessage.ToDisplayString(Of T)(T())
+  fullName.vb: Xunit.v3.MessageSinkMessage.ToDisplayString(Of T)(T())
+  name.vb: ToDisplayString(Of T)(T())
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson
+  commentId: M:Xunit.v3.MessageSinkMessage.ToJson
+  id: ToJson
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  langs:
+  - csharp
+  - vb
+  name: ToJson()
+  nameWithType: MessageSinkMessage.ToJson()
+  fullName: Xunit.v3.MessageSinkMessage.ToJson()
+  type: Method
+  source:
+    remote:
+      path: src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: ToJson
+    path: ../src/common/MessagePartials/BaseMessages/MessageSinkMessage.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Creates a JSON serialized version of this message.
+  example: []
+  syntax:
+    content: public string ToJson()
+    return:
+      type: System.String
+    content.vb: Public Function ToJson() As String
+  overload: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if the message class does not have a <xref href="v3.3.1.0:Xunit.Sdk.JsonTypeIDAttribute" data-throw-if-not-resolved="false"></xref>.
+  - type: Xunit.Sdk.UnsetPropertiesException
+    commentId: T:Xunit.Sdk.UnsetPropertiesException
+    description: Thrown when one or more properties are missing values.
+  implements:
+  - v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+references:
+- uid: v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: v3.3.1.0:Xunit.Sdk.JsonTypeIDAttribute
+  commentId: T:Xunit.Sdk.JsonTypeIDAttribute
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.JsonTypeIDAttribute.html
+  name: JsonTypeIDAttribute
+  nameWithType: JsonTypeIDAttribute
+  fullName: Xunit.Sdk.JsonTypeIDAttribute
+- uid: v3.3.1.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.1.0:Xunit.Sdk.UnsetPropertiesException
+  commentId: T:Xunit.Sdk.UnsetPropertiesException
+  href: Xunit.Sdk.UnsetPropertiesException.html
+  name: UnsetPropertiesException
+  nameWithType: UnsetPropertiesException
+  fullName: Xunit.Sdk.UnsetPropertiesException
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidateObjectState*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.ValidateObjectState
+  href: Xunit.v3.MessageSinkMessage.ValidateObjectState.html#Xunit_v3_MessageSinkMessage_ValidateObjectState
+  name: ValidateObjectState
+  nameWithType: MessageSinkMessage.ValidateObjectState
+  fullName: Xunit.v3.MessageSinkMessage.ValidateObjectState
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  commentId: M:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+  parent: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  isExternal: true
+  href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  name: ValidatePropertyIsNotNull(object, string, HashSet<string>)
+  nameWithType: MessageSinkMessage.ValidatePropertyIsNotNull(object, string, HashSet<string>)
+  fullName: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(object, string, System.Collections.Generic.HashSet<string>)
+  nameWithType.vb: MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+  fullName.vb: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(Object, String, System.Collections.Generic.HashSet(Of String))
+  name.vb: ValidatePropertyIsNotNull(Object, String, HashSet(Of String))
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+    name: ValidatePropertyIsNotNull
+    href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull(System.Object,System.String,System.Collections.Generic.HashSet{System.String})
+    name: ValidatePropertyIsNotNull
+    href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.HashSet{System.String}
+  commentId: T:System.Collections.Generic.HashSet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<string>
+  nameWithType: HashSet<string>
+  fullName: System.Collections.Generic.HashSet<string>
+  nameWithType.vb: HashSet(Of String)
+  fullName.vb: System.Collections.Generic.HashSet(Of String)
+  name.vb: HashSet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage
+  commentId: T:Xunit.v3.MessageSinkMessage
+  parent: v3.3.1.0:Xunit.v3
+  href: Xunit.v3.MessageSinkMessage.html
+  name: MessageSinkMessage
+  nameWithType: MessageSinkMessage
+  fullName: Xunit.v3.MessageSinkMessage
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull
+  href: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull.html#Xunit_v3_MessageSinkMessage_ValidatePropertyIsNotNull_System_Object_System_String_System_Collections_Generic_HashSet_System_String__
+  name: ValidatePropertyIsNotNull
+  nameWithType: MessageSinkMessage.ValidatePropertyIsNotNull
+  fullName: Xunit.v3.MessageSinkMessage.ValidatePropertyIsNotNull
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.#ctor*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.#ctor
+  href: Xunit.v3.MessageSinkMessage.-ctor.html#Xunit_v3_MessageSinkMessage__ctor
+  name: MessageSinkMessage
+  nameWithType: MessageSinkMessage.MessageSinkMessage
+  fullName: Xunit.v3.MessageSinkMessage.MessageSinkMessage
+  nameWithType.vb: MessageSinkMessage.New
+  fullName.vb: Xunit.v3.MessageSinkMessage.New
+  name.vb: New
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.Serialize*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.Serialize
+  href: Xunit.v3.MessageSinkMessage.Serialize.html#Xunit_v3_MessageSinkMessage_Serialize_Xunit_Sdk_JsonObjectSerializer_
+  name: Serialize
+  nameWithType: MessageSinkMessage.Serialize
+  fullName: Xunit.v3.MessageSinkMessage.Serialize
+- uid: v3.3.1.0:Xunit.Sdk.JsonObjectSerializer
+  commentId: T:Xunit.Sdk.JsonObjectSerializer
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.JsonObjectSerializer.html
+  name: JsonObjectSerializer
+  nameWithType: JsonObjectSerializer
+  fullName: Xunit.Sdk.JsonObjectSerializer
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToDisplayString*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.ToDisplayString
+  href: Xunit.v3.MessageSinkMessage.ToDisplayString.html#Xunit_v3_MessageSinkMessage_ToDisplayString_System_String___
+  name: ToDisplayString
+  nameWithType: MessageSinkMessage.ToDisplayString
+  fullName: Xunit.v3.MessageSinkMessage.ToDisplayString
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: v3.3.1.0:Xunit.v3.MessageSinkMessage.ToJson*
+  commentId: Overload:Xunit.v3.MessageSinkMessage.ToJson
+  href: Xunit.v3.MessageSinkMessage.ToJson.html#Xunit_v3_MessageSinkMessage_ToJson
+  name: ToJson
+  nameWithType: MessageSinkMessage.ToJson
+  fullName: Xunit.v3.MessageSinkMessage.ToJson
+- uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3.3.1.0:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+memberLayout: SeparatePages

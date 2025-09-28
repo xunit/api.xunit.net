@@ -1,0 +1,663 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink
+  commentId: T:Xunit.Runner.Common.TestMessageSink
+  id: TestMessageSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  children:
+  - v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  - v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Discovery
+  - v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Execution
+  - v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Runner
+  langs:
+  - csharp
+  - vb
+  name: TestMessageSink
+  nameWithType: TestMessageSink
+  fullName: Xunit.Runner.Common.TestMessageSink
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: TestMessageSink
+    path: ../src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    An implementation of <xref href="v3.3.1.0:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> that provides access to events for all
+
+    levels of reporting.
+  example: []
+  syntax:
+    content: 'public class TestMessageSink : AggregateMessageSink, IAsyncDisposable, IMessageSink'
+    content.vb: Public Class TestMessageSink Inherits AggregateMessageSink Implements IAsyncDisposable, IMessageSink
+  inheritance:
+  - System.Object
+  - v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  derivedClasses:
+  - v3.3.1.0:Xunit.Runner.Common.DefaultRunnerReporterMessageHandler
+  implements:
+  - System.IAsyncDisposable
+  - v3.3.1.0:Xunit.Sdk.IMessageSink
+  inheritedMembers:
+  - v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  - v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  - v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1({TDispatcher}@)
+  - v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  id: Diagnostics
+  parent: v3.3.1.0:Xunit.Runner.Common.TestMessageSink
+  langs:
+  - csharp
+  - vb
+  name: Diagnostics
+  nameWithType: TestMessageSink.Diagnostics
+  fullName: Xunit.Runner.Common.TestMessageSink.Diagnostics
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Diagnostics
+    path: ../src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a list of diagnostics events that can be subscribed to.
+  example: []
+  syntax:
+    content: public DiagnosticEventSink Diagnostics { get; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.DiagnosticEventSink
+    content.vb: Public ReadOnly Property Diagnostics As DiagnosticEventSink
+  overload: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Diagnostics*
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Discovery
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Discovery
+  id: Discovery
+  parent: v3.3.1.0:Xunit.Runner.Common.TestMessageSink
+  langs:
+  - csharp
+  - vb
+  name: Discovery
+  nameWithType: TestMessageSink.Discovery
+  fullName: Xunit.Runner.Common.TestMessageSink.Discovery
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Discovery
+    path: ../src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a list of discovery events that can be subscribed to.
+  example: []
+  syntax:
+    content: public DiscoveryEventSink Discovery { get; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.DiscoveryEventSink
+    content.vb: Public ReadOnly Property Discovery As DiscoveryEventSink
+  overload: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Discovery*
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Execution
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Execution
+  id: Execution
+  parent: v3.3.1.0:Xunit.Runner.Common.TestMessageSink
+  langs:
+  - csharp
+  - vb
+  name: Execution
+  nameWithType: TestMessageSink.Execution
+  fullName: Xunit.Runner.Common.TestMessageSink.Execution
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Execution
+    path: ../src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a list of execution events that can be subscribed to.
+  example: []
+  syntax:
+    content: public ExecutionEventSink Execution { get; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.ExecutionEventSink
+    content.vb: Public ReadOnly Property Execution As ExecutionEventSink
+  overload: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Execution*
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Runner
+  commentId: P:Xunit.Runner.Common.TestMessageSink.Runner
+  id: Runner
+  parent: v3.3.1.0:Xunit.Runner.Common.TestMessageSink
+  langs:
+  - csharp
+  - vb
+  name: Runner
+  nameWithType: TestMessageSink.Runner
+  fullName: Xunit.Runner.Common.TestMessageSink.Runner
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+      branch: 03a071627bbd9cac815e15b8c2bcb505e3e06ba9
+      repo: https://github.com/xunit/xunit
+    id: Runner
+    path: ../src/xunit.v3.runner.common/Sinks/TestMessageSink.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a list of runner events that can be subscribed to.
+  example: []
+  syntax:
+    content: public RunnerEventSink Runner { get; }
+    parameters: []
+    return:
+      type: Xunit.Runner.Common.RunnerEventSink
+    content.vb: Public ReadOnly Property Runner As RunnerEventSink
+  overload: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Runner*
+references:
+- uid: v3.3.1.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.1.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.1.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  commentId: T:Xunit.Runner.Common.AggregateMessageSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.AggregateMessageSink.html
+  name: AggregateMessageSink
+  nameWithType: AggregateMessageSink
+  fullName: Xunit.Runner.Common.AggregateMessageSink
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  commentId: P:Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+  parent: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks.html#Xunit_Runner_Common_AggregateMessageSink_AggregatedSinks
+  name: AggregatedSinks
+  nameWithType: AggregateMessageSink.AggregatedSinks
+  fullName: Xunit.Runner.Common.AggregateMessageSink.AggregatedSinks
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+  parent: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: AggregateMessageSink.DisposeAsync()
+  fullName: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.Runner.Common.AggregateMessageSink.DisposeAsync.html#Xunit_Runner_Common_AggregateMessageSink_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1({TDispatcher}@)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  parent: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  definition: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  name: GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType: AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType.vb: AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  fullName.vb: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  name.vb: GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: <
+  - name: TDispatcher
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  - name: (
+  - name: TDispatcher
+  - name: )
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink
+  href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: AggregateMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Runner.Common.AggregateMessageSink.OnMessage.html#Xunit_Runner_Common_AggregateMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.1.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.1.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.1.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.1.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  commentId: M:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+  href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  name: GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType: AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  fullName: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink<TDispatcher>(ref TDispatcher)
+  nameWithType.vb: AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  fullName.vb: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  name.vb: GetOrCreateAggregatedSink(Of TDispatcher)(TDispatcher)
+  spec.csharp:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: <
+  - name: TDispatcher
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  spec.vb:
+  - uid: v3.3.1.0:Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink``1(``0@)
+    name: GetOrCreateAggregatedSink
+    href: Xunit.Runner.Common.AggregateMessageSink.GetOrCreateAggregatedSink.html#Xunit_Runner_Common_AggregateMessageSink_GetOrCreateAggregatedSink__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDispatcher
+  - name: )
+  - name: (
+  - name: TDispatcher
+  - name: )
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Diagnostics*
+  commentId: Overload:Xunit.Runner.Common.TestMessageSink.Diagnostics
+  href: Xunit.Runner.Common.TestMessageSink.Diagnostics.html#Xunit_Runner_Common_TestMessageSink_Diagnostics
+  name: Diagnostics
+  nameWithType: TestMessageSink.Diagnostics
+  fullName: Xunit.Runner.Common.TestMessageSink.Diagnostics
+- uid: v3.3.1.0:Xunit.Runner.Common.DiagnosticEventSink
+  commentId: T:Xunit.Runner.Common.DiagnosticEventSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.DiagnosticEventSink.html
+  name: DiagnosticEventSink
+  nameWithType: DiagnosticEventSink
+  fullName: Xunit.Runner.Common.DiagnosticEventSink
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Discovery*
+  commentId: Overload:Xunit.Runner.Common.TestMessageSink.Discovery
+  href: Xunit.Runner.Common.TestMessageSink.Discovery.html#Xunit_Runner_Common_TestMessageSink_Discovery
+  name: Discovery
+  nameWithType: TestMessageSink.Discovery
+  fullName: Xunit.Runner.Common.TestMessageSink.Discovery
+- uid: v3.3.1.0:Xunit.Runner.Common.DiscoveryEventSink
+  commentId: T:Xunit.Runner.Common.DiscoveryEventSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.DiscoveryEventSink.html
+  name: DiscoveryEventSink
+  nameWithType: DiscoveryEventSink
+  fullName: Xunit.Runner.Common.DiscoveryEventSink
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Execution*
+  commentId: Overload:Xunit.Runner.Common.TestMessageSink.Execution
+  href: Xunit.Runner.Common.TestMessageSink.Execution.html#Xunit_Runner_Common_TestMessageSink_Execution
+  name: Execution
+  nameWithType: TestMessageSink.Execution
+  fullName: Xunit.Runner.Common.TestMessageSink.Execution
+- uid: v3.3.1.0:Xunit.Runner.Common.ExecutionEventSink
+  commentId: T:Xunit.Runner.Common.ExecutionEventSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ExecutionEventSink.html
+  name: ExecutionEventSink
+  nameWithType: ExecutionEventSink
+  fullName: Xunit.Runner.Common.ExecutionEventSink
+- uid: v3.3.1.0:Xunit.Runner.Common.TestMessageSink.Runner*
+  commentId: Overload:Xunit.Runner.Common.TestMessageSink.Runner
+  href: Xunit.Runner.Common.TestMessageSink.Runner.html#Xunit_Runner_Common_TestMessageSink_Runner
+  name: Runner
+  nameWithType: TestMessageSink.Runner
+  fullName: Xunit.Runner.Common.TestMessageSink.Runner
+- uid: v3.3.1.0:Xunit.Runner.Common.RunnerEventSink
+  commentId: T:Xunit.Runner.Common.RunnerEventSink
+  parent: v3.3.1.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.RunnerEventSink.html
+  name: RunnerEventSink
+  nameWithType: RunnerEventSink
+  fullName: Xunit.Runner.Common.RunnerEventSink
+memberLayout: SeparatePages
