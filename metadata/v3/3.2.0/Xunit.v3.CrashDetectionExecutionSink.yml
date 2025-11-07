@@ -1,0 +1,1098 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink
+  commentId: T:Xunit.v3.CrashDetectionExecutionSink
+  id: CrashDetectionExecutionSink
+  parent: v3.3.2.0:Xunit.v3
+  children:
+  - v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.#ctor(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Sdk.IMessageSink)
+  - v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendFinish(System.String)
+  - v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendStart(System.String)
+  - v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.UtcNow
+  langs:
+  - csharp
+  - vb
+  name: CrashDetectionExecutionSink
+  nameWithType: CrashDetectionExecutionSink
+  fullName: Xunit.v3.CrashDetectionExecutionSink
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CrashDetectionExecutionSink
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    An implementation of <xref href="v3.3.2.0:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> that detects when test assembly starting
+
+    and finished messages have been sent, and will send cleanup/error messages to the inner
+
+    sink if it appears that the test process crashed (failed to send one or both messages).
+  example: []
+  syntax:
+    content: 'public class CrashDetectionExecutionSink : CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>, IMessageSink'
+    content.vb: Public Class CrashDetectionExecutionSink Inherits CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished) Implements IMessageSink
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  implements:
+  - v3.3.2.0:Xunit.Sdk.IMessageSink
+  inheritedMembers:
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Finish
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.FinishWaitMilliseconds
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.InnerSink
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.ProjectAssembly
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Start
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnProcessFinished(System.Nullable{System.Int32})
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+  - v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+  - v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.#ctor(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.v3.CrashDetectionExecutionSink.#ctor(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Sdk.IMessageSink)
+  id: '#ctor(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Sdk.IMessageSink)'
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink
+  langs:
+  - csharp
+  - vb
+  name: CrashDetectionExecutionSink(XunitProjectAssembly, IMessageSink)
+  nameWithType: CrashDetectionExecutionSink.CrashDetectionExecutionSink(XunitProjectAssembly, IMessageSink)
+  fullName: Xunit.v3.CrashDetectionExecutionSink.CrashDetectionExecutionSink(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Sdk.IMessageSink)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    An implementation of <xref href="v3.3.2.0:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> that detects when test assembly starting
+
+    and finished messages have been sent, and will send cleanup/error messages to the inner
+
+    sink if it appears that the test process crashed (failed to send one or both messages).
+  example: []
+  syntax:
+    content: public CrashDetectionExecutionSink(XunitProjectAssembly projectAssembly, IMessageSink innerSink)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test project assembly
+    - id: innerSink
+      type: Xunit.Sdk.IMessageSink
+      description: The inner message sink
+    content.vb: Public Sub New(projectAssembly As XunitProjectAssembly, innerSink As IMessageSink)
+  overload: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.#ctor*
+  nameWithType.vb: CrashDetectionExecutionSink.New(XunitProjectAssembly, IMessageSink)
+  fullName.vb: Xunit.v3.CrashDetectionExecutionSink.New(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Sdk.IMessageSink)
+  name.vb: New(XunitProjectAssembly, IMessageSink)
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.UtcNow
+  commentId: P:Xunit.v3.CrashDetectionExecutionSink.UtcNow
+  id: UtcNow
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink
+  langs:
+  - csharp
+  - vb
+  name: UtcNow
+  nameWithType: CrashDetectionExecutionSink.UtcNow
+  fullName: Xunit.v3.CrashDetectionExecutionSink.UtcNow
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: UtcNow
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Override this to set a constant time for testing purposes.
+  example: []
+  syntax:
+    content: protected virtual DateTimeOffset UtcNow { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Protected Overridable ReadOnly Property UtcNow As DateTimeOffset
+  overload: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.UtcNow*
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendFinish(System.String)
+  commentId: M:Xunit.v3.CrashDetectionExecutionSink.SendFinish(System.String)
+  id: SendFinish(System.String)
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink
+  langs:
+  - csharp
+  - vb
+  name: SendFinish(string)
+  nameWithType: CrashDetectionExecutionSink.SendFinish(string)
+  fullName: Xunit.v3.CrashDetectionExecutionSink.SendFinish(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SendFinish
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Implement this to send the finished message.
+  example: []
+  syntax:
+    content: protected override void SendFinish(string assemblyUniqueID)
+    parameters:
+    - id: assemblyUniqueID
+      type: System.String
+    content.vb: Protected Overrides Sub SendFinish(assemblyUniqueID As String)
+  overridden: Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+  overload: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendFinish*
+  nameWithType.vb: CrashDetectionExecutionSink.SendFinish(String)
+  fullName.vb: Xunit.v3.CrashDetectionExecutionSink.SendFinish(String)
+  name.vb: SendFinish(String)
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendStart(System.String)
+  commentId: M:Xunit.v3.CrashDetectionExecutionSink.SendStart(System.String)
+  id: SendStart(System.String)
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink
+  langs:
+  - csharp
+  - vb
+  name: SendStart(string)
+  nameWithType: CrashDetectionExecutionSink.SendStart(string)
+  fullName: Xunit.v3.CrashDetectionExecutionSink.SendStart(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SendStart
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/CrashDetectionExecutionSink.cs
+    startLine: 41
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Implement this to send the starting message.
+  example: []
+  syntax:
+    content: protected override void SendStart(string assemblyUniqueID)
+    parameters:
+    - id: assemblyUniqueID
+      type: System.String
+    content.vb: Protected Overrides Sub SendStart(assemblyUniqueID As String)
+  overridden: Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+  overload: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendStart*
+  nameWithType.vb: CrashDetectionExecutionSink.SendStart(String)
+  fullName.vb: Xunit.v3.CrashDetectionExecutionSink.SendStart(String)
+  name.vb: SendStart(String)
+references:
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject
+  commentId: T:Xunit.Sdk.LongLivedMarshalByRefObject
+  parent: v3.3.2.0:Xunit.Sdk
+  href: Xunit.Sdk.LongLivedMarshalByRefObject.html
+  name: LongLivedMarshalByRefObject
+  nameWithType: LongLivedMarshalByRefObject
+  fullName: Xunit.Sdk.LongLivedMarshalByRefObject
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  commentId: T:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  parent: v3.3.2.0:Xunit.v3
+  definition: Xunit.v3.CrashDetectionSinkBase`2
+  href: Xunit.v3.CrashDetectionSinkBase-2.html
+  name: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished)
+  name.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2
+    name: CrashDetectionSinkBase
+    href: Xunit.v3.CrashDetectionSinkBase-2.html
+  - name: <
+  - uid: v3.3.2.0:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.0:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2
+    name: CrashDetectionSinkBase
+    href: Xunit.v3.CrashDetectionSinkBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.0:Xunit.Sdk.ITestAssemblyStarting
+    name: ITestAssemblyStarting
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.0:Xunit.Sdk.ITestAssemblyFinished
+    name: ITestAssemblyFinished
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Finish
+  commentId: P:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Finish
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.Finish
+  href: Xunit.v3.CrashDetectionSinkBase-2.Finish.html#Xunit_v3_CrashDetectionSinkBase_2_Finish
+  name: Finish
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.Finish
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.Finish
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).Finish
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).Finish
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.FinishWaitMilliseconds
+  commentId: P:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.FinishWaitMilliseconds
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.FinishWaitMilliseconds
+  href: Xunit.v3.CrashDetectionSinkBase-2.FinishWaitMilliseconds.html#Xunit_v3_CrashDetectionSinkBase_2_FinishWaitMilliseconds
+  name: FinishWaitMilliseconds
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.FinishWaitMilliseconds
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.FinishWaitMilliseconds
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).FinishWaitMilliseconds
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).FinishWaitMilliseconds
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.InnerSink
+  commentId: P:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.InnerSink
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.InnerSink
+  href: Xunit.v3.CrashDetectionSinkBase-2.InnerSink.html#Xunit_v3_CrashDetectionSinkBase_2_InnerSink
+  name: InnerSink
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.InnerSink
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.InnerSink
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).InnerSink
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).InnerSink
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.ProjectAssembly
+  commentId: P:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.ProjectAssembly
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.ProjectAssembly
+  href: Xunit.v3.CrashDetectionSinkBase-2.ProjectAssembly.html#Xunit_v3_CrashDetectionSinkBase_2_ProjectAssembly
+  name: ProjectAssembly
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.ProjectAssembly
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.ProjectAssembly
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).ProjectAssembly
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).ProjectAssembly
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Start
+  commentId: P:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.Start
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.Start
+  href: Xunit.v3.CrashDetectionSinkBase-2.Start.html#Xunit_v3_CrashDetectionSinkBase_2_Start
+  name: Start
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.Start
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.Start
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).Start
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).Start
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).OnMessage(IMessageSinkMessage)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.2.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.2.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnProcessFinished(System.Nullable{System.Int32})
+  commentId: M:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnProcessFinished(System.Nullable{System.Int32})
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.OnProcessFinished(System.Nullable{System.Int32})
+  href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  name: OnProcessFinished(int?)
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.OnProcessFinished(int?)
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.OnProcessFinished(int?)
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).OnProcessFinished(Integer?)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).OnProcessFinished(Integer?)
+  name.vb: OnProcessFinished(Integer?)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnProcessFinished(System.Nullable{System.Int32})
+    name: OnProcessFinished
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.OnProcessFinished(System.Nullable{System.Int32})
+    name: OnProcessFinished
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.SendFinish(System.String)
+  href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  name: SendFinish(string)
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.SendFinish(string)
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.SendFinish(string)
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).SendFinish(String)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).SendFinish(String)
+  name.vb: SendFinish(String)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+    name: SendFinish
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendFinish(System.String)
+    name: SendFinish
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+  parent: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}
+  definition: Xunit.v3.CrashDetectionSinkBase`2.SendStart(System.String)
+  href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  name: SendStart(string)
+  nameWithType: CrashDetectionSinkBase<ITestAssemblyStarting, ITestAssemblyFinished>.SendStart(string)
+  fullName: Xunit.v3.CrashDetectionSinkBase<Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished>.SendStart(string)
+  nameWithType.vb: CrashDetectionSinkBase(Of ITestAssemblyStarting, ITestAssemblyFinished).SendStart(String)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of Xunit.Sdk.ITestAssemblyStarting, Xunit.Sdk.ITestAssemblyFinished).SendStart(String)
+  name.vb: SendStart(String)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+    name: SendStart
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase{Xunit.Sdk.ITestAssemblyStarting,Xunit.Sdk.ITestAssemblyFinished}.SendStart(System.String)
+    name: SendStart
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService
+  commentId: M:Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService
+  parent: v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject
+  href: Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService.html#Xunit_Sdk_LongLivedMarshalByRefObject_InitializeLifetimeService
+  name: InitializeLifetimeService()
+  nameWithType: LongLivedMarshalByRefObject.InitializeLifetimeService()
+  fullName: Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    href: Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService.html#Xunit_Sdk_LongLivedMarshalByRefObject_InitializeLifetimeService
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    href: Xunit.Sdk.LongLivedMarshalByRefObject.InitializeLifetimeService.html#Xunit_Sdk_LongLivedMarshalByRefObject_InitializeLifetimeService
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: v3.3.2.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2
+  commentId: T:Xunit.v3.CrashDetectionSinkBase`2
+  href: Xunit.v3.CrashDetectionSinkBase-2.html
+  name: CrashDetectionSinkBase<TStart, TFinish>
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish)
+  name.vb: CrashDetectionSinkBase(Of TStart, TFinish)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2
+    name: CrashDetectionSinkBase
+    href: Xunit.v3.CrashDetectionSinkBase-2.html
+  - name: <
+  - name: TStart
+  - name: ','
+  - name: " "
+  - name: TFinish
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2
+    name: CrashDetectionSinkBase
+    href: Xunit.v3.CrashDetectionSinkBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TStart
+  - name: ','
+  - name: " "
+  - name: TFinish
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.Finish
+  commentId: P:Xunit.v3.CrashDetectionSinkBase`2.Finish
+  href: Xunit.v3.CrashDetectionSinkBase-2.Finish.html#Xunit_v3_CrashDetectionSinkBase_2_Finish
+  name: Finish
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.Finish
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.Finish
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).Finish
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).Finish
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.FinishWaitMilliseconds
+  commentId: P:Xunit.v3.CrashDetectionSinkBase`2.FinishWaitMilliseconds
+  href: Xunit.v3.CrashDetectionSinkBase-2.FinishWaitMilliseconds.html#Xunit_v3_CrashDetectionSinkBase_2_FinishWaitMilliseconds
+  name: FinishWaitMilliseconds
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.FinishWaitMilliseconds
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.FinishWaitMilliseconds
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).FinishWaitMilliseconds
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).FinishWaitMilliseconds
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.InnerSink
+  commentId: P:Xunit.v3.CrashDetectionSinkBase`2.InnerSink
+  href: Xunit.v3.CrashDetectionSinkBase-2.InnerSink.html#Xunit_v3_CrashDetectionSinkBase_2_InnerSink
+  name: InnerSink
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.InnerSink
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.InnerSink
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).InnerSink
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).InnerSink
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.ProjectAssembly
+  commentId: P:Xunit.v3.CrashDetectionSinkBase`2.ProjectAssembly
+  href: Xunit.v3.CrashDetectionSinkBase-2.ProjectAssembly.html#Xunit_v3_CrashDetectionSinkBase_2_ProjectAssembly
+  name: ProjectAssembly
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.ProjectAssembly
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.ProjectAssembly
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).ProjectAssembly
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).ProjectAssembly
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.Start
+  commentId: P:Xunit.v3.CrashDetectionSinkBase`2.Start
+  href: Xunit.v3.CrashDetectionSinkBase-2.Start.html#Xunit_v3_CrashDetectionSinkBase_2_Start
+  name: Start
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.Start
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.Start
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).Start
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).Start
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase`2.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).OnMessage(IMessageSinkMessage)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.2.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnMessage.html#Xunit_v3_CrashDetectionSinkBase_2_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.3.2.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnProcessFinished(System.Nullable{System.Int32})
+  commentId: M:Xunit.v3.CrashDetectionSinkBase`2.OnProcessFinished(System.Nullable{System.Int32})
+  isExternal: true
+  href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  name: OnProcessFinished(int?)
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.OnProcessFinished(int?)
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.OnProcessFinished(int?)
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).OnProcessFinished(Integer?)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).OnProcessFinished(Integer?)
+  name.vb: OnProcessFinished(Integer?)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnProcessFinished(System.Nullable{System.Int32})
+    name: OnProcessFinished
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.OnProcessFinished(System.Nullable{System.Int32})
+    name: OnProcessFinished
+    href: Xunit.v3.CrashDetectionSinkBase-2.OnProcessFinished.html#Xunit_v3_CrashDetectionSinkBase_2_OnProcessFinished_System_Nullable_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendFinish(System.String)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase`2.SendFinish(System.String)
+  isExternal: true
+  href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  name: SendFinish(string)
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.SendFinish(string)
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.SendFinish(string)
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).SendFinish(String)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).SendFinish(String)
+  name.vb: SendFinish(String)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendFinish(System.String)
+    name: SendFinish
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendFinish(System.String)
+    name: SendFinish
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendFinish.html#Xunit_v3_CrashDetectionSinkBase_2_SendFinish_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendStart(System.String)
+  commentId: M:Xunit.v3.CrashDetectionSinkBase`2.SendStart(System.String)
+  isExternal: true
+  href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  name: SendStart(string)
+  nameWithType: CrashDetectionSinkBase<TStart, TFinish>.SendStart(string)
+  fullName: Xunit.v3.CrashDetectionSinkBase<TStart, TFinish>.SendStart(string)
+  nameWithType.vb: CrashDetectionSinkBase(Of TStart, TFinish).SendStart(String)
+  fullName.vb: Xunit.v3.CrashDetectionSinkBase(Of TStart, TFinish).SendStart(String)
+  name.vb: SendStart(String)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendStart(System.String)
+    name: SendStart
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.CrashDetectionSinkBase`2.SendStart(System.String)
+    name: SendStart
+    href: Xunit.v3.CrashDetectionSinkBase-2.SendStart.html#Xunit_v3_CrashDetectionSinkBase_2_SendStart_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.#ctor*
+  commentId: Overload:Xunit.v3.CrashDetectionExecutionSink.#ctor
+  href: Xunit.v3.CrashDetectionExecutionSink.-ctor.html#Xunit_v3_CrashDetectionExecutionSink__ctor_Xunit_Runner_Common_XunitProjectAssembly_Xunit_Sdk_IMessageSink_
+  name: CrashDetectionExecutionSink
+  nameWithType: CrashDetectionExecutionSink.CrashDetectionExecutionSink
+  fullName: Xunit.v3.CrashDetectionExecutionSink.CrashDetectionExecutionSink
+  nameWithType.vb: CrashDetectionExecutionSink.New
+  fullName.vb: Xunit.v3.CrashDetectionExecutionSink.New
+  name.vb: New
+- uid: v3.3.2.0:Xunit.Runner.Common.XunitProjectAssembly
+  commentId: T:Xunit.Runner.Common.XunitProjectAssembly
+  parent: v3.3.2.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProjectAssembly.html
+  name: XunitProjectAssembly
+  nameWithType: XunitProjectAssembly
+  fullName: Xunit.Runner.Common.XunitProjectAssembly
+- uid: v3.3.2.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.UtcNow*
+  commentId: Overload:Xunit.v3.CrashDetectionExecutionSink.UtcNow
+  href: Xunit.v3.CrashDetectionExecutionSink.UtcNow.html#Xunit_v3_CrashDetectionExecutionSink_UtcNow
+  name: UtcNow
+  nameWithType: CrashDetectionExecutionSink.UtcNow
+  fullName: Xunit.v3.CrashDetectionExecutionSink.UtcNow
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendFinish*
+  commentId: Overload:Xunit.v3.CrashDetectionExecutionSink.SendFinish
+  href: Xunit.v3.CrashDetectionExecutionSink.SendFinish.html#Xunit_v3_CrashDetectionExecutionSink_SendFinish_System_String_
+  name: SendFinish
+  nameWithType: CrashDetectionExecutionSink.SendFinish
+  fullName: Xunit.v3.CrashDetectionExecutionSink.SendFinish
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.0:Xunit.v3.CrashDetectionExecutionSink.SendStart*
+  commentId: Overload:Xunit.v3.CrashDetectionExecutionSink.SendStart
+  href: Xunit.v3.CrashDetectionExecutionSink.SendStart.html#Xunit_v3_CrashDetectionExecutionSink_SendStart_System_String_
+  name: SendStart
+  nameWithType: CrashDetectionExecutionSink.SendStart
+  fullName: Xunit.v3.CrashDetectionExecutionSink.SendStart
+memberLayout: SeparatePages

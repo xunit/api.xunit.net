@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  id: IMessageSink
+  parent: v3.3.2.0:Xunit.Sdk
+  children:
+  - v3.3.2.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  langs:
+  - csharp
+  - vb
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/IMessageSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IMessageSink
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/IMessageSink.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Represents an endpoint for the reception of test messages.
+  example: []
+  syntax:
+    content: public interface IMessageSink
+    content.vb: Public Interface IMessageSink
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  id: OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.3.2.0:Xunit.Sdk.IMessageSink
+  langs:
+  - csharp
+  - vb
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: IMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/BaseMessages/IMessageSink.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: OnMessage
+    path: ../src/xunit.v3.common/Abstractions/Messages/BaseMessages/IMessageSink.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Reports the presence of a message on the message bus. This method should
+
+    never throw exceptions.
+  example: []
+  syntax:
+    content: bool OnMessage(IMessageSinkMessage message)
+    parameters:
+    - id: message
+      type: Xunit.Sdk.IMessageSinkMessage
+      description: The message from the message bus
+    return:
+      type: System.Boolean
+      description: Return <code>true</code> to continue running tests, or <code>false</code> to stop.
+    content.vb: Function OnMessage(message As IMessageSinkMessage) As Boolean
+  overload: v3.3.2.0:Xunit.Sdk.IMessageSink.OnMessage*
+references:
+- uid: v3.3.2.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSink.OnMessage*
+  commentId: Overload:Xunit.Sdk.IMessageSink.OnMessage
+  href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage
+  nameWithType: IMessageSink.OnMessage
+  fullName: Xunit.Sdk.IMessageSink.OnMessage
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSinkMessage
+  commentId: T:Xunit.Sdk.IMessageSinkMessage
+  parent: v3.3.2.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSinkMessage.html
+  name: IMessageSinkMessage
+  nameWithType: IMessageSinkMessage
+  fullName: Xunit.Sdk.IMessageSinkMessage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

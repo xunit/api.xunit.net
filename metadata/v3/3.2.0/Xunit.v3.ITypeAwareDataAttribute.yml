@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute
+  commentId: T:Xunit.v3.ITypeAwareDataAttribute
+  id: ITypeAwareDataAttribute
+  parent: v3.3.2.0:Xunit.v3
+  children:
+  - v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  langs:
+  - csharp
+  - vb
+  name: ITypeAwareDataAttribute
+  nameWithType: ITypeAwareDataAttribute
+  fullName: Xunit.v3.ITypeAwareDataAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ITypeAwareDataAttribute.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITypeAwareDataAttribute
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ITypeAwareDataAttribute.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    This interface supplements <xref href="v3.3.2.0:Xunit.v3.IDataAttribute" data-throw-if-not-resolved="false"></xref> for attributes that wish to be
+
+    notified of the <xref href="System.Reflection.MemberInfo.ReflectedType" data-throw-if-not-resolved="false"></xref> of the method that was used during
+
+    reflection that they were attached to.
+  remarks: >-
+    By default, this is called by <xref href="v3.3.2.0:Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)" data-throw-if-not-resolved="false"></xref>.
+
+    If a third party test framework uses some other mechanism to discover data attributes that are
+
+    attached to methods, it should conditionally populate the <xref href="v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType" data-throw-if-not-resolved="false"></xref> during its
+
+    own discovery phase.
+  example: []
+  syntax:
+    content: public interface ITypeAwareDataAttribute
+    content.vb: Public Interface ITypeAwareDataAttribute
+- uid: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  commentId: P:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  id: MemberType
+  parent: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: MemberType
+  nameWithType: ITypeAwareDataAttribute.MemberType
+  fullName: Xunit.v3.ITypeAwareDataAttribute.MemberType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/ITypeAwareDataAttribute.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: MemberType
+    path: ../src/xunit.v3.core/Abstractions/Attributes/ITypeAwareDataAttribute.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets or sets the reflected type of the method that this data attribute was attached to.
+  remarks: <xref href="v3.3.2.0:Xunit.v3.ExtensibilityPointFactory" data-throw-if-not-resolved="false"></xref> will not be overwrite this value if it's already non-<code>null</code>.
+  example: []
+  syntax:
+    content: Type? MemberType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Property MemberType As Type
+  overload: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType*
+references:
+- uid: v3.3.2.0:Xunit.v3.IDataAttribute
+  commentId: T:Xunit.v3.IDataAttribute
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.IDataAttribute.html
+  name: IDataAttribute
+  nameWithType: IDataAttribute
+  fullName: Xunit.v3.IDataAttribute
+- uid: System.Reflection.MemberInfo.ReflectedType
+  commentId: P:System.Reflection.MemberInfo.ReflectedType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.reflectedtype
+  name: ReflectedType
+  nameWithType: MemberInfo.ReflectedType
+  fullName: System.Reflection.MemberInfo.ReflectedType
+- uid: v3.3.2.0:Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)
+  commentId: M:Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)
+  isExternal: true
+  href: Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes.html#Xunit_v3_ExtensibilityPointFactory_GetMethodDataAttributes_System_Reflection_MethodInfo_
+  name: GetMethodDataAttributes(MethodInfo)
+  nameWithType: ExtensibilityPointFactory.GetMethodDataAttributes(MethodInfo)
+  fullName: Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)
+    name: GetMethodDataAttributes
+    href: Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes.html#Xunit_v3_ExtensibilityPointFactory_GetMethodDataAttributes_System_Reflection_MethodInfo_
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes(System.Reflection.MethodInfo)
+    name: GetMethodDataAttributes
+    href: Xunit.v3.ExtensibilityPointFactory.GetMethodDataAttributes.html#Xunit_v3_ExtensibilityPointFactory_GetMethodDataAttributes_System_Reflection_MethodInfo_
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  commentId: P:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  parent: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute
+  href: Xunit.v3.ITypeAwareDataAttribute.MemberType.html#Xunit_v3_ITypeAwareDataAttribute_MemberType
+  name: MemberType
+  nameWithType: ITypeAwareDataAttribute.MemberType
+  fullName: Xunit.v3.ITypeAwareDataAttribute.MemberType
+- uid: v3.3.2.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute
+  commentId: T:Xunit.v3.ITypeAwareDataAttribute
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.ITypeAwareDataAttribute.html
+  name: ITypeAwareDataAttribute
+  nameWithType: ITypeAwareDataAttribute
+  fullName: Xunit.v3.ITypeAwareDataAttribute
+- uid: v3.3.2.0:Xunit.v3.ExtensibilityPointFactory
+  commentId: T:Xunit.v3.ExtensibilityPointFactory
+  href: Xunit.v3.ExtensibilityPointFactory.html
+  name: ExtensibilityPointFactory
+  nameWithType: ExtensibilityPointFactory
+  fullName: Xunit.v3.ExtensibilityPointFactory
+- uid: v3.3.2.0:Xunit.v3.ITypeAwareDataAttribute.MemberType*
+  commentId: Overload:Xunit.v3.ITypeAwareDataAttribute.MemberType
+  href: Xunit.v3.ITypeAwareDataAttribute.MemberType.html#Xunit_v3_ITypeAwareDataAttribute_MemberType
+  name: MemberType
+  nameWithType: ITypeAwareDataAttribute.MemberType
+  fullName: Xunit.v3.ITypeAwareDataAttribute.MemberType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

@@ -1,0 +1,926 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  commentId: T:Xunit.Sdk.UniqueIDGenerator
+  id: UniqueIDGenerator
+  parent: v3.3.2.0:Xunit.Sdk
+  children:
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.#ctor
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Compute
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Dispose
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForAssembly(System.String,System.String)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTest(System.String,System.Int32)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCase(System.String,System.Type[],System.Object[])
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestClass(System.String,System.String)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCollection(System.String,System.String,System.String)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestMethod(System.String,System.String)
+  - v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForType(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: UniqueIDGenerator
+  nameWithType: UniqueIDGenerator
+  fullName: Xunit.Sdk.UniqueIDGenerator
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: UniqueIDGenerator
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Generates unique IDs from multiple string inputs. Used to compute the unique
+
+    IDs that are used inside the test framework.
+  example: []
+  syntax:
+    content: 'public sealed class UniqueIDGenerator : IDisposable'
+    content.vb: Public NotInheritable Class UniqueIDGenerator Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.#ctor
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.#ctor
+  id: '#ctor'
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: UniqueIDGenerator()
+  nameWithType: UniqueIDGenerator.UniqueIDGenerator()
+  fullName: Xunit.Sdk.UniqueIDGenerator.UniqueIDGenerator()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Initializes a new instance of the <xref href="v3.3.2.0:Xunit.Sdk.UniqueIDGenerator" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UniqueIDGenerator()
+    content.vb: Public Sub New()
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.#ctor*
+  nameWithType.vb: UniqueIDGenerator.New()
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.New()
+  name.vb: New()
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+  id: Add(System.String)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: Add(string)
+  nameWithType: UniqueIDGenerator.Add(string)
+  fullName: Xunit.Sdk.UniqueIDGenerator.Add(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Add
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Add a string value into the unique ID computation.
+  example: []
+  syntax:
+    content: public void Add(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to be added to the unique ID computation
+    content.vb: Public Sub Add(value As String)
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add*
+  nameWithType.vb: UniqueIDGenerator.Add(String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.Add(String)
+  name.vb: Add(String)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Compute
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.Compute
+  id: Compute
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: Compute()
+  nameWithType: UniqueIDGenerator.Compute()
+  fullName: Xunit.Sdk.UniqueIDGenerator.Compute()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Compute
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 55
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Compute the unique ID for the given input values. Note that once the unique
+
+    ID has been computed, no further <xref href="v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)" data-throw-if-not-resolved="false"></xref> operations will be allowed.
+  example: []
+  syntax:
+    content: public string Compute()
+    return:
+      type: System.String
+      description: The computed unique ID
+    content.vb: Public Function Compute() As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Compute*
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Dispose
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.Dispose
+  id: Dispose
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UniqueIDGenerator.Dispose()
+  fullName: Xunit.Sdk.UniqueIDGenerator.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Dispose
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 73
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForAssembly(System.String,System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForAssembly(System.String,System.String)
+  id: ForAssembly(System.String,System.String)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForAssembly(string, string?)
+  nameWithType: UniqueIDGenerator.ForAssembly(string, string?)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForAssembly(string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForAssembly
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 92
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test assembly.
+  example: []
+  syntax:
+    content: public static string ForAssembly(string assemblyPath, string? configFilePath)
+    parameters:
+    - id: assemblyPath
+      type: System.String
+      description: The assembly path
+    - id: configFilePath
+      type: System.String
+      description: The optional configuration file path
+    return:
+      type: System.String
+      description: The computed unique ID for the assembly
+    content.vb: Public Shared Function ForAssembly(assemblyPath As String, configFilePath As String) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForAssembly*
+  nameWithType.vb: UniqueIDGenerator.ForAssembly(String, String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForAssembly(String, String)
+  name.vb: ForAssembly(String, String)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTest(System.String,System.Int32)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForTest(System.String,System.Int32)
+  id: ForTest(System.String,System.Int32)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForTest(string, int)
+  nameWithType: UniqueIDGenerator.ForTest(string, int)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTest(string, int)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForTest
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 122
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test.
+  example: []
+  syntax:
+    content: public static string ForTest(string testCaseUniqueID, int testIndex)
+    parameters:
+    - id: testCaseUniqueID
+      type: System.String
+      description: The unique ID of the test case that this test belongs to.
+    - id: testIndex
+      type: System.Int32
+      description: >-
+        The index of this test in the test case, typically starting with 0
+            (though a negative number may be used to prevent collisions with legitimate test indices).
+    return:
+      type: System.String
+    content.vb: Public Shared Function ForTest(testCaseUniqueID As String, testIndex As Integer) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTest*
+  nameWithType.vb: UniqueIDGenerator.ForTest(String, Integer)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForTest(String, Integer)
+  name.vb: ForTest(String, Integer)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCase(System.String,System.Type[],System.Object[])
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForTestCase(System.String,System.Type[],System.Object[])
+  id: ForTestCase(System.String,System.Type[],System.Object[])
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForTestCase(string, Type[]?, object?[]?)
+  nameWithType: UniqueIDGenerator.ForTestCase(string, Type[]?, object?[]?)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestCase(string, System.Type[]?, object?[]?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForTestCase
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 143
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test case.
+  example: []
+  syntax:
+    content: public static string ForTestCase(string parentUniqueID, Type[]? testMethodGenericTypes, object?[]? testMethodArguments)
+    parameters:
+    - id: parentUniqueID
+      type: System.String
+      description: >-
+        The unique ID of the parent in the hierarchy; typically the test method
+            unique ID, but may also be the test class or test collection unique ID, when test method (and
+            possibly test class) don't exist.
+    - id: testMethodGenericTypes
+      type: System.Type[]
+      description: The test method's generic types
+    - id: testMethodArguments
+      type: System.Object[]
+      description: The test method's arguments
+    return:
+      type: System.String
+      description: The computed unique ID for the test case
+    content.vb: Public Shared Function ForTestCase(parentUniqueID As String, testMethodGenericTypes As Type(), testMethodArguments As Object()) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCase*
+  nameWithType.vb: UniqueIDGenerator.ForTestCase(String, Type(), Object())
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForTestCase(String, System.Type(), Object())
+  name.vb: ForTestCase(String, Type(), Object())
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestClass(System.String,System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForTestClass(System.String,System.String)
+  id: ForTestClass(System.String,System.String)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForTestClass(string, string?)
+  nameWithType: UniqueIDGenerator.ForTestClass(string, string?)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestClass(string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForTestClass
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 171
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test class.
+  example: []
+  syntax:
+    content: public static string? ForTestClass(string testCollectionUniqueID, string? className)
+    parameters:
+    - id: testCollectionUniqueID
+      type: System.String
+      description: The unique ID of the parent test collection for the test class
+    - id: className
+      type: System.String
+      description: The optional fully qualified type name of the test class
+    return:
+      type: System.String
+      description: >-
+        The computed unique ID for the test class (may return <code>null</code> if <code class="paramref">className</code>
+            is null)
+    content.vb: Public Shared Function ForTestClass(testCollectionUniqueID As String, className As String) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestClass*
+  nameWithType.vb: UniqueIDGenerator.ForTestClass(String, String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForTestClass(String, String)
+  name.vb: ForTestClass(String, String)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCollection(System.String,System.String,System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForTestCollection(System.String,System.String,System.String)
+  id: ForTestCollection(System.String,System.String,System.String)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForTestCollection(string, string, string?)
+  nameWithType: UniqueIDGenerator.ForTestCollection(string, string, string?)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestCollection(string, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForTestCollection
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 194
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test collection.
+  example: []
+  syntax:
+    content: public static string ForTestCollection(string assemblyUniqueID, string collectionDisplayName, string? collectionDefinitionClassName)
+    parameters:
+    - id: assemblyUniqueID
+      type: System.String
+      description: The unique ID of the assembly the test collection lives in
+    - id: collectionDisplayName
+      type: System.String
+      description: The display name of the test collection
+    - id: collectionDefinitionClassName
+      type: System.String
+      description: The optional class name that contains the test collection definition
+    return:
+      type: System.String
+      description: The computed unique ID for the test collection
+    content.vb: Public Shared Function ForTestCollection(assemblyUniqueID As String, collectionDisplayName As String, collectionDefinitionClassName As String) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCollection*
+  nameWithType.vb: UniqueIDGenerator.ForTestCollection(String, String, String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForTestCollection(String, String, String)
+  name.vb: ForTestCollection(String, String, String)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestMethod(System.String,System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForTestMethod(System.String,System.String)
+  id: ForTestMethod(System.String,System.String)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForTestMethod(string?, string?)
+  nameWithType: UniqueIDGenerator.ForTestMethod(string?, string?)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestMethod(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForTestMethod
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 216
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a test method.
+  example: []
+  syntax:
+    content: public static string? ForTestMethod(string? testClassUniqueID, string? methodName)
+    parameters:
+    - id: testClassUniqueID
+      type: System.String
+      description: The unique ID of the parent test class for the test method
+    - id: methodName
+      type: System.String
+      description: The optional test method name
+    return:
+      type: System.String
+      description: >-
+        The computed unique ID for the test method (may return <code>null</code> if either the class
+            unique ID or the method name is null)
+    content.vb: Public Shared Function ForTestMethod(testClassUniqueID As String, methodName As String) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestMethod*
+  nameWithType.vb: UniqueIDGenerator.ForTestMethod(String, String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.ForTestMethod(String, String)
+  name.vb: ForTestMethod(String, String)
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForType(System.Type)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.ForType(System.Type)
+  id: ForType(System.Type)
+  parent: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  langs:
+  - csharp
+  - vb
+  name: ForType(Type)
+  nameWithType: UniqueIDGenerator.ForType(Type)
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ForType
+    path: ../src/xunit.v3.common/Utility/UniqueIDGenerator.cs
+    startLine: 234
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Computes a unique ID for a <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static string ForType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to generate an ID for
+    return:
+      type: System.String
+    content.vb: Public Shared Function ForType(type As Type) As String
+  overload: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForType*
+references:
+- uid: v3.3.2.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator
+  commentId: T:Xunit.Sdk.UniqueIDGenerator
+  href: Xunit.Sdk.UniqueIDGenerator.html
+  name: UniqueIDGenerator
+  nameWithType: UniqueIDGenerator
+  fullName: Xunit.Sdk.UniqueIDGenerator
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.#ctor*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.#ctor
+  href: Xunit.Sdk.UniqueIDGenerator.-ctor.html#Xunit_Sdk_UniqueIDGenerator__ctor
+  name: UniqueIDGenerator
+  nameWithType: UniqueIDGenerator.UniqueIDGenerator
+  fullName: Xunit.Sdk.UniqueIDGenerator.UniqueIDGenerator
+  nameWithType.vb: UniqueIDGenerator.New
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.New
+  name.vb: New
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.Add
+  href: Xunit.Sdk.UniqueIDGenerator.Add.html#Xunit_Sdk_UniqueIDGenerator_Add_System_String_
+  name: Add
+  nameWithType: UniqueIDGenerator.Add
+  fullName: Xunit.Sdk.UniqueIDGenerator.Add
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+  commentId: M:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+  isExternal: true
+  href: Xunit.Sdk.UniqueIDGenerator.Add.html#Xunit_Sdk_UniqueIDGenerator_Add_System_String_
+  name: Add(string)
+  nameWithType: UniqueIDGenerator.Add(string)
+  fullName: Xunit.Sdk.UniqueIDGenerator.Add(string)
+  nameWithType.vb: UniqueIDGenerator.Add(String)
+  fullName.vb: Xunit.Sdk.UniqueIDGenerator.Add(String)
+  name.vb: Add(String)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+    name: Add
+    href: Xunit.Sdk.UniqueIDGenerator.Add.html#Xunit_Sdk_UniqueIDGenerator_Add_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Add(System.String)
+    name: Add
+    href: Xunit.Sdk.UniqueIDGenerator.Add.html#Xunit_Sdk_UniqueIDGenerator_Add_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Compute*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.Compute
+  href: Xunit.Sdk.UniqueIDGenerator.Compute.html#Xunit_Sdk_UniqueIDGenerator_Compute
+  name: Compute
+  nameWithType: UniqueIDGenerator.Compute
+  fullName: Xunit.Sdk.UniqueIDGenerator.Compute
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.Dispose*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.Dispose
+  href: Xunit.Sdk.UniqueIDGenerator.Dispose.html#Xunit_Sdk_UniqueIDGenerator_Dispose
+  name: Dispose
+  nameWithType: UniqueIDGenerator.Dispose
+  fullName: Xunit.Sdk.UniqueIDGenerator.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForAssembly*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForAssembly
+  href: Xunit.Sdk.UniqueIDGenerator.ForAssembly.html#Xunit_Sdk_UniqueIDGenerator_ForAssembly_System_String_System_String_
+  name: ForAssembly
+  nameWithType: UniqueIDGenerator.ForAssembly
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForAssembly
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTest*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForTest
+  href: Xunit.Sdk.UniqueIDGenerator.ForTest.html#Xunit_Sdk_UniqueIDGenerator_ForTest_System_String_System_Int32_
+  name: ForTest
+  nameWithType: UniqueIDGenerator.ForTest
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCase*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForTestCase
+  href: Xunit.Sdk.UniqueIDGenerator.ForTestCase.html#Xunit_Sdk_UniqueIDGenerator_ForTestCase_System_String_System_Type___System_Object___
+  name: ForTestCase
+  nameWithType: UniqueIDGenerator.ForTestCase
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestCase
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestClass*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForTestClass
+  href: Xunit.Sdk.UniqueIDGenerator.ForTestClass.html#Xunit_Sdk_UniqueIDGenerator_ForTestClass_System_String_System_String_
+  name: ForTestClass
+  nameWithType: UniqueIDGenerator.ForTestClass
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestClass
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestCollection*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForTestCollection
+  href: Xunit.Sdk.UniqueIDGenerator.ForTestCollection.html#Xunit_Sdk_UniqueIDGenerator_ForTestCollection_System_String_System_String_System_String_
+  name: ForTestCollection
+  nameWithType: UniqueIDGenerator.ForTestCollection
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestCollection
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForTestMethod*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForTestMethod
+  href: Xunit.Sdk.UniqueIDGenerator.ForTestMethod.html#Xunit_Sdk_UniqueIDGenerator_ForTestMethod_System_String_System_String_
+  name: ForTestMethod
+  nameWithType: UniqueIDGenerator.ForTestMethod
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForTestMethod
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.3.2.0:Xunit.Sdk.UniqueIDGenerator.ForType*
+  commentId: Overload:Xunit.Sdk.UniqueIDGenerator.ForType
+  href: Xunit.Sdk.UniqueIDGenerator.ForType.html#Xunit_Sdk_UniqueIDGenerator_ForType_System_Type_
+  name: ForType
+  nameWithType: UniqueIDGenerator.ForType
+  fullName: Xunit.Sdk.UniqueIDGenerator.ForType
+memberLayout: SeparatePages

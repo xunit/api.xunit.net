@@ -1,0 +1,613 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  commentId: T:Xunit.v3.TestCollectionFactoryBase
+  id: TestCollectionFactoryBase
+  parent: v3.3.2.0:Xunit.v3
+  children:
+  - v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.#ctor(Xunit.v3.IXunitTestAssembly)
+  - v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.DisplayName
+  - v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.Get(System.Type)
+  - v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection(System.Type)
+  - v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.TestAssembly
+  langs:
+  - csharp
+  - vb
+  name: TestCollectionFactoryBase
+  nameWithType: TestCollectionFactoryBase
+  fullName: Xunit.v3.TestCollectionFactoryBase
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestCollectionFactoryBase
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Base class with common functionality between <xref href="v3.3.2.0:Xunit.v3.CollectionPerAssemblyTestCollectionFactory" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.3.2.0:Xunit.v3.CollectionPerClassTestCollectionFactory" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public abstract class TestCollectionFactoryBase : IXunitTestCollectionFactory'
+    content.vb: Public MustInherit Class TestCollectionFactoryBase Implements IXunitTestCollectionFactory
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.3.2.0:Xunit.v3.CollectionPerAssemblyTestCollectionFactory
+  - v3.3.2.0:Xunit.v3.CollectionPerClassTestCollectionFactory
+  implements:
+  - v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.#ctor(Xunit.v3.IXunitTestAssembly)
+  commentId: M:Xunit.v3.TestCollectionFactoryBase.#ctor(Xunit.v3.IXunitTestAssembly)
+  id: '#ctor(Xunit.v3.IXunitTestAssembly)'
+  parent: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: TestCollectionFactoryBase(IXunitTestAssembly)
+  nameWithType: TestCollectionFactoryBase.TestCollectionFactoryBase(IXunitTestAssembly)
+  fullName: Xunit.v3.TestCollectionFactoryBase.TestCollectionFactoryBase(Xunit.v3.IXunitTestAssembly)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Base class with common functionality between <xref href="v3.3.2.0:Xunit.v3.CollectionPerAssemblyTestCollectionFactory" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.3.2.0:Xunit.v3.CollectionPerClassTestCollectionFactory" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected TestCollectionFactoryBase(IXunitTestAssembly testAssembly)
+    parameters:
+    - id: testAssembly
+      type: Xunit.v3.IXunitTestAssembly
+      description: The test assembly
+    content.vb: Protected Sub New(testAssembly As IXunitTestAssembly)
+  overload: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.#ctor*
+  nameWithType.vb: TestCollectionFactoryBase.New(IXunitTestAssembly)
+  fullName.vb: Xunit.v3.TestCollectionFactoryBase.New(Xunit.v3.IXunitTestAssembly)
+  name.vb: New(IXunitTestAssembly)
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.DisplayName
+  commentId: P:Xunit.v3.TestCollectionFactoryBase.DisplayName
+  id: DisplayName
+  parent: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: TestCollectionFactoryBase.DisplayName
+  fullName: Xunit.v3.TestCollectionFactoryBase.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: DisplayName
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the display name for the test collection factory. This information is shown to the end
+
+    user as part of the description of the test environment.
+  example: []
+  syntax:
+    content: public abstract string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property DisplayName As String
+  overload: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.DisplayName*
+  implements:
+  - v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.DisplayName
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.TestAssembly
+  commentId: P:Xunit.v3.TestCollectionFactoryBase.TestAssembly
+  id: TestAssembly
+  parent: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: TestCollectionFactoryBase.TestAssembly
+  fullName: Xunit.v3.TestCollectionFactoryBase.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test assembly.
+  example: []
+  syntax:
+    content: protected IXunitTestAssembly TestAssembly { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestAssembly
+    content.vb: Protected ReadOnly Property TestAssembly As IXunitTestAssembly
+  overload: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.TestAssembly*
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.Get(System.Type)
+  commentId: M:Xunit.v3.TestCollectionFactoryBase.Get(System.Type)
+  id: Get(System.Type)
+  parent: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: Get(Type)
+  nameWithType: TestCollectionFactoryBase.Get(Type)
+  fullName: Xunit.v3.TestCollectionFactoryBase.Get(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Get
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test collection for a given test class.
+  example: []
+  syntax:
+    content: public IXunitTestCollection Get(Type testClass)
+    parameters:
+    - id: testClass
+      type: System.Type
+      description: The test class.
+    return:
+      type: Xunit.v3.IXunitTestCollection
+      description: The test collection.
+    content.vb: Public Function [Get](testClass As Type) As IXunitTestCollection
+  overload: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.Get*
+  implements:
+  - v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection(System.Type)
+  commentId: M:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection(System.Type)
+  id: GetDefaultTestCollection(System.Type)
+  parent: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultTestCollection(Type)
+  nameWithType: TestCollectionFactoryBase.GetDefaultTestCollection(Type)
+  fullName: Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: GetDefaultTestCollection
+    path: ../src/xunit.v3.core/Framework/TestCollectionFactoryBase.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Override to provide a test collection when the given test class is not decorated
+
+    with any test collection attributes.
+  example: []
+  syntax:
+    content: protected abstract IXunitTestCollection GetDefaultTestCollection(Type testClass)
+    parameters:
+    - id: testClass
+      type: System.Type
+      description: The test class
+    return:
+      type: Xunit.v3.IXunitTestCollection
+    content.vb: Protected MustOverride Function GetDefaultTestCollection(testClass As Type) As IXunitTestCollection
+  overload: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection*
+references:
+- uid: v3.3.2.0:Xunit.v3.CollectionPerAssemblyTestCollectionFactory
+  commentId: T:Xunit.v3.CollectionPerAssemblyTestCollectionFactory
+  href: Xunit.v3.CollectionPerAssemblyTestCollectionFactory.html
+  name: CollectionPerAssemblyTestCollectionFactory
+  nameWithType: CollectionPerAssemblyTestCollectionFactory
+  fullName: Xunit.v3.CollectionPerAssemblyTestCollectionFactory
+- uid: v3.3.2.0:Xunit.v3.CollectionPerClassTestCollectionFactory
+  commentId: T:Xunit.v3.CollectionPerClassTestCollectionFactory
+  href: Xunit.v3.CollectionPerClassTestCollectionFactory.html
+  name: CollectionPerClassTestCollectionFactory
+  nameWithType: CollectionPerClassTestCollectionFactory
+  fullName: Xunit.v3.CollectionPerClassTestCollectionFactory
+- uid: v3.3.2.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory
+  commentId: T:Xunit.v3.IXunitTestCollectionFactory
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.IXunitTestCollectionFactory.html
+  name: IXunitTestCollectionFactory
+  nameWithType: IXunitTestCollectionFactory
+  fullName: Xunit.v3.IXunitTestCollectionFactory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.#ctor*
+  commentId: Overload:Xunit.v3.TestCollectionFactoryBase.#ctor
+  href: Xunit.v3.TestCollectionFactoryBase.-ctor.html#Xunit_v3_TestCollectionFactoryBase__ctor_Xunit_v3_IXunitTestAssembly_
+  name: TestCollectionFactoryBase
+  nameWithType: TestCollectionFactoryBase.TestCollectionFactoryBase
+  fullName: Xunit.v3.TestCollectionFactoryBase.TestCollectionFactoryBase
+  nameWithType.vb: TestCollectionFactoryBase.New
+  fullName.vb: Xunit.v3.TestCollectionFactoryBase.New
+  name.vb: New
+- uid: v3.3.2.0:Xunit.v3.IXunitTestAssembly
+  commentId: T:Xunit.v3.IXunitTestAssembly
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.IXunitTestAssembly.html
+  name: IXunitTestAssembly
+  nameWithType: IXunitTestAssembly
+  fullName: Xunit.v3.IXunitTestAssembly
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.DisplayName*
+  commentId: Overload:Xunit.v3.TestCollectionFactoryBase.DisplayName
+  href: Xunit.v3.TestCollectionFactoryBase.DisplayName.html#Xunit_v3_TestCollectionFactoryBase_DisplayName
+  name: DisplayName
+  nameWithType: TestCollectionFactoryBase.DisplayName
+  fullName: Xunit.v3.TestCollectionFactoryBase.DisplayName
+- uid: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.DisplayName
+  commentId: P:Xunit.v3.IXunitTestCollectionFactory.DisplayName
+  parent: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory
+  href: Xunit.v3.IXunitTestCollectionFactory.DisplayName.html#Xunit_v3_IXunitTestCollectionFactory_DisplayName
+  name: DisplayName
+  nameWithType: IXunitTestCollectionFactory.DisplayName
+  fullName: Xunit.v3.IXunitTestCollectionFactory.DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.TestAssembly*
+  commentId: Overload:Xunit.v3.TestCollectionFactoryBase.TestAssembly
+  href: Xunit.v3.TestCollectionFactoryBase.TestAssembly.html#Xunit_v3_TestCollectionFactoryBase_TestAssembly
+  name: TestAssembly
+  nameWithType: TestCollectionFactoryBase.TestAssembly
+  fullName: Xunit.v3.TestCollectionFactoryBase.TestAssembly
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.Get*
+  commentId: Overload:Xunit.v3.TestCollectionFactoryBase.Get
+  href: Xunit.v3.TestCollectionFactoryBase.Get.html#Xunit_v3_TestCollectionFactoryBase_Get_System_Type_
+  name: Get
+  nameWithType: TestCollectionFactoryBase.Get
+  fullName: Xunit.v3.TestCollectionFactoryBase.Get
+- uid: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+  commentId: M:Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+  parent: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory
+  isExternal: true
+  href: Xunit.v3.IXunitTestCollectionFactory.Get.html#Xunit_v3_IXunitTestCollectionFactory_Get_System_Type_
+  name: Get(Type)
+  nameWithType: IXunitTestCollectionFactory.Get(Type)
+  fullName: Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+    name: Get
+    href: Xunit.v3.IXunitTestCollectionFactory.Get.html#Xunit_v3_IXunitTestCollectionFactory_Get_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.0:Xunit.v3.IXunitTestCollectionFactory.Get(System.Type)
+    name: Get
+    href: Xunit.v3.IXunitTestCollectionFactory.Get.html#Xunit_v3_IXunitTestCollectionFactory_Get_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.3.2.0:Xunit.v3.IXunitTestCollection
+  commentId: T:Xunit.v3.IXunitTestCollection
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.IXunitTestCollection.html
+  name: IXunitTestCollection
+  nameWithType: IXunitTestCollection
+  fullName: Xunit.v3.IXunitTestCollection
+- uid: v3.3.2.0:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection*
+  commentId: Overload:Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection
+  href: Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection.html#Xunit_v3_TestCollectionFactoryBase_GetDefaultTestCollection_System_Type_
+  name: GetDefaultTestCollection
+  nameWithType: TestCollectionFactoryBase.GetDefaultTestCollection
+  fullName: Xunit.v3.TestCollectionFactoryBase.GetDefaultTestCollection
+memberLayout: SeparatePages

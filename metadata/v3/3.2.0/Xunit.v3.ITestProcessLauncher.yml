@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.v3.ITestProcessLauncher
+  commentId: T:Xunit.v3.ITestProcessLauncher
+  id: ITestProcessLauncher
+  parent: v3.3.2.0:Xunit.v3
+  children:
+  - v3.3.2.0:Xunit.v3.ITestProcessLauncher.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  langs:
+  - csharp
+  - vb
+  name: ITestProcessLauncher
+  nameWithType: ITestProcessLauncher
+  fullName: Xunit.v3.ITestProcessLauncher
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITestProcessLauncher
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessLauncher.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Implement this to control the launch of an xUnit.net v3 test process.
+  remarks: >-
+    A higher level API via <xref href="v3.3.2.0:Xunit.v3.ITestProcessDirectLauncher" data-throw-if-not-resolved="false"></xref> is available. For launchers that can
+
+    directly invoke the required entry points, they should also implement that interface.
+  example: []
+  syntax:
+    content: public interface ITestProcessLauncher
+    content.vb: Public Interface ITestProcessLauncher
+- uid: v3.3.2.0:Xunit.v3.ITestProcessLauncher.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Xunit.v3.ITestProcessLauncher.Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  id: Launch(Xunit.Runner.Common.XunitProjectAssembly,System.Collections.Generic.IReadOnlyList{System.String})
+  parent: v3.3.2.0:Xunit.v3.ITestProcessLauncher
+  langs:
+  - csharp
+  - vb
+  name: Launch(XunitProjectAssembly, IReadOnlyList<string>)
+  nameWithType: ITestProcessLauncher.Launch(XunitProjectAssembly, IReadOnlyList<string>)
+  fullName: Xunit.v3.ITestProcessLauncher.Launch(Xunit.Runner.Common.XunitProjectAssembly, System.Collections.Generic.IReadOnlyList<string>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Launch
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessLauncher.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Launches the test process. Returns <code>null</code> if the process could not be launched.
+  example: []
+  syntax:
+    content: ITestProcess? Launch(XunitProjectAssembly projectAssembly, IReadOnlyList<string> arguments)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test project assembly
+    - id: arguments
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: The list of arguments to be passed to the in-process runner
+    return:
+      type: Xunit.v3.ITestProcess
+    content.vb: Function Launch(projectAssembly As XunitProjectAssembly, arguments As IReadOnlyList(Of String)) As ITestProcess
+  overload: v3.3.2.0:Xunit.v3.ITestProcessLauncher.Launch*
+  nameWithType.vb: ITestProcessLauncher.Launch(XunitProjectAssembly, IReadOnlyList(Of String))
+  fullName.vb: Xunit.v3.ITestProcessLauncher.Launch(Xunit.Runner.Common.XunitProjectAssembly, System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Launch(XunitProjectAssembly, IReadOnlyList(Of String))
+references:
+- uid: v3.3.2.0:Xunit.v3.ITestProcessDirectLauncher
+  commentId: T:Xunit.v3.ITestProcessDirectLauncher
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.ITestProcessDirectLauncher.html
+  name: ITestProcessDirectLauncher
+  nameWithType: ITestProcessDirectLauncher
+  fullName: Xunit.v3.ITestProcessDirectLauncher
+- uid: v3.3.2.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.0:Xunit.v3.ITestProcessLauncher.Launch*
+  commentId: Overload:Xunit.v3.ITestProcessLauncher.Launch
+  href: Xunit.v3.ITestProcessLauncher.Launch.html#Xunit_v3_ITestProcessLauncher_Launch_Xunit_Runner_Common_XunitProjectAssembly_System_Collections_Generic_IReadOnlyList_System_String__
+  name: Launch
+  nameWithType: ITestProcessLauncher.Launch
+  fullName: Xunit.v3.ITestProcessLauncher.Launch
+- uid: v3.3.2.0:Xunit.Runner.Common.XunitProjectAssembly
+  commentId: T:Xunit.Runner.Common.XunitProjectAssembly
+  parent: v3.3.2.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProjectAssembly.html
+  name: XunitProjectAssembly
+  nameWithType: XunitProjectAssembly
+  fullName: Xunit.Runner.Common.XunitProjectAssembly
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.0:Xunit.v3.ITestProcess
+  commentId: T:Xunit.v3.ITestProcess
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.ITestProcess.html
+  name: ITestProcess
+  nameWithType: ITestProcess
+  fullName: Xunit.v3.ITestProcess
+- uid: v3.3.2.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

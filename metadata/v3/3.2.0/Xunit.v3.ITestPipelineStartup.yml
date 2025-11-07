@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartup
+  commentId: T:Xunit.v3.ITestPipelineStartup
+  id: ITestPipelineStartup
+  parent: v3.3.2.0:Xunit.v3
+  children:
+  - v3.3.2.0:Xunit.v3.ITestPipelineStartup.StartAsync(Xunit.Sdk.IMessageSink)
+  - v3.3.2.0:Xunit.v3.ITestPipelineStartup.StopAsync
+  langs:
+  - csharp
+  - vb
+  name: ITestPipelineStartup
+  nameWithType: ITestPipelineStartup
+  fullName: Xunit.v3.ITestPipelineStartup
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITestPipelineStartup
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Interface implemented by developers who want to run code during test pipeline startup and shutdown.
+
+    A single instance of this may be decorated with an instance of <xref href="v3.3.2.0:Xunit.v3.ITestPipelineStartupAttribute" data-throw-if-not-resolved="false"></xref>
+
+    (typically <xref href="v3.3.2.0:Xunit.v3.TestPipelineStartupAttribute" data-throw-if-not-resolved="false"></xref>) at the assembly level.
+  remarks: >-
+    Unlike assembly-level fixtures, this code runs for both discovery and execution (whereas fixtures only
+
+    run during execution), and it occurs at a much earlier point in the pipeline. The intention with this
+
+    hook is primarily about ensuring that some essential infrastructure is in place before test discovery
+
+    takes place. Activities which are only used during execution should be done with assembly-level fixtures.
+  example: []
+  syntax:
+    content: public interface ITestPipelineStartup
+    content.vb: Public Interface ITestPipelineStartup
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StartAsync(Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.v3.ITestPipelineStartup.StartAsync(Xunit.Sdk.IMessageSink)
+  id: StartAsync(Xunit.Sdk.IMessageSink)
+  parent: v3.3.2.0:Xunit.v3.ITestPipelineStartup
+  langs:
+  - csharp
+  - vb
+  name: StartAsync(IMessageSink)
+  nameWithType: ITestPipelineStartup.StartAsync(IMessageSink)
+  fullName: Xunit.v3.ITestPipelineStartup.StartAsync(Xunit.Sdk.IMessageSink)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: StartAsync
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Indicates that the test assembly is starting up.
+  example: []
+  syntax:
+    content: ValueTask StartAsync(IMessageSink diagnosticMessageSink)
+    parameters:
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: >-
+        A message sink to which it can report <xref href="v3.3.2.0:Xunit.Sdk.IDiagnosticMessage" data-throw-if-not-resolved="false"></xref>
+            instances.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function StartAsync(diagnosticMessageSink As IMessageSink) As ValueTask
+  overload: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StartAsync*
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StopAsync
+  commentId: M:Xunit.v3.ITestPipelineStartup.StopAsync
+  id: StopAsync
+  parent: v3.3.2.0:Xunit.v3.ITestPipelineStartup
+  langs:
+  - csharp
+  - vb
+  name: StopAsync()
+  nameWithType: ITestPipelineStartup.StopAsync()
+  fullName: Xunit.v3.ITestPipelineStartup.StopAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: StopAsync
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestPipelineStartup.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Inidicates that the test assembly is shutting down.
+  example: []
+  syntax:
+    content: ValueTask StopAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function StopAsync() As ValueTask
+  overload: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StopAsync*
+references:
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartupAttribute
+  commentId: T:Xunit.v3.ITestPipelineStartupAttribute
+  parent: v3.3.2.0:Xunit.v3
+  href: Xunit.v3.ITestPipelineStartupAttribute.html
+  name: ITestPipelineStartupAttribute
+  nameWithType: ITestPipelineStartupAttribute
+  fullName: Xunit.v3.ITestPipelineStartupAttribute
+- uid: v3.3.2.0:Xunit.v3.TestPipelineStartupAttribute
+  commentId: T:Xunit.v3.TestPipelineStartupAttribute
+  href: Xunit.v3.TestPipelineStartupAttribute.html
+  name: TestPipelineStartupAttribute
+  nameWithType: TestPipelineStartupAttribute
+  fullName: Xunit.v3.TestPipelineStartupAttribute
+- uid: v3.3.2.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.0:Xunit.Sdk.IDiagnosticMessage
+  commentId: T:Xunit.Sdk.IDiagnosticMessage
+  parent: v3.3.2.0:Xunit.Sdk
+  href: Xunit.Sdk.IDiagnosticMessage.html
+  name: IDiagnosticMessage
+  nameWithType: IDiagnosticMessage
+  fullName: Xunit.Sdk.IDiagnosticMessage
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StartAsync*
+  commentId: Overload:Xunit.v3.ITestPipelineStartup.StartAsync
+  href: Xunit.v3.ITestPipelineStartup.StartAsync.html#Xunit_v3_ITestPipelineStartup_StartAsync_Xunit_Sdk_IMessageSink_
+  name: StartAsync
+  nameWithType: ITestPipelineStartup.StartAsync
+  fullName: Xunit.v3.ITestPipelineStartup.StartAsync
+- uid: v3.3.2.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: v3.3.2.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.2.0:Xunit.v3.ITestPipelineStartup.StopAsync*
+  commentId: Overload:Xunit.v3.ITestPipelineStartup.StopAsync
+  href: Xunit.v3.ITestPipelineStartup.StopAsync.html#Xunit_v3_ITestPipelineStartup_StopAsync
+  name: StopAsync
+  nameWithType: ITestPipelineStartup.StopAsync
+  fullName: Xunit.v3.ITestPipelineStartup.StopAsync
+memberLayout: SeparatePages
