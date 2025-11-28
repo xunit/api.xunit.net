@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  id: IAsyncLifetime
+  parent: v3.3.2.1:Xunit
+  children:
+  - v3.3.2.1:Xunit.IAsyncLifetime.InitializeAsync
+  langs:
+  - csharp
+  - vb
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/IAsyncLifetime.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IAsyncLifetime
+    path: ../src/xunit.v3.core/IAsyncLifetime.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Used to provide asynchronous lifetime functionality. Currently supported:<br />
+
+    - Test classes<br />
+
+    - Classes used in <xref href="v3.3.2.1:Xunit.IClassFixture%601" data-throw-if-not-resolved="false"></xref><br />
+
+    - Classes used in <xref href="v3.3.2.1:Xunit.ICollectionFixture%601" data-throw-if-not-resolved="false"></xref>.<br />
+
+    - Classes used in <code>[assembly: <xref href="v3.3.2.1:Xunit.AssemblyFixtureAttribute" data-throw-if-not-resolved="false"></xref>()]</code>.
+  example: []
+  syntax:
+    content: 'public interface IAsyncLifetime : IAsyncDisposable'
+    content.vb: Public Interface IAsyncLifetime Inherits IAsyncDisposable
+  inheritedMembers:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.3.2.1:Xunit.IAsyncLifetime.InitializeAsync
+  commentId: M:Xunit.IAsyncLifetime.InitializeAsync
+  id: InitializeAsync
+  parent: v3.3.2.1:Xunit.IAsyncLifetime
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: IAsyncLifetime.InitializeAsync()
+  fullName: Xunit.IAsyncLifetime.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/IAsyncLifetime.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: InitializeAsync
+    path: ../src/xunit.v3.core/IAsyncLifetime.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Called immediately after the class has been created, before it is used.
+  example: []
+  syntax:
+    content: ValueTask InitializeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function InitializeAsync() As ValueTask
+  overload: v3.3.2.1:Xunit.IAsyncLifetime.InitializeAsync*
+references:
+- uid: v3.3.2.1:Xunit.IClassFixture`1
+  commentId: T:Xunit.IClassFixture`1
+  href: Xunit.IClassFixture-1.html
+  name: IClassFixture<TFixture>
+  nameWithType: IClassFixture<TFixture>
+  fullName: Xunit.IClassFixture<TFixture>
+  nameWithType.vb: IClassFixture(Of TFixture)
+  fullName.vb: Xunit.IClassFixture(Of TFixture)
+  name.vb: IClassFixture(Of TFixture)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.IClassFixture`1
+    name: IClassFixture
+    href: Xunit.IClassFixture-1.html
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.IClassFixture`1
+    name: IClassFixture
+    href: Xunit.IClassFixture-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: v3.3.2.1:Xunit.ICollectionFixture`1
+  commentId: T:Xunit.ICollectionFixture`1
+  href: Xunit.ICollectionFixture-1.html
+  name: ICollectionFixture<TFixture>
+  nameWithType: ICollectionFixture<TFixture>
+  fullName: Xunit.ICollectionFixture<TFixture>
+  nameWithType.vb: ICollectionFixture(Of TFixture)
+  fullName.vb: Xunit.ICollectionFixture(Of TFixture)
+  name.vb: ICollectionFixture(Of TFixture)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: v3.3.2.1:Xunit.AssemblyFixtureAttribute
+  commentId: T:Xunit.AssemblyFixtureAttribute
+  href: Xunit.AssemblyFixtureAttribute.html
+  name: AssemblyFixtureAttribute
+  nameWithType: AssemblyFixtureAttribute
+  fullName: Xunit.AssemblyFixtureAttribute
+- uid: v3.3.2.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.IAsyncLifetime.InitializeAsync*
+  commentId: Overload:Xunit.IAsyncLifetime.InitializeAsync
+  href: Xunit.IAsyncLifetime.InitializeAsync.html#Xunit_IAsyncLifetime_InitializeAsync
+  name: InitializeAsync
+  nameWithType: IAsyncLifetime.InitializeAsync
+  fullName: Xunit.IAsyncLifetime.InitializeAsync
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

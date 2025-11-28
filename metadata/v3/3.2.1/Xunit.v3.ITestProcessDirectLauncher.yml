@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  commentId: T:Xunit.v3.ITestProcessDirectLauncher
+  id: ITestProcessDirectLauncher
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Find(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  - v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  - v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Run(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  langs:
+  - csharp
+  - vb
+  name: ITestProcessDirectLauncher
+  nameWithType: ITestProcessDirectLauncher
+  fullName: Xunit.v3.ITestProcessDirectLauncher
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITestProcessDirectLauncher
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Implement this to control the launch of an xUnit.net v3 test process.
+  remarks: >-
+    This is a higher level API than <xref href="v3.3.2.1:Xunit.v3.ITestProcessLauncher" data-throw-if-not-resolved="false"></xref> which allows more optimized
+
+    communication rather than mandating all message passing is done via text readers/writers that
+
+    represent standard input and standard output. Launchers that do not implement this interface
+
+    with be adapted by <xref href="v3.3.2.1:Xunit.v3.TestProcessLauncherAdapter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface ITestProcessDirectLauncher
+    content.vb: Public Interface ITestProcessDirectLauncher
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  commentId: M:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  id: GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  parent: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  langs:
+  - csharp
+  - vb
+  name: GetAssemblyInfo(XunitProjectAssembly)
+  nameWithType: ITestProcessDirectLauncher.GetAssemblyInfo(XunitProjectAssembly)
+  fullName: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: GetAssemblyInfo
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Gets the test assembly metadata.
+  example: []
+  syntax:
+    content: TestAssemblyInfo GetAssemblyInfo(XunitProjectAssembly projectAssembly)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test assembly
+    return:
+      type: Xunit.Runner.Common.TestAssemblyInfo
+    content.vb: Function GetAssemblyInfo(projectAssembly As XunitProjectAssembly) As TestAssemblyInfo
+  overload: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo*
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Find(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  commentId: M:Xunit.v3.ITestProcessDirectLauncher.Find(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  id: Find(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  parent: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  langs:
+  - csharp
+  - vb
+  name: Find(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink?, ISourceInformationProvider?)
+  nameWithType: ITestProcessDirectLauncher.Find(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink?, ISourceInformationProvider?)
+  fullName: Xunit.v3.ITestProcessDirectLauncher.Find(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.TestAssemblyInfo, Xunit.Sdk.IMessageSink, Xunit.Sdk.IMessageSink?, Xunit.Runner.Common.ISourceInformationProvider?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Starts the process of finding tests in an assembly.
+  example: []
+  syntax:
+    content: ITestProcessBase Find(XunitProjectAssembly projectAssembly, TestAssemblyInfo assemblyInfo, IMessageSink messageSink, IMessageSink? diagnosticMessageSink, ISourceInformationProvider? sourceInformationProvider)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test assembly
+    - id: assemblyInfo
+      type: Xunit.Runner.Common.TestAssemblyInfo
+      description: The test assembly information (from <xref href="v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)" data-throw-if-not-resolved="false"></xref>)
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message to report diagnostic messages to.
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+      description: >-
+        The source information provider used to add file and line
+            information to discovered tests
+    return:
+      type: Xunit.v3.ITestProcessBase
+    content.vb: Function Find(projectAssembly As XunitProjectAssembly, assemblyInfo As TestAssemblyInfo, messageSink As IMessageSink, diagnosticMessageSink As IMessageSink, sourceInformationProvider As ISourceInformationProvider) As ITestProcessBase
+  overload: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Find*
+  nameWithType.vb: ITestProcessDirectLauncher.Find(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink, ISourceInformationProvider)
+  fullName.vb: Xunit.v3.ITestProcessDirectLauncher.Find(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.TestAssemblyInfo, Xunit.Sdk.IMessageSink, Xunit.Sdk.IMessageSink, Xunit.Runner.Common.ISourceInformationProvider)
+  name.vb: Find(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink, ISourceInformationProvider)
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Run(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  commentId: M:Xunit.v3.ITestProcessDirectLauncher.Run(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  id: Run(Xunit.Runner.Common.XunitProjectAssembly,Xunit.Runner.Common.TestAssemblyInfo,Xunit.Sdk.IMessageSink,Xunit.Sdk.IMessageSink,Xunit.Runner.Common.ISourceInformationProvider)
+  parent: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  langs:
+  - csharp
+  - vb
+  name: Run(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink?, ISourceInformationProvider?)
+  nameWithType: ITestProcessDirectLauncher.Run(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink?, ISourceInformationProvider?)
+  fullName: Xunit.v3.ITestProcessDirectLauncher.Run(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.TestAssemblyInfo, Xunit.Sdk.IMessageSink, Xunit.Sdk.IMessageSink?, Xunit.Runner.Common.ISourceInformationProvider?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessDirectLauncher.cs
+    startLine: 47
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Starts the process of running tests in the assembly.
+  example: []
+  syntax:
+    content: ITestProcessBase Run(XunitProjectAssembly projectAssembly, TestAssemblyInfo assemblyInfo, IMessageSink messageSink, IMessageSink? diagnosticMessageSink, ISourceInformationProvider? sourceInformationProvider)
+    parameters:
+    - id: projectAssembly
+      type: Xunit.Runner.Common.XunitProjectAssembly
+      description: The test assembly
+    - id: assemblyInfo
+      type: Xunit.Runner.Common.TestAssemblyInfo
+      description: The test assembly information (from <xref href="v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)" data-throw-if-not-resolved="false"></xref>)
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message to report diagnostic messages to.
+    - id: sourceInformationProvider
+      type: Xunit.Runner.Common.ISourceInformationProvider
+      description: >-
+        The source information provider used to add file and line
+            information to discovered tests
+    return:
+      type: Xunit.v3.ITestProcessBase
+    content.vb: Function Run(projectAssembly As XunitProjectAssembly, assemblyInfo As TestAssemblyInfo, messageSink As IMessageSink, diagnosticMessageSink As IMessageSink, sourceInformationProvider As ISourceInformationProvider) As ITestProcessBase
+  overload: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Run*
+  nameWithType.vb: ITestProcessDirectLauncher.Run(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink, ISourceInformationProvider)
+  fullName.vb: Xunit.v3.ITestProcessDirectLauncher.Run(Xunit.Runner.Common.XunitProjectAssembly, Xunit.Runner.Common.TestAssemblyInfo, Xunit.Sdk.IMessageSink, Xunit.Sdk.IMessageSink, Xunit.Runner.Common.ISourceInformationProvider)
+  name.vb: Run(XunitProjectAssembly, TestAssemblyInfo, IMessageSink, IMessageSink, ISourceInformationProvider)
+references:
+- uid: v3.3.2.1:Xunit.v3.ITestProcessLauncher
+  commentId: T:Xunit.v3.ITestProcessLauncher
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestProcessLauncher.html
+  name: ITestProcessLauncher
+  nameWithType: ITestProcessLauncher
+  fullName: Xunit.v3.ITestProcessLauncher
+- uid: v3.3.2.1:Xunit.v3.TestProcessLauncherAdapter
+  commentId: T:Xunit.v3.TestProcessLauncherAdapter
+  href: Xunit.v3.TestProcessLauncherAdapter.html
+  name: TestProcessLauncherAdapter
+  nameWithType: TestProcessLauncherAdapter
+  fullName: Xunit.v3.TestProcessLauncherAdapter
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo*
+  commentId: Overload:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo
+  href: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo.html#Xunit_v3_ITestProcessDirectLauncher_GetAssemblyInfo_Xunit_Runner_Common_XunitProjectAssembly_
+  name: GetAssemblyInfo
+  nameWithType: ITestProcessDirectLauncher.GetAssemblyInfo
+  fullName: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo
+- uid: v3.3.2.1:Xunit.Runner.Common.XunitProjectAssembly
+  commentId: T:Xunit.Runner.Common.XunitProjectAssembly
+  parent: v3.3.2.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.XunitProjectAssembly.html
+  name: XunitProjectAssembly
+  nameWithType: XunitProjectAssembly
+  fullName: Xunit.Runner.Common.XunitProjectAssembly
+- uid: v3.3.2.1:Xunit.Runner.Common.TestAssemblyInfo
+  commentId: T:Xunit.Runner.Common.TestAssemblyInfo
+  parent: v3.3.2.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.TestAssemblyInfo.html
+  name: TestAssemblyInfo
+  nameWithType: TestAssemblyInfo
+  fullName: Xunit.Runner.Common.TestAssemblyInfo
+- uid: v3.3.2.1:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  commentId: M:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  parent: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  href: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo.html#Xunit_v3_ITestProcessDirectLauncher_GetAssemblyInfo_Xunit_Runner_Common_XunitProjectAssembly_
+  name: GetAssemblyInfo(XunitProjectAssembly)
+  nameWithType: ITestProcessDirectLauncher.GetAssemblyInfo(XunitProjectAssembly)
+  fullName: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+    name: GetAssemblyInfo
+    href: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo.html#Xunit_v3_ITestProcessDirectLauncher_GetAssemblyInfo_Xunit_Runner_Common_XunitProjectAssembly_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo(Xunit.Runner.Common.XunitProjectAssembly)
+    name: GetAssemblyInfo
+    href: Xunit.v3.ITestProcessDirectLauncher.GetAssemblyInfo.html#Xunit_v3_ITestProcessDirectLauncher_GetAssemblyInfo_Xunit_Runner_Common_XunitProjectAssembly_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Runner.Common.XunitProjectAssembly
+    name: XunitProjectAssembly
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Find*
+  commentId: Overload:Xunit.v3.ITestProcessDirectLauncher.Find
+  href: Xunit.v3.ITestProcessDirectLauncher.Find.html#Xunit_v3_ITestProcessDirectLauncher_Find_Xunit_Runner_Common_XunitProjectAssembly_Xunit_Runner_Common_TestAssemblyInfo_Xunit_Sdk_IMessageSink_Xunit_Sdk_IMessageSink_Xunit_Runner_Common_ISourceInformationProvider_
+  name: Find
+  nameWithType: ITestProcessDirectLauncher.Find
+  fullName: Xunit.v3.ITestProcessDirectLauncher.Find
+- uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.1:Xunit.Runner.Common.ISourceInformationProvider
+  commentId: T:Xunit.Runner.Common.ISourceInformationProvider
+  parent: v3.3.2.1:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ISourceInformationProvider.html
+  name: ISourceInformationProvider
+  nameWithType: ISourceInformationProvider
+  fullName: Xunit.Runner.Common.ISourceInformationProvider
+- uid: v3.3.2.1:Xunit.v3.ITestProcessBase
+  commentId: T:Xunit.v3.ITestProcessBase
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestProcessBase.html
+  name: ITestProcessBase
+  nameWithType: ITestProcessBase
+  fullName: Xunit.v3.ITestProcessBase
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher
+  commentId: T:Xunit.v3.ITestProcessDirectLauncher
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestProcessDirectLauncher.html
+  name: ITestProcessDirectLauncher
+  nameWithType: ITestProcessDirectLauncher
+  fullName: Xunit.v3.ITestProcessDirectLauncher
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.1:Xunit.v3.ITestProcessDirectLauncher.Run*
+  commentId: Overload:Xunit.v3.ITestProcessDirectLauncher.Run
+  href: Xunit.v3.ITestProcessDirectLauncher.Run.html#Xunit_v3_ITestProcessDirectLauncher_Run_Xunit_Runner_Common_XunitProjectAssembly_Xunit_Runner_Common_TestAssemblyInfo_Xunit_Sdk_IMessageSink_Xunit_Sdk_IMessageSink_Xunit_Runner_Common_ISourceInformationProvider_
+  name: Run
+  nameWithType: ITestProcessDirectLauncher.Run
+  fullName: Xunit.v3.ITestProcessDirectLauncher.Run
+memberLayout: SeparatePages

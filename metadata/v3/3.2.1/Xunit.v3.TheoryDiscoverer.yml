@@ -1,0 +1,876 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  commentId: T:Xunit.v3.TheoryDiscoverer
+  id: TheoryDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  - v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  - v3.3.2.1:Xunit.v3.TheoryDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  langs:
+  - csharp
+  - vb
+  name: TheoryDiscoverer
+  nameWithType: TheoryDiscoverer
+  fullName: Xunit.v3.TheoryDiscoverer
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TheoryDiscoverer
+    path: ../src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Implementation of <xref href="v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer" data-throw-if-not-resolved="false"></xref> that supports finding test cases
+
+    on methods decorated with <xref href="v3.3.2.1:Xunit.v3.ITheoryAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class TheoryDiscoverer : IXunitTestCaseDiscoverer'
+    content.vb: Public Class TheoryDiscoverer Implements IXunitTestCaseDiscoverer
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.3.2.1:Xunit.CulturedTheoryAttributeDiscoverer
+  implements:
+  - v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  commentId: M:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  id: CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  parent: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, object?[])
+  nameWithType: TheoryDiscoverer.CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, object?[])
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute, Xunit.ITheoryDataRow, object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CreateTestCasesForDataRow
+    path: ../src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates test cases for a single row of data. By default, returns a single instance of <xref href="v3.3.2.1:Xunit.v3.XunitTestCase" data-throw-if-not-resolved="false"></xref>
+
+    with the data row inside of it.
+  example: []
+  syntax:
+    content: protected virtual ValueTask<IReadOnlyCollection<IXunitTestCase>> CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions discoveryOptions, IXunitTestMethod testMethod, ITheoryAttribute theoryAttribute, ITheoryDataRow dataRow, object?[] testMethodArguments)
+    parameters:
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The discovery options to be used.
+    - id: testMethod
+      type: Xunit.v3.IXunitTestMethod
+      description: The test method the test cases belong to.
+    - id: theoryAttribute
+      type: Xunit.v3.ITheoryAttribute
+      description: The theory attribute attached to the test method.
+    - id: dataRow
+      type: Xunit.ITheoryDataRow
+      description: The data row that generated <code class="paramref">testMethodArguments</code>.
+    - id: testMethodArguments
+      type: System.Object[]
+      description: The arguments for the test method.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTestCase}}
+      description: The test cases
+    content.vb: Protected Overridable Function CreateTestCasesForDataRow(discoveryOptions As ITestFrameworkDiscoveryOptions, testMethod As IXunitTestMethod, theoryAttribute As ITheoryAttribute, dataRow As ITheoryDataRow, testMethodArguments As Object()) As ValueTask(Of IReadOnlyCollection(Of IXunitTestCase))
+  overload: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow*
+  nameWithType.vb: TheoryDiscoverer.CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, Object())
+  fullName.vb: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute, Xunit.ITheoryDataRow, Object())
+  name.vb: CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, Object())
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  commentId: M:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  id: CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  parent: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: CreateTestCasesForTheory(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute)
+  nameWithType: TheoryDiscoverer.CreateTestCasesForTheory(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute)
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CreateTestCasesForTheory
+    path: ../src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+    startLine: 75
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates test cases for the entire theory. This is used when one or more of the theory data items
+
+    are not serializable, or if the user has requested to skip theory pre-enumeration, or if the user
+
+    has requested the entire theory be skipped. By default, returns a single instance
+
+    of <xref href="v3.3.2.1:Xunit.v3.XunitDelayEnumeratedTheoryTestCase" data-throw-if-not-resolved="false"></xref> (which performs the
+
+    data discovery at runtime, for non-skipped theories) or <xref href="v3.3.2.1:Xunit.v3.XunitTestCase" data-throw-if-not-resolved="false"></xref>
+
+    (for skipped theories).
+  example: []
+  syntax:
+    content: protected virtual ValueTask<IReadOnlyCollection<IXunitTestCase>> CreateTestCasesForTheory(ITestFrameworkDiscoveryOptions discoveryOptions, IXunitTestMethod testMethod, ITheoryAttribute theoryAttribute)
+    parameters:
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The discovery options to be used.
+    - id: testMethod
+      type: Xunit.v3.IXunitTestMethod
+      description: The test method the test cases belong to.
+    - id: theoryAttribute
+      type: Xunit.v3.ITheoryAttribute
+      description: The theory attribute attached to the test method.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTestCase}}
+      description: The test case
+    content.vb: Protected Overridable Function CreateTestCasesForTheory(discoveryOptions As ITestFrameworkDiscoveryOptions, testMethod As IXunitTestMethod, theoryAttribute As ITheoryAttribute) As ValueTask(Of IReadOnlyCollection(Of IXunitTestCase))
+  overload: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory*
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  commentId: M:Xunit.v3.TheoryDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  id: Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  parent: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: Discover(ITestFrameworkDiscoveryOptions, IXunitTestMethod, IFactAttribute)
+  nameWithType: TheoryDiscoverer.Discover(ITestFrameworkDiscoveryOptions, IXunitTestMethod, IFactAttribute)
+  fullName: Xunit.v3.TheoryDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.IFactAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Discover
+    path: ../src/xunit.v3.core/Framework/TheoryDiscoverer.cs
+    startLine: 138
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Discover test cases from a test method.
+  remarks: >-
+    This method performs the following steps:<br />
+
+    - If the theory attribute is marked with Skip, or pre-enumeration is off, or any of the test data is non serializable,
+      returns the result of <xref href="v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions%2cXunit.v3.IXunitTestMethod%2cXunit.v3.ITheoryAttribute)" data-throw-if-not-resolved="false"></xref>;<br />
+    - If there is no theory data, returns a single test case of <xref href="v3.3.2.1:Xunit.v3.ExecutionErrorTestCase" data-throw-if-not-resolved="false"></xref> with the error in it;<br />
+
+    - Otherwise, it returns one test case per data row, created by calling <xref href="v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions%2cXunit.v3.IXunitTestMethod%2cXunit.v3.ITheoryAttribute%2cXunit.ITheoryDataRow%2cSystem.Object%5b%5d)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public virtual ValueTask<IReadOnlyCollection<IXunitTestCase>> Discover(ITestFrameworkDiscoveryOptions discoveryOptions, IXunitTestMethod testMethod, IFactAttribute factAttribute)
+    parameters:
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The discovery options to be used.
+    - id: testMethod
+      type: Xunit.v3.IXunitTestMethod
+      description: The test method the test cases belong to.
+    - id: factAttribute
+      type: Xunit.v3.IFactAttribute
+      description: The theory attribute attached to the test method.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTestCase}}
+      description: Returns zero or more test cases represented by the test method.
+    content.vb: Public Overridable Function Discover(discoveryOptions As ITestFrameworkDiscoveryOptions, testMethod As IXunitTestMethod, factAttribute As IFactAttribute) As ValueTask(Of IReadOnlyCollection(Of IXunitTestCase))
+  overload: v3.3.2.1:Xunit.v3.TheoryDiscoverer.Discover*
+  implements:
+  - v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+references:
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer
+  commentId: T:Xunit.v3.IXunitTestCaseDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestCaseDiscoverer.html
+  name: IXunitTestCaseDiscoverer
+  nameWithType: IXunitTestCaseDiscoverer
+  fullName: Xunit.v3.IXunitTestCaseDiscoverer
+- uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+  commentId: T:Xunit.v3.ITheoryAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITheoryAttribute.html
+  name: ITheoryAttribute
+  nameWithType: ITheoryAttribute
+  fullName: Xunit.v3.ITheoryAttribute
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3.XunitTestCase
+  commentId: T:Xunit.v3.XunitTestCase
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.XunitTestCase.html
+  name: XunitTestCase
+  nameWithType: XunitTestCase
+  fullName: Xunit.v3.XunitTestCase
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow*
+  commentId: Overload:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow
+  href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForDataRow_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_Xunit_ITheoryDataRow_System_Object___
+  name: CreateTestCasesForDataRow
+  nameWithType: TheoryDiscoverer.CreateTestCasesForDataRow
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow
+- uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+  commentId: T:Xunit.v3.IXunitTestMethod
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestMethod.html
+  name: IXunitTestMethod
+  nameWithType: IXunitTestMethod
+  fullName: Xunit.v3.IXunitTestMethod
+- uid: v3.3.2.1:Xunit.ITheoryDataRow
+  commentId: T:Xunit.ITheoryDataRow
+  parent: v3.3.2.1:Xunit
+  href: Xunit.ITheoryDataRow.html
+  name: ITheoryDataRow
+  nameWithType: ITheoryDataRow
+  fullName: Xunit.ITheoryDataRow
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTestCase}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTestCase}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<IReadOnlyCollection<IXunitTestCase>>
+  nameWithType: ValueTask<IReadOnlyCollection<IXunitTestCase>>
+  fullName: System.Threading.Tasks.ValueTask<System.Collections.Generic.IReadOnlyCollection<Xunit.v3.IXunitTestCase>>
+  nameWithType.vb: ValueTask(Of IReadOnlyCollection(Of IXunitTestCase))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.IXunitTestCase))
+  name.vb: ValueTask(Of IReadOnlyCollection(Of IXunitTestCase))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestCase
+    name: IXunitTestCase
+    href: Xunit.v3.IXunitTestCase.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestCase
+    name: IXunitTestCase
+    href: Xunit.v3.IXunitTestCase.html
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.2.1:Xunit.v3.XunitDelayEnumeratedTheoryTestCase
+  commentId: T:Xunit.v3.XunitDelayEnumeratedTheoryTestCase
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.XunitDelayEnumeratedTheoryTestCase.html
+  name: XunitDelayEnumeratedTheoryTestCase
+  nameWithType: XunitDelayEnumeratedTheoryTestCase
+  fullName: Xunit.v3.XunitDelayEnumeratedTheoryTestCase
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory*
+  commentId: Overload:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory
+  href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForTheory_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_
+  name: CreateTestCasesForTheory
+  nameWithType: TheoryDiscoverer.CreateTestCasesForTheory
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  commentId: M:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+  parent: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForTheory_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_
+  name: CreateTestCasesForTheory(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute)
+  nameWithType: TheoryDiscoverer.CreateTestCasesForTheory(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute)
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+    name: CreateTestCasesForTheory
+    href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForTheory_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+    name: ITheoryAttribute
+    href: Xunit.v3.ITheoryAttribute.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute)
+    name: CreateTestCasesForTheory
+    href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForTheory.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForTheory_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+    name: ITheoryAttribute
+    href: Xunit.v3.ITheoryAttribute.html
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.ExecutionErrorTestCase
+  commentId: T:Xunit.v3.ExecutionErrorTestCase
+  href: Xunit.v3.ExecutionErrorTestCase.html
+  name: ExecutionErrorTestCase
+  nameWithType: ExecutionErrorTestCase
+  fullName: Xunit.v3.ExecutionErrorTestCase
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  commentId: M:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+  parent: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  isExternal: true
+  href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForDataRow_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_Xunit_ITheoryDataRow_System_Object___
+  name: CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, object[])
+  nameWithType: TheoryDiscoverer.CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, object[])
+  fullName: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute, Xunit.ITheoryDataRow, object[])
+  nameWithType.vb: TheoryDiscoverer.CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, Object())
+  fullName.vb: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.ITheoryAttribute, Xunit.ITheoryDataRow, Object())
+  name.vb: CreateTestCasesForDataRow(ITestFrameworkDiscoveryOptions, IXunitTestMethod, ITheoryAttribute, ITheoryDataRow, Object())
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+    name: CreateTestCasesForDataRow
+    href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForDataRow_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_Xunit_ITheoryDataRow_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+    name: ITheoryAttribute
+    href: Xunit.v3.ITheoryAttribute.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.ITheoryDataRow
+    name: ITheoryDataRow
+    href: Xunit.ITheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.ITheoryAttribute,Xunit.ITheoryDataRow,System.Object[])
+    name: CreateTestCasesForDataRow
+    href: Xunit.v3.TheoryDiscoverer.CreateTestCasesForDataRow.html#Xunit_v3_TheoryDiscoverer_CreateTestCasesForDataRow_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_ITheoryAttribute_Xunit_ITheoryDataRow_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+    name: ITheoryAttribute
+    href: Xunit.v3.ITheoryAttribute.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.ITheoryDataRow
+    name: ITheoryDataRow
+    href: Xunit.ITheoryDataRow.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer.Discover*
+  commentId: Overload:Xunit.v3.TheoryDiscoverer.Discover
+  href: Xunit.v3.TheoryDiscoverer.Discover.html#Xunit_v3_TheoryDiscoverer_Discover_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_IFactAttribute_
+  name: Discover
+  nameWithType: TheoryDiscoverer.Discover
+  fullName: Xunit.v3.TheoryDiscoverer.Discover
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  commentId: M:Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer
+  href: Xunit.v3.IXunitTestCaseDiscoverer.Discover.html#Xunit_v3_IXunitTestCaseDiscoverer_Discover_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_IFactAttribute_
+  name: Discover(ITestFrameworkDiscoveryOptions, IXunitTestMethod, IFactAttribute)
+  nameWithType: IXunitTestCaseDiscoverer.Discover(ITestFrameworkDiscoveryOptions, IXunitTestMethod, IFactAttribute)
+  fullName: Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.IXunitTestMethod, Xunit.v3.IFactAttribute)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+    name: Discover
+    href: Xunit.v3.IXunitTestCaseDiscoverer.Discover.html#Xunit_v3_IXunitTestCaseDiscoverer_Discover_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_IFactAttribute_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IFactAttribute
+    name: IFactAttribute
+    href: Xunit.v3.IFactAttribute.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer.Discover(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.IXunitTestMethod,Xunit.v3.IFactAttribute)
+    name: Discover
+    href: Xunit.v3.IXunitTestCaseDiscoverer.Discover.html#Xunit_v3_IXunitTestCaseDiscoverer_Discover_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_IXunitTestMethod_Xunit_v3_IFactAttribute_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+    name: IXunitTestMethod
+    href: Xunit.v3.IXunitTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IFactAttribute
+    name: IFactAttribute
+    href: Xunit.v3.IFactAttribute.html
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: v3.3.2.1:Xunit.v3.TheoryDiscoverer
+  commentId: T:Xunit.v3.TheoryDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.TheoryDiscoverer.html
+  name: TheoryDiscoverer
+  nameWithType: TheoryDiscoverer
+  fullName: Xunit.v3.TheoryDiscoverer
+memberLayout: SeparatePages

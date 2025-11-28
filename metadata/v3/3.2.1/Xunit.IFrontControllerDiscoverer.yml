@@ -1,0 +1,422 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  commentId: T:Xunit.IFrontControllerDiscoverer
+  id: IFrontControllerDiscoverer
+  parent: v3.3.2.1:Xunit
+  children:
+  - v3.3.2.1:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  - v3.3.2.1:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  - v3.3.2.1:Xunit.IFrontControllerDiscoverer.TargetFramework
+  - v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  - v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: IFrontControllerDiscoverer
+  nameWithType: IFrontControllerDiscoverer
+  fullName: Xunit.IFrontControllerDiscoverer
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IFrontControllerDiscoverer
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: >-
+    Represents a class which acts as a front controller for unit testing frameworks for
+
+    the purposes of discovery (which can include source-based discovery). Tests found
+
+    with these classes can later be run by an instance of <xref href="v3.3.2.1:Xunit.IFrontController" data-throw-if-not-resolved="false"></xref>.
+
+    This allows runners to run tests from multiple unit testing frameworks (in particular,
+
+    hiding the differences between xUnit.net v1, v2, and v3 tests).
+  example: []
+  syntax:
+    content: 'public interface IFrontControllerDiscoverer : IAsyncDisposable'
+    content.vb: Public Interface IFrontControllerDiscoverer Inherits IAsyncDisposable
+  inheritedMembers:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  commentId: P:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  id: CanUseAppDomains
+  parent: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: CanUseAppDomains
+  nameWithType: IFrontControllerDiscoverer.CanUseAppDomains
+  fullName: Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CanUseAppDomains
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Gets a flag indicating whether this discovery/execution can use app domains.
+  example: []
+  syntax:
+    content: bool CanUseAppDomains { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanUseAppDomains As Boolean
+  overload: v3.3.2.1:Xunit.IFrontControllerDiscoverer.CanUseAppDomains*
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TargetFramework
+  commentId: P:Xunit.IFrontControllerDiscoverer.TargetFramework
+  id: TargetFramework
+  parent: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: IFrontControllerDiscoverer.TargetFramework
+  fullName: Xunit.IFrontControllerDiscoverer.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Gets the target framework that the test assembly is linked against.
+  example: []
+  syntax:
+    content: string TargetFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TargetFramework As String
+  overload: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TargetFramework*
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  commentId: P:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  id: TestAssemblyUniqueID
+  parent: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TestAssemblyUniqueID
+  nameWithType: IFrontControllerDiscoverer.TestAssemblyUniqueID
+  fullName: Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestAssemblyUniqueID
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 27
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Gets the unique ID for the test assembly provided to the discoverer.
+  example: []
+  syntax:
+    content: string TestAssemblyUniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestAssemblyUniqueID As String
+  overload: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID*
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  commentId: P:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: IFrontControllerDiscoverer.TestFrameworkDisplayName
+  fullName: Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 32
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: Returns the display name of the test framework that this discoverer is running tests for.
+  example: []
+  syntax:
+    content: string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestFrameworkDisplayName As String
+  overload: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName*
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  commentId: M:Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  id: Find(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindSettings)
+  parent: v3.3.2.1:Xunit.IFrontControllerDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: Find(IMessageSink, FrontControllerFindSettings)
+  nameWithType: IFrontControllerDiscoverer.Find(IMessageSink, FrontControllerFindSettings)
+  fullName: Xunit.IFrontControllerDiscoverer.Find(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindSettings)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.runner.common/Frameworks/IFrontControllerDiscoverer.cs
+    startLine: 44
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit
+  summary: >-
+    Starts the process of finding tests in an assembly. Typically only used by
+
+    runners which discover tests and present them into a UI for the user to interactively
+
+    choose for selective run (via <xref href="v3.3.2.1:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerRunSettings)" data-throw-if-not-resolved="false"></xref>). For runners which
+
+    simply wish to discover and immediately run tests, they should instead
+
+    use <xref href="v3.3.2.1:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink%2cXunit.FrontControllerFindAndRunSettings)" data-throw-if-not-resolved="false"></xref>, which permits the same filtering logic
+
+    as this method.
+  example: []
+  syntax:
+    content: void Find(IMessageSink messageSink, FrontControllerFindSettings settings)
+    parameters:
+    - id: messageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: settings
+      type: Xunit.FrontControllerFindSettings
+      description: The settings used during discovery.
+    content.vb: Sub Find(messageSink As IMessageSink, settings As FrontControllerFindSettings)
+  overload: v3.3.2.1:Xunit.IFrontControllerDiscoverer.Find*
+references:
+- uid: v3.3.2.1:Xunit.IFrontController
+  commentId: T:Xunit.IFrontController
+  parent: v3.3.2.1:Xunit
+  href: Xunit.IFrontController.html
+  name: IFrontController
+  nameWithType: IFrontController
+  fullName: Xunit.IFrontController
+- uid: v3.3.2.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.CanUseAppDomains*
+  commentId: Overload:Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+  href: Xunit.IFrontControllerDiscoverer.CanUseAppDomains.html#Xunit_IFrontControllerDiscoverer_CanUseAppDomains
+  name: CanUseAppDomains
+  nameWithType: IFrontControllerDiscoverer.CanUseAppDomains
+  fullName: Xunit.IFrontControllerDiscoverer.CanUseAppDomains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TargetFramework*
+  commentId: Overload:Xunit.IFrontControllerDiscoverer.TargetFramework
+  href: Xunit.IFrontControllerDiscoverer.TargetFramework.html#Xunit_IFrontControllerDiscoverer_TargetFramework
+  name: TargetFramework
+  nameWithType: IFrontControllerDiscoverer.TargetFramework
+  fullName: Xunit.IFrontControllerDiscoverer.TargetFramework
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID*
+  commentId: Overload:Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+  href: Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID.html#Xunit_IFrontControllerDiscoverer_TestAssemblyUniqueID
+  name: TestAssemblyUniqueID
+  nameWithType: IFrontControllerDiscoverer.TestAssemblyUniqueID
+  fullName: Xunit.IFrontControllerDiscoverer.TestAssemblyUniqueID
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+  href: Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName.html#Xunit_IFrontControllerDiscoverer_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: IFrontControllerDiscoverer.TestFrameworkDisplayName
+  fullName: Xunit.IFrontControllerDiscoverer.TestFrameworkDisplayName
+- uid: v3.3.2.1:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  commentId: M:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+  parent: v3.3.2.1:Xunit.IFrontController
+  href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  name: Run(IMessageSink, FrontControllerRunSettings)
+  nameWithType: IFrontController.Run(IMessageSink, FrontControllerRunSettings)
+  fullName: Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink, Xunit.FrontControllerRunSettings)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+    name: Run
+    href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.FrontControllerRunSettings
+    name: FrontControllerRunSettings
+    href: Xunit.FrontControllerRunSettings.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.IFrontController.Run(Xunit.Sdk.IMessageSink,Xunit.FrontControllerRunSettings)
+    name: Run
+    href: Xunit.IFrontController.Run.html#Xunit_IFrontController_Run_Xunit_Sdk_IMessageSink_Xunit_FrontControllerRunSettings_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.FrontControllerRunSettings
+    name: FrontControllerRunSettings
+    href: Xunit.FrontControllerRunSettings.html
+  - name: )
+- uid: v3.3.2.1:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  commentId: M:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+  parent: v3.3.2.1:Xunit.IFrontController
+  href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  name: FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  nameWithType: IFrontController.FindAndRun(IMessageSink, FrontControllerFindAndRunSettings)
+  fullName: Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink, Xunit.FrontControllerFindAndRunSettings)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+    name: FindAndRun
+    href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.FrontControllerFindAndRunSettings
+    name: FrontControllerFindAndRunSettings
+    href: Xunit.FrontControllerFindAndRunSettings.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.IFrontController.FindAndRun(Xunit.Sdk.IMessageSink,Xunit.FrontControllerFindAndRunSettings)
+    name: FindAndRun
+    href: Xunit.IFrontController.FindAndRun.html#Xunit_IFrontController_FindAndRun_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindAndRunSettings_
+  - name: (
+  - uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.FrontControllerFindAndRunSettings
+    name: FrontControllerFindAndRunSettings
+    href: Xunit.FrontControllerFindAndRunSettings.html
+  - name: )
+- uid: v3.3.2.1:Xunit.IFrontControllerDiscoverer.Find*
+  commentId: Overload:Xunit.IFrontControllerDiscoverer.Find
+  href: Xunit.IFrontControllerDiscoverer.Find.html#Xunit_IFrontControllerDiscoverer_Find_Xunit_Sdk_IMessageSink_Xunit_FrontControllerFindSettings_
+  name: Find
+  nameWithType: IFrontControllerDiscoverer.Find
+  fullName: Xunit.IFrontControllerDiscoverer.Find
+- uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.1:Xunit.FrontControllerFindSettings
+  commentId: T:Xunit.FrontControllerFindSettings
+  parent: v3.3.2.1:Xunit
+  href: Xunit.FrontControllerFindSettings.html
+  name: FrontControllerFindSettings
+  nameWithType: FrontControllerFindSettings
+  fullName: Xunit.FrontControllerFindSettings
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+memberLayout: SeparatePages

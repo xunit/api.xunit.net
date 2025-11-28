@@ -1,0 +1,362 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.ITestFrameworkExecutor
+  commentId: T:Xunit.v3.ITestFrameworkExecutor
+  id: ITestFrameworkExecutor
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.ITestFrameworkExecutor.RunTestCases(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Nullable{System.Threading.CancellationToken})
+  langs:
+  - csharp
+  - vb
+  name: ITestFrameworkExecutor
+  nameWithType: ITestFrameworkExecutor
+  fullName: Xunit.v3.ITestFrameworkExecutor
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFrameworkExecutor.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITestFrameworkExecutor
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFrameworkExecutor.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Represents an implementation of the execution part of a test framework. Implementations may
+
+    optionally implement <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> and/or <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>
+
+    for cleanup operations.
+  example: []
+  syntax:
+    content: public interface ITestFrameworkExecutor
+    content.vb: Public Interface ITestFrameworkExecutor
+- uid: v3.3.2.1:Xunit.v3.ITestFrameworkExecutor.RunTestCases(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Nullable{System.Threading.CancellationToken})
+  commentId: M:Xunit.v3.ITestFrameworkExecutor.RunTestCases(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Nullable{System.Threading.CancellationToken})
+  id: RunTestCases(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Nullable{System.Threading.CancellationToken})
+  parent: v3.3.2.1:Xunit.v3.ITestFrameworkExecutor
+  langs:
+  - csharp
+  - vb
+  name: RunTestCases(IReadOnlyCollection<ITestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken?)
+  nameWithType: ITestFrameworkExecutor.RunTestCases(IReadOnlyCollection<ITestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken?)
+  fullName: Xunit.v3.ITestFrameworkExecutor.RunTestCases(System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>, Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFrameworkExecutor.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: RunTestCases
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFrameworkExecutor.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Runs selected test cases in the assembly.
+  example: []
+  syntax:
+    content: ValueTask RunTestCases(IReadOnlyCollection<ITestCase> testCases, IMessageSink executionMessageSink, ITestFrameworkExecutionOptions executionOptions, CancellationToken? cancellationToken = null)
+    parameters:
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+      description: The test cases to run.
+    - id: executionMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to report results back to.
+    - id: executionOptions
+      type: Xunit.Sdk.ITestFrameworkExecutionOptions
+      description: The options to be used during test execution.
+    - id: cancellationToken
+      type: System.Nullable{System.Threading.CancellationToken}
+      description: >-
+        The optional cancellation token which can be used to cancel the test
+            execution process.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function RunTestCases(testCases As IReadOnlyCollection(Of ITestCase), executionMessageSink As IMessageSink, executionOptions As ITestFrameworkExecutionOptions, cancellationToken As CancellationToken? = Nothing) As ValueTask
+  overload: v3.3.2.1:Xunit.v3.ITestFrameworkExecutor.RunTestCases*
+  nameWithType.vb: ITestFrameworkExecutor.RunTestCases(IReadOnlyCollection(Of ITestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken?)
+  fullName.vb: Xunit.v3.ITestFrameworkExecutor.RunTestCases(System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase), Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken?)
+  name.vb: RunTestCases(IReadOnlyCollection(Of ITestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken?)
+references:
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3.ITestFrameworkExecutor.RunTestCases*
+  commentId: Overload:Xunit.v3.ITestFrameworkExecutor.RunTestCases
+  href: Xunit.v3.ITestFrameworkExecutor.RunTestCases.html#Xunit_v3_ITestFrameworkExecutor_RunTestCases_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_ITestCase__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Nullable_System_Threading_CancellationToken__
+  name: RunTestCases
+  nameWithType: ITestFrameworkExecutor.RunTestCases
+  fullName: Xunit.v3.ITestFrameworkExecutor.RunTestCases
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.ITestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ITestCase>
+  nameWithType: IReadOnlyCollection<ITestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.ITestCase>
+  nameWithType.vb: IReadOnlyCollection(Of ITestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.ITestCase)
+  name.vb: IReadOnlyCollection(Of ITestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkExecutionOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkExecutionOptions
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkExecutionOptions.html
+  name: ITestFrameworkExecutionOptions
+  nameWithType: ITestFrameworkExecutionOptions
+  fullName: Xunit.Sdk.ITestFrameworkExecutionOptions
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

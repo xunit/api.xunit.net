@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  commentId: T:Xunit.v3.IXunitTestCollection
+  id: IXunitTestCollection
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionDefinition
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.DisableParallelization
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.TestAssembly
+  - v3.3.2.1:Xunit.v3.IXunitTestCollection.TestCaseOrderer
+  langs:
+  - csharp
+  - vb
+  name: IXunitTestCollection
+  nameWithType: IXunitTestCollection
+  fullName: Xunit.v3.IXunitTestCollection
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IXunitTestCollection
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Represents a test collection from xUnit.net v3 based on reflection.
+  remarks: >-
+    Test collections form the basis of the parallelization in xUnit.net v3. Test cases
+
+    which are in the same test collection will not be run in parallel against sibling
+
+    tests, but will run in parallel against tests in other collections. They also provide
+
+    a level of shared context via <xref href="v3.3.2.1:Xunit.ICollectionFixture%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public interface IXunitTestCollection : ITestCollection, ITestCollectionMetadata'
+    content.vb: Public Interface IXunitTestCollection Inherits ITestCollection, ITestCollectionMetadata
+  inheritedMembers:
+  - v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.TestCollectionClassName
+  - v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.TestCollectionDisplayName
+  - v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.Traits
+  - v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.UniqueID
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+  commentId: P:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+  id: BeforeAfterTestAttributes
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: BeforeAfterTestAttributes
+  nameWithType: IXunitTestCollection.BeforeAfterTestAttributes
+  fullName: Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: BeforeAfterTestAttributes
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the <xref href="v3.3.2.1:Xunit.v3.IBeforeAfterTestAttribute" data-throw-if-not-resolved="false"></xref>s attached to the test collection (and
+
+    the test assembly).
+  example: []
+  syntax:
+    content: IReadOnlyCollection<IBeforeAfterTestAttribute> BeforeAfterTestAttributes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IBeforeAfterTestAttribute}
+    content.vb: ReadOnly Property BeforeAfterTestAttributes As IReadOnlyCollection(Of IBeforeAfterTestAttribute)
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+  commentId: P:Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+  id: ClassFixtureTypes
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: ClassFixtureTypes
+  nameWithType: IXunitTestCollection.ClassFixtureTypes
+  fullName: Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ClassFixtureTypes
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a list of collection fixture types associated with the test collection.
+  example: []
+  syntax:
+    content: IReadOnlyCollection<Type> ClassFixtureTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Type}
+    content.vb: ReadOnly Property ClassFixtureTypes As IReadOnlyCollection(Of Type)
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.ClassFixtureTypes*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionDefinition
+  commentId: P:Xunit.v3.IXunitTestCollection.CollectionDefinition
+  id: CollectionDefinition
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: CollectionDefinition
+  nameWithType: IXunitTestCollection.CollectionDefinition
+  fullName: Xunit.v3.IXunitTestCollection.CollectionDefinition
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CollectionDefinition
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 38
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the type that this collection definition derived from, if it derives from
+
+    one. Untyped collections are possible when test classes are decorated
+
+    using <xref href="v3.3.2.1:Xunit.CollectionAttribute.%23ctor(System.String)" data-throw-if-not-resolved="false"></xref> and there is no test collection
+
+    class declared with the same name.
+  remarks: >-
+    This should only be used to execute a test collection. All reflection should be abstracted here
+
+    instead for better testability.
+  example: []
+  syntax:
+    content: Type? CollectionDefinition { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property CollectionDefinition As Type
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionDefinition*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+  commentId: P:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+  id: CollectionFixtureTypes
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: CollectionFixtureTypes
+  nameWithType: IXunitTestCollection.CollectionFixtureTypes
+  fullName: Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CollectionFixtureTypes
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a list of collection fixture types associated with the test collection.
+  example: []
+  syntax:
+    content: IReadOnlyCollection<Type> CollectionFixtureTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.Type}
+    content.vb: ReadOnly Property CollectionFixtureTypes As IReadOnlyCollection(Of Type)
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.DisableParallelization
+  commentId: P:Xunit.v3.IXunitTestCollection.DisableParallelization
+  id: DisableParallelization
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: DisableParallelization
+  nameWithType: IXunitTestCollection.DisableParallelization
+  fullName: Xunit.v3.IXunitTestCollection.DisableParallelization
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: DisableParallelization
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 48
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Determines whether tests in this collection runs in parallel with any other collections.
+  example: []
+  syntax:
+    content: bool DisableParallelization { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DisableParallelization As Boolean
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.DisableParallelization*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestAssembly
+  commentId: P:Xunit.v3.IXunitTestCollection.TestAssembly
+  id: TestAssembly
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: IXunitTestCollection.TestAssembly
+  fullName: Xunit.v3.IXunitTestCollection.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test assembly this test collection belongs to.
+  example: []
+  syntax:
+    content: IXunitTestAssembly TestAssembly { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestAssembly
+    content.vb: ReadOnly Property TestAssembly As IXunitTestAssembly
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestAssembly*
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestCaseOrderer
+  commentId: P:Xunit.v3.IXunitTestCollection.TestCaseOrderer
+  id: TestCaseOrderer
+  parent: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  langs:
+  - csharp
+  - vb
+  name: TestCaseOrderer
+  nameWithType: IXunitTestCollection.TestCaseOrderer
+  fullName: Xunit.v3.IXunitTestCollection.TestCaseOrderer
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestCaseOrderer
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/IXunitTestCollection.cs
+    startLine: 58
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test case orderer for the test collection, if present.
+  example: []
+  syntax:
+    content: ITestCaseOrderer? TestCaseOrderer { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ITestCaseOrderer
+    content.vb: ReadOnly Property TestCaseOrderer As ITestCaseOrderer
+  overload: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestCaseOrderer*
+references:
+- uid: v3.3.2.1:Xunit.ICollectionFixture`1
+  commentId: T:Xunit.ICollectionFixture`1
+  href: Xunit.ICollectionFixture-1.html
+  name: ICollectionFixture<TFixture>
+  nameWithType: ICollectionFixture<TFixture>
+  fullName: Xunit.ICollectionFixture<TFixture>
+  nameWithType.vb: ICollectionFixture(Of TFixture)
+  fullName.vb: Xunit.ICollectionFixture(Of TFixture)
+  name.vb: ICollectionFixture(Of TFixture)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.ICollectionFixture`1
+    name: ICollectionFixture
+    href: Xunit.ICollectionFixture-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.TestCollectionClassName
+  commentId: P:Xunit.Sdk.ITestCollectionMetadata.TestCollectionClassName
+  parent: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata
+  href: Xunit.Sdk.ITestCollectionMetadata.TestCollectionClassName.html#Xunit_Sdk_ITestCollectionMetadata_TestCollectionClassName
+  name: TestCollectionClassName
+  nameWithType: ITestCollectionMetadata.TestCollectionClassName
+  fullName: Xunit.Sdk.ITestCollectionMetadata.TestCollectionClassName
+- uid: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.TestCollectionDisplayName
+  commentId: P:Xunit.Sdk.ITestCollectionMetadata.TestCollectionDisplayName
+  parent: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata
+  href: Xunit.Sdk.ITestCollectionMetadata.TestCollectionDisplayName.html#Xunit_Sdk_ITestCollectionMetadata_TestCollectionDisplayName
+  name: TestCollectionDisplayName
+  nameWithType: ITestCollectionMetadata.TestCollectionDisplayName
+  fullName: Xunit.Sdk.ITestCollectionMetadata.TestCollectionDisplayName
+- uid: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestCollectionMetadata.Traits
+  parent: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata
+  href: Xunit.Sdk.ITestCollectionMetadata.Traits.html#Xunit_Sdk_ITestCollectionMetadata_Traits
+  name: Traits
+  nameWithType: ITestCollectionMetadata.Traits
+  fullName: Xunit.Sdk.ITestCollectionMetadata.Traits
+- uid: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestCollectionMetadata.UniqueID
+  parent: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata
+  href: Xunit.Sdk.ITestCollectionMetadata.UniqueID.html#Xunit_Sdk_ITestCollectionMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestCollectionMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestCollectionMetadata.UniqueID
+- uid: v3.3.2.1:Xunit.Sdk.ITestCollectionMetadata
+  commentId: T:Xunit.Sdk.ITestCollectionMetadata
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollectionMetadata.html
+  name: ITestCollectionMetadata
+  nameWithType: ITestCollectionMetadata
+  fullName: Xunit.Sdk.ITestCollectionMetadata
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.1:Xunit.v3.IBeforeAfterTestAttribute
+  commentId: T:Xunit.v3.IBeforeAfterTestAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IBeforeAfterTestAttribute.html
+  name: IBeforeAfterTestAttribute
+  nameWithType: IBeforeAfterTestAttribute
+  fullName: Xunit.v3.IBeforeAfterTestAttribute
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+  href: Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes.html#Xunit_v3_IXunitTestCollection_BeforeAfterTestAttributes
+  name: BeforeAfterTestAttributes
+  nameWithType: IXunitTestCollection.BeforeAfterTestAttributes
+  fullName: Xunit.v3.IXunitTestCollection.BeforeAfterTestAttributes
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IBeforeAfterTestAttribute}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IBeforeAfterTestAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<IBeforeAfterTestAttribute>
+  nameWithType: IReadOnlyCollection<IBeforeAfterTestAttribute>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.v3.IBeforeAfterTestAttribute>
+  nameWithType.vb: IReadOnlyCollection(Of IBeforeAfterTestAttribute)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.IBeforeAfterTestAttribute)
+  name.vb: IReadOnlyCollection(Of IBeforeAfterTestAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.2.1:Xunit.v3.IBeforeAfterTestAttribute
+    name: IBeforeAfterTestAttribute
+    href: Xunit.v3.IBeforeAfterTestAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IBeforeAfterTestAttribute
+    name: IBeforeAfterTestAttribute
+    href: Xunit.v3.IBeforeAfterTestAttribute.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.ClassFixtureTypes*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+  href: Xunit.v3.IXunitTestCollection.ClassFixtureTypes.html#Xunit_v3_IXunitTestCollection_ClassFixtureTypes
+  name: ClassFixtureTypes
+  nameWithType: IXunitTestCollection.ClassFixtureTypes
+  fullName: Xunit.v3.IXunitTestCollection.ClassFixtureTypes
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Type}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<Type>
+  nameWithType: IReadOnlyCollection<Type>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Type>
+  nameWithType.vb: IReadOnlyCollection(Of Type)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Type)
+  name.vb: IReadOnlyCollection(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: v3.3.2.1:Xunit.CollectionAttribute.#ctor(System.String)
+  commentId: M:Xunit.CollectionAttribute.#ctor(System.String)
+  isExternal: true
+  href: Xunit.CollectionAttribute.-ctor.html#Xunit_CollectionAttribute__ctor_System_String_
+  name: CollectionAttribute(string)
+  nameWithType: CollectionAttribute.CollectionAttribute(string)
+  fullName: Xunit.CollectionAttribute.CollectionAttribute(string)
+  nameWithType.vb: CollectionAttribute.New(String)
+  fullName.vb: Xunit.CollectionAttribute.New(String)
+  name.vb: New(String)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.CollectionAttribute.#ctor(System.String)
+    name: CollectionAttribute
+    href: Xunit.CollectionAttribute.-ctor.html#Xunit_CollectionAttribute__ctor_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionDefinition*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.CollectionDefinition
+  href: Xunit.v3.IXunitTestCollection.CollectionDefinition.html#Xunit_v3_IXunitTestCollection_CollectionDefinition
+  name: CollectionDefinition
+  nameWithType: IXunitTestCollection.CollectionDefinition
+  fullName: Xunit.v3.IXunitTestCollection.CollectionDefinition
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+  href: Xunit.v3.IXunitTestCollection.CollectionFixtureTypes.html#Xunit_v3_IXunitTestCollection_CollectionFixtureTypes
+  name: CollectionFixtureTypes
+  nameWithType: IXunitTestCollection.CollectionFixtureTypes
+  fullName: Xunit.v3.IXunitTestCollection.CollectionFixtureTypes
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.DisableParallelization*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.DisableParallelization
+  href: Xunit.v3.IXunitTestCollection.DisableParallelization.html#Xunit_v3_IXunitTestCollection_DisableParallelization
+  name: DisableParallelization
+  nameWithType: IXunitTestCollection.DisableParallelization
+  fullName: Xunit.v3.IXunitTestCollection.DisableParallelization
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestAssembly*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.TestAssembly
+  href: Xunit.v3.IXunitTestCollection.TestAssembly.html#Xunit_v3_IXunitTestCollection_TestAssembly
+  name: TestAssembly
+  nameWithType: IXunitTestCollection.TestAssembly
+  fullName: Xunit.v3.IXunitTestCollection.TestAssembly
+- uid: v3.3.2.1:Xunit.v3.IXunitTestAssembly
+  commentId: T:Xunit.v3.IXunitTestAssembly
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestAssembly.html
+  name: IXunitTestAssembly
+  nameWithType: IXunitTestAssembly
+  fullName: Xunit.v3.IXunitTestAssembly
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection.TestCaseOrderer*
+  commentId: Overload:Xunit.v3.IXunitTestCollection.TestCaseOrderer
+  href: Xunit.v3.IXunitTestCollection.TestCaseOrderer.html#Xunit_v3_IXunitTestCollection_TestCaseOrderer
+  name: TestCaseOrderer
+  nameWithType: IXunitTestCollection.TestCaseOrderer
+  fullName: Xunit.v3.IXunitTestCollection.TestCaseOrderer
+- uid: v3.3.2.1:Xunit.v3.ITestCaseOrderer
+  commentId: T:Xunit.v3.ITestCaseOrderer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestCaseOrderer.html
+  name: ITestCaseOrderer
+  nameWithType: ITestCaseOrderer
+  fullName: Xunit.v3.ITestCaseOrderer
+memberLayout: SeparatePages

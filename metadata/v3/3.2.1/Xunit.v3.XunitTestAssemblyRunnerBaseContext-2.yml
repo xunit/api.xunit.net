@@ -1,0 +1,1834 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  commentId: T:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  id: XunitTestAssemblyRunnerBaseContext`2
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection(Xunit.v3.IXunitTestCollection,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.v3.ITestCaseOrderer)
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment
+  langs:
+  - csharp
+  - vb
+  name: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: XunitTestAssemblyRunnerBaseContext
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Context class for <xref href="v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase%604" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase> : TestAssemblyRunnerContext<TTestAssembly, TTestCase>, IAsyncLifetime, IAsyncDisposable where TTestAssembly : class, IXunitTestAssembly where TTestCase : class, IXunitTestCase'
+    typeParameters:
+    - id: TTestAssembly
+    - id: TTestCase
+    content.vb: Public Class XunitTestAssemblyRunnerBaseContext(Of TTestAssembly As {Class, IXunitTestAssembly}, TTestCase As {Class, IXunitTestCase}) Inherits TestAssemblyRunnerContext(Of TTestAssembly, TTestCase) Implements IAsyncLifetime, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  derivedClasses:
+  - v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerContext
+  implements:
+  - v3.3.2.1:Xunit.IAsyncLifetime
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.Aggregator
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.CancellationTokenSource
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.ExecutionMessageSink
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.ExecutionOptions
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.MessageBus
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TargetFramework
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestAssembly
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestCases
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestEnvironment
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.CreateMessageBus
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.DisposeAsync
+  - v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.InitializeAsync
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase)
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase)
+  name.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase)
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  id: '#ctor(`0,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)'
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: XunitTestAssemblyRunnerBaseContext(TTestAssembly, IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.XunitTestAssemblyRunnerBaseContext(TTestAssembly, IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.XunitTestAssemblyRunnerBaseContext(TTestAssembly, System.Collections.Generic.IReadOnlyCollection<TTestCase>, Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Context class for <xref href="v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase%604" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public XunitTestAssemblyRunnerBaseContext(TTestAssembly testAssembly, IReadOnlyCollection<TTestCase> testCases, IMessageSink executionMessageSink, ITestFrameworkExecutionOptions executionOptions, CancellationToken cancellationToken)
+    parameters:
+    - id: testAssembly
+      type: '{TTestAssembly}'
+      description: The test assembly
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+      description: The test cases from the assembly
+    - id: executionMessageSink
+      type: Xunit.Sdk.IMessageSink
+      description: The message sink to send execution messages to
+    - id: executionOptions
+      type: Xunit.Sdk.ITestFrameworkExecutionOptions
+      description: The options used during test execution
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token used to cancel execution
+    content.vb: Public Sub New(testAssembly As TTestAssembly, testCases As IReadOnlyCollection(Of TTestCase), executionMessageSink As IMessageSink, executionOptions As ITestFrameworkExecutionOptions, cancellationToken As CancellationToken)
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).New(TTestAssembly, IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).New(TTestAssembly, System.Collections.Generic.IReadOnlyCollection(Of TTestCase), Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  name.vb: New(TTestAssembly, IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings
+  id: AssemblyFixtureMappings
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: AssemblyFixtureMappings
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyFixtureMappings
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyFixtureMappings
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: AssemblyFixtureMappings
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the mapping manager for assembly-level fixtures.
+  example: []
+  syntax:
+    content: public FixtureMappingManager AssemblyFixtureMappings { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.FixtureMappingManager
+    content.vb: Public ReadOnly Property AssemblyFixtureMappings As FixtureMappingManager
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyFixtureMappings
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyFixtureMappings
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer
+  id: AssemblyTestCaseOrderer
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: AssemblyTestCaseOrderer
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCaseOrderer
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCaseOrderer
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: AssemblyTestCaseOrderer
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 41
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the assembly-level test case orderer, if one is present.
+  example: []
+  syntax:
+    content: public ITestCaseOrderer? AssemblyTestCaseOrderer { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ITestCaseOrderer
+    content.vb: Public Property AssemblyTestCaseOrderer As ITestCaseOrderer
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCaseOrderer
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCaseOrderer
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer
+  id: AssemblyTestCollectionOrderer
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: AssemblyTestCollectionOrderer
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCollectionOrderer
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCollectionOrderer
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: AssemblyTestCollectionOrderer
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 46
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the assembly-level test collection orderer, if one is present.
+  example: []
+  syntax:
+    content: public ITestCollectionOrderer? AssemblyTestCollectionOrderer { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ITestCollectionOrderer
+    content.vb: Public Property AssemblyTestCollectionOrderer As ITestCollectionOrderer
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCollectionOrderer
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCollectionOrderer
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization
+  id: DisableParallelization
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: DisableParallelization
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisableParallelization
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisableParallelization
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: DisableParallelization
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a flag which indicates whether the user has requested that parallelization be disabled.
+  example: []
+  syntax:
+    content: public bool DisableParallelization { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisableParallelization As Boolean
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisableParallelization
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisableParallelization
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption
+  id: ExplicitOption
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: ExplicitOption
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ExplicitOption
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ExplicitOption
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ExplicitOption
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 56
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a flag which indicates how explicit tests should be handled.
+  example: []
+  syntax:
+    content: public ExplicitOption ExplicitOption { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ExplicitOption
+    content.vb: Public ReadOnly Property ExplicitOption As ExplicitOption
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ExplicitOption
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ExplicitOption
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads
+  id: MaxParallelThreads
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: MaxParallelThreads
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.MaxParallelThreads
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.MaxParallelThreads
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: MaxParallelThreads
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 63
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the maximum number of threads to use when running tests in parallel. If this returns a
+
+    positive integer, that is the maximum number of threads; if it returns -1, that indicates that
+
+    unlimited threads should be allowed.
+  example: []
+  syntax:
+    content: public int MaxParallelThreads { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxParallelThreads As Integer
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).MaxParallelThreads
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).MaxParallelThreads
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm
+  id: ParallelAlgorithm
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: ParallelAlgorithm
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ParallelAlgorithm
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ParallelAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ParallelAlgorithm
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 68
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the algorithm used for parallelism.
+  example: []
+  syntax:
+    content: public ParallelAlgorithm ParallelAlgorithm { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ParallelAlgorithm
+    content.vb: Public Property ParallelAlgorithm As ParallelAlgorithm
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ParallelAlgorithm
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ParallelAlgorithm
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly
+  id: TestAssembly
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestAssembly
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 73
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the assembly that is being executed.
+  example: []
+  syntax:
+    content: public TTestAssembly TestAssembly { get; }
+    parameters: []
+    return:
+      type: '{TTestAssembly}'
+    content.vb: Public ReadOnly Property TestAssembly As TTestAssembly
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestAssembly
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework
+  id: TargetFramework
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TargetFramework
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 76
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the target framework that the test assembly is targeting. By default, this returns <code>null</code>.
+
+    Test frameworks that are based on .NET runtime assemblies can look for <xref href="System.Runtime.Versioning.TargetFrameworkAttribute" data-throw-if-not-resolved="false"></xref>
+
+    decorated at the assembly level, which is added automatically by the compiler.
+  example: []
+  syntax:
+    content: public override string TargetFramework { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property TargetFramework As String
+  overridden: Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TargetFramework
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TargetFramework
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TargetFramework
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment
+  commentId: P:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment
+  id: TestEnvironment
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: TestEnvironment
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestEnvironment
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestEnvironment
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestEnvironment
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 80
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the environment that the test are running in. By default, returns a string which
+
+    indicates process bitness, processor architecture (when known), and the description of
+
+    the runtime environment (from <xref href="System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" data-throw-if-not-resolved="false"></xref>).
+  remarks: 'Example: "64-bit (x64) .NET 8.0.11"'
+  example: []
+  syntax:
+    content: public override string TestEnvironment { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property TestEnvironment As String
+  overridden: Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestEnvironment
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestEnvironment
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestEnvironment
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisposeAsync()
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 108
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public override ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overrides Function DisposeAsync() As ValueTask
+  overridden: Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.DisposeAsync
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisposeAsync()
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisposeAsync()
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync
+  id: InitializeAsync
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.InitializeAsync()
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: InitializeAsync
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 123
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Called immediately after the class has been created, before it is used.
+  example: []
+  syntax:
+    content: public override ValueTask InitializeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overrides Function InitializeAsync() As ValueTask
+  overridden: Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.InitializeAsync
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).InitializeAsync()
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).InitializeAsync()
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection(Xunit.v3.IXunitTestCollection,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.v3.ITestCaseOrderer)
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection(Xunit.v3.IXunitTestCollection,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.v3.ITestCaseOrderer)
+  id: RunTestCollection(Xunit.v3.IXunitTestCollection,System.Collections.Generic.IReadOnlyCollection{`1},Xunit.v3.ITestCaseOrderer)
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: RunTestCollection(IXunitTestCollection, IReadOnlyCollection<TTestCase>, ITestCaseOrderer)
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.RunTestCollection(IXunitTestCollection, IReadOnlyCollection<TTestCase>, ITestCaseOrderer)
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.RunTestCollection(Xunit.v3.IXunitTestCollection, System.Collections.Generic.IReadOnlyCollection<TTestCase>, Xunit.v3.ITestCaseOrderer)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: RunTestCollection
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 153
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Delegation of <xref href="v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase%604.RunTestCollection(%600%2c%602%2cSystem.Collections.Generic.IReadOnlyCollection%7b%603%7d)" data-throw-if-not-resolved="false"></xref>
+
+    that properly obeys the parallel algorithm requirements.
+  example: []
+  syntax:
+    content: public ValueTask<RunSummary> RunTestCollection(IXunitTestCollection testCollection, IReadOnlyCollection<TTestCase> testCases, ITestCaseOrderer testCaseOrderer)
+    parameters:
+    - id: testCollection
+      type: Xunit.v3.IXunitTestCollection
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+    - id: testCaseOrderer
+      type: Xunit.v3.ITestCaseOrderer
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+    content.vb: Public Function RunTestCollection(testCollection As IXunitTestCollection, testCases As IReadOnlyCollection(Of TTestCase), testCaseOrderer As ITestCaseOrderer) As ValueTask(Of RunSummary)
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).RunTestCollection(IXunitTestCollection, IReadOnlyCollection(Of TTestCase), ITestCaseOrderer)
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).RunTestCollection(Xunit.v3.IXunitTestCollection, System.Collections.Generic.IReadOnlyCollection(Of TTestCase), Xunit.v3.ITestCaseOrderer)
+  name.vb: RunTestCollection(IXunitTestCollection, IReadOnlyCollection(Of TTestCase), ITestCaseOrderer)
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism
+  id: SetupParallelism
+  parent: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2
+  langs:
+  - csharp
+  - vb
+  name: SetupParallelism()
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.SetupParallelism()
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.SetupParallelism()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SetupParallelism
+    path: ../src/xunit.v3.core/Runners/XunitTestAssemblyRunnerBaseContext.cs
+    startLine: 183
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Sets up the mechanics for parallelism.
+  example: []
+  syntax:
+    content: public virtual void SetupParallelism()
+    content.vb: Public Overridable Sub SetupParallelism()
+  overload: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism*
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).SetupParallelism()
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).SetupParallelism()
+references:
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4
+  commentId: T:Xunit.v3.XunitTestAssemblyRunnerBase`4
+  href: Xunit.v3.XunitTestAssemblyRunnerBase-4.html
+  name: XunitTestAssemblyRunnerBase<TContext, TTestAssembly, TTestCollection, TTestCase>
+  nameWithType: XunitTestAssemblyRunnerBase<TContext, TTestAssembly, TTestCollection, TTestCase>
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBase<TContext, TTestAssembly, TTestCollection, TTestCase>
+  nameWithType.vb: XunitTestAssemblyRunnerBase(Of TContext, TTestAssembly, TTestCollection, TTestCase)
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBase(Of TContext, TTestAssembly, TTestCollection, TTestCase)
+  name.vb: XunitTestAssemblyRunnerBase(Of TContext, TTestAssembly, TTestCollection, TTestCase)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4
+    name: XunitTestAssemblyRunnerBase
+    href: Xunit.v3.XunitTestAssemblyRunnerBase-4.html
+  - name: <
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCollection
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4
+    name: XunitTestAssemblyRunnerBase
+    href: Xunit.v3.XunitTestAssemblyRunnerBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCollection
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  commentId: T:Xunit.v3.TestAssemblyRunnerContext{`0,`1}
+  parent: v3.3.2.1:Xunit.v3
+  definition: Xunit.v3.TestAssemblyRunnerContext`2
+  href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  name: TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  name.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2
+    name: TestAssemblyRunnerContext
+    href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  - name: <
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2
+    name: TestAssemblyRunnerContext
+    href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.3.2.1:Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  parent: v3.3.2.1:Xunit
+  href: Xunit.IAsyncLifetime.html
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.Aggregator
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.Aggregator
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.Aggregator
+  href: Xunit.v3.TestAssemblyRunnerContext-2.Aggregator.html#Xunit_v3_TestAssemblyRunnerContext_2_Aggregator
+  name: Aggregator
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.Aggregator
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.Aggregator
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).Aggregator
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).Aggregator
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.CancellationTokenSource
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.CancellationTokenSource
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.CancellationTokenSource
+  href: Xunit.v3.TestAssemblyRunnerContext-2.CancellationTokenSource.html#Xunit_v3_TestAssemblyRunnerContext_2_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CancellationTokenSource
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CancellationTokenSource
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CancellationTokenSource
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CancellationTokenSource
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.ExecutionMessageSink
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.ExecutionMessageSink
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.ExecutionMessageSink
+  href: Xunit.v3.TestAssemblyRunnerContext-2.ExecutionMessageSink.html#Xunit_v3_TestAssemblyRunnerContext_2_ExecutionMessageSink
+  name: ExecutionMessageSink
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionMessageSink
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionMessageSink
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionMessageSink
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionMessageSink
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.ExecutionOptions
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.ExecutionOptions
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.ExecutionOptions
+  href: Xunit.v3.TestAssemblyRunnerContext-2.ExecutionOptions.html#Xunit_v3_TestAssemblyRunnerContext_2_ExecutionOptions
+  name: ExecutionOptions
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionOptions
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionOptions
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionOptions
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionOptions
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.MessageBus
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.MessageBus
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.MessageBus
+  href: Xunit.v3.TestAssemblyRunnerContext-2.MessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_MessageBus
+  name: MessageBus
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.MessageBus
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.MessageBus
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).MessageBus
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).MessageBus
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TargetFramework
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.TargetFramework
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.TargetFramework
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TargetFramework.html#Xunit_v3_TestAssemblyRunnerContext_2_TargetFramework
+  name: TargetFramework
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TargetFramework
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TargetFramework
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TargetFramework
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TargetFramework
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestAssembly
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.TestAssembly
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.TestAssembly
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestAssembly.html#Xunit_v3_TestAssemblyRunnerContext_2_TestAssembly
+  name: TestAssembly
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestAssembly
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestAssembly
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestAssembly
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestCases
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.TestCases
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.TestCases
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestCases.html#Xunit_v3_TestAssemblyRunnerContext_2_TestCases
+  name: TestCases
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestCases
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestCases
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestCases
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestCases
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.TestEnvironment
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.TestEnvironment
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.TestEnvironment
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestEnvironment.html#Xunit_v3_TestAssemblyRunnerContext_2_TestEnvironment
+  name: TestEnvironment
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestEnvironment
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestEnvironment
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestEnvironment
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestEnvironment
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.CreateMessageBus
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.CreateMessageBus
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.CreateMessageBus
+  href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  name: CreateMessageBus()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CreateMessageBus()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CreateMessageBus()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CreateMessageBus()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CreateMessageBus()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.CreateMessageBus
+    name: CreateMessageBus
+    href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.CreateMessageBus
+    name: CreateMessageBus
+    href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.DisposeAsync
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.DisposeAsync
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.DisposeAsync
+  href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.DisposeAsync()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.DisposeAsync()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).DisposeAsync()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}.InitializeAsync
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.InitializeAsync
+  parent: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{{TTestAssembly},{TTestCase}}
+  definition: Xunit.v3.TestAssemblyRunnerContext`2.InitializeAsync
+  href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.InitializeAsync()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.InitializeAsync()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).InitializeAsync()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).InitializeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext{`0,`1}.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2
+  commentId: T:Xunit.v3.TestAssemblyRunnerContext`2
+  href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  name: TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  name.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2
+    name: TestAssemblyRunnerContext
+    href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  - name: <
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2
+    name: TestAssemblyRunnerContext
+    href: Xunit.v3.TestAssemblyRunnerContext-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestAssembly
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.3.2.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.Aggregator
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.Aggregator
+  href: Xunit.v3.TestAssemblyRunnerContext-2.Aggregator.html#Xunit_v3_TestAssemblyRunnerContext_2_Aggregator
+  name: Aggregator
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.Aggregator
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.Aggregator
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).Aggregator
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).Aggregator
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.CancellationTokenSource
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.CancellationTokenSource
+  href: Xunit.v3.TestAssemblyRunnerContext-2.CancellationTokenSource.html#Xunit_v3_TestAssemblyRunnerContext_2_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CancellationTokenSource
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CancellationTokenSource
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CancellationTokenSource
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CancellationTokenSource
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.ExecutionMessageSink
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.ExecutionMessageSink
+  href: Xunit.v3.TestAssemblyRunnerContext-2.ExecutionMessageSink.html#Xunit_v3_TestAssemblyRunnerContext_2_ExecutionMessageSink
+  name: ExecutionMessageSink
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionMessageSink
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionMessageSink
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionMessageSink
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionMessageSink
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.ExecutionOptions
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.ExecutionOptions
+  href: Xunit.v3.TestAssemblyRunnerContext-2.ExecutionOptions.html#Xunit_v3_TestAssemblyRunnerContext_2_ExecutionOptions
+  name: ExecutionOptions
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionOptions
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.ExecutionOptions
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionOptions
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).ExecutionOptions
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.MessageBus
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.MessageBus
+  href: Xunit.v3.TestAssemblyRunnerContext-2.MessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_MessageBus
+  name: MessageBus
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.MessageBus
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.MessageBus
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).MessageBus
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).MessageBus
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.TargetFramework
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.TargetFramework
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TargetFramework.html#Xunit_v3_TestAssemblyRunnerContext_2_TargetFramework
+  name: TargetFramework
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TargetFramework
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TargetFramework
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TargetFramework
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TargetFramework
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.TestAssembly
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.TestAssembly
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestAssembly.html#Xunit_v3_TestAssemblyRunnerContext_2_TestAssembly
+  name: TestAssembly
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestAssembly
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestAssembly
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestAssembly
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.TestCases
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.TestCases
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestCases.html#Xunit_v3_TestAssemblyRunnerContext_2_TestCases
+  name: TestCases
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestCases
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestCases
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestCases
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestCases
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.TestEnvironment
+  commentId: P:Xunit.v3.TestAssemblyRunnerContext`2.TestEnvironment
+  href: Xunit.v3.TestAssemblyRunnerContext-2.TestEnvironment.html#Xunit_v3_TestAssemblyRunnerContext_2_TestEnvironment
+  name: TestEnvironment
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestEnvironment
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.TestEnvironment
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestEnvironment
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).TestEnvironment
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.CreateMessageBus
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext`2.CreateMessageBus
+  href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  name: CreateMessageBus()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CreateMessageBus()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.CreateMessageBus()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CreateMessageBus()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).CreateMessageBus()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.CreateMessageBus
+    name: CreateMessageBus
+    href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.CreateMessageBus
+    name: CreateMessageBus
+    href: Xunit.v3.TestAssemblyRunnerContext-2.CreateMessageBus.html#Xunit_v3_TestAssemblyRunnerContext_2_CreateMessageBus
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.DisposeAsync
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext`2.DisposeAsync
+  href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.DisposeAsync()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.DisposeAsync()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).DisposeAsync()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.DisposeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.InitializeAsync
+  commentId: M:Xunit.v3.TestAssemblyRunnerContext`2.InitializeAsync
+  href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: TestAssemblyRunnerContext<TTestAssembly, TTestCase>.InitializeAsync()
+  fullName: Xunit.v3.TestAssemblyRunnerContext<TTestAssembly, TTestCase>.InitializeAsync()
+  nameWithType.vb: TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).InitializeAsync()
+  fullName.vb: Xunit.v3.TestAssemblyRunnerContext(Of TTestAssembly, TTestCase).InitializeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestAssemblyRunnerContext`2.InitializeAsync
+    name: InitializeAsync
+    href: Xunit.v3.TestAssemblyRunnerContext-2.InitializeAsync.html#Xunit_v3_TestAssemblyRunnerContext_2_InitializeAsync
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.#ctor
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.-ctor.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2__ctor__0_System_Collections_Generic_IReadOnlyCollection__1__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  name: XunitTestAssemblyRunnerBaseContext
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.XunitTestAssemblyRunnerBaseContext
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.XunitTestAssemblyRunnerBaseContext
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).New
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).New
+  name.vb: New
+- uid: '{TTestAssembly}'
+  commentId: '!:TTestAssembly'
+  definition: TTestAssembly
+  name: TTestAssembly
+  nameWithType: TTestAssembly
+  fullName: TTestAssembly
+- uid: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TTestCase>
+  nameWithType: IReadOnlyCollection<TTestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<TTestCase>
+  nameWithType.vb: IReadOnlyCollection(Of TTestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of TTestCase)
+  name.vb: IReadOnlyCollection(Of TTestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkExecutionOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkExecutionOptions
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkExecutionOptions.html
+  name: ITestFrameworkExecutionOptions
+  nameWithType: ITestFrameworkExecutionOptions
+  fullName: Xunit.Sdk.ITestFrameworkExecutionOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: TTestAssembly
+  name: TTestAssembly
+  nameWithType: TTestAssembly
+  fullName: TTestAssembly
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyFixtureMappings
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.AssemblyFixtureMappings.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_AssemblyFixtureMappings
+  name: AssemblyFixtureMappings
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyFixtureMappings
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyFixtureMappings
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyFixtureMappings
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyFixtureMappings
+- uid: v3.3.2.1:Xunit.v3.FixtureMappingManager
+  commentId: T:Xunit.v3.FixtureMappingManager
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.FixtureMappingManager.html
+  name: FixtureMappingManager
+  nameWithType: FixtureMappingManager
+  fullName: Xunit.v3.FixtureMappingManager
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCaseOrderer
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.AssemblyTestCaseOrderer.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_AssemblyTestCaseOrderer
+  name: AssemblyTestCaseOrderer
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCaseOrderer
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCaseOrderer
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCaseOrderer
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCaseOrderer
+- uid: v3.3.2.1:Xunit.v3.ITestCaseOrderer
+  commentId: T:Xunit.v3.ITestCaseOrderer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestCaseOrderer.html
+  name: ITestCaseOrderer
+  nameWithType: ITestCaseOrderer
+  fullName: Xunit.v3.ITestCaseOrderer
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.AssemblyTestCollectionOrderer
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.AssemblyTestCollectionOrderer.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_AssemblyTestCollectionOrderer
+  name: AssemblyTestCollectionOrderer
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCollectionOrderer
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.AssemblyTestCollectionOrderer
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCollectionOrderer
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).AssemblyTestCollectionOrderer
+- uid: v3.3.2.1:Xunit.v3.ITestCollectionOrderer
+  commentId: T:Xunit.v3.ITestCollectionOrderer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestCollectionOrderer.html
+  name: ITestCollectionOrderer
+  nameWithType: ITestCollectionOrderer
+  fullName: Xunit.v3.ITestCollectionOrderer
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisableParallelization
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.DisableParallelization.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_DisableParallelization
+  name: DisableParallelization
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisableParallelization
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisableParallelization
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisableParallelization
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisableParallelization
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ExplicitOption
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.ExplicitOption.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_ExplicitOption
+  name: ExplicitOption
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ExplicitOption
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ExplicitOption
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ExplicitOption
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ExplicitOption
+- uid: v3.3.2.1:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.MaxParallelThreads
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.MaxParallelThreads.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_MaxParallelThreads
+  name: MaxParallelThreads
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.MaxParallelThreads
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.MaxParallelThreads
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).MaxParallelThreads
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).MaxParallelThreads
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.ParallelAlgorithm
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.ParallelAlgorithm.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_ParallelAlgorithm
+  name: ParallelAlgorithm
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ParallelAlgorithm
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.ParallelAlgorithm
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ParallelAlgorithm
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).ParallelAlgorithm
+- uid: v3.3.2.1:Xunit.Sdk.ParallelAlgorithm
+  commentId: T:Xunit.Sdk.ParallelAlgorithm
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ParallelAlgorithm.html
+  name: ParallelAlgorithm
+  nameWithType: ParallelAlgorithm
+  fullName: Xunit.Sdk.ParallelAlgorithm
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestAssembly
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.TestAssembly.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_TestAssembly
+  name: TestAssembly
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestAssembly
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestAssembly
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestAssembly
+- uid: System.Runtime.Versioning.TargetFrameworkAttribute
+  commentId: T:System.Runtime.Versioning.TargetFrameworkAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute
+  name: TargetFrameworkAttribute
+  nameWithType: TargetFrameworkAttribute
+  fullName: System.Runtime.Versioning.TargetFrameworkAttribute
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TargetFramework
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.TargetFramework.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_TargetFramework
+  name: TargetFramework
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TargetFramework
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TargetFramework
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TargetFramework
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TargetFramework
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+  commentId: P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.runtimeinformation.frameworkdescription
+  name: FrameworkDescription
+  nameWithType: RuntimeInformation.FrameworkDescription
+  fullName: System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.TestEnvironment
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.TestEnvironment.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_TestEnvironment
+  name: TestEnvironment
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestEnvironment
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.TestEnvironment
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestEnvironment
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).TestEnvironment
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.DisposeAsync
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.DisposeAsync.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_DisposeAsync
+  name: DisposeAsync
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisposeAsync
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.DisposeAsync
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisposeAsync
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).DisposeAsync
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.InitializeAsync
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.InitializeAsync.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_InitializeAsync
+  name: InitializeAsync
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.InitializeAsync
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.InitializeAsync
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).InitializeAsync
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).InitializeAsync
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4.RunTestCollection(`0,`2,System.Collections.Generic.IReadOnlyCollection{`3})
+  commentId: M:Xunit.v3.XunitTestAssemblyRunnerBase`4.RunTestCollection(`0,`2,System.Collections.Generic.IReadOnlyCollection{`3})
+  isExternal: true
+  href: Xunit.v3.XunitTestAssemblyRunnerBase-4.RunTestCollection.html#Xunit_v3_XunitTestAssemblyRunnerBase_4_RunTestCollection__0__2_System_Collections_Generic_IReadOnlyCollection__3__
+  name: RunTestCollection(TContext, TTestCollection, IReadOnlyCollection<TTestCase>)
+  nameWithType: XunitTestAssemblyRunnerBase<TContext, TTestAssembly, TTestCollection, TTestCase>.RunTestCollection(TContext, TTestCollection, IReadOnlyCollection<TTestCase>)
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBase<TContext, TTestAssembly, TTestCollection, TTestCase>.RunTestCollection(TContext, TTestCollection, System.Collections.Generic.IReadOnlyCollection<TTestCase>)
+  nameWithType.vb: XunitTestAssemblyRunnerBase(Of TContext, TTestAssembly, TTestCollection, TTestCase).RunTestCollection(TContext, TTestCollection, IReadOnlyCollection(Of TTestCase))
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBase(Of TContext, TTestAssembly, TTestCollection, TTestCase).RunTestCollection(TContext, TTestCollection, System.Collections.Generic.IReadOnlyCollection(Of TTestCase))
+  name.vb: RunTestCollection(TContext, TTestCollection, IReadOnlyCollection(Of TTestCase))
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4.RunTestCollection(`0,`2,System.Collections.Generic.IReadOnlyCollection{`3})
+    name: RunTestCollection
+    href: Xunit.v3.XunitTestAssemblyRunnerBase-4.RunTestCollection.html#Xunit_v3_XunitTestAssemblyRunnerBase_4_RunTestCollection__0__2_System_Collections_Generic_IReadOnlyCollection__3__
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCollection
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBase`4.RunTestCollection(`0,`2,System.Collections.Generic.IReadOnlyCollection{`3})
+    name: RunTestCollection
+    href: Xunit.v3.XunitTestAssemblyRunnerBase-4.RunTestCollection.html#Xunit_v3_XunitTestAssemblyRunnerBase_4_RunTestCollection__0__2_System_Collections_Generic_IReadOnlyCollection__3__
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCollection
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.RunTestCollection
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.RunTestCollection.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_RunTestCollection_Xunit_v3_IXunitTestCollection_System_Collections_Generic_IReadOnlyCollection__1__Xunit_v3_ITestCaseOrderer_
+  name: RunTestCollection
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.RunTestCollection
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.RunTestCollection
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).RunTestCollection
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).RunTestCollection
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollection
+  commentId: T:Xunit.v3.IXunitTestCollection
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestCollection.html
+  name: IXunitTestCollection
+  nameWithType: IXunitTestCollection
+  fullName: Xunit.v3.IXunitTestCollection
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<RunSummary>
+  nameWithType: ValueTask<RunSummary>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.RunSummary>
+  nameWithType.vb: ValueTask(Of RunSummary)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.RunSummary)
+  name.vb: ValueTask(Of RunSummary)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3.3.2.1:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism*
+  commentId: Overload:Xunit.v3.XunitTestAssemblyRunnerBaseContext`2.SetupParallelism
+  href: Xunit.v3.XunitTestAssemblyRunnerBaseContext-2.SetupParallelism.html#Xunit_v3_XunitTestAssemblyRunnerBaseContext_2_SetupParallelism
+  name: SetupParallelism
+  nameWithType: XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.SetupParallelism
+  fullName: Xunit.v3.XunitTestAssemblyRunnerBaseContext<TTestAssembly, TTestCase>.SetupParallelism
+  nameWithType.vb: XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).SetupParallelism
+  fullName.vb: Xunit.v3.XunitTestAssemblyRunnerBaseContext(Of TTestAssembly, TTestCase).SetupParallelism
+memberLayout: SeparatePages

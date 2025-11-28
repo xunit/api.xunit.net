@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.ITypeActivator
+  commentId: T:Xunit.v3.ITypeActivator
+  id: ITypeActivator
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.ITypeActivator.CreateInstance(System.Reflection.ConstructorInfo,System.Object[],System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String})
+  langs:
+  - csharp
+  - vb
+  name: ITypeActivator
+  nameWithType: ITypeActivator
+  fullName: Xunit.v3.ITypeActivator
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITypeActivator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITypeActivator
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITypeActivator.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Represents the ability to create instances of types on behalf of the test framework.
+  remarks: >-
+    This is currently only used for creating test class instances, but may be used in the future
+
+    for other class creation operations.
+  example: []
+  syntax:
+    content: public interface ITypeActivator
+    content.vb: Public Interface ITypeActivator
+  extensionMethods:
+  - v3.3.2.1:Xunit.v3.ITypeActivator.Xunit.v3.ITypeActivatorExtensions.CreateInstance(System.Reflection.ConstructorInfo,System.Object[])
+- uid: v3.3.2.1:Xunit.v3.ITypeActivator.CreateInstance(System.Reflection.ConstructorInfo,System.Object[],System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String})
+  commentId: M:Xunit.v3.ITypeActivator.CreateInstance(System.Reflection.ConstructorInfo,System.Object[],System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String})
+  id: CreateInstance(System.Reflection.ConstructorInfo,System.Object[],System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String})
+  parent: v3.3.2.1:Xunit.v3.ITypeActivator
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(ConstructorInfo, object?[]?, Func<Type, IReadOnlyCollection<ParameterInfo>, string>)
+  nameWithType: ITypeActivator.CreateInstance(ConstructorInfo, object?[]?, Func<Type, IReadOnlyCollection<ParameterInfo>, string>)
+  fullName: Xunit.v3.ITypeActivator.CreateInstance(System.Reflection.ConstructorInfo, object?[]?, System.Func<System.Type, System.Collections.Generic.IReadOnlyCollection<System.Reflection.ParameterInfo>, string>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITypeActivator.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CreateInstance
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITypeActivator.cs
+    startLine: 34
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates an instance of the specified type using the constructor that best matches the
+
+    specified parameters.
+  remarks: >-
+    This method may called with parameter values that are set to <xref href="System.Reflection.Missing.Value" data-throw-if-not-resolved="false"></xref>.
+
+    This indicates that the test framework does not know how to resolve the argument in question.
+
+    Implementation for missing parameter resolution is an implementation detail for the type
+
+    activator (throwing is an acceptable result).
+  example: []
+  syntax:
+    content: object CreateInstance(ConstructorInfo constructor, object?[]? arguments, Func<Type, IReadOnlyCollection<ParameterInfo>, string> missingArgumentMessageFormatter)
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: The constructor to be invoked.
+    - id: arguments
+      type: System.Object[]
+      description: >-
+        An array of arguments that match in number, order, and type the
+            parameters of the constructor to invoke. If args is an empty array or null, the constructor
+            that takes no parameters (the default constructor) is invoked.
+    - id: missingArgumentMessageFormatter
+      type: System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String}
+      description: >-
+        A function that will format the message to be used
+            to throw an exception when one or more arguments could not be resolved.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+    content.vb: Function CreateInstance(constructor As ConstructorInfo, arguments As Object(), missingArgumentMessageFormatter As Func(Of Type, IReadOnlyCollection(Of ParameterInfo), String)) As Object
+  overload: v3.3.2.1:Xunit.v3.ITypeActivator.CreateInstance*
+  exceptions:
+  - type: Xunit.Sdk.TestPipelineException
+    commentId: T:Xunit.Sdk.TestPipelineException
+    description: Thrown when the object creation is not successful.
+  nameWithType.vb: ITypeActivator.CreateInstance(ConstructorInfo, Object(), Func(Of Type, IReadOnlyCollection(Of ParameterInfo), String))
+  fullName.vb: Xunit.v3.ITypeActivator.CreateInstance(System.Reflection.ConstructorInfo, Object(), System.Func(Of System.Type, System.Collections.Generic.IReadOnlyCollection(Of System.Reflection.ParameterInfo), String))
+  name.vb: CreateInstance(ConstructorInfo, Object(), Func(Of Type, IReadOnlyCollection(Of ParameterInfo), String))
+references:
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.1:Xunit.v3.ITypeActivator.Xunit.v3.ITypeActivatorExtensions.CreateInstance(System.Reflection.ConstructorInfo,System.Object[])
+  commentId: M:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+  parent: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions
+  definition: Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+  href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  name: CreateInstance(ITypeActivator, ConstructorInfo, object[])
+  nameWithType: ITypeActivatorExtensions.CreateInstance(ITypeActivator, ConstructorInfo, object[])
+  fullName: Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator, System.Reflection.ConstructorInfo, object[])
+  nameWithType.vb: ITypeActivatorExtensions.CreateInstance(ITypeActivator, ConstructorInfo, Object())
+  fullName.vb: Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator, System.Reflection.ConstructorInfo, Object())
+  name.vb: CreateInstance(ITypeActivator, ConstructorInfo, Object())
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+    name: CreateInstance
+    href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivator
+    name: ITypeActivator
+    href: Xunit.v3.ITypeActivator.html
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+    name: CreateInstance
+    href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivator
+    name: ITypeActivator
+    href: Xunit.v3.ITypeActivator.html
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+  commentId: M:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+  isExternal: true
+  href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  name: CreateInstance(ITypeActivator, ConstructorInfo, object[])
+  nameWithType: ITypeActivatorExtensions.CreateInstance(ITypeActivator, ConstructorInfo, object[])
+  fullName: Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator, System.Reflection.ConstructorInfo, object[])
+  nameWithType.vb: ITypeActivatorExtensions.CreateInstance(ITypeActivator, ConstructorInfo, Object())
+  fullName.vb: Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator, System.Reflection.ConstructorInfo, Object())
+  name.vb: CreateInstance(ITypeActivator, ConstructorInfo, Object())
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+    name: CreateInstance
+    href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivator
+    name: ITypeActivator
+    href: Xunit.v3.ITypeActivator.html
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions.CreateInstance(Xunit.v3.ITypeActivator,System.Reflection.ConstructorInfo,System.Object[])
+    name: CreateInstance
+    href: Xunit.v3.ITypeActivatorExtensions.CreateInstance.html#Xunit_v3_ITypeActivatorExtensions_CreateInstance_Xunit_v3_ITypeActivator_System_Reflection_ConstructorInfo_System_Object___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.ITypeActivator
+    name: ITypeActivator
+    href: Xunit.v3.ITypeActivator.html
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.ITypeActivatorExtensions
+  commentId: T:Xunit.v3.ITypeActivatorExtensions
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITypeActivatorExtensions.html
+  name: ITypeActivatorExtensions
+  nameWithType: ITypeActivatorExtensions
+  fullName: Xunit.v3.ITypeActivatorExtensions
+- uid: System.Reflection.Missing.Value
+  commentId: F:System.Reflection.Missing.Value
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.missing.value
+  name: Value
+  nameWithType: Missing.Value
+  fullName: System.Reflection.Missing.Value
+- uid: v3.3.2.1:Xunit.Sdk.TestPipelineException
+  commentId: T:Xunit.Sdk.TestPipelineException
+  href: Xunit.Sdk.TestPipelineException.html
+  name: TestPipelineException
+  nameWithType: TestPipelineException
+  fullName: Xunit.Sdk.TestPipelineException
+- uid: v3.3.2.1:Xunit.v3.ITypeActivator.CreateInstance*
+  commentId: Overload:Xunit.v3.ITypeActivator.CreateInstance
+  href: Xunit.v3.ITypeActivator.CreateInstance.html#Xunit_v3_ITypeActivator_CreateInstance_System_Reflection_ConstructorInfo_System_Object___System_Func_System_Type_System_Collections_Generic_IReadOnlyCollection_System_Reflection_ParameterInfo__System_String__
+  name: CreateInstance
+  nameWithType: ITypeActivator.CreateInstance
+  fullName: Xunit.v3.ITypeActivator.CreateInstance
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String}
+  commentId: T:System.Func{System.Type,System.Collections.Generic.IReadOnlyCollection{System.Reflection.ParameterInfo},System.String}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<Type, IReadOnlyCollection<ParameterInfo>, string>
+  nameWithType: Func<Type, IReadOnlyCollection<ParameterInfo>, string>
+  fullName: System.Func<System.Type, System.Collections.Generic.IReadOnlyCollection<System.Reflection.ParameterInfo>, string>
+  nameWithType.vb: Func(Of Type, IReadOnlyCollection(Of ParameterInfo), String)
+  fullName.vb: System.Func(Of System.Type, System.Collections.Generic.IReadOnlyCollection(Of System.Reflection.ParameterInfo), String)
+  name.vb: Func(Of Type, IReadOnlyCollection(Of ParameterInfo), String)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+memberLayout: SeparatePages

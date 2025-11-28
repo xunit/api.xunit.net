@@ -1,0 +1,862 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.ITheoryDataRow
+  commentId: T:Xunit.ITheoryDataRow
+  id: ITheoryDataRow
+  parent: v3.3.2.1:Xunit
+  children:
+  - v3.3.2.1:Xunit.ITheoryDataRow.Explicit
+  - v3.3.2.1:Xunit.ITheoryDataRow.GetData
+  - v3.3.2.1:Xunit.ITheoryDataRow.Label
+  - v3.3.2.1:Xunit.ITheoryDataRow.Skip
+  - v3.3.2.1:Xunit.ITheoryDataRow.SkipType
+  - v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless
+  - v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen
+  - v3.3.2.1:Xunit.ITheoryDataRow.TestDisplayName
+  - v3.3.2.1:Xunit.ITheoryDataRow.Timeout
+  - v3.3.2.1:Xunit.ITheoryDataRow.Traits
+  langs:
+  - csharp
+  - vb
+  name: ITheoryDataRow
+  nameWithType: ITheoryDataRow
+  fullName: Xunit.ITheoryDataRow
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: ITheoryDataRow
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Represents a single row of theory data, along with optional metadata attached to the row.
+  example: []
+  syntax:
+    content: public interface ITheoryDataRow
+    content.vb: Public Interface ITheoryDataRow
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Explicit
+  commentId: P:Xunit.ITheoryDataRow.Explicit
+  id: Explicit
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: ITheoryDataRow.Explicit
+  fullName: Xunit.ITheoryDataRow.Explicit
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Explicit
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets a flag that indicates that the data row should only be run explicitly. If the value is <code>null</code>,
+
+    then it inherits its explicitness from the value of <xref href="v3.3.2.1:Xunit.v3.IFactAttribute.Explicit" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: bool? Explicit { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: ReadOnly Property Explicit As Boolean?
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.Explicit*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Label
+  commentId: P:Xunit.ITheoryDataRow.Label
+  id: Label
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: ITheoryDataRow.Label
+  fullName: Xunit.ITheoryDataRow.Label
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Label
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 27
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the label to use for the data row. This value is used to help format the display name
+
+    of the test.
+  remarks: >-
+    * If the value is <code>null</code> (or not set), use the default behavior: <code>MethodName(...argument list...)</code><br />
+
+    * If the value is an empty string, use just the method name: <code>MethodName</code><br />
+
+    * For any other values, appends the label: <code>MethodName [label]</code>
+  example: []
+  syntax:
+    content: string? Label { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Label As String
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.Label*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Skip
+  commentId: P:Xunit.ITheoryDataRow.Skip
+  id: Skip
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Skip
+  nameWithType: ITheoryDataRow.Skip
+  fullName: Xunit.ITheoryDataRow.Skip
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Skip
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 37
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the skip reason for the test. When <code>null</code> is returned, the test is
+
+    not skipped.
+  remarks: >-
+    Skipping is conditional based on whether <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen" data-throw-if-not-resolved="false"></xref> or <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless" data-throw-if-not-resolved="false"></xref>
+
+    is set.
+  example: []
+  syntax:
+    content: string? Skip { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Skip As String
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.Skip*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipType
+  commentId: P:Xunit.ITheoryDataRow.SkipType
+  id: SkipType
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: SkipType
+  nameWithType: ITheoryDataRow.SkipType
+  fullName: Xunit.ITheoryDataRow.SkipType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SkipType
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the type to retrieve <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless" data-throw-if-not-resolved="false"></xref> or <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen" data-throw-if-not-resolved="false"></xref> from. If not set,
+
+    then the property will be retrieved from the unit test class.
+  example: []
+  syntax:
+    content: Type? SkipType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property SkipType As Type
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.SkipType*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless
+  commentId: P:Xunit.ITheoryDataRow.SkipUnless
+  id: SkipUnless
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: SkipUnless
+  nameWithType: ITheoryDataRow.SkipUnless
+  fullName: Xunit.ITheoryDataRow.SkipUnless
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SkipUnless
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 56
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the name of a public static property on the test class which returns <code>bool</code>
+
+    to indicate whether the test should be skipped (<code>false</code>) or not (<code>true</code>).
+  remarks: >-
+    This property cannot be set if <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen" data-throw-if-not-resolved="false"></xref> is set. Setting both will
+
+    result in a failed test.<br />
+
+    <br />
+
+    To ensure compile-time safety and easier refactoring, use the <code>nameof</code> operator,
+
+    e.g., <code>SkipUnless = nameof(IsConditionMet)</code>.
+  example: []
+  syntax:
+    content: string? SkipUnless { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SkipUnless As String
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen
+  commentId: P:Xunit.ITheoryDataRow.SkipWhen
+  id: SkipWhen
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: SkipWhen
+  nameWithType: ITheoryDataRow.SkipWhen
+  fullName: Xunit.ITheoryDataRow.SkipWhen
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: SkipWhen
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 69
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the name of a public static property on the test class which returns <code>bool</code>
+
+    to indicate whether the test should be skipped (<code>true</code>) or not (<code>false</code>).
+  remarks: >-
+    This property cannot be set if <xref href="v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless" data-throw-if-not-resolved="false"></xref> is set. Setting both will
+
+    result in a failed test.<br />
+
+    <br />
+
+    To ensure compile-time safety and easier refactoring, use the <code>nameof</code> operator,
+
+    e.g., <code>SkipWhen = nameof(IsConditionMet)</code>.
+  example: []
+  syntax:
+    content: string? SkipWhen { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SkipWhen As String
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.TestDisplayName
+  commentId: P:Xunit.ITheoryDataRow.TestDisplayName
+  id: TestDisplayName
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: TestDisplayName
+  nameWithType: ITheoryDataRow.TestDisplayName
+  fullName: Xunit.ITheoryDataRow.TestDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestDisplayName
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 77
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the display name for the test (replacing the default behavior, which would be to
+
+    use <xref href="v3.3.2.1:Xunit.v3.IDataAttribute.TestDisplayName" data-throw-if-not-resolved="false"></xref> or <xref href="v3.3.2.1:Xunit.v3.IFactAttribute.DisplayName" data-throw-if-not-resolved="false"></xref>,
+
+    or falling back to the default test display name based on <xref href="v3.3.2.1:Xunit.Sdk.TestMethodDisplay" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="v3.3.2.1:Xunit.Sdk.TestMethodDisplayOptions" data-throw-if-not-resolved="false"></xref> in the configuration file).
+  example: []
+  syntax:
+    content: string? TestDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestDisplayName As String
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.TestDisplayName*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Timeout
+  commentId: P:Xunit.ITheoryDataRow.Timeout
+  id: Timeout
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: ITheoryDataRow.Timeout
+  fullName: Xunit.ITheoryDataRow.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 89
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    A value greater than zero marks the test as having a timeout, and gets or sets the
+
+    timeout (in milliseconds). A non-<code>null</code> value here overrides any inherited value
+
+    from the <xref href="v3.3.2.1:Xunit.v3.IDataAttribute" data-throw-if-not-resolved="false"></xref> or the <xref href="v3.3.2.1:Xunit.v3.ITheoryAttribute" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    WARNING: Using this with parallelization turned on will result in undefined behavior.
+
+    Timeout is only supported when parallelization is disabled, either globally or with
+
+    a parallelization-disabled test collection.
+  example: []
+  syntax:
+    content: int? Timeout { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: ReadOnly Property Timeout As Integer?
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.Timeout*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Traits
+  commentId: P:Xunit.ITheoryDataRow.Traits
+  id: Traits
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: Traits
+  nameWithType: ITheoryDataRow.Traits
+  fullName: Xunit.ITheoryDataRow.Traits
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Traits
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 95
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: >-
+    Gets the trait values associated with this theory data row. If there are none, you may either
+
+    return a <code>null</code> or empty dictionary.
+  example: []
+  syntax:
+    content: Dictionary<string, HashSet<string>>? Traits { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+    content.vb: ReadOnly Property Traits As Dictionary(Of String, HashSet(Of String))
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.Traits*
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.GetData
+  commentId: M:Xunit.ITheoryDataRow.GetData
+  id: GetData
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  langs:
+  - csharp
+  - vb
+  name: GetData()
+  nameWithType: ITheoryDataRow.GetData()
+  fullName: Xunit.ITheoryDataRow.GetData()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ITheoryDataRow.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: GetData
+    path: ../src/xunit.v3.core/ITheoryDataRow.cs
+    startLine: 100
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit
+  summary: Gets the theory data.
+  example: []
+  syntax:
+    content: object?[] GetData()
+    return:
+      type: System.Object[]
+    content.vb: Function GetData() As Object()
+  overload: v3.3.2.1:Xunit.ITheoryDataRow.GetData*
+references:
+- uid: v3.3.2.1:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: v3.3.2.1:Xunit.v3.IFactAttribute.Explicit
+  commentId: P:Xunit.v3.IFactAttribute.Explicit
+  parent: v3.3.2.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Explicit.html#Xunit_v3_IFactAttribute_Explicit
+  name: Explicit
+  nameWithType: IFactAttribute.Explicit
+  fullName: Xunit.v3.IFactAttribute.Explicit
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Explicit*
+  commentId: Overload:Xunit.ITheoryDataRow.Explicit
+  href: Xunit.ITheoryDataRow.Explicit.html#Xunit_ITheoryDataRow_Explicit
+  name: Explicit
+  nameWithType: ITheoryDataRow.Explicit
+  fullName: Xunit.ITheoryDataRow.Explicit
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: v3.3.2.1:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Label*
+  commentId: Overload:Xunit.ITheoryDataRow.Label
+  href: Xunit.ITheoryDataRow.Label.html#Xunit_ITheoryDataRow_Label
+  name: Label
+  nameWithType: ITheoryDataRow.Label
+  fullName: Xunit.ITheoryDataRow.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen
+  commentId: P:Xunit.ITheoryDataRow.SkipWhen
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  href: Xunit.ITheoryDataRow.SkipWhen.html#Xunit_ITheoryDataRow_SkipWhen
+  name: SkipWhen
+  nameWithType: ITheoryDataRow.SkipWhen
+  fullName: Xunit.ITheoryDataRow.SkipWhen
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless
+  commentId: P:Xunit.ITheoryDataRow.SkipUnless
+  parent: v3.3.2.1:Xunit.ITheoryDataRow
+  href: Xunit.ITheoryDataRow.SkipUnless.html#Xunit_ITheoryDataRow_SkipUnless
+  name: SkipUnless
+  nameWithType: ITheoryDataRow.SkipUnless
+  fullName: Xunit.ITheoryDataRow.SkipUnless
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Skip*
+  commentId: Overload:Xunit.ITheoryDataRow.Skip
+  href: Xunit.ITheoryDataRow.Skip.html#Xunit_ITheoryDataRow_Skip
+  name: Skip
+  nameWithType: ITheoryDataRow.Skip
+  fullName: Xunit.ITheoryDataRow.Skip
+- uid: v3.3.2.1:Xunit.ITheoryDataRow
+  commentId: T:Xunit.ITheoryDataRow
+  parent: v3.3.2.1:Xunit
+  href: Xunit.ITheoryDataRow.html
+  name: ITheoryDataRow
+  nameWithType: ITheoryDataRow
+  fullName: Xunit.ITheoryDataRow
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipType*
+  commentId: Overload:Xunit.ITheoryDataRow.SkipType
+  href: Xunit.ITheoryDataRow.SkipType.html#Xunit_ITheoryDataRow_SkipType
+  name: SkipType
+  nameWithType: ITheoryDataRow.SkipType
+  fullName: Xunit.ITheoryDataRow.SkipType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipUnless*
+  commentId: Overload:Xunit.ITheoryDataRow.SkipUnless
+  href: Xunit.ITheoryDataRow.SkipUnless.html#Xunit_ITheoryDataRow_SkipUnless
+  name: SkipUnless
+  nameWithType: ITheoryDataRow.SkipUnless
+  fullName: Xunit.ITheoryDataRow.SkipUnless
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.SkipWhen*
+  commentId: Overload:Xunit.ITheoryDataRow.SkipWhen
+  href: Xunit.ITheoryDataRow.SkipWhen.html#Xunit_ITheoryDataRow_SkipWhen
+  name: SkipWhen
+  nameWithType: ITheoryDataRow.SkipWhen
+  fullName: Xunit.ITheoryDataRow.SkipWhen
+- uid: v3.3.2.1:Xunit.v3.IDataAttribute.TestDisplayName
+  commentId: P:Xunit.v3.IDataAttribute.TestDisplayName
+  parent: v3.3.2.1:Xunit.v3.IDataAttribute
+  href: Xunit.v3.IDataAttribute.TestDisplayName.html#Xunit_v3_IDataAttribute_TestDisplayName
+  name: TestDisplayName
+  nameWithType: IDataAttribute.TestDisplayName
+  fullName: Xunit.v3.IDataAttribute.TestDisplayName
+- uid: v3.3.2.1:Xunit.v3.IFactAttribute.DisplayName
+  commentId: P:Xunit.v3.IFactAttribute.DisplayName
+  parent: v3.3.2.1:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.DisplayName.html#Xunit_v3_IFactAttribute_DisplayName
+  name: DisplayName
+  nameWithType: IFactAttribute.DisplayName
+  fullName: Xunit.v3.IFactAttribute.DisplayName
+- uid: v3.3.2.1:Xunit.Sdk.TestMethodDisplay
+  commentId: T:Xunit.Sdk.TestMethodDisplay
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.TestMethodDisplay.html
+  name: TestMethodDisplay
+  nameWithType: TestMethodDisplay
+  fullName: Xunit.Sdk.TestMethodDisplay
+- uid: v3.3.2.1:Xunit.Sdk.TestMethodDisplayOptions
+  commentId: T:Xunit.Sdk.TestMethodDisplayOptions
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.TestMethodDisplayOptions.html
+  name: TestMethodDisplayOptions
+  nameWithType: TestMethodDisplayOptions
+  fullName: Xunit.Sdk.TestMethodDisplayOptions
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.TestDisplayName*
+  commentId: Overload:Xunit.ITheoryDataRow.TestDisplayName
+  href: Xunit.ITheoryDataRow.TestDisplayName.html#Xunit_ITheoryDataRow_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITheoryDataRow.TestDisplayName
+  fullName: Xunit.ITheoryDataRow.TestDisplayName
+- uid: v3.3.2.1:Xunit.v3.IDataAttribute
+  commentId: T:Xunit.v3.IDataAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IDataAttribute.html
+  name: IDataAttribute
+  nameWithType: IDataAttribute
+  fullName: Xunit.v3.IDataAttribute
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.1:Xunit.v3.ITheoryAttribute
+  commentId: T:Xunit.v3.ITheoryAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITheoryAttribute.html
+  name: ITheoryAttribute
+  nameWithType: ITheoryAttribute
+  fullName: Xunit.v3.ITheoryAttribute
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Timeout*
+  commentId: Overload:Xunit.ITheoryDataRow.Timeout
+  href: Xunit.ITheoryDataRow.Timeout.html#Xunit_ITheoryDataRow_Timeout
+  name: Timeout
+  nameWithType: ITheoryDataRow.Timeout
+  fullName: Xunit.ITheoryDataRow.Timeout
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.Traits*
+  commentId: Overload:Xunit.ITheoryDataRow.Traits
+  href: Xunit.ITheoryDataRow.Traits.html#Xunit_ITheoryDataRow_Traits
+  name: Traits
+  nameWithType: ITheoryDataRow.Traits
+  fullName: Xunit.ITheoryDataRow.Traits
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, HashSet<string>>
+  nameWithType: Dictionary<string, HashSet<string>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.HashSet<string>>
+  nameWithType.vb: Dictionary(Of String, HashSet(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.HashSet(Of String))
+  name.vb: Dictionary(Of String, HashSet(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.1:Xunit.ITheoryDataRow.GetData*
+  commentId: Overload:Xunit.ITheoryDataRow.GetData
+  href: Xunit.ITheoryDataRow.GetData.html#Xunit_ITheoryDataRow_GetData
+  name: GetData
+  nameWithType: ITheoryDataRow.GetData
+  fullName: Xunit.ITheoryDataRow.GetData
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+memberLayout: SeparatePages

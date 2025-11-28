@@ -1,0 +1,1943 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  commentId: T:Xunit.v3.XunitTestFrameworkDiscoverer
+  id: XunitTestFrameworkDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  children:
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor(Xunit.v3.IXunitTestAssembly,Xunit.v3.IXunitTestCollectionFactory)
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass(System.Type)
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod(Xunit.v3.IXunitTestMethod,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer(System.Type)
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+  - v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+  langs:
+  - csharp
+  - vb
+  name: XunitTestFrameworkDiscoverer
+  nameWithType: XunitTestFrameworkDiscoverer
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: XunitTestFrameworkDiscoverer
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    The implementation of <xref href="v3.3.2.1:Xunit.v3.ITestFrameworkDiscoverer" data-throw-if-not-resolved="false"></xref> that supports discovery
+
+    of unit tests linked against xunit.v3.core.dll.
+  example: []
+  syntax:
+    content: 'public class XunitTestFrameworkDiscoverer : TestFrameworkDiscoverer<IXunitTestClass>, ITestFrameworkDiscoverer, IAsyncDisposable'
+    content.vb: Public Class XunitTestFrameworkDiscoverer Inherits TestFrameworkDiscoverer(Of IXunitTestClass) Implements ITestFrameworkDiscoverer, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  implements:
+  - v3.3.2.1:Xunit.v3.ITestFrameworkDiscoverer
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposalTracker
+  - v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposeAsync
+  - v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.IsValidTestClass(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor(Xunit.v3.IXunitTestAssembly,Xunit.v3.IXunitTestCollectionFactory)
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor(Xunit.v3.IXunitTestAssembly,Xunit.v3.IXunitTestCollectionFactory)
+  id: '#ctor(Xunit.v3.IXunitTestAssembly,Xunit.v3.IXunitTestCollectionFactory)'
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: XunitTestFrameworkDiscoverer(IXunitTestAssembly, IXunitTestCollectionFactory?)
+  nameWithType: XunitTestFrameworkDiscoverer.XunitTestFrameworkDiscoverer(IXunitTestAssembly, IXunitTestCollectionFactory?)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.XunitTestFrameworkDiscoverer(Xunit.v3.IXunitTestAssembly, Xunit.v3.IXunitTestCollectionFactory?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public XunitTestFrameworkDiscoverer(IXunitTestAssembly testAssembly, IXunitTestCollectionFactory? collectionFactory = null)
+    parameters:
+    - id: testAssembly
+      type: Xunit.v3.IXunitTestAssembly
+      description: The test assembly
+    - id: collectionFactory
+      type: Xunit.v3.IXunitTestCollectionFactory
+      description: The test collection factory used to look up test collections.
+    content.vb: Public Sub New(testAssembly As IXunitTestAssembly, collectionFactory As IXunitTestCollectionFactory = Nothing)
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor*
+  nameWithType.vb: XunitTestFrameworkDiscoverer.New(IXunitTestAssembly, IXunitTestCollectionFactory)
+  fullName.vb: Xunit.v3.XunitTestFrameworkDiscoverer.New(Xunit.v3.IXunitTestAssembly, Xunit.v3.IXunitTestCollectionFactory)
+  name.vb: New(IXunitTestAssembly, IXunitTestCollectionFactory)
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  commentId: P:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  id: DiscovererTypeCache
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: DiscovererTypeCache
+  nameWithType: XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: DiscovererTypeCache
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 45
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the mapping dictionary of fact attribute type to discoverer type. The key
+
+    is a type that implements <xref href="v3.3.2.1:Xunit.v3.IFactAttribute" data-throw-if-not-resolved="false"></xref>; the value is the
+
+    discoverer type, if known; <code>null</code> if not.
+  example: []
+  syntax:
+    content: protected Dictionary<Type, Type?> DiscovererTypeCache { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.Type,System.Type}
+    content.vb: Protected ReadOnly Property DiscovererTypeCache As Dictionary(Of Type, Type)
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache*
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+  commentId: P:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+  id: TestAssembly
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: XunitTestFrameworkDiscoverer.TestAssembly
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 48
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public IXunitTestAssembly TestAssembly { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestAssembly
+    content.vb: Public ReadOnly Property TestAssembly As IXunitTestAssembly
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly*
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+  commentId: P:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+  id: TestCollectionFactory
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TestCollectionFactory
+  nameWithType: XunitTestFrameworkDiscoverer.TestCollectionFactory
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TestCollectionFactory
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 53
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test collection factory that makes test collections.
+  example: []
+  syntax:
+    content: public IXunitTestCollectionFactory TestCollectionFactory { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestCollectionFactory
+    content.vb: Public Property TestCollectionFactory As IXunitTestCollectionFactory
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory*
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass(System.Type)
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass(System.Type)
+  id: CreateTestClass(System.Type)
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: CreateTestClass(Type)
+  nameWithType: XunitTestFrameworkDiscoverer.CreateTestClass(Type)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: CreateTestClass
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 56
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Implement this method to create a test class for the given CLR type.
+  example: []
+  syntax:
+    content: protected override ValueTask<IXunitTestClass> CreateTestClass(Type @class)
+    parameters:
+    - id: class
+      type: System.Type
+      description: The CLR type.
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.IXunitTestClass}
+      description: The test class.
+    content.vb: Protected Overrides Function CreateTestClass([class] As Type) As ValueTask(Of IXunitTestClass)
+  overridden: Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.CreateTestClass(System.Type)
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass*
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  id: Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[]?, CancellationToken?)
+  nameWithType: XunitTestFrameworkDiscoverer.Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[]?, CancellationToken?)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.Find(System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type[]?, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 60
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Finds tests inside an assembly. Calls the callback for each discovered test.
+  example: []
+  syntax:
+    content: public override ValueTask Find(Func<ITestCase, ValueTask<bool>> callback, ITestFrameworkDiscoveryOptions discoveryOptions, Type[]? types = null, CancellationToken? cancellationToken = null)
+    parameters:
+    - id: callback
+      type: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+      description: >-
+        Called for each discovered test. Return <code>true</code> to continue test
+            discovery; return <code>false</code> to cancel test discovery.
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options used by the test framework during discovery.
+    - id: types
+      type: System.Type[]
+      description: >-
+        When passed a non-<code>null</code> collection, only returns tests found
+            from one of the provided types; when passed a <code>null</code> collection, discovers all
+            tests in the assembly.
+    - id: cancellationToken
+      type: System.Nullable{System.Threading.CancellationToken}
+      description: >-
+        The optional cancellation token which can be used to cancel the test
+            discovery process.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overrides Function Find(callback As Func(Of ITestCase, ValueTask(Of Boolean)), discoveryOptions As ITestFrameworkDiscoveryOptions, types As Type() = Nothing, cancellationToken As CancellationToken? = Nothing) As ValueTask
+  overridden: Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.Find*
+  nameWithType.vb: XunitTestFrameworkDiscoverer.Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  fullName.vb: Xunit.v3.XunitTestFrameworkDiscoverer.Find(System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)), Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type(), System.Threading.CancellationToken?)
+  name.vb: Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod(Xunit.v3.IXunitTestMethod,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod(Xunit.v3.IXunitTestMethod,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  id: FindTestsForMethod(Xunit.v3.IXunitTestMethod,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: FindTestsForMethod(IXunitTestMethod, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  nameWithType: XunitTestFrameworkDiscoverer.FindTestsForMethod(IXunitTestMethod, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod(Xunit.v3.IXunitTestMethod, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: FindTestsForMethod
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 82
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Finds the tests on a test method.
+  example: []
+  syntax:
+    content: protected virtual ValueTask<bool> FindTestsForMethod(IXunitTestMethod testMethod, ITestFrameworkDiscoveryOptions discoveryOptions, Func<ITestCase, ValueTask<bool>> discoveryCallback)
+    parameters:
+    - id: testMethod
+      type: Xunit.v3.IXunitTestMethod
+      description: The test method.
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options used by the test framework during discovery.
+    - id: discoveryCallback
+      type: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+      description: The callback that is called for each discovered test case.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Boolean}
+      description: Return <code>true</code> to continue test discovery, <code>false</code>, otherwise.
+    content.vb: Protected Overridable Function FindTestsForMethod(testMethod As IXunitTestMethod, discoveryOptions As ITestFrameworkDiscoveryOptions, discoveryCallback As Func(Of ITestCase, ValueTask(Of Boolean))) As ValueTask(Of Boolean)
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod*
+  nameWithType.vb: XunitTestFrameworkDiscoverer.FindTestsForMethod(IXunitTestMethod, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod(Xunit.v3.IXunitTestMethod, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: FindTestsForMethod(IXunitTestMethod, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  id: FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  nameWithType: XunitTestFrameworkDiscoverer.FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType(Xunit.v3.IXunitTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: FindTestsForType
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 132
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Core implementation to discover unit tests in a given test class.
+  example: []
+  syntax:
+    content: protected override ValueTask<bool> FindTestsForType(IXunitTestClass testClass, ITestFrameworkDiscoveryOptions discoveryOptions, Func<ITestCase, ValueTask<bool>> discoveryCallback)
+    parameters:
+    - id: testClass
+      type: Xunit.v3.IXunitTestClass
+      description: The test class.
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options used by the test framework during discovery.
+    - id: discoveryCallback
+      type: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+      description: >-
+        The callback that is called for each discovered test case.
+            The return value of the callback indicates the same thing as the return value of this function:
+            return <code>true</code> to continue discovery, or <code>false</code> to halt it.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Boolean}
+      description: Returns <code>true</code> if discovery should continue; <code>false</code> otherwise.
+    content.vb: Protected Overrides Function FindTestsForType(testClass As IXunitTestClass, discoveryOptions As ITestFrameworkDiscoveryOptions, discoveryCallback As Func(Of ITestCase, ValueTask(Of Boolean))) As ValueTask(Of Boolean)
+  overridden: Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType*
+  nameWithType.vb: XunitTestFrameworkDiscoverer.FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType(Xunit.v3.IXunitTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer(System.Type)
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer(System.Type)
+  id: GetDiscoverer(System.Type)
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: GetDiscoverer(Type)
+  nameWithType: XunitTestFrameworkDiscoverer.GetDiscoverer(Type)
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: GetDiscoverer
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 177
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the test case discover instance for the given discoverer type. The instances are cached
+
+    and reused, since they should not be stateful.
+  example: []
+  syntax:
+    content: protected static IXunitTestCaseDiscoverer? GetDiscoverer(Type discovererType)
+    parameters:
+    - id: discovererType
+      type: System.Type
+      description: The discoverer type.
+    return:
+      type: Xunit.v3.IXunitTestCaseDiscoverer
+      description: >-
+        Returns the test case discoverer instance, if known; may return <code>null</code>
+            when an error occurs (which is logged to the diagnostic message sink).
+    content.vb: Protected Shared Function GetDiscoverer(discovererType As Type) As IXunitTestCaseDiscoverer
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer*
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes
+  commentId: M:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes
+  id: GetExportedTypes
+  parent: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: GetExportedTypes()
+  nameWithType: XunitTestFrameworkDiscoverer.GetExportedTypes()
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: GetExportedTypes
+    path: ../src/xunit.v3.core/Framework/XunitTestFrameworkDiscoverer.cs
+    startLine: 193
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Override this to provide a list of the exported types in the assembly.
+  example: []
+  syntax:
+    content: protected override Type[] GetExportedTypes()
+    return:
+      type: System.Type[]
+    content.vb: Protected Overrides Function GetExportedTypes() As Type()
+  overridden: Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.GetExportedTypes
+  overload: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes*
+references:
+- uid: v3.3.2.1:Xunit.v3.ITestFrameworkDiscoverer
+  commentId: T:Xunit.v3.ITestFrameworkDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.ITestFrameworkDiscoverer.html
+  name: ITestFrameworkDiscoverer
+  nameWithType: ITestFrameworkDiscoverer
+  fullName: Xunit.v3.ITestFrameworkDiscoverer
+- uid: v3.3.2.1:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  commentId: T:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  parent: v3.3.2.1:Xunit.v3
+  definition: Xunit.v3.TestFrameworkDiscoverer`1
+  href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  name: TestFrameworkDiscoverer<IXunitTestClass>
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass)
+  name.vb: TestFrameworkDiscoverer(Of IXunitTestClass)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1
+    name: TestFrameworkDiscoverer
+    href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  - name: <
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1
+    name: TestFrameworkDiscoverer
+    href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposalTracker
+  commentId: P:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposalTracker
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.DisposalTracker
+  href: Xunit.v3.TestFrameworkDiscoverer-1.DisposalTracker.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposalTracker
+  name: DisposalTracker
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.DisposalTracker
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.DisposalTracker
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).DisposalTracker
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).DisposalTracker
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposeAsync
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposeAsync
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.DisposeAsync
+  href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.DisposeAsync()
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.DisposeAsync()
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).DisposeAsync()
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.IsValidTestClass(System.Type)
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.IsValidTestClass(System.Type)
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.IsValidTestClass(System.Type)
+  href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  name: IsValidTestClass(Type)
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.IsValidTestClass(Type)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.IsValidTestClass(System.Type)
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).IsValidTestClass(Type)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).IsValidTestClass(System.Type)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.IsValidTestClass(System.Type)
+    name: IsValidTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.IsValidTestClass(System.Type)
+    name: IsValidTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1
+  commentId: T:Xunit.v3.TestFrameworkDiscoverer`1
+  href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  name: TestFrameworkDiscoverer<TTestClass>
+  nameWithType: TestFrameworkDiscoverer<TTestClass>
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass)
+  name.vb: TestFrameworkDiscoverer(Of TTestClass)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1
+    name: TestFrameworkDiscoverer
+    href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  - name: <
+  - name: TTestClass
+  - name: '>'
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1
+    name: TestFrameworkDiscoverer
+    href: Xunit.v3.TestFrameworkDiscoverer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestClass
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.DisposalTracker
+  commentId: P:Xunit.v3.TestFrameworkDiscoverer`1.DisposalTracker
+  href: Xunit.v3.TestFrameworkDiscoverer-1.DisposalTracker.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposalTracker
+  name: DisposalTracker
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.DisposalTracker
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.DisposalTracker
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).DisposalTracker
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).DisposalTracker
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.DisposeAsync
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.DisposeAsync
+  href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.DisposeAsync()
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.DisposeAsync()
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).DisposeAsync()
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).DisposeAsync()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkDiscoverer-1.DisposeAsync.html#Xunit_v3_TestFrameworkDiscoverer_1_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.IsValidTestClass(System.Type)
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.IsValidTestClass(System.Type)
+  isExternal: true
+  href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  name: IsValidTestClass(Type)
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.IsValidTestClass(Type)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.IsValidTestClass(System.Type)
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).IsValidTestClass(Type)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).IsValidTestClass(System.Type)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.IsValidTestClass(System.Type)
+    name: IsValidTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.IsValidTestClass(System.Type)
+    name: IsValidTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.IsValidTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_IsValidTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer
+  commentId: T:Xunit.v3.XunitTestFrameworkDiscoverer
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.html
+  name: XunitTestFrameworkDiscoverer
+  nameWithType: XunitTestFrameworkDiscoverer
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.#ctor
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.-ctor.html#Xunit_v3_XunitTestFrameworkDiscoverer__ctor_Xunit_v3_IXunitTestAssembly_Xunit_v3_IXunitTestCollectionFactory_
+  name: XunitTestFrameworkDiscoverer
+  nameWithType: XunitTestFrameworkDiscoverer.XunitTestFrameworkDiscoverer
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.XunitTestFrameworkDiscoverer
+  nameWithType.vb: XunitTestFrameworkDiscoverer.New
+  fullName.vb: Xunit.v3.XunitTestFrameworkDiscoverer.New
+  name.vb: New
+- uid: v3.3.2.1:Xunit.v3.IXunitTestAssembly
+  commentId: T:Xunit.v3.IXunitTestAssembly
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestAssembly.html
+  name: IXunitTestAssembly
+  nameWithType: IXunitTestAssembly
+  fullName: Xunit.v3.IXunitTestAssembly
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCollectionFactory
+  commentId: T:Xunit.v3.IXunitTestCollectionFactory
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestCollectionFactory.html
+  name: IXunitTestCollectionFactory
+  nameWithType: IXunitTestCollectionFactory
+  fullName: Xunit.v3.IXunitTestCollectionFactory
+- uid: v3.3.2.1:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache.html#Xunit_v3_XunitTestFrameworkDiscoverer_DiscovererTypeCache
+  name: DiscovererTypeCache
+  nameWithType: XunitTestFrameworkDiscoverer.DiscovererTypeCache
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.DiscovererTypeCache
+- uid: System.Collections.Generic.Dictionary{System.Type,System.Type}
+  commentId: T:System.Collections.Generic.Dictionary{System.Type,System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Type, Type>
+  nameWithType: Dictionary<Type, Type>
+  fullName: System.Collections.Generic.Dictionary<System.Type, System.Type>
+  nameWithType.vb: Dictionary(Of Type, Type)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Type, System.Type)
+  name.vb: Dictionary(Of Type, Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly.html#Xunit_v3_XunitTestFrameworkDiscoverer_TestAssembly
+  name: TestAssembly
+  nameWithType: XunitTestFrameworkDiscoverer.TestAssembly
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.TestAssembly
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory.html#Xunit_v3_XunitTestFrameworkDiscoverer_TestCollectionFactory
+  name: TestCollectionFactory
+  nameWithType: XunitTestFrameworkDiscoverer.TestCollectionFactory
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.TestCollectionFactory
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.CreateTestClass(System.Type)
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.CreateTestClass(System.Type)
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.CreateTestClass(System.Type)
+  href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  name: CreateTestClass(Type)
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.CreateTestClass(Type)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.CreateTestClass(System.Type)
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).CreateTestClass(Type)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).CreateTestClass(System.Type)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.CreateTestClass(System.Type)
+    name: CreateTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.CreateTestClass(System.Type)
+    name: CreateTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass.html#Xunit_v3_XunitTestFrameworkDiscoverer_CreateTestClass_System_Type_
+  name: CreateTestClass
+  nameWithType: XunitTestFrameworkDiscoverer.CreateTestClass
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.CreateTestClass
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.IXunitTestClass}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.IXunitTestClass}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<IXunitTestClass>
+  nameWithType: ValueTask<IXunitTestClass>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.IXunitTestClass>
+  nameWithType.vb: ValueTask(Of IXunitTestClass)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.IXunitTestClass)
+  name.vb: ValueTask(Of IXunitTestClass)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.CreateTestClass(System.Type)
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.CreateTestClass(System.Type)
+  isExternal: true
+  href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  name: CreateTestClass(Type)
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.CreateTestClass(Type)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.CreateTestClass(System.Type)
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).CreateTestClass(Type)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).CreateTestClass(System.Type)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.CreateTestClass(System.Type)
+    name: CreateTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.CreateTestClass(System.Type)
+    name: CreateTestClass
+    href: Xunit.v3.TestFrameworkDiscoverer-1.CreateTestClass.html#Xunit_v3_TestFrameworkDiscoverer_1_CreateTestClass_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  name: Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[], CancellationToken?)
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[], CancellationToken?)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.Find(System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type[], System.Threading.CancellationToken?)
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).Find(System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)), Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type(), System.Threading.CancellationToken?)
+  name.vb: Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+    name: Find
+    href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+    name: Find
+    href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.Find*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.Find
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.Find.html#Xunit_v3_XunitTestFrameworkDiscoverer_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  name: Find
+  nameWithType: XunitTestFrameworkDiscoverer.Find
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.Find
+- uid: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+  commentId: T:System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ITestCase, ValueTask<bool>>
+  nameWithType: Func<ITestCase, ValueTask<bool>>
+  fullName: System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>
+  nameWithType.vb: Func(Of ITestCase, ValueTask(Of Boolean))
+  fullName.vb: System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean))
+  name.vb: Func(Of ITestCase, ValueTask(Of Boolean))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3.3.2.1:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  isExternal: true
+  href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  name: Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[], CancellationToken?)
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[], CancellationToken?)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.Find(System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type[], System.Threading.CancellationToken?)
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).Find(System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)), Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type(), System.Threading.CancellationToken?)
+  name.vb: Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+    name: Find
+    href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+    name: Find
+    href: Xunit.v3.TestFrameworkDiscoverer-1.Find.html#Xunit_v3_TestFrameworkDiscoverer_1_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod.html#Xunit_v3_XunitTestFrameworkDiscoverer_FindTestsForMethod_Xunit_v3_IXunitTestMethod_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: FindTestsForMethod
+  nameWithType: XunitTestFrameworkDiscoverer.FindTestsForMethod
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForMethod
+- uid: v3.3.2.1:Xunit.v3.IXunitTestMethod
+  commentId: T:Xunit.v3.IXunitTestMethod
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestMethod.html
+  name: IXunitTestMethod
+  nameWithType: IXunitTestMethod
+  fullName: Xunit.v3.IXunitTestMethod
+- uid: System.Threading.Tasks.ValueTask{System.Boolean}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<bool>
+  nameWithType: ValueTask<bool>
+  fullName: System.Threading.Tasks.ValueTask<bool>
+  nameWithType.vb: ValueTask(Of Boolean)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Boolean)
+  name.vb: ValueTask(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.FindTestsForType(`0,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.FindTestsForType(Xunit.v3.IXunitTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>)
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).FindTestsForType(Xunit.v3.IXunitTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: FindTestsForType(IXunitTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: FindTestsForType
+    href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.FindTestsForType(Xunit.v3.IXunitTestClass,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: FindTestsForType
+    href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+    name: IXunitTestClass
+    href: Xunit.v3.IXunitTestClass.html
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType.html#Xunit_v3_XunitTestFrameworkDiscoverer_FindTestsForType_Xunit_v3_IXunitTestClass_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: FindTestsForType
+  nameWithType: XunitTestFrameworkDiscoverer.FindTestsForType
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.FindTestsForType
+- uid: v3.3.2.1:Xunit.v3.IXunitTestClass
+  commentId: T:Xunit.v3.IXunitTestClass
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestClass.html
+  name: IXunitTestClass
+  nameWithType: IXunitTestClass
+  fullName: Xunit.v3.IXunitTestClass
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.FindTestsForType(`0,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.FindTestsForType(`0,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+  isExternal: true
+  href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  name: FindTestsForType(TTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.FindTestsForType(TTestClass, ITestFrameworkDiscoveryOptions, Func<ITestCase, ValueTask<bool>>)
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.FindTestsForType(TTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>)
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).FindTestsForType(TTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).FindTestsForType(TTestClass, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)))
+  name.vb: FindTestsForType(TTestClass, ITestFrameworkDiscoveryOptions, Func(Of ITestCase, ValueTask(Of Boolean)))
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.FindTestsForType(`0,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: FindTestsForType
+    href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - name: TTestClass
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.FindTestsForType(`0,Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}})
+    name: FindTestsForType
+    href: Xunit.v3.TestFrameworkDiscoverer-1.FindTestsForType.html#Xunit_v3_TestFrameworkDiscoverer_1_FindTestsForType__0_Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___
+  - name: (
+  - name: TTestClass
+  - name: ','
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+    name: ITestFrameworkDiscoveryOptions
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.1:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer.html#Xunit_v3_XunitTestFrameworkDiscoverer_GetDiscoverer_System_Type_
+  name: GetDiscoverer
+  nameWithType: XunitTestFrameworkDiscoverer.GetDiscoverer
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.GetDiscoverer
+- uid: v3.3.2.1:Xunit.v3.IXunitTestCaseDiscoverer
+  commentId: T:Xunit.v3.IXunitTestCaseDiscoverer
+  parent: v3.3.2.1:Xunit.v3
+  href: Xunit.v3.IXunitTestCaseDiscoverer.html
+  name: IXunitTestCaseDiscoverer
+  nameWithType: IXunitTestCaseDiscoverer
+  fullName: Xunit.v3.IXunitTestCaseDiscoverer
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.GetExportedTypes
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.GetExportedTypes
+  parent: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}
+  definition: Xunit.v3.TestFrameworkDiscoverer`1.GetExportedTypes
+  href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  name: GetExportedTypes()
+  nameWithType: TestFrameworkDiscoverer<IXunitTestClass>.GetExportedTypes()
+  fullName: Xunit.v3.TestFrameworkDiscoverer<Xunit.v3.IXunitTestClass>.GetExportedTypes()
+  nameWithType.vb: TestFrameworkDiscoverer(Of IXunitTestClass).GetExportedTypes()
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of Xunit.v3.IXunitTestClass).GetExportedTypes()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.GetExportedTypes
+    name: GetExportedTypes
+    href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer{Xunit.v3.IXunitTestClass}.GetExportedTypes
+    name: GetExportedTypes
+    href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  - name: (
+  - name: )
+- uid: v3.3.2.1:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes*
+  commentId: Overload:Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes
+  href: Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes.html#Xunit_v3_XunitTestFrameworkDiscoverer_GetExportedTypes
+  name: GetExportedTypes
+  nameWithType: XunitTestFrameworkDiscoverer.GetExportedTypes
+  fullName: Xunit.v3.XunitTestFrameworkDiscoverer.GetExportedTypes
+- uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.GetExportedTypes
+  commentId: M:Xunit.v3.TestFrameworkDiscoverer`1.GetExportedTypes
+  href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  name: GetExportedTypes()
+  nameWithType: TestFrameworkDiscoverer<TTestClass>.GetExportedTypes()
+  fullName: Xunit.v3.TestFrameworkDiscoverer<TTestClass>.GetExportedTypes()
+  nameWithType.vb: TestFrameworkDiscoverer(Of TTestClass).GetExportedTypes()
+  fullName.vb: Xunit.v3.TestFrameworkDiscoverer(Of TTestClass).GetExportedTypes()
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.GetExportedTypes
+    name: GetExportedTypes
+    href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.v3.TestFrameworkDiscoverer`1.GetExportedTypes
+    name: GetExportedTypes
+    href: Xunit.v3.TestFrameworkDiscoverer-1.GetExportedTypes.html#Xunit_v3_TestFrameworkDiscoverer_1_GetExportedTypes
+  - name: (
+  - name: )
+memberLayout: SeparatePages

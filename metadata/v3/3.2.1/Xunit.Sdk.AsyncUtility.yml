@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility
+  commentId: T:Xunit.Sdk.AsyncUtility
+  id: AsyncUtility
+  parent: v3.3.2.1:Xunit.Sdk
+  children:
+  - v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  - v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsyncVoid(System.Reflection.MethodInfo)
+  - v3.3.2.1:Xunit.Sdk.AsyncUtility.TryConvertToValueTask(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: AsyncUtility
+  nameWithType: AsyncUtility
+  fullName: Xunit.Sdk.AsyncUtility
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/AsyncUtility.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: AsyncUtility
+    path: ../src/xunit.v3.common/Utility/AsyncUtility.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Utility class for dealing with asynchronous operations.
+  example: []
+  syntax:
+    content: public static class AsyncUtility
+    content.vb: Public Module AsyncUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  commentId: M:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  id: IsAsync(System.Reflection.MethodInfo)
+  parent: v3.3.2.1:Xunit.Sdk.AsyncUtility
+  langs:
+  - csharp
+  - vb
+  name: IsAsync(MethodInfo)
+  nameWithType: AsyncUtility.IsAsync(MethodInfo)
+  fullName: Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/AsyncUtility.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IsAsync
+    path: ../src/xunit.v3.common/Utility/AsyncUtility.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Determines if the given method is async, as matters to xUnit.net. This means it either (a) returns
+
+    a <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> or <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref>; or, (b) it is an F# function which was declared as
+
+    async. Note that this is not the same thing as an "awaitable" method, since xUnit.net does not
+
+    recreate the compiler's await machinery at runtime.
+  example: []
+  syntax:
+    content: public static bool IsAsync(MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to test
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the method is async; returns <code>false</code> otherwise.
+    content.vb: Public Shared Function IsAsync(method As MethodInfo) As Boolean
+  overload: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync*
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsyncVoid(System.Reflection.MethodInfo)
+  commentId: M:Xunit.Sdk.AsyncUtility.IsAsyncVoid(System.Reflection.MethodInfo)
+  id: IsAsyncVoid(System.Reflection.MethodInfo)
+  parent: v3.3.2.1:Xunit.Sdk.AsyncUtility
+  langs:
+  - csharp
+  - vb
+  name: IsAsyncVoid(MethodInfo)
+  nameWithType: AsyncUtility.IsAsyncVoid(MethodInfo)
+  fullName: Xunit.Sdk.AsyncUtility.IsAsyncVoid(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/AsyncUtility.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: IsAsyncVoid
+    path: ../src/xunit.v3.common/Utility/AsyncUtility.cs
+    startLine: 48
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Determines if the given method is async void by looking for the <xref href="System.Runtime.CompilerServices.AsyncStateMachineAttribute" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="System.Void" data-throw-if-not-resolved="false"></xref> return type on the method definition.
+  example: []
+  syntax:
+    content: public static bool IsAsyncVoid(MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to test
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the method is async void; returns <code>false</code> otherwise.
+    content.vb: Public Shared Function IsAsyncVoid(method As MethodInfo) As Boolean
+  overload: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsyncVoid*
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.TryConvertToValueTask(System.Object)
+  commentId: M:Xunit.Sdk.AsyncUtility.TryConvertToValueTask(System.Object)
+  id: TryConvertToValueTask(System.Object)
+  parent: v3.3.2.1:Xunit.Sdk.AsyncUtility
+  langs:
+  - csharp
+  - vb
+  name: TryConvertToValueTask(object?)
+  nameWithType: AsyncUtility.TryConvertToValueTask(object?)
+  fullName: Xunit.Sdk.AsyncUtility.TryConvertToValueTask(object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Utility/AsyncUtility.cs
+      branch: main
+      repo: https://github.com/xunit/xunit
+    id: TryConvertToValueTask
+    path: ../src/xunit.v3.common/Utility/AsyncUtility.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Given an object, will attempt to convert instances of <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> or
+
+    <xref href="Microsoft.FSharp.Control.FSharpAsync%601" data-throw-if-not-resolved="false"></xref> into <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref>
+
+    as appropriate. Will return <code>null</code> if the object is not a task of any supported type.
+
+    Note that this list of supported tasks is purposefully identical to the list used
+
+    by <xref href="v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ValueTask? TryConvertToValueTask(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to convert
+    return:
+      type: System.Nullable{System.Threading.Tasks.ValueTask}
+      description: >-
+        Returns a <xref href="System.Threading.Tasks.ValueTask" data-throw-if-not-resolved="false"></xref> for the given object, if it's compatible;
+            returns <code>null</code> otherwise.
+    content.vb: Public Shared Function TryConvertToValueTask(obj As Object) As ValueTask?
+  overload: v3.3.2.1:Xunit.Sdk.AsyncUtility.TryConvertToValueTask*
+  nameWithType.vb: AsyncUtility.TryConvertToValueTask(Object)
+  fullName.vb: Xunit.Sdk.AsyncUtility.TryConvertToValueTask(Object)
+  name.vb: TryConvertToValueTask(Object)
+references:
+- uid: v3.3.2.1:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.1:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.1:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync*
+  commentId: Overload:Xunit.Sdk.AsyncUtility.IsAsync
+  href: Xunit.Sdk.AsyncUtility.IsAsync.html#Xunit_Sdk_AsyncUtility_IsAsync_System_Reflection_MethodInfo_
+  name: IsAsync
+  nameWithType: AsyncUtility.IsAsync
+  fullName: Xunit.Sdk.AsyncUtility.IsAsync
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Runtime.CompilerServices.AsyncStateMachineAttribute
+  commentId: T:System.Runtime.CompilerServices.AsyncStateMachineAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.asyncstatemachineattribute
+  name: AsyncStateMachineAttribute
+  nameWithType: AsyncStateMachineAttribute
+  fullName: System.Runtime.CompilerServices.AsyncStateMachineAttribute
+- uid: System.Void
+  commentId: T:System.Void
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void
+  nameWithType: void
+  fullName: void
+  nameWithType.vb: Void
+  fullName.vb: Void
+  name.vb: Void
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsyncVoid*
+  commentId: Overload:Xunit.Sdk.AsyncUtility.IsAsyncVoid
+  href: Xunit.Sdk.AsyncUtility.IsAsyncVoid.html#Xunit_Sdk_AsyncUtility_IsAsyncVoid_System_Reflection_MethodInfo_
+  name: IsAsyncVoid
+  nameWithType: AsyncUtility.IsAsyncVoid
+  fullName: Xunit.Sdk.AsyncUtility.IsAsyncVoid
+- uid: Microsoft.FSharp.Control.FSharpAsync`1
+  commentId: T:Microsoft.FSharp.Control.FSharpAsync`1
+  isExternal: true
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  commentId: M:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  isExternal: true
+  href: Xunit.Sdk.AsyncUtility.IsAsync.html#Xunit_Sdk_AsyncUtility_IsAsync_System_Reflection_MethodInfo_
+  name: IsAsync(MethodInfo)
+  nameWithType: AsyncUtility.IsAsync(MethodInfo)
+  fullName: Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+  spec.csharp:
+  - uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+    name: IsAsync
+    href: Xunit.Sdk.AsyncUtility.IsAsync.html#Xunit_Sdk_AsyncUtility_IsAsync_System_Reflection_MethodInfo_
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.IsAsync(System.Reflection.MethodInfo)
+    name: IsAsync
+    href: Xunit.Sdk.AsyncUtility.IsAsync.html#Xunit_Sdk_AsyncUtility_IsAsync_System_Reflection_MethodInfo_
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+- uid: v3.3.2.1:Xunit.Sdk.AsyncUtility.TryConvertToValueTask*
+  commentId: Overload:Xunit.Sdk.AsyncUtility.TryConvertToValueTask
+  href: Xunit.Sdk.AsyncUtility.TryConvertToValueTask.html#Xunit_Sdk_AsyncUtility_TryConvertToValueTask_System_Object_
+  name: TryConvertToValueTask
+  nameWithType: AsyncUtility.TryConvertToValueTask
+  fullName: Xunit.Sdk.AsyncUtility.TryConvertToValueTask
+- uid: System.Nullable{System.Threading.Tasks.ValueTask}
+  commentId: T:System.Nullable{System.Threading.Tasks.ValueTask}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask?
+  nameWithType: ValueTask?
+  fullName: System.Threading.Tasks.ValueTask?
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+memberLayout: SeparatePages
