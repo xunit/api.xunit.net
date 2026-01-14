@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.v3.ITestCaseOrderer
+  commentId: T:Xunit.v3.ITestCaseOrderer
+  id: ITestCaseOrderer
+  parent: v3.3.2.2:Xunit.v3
+  children:
+  - v3.3.2.2:Xunit.v3.ITestCaseOrderer.OrderTestCases``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  langs:
+  - csharp
+  - vb
+  name: ITestCaseOrderer
+  nameWithType: ITestCaseOrderer
+  fullName: Xunit.v3.ITestCaseOrderer
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestCaseOrderer.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ITestCaseOrderer
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestCaseOrderer.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    A class implements this interface to participate in ordering tests for the test runner.
+
+    Test case orderers are applied using an implementation of <xref href="v3.3.2.2:Xunit.v3.ITestCaseOrdererAttribute" data-throw-if-not-resolved="false"></xref>
+
+    (most commonly <xref href="v3.3.2.2:Xunit.TestCaseOrdererAttribute" data-throw-if-not-resolved="false"></xref>), which can be applied at the assembly,
+
+    test collection, and test class level.
+  example: []
+  syntax:
+    content: public interface ITestCaseOrderer
+    content.vb: Public Interface ITestCaseOrderer
+- uid: v3.3.2.2:Xunit.v3.ITestCaseOrderer.OrderTestCases``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  commentId: M:Xunit.v3.ITestCaseOrderer.OrderTestCases``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  id: OrderTestCases``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  parent: v3.3.2.2:Xunit.v3.ITestCaseOrderer
+  langs:
+  - csharp
+  - vb
+  name: OrderTestCases<TTestCase>(IReadOnlyCollection<TTestCase>)
+  nameWithType: ITestCaseOrderer.OrderTestCases<TTestCase>(IReadOnlyCollection<TTestCase>)
+  fullName: Xunit.v3.ITestCaseOrderer.OrderTestCases<TTestCase>(System.Collections.Generic.IReadOnlyCollection<TTestCase>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestCaseOrderer.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: OrderTestCases
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestCaseOrderer.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Orders test cases for execution.
+  example: []
+  syntax:
+    content: 'IReadOnlyCollection<TTestCase> OrderTestCases<TTestCase>(IReadOnlyCollection<TTestCase> testCases) where TTestCase : notnull, ITestCase'
+    parameters:
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+      description: The test cases to be ordered.
+    typeParameters:
+    - id: TTestCase
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+      description: The test cases in the order to be run.
+    content.vb: Function OrderTestCases(Of TTestCase As ITestCase)(testCases As IReadOnlyCollection(Of TTestCase)) As IReadOnlyCollection(Of TTestCase)
+  overload: v3.3.2.2:Xunit.v3.ITestCaseOrderer.OrderTestCases*
+  nameWithType.vb: ITestCaseOrderer.OrderTestCases(Of TTestCase)(IReadOnlyCollection(Of TTestCase))
+  fullName.vb: Xunit.v3.ITestCaseOrderer.OrderTestCases(Of TTestCase)(System.Collections.Generic.IReadOnlyCollection(Of TTestCase))
+  name.vb: OrderTestCases(Of TTestCase)(IReadOnlyCollection(Of TTestCase))
+references:
+- uid: v3.3.2.2:Xunit.v3.ITestCaseOrdererAttribute
+  commentId: T:Xunit.v3.ITestCaseOrdererAttribute
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.ITestCaseOrdererAttribute.html
+  name: ITestCaseOrdererAttribute
+  nameWithType: ITestCaseOrdererAttribute
+  fullName: Xunit.v3.ITestCaseOrdererAttribute
+- uid: v3.3.2.2:Xunit.TestCaseOrdererAttribute
+  commentId: T:Xunit.TestCaseOrdererAttribute
+  href: Xunit.TestCaseOrdererAttribute.html
+  name: TestCaseOrdererAttribute
+  nameWithType: TestCaseOrdererAttribute
+  fullName: Xunit.TestCaseOrdererAttribute
+- uid: v3.3.2.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.3.2.2:Xunit.v3.ITestCaseOrderer.OrderTestCases*
+  commentId: Overload:Xunit.v3.ITestCaseOrderer.OrderTestCases
+  href: Xunit.v3.ITestCaseOrderer.OrderTestCases.html#Xunit_v3_ITestCaseOrderer_OrderTestCases__1_System_Collections_Generic_IReadOnlyCollection___0__
+  name: OrderTestCases
+  nameWithType: ITestCaseOrderer.OrderTestCases
+  fullName: Xunit.v3.ITestCaseOrderer.OrderTestCases
+- uid: System.Collections.Generic.IReadOnlyCollection{{TTestCase}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TTestCase>
+  nameWithType: IReadOnlyCollection<TTestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<TTestCase>
+  nameWithType.vb: IReadOnlyCollection(Of TTestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of TTestCase)
+  name.vb: IReadOnlyCollection(Of TTestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

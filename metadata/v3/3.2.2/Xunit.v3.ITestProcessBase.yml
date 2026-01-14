@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase
+  commentId: T:Xunit.v3.ITestProcessBase
+  id: ITestProcessBase
+  parent: v3.3.2.2:Xunit.v3
+  children:
+  - v3.3.2.2:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  - v3.3.2.2:Xunit.v3.ITestProcessBase.HasExited
+  - v3.3.2.2:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ITestProcessBase
+  nameWithType: ITestProcessBase
+  fullName: Xunit.v3.ITestProcessBase
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ITestProcessBase
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: >-
+    Represents a v3 test process that has been launched. When the process is disposed,
+
+    it should be allowed to clean up and exit within an appropriate amount of time,
+
+    and then killed if it will not stop cleanly.
+  remarks: >-
+    The use of the word "process" here is an abstraction across the default implementation
+
+    which does launch v3 tests as a separate local operating-system process.
+  example: []
+  syntax:
+    content: 'public interface ITestProcessBase : IDisposable'
+    content.vb: Public Interface ITestProcessBase Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - v3.3.2.2:Xunit.v3.ITestProcessBase.Xunit.v3.TestProcessExtensions.TryGetExitCode
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.HasExited
+  commentId: P:Xunit.v3.ITestProcessBase.HasExited
+  id: HasExited
+  parent: v3.3.2.2:Xunit.v3.ITestProcessBase
+  langs:
+  - csharp
+  - vb
+  name: HasExited
+  nameWithType: ITestProcessBase.HasExited
+  fullName: Xunit.v3.ITestProcessBase.HasExited
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: HasExited
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Gets a flag to indicate whether the test process has exited or not yet.
+  example: []
+  syntax:
+    content: bool HasExited { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasExited As Boolean
+  overload: v3.3.2.2:Xunit.v3.ITestProcessBase.HasExited*
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  commentId: M:Xunit.v3.ITestProcessBase.Cancel(System.Boolean)
+  id: Cancel(System.Boolean)
+  parent: v3.3.2.2:Xunit.v3.ITestProcessBase
+  langs:
+  - csharp
+  - vb
+  name: Cancel(bool)
+  nameWithType: ITestProcessBase.Cancel(bool)
+  fullName: Xunit.v3.ITestProcessBase.Cancel(bool)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Cancel
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Cancels the test pipeline, forcefully if necessary.
+  remarks: >-
+    Note that repeated calls to this method with <code class="paramref">forceCancellation</code> set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
+
+    may be possible, since it may be dispatched every time a remote runner returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> from
+
+    a message sink/message bus call. For out of process runners using Ctrl+C via standard input, it
+
+    should only send Ctrl+C the first time this is called (since double Ctrl+C is the forceful
+
+    cancellation signal).
+  example: []
+  syntax:
+    content: void Cancel(bool forceCancellation)
+    parameters:
+    - id: forceCancellation
+      type: System.Boolean
+      description: >-
+        When set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, this should request graceful termination
+            of the test pipeline; when set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the test process should be forcefully shut down as
+            quickly as possible.
+    content.vb: Sub Cancel(forceCancellation As Boolean)
+  overload: v3.3.2.2:Xunit.v3.ITestProcessBase.Cancel*
+  nameWithType.vb: ITestProcessBase.Cancel(Boolean)
+  fullName.vb: Xunit.v3.ITestProcessBase.Cancel(Boolean)
+  name.vb: Cancel(Boolean)
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  commentId: M:Xunit.v3.ITestProcessBase.WaitForExit(System.Int32)
+  id: WaitForExit(System.Int32)
+  parent: v3.3.2.2:Xunit.v3.ITestProcessBase
+  langs:
+  - csharp
+  - vb
+  name: WaitForExit(int)
+  nameWithType: ITestProcessBase.WaitForExit(int)
+  fullName: Xunit.v3.ITestProcessBase.WaitForExit(int)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WaitForExit
+    path: ../src/xunit.v3.runner.utility/Frameworks/v3/ITestProcessBase.cs
+    startLine: 40
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.v3
+  summary: Wait for the specified number of milliseconds for the test process to exit.
+  example: []
+  syntax:
+    content: bool WaitForExit(int milliseconds)
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: The amount of time, in milliseconds, to wait
+    return:
+      type: System.Boolean
+      description: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the process exited; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, otherwise
+    content.vb: Function WaitForExit(milliseconds As Integer) As Boolean
+  overload: v3.3.2.2:Xunit.v3.ITestProcessBase.WaitForExit*
+  nameWithType.vb: ITestProcessBase.WaitForExit(Integer)
+  fullName.vb: Xunit.v3.ITestProcessBase.WaitForExit(Integer)
+  name.vb: WaitForExit(Integer)
+references:
+- uid: v3.3.2.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.Xunit.v3.TestProcessExtensions.TryGetExitCode
+  commentId: M:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  parent: v3.3.2.2:Xunit.v3.TestProcessExtensions
+  definition: Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  name: TryGetExitCode(ITestProcessBase)
+  nameWithType: TestProcessExtensions.TryGetExitCode(ITestProcessBase)
+  fullName: Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+    name: TryGetExitCode
+    href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  - name: (
+  - uid: v3.3.2.2:Xunit.v3.ITestProcessBase
+    name: ITestProcessBase
+    href: Xunit.v3.ITestProcessBase.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+    name: TryGetExitCode
+    href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  - name: (
+  - uid: v3.3.2.2:Xunit.v3.ITestProcessBase
+    name: ITestProcessBase
+    href: Xunit.v3.ITestProcessBase.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: v3.3.2.2:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  commentId: M:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  name: TryGetExitCode(ITestProcessBase)
+  nameWithType: TestProcessExtensions.TryGetExitCode(ITestProcessBase)
+  fullName: Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+    name: TryGetExitCode
+    href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  - name: (
+  - uid: v3.3.2.2:Xunit.v3.ITestProcessBase
+    name: ITestProcessBase
+    href: Xunit.v3.ITestProcessBase.html
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.TestProcessExtensions.TryGetExitCode(Xunit.v3.ITestProcessBase)
+    name: TryGetExitCode
+    href: Xunit.v3.TestProcessExtensions.TryGetExitCode.html#Xunit_v3_TestProcessExtensions_TryGetExitCode_Xunit_v3_ITestProcessBase_
+  - name: (
+  - uid: v3.3.2.2:Xunit.v3.ITestProcessBase
+    name: ITestProcessBase
+    href: Xunit.v3.ITestProcessBase.html
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.TestProcessExtensions
+  commentId: T:Xunit.v3.TestProcessExtensions
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.TestProcessExtensions.html
+  name: TestProcessExtensions
+  nameWithType: TestProcessExtensions
+  fullName: Xunit.v3.TestProcessExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.HasExited*
+  commentId: Overload:Xunit.v3.ITestProcessBase.HasExited
+  href: Xunit.v3.ITestProcessBase.HasExited.html#Xunit_v3_ITestProcessBase_HasExited
+  name: HasExited
+  nameWithType: ITestProcessBase.HasExited
+  fullName: Xunit.v3.ITestProcessBase.HasExited
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.Cancel*
+  commentId: Overload:Xunit.v3.ITestProcessBase.Cancel
+  href: Xunit.v3.ITestProcessBase.Cancel.html#Xunit_v3_ITestProcessBase_Cancel_System_Boolean_
+  name: Cancel
+  nameWithType: ITestProcessBase.Cancel
+  fullName: Xunit.v3.ITestProcessBase.Cancel
+- uid: v3.3.2.2:Xunit.v3.ITestProcessBase.WaitForExit*
+  commentId: Overload:Xunit.v3.ITestProcessBase.WaitForExit
+  href: Xunit.v3.ITestProcessBase.WaitForExit.html#Xunit_v3_ITestProcessBase_WaitForExit_System_Int32_
+  name: WaitForExit
+  nameWithType: ITestProcessBase.WaitForExit
+  fullName: Xunit.v3.ITestProcessBase.WaitForExit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+memberLayout: SeparatePages

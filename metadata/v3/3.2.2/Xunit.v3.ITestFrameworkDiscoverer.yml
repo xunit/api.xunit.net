@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer
+  commentId: T:Xunit.v3.ITestFrameworkDiscoverer
+  id: ITestFrameworkDiscoverer
+  parent: v3.3.2.2:Xunit.v3
+  children:
+  - v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  - v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+  langs:
+  - csharp
+  - vb
+  name: ITestFrameworkDiscoverer
+  nameWithType: ITestFrameworkDiscoverer
+  fullName: Xunit.v3.ITestFrameworkDiscoverer
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ITestFrameworkDiscoverer
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Represents an implementation of the discovery part of a test framework. Implementations may
+
+    optionally implement <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> and/or <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>
+
+    for cleanup operations.
+  example: []
+  syntax:
+    content: public interface ITestFrameworkDiscoverer
+    content.vb: Public Interface ITestFrameworkDiscoverer
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+  commentId: P:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+  id: TestAssembly
+  parent: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: TestAssembly
+  nameWithType: ITestFrameworkDiscoverer.TestAssembly
+  fullName: Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestAssembly
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test assembly provided to the discoverer.
+  example: []
+  syntax:
+    content: ITestAssembly TestAssembly { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestAssembly
+    content.vb: ReadOnly Property TestAssembly As ITestAssembly
+  overload: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly*
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  commentId: M:Xunit.v3.ITestFrameworkDiscoverer.Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  id: Find(System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}},Xunit.Sdk.ITestFrameworkDiscoveryOptions,System.Type[],System.Nullable{System.Threading.CancellationToken})
+  parent: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[]?, CancellationToken?)
+  nameWithType: ITestFrameworkDiscoverer.Find(Func<ITestCase, ValueTask<bool>>, ITestFrameworkDiscoveryOptions, Type[]?, CancellationToken?)
+  fullName: Xunit.v3.ITestFrameworkDiscoverer.Find(System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>, Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type[]?, System.Threading.CancellationToken?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Find
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFrameworkDiscoverer.cs
+    startLine: 30
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Finds tests inside an assembly. Calls the callback for each discovered test.
+  example: []
+  syntax:
+    content: ValueTask Find(Func<ITestCase, ValueTask<bool>> callback, ITestFrameworkDiscoveryOptions discoveryOptions, Type[]? types = null, CancellationToken? cancellationToken = null)
+    parameters:
+    - id: callback
+      type: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+      description: >-
+        Called for each discovered test. Return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to continue test
+            discovery; return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to cancel test discovery.
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The options used by the test framework during discovery.
+    - id: types
+      type: System.Type[]
+      description: >-
+        When passed a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> collection, only returns tests found
+            from one of the provided types; when passed a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> collection, discovers all
+            tests in the assembly.
+    - id: cancellationToken
+      type: System.Nullable{System.Threading.CancellationToken}
+      description: >-
+        The optional cancellation token which can be used to cancel the test
+            discovery process.
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function Find(callback As Func(Of ITestCase, ValueTask(Of Boolean)), discoveryOptions As ITestFrameworkDiscoveryOptions, types As Type() = Nothing, cancellationToken As CancellationToken? = Nothing) As ValueTask
+  overload: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.Find*
+  nameWithType.vb: ITestFrameworkDiscoverer.Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+  fullName.vb: Xunit.v3.ITestFrameworkDiscoverer.Find(System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean)), Xunit.Sdk.ITestFrameworkDiscoveryOptions, System.Type(), System.Threading.CancellationToken?)
+  name.vb: Find(Func(Of ITestCase, ValueTask(Of Boolean)), ITestFrameworkDiscoveryOptions, Type(), CancellationToken?)
+references:
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.2.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly*
+  commentId: Overload:Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+  href: Xunit.v3.ITestFrameworkDiscoverer.TestAssembly.html#Xunit_v3_ITestFrameworkDiscoverer_TestAssembly
+  name: TestAssembly
+  nameWithType: ITestFrameworkDiscoverer.TestAssembly
+  fullName: Xunit.v3.ITestFrameworkDiscoverer.TestAssembly
+- uid: v3.3.2.2:Xunit.Sdk.ITestAssembly
+  commentId: T:Xunit.Sdk.ITestAssembly
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssembly.html
+  name: ITestAssembly
+  nameWithType: ITestAssembly
+  fullName: Xunit.Sdk.ITestAssembly
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer.Find*
+  commentId: Overload:Xunit.v3.ITestFrameworkDiscoverer.Find
+  href: Xunit.v3.ITestFrameworkDiscoverer.Find.html#Xunit_v3_ITestFrameworkDiscoverer_Find_System_Func_Xunit_Sdk_ITestCase_System_Threading_Tasks_ValueTask_System_Boolean___Xunit_Sdk_ITestFrameworkDiscoveryOptions_System_Type___System_Nullable_System_Threading_CancellationToken__
+  name: Find
+  nameWithType: ITestFrameworkDiscoverer.Find
+  fullName: Xunit.v3.ITestFrameworkDiscoverer.Find
+- uid: System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+  commentId: T:System.Func{Xunit.Sdk.ITestCase,System.Threading.Tasks.ValueTask{System.Boolean}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ITestCase, ValueTask<bool>>
+  nameWithType: Func<ITestCase, ValueTask<bool>>
+  fullName: System.Func<Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask<bool>>
+  nameWithType.vb: Func(Of ITestCase, ValueTask(Of Boolean))
+  fullName.vb: System.Func(Of Xunit.Sdk.ITestCase, System.Threading.Tasks.ValueTask(Of Boolean))
+  name.vb: Func(Of ITestCase, ValueTask(Of Boolean))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: v3.3.2.2:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.2:Xunit.Sdk.ITestCase
+    name: ITestCase
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: v3.3.2.2:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

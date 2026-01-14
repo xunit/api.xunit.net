@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  id: ITestCase
+  parent: v3.3.2.2:Xunit.Sdk
+  children:
+  - v3.3.2.2:Xunit.Sdk.ITestCase.TestClass
+  - v3.3.2.2:Xunit.Sdk.ITestCase.TestCollection
+  - v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod
+  langs:
+  - csharp
+  - vb
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ITestCase
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Represents a single test case in the system. This test case usually represents a single test, but in
+
+    the case of dynamically generated data for data driven tests, the test case may actually return
+
+    multiple results when run.
+  example: []
+  syntax:
+    content: 'public interface ITestCase : ITestCaseMetadata'
+    content.vb: Public Interface ITestCase Inherits ITestCaseMetadata
+  inheritedMembers:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Explicit
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SkipReason
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Traits
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestClass
+  commentId: P:Xunit.Sdk.ITestCase.TestClass
+  id: TestClass
+  parent: v3.3.2.2:Xunit.Sdk.ITestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClass
+  nameWithType: ITestCase.TestClass
+  fullName: Xunit.Sdk.ITestCase.TestClass
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClass
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the test class that this test case belongs to; may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the test isn't backed by
+
+    a class, but will not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <xref href="v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod" data-throw-if-not-resolved="false"></xref> is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (and must be
+
+    the same instance returned via <xref href="v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: ITestClass? TestClass { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestClass
+    content.vb: ReadOnly Property TestClass As ITestClass
+  overload: v3.3.2.2:Xunit.Sdk.ITestCase.TestClass*
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestCollection
+  commentId: P:Xunit.Sdk.ITestCase.TestCollection
+  id: TestCollection
+  parent: v3.3.2.2:Xunit.Sdk.ITestCase
+  langs:
+  - csharp
+  - vb
+  name: TestCollection
+  nameWithType: ITestCase.TestCollection
+  fullName: Xunit.Sdk.ITestCase.TestCollection
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestCollection
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the test collection this test case belongs to. Must be the same instance returned
+
+    via <xref href="v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod" data-throw-if-not-resolved="false"></xref> and/or <xref href="v3.3.2.2:Xunit.Sdk.ITestCase.TestClass" data-throw-if-not-resolved="false"></xref> when they are not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: ITestCollection TestCollection { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestCollection
+    content.vb: ReadOnly Property TestCollection As ITestCollection
+  overload: v3.3.2.2:Xunit.Sdk.ITestCase.TestCollection*
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod
+  commentId: P:Xunit.Sdk.ITestCase.TestMethod
+  id: TestMethod
+  parent: v3.3.2.2:Xunit.Sdk.ITestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethod
+  nameWithType: ITestCase.TestMethod
+  fullName: Xunit.Sdk.ITestCase.TestMethod
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethod
+    path: ../src/xunit.v3.common/Abstractions/ObjectModel/ITestCase.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the test method this test case belongs to; may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the test isn't backed by
+
+    a method.
+  example: []
+  syntax:
+    content: ITestMethod? TestMethod { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.ITestMethod
+    content.vb: ReadOnly Property TestMethod As ITestMethod
+  overload: v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod*
+references:
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Explicit
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Explicit
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Explicit.html#Xunit_Sdk_ITestCaseMetadata_Explicit
+  name: Explicit
+  nameWithType: ITestCaseMetadata.Explicit
+  fullName: Xunit.Sdk.ITestCaseMetadata.Explicit
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SkipReason
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SkipReason
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SkipReason.html#Xunit_Sdk_ITestCaseMetadata_SkipReason
+  name: SkipReason
+  nameWithType: ITestCaseMetadata.SkipReason
+  fullName: Xunit.Sdk.ITestCaseMetadata.SkipReason
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceFilePath.html#Xunit_Sdk_ITestCaseMetadata_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ITestCaseMetadata.SourceFilePath
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber.html#Xunit_Sdk_ITestCaseMetadata_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: ITestCaseMetadata.SourceLineNumber
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName.html#Xunit_Sdk_ITestCaseMetadata_TestCaseDisplayName
+  name: TestCaseDisplayName
+  nameWithType: ITestCaseMetadata.TestCaseDisplayName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken.html#Xunit_Sdk_ITestCaseMetadata_TestClassMetadataToken
+  name: TestClassMetadataToken
+  nameWithType: ITestCaseMetadata.TestClassMetadataToken
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassName.html#Xunit_Sdk_ITestCaseMetadata_TestClassName
+  name: TestClassName
+  nameWithType: ITestCaseMetadata.TestClassName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace.html#Xunit_Sdk_ITestCaseMetadata_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: ITestCaseMetadata.TestClassNamespace
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName.html#Xunit_Sdk_ITestCaseMetadata_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: ITestCaseMetadata.TestClassSimpleName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodArity.html#Xunit_Sdk_ITestCaseMetadata_TestMethodArity
+  name: TestMethodArity
+  nameWithType: ITestCaseMetadata.TestMethodArity
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken.html#Xunit_Sdk_ITestCaseMetadata_TestMethodMetadataToken
+  name: TestMethodMetadataToken
+  nameWithType: ITestCaseMetadata.TestMethodMetadataToken
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodName.html#Xunit_Sdk_ITestCaseMetadata_TestMethodName
+  name: TestMethodName
+  nameWithType: ITestCaseMetadata.TestMethodName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: ITestCaseMetadata.TestMethodParameterTypesVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: ITestCaseMetadata.TestMethodReturnTypeVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Traits
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Traits.html#Xunit_Sdk_ITestCaseMetadata_Traits
+  name: Traits
+  nameWithType: ITestCaseMetadata.Traits
+  fullName: Xunit.Sdk.ITestCaseMetadata.Traits
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.UniqueID.html#Xunit_Sdk_ITestCaseMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestCaseMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod
+  commentId: P:Xunit.Sdk.ITestCase.TestMethod
+  href: Xunit.Sdk.ITestCase.TestMethod.html#Xunit_Sdk_ITestCase_TestMethod
+  name: TestMethod
+  nameWithType: ITestCase.TestMethod
+  fullName: Xunit.Sdk.ITestCase.TestMethod
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestClass*
+  commentId: Overload:Xunit.Sdk.ITestCase.TestClass
+  href: Xunit.Sdk.ITestCase.TestClass.html#Xunit_Sdk_ITestCase_TestClass
+  name: TestClass
+  nameWithType: ITestCase.TestClass
+  fullName: Xunit.Sdk.ITestCase.TestClass
+- uid: v3.3.2.2:Xunit.Sdk.ITestClass
+  commentId: T:Xunit.Sdk.ITestClass
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestClass.html
+  name: ITestClass
+  nameWithType: ITestClass
+  fullName: Xunit.Sdk.ITestClass
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestClass
+  commentId: P:Xunit.Sdk.ITestCase.TestClass
+  href: Xunit.Sdk.ITestCase.TestClass.html#Xunit_Sdk_ITestCase_TestClass
+  name: TestClass
+  nameWithType: ITestCase.TestClass
+  fullName: Xunit.Sdk.ITestCase.TestClass
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestCollection*
+  commentId: Overload:Xunit.Sdk.ITestCase.TestCollection
+  href: Xunit.Sdk.ITestCase.TestCollection.html#Xunit_Sdk_ITestCase_TestCollection
+  name: TestCollection
+  nameWithType: ITestCase.TestCollection
+  fullName: Xunit.Sdk.ITestCase.TestCollection
+- uid: v3.3.2.2:Xunit.Sdk.ITestCollection
+  commentId: T:Xunit.Sdk.ITestCollection
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCollection.html
+  name: ITestCollection
+  nameWithType: ITestCollection
+  fullName: Xunit.Sdk.ITestCollection
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase.TestMethod*
+  commentId: Overload:Xunit.Sdk.ITestCase.TestMethod
+  href: Xunit.Sdk.ITestCase.TestMethod.html#Xunit_Sdk_ITestCase_TestMethod
+  name: TestMethod
+  nameWithType: ITestCase.TestMethod
+  fullName: Xunit.Sdk.ITestCase.TestMethod
+- uid: v3.3.2.2:Xunit.Sdk.ITestMethod
+  commentId: T:Xunit.Sdk.ITestMethod
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethod.html
+  name: ITestMethod
+  nameWithType: ITestMethod
+  fullName: Xunit.Sdk.ITestMethod
+memberLayout: SeparatePages

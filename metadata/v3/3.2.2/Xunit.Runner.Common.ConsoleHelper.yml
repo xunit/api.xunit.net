@@ -1,0 +1,1239 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  commentId: T:Xunit.Runner.Common.ConsoleHelper
+  id: ConsoleHelper
+  parent: v3.3.2.2:Xunit.Runner.Common
+  children:
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.#ctor(System.IO.TextReader,System.IO.TextWriter)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.LockObject
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ReadLine
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ResetColor
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object[])
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object,System.Object)
+  - v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: ConsoleHelper
+  nameWithType: ConsoleHelper
+  fullName: Xunit.Runner.Common.ConsoleHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ConsoleHelper
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    This class helps write colored text to the console. On Windows, it will use the built-in
+
+    console functions; on Linux and macOS, it will use ANSI color codes.
+  example: []
+  syntax:
+    content: public class ConsoleHelper
+    content.vb: Public Class ConsoleHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.#ctor(System.IO.TextReader,System.IO.TextWriter)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.#ctor(System.IO.TextReader,System.IO.TextWriter)
+  id: '#ctor(System.IO.TextReader,System.IO.TextWriter)'
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: ConsoleHelper(TextReader, TextWriter)
+  nameWithType: ConsoleHelper.ConsoleHelper(TextReader, TextWriter)
+  fullName: Xunit.Runner.Common.ConsoleHelper.ConsoleHelper(System.IO.TextReader, System.IO.TextWriter)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 24
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Initializes a new instance of the <xref href="v3.3.2.2:Xunit.Runner.Common.ConsoleHelper" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ConsoleHelper(TextReader consoleReader, TextWriter consoleWriter)
+    parameters:
+    - id: consoleReader
+      type: System.IO.TextReader
+      description: The <xref href="System.IO.TextReader" data-throw-if-not-resolved="false"></xref> for the console (typically <xref href="System.Console.In" data-throw-if-not-resolved="false"></xref>).
+    - id: consoleWriter
+      type: System.IO.TextWriter
+      description: The <xref href="System.IO.TextWriter" data-throw-if-not-resolved="false"></xref> for the console (typically <xref href="System.Console.Out" data-throw-if-not-resolved="false"></xref>).
+    content.vb: Public Sub New(consoleReader As TextReader, consoleWriter As TextWriter)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.#ctor*
+  nameWithType.vb: ConsoleHelper.New(TextReader, TextWriter)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.New(System.IO.TextReader, System.IO.TextWriter)
+  name.vb: New(TextReader, TextWriter)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.LockObject
+  commentId: P:Xunit.Runner.Common.ConsoleHelper.LockObject
+  id: LockObject
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: LockObject
+  nameWithType: ConsoleHelper.LockObject
+  fullName: Xunit.Runner.Common.ConsoleHelper.LockObject
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: LockObject
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 49
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets a lock object that can be used to lock multiple calls to <xref href="v3.3.2.2:Xunit.Runner.Common.ConsoleHelper" data-throw-if-not-resolved="false"></xref>
+
+    functions to ensure consistent output.
+  example: []
+  syntax:
+    content: public object LockObject { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property LockObject As Object
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.LockObject*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ResetColor
+  commentId: P:Xunit.Runner.Common.ConsoleHelper.ResetColor
+  id: ResetColor
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: ResetColor
+  nameWithType: ConsoleHelper.ResetColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.ResetColor
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ResetColor
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 54
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Equivalent to <xref href="System.Console.ResetColor" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Action ResetColor { get; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property ResetColor As Action
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ResetColor*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+  commentId: P:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+  id: SetBackgroundColor
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: SetBackgroundColor
+  nameWithType: ConsoleHelper.SetBackgroundColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SetBackgroundColor
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 59
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Equivalent to <xref href="System.Console.BackgroundColor" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Action<ConsoleColor> SetBackgroundColor { get; }
+    parameters: []
+    return:
+      type: System.Action{System.ConsoleColor}
+    content.vb: Public Property SetBackgroundColor As Action(Of ConsoleColor)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+  commentId: P:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+  id: SetForegroundColor
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: SetForegroundColor
+  nameWithType: ConsoleHelper.SetForegroundColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SetForegroundColor
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 64
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Equivalent to <xref href="System.Console.ForegroundColor" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Action<ConsoleColor> SetForegroundColor { get; }
+    parameters: []
+    return:
+      type: System.Action{System.ConsoleColor}
+    content.vb: Public Property SetForegroundColor As Action(Of ConsoleColor)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ReadLine
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.ReadLine
+  id: ReadLine
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadLine()
+  nameWithType: ConsoleHelper.ReadLine()
+  fullName: Xunit.Runner.Common.ConsoleHelper.ReadLine()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ReadLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 69
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Gets a line of input from the console.
+  example: []
+  syntax:
+    content: public string? ReadLine()
+    return:
+      type: System.String
+    content.vb: Public Function ReadLine() As String
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ReadLine*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor
+  id: UseAnsiColor
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: UseAnsiColor()
+  nameWithType: ConsoleHelper.UseAnsiColor()
+  fullName: Xunit.Runner.Common.ConsoleHelper.UseAnsiColor()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: UseAnsiColor
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 139
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Force using ANSI color instead of deciding based on OS.
+  example: []
+  syntax:
+    content: public void UseAnsiColor()
+    content.vb: Public Sub UseAnsiColor()
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.Write(System.String)
+  id: Write(System.String)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string?)
+  nameWithType: ConsoleHelper.Write(string?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write(string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 149
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes the string value to the console.
+  example: []
+  syntax:
+    content: public void Write(string? value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub Write(value As String)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  nameWithType.vb: ConsoleHelper.Write(String)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.Write(String)
+  name.vb: Write(String)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object)
+  id: Write(System.String,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, object?)
+  nameWithType: ConsoleHelper.Write(string, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write(string, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 157
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console.
+  example: []
+  syntax:
+    content: public void Write(string format, object? arg0)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    content.vb: Public Sub Write(format As String, arg0 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  nameWithType.vb: ConsoleHelper.Write(String, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.Write(String, Object)
+  name.vb: Write(String, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object)
+  id: Write(System.String,System.Object,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, object?, object?)
+  nameWithType: ConsoleHelper.Write(string, object?, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write(string, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 166
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console.
+  example: []
+  syntax:
+    content: public void Write(string format, object? arg0, object? arg1)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string
+    content.vb: Public Sub Write(format As String, arg0 As Object, arg1 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  nameWithType.vb: ConsoleHelper.Write(String, Object, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.Write(String, Object, Object)
+  name.vb: Write(String, Object, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object,System.Object,System.Object)
+  id: Write(System.String,System.Object,System.Object,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, object?, object?, object?)
+  nameWithType: ConsoleHelper.Write(string, object?, object?, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write(string, object?, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 176
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console.
+  example: []
+  syntax:
+    content: public void Write(string format, object? arg0, object? arg1, object? arg2)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string
+    - id: arg2
+      type: System.Object
+      description: The value to replace {2} in the format string
+    content.vb: Public Sub Write(format As String, arg0 As Object, arg1 As Object, arg2 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  nameWithType.vb: ConsoleHelper.Write(String, Object, Object, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.Write(String, Object, Object, Object)
+  name.vb: Write(String, Object, Object, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.Write(System.String,System.Object[])
+  id: Write(System.String,System.Object[])
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: Write(string, params object?[])
+  nameWithType: ConsoleHelper.Write(string, params object?[])
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write(string, params object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Write
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 184
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console.
+  example: []
+  syntax:
+    content: public void Write(string format, params object?[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: args
+      type: System.Object[]
+      description: An object array that contains zero or more objects to format.
+    content.vb: Public Sub Write(format As String, ParamArray args As Object())
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  nameWithType.vb: ConsoleHelper.Write(String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine
+  id: WriteLine
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine()
+  nameWithType: ConsoleHelper.WriteLine()
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 190
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref> to the console.
+  example: []
+  syntax:
+    content: public void WriteLine()
+    content.vb: Public Sub WriteLine()
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string?)
+  nameWithType: ConsoleHelper.WriteLine(string?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine(string?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 196
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes the string value to the console, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string? value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub WriteLine(value As String)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  nameWithType.vb: ConsoleHelper.WriteLine(String)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object)
+  id: WriteLine(System.String,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, object?)
+  nameWithType: ConsoleHelper.WriteLine(string, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine(string, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 204
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string format, object? arg0)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    content.vb: Public Sub WriteLine(format As String, arg0 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  nameWithType.vb: ConsoleHelper.WriteLine(String, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.WriteLine(String, Object)
+  name.vb: WriteLine(String, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object)
+  id: WriteLine(System.String,System.Object,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, object?, object?)
+  nameWithType: ConsoleHelper.WriteLine(string, object?, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine(string, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 213
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string format, object? arg0, object? arg1)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string
+    content.vb: Public Sub WriteLine(format As String, arg0 As Object, arg1 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  nameWithType.vb: ConsoleHelper.WriteLine(String, Object, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.WriteLine(String, Object, Object)
+  name.vb: WriteLine(String, Object, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object,System.Object)
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object,System.Object,System.Object)
+  id: WriteLine(System.String,System.Object,System.Object,System.Object)
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, object?, object?, object?)
+  nameWithType: ConsoleHelper.WriteLine(string, object?, object?, object?)
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine(string, object?, object?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 223
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string format, object? arg0, object? arg1, object? arg2)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: arg0
+      type: System.Object
+      description: The value to replace {0} in the format string
+    - id: arg1
+      type: System.Object
+      description: The value to replace {1} in the format string
+    - id: arg2
+      type: System.Object
+      description: The value to replace {2} in the format string
+    content.vb: Public Sub WriteLine(format As String, arg0 As Object, arg1 As Object, arg2 As Object)
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  nameWithType.vb: ConsoleHelper.WriteLine(String, Object, Object, Object)
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.WriteLine(String, Object, Object, Object)
+  name.vb: WriteLine(String, Object, Object, Object)
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object[])
+  commentId: M:Xunit.Runner.Common.ConsoleHelper.WriteLine(System.String,System.Object[])
+  id: WriteLine(System.String,System.Object[])
+  parent: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, params object?[])
+  nameWithType: ConsoleHelper.WriteLine(string, params object?[])
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine(string, params object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: WriteLine
+    path: ../src/xunit.v3.runner.common/Utility/ConsoleHelper.cs
+    startLine: 231
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: Writes a formatted string value to the console, followed by <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteLine(string format, params object?[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string
+    - id: args
+      type: System.Object[]
+      description: An object array that contains zero or more objects to format.
+    content.vb: Public Sub WriteLine(format As String, ParamArray args As Object())
+  overload: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  nameWithType.vb: ConsoleHelper.WriteLine(String, ParamArray Object())
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+references:
+- uid: v3.3.2.2:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper
+  commentId: T:Xunit.Runner.Common.ConsoleHelper
+  parent: v3.3.2.2:Xunit.Runner.Common
+  href: Xunit.Runner.Common.ConsoleHelper.html
+  name: ConsoleHelper
+  nameWithType: ConsoleHelper
+  fullName: Xunit.Runner.Common.ConsoleHelper
+- uid: System.IO.TextReader
+  commentId: T:System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  name: TextReader
+  nameWithType: TextReader
+  fullName: System.IO.TextReader
+- uid: System.Console.In
+  commentId: P:System.Console.In
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.in
+  name: In
+  nameWithType: Console.In
+  fullName: System.Console.In
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.Console.Out
+  commentId: P:System.Console.Out
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.out
+  name: Out
+  nameWithType: Console.Out
+  fullName: System.Console.Out
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.#ctor*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.#ctor
+  href: Xunit.Runner.Common.ConsoleHelper.-ctor.html#Xunit_Runner_Common_ConsoleHelper__ctor_System_IO_TextReader_System_IO_TextWriter_
+  name: ConsoleHelper
+  nameWithType: ConsoleHelper.ConsoleHelper
+  fullName: Xunit.Runner.Common.ConsoleHelper.ConsoleHelper
+  nameWithType.vb: ConsoleHelper.New
+  fullName.vb: Xunit.Runner.Common.ConsoleHelper.New
+  name.vb: New
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.LockObject*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.LockObject
+  href: Xunit.Runner.Common.ConsoleHelper.LockObject.html#Xunit_Runner_Common_ConsoleHelper_LockObject
+  name: LockObject
+  nameWithType: ConsoleHelper.LockObject
+  fullName: Xunit.Runner.Common.ConsoleHelper.LockObject
+- uid: System.Console.ResetColor
+  commentId: M:System.Console.ResetColor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.resetcolor
+  name: ResetColor()
+  nameWithType: Console.ResetColor()
+  fullName: System.Console.ResetColor()
+  spec.csharp:
+  - uid: System.Console.ResetColor
+    name: ResetColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.console.resetcolor
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Console.ResetColor
+    name: ResetColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.console.resetcolor
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ResetColor*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.ResetColor
+  href: Xunit.Runner.Common.ConsoleHelper.ResetColor.html#Xunit_Runner_Common_ConsoleHelper_ResetColor
+  name: ResetColor
+  nameWithType: ConsoleHelper.ResetColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.ResetColor
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Console.BackgroundColor
+  commentId: P:System.Console.BackgroundColor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.backgroundcolor
+  name: BackgroundColor
+  nameWithType: Console.BackgroundColor
+  fullName: System.Console.BackgroundColor
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+  href: Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor.html#Xunit_Runner_Common_ConsoleHelper_SetBackgroundColor
+  name: SetBackgroundColor
+  nameWithType: ConsoleHelper.SetBackgroundColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.SetBackgroundColor
+- uid: System.Action{System.ConsoleColor}
+  commentId: T:System.Action{System.ConsoleColor}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ConsoleColor>
+  nameWithType: Action<ConsoleColor>
+  fullName: System.Action<System.ConsoleColor>
+  nameWithType.vb: Action(Of ConsoleColor)
+  fullName.vb: System.Action(Of System.ConsoleColor)
+  name.vb: Action(Of ConsoleColor)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Console.ForegroundColor
+  commentId: P:System.Console.ForegroundColor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.foregroundcolor
+  name: ForegroundColor
+  nameWithType: Console.ForegroundColor
+  fullName: System.Console.ForegroundColor
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+  href: Xunit.Runner.Common.ConsoleHelper.SetForegroundColor.html#Xunit_Runner_Common_ConsoleHelper_SetForegroundColor
+  name: SetForegroundColor
+  nameWithType: ConsoleHelper.SetForegroundColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.SetForegroundColor
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.ReadLine*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.ReadLine
+  href: Xunit.Runner.Common.ConsoleHelper.ReadLine.html#Xunit_Runner_Common_ConsoleHelper_ReadLine
+  name: ReadLine
+  nameWithType: ConsoleHelper.ReadLine
+  fullName: Xunit.Runner.Common.ConsoleHelper.ReadLine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.UseAnsiColor
+  href: Xunit.Runner.Common.ConsoleHelper.UseAnsiColor.html#Xunit_Runner_Common_ConsoleHelper_UseAnsiColor
+  name: UseAnsiColor
+  nameWithType: ConsoleHelper.UseAnsiColor
+  fullName: Xunit.Runner.Common.ConsoleHelper.UseAnsiColor
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.Write*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.Write
+  href: Xunit.Runner.Common.ConsoleHelper.Write.html#Xunit_Runner_Common_ConsoleHelper_Write_System_String_
+  name: Write
+  nameWithType: ConsoleHelper.Write
+  fullName: Xunit.Runner.Common.ConsoleHelper.Write
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.newline
+  name: NewLine
+  nameWithType: Environment.NewLine
+  fullName: System.Environment.NewLine
+- uid: v3.3.2.2:Xunit.Runner.Common.ConsoleHelper.WriteLine*
+  commentId: Overload:Xunit.Runner.Common.ConsoleHelper.WriteLine
+  href: Xunit.Runner.Common.ConsoleHelper.WriteLine.html#Xunit_Runner_Common_ConsoleHelper_WriteLine
+  name: WriteLine
+  nameWithType: ConsoleHelper.WriteLine
+  fullName: Xunit.Runner.Common.ConsoleHelper.WriteLine
+memberLayout: SeparatePages

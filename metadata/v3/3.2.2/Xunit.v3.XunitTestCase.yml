@@ -1,0 +1,2754 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase
+  commentId: T:Xunit.v3.XunitTestCase
+  id: XunitTestCase
+  parent: v3.3.2.2:Xunit.v3
+  children:
+  - v3.3.2.2:Xunit.v3.XunitTestCase.#ctor
+  - v3.3.2.2:Xunit.v3.XunitTestCase.#ctor(Xunit.v3.IXunitTestMethod,System.String,System.String,System.Boolean,System.Type[],System.String,System.Type,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}},System.Object[],System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  - v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests
+  - v3.3.2.2:Xunit.v3.XunitTestCase.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  - v3.3.2.2:Xunit.v3.XunitTestCase.DisposalTracker
+  - v3.3.2.2:Xunit.v3.XunitTestCase.DisposeAsync
+  - v3.3.2.2:Xunit.v3.XunitTestCase.Explicit
+  - v3.3.2.2:Xunit.v3.XunitTestCase.PostInvoke
+  - v3.3.2.2:Xunit.v3.XunitTestCase.PreInvoke
+  - v3.3.2.2:Xunit.v3.XunitTestCase.ResolveTestMethodArguments(System.Reflection.ParameterInfo[],System.Object[])
+  - v3.3.2.2:Xunit.v3.XunitTestCase.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SkipExceptions
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SkipReason
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SkipType
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SkipUnless
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SkipWhen
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SourceFilePath
+  - v3.3.2.2:Xunit.v3.XunitTestCase.SourceLineNumber
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestCaseDisplayName
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestClass
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestClassMetadataToken
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestClassName
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestClassNamespace
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestClassSimpleName
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestCollection
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethod
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArguments
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArity
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodMetadataToken
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodName
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+  - v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+  - v3.3.2.2:Xunit.v3.XunitTestCase.Timeout
+  - v3.3.2.2:Xunit.v3.XunitTestCase.Traits
+  - v3.3.2.2:Xunit.v3.XunitTestCase.UniqueID
+  langs:
+  - csharp
+  - vb
+  name: XunitTestCase
+  nameWithType: XunitTestCase
+  fullName: Xunit.v3.XunitTestCase
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: XunitTestCase
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Default implementation of <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase" data-throw-if-not-resolved="false"></xref> for xUnit.net v3 that supports test methods decorated with
+
+    <xref href="v3.3.2.2:Xunit.FactAttribute" data-throw-if-not-resolved="false"></xref>. Test methods decorated with derived attributes may use this as a base class
+
+    to build from.
+  example: []
+  syntax:
+    content: 'public class XunitTestCase : IXunitTestCase, ITestCase, ITestCaseMetadata, IXunitSerializable, IAsyncDisposable'
+    content.vb: Public Class XunitTestCase Implements IXunitTestCase, ITestCase, ITestCaseMetadata, IXunitSerializable, IAsyncDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.3.2.2:Xunit.v3.CulturedXunitTestCase
+  - v3.3.2.2:Xunit.v3.ExecutionErrorTestCase
+  - v3.3.2.2:Xunit.v3.XunitDelayEnumeratedTheoryTestCase
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase
+  - v3.3.2.2:Xunit.Sdk.ITestCase
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  - v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.#ctor
+  commentId: M:Xunit.v3.XunitTestCase.#ctor
+  id: '#ctor'
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: XunitTestCase()
+  nameWithType: XunitTestCase.XunitTestCase()
+  fullName: Xunit.v3.XunitTestCase.XunitTestCase()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 29
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Called by the de-serializer; should only be called by deriving classes for de-serialization purposes
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Called by the de-serializer; should only be called by deriving classes for de-serialization purposes")]
+
+      public XunitTestCase()
+    content.vb: >-
+      <Obsolete("Called by the de-serializer; should only be called by deriving classes for de-serialization purposes")>
+
+      Public Sub New()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Called by the de-serializer; should only be called by deriving classes for de-serialization purposes
+  nameWithType.vb: XunitTestCase.New()
+  fullName.vb: Xunit.v3.XunitTestCase.New()
+  name.vb: New()
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.#ctor(Xunit.v3.IXunitTestMethod,System.String,System.String,System.Boolean,System.Type[],System.String,System.Type,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}},System.Object[],System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  commentId: M:Xunit.v3.XunitTestCase.#ctor(Xunit.v3.IXunitTestMethod,System.String,System.String,System.Boolean,System.Type[],System.String,System.Type,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}},System.Object[],System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  id: '#ctor(Xunit.v3.IXunitTestMethod,System.String,System.String,System.Boolean,System.Type[],System.String,System.Type,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}},System.Object[],System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})'
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: XunitTestCase(IXunitTestMethod, string, string, bool, Type[]?, string?, Type?, string?, string?, Dictionary<string, HashSet<string>>?, object?[]?, string?, int?, int?)
+  nameWithType: XunitTestCase.XunitTestCase(IXunitTestMethod, string, string, bool, Type[]?, string?, Type?, string?, string?, Dictionary<string, HashSet<string>>?, object?[]?, string?, int?, int?)
+  fullName: Xunit.v3.XunitTestCase.XunitTestCase(Xunit.v3.IXunitTestMethod, string, string, bool, System.Type[]?, string?, System.Type?, string?, string?, System.Collections.Generic.Dictionary<string, System.Collections.Generic.HashSet<string>>?, object?[]?, string?, int?, int?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 50
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3.3.2.2:Xunit.v3.XunitTestCase" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public XunitTestCase(IXunitTestMethod testMethod, string testCaseDisplayName, string uniqueID, bool @explicit, Type[]? skipExceptions = null, string? skipReason = null, Type? skipType = null, string? skipUnless = null, string? skipWhen = null, Dictionary<string, HashSet<string>>? traits = null, object?[]? testMethodArguments = null, string? sourceFilePath = null, int? sourceLineNumber = null, int? timeout = null)
+    parameters:
+    - id: testMethod
+      type: Xunit.v3.IXunitTestMethod
+      description: The test method this test case belongs to.
+    - id: testCaseDisplayName
+      type: System.String
+      description: The display name for the test case.
+    - id: uniqueID
+      type: System.String
+      description: The unique ID for the test case.
+    - id: explicit
+      type: System.Boolean
+      description: Indicates whether the test case was marked as explicit.
+    - id: skipExceptions
+      type: System.Type[]
+      description: The value obtained from <xref href="v3.3.2.2:Xunit.v3.IFactAttribute.SkipExceptions" data-throw-if-not-resolved="false"></xref>.
+    - id: skipReason
+      type: System.String
+      description: The value obtained from <xref href="v3.3.2.2:Xunit.v3.IFactAttribute.Skip" data-throw-if-not-resolved="false"></xref>.
+    - id: skipType
+      type: System.Type
+      description: The value obtained from <xref href="v3.3.2.2:Xunit.v3.IFactAttribute.SkipType" data-throw-if-not-resolved="false"></xref>.
+    - id: skipUnless
+      type: System.String
+      description: The value obtained from <xref href="v3.3.2.2:Xunit.v3.IFactAttribute.SkipUnless" data-throw-if-not-resolved="false"></xref>.
+    - id: skipWhen
+      type: System.String
+      description: The value obtained from <xref href="v3.3.2.2:Xunit.v3.IFactAttribute.SkipWhen" data-throw-if-not-resolved="false"></xref>.
+    - id: traits
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+      description: The optional traits list.
+    - id: testMethodArguments
+      type: System.Object[]
+      description: The optional arguments for the test method.
+    - id: sourceFilePath
+      type: System.String
+      description: The optional source file in where this test case originated.
+    - id: sourceLineNumber
+      type: System.Nullable{System.Int32}
+      description: The optional source line number where this test case originated.
+    - id: timeout
+      type: System.Nullable{System.Int32}
+      description: The optional timeout for the test case (in milliseconds).
+    content.vb: Public Sub New(testMethod As IXunitTestMethod, testCaseDisplayName As String, uniqueID As String, explicit As Boolean, skipExceptions As Type() = Nothing, skipReason As String = Nothing, skipType As Type = Nothing, skipUnless As String = Nothing, skipWhen As String = Nothing, traits As Dictionary(Of String, HashSet(Of String)) = Nothing, testMethodArguments As Object() = Nothing, sourceFilePath As String = Nothing, sourceLineNumber As Integer? = Nothing, timeout As Integer? = Nothing)
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.#ctor*
+  nameWithType.vb: XunitTestCase.New(IXunitTestMethod, String, String, Boolean, Type(), String, Type, String, String, Dictionary(Of String, HashSet(Of String)), Object(), String, Integer?, Integer?)
+  fullName.vb: Xunit.v3.XunitTestCase.New(Xunit.v3.IXunitTestMethod, String, String, Boolean, System.Type(), String, System.Type, String, String, System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.HashSet(Of String)), Object(), String, Integer?, Integer?)
+  name.vb: New(IXunitTestMethod, String, String, Boolean, Type(), String, Type, String, String, Dictionary(Of String, HashSet(Of String)), Object(), String, Integer?, Integer?)
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.DisposalTracker
+  commentId: P:Xunit.v3.XunitTestCase.DisposalTracker
+  id: DisposalTracker
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: DisposalTracker
+  nameWithType: XunitTestCase.DisposalTracker
+  fullName: Xunit.v3.XunitTestCase.DisposalTracker
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: DisposalTracker
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 92
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Used to dispose of test method arguments when the test case is disposed.
+  example: []
+  syntax:
+    content: public DisposalTracker DisposalTracker { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.DisposalTracker
+    content.vb: Public ReadOnly Property DisposalTracker As DisposalTracker
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.DisposalTracker*
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Explicit
+  commentId: P:Xunit.v3.XunitTestCase.Explicit
+  id: Explicit
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: XunitTestCase.Explicit
+  fullName: Xunit.v3.XunitTestCase.Explicit
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Explicit
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 95
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a flag indicating whether this test case was marked as explicit or not.
+  example: []
+  syntax:
+    content: public bool Explicit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Explicit As Boolean
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.Explicit*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Explicit
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipExceptions
+  commentId: P:Xunit.v3.XunitTestCase.SkipExceptions
+  id: SkipExceptions
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipExceptions
+  nameWithType: XunitTestCase.SkipExceptions
+  fullName: Xunit.v3.XunitTestCase.SkipExceptions
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SkipExceptions
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 98
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the exception types that, when thrown, will cause a
+  example: []
+  syntax:
+    content: public Type[]? SkipExceptions { get; }
+    parameters: []
+    return:
+      type: System.Type[]
+    content.vb: Public Property SkipExceptions As Type()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SkipExceptions*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.SkipExceptions
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipReason
+  commentId: P:Xunit.v3.XunitTestCase.SkipReason
+  id: SkipReason
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipReason
+  nameWithType: XunitTestCase.SkipReason
+  fullName: Xunit.v3.XunitTestCase.SkipReason
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SkipReason
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 101
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the display text for the reason a test that might being skipped.
+  remarks: >-
+    This differs from the contract of <xref href="v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SkipReason" data-throw-if-not-resolved="false"></xref> by virtue
+
+    of the fact that when this value is non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, it may indicate that a test is
+
+    statically skipped (if both <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless" data-throw-if-not-resolved="false"></xref> and <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen" data-throw-if-not-resolved="false"></xref> are
+
+    <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>) or dynamically skipped (if one is non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>).
+  example: []
+  syntax:
+    content: public string? SkipReason { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SkipReason As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SkipReason*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.SkipReason
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipType
+  commentId: P:Xunit.v3.XunitTestCase.SkipType
+  id: SkipType
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipType
+  nameWithType: XunitTestCase.SkipType
+  fullName: Xunit.v3.XunitTestCase.SkipType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SkipType
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 110
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    When set, indicates the type to use when resolving <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless" data-throw-if-not-resolved="false"></xref> or
+
+    <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen" data-throw-if-not-resolved="false"></xref>. If not set, uses the test class type.
+  example: []
+  syntax:
+    content: public Type? SkipType { get; protected set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property SkipType As Type
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SkipType*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.SkipType
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipUnless
+  commentId: P:Xunit.v3.XunitTestCase.SkipUnless
+  id: SkipUnless
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipUnless
+  nameWithType: XunitTestCase.SkipUnless
+  fullName: Xunit.v3.XunitTestCase.SkipUnless
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SkipUnless
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 113
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    When set, indicates a public static property that is used at runtime to determine
+
+    whether the test is skipped or not (<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to run, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to skip).
+  remarks: >-
+    Note: It is an error condition for both <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless" data-throw-if-not-resolved="false"></xref> and <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen" data-throw-if-not-resolved="false"></xref>
+
+    to return a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value.
+  example: []
+  syntax:
+    content: public string? SkipUnless { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SkipUnless As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SkipUnless*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipWhen
+  commentId: P:Xunit.v3.XunitTestCase.SkipWhen
+  id: SkipWhen
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SkipWhen
+  nameWithType: XunitTestCase.SkipWhen
+  fullName: Xunit.v3.XunitTestCase.SkipWhen
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SkipWhen
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 116
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    When set, indicates a public static property that is used at runtime to determine
+
+    whether the test is skipped or not (<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to run, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to skip).
+  remarks: >-
+    Note: It is an error condition for both <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless" data-throw-if-not-resolved="false"></xref> and <xref href="v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen" data-throw-if-not-resolved="false"></xref>
+
+    to return a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value.
+  example: []
+  syntax:
+    content: public string? SkipWhen { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SkipWhen As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SkipWhen*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SourceFilePath
+  commentId: P:Xunit.v3.XunitTestCase.SourceFilePath
+  id: SourceFilePath
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SourceFilePath
+  nameWithType: XunitTestCase.SourceFilePath
+  fullName: Xunit.v3.XunitTestCase.SourceFilePath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SourceFilePath
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 119
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the source file name. A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value indicates that the
+
+    source file name is not known.
+  example: []
+  syntax:
+    content: public string? SourceFilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SourceFilePath As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SourceFilePath*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SourceLineNumber
+  commentId: P:Xunit.v3.XunitTestCase.SourceLineNumber
+  id: SourceLineNumber
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: SourceLineNumber
+  nameWithType: XunitTestCase.SourceLineNumber
+  fullName: Xunit.v3.XunitTestCase.SourceLineNumber
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SourceLineNumber
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 122
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the source file line number. A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value indicates that the
+
+    source file line number is not known.
+  example: []
+  syntax:
+    content: public int? SourceLineNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property SourceLineNumber As Integer?
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.SourceLineNumber*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestCaseDisplayName
+  commentId: P:Xunit.v3.XunitTestCase.TestCaseDisplayName
+  id: TestCaseDisplayName
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestCaseDisplayName
+  nameWithType: XunitTestCase.TestCaseDisplayName
+  fullName: Xunit.v3.XunitTestCase.TestCaseDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestCaseDisplayName
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 125
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the display name of the test case.
+  example: []
+  syntax:
+    content: public string TestCaseDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestCaseDisplayName As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestCaseDisplayName*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestCollection
+  commentId: P:Xunit.v3.XunitTestCase.TestCollection
+  id: TestCollection
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestCollection
+  nameWithType: XunitTestCase.TestCollection
+  fullName: Xunit.v3.XunitTestCase.TestCollection
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestCollection
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 129
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test collection this test case belongs to.
+  example: []
+  syntax:
+    content: public IXunitTestCollection TestCollection { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestCollection
+    content.vb: Public ReadOnly Property TestCollection As IXunitTestCollection
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestCollection*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestCollection
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClass
+  commentId: P:Xunit.v3.XunitTestCase.TestClass
+  id: TestClass
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClass
+  nameWithType: XunitTestCase.TestClass
+  fullName: Xunit.v3.XunitTestCase.TestClass
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClass
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 135
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test class that this test case belongs to.
+  example: []
+  syntax:
+    content: public IXunitTestClass TestClass { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestClass
+    content.vb: Public ReadOnly Property TestClass As IXunitTestClass
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestClass*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestClass
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassMetadataToken
+  commentId: P:Xunit.v3.XunitTestCase.TestClassMetadataToken
+  id: TestClassMetadataToken
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClassMetadataToken
+  nameWithType: XunitTestCase.TestClassMetadataToken
+  fullName: Xunit.v3.XunitTestCase.TestClassMetadataToken
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClassMetadataToken
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 141
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the <xref href="System.Reflection.MemberInfo.MetadataToken" data-throw-if-not-resolved="false"></xref> for the test class.
+  example: []
+  syntax:
+    content: public int TestClassMetadataToken { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TestClassMetadataToken As Integer
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassMetadataToken*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassName
+  commentId: P:Xunit.v3.XunitTestCase.TestClassName
+  id: TestClassName
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClassName
+  nameWithType: XunitTestCase.TestClassName
+  fullName: Xunit.v3.XunitTestCase.TestClassName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClassName
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 147
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the full name of the class where the test is defined (i.e. <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public string TestClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestClassName As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassName*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassNamespace
+  commentId: P:Xunit.v3.XunitTestCase.TestClassNamespace
+  id: TestClassNamespace
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClassNamespace
+  nameWithType: XunitTestCase.TestClassNamespace
+  fullName: Xunit.v3.XunitTestCase.TestClassNamespace
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClassNamespace
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 151
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the namespace of the class where the test is defined. If the test did not
+
+    originate in a class, or the class it originated in does not reside in a namespace,
+
+    will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public string? TestClassNamespace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestClassNamespace As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassNamespace*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassSimpleName
+  commentId: P:Xunit.v3.XunitTestCase.TestClassSimpleName
+  id: TestClassSimpleName
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestClassSimpleName
+  nameWithType: XunitTestCase.TestClassSimpleName
+  fullName: Xunit.v3.XunitTestCase.TestClassSimpleName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestClassSimpleName
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 155
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the simple name of the class where the test is defined (i.e. <xref href="System.Reflection.MemberInfo.Name" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public string TestClassSimpleName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestClassSimpleName As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassSimpleName*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethod
+  commentId: P:Xunit.v3.XunitTestCase.TestMethod
+  id: TestMethod
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethod
+  nameWithType: XunitTestCase.TestMethod
+  fullName: Xunit.v3.XunitTestCase.TestMethod
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethod
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 159
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test method this test case belongs to.
+  example: []
+  syntax:
+    content: public IXunitTestMethod TestMethod { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.IXunitTestMethod
+    content.vb: Public ReadOnly Property TestMethod As IXunitTestMethod
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethod*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethod
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArguments
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodArguments
+  id: TestMethodArguments
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodArguments
+  nameWithType: XunitTestCase.TestMethodArguments
+  fullName: Xunit.v3.XunitTestCase.TestMethodArguments
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodArguments
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 165
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  example: []
+  syntax:
+    content: public object?[] TestMethodArguments { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly Property TestMethodArguments As Object()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArguments*
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArity
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodArity
+  id: TestMethodArity
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodArity
+  nameWithType: XunitTestCase.TestMethodArity
+  fullName: Xunit.v3.XunitTestCase.TestMethodArity
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodArity
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 169
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Gets the arity (number of generic types) on the method itself. If the test did not originate
+
+    in a method, will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public int? TestMethodArity { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property TestMethodArity As Integer?
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArity*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodMetadataToken
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodMetadataToken
+  id: TestMethodMetadataToken
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodMetadataToken
+  nameWithType: XunitTestCase.TestMethodMetadataToken
+  fullName: Xunit.v3.XunitTestCase.TestMethodMetadataToken
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodMetadataToken
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 173
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the <xref href="System.Reflection.MemberInfo.MetadataToken" data-throw-if-not-resolved="false"></xref> for the test method.
+  example: []
+  syntax:
+    content: public int TestMethodMetadataToken { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TestMethodMetadataToken As Integer
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodMetadataToken*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodName
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodName
+  id: TestMethodName
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodName
+  nameWithType: XunitTestCase.TestMethodName
+  fullName: Xunit.v3.XunitTestCase.TestMethodName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodName
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 179
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the method name where the test is defined.
+  example: []
+  syntax:
+    content: public string TestMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestMethodName As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodName*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodName
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+  id: TestMethodParameterTypesVSTest
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodParameterTypesVSTest
+  nameWithType: XunitTestCase.TestMethodParameterTypesVSTest
+  fullName: Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodParameterTypesVSTest
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 183
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the types for the test method parameters.
+  remarks: >-
+    The values here are formatted according to
+
+    <a href="https://github.com/microsoft/vstest/blob/main/docs/RFCs/0017-Managed-TestCase-Properties.md">VSTest rules</a>
+
+    in order to support Test Explorer. Note that this is not the same as <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string[] TestMethodParameterTypesVSTest { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property TestMethodParameterTypesVSTest As String()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+  id: TestMethodReturnTypeVSTest
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: TestMethodReturnTypeVSTest
+  nameWithType: XunitTestCase.TestMethodReturnTypeVSTest
+  fullName: Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestMethodReturnTypeVSTest
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 187
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test method return type.
+  remarks: >-
+    The value here is formatted according to
+
+    <a href="https://github.com/microsoft/vstest/blob/main/docs/RFCs/0017-Managed-TestCase-Properties.md">VSTest rules</a>
+
+    in order to support Test Explorer. Note that this is not the same as <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string TestMethodReturnTypeVSTest { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TestMethodReturnTypeVSTest As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Timeout
+  commentId: P:Xunit.v3.XunitTestCase.Timeout
+  id: Timeout
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: XunitTestCase.Timeout
+  fullName: Xunit.v3.XunitTestCase.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 191
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the timeout of the test, in milliseconds; if zero or negative, means the test case has no timeout.
+  example: []
+  syntax:
+    content: public int Timeout { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Timeout As Integer
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.Timeout*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.Timeout
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Traits
+  commentId: P:Xunit.v3.XunitTestCase.Traits
+  id: Traits
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: Traits
+  nameWithType: XunitTestCase.Traits
+  fullName: Xunit.v3.XunitTestCase.Traits
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Traits
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 196
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the traits associated with this test case.
+  example: []
+  syntax:
+    content: public Dictionary<string, HashSet<string>> Traits { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+    content.vb: Public ReadOnly Property Traits As Dictionary(Of String, HashSet(Of String))
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.Traits*
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.UniqueID
+  commentId: P:Xunit.v3.XunitTestCase.UniqueID
+  id: UniqueID
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: UniqueID
+  nameWithType: XunitTestCase.UniqueID
+  fullName: Xunit.v3.XunitTestCase.UniqueID
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: UniqueID
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 204
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a unique identifier for the test case.
+  remarks: >-
+    The unique identifier for a test case should be able to discriminate among test cases, even those
+
+    which are varied invocations against the same test method (i.e., theories). This identifier should
+
+    remain stable until such time as the developer changes some fundamental part of the identity
+
+    (assembly, class name, test name, or test data). Recompilation of the test assembly is reasonable
+
+    as a stability changing event.
+  example: []
+  syntax:
+    content: public virtual string UniqueID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property UniqueID As String
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.UniqueID*
+  implements:
+  - v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests
+  commentId: M:Xunit.v3.XunitTestCase.CreateTests
+  id: CreateTests
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: CreateTests()
+  nameWithType: XunitTestCase.CreateTests()
+  fullName: Xunit.v3.XunitTestCase.CreateTests()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: CreateTests
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 213
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Creates the tests that are emitted from this test case. Exceptions thrown here
+
+    will be caught and converted into a test case failure.
+  remarks: >-
+    By default, this method returns a single <xref href="v3.3.2.2:Xunit.v3.XunitTest" data-throw-if-not-resolved="false"></xref> that is appropriate
+
+    for a one-to-one mapping between test and test case. Override this method to change the
+
+    tests that are associated with this test case.
+  example: []
+  syntax:
+    content: public virtual ValueTask<IReadOnlyCollection<IXunitTest>> CreateTests()
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTest}}
+    content.vb: Public Overridable Function CreateTests() As ValueTask(Of IReadOnlyCollection(Of IXunitTest))
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.CreateTests
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  commentId: M:Xunit.v3.XunitTestCase.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  id: Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(IXunitSerializationInfo)
+  nameWithType: XunitTestCase.Deserialize(IXunitSerializationInfo)
+  fullName: Xunit.v3.XunitTestCase.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 235
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Called when the test case should populate itself with data from the serialization info.
+  example: []
+  syntax:
+    content: protected virtual void Deserialize(IXunitSerializationInfo info)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: The info to get the object data from
+    content.vb: Protected Overridable Sub Deserialize(info As IXunitSerializationInfo)
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.Deserialize*
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.DisposeAsync
+  commentId: M:Xunit.v3.XunitTestCase.DisposeAsync
+  id: DisposeAsync
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: XunitTestCase.DisposeAsync()
+  fullName: Xunit.v3.XunitTestCase.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 262
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public virtual ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Overridable Function DisposeAsync() As ValueTask
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.PostInvoke
+  commentId: M:Xunit.v3.XunitTestCase.PostInvoke
+  id: PostInvoke
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: PostInvoke()
+  nameWithType: XunitTestCase.PostInvoke()
+  fullName: Xunit.v3.XunitTestCase.PostInvoke()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: PostInvoke
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 270
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Allows the test case to run some code just after the test case is finished running.
+  example: []
+  syntax:
+    content: public virtual void PostInvoke()
+    content.vb: Public Overridable Sub PostInvoke()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.PostInvoke*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.PostInvoke
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.PreInvoke
+  commentId: M:Xunit.v3.XunitTestCase.PreInvoke
+  id: PreInvoke
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: PreInvoke()
+  nameWithType: XunitTestCase.PreInvoke()
+  fullName: Xunit.v3.XunitTestCase.PreInvoke()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: PreInvoke
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 274
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Allows the test case to run some code just before the test case is run.
+  example: []
+  syntax:
+    content: public virtual void PreInvoke()
+    content.vb: Public Overridable Sub PreInvoke()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.PreInvoke*
+  implements:
+  - v3.3.2.2:Xunit.v3.IXunitTestCase.PreInvoke
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.ResolveTestMethodArguments(System.Reflection.ParameterInfo[],System.Object[])
+  commentId: M:Xunit.v3.XunitTestCase.ResolveTestMethodArguments(System.Reflection.ParameterInfo[],System.Object[])
+  id: ResolveTestMethodArguments(System.Reflection.ParameterInfo[],System.Object[])
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: ResolveTestMethodArguments(ParameterInfo[], object?[])
+  nameWithType: XunitTestCase.ResolveTestMethodArguments(ParameterInfo[], object?[])
+  fullName: Xunit.v3.XunitTestCase.ResolveTestMethodArguments(System.Reflection.ParameterInfo[], object?[])
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ResolveTestMethodArguments
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 282
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Computes values from the test case and resolves the test method arguments just before execution.
+
+    Typically used from <xref href="v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests" data-throw-if-not-resolved="false"></xref> so that the executed test has an appropriately
+
+    typed argument, regardless of the type that was used to serialize the argument.
+  example: []
+  syntax:
+    content: protected static object?[] ResolveTestMethodArguments(ParameterInfo[] parameters, object?[] arguments)
+    parameters:
+    - id: parameters
+      type: System.Reflection.ParameterInfo[]
+    - id: arguments
+      type: System.Object[]
+    return:
+      type: System.Object[]
+    content.vb: Protected Shared Function ResolveTestMethodArguments(parameters As ParameterInfo(), arguments As Object()) As Object()
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.ResolveTestMethodArguments*
+  nameWithType.vb: XunitTestCase.ResolveTestMethodArguments(ParameterInfo(), Object())
+  fullName.vb: Xunit.v3.XunitTestCase.ResolveTestMethodArguments(System.Reflection.ParameterInfo(), Object())
+  name.vb: ResolveTestMethodArguments(ParameterInfo(), Object())
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  commentId: M:Xunit.v3.XunitTestCase.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  id: Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  langs:
+  - csharp
+  - vb
+  name: Serialize(IXunitSerializationInfo)
+  nameWithType: XunitTestCase.Serialize(IXunitSerializationInfo)
+  fullName: Xunit.v3.XunitTestCase.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/xunit.v3.core/ObjectModel/XunitTestCase.cs
+    startLine: 300
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Called when the test case should store its serialized values into the serialization info.
+  example: []
+  syntax:
+    content: protected virtual void Serialize(IXunitSerializationInfo info)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: The info to store the object data into
+    content.vb: Protected Overridable Sub Serialize(info As IXunitSerializationInfo)
+  overload: v3.3.2.2:Xunit.v3.XunitTestCase.Serialize*
+references:
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase
+  commentId: T:Xunit.v3.IXunitTestCase
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.IXunitTestCase.html
+  name: IXunitTestCase
+  nameWithType: IXunitTestCase
+  fullName: Xunit.v3.IXunitTestCase
+- uid: v3.3.2.2:Xunit.FactAttribute
+  commentId: T:Xunit.FactAttribute
+  parent: v3.3.2.2:Xunit
+  href: Xunit.FactAttribute.html
+  name: FactAttribute
+  nameWithType: FactAttribute
+  fullName: Xunit.FactAttribute
+- uid: v3.3.2.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.3.2.2:Xunit.Sdk.ITestCase
+  commentId: T:Xunit.Sdk.ITestCase
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCase.html
+  name: ITestCase
+  nameWithType: ITestCase
+  fullName: Xunit.Sdk.ITestCase
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  commentId: T:Xunit.Sdk.IXunitSerializable
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializable.html
+  name: IXunitSerializable
+  nameWithType: IXunitSerializable
+  fullName: Xunit.Sdk.IXunitSerializable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.#ctor*
+  commentId: Overload:Xunit.v3.XunitTestCase.#ctor
+  href: Xunit.v3.XunitTestCase.-ctor.html#Xunit_v3_XunitTestCase__ctor
+  name: XunitTestCase
+  nameWithType: XunitTestCase.XunitTestCase
+  fullName: Xunit.v3.XunitTestCase.XunitTestCase
+  nameWithType.vb: XunitTestCase.New
+  fullName.vb: Xunit.v3.XunitTestCase.New
+  name.vb: New
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase
+  commentId: T:Xunit.v3.XunitTestCase
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.XunitTestCase.html
+  name: XunitTestCase
+  nameWithType: XunitTestCase
+  fullName: Xunit.v3.XunitTestCase
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute.SkipExceptions
+  commentId: P:Xunit.v3.IFactAttribute.SkipExceptions
+  parent: v3.3.2.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipExceptions.html#Xunit_v3_IFactAttribute_SkipExceptions
+  name: SkipExceptions
+  nameWithType: IFactAttribute.SkipExceptions
+  fullName: Xunit.v3.IFactAttribute.SkipExceptions
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute.Skip
+  commentId: P:Xunit.v3.IFactAttribute.Skip
+  parent: v3.3.2.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.Skip.html#Xunit_v3_IFactAttribute_Skip
+  name: Skip
+  nameWithType: IFactAttribute.Skip
+  fullName: Xunit.v3.IFactAttribute.Skip
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute.SkipType
+  commentId: P:Xunit.v3.IFactAttribute.SkipType
+  parent: v3.3.2.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipType.html#Xunit_v3_IFactAttribute_SkipType
+  name: SkipType
+  nameWithType: IFactAttribute.SkipType
+  fullName: Xunit.v3.IFactAttribute.SkipType
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute.SkipUnless
+  commentId: P:Xunit.v3.IFactAttribute.SkipUnless
+  parent: v3.3.2.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipUnless.html#Xunit_v3_IFactAttribute_SkipUnless
+  name: SkipUnless
+  nameWithType: IFactAttribute.SkipUnless
+  fullName: Xunit.v3.IFactAttribute.SkipUnless
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute.SkipWhen
+  commentId: P:Xunit.v3.IFactAttribute.SkipWhen
+  parent: v3.3.2.2:Xunit.v3.IFactAttribute
+  href: Xunit.v3.IFactAttribute.SkipWhen.html#Xunit_v3_IFactAttribute_SkipWhen
+  name: SkipWhen
+  nameWithType: IFactAttribute.SkipWhen
+  fullName: Xunit.v3.IFactAttribute.SkipWhen
+- uid: v3.3.2.2:Xunit.v3.IXunitTestMethod
+  commentId: T:Xunit.v3.IXunitTestMethod
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.IXunitTestMethod.html
+  name: IXunitTestMethod
+  nameWithType: IXunitTestMethod
+  fullName: Xunit.v3.IXunitTestMethod
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, HashSet<string>>
+  nameWithType: Dictionary<string, HashSet<string>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.HashSet<string>>
+  nameWithType.vb: Dictionary(Of String, HashSet(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.HashSet(Of String))
+  name.vb: Dictionary(Of String, HashSet(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: v3.3.2.2:Xunit.v3.IFactAttribute
+  commentId: T:Xunit.v3.IFactAttribute
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.IFactAttribute.html
+  name: IFactAttribute
+  nameWithType: IFactAttribute
+  fullName: Xunit.v3.IFactAttribute
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.DisposalTracker*
+  commentId: Overload:Xunit.v3.XunitTestCase.DisposalTracker
+  href: Xunit.v3.XunitTestCase.DisposalTracker.html#Xunit_v3_XunitTestCase_DisposalTracker
+  name: DisposalTracker
+  nameWithType: XunitTestCase.DisposalTracker
+  fullName: Xunit.v3.XunitTestCase.DisposalTracker
+- uid: v3.3.2.2:Xunit.Sdk.DisposalTracker
+  commentId: T:Xunit.Sdk.DisposalTracker
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.DisposalTracker.html
+  name: DisposalTracker
+  nameWithType: DisposalTracker
+  fullName: Xunit.Sdk.DisposalTracker
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Explicit*
+  commentId: Overload:Xunit.v3.XunitTestCase.Explicit
+  href: Xunit.v3.XunitTestCase.Explicit.html#Xunit_v3_XunitTestCase_Explicit
+  name: Explicit
+  nameWithType: XunitTestCase.Explicit
+  fullName: Xunit.v3.XunitTestCase.Explicit
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.Explicit
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Explicit
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Explicit.html#Xunit_Sdk_ITestCaseMetadata_Explicit
+  name: Explicit
+  nameWithType: ITestCaseMetadata.Explicit
+  fullName: Xunit.Sdk.ITestCaseMetadata.Explicit
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipExceptions*
+  commentId: Overload:Xunit.v3.XunitTestCase.SkipExceptions
+  href: Xunit.v3.XunitTestCase.SkipExceptions.html#Xunit_v3_XunitTestCase_SkipExceptions
+  name: SkipExceptions
+  nameWithType: XunitTestCase.SkipExceptions
+  fullName: Xunit.v3.XunitTestCase.SkipExceptions
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.SkipExceptions
+  commentId: P:Xunit.v3.IXunitTestCase.SkipExceptions
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipExceptions.html#Xunit_v3_IXunitTestCase_SkipExceptions
+  name: SkipExceptions
+  nameWithType: IXunitTestCase.SkipExceptions
+  fullName: Xunit.v3.IXunitTestCase.SkipExceptions
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SkipReason
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SkipReason
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SkipReason.html#Xunit_Sdk_ITestCaseMetadata_SkipReason
+  name: SkipReason
+  nameWithType: ITestCaseMetadata.SkipReason
+  fullName: Xunit.Sdk.ITestCaseMetadata.SkipReason
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.SkipUnless
+  commentId: P:Xunit.v3.IXunitTestCase.SkipUnless
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipUnless.html#Xunit_v3_IXunitTestCase_SkipUnless
+  name: SkipUnless
+  nameWithType: IXunitTestCase.SkipUnless
+  fullName: Xunit.v3.IXunitTestCase.SkipUnless
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.SkipWhen
+  commentId: P:Xunit.v3.IXunitTestCase.SkipWhen
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipWhen.html#Xunit_v3_IXunitTestCase_SkipWhen
+  name: SkipWhen
+  nameWithType: IXunitTestCase.SkipWhen
+  fullName: Xunit.v3.IXunitTestCase.SkipWhen
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipReason*
+  commentId: Overload:Xunit.v3.XunitTestCase.SkipReason
+  href: Xunit.v3.XunitTestCase.SkipReason.html#Xunit_v3_XunitTestCase_SkipReason
+  name: SkipReason
+  nameWithType: XunitTestCase.SkipReason
+  fullName: Xunit.v3.XunitTestCase.SkipReason
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.SkipReason
+  commentId: P:Xunit.v3.IXunitTestCase.SkipReason
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipReason.html#Xunit_v3_IXunitTestCase_SkipReason
+  name: SkipReason
+  nameWithType: IXunitTestCase.SkipReason
+  fullName: Xunit.v3.IXunitTestCase.SkipReason
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipType*
+  commentId: Overload:Xunit.v3.XunitTestCase.SkipType
+  href: Xunit.v3.XunitTestCase.SkipType.html#Xunit_v3_XunitTestCase_SkipType
+  name: SkipType
+  nameWithType: XunitTestCase.SkipType
+  fullName: Xunit.v3.XunitTestCase.SkipType
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.SkipType
+  commentId: P:Xunit.v3.IXunitTestCase.SkipType
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.SkipType.html#Xunit_v3_IXunitTestCase_SkipType
+  name: SkipType
+  nameWithType: IXunitTestCase.SkipType
+  fullName: Xunit.v3.IXunitTestCase.SkipType
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipUnless*
+  commentId: Overload:Xunit.v3.XunitTestCase.SkipUnless
+  href: Xunit.v3.XunitTestCase.SkipUnless.html#Xunit_v3_XunitTestCase_SkipUnless
+  name: SkipUnless
+  nameWithType: XunitTestCase.SkipUnless
+  fullName: Xunit.v3.XunitTestCase.SkipUnless
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SkipWhen*
+  commentId: Overload:Xunit.v3.XunitTestCase.SkipWhen
+  href: Xunit.v3.XunitTestCase.SkipWhen.html#Xunit_v3_XunitTestCase_SkipWhen
+  name: SkipWhen
+  nameWithType: XunitTestCase.SkipWhen
+  fullName: Xunit.v3.XunitTestCase.SkipWhen
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SourceFilePath*
+  commentId: Overload:Xunit.v3.XunitTestCase.SourceFilePath
+  href: Xunit.v3.XunitTestCase.SourceFilePath.html#Xunit_v3_XunitTestCase_SourceFilePath
+  name: SourceFilePath
+  nameWithType: XunitTestCase.SourceFilePath
+  fullName: Xunit.v3.XunitTestCase.SourceFilePath
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceFilePath.html#Xunit_Sdk_ITestCaseMetadata_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ITestCaseMetadata.SourceFilePath
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.SourceLineNumber*
+  commentId: Overload:Xunit.v3.XunitTestCase.SourceLineNumber
+  href: Xunit.v3.XunitTestCase.SourceLineNumber.html#Xunit_v3_XunitTestCase_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: XunitTestCase.SourceLineNumber
+  fullName: Xunit.v3.XunitTestCase.SourceLineNumber
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber.html#Xunit_Sdk_ITestCaseMetadata_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: ITestCaseMetadata.SourceLineNumber
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestCaseDisplayName*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestCaseDisplayName
+  href: Xunit.v3.XunitTestCase.TestCaseDisplayName.html#Xunit_v3_XunitTestCase_TestCaseDisplayName
+  name: TestCaseDisplayName
+  nameWithType: XunitTestCase.TestCaseDisplayName
+  fullName: Xunit.v3.XunitTestCase.TestCaseDisplayName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName.html#Xunit_Sdk_ITestCaseMetadata_TestCaseDisplayName
+  name: TestCaseDisplayName
+  nameWithType: ITestCaseMetadata.TestCaseDisplayName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestCollection*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestCollection
+  href: Xunit.v3.XunitTestCase.TestCollection.html#Xunit_v3_XunitTestCase_TestCollection
+  name: TestCollection
+  nameWithType: XunitTestCase.TestCollection
+  fullName: Xunit.v3.XunitTestCase.TestCollection
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestCollection
+  commentId: P:Xunit.v3.IXunitTestCase.TestCollection
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestCollection.html#Xunit_v3_IXunitTestCase_TestCollection
+  name: TestCollection
+  nameWithType: IXunitTestCase.TestCollection
+  fullName: Xunit.v3.IXunitTestCase.TestCollection
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCollection
+  commentId: T:Xunit.v3.IXunitTestCollection
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.IXunitTestCollection.html
+  name: IXunitTestCollection
+  nameWithType: IXunitTestCollection
+  fullName: Xunit.v3.IXunitTestCollection
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClass*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestClass
+  href: Xunit.v3.XunitTestCase.TestClass.html#Xunit_v3_XunitTestCase_TestClass
+  name: TestClass
+  nameWithType: XunitTestCase.TestClass
+  fullName: Xunit.v3.XunitTestCase.TestClass
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestClass
+  commentId: P:Xunit.v3.IXunitTestCase.TestClass
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClass.html#Xunit_v3_IXunitTestCase_TestClass
+  name: TestClass
+  nameWithType: IXunitTestCase.TestClass
+  fullName: Xunit.v3.IXunitTestCase.TestClass
+- uid: v3.3.2.2:Xunit.v3.IXunitTestClass
+  commentId: T:Xunit.v3.IXunitTestClass
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.IXunitTestClass.html
+  name: IXunitTestClass
+  nameWithType: IXunitTestClass
+  fullName: Xunit.v3.IXunitTestClass
+- uid: System.Reflection.MemberInfo.MetadataToken
+  commentId: P:System.Reflection.MemberInfo.MetadataToken
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.metadatatoken
+  name: MetadataToken
+  nameWithType: MemberInfo.MetadataToken
+  fullName: System.Reflection.MemberInfo.MetadataToken
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassMetadataToken*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestClassMetadataToken
+  href: Xunit.v3.XunitTestCase.TestClassMetadataToken.html#Xunit_v3_XunitTestCase_TestClassMetadataToken
+  name: TestClassMetadataToken
+  nameWithType: XunitTestCase.TestClassMetadataToken
+  fullName: Xunit.v3.XunitTestCase.TestClassMetadataToken
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassMetadataToken
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassMetadataToken.html#Xunit_v3_IXunitTestCase_TestClassMetadataToken
+  name: TestClassMetadataToken
+  nameWithType: IXunitTestCase.TestClassMetadataToken
+  fullName: Xunit.v3.IXunitTestCase.TestClassMetadataToken
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Type.FullName
+  commentId: P:System.Type.FullName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type.fullname
+  name: FullName
+  nameWithType: Type.FullName
+  fullName: System.Type.FullName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassName*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestClassName
+  href: Xunit.v3.XunitTestCase.TestClassName.html#Xunit_v3_XunitTestCase_TestClassName
+  name: TestClassName
+  nameWithType: XunitTestCase.TestClassName
+  fullName: Xunit.v3.XunitTestCase.TestClassName
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassName
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassName
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassName.html#Xunit_v3_IXunitTestCase_TestClassName
+  name: TestClassName
+  nameWithType: IXunitTestCase.TestClassName
+  fullName: Xunit.v3.IXunitTestCase.TestClassName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassName.html#Xunit_Sdk_ITestCaseMetadata_TestClassName
+  name: TestClassName
+  nameWithType: ITestCaseMetadata.TestClassName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassNamespace*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestClassNamespace
+  href: Xunit.v3.XunitTestCase.TestClassNamespace.html#Xunit_v3_XunitTestCase_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: XunitTestCase.TestClassNamespace
+  fullName: Xunit.v3.XunitTestCase.TestClassNamespace
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace.html#Xunit_Sdk_ITestCaseMetadata_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: ITestCaseMetadata.TestClassNamespace
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+- uid: System.Reflection.MemberInfo.Name
+  commentId: P:System.Reflection.MemberInfo.Name
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo.name
+  name: Name
+  nameWithType: MemberInfo.Name
+  fullName: System.Reflection.MemberInfo.Name
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestClassSimpleName*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestClassSimpleName
+  href: Xunit.v3.XunitTestCase.TestClassSimpleName.html#Xunit_v3_XunitTestCase_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: XunitTestCase.TestClassSimpleName
+  fullName: Xunit.v3.XunitTestCase.TestClassSimpleName
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  commentId: P:Xunit.v3.IXunitTestCase.TestClassSimpleName
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestClassSimpleName.html#Xunit_v3_IXunitTestCase_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: IXunitTestCase.TestClassSimpleName
+  fullName: Xunit.v3.IXunitTestCase.TestClassSimpleName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName.html#Xunit_Sdk_ITestCaseMetadata_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: ITestCaseMetadata.TestClassSimpleName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassSimpleName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethod*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethod
+  href: Xunit.v3.XunitTestCase.TestMethod.html#Xunit_v3_XunitTestCase_TestMethod
+  name: TestMethod
+  nameWithType: XunitTestCase.TestMethod
+  fullName: Xunit.v3.XunitTestCase.TestMethod
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethod
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethod
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethod.html#Xunit_v3_IXunitTestCase_TestMethod
+  name: TestMethod
+  nameWithType: IXunitTestCase.TestMethod
+  fullName: Xunit.v3.IXunitTestCase.TestMethod
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArguments*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodArguments
+  href: Xunit.v3.XunitTestCase.TestMethodArguments.html#Xunit_v3_XunitTestCase_TestMethodArguments
+  name: TestMethodArguments
+  nameWithType: XunitTestCase.TestMethodArguments
+  fullName: Xunit.v3.XunitTestCase.TestMethodArguments
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodArity*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodArity
+  href: Xunit.v3.XunitTestCase.TestMethodArity.html#Xunit_v3_XunitTestCase_TestMethodArity
+  name: TestMethodArity
+  nameWithType: XunitTestCase.TestMethodArity
+  fullName: Xunit.v3.XunitTestCase.TestMethodArity
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodArity.html#Xunit_Sdk_ITestCaseMetadata_TestMethodArity
+  name: TestMethodArity
+  nameWithType: ITestCaseMetadata.TestMethodArity
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodArity
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodMetadataToken*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodMetadataToken
+  href: Xunit.v3.XunitTestCase.TestMethodMetadataToken.html#Xunit_v3_XunitTestCase_TestMethodMetadataToken
+  name: TestMethodMetadataToken
+  nameWithType: XunitTestCase.TestMethodMetadataToken
+  fullName: Xunit.v3.XunitTestCase.TestMethodMetadataToken
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodMetadataToken.html#Xunit_v3_IXunitTestCase_TestMethodMetadataToken
+  name: TestMethodMetadataToken
+  nameWithType: IXunitTestCase.TestMethodMetadataToken
+  fullName: Xunit.v3.IXunitTestCase.TestMethodMetadataToken
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodName*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodName
+  href: Xunit.v3.XunitTestCase.TestMethodName.html#Xunit_v3_XunitTestCase_TestMethodName
+  name: TestMethodName
+  nameWithType: XunitTestCase.TestMethodName
+  fullName: Xunit.v3.XunitTestCase.TestMethodName
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodName
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodName
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodName.html#Xunit_v3_IXunitTestCase_TestMethodName
+  name: TestMethodName
+  nameWithType: IXunitTestCase.TestMethodName
+  fullName: Xunit.v3.IXunitTestCase.TestMethodName
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodName
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodName.html#Xunit_Sdk_ITestCaseMetadata_TestMethodName
+  name: TestMethodName
+  nameWithType: ITestCaseMetadata.TestMethodName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodName
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+  href: Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest.html#Xunit_v3_XunitTestCase_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: XunitTestCase.TestMethodParameterTypesVSTest
+  fullName: Xunit.v3.XunitTestCase.TestMethodParameterTypesVSTest
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest.html#Xunit_v3_IXunitTestCase_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: IXunitTestCase.TestMethodParameterTypesVSTest
+  fullName: Xunit.v3.IXunitTestCase.TestMethodParameterTypesVSTest
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: ITestCaseMetadata.TestMethodParameterTypesVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest*
+  commentId: Overload:Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+  href: Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest.html#Xunit_v3_XunitTestCase_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: XunitTestCase.TestMethodReturnTypeVSTest
+  fullName: Xunit.v3.XunitTestCase.TestMethodReturnTypeVSTest
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest.html#Xunit_v3_IXunitTestCase_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: IXunitTestCase.TestMethodReturnTypeVSTest
+  fullName: Xunit.v3.IXunitTestCase.TestMethodReturnTypeVSTest
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: ITestCaseMetadata.TestMethodReturnTypeVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Timeout*
+  commentId: Overload:Xunit.v3.XunitTestCase.Timeout
+  href: Xunit.v3.XunitTestCase.Timeout.html#Xunit_v3_XunitTestCase_Timeout
+  name: Timeout
+  nameWithType: XunitTestCase.Timeout
+  fullName: Xunit.v3.XunitTestCase.Timeout
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.Timeout
+  commentId: P:Xunit.v3.IXunitTestCase.Timeout
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.Timeout.html#Xunit_v3_IXunitTestCase_Timeout
+  name: Timeout
+  nameWithType: IXunitTestCase.Timeout
+  fullName: Xunit.v3.IXunitTestCase.Timeout
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Traits*
+  commentId: Overload:Xunit.v3.XunitTestCase.Traits
+  href: Xunit.v3.XunitTestCase.Traits.html#Xunit_v3_XunitTestCase_Traits
+  name: Traits
+  nameWithType: XunitTestCase.Traits
+  fullName: Xunit.v3.XunitTestCase.Traits
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.UniqueID*
+  commentId: Overload:Xunit.v3.XunitTestCase.UniqueID
+  href: Xunit.v3.XunitTestCase.UniqueID.html#Xunit_v3_XunitTestCase_UniqueID
+  name: UniqueID
+  nameWithType: XunitTestCase.UniqueID
+  fullName: Xunit.v3.XunitTestCase.UniqueID
+- uid: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  parent: v3.3.2.2:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.UniqueID.html#Xunit_Sdk_ITestCaseMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestCaseMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3.3.2.2:Xunit.v3.XunitTest
+  commentId: T:Xunit.v3.XunitTest
+  href: Xunit.v3.XunitTest.html
+  name: XunitTest
+  nameWithType: XunitTest
+  fullName: Xunit.v3.XunitTest
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests*
+  commentId: Overload:Xunit.v3.XunitTestCase.CreateTests
+  href: Xunit.v3.XunitTestCase.CreateTests.html#Xunit_v3_XunitTestCase_CreateTests
+  name: CreateTests
+  nameWithType: XunitTestCase.CreateTests
+  fullName: Xunit.v3.XunitTestCase.CreateTests
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.CreateTests
+  commentId: M:Xunit.v3.IXunitTestCase.CreateTests
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  name: CreateTests()
+  nameWithType: IXunitTestCase.CreateTests()
+  fullName: Xunit.v3.IXunitTestCase.CreateTests()
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.IXunitTestCase.CreateTests.html#Xunit_v3_IXunitTestCase_CreateTests
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTest}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.IXunitTest}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<IReadOnlyCollection<IXunitTest>>
+  nameWithType: ValueTask<IReadOnlyCollection<IXunitTest>>
+  fullName: System.Threading.Tasks.ValueTask<System.Collections.Generic.IReadOnlyCollection<Xunit.v3.IXunitTest>>
+  nameWithType.vb: ValueTask(Of IReadOnlyCollection(Of IXunitTest))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.IXunitTest))
+  name.vb: ValueTask(Of IReadOnlyCollection(Of IXunitTest))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.2.2:Xunit.v3.IXunitTest
+    name: IXunitTest
+    href: Xunit.v3.IXunitTest.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.2:Xunit.v3.IXunitTest
+    name: IXunitTest
+    href: Xunit.v3.IXunitTest.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Deserialize*
+  commentId: Overload:Xunit.v3.XunitTestCase.Deserialize
+  href: Xunit.v3.XunitTestCase.Deserialize.html#Xunit_v3_XunitTestCase_Deserialize_Xunit_Sdk_IXunitSerializationInfo_
+  name: Deserialize
+  nameWithType: XunitTestCase.Deserialize
+  fullName: Xunit.v3.XunitTestCase.Deserialize
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializationInfo
+  commentId: T:Xunit.Sdk.IXunitSerializationInfo
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializationInfo.html
+  name: IXunitSerializationInfo
+  nameWithType: IXunitSerializationInfo
+  fullName: Xunit.Sdk.IXunitSerializationInfo
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.DisposeAsync*
+  commentId: Overload:Xunit.v3.XunitTestCase.DisposeAsync
+  href: Xunit.v3.XunitTestCase.DisposeAsync.html#Xunit_v3_XunitTestCase_DisposeAsync
+  name: DisposeAsync
+  nameWithType: XunitTestCase.DisposeAsync
+  fullName: Xunit.v3.XunitTestCase.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.PostInvoke*
+  commentId: Overload:Xunit.v3.XunitTestCase.PostInvoke
+  href: Xunit.v3.XunitTestCase.PostInvoke.html#Xunit_v3_XunitTestCase_PostInvoke
+  name: PostInvoke
+  nameWithType: XunitTestCase.PostInvoke
+  fullName: Xunit.v3.XunitTestCase.PostInvoke
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PostInvoke
+  commentId: M:Xunit.v3.IXunitTestCase.PostInvoke
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  name: PostInvoke()
+  nameWithType: IXunitTestCase.PostInvoke()
+  fullName: Xunit.v3.IXunitTestCase.PostInvoke()
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.IXunitTestCase.PostInvoke.html#Xunit_v3_IXunitTestCase_PostInvoke
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.PreInvoke*
+  commentId: Overload:Xunit.v3.XunitTestCase.PreInvoke
+  href: Xunit.v3.XunitTestCase.PreInvoke.html#Xunit_v3_XunitTestCase_PreInvoke
+  name: PreInvoke
+  nameWithType: XunitTestCase.PreInvoke
+  fullName: Xunit.v3.XunitTestCase.PreInvoke
+- uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PreInvoke
+  commentId: M:Xunit.v3.IXunitTestCase.PreInvoke
+  parent: v3.3.2.2:Xunit.v3.IXunitTestCase
+  href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  name: PreInvoke()
+  nameWithType: IXunitTestCase.PreInvoke()
+  fullName: Xunit.v3.IXunitTestCase.PreInvoke()
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.IXunitTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.IXunitTestCase.PreInvoke.html#Xunit_v3_IXunitTestCase_PreInvoke
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests
+  commentId: M:Xunit.v3.XunitTestCase.CreateTests
+  parent: v3.3.2.2:Xunit.v3.XunitTestCase
+  href: Xunit.v3.XunitTestCase.CreateTests.html#Xunit_v3_XunitTestCase_CreateTests
+  name: CreateTests()
+  nameWithType: XunitTestCase.CreateTests()
+  fullName: Xunit.v3.XunitTestCase.CreateTests()
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.XunitTestCase.CreateTests.html#Xunit_v3_XunitTestCase_CreateTests
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.v3.XunitTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.XunitTestCase.CreateTests.html#Xunit_v3_XunitTestCase_CreateTests
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.ResolveTestMethodArguments*
+  commentId: Overload:Xunit.v3.XunitTestCase.ResolveTestMethodArguments
+  href: Xunit.v3.XunitTestCase.ResolveTestMethodArguments.html#Xunit_v3_XunitTestCase_ResolveTestMethodArguments_System_Reflection_ParameterInfo___System_Object___
+  name: ResolveTestMethodArguments
+  nameWithType: XunitTestCase.ResolveTestMethodArguments
+  fullName: Xunit.v3.XunitTestCase.ResolveTestMethodArguments
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )
+- uid: v3.3.2.2:Xunit.v3.XunitTestCase.Serialize*
+  commentId: Overload:Xunit.v3.XunitTestCase.Serialize
+  href: Xunit.v3.XunitTestCase.Serialize.html#Xunit_v3_XunitTestCase_Serialize_Xunit_Sdk_IXunitSerializationInfo_
+  name: Serialize
+  nameWithType: XunitTestCase.Serialize
+  fullName: Xunit.v3.XunitTestCase.Serialize
+memberLayout: SeparatePages

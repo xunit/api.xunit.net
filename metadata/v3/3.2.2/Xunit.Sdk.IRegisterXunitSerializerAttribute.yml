@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute
+  commentId: T:Xunit.Sdk.IRegisterXunitSerializerAttribute
+  id: IRegisterXunitSerializerAttribute
+  parent: v3.3.2.2:Xunit.Sdk
+  children:
+  - v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+  - v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  langs:
+  - csharp
+  - vb
+  name: IRegisterXunitSerializerAttribute
+  nameWithType: IRegisterXunitSerializerAttribute
+  fullName: Xunit.Sdk.IRegisterXunitSerializerAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: IRegisterXunitSerializerAttribute
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Used to decorate xUnit.net test assemblies to register an external serializer for
+
+    one or more supports types to serialize.
+  remarks: Serializer registration attributes are only valid at the assembly level.
+  example: []
+  syntax:
+    content: public interface IRegisterXunitSerializerAttribute
+    content.vb: Public Interface IRegisterXunitSerializerAttribute
+- uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+  commentId: P:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+  id: SerializerType
+  parent: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute
+  langs:
+  - csharp
+  - vb
+  name: SerializerType
+  nameWithType: IRegisterXunitSerializerAttribute.SerializerType
+  fullName: Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SerializerType
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the type of the serializer.
+  remarks: The serializer type must implement <xref href="v3.3.2.2:Xunit.Sdk.IXunitSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Type SerializerType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property SerializerType As Type
+  overload: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType*
+- uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  commentId: P:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  id: SupportedTypesForSerialization
+  parent: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute
+  langs:
+  - csharp
+  - vb
+  name: SupportedTypesForSerialization
+  nameWithType: IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  fullName: Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SupportedTypesForSerialization
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IRegisterXunitSerializerAttribute.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the types that are supported by the serializer.
+  remarks: >-
+    When searching for a serializer to deserialize a value, exact type matches are
+
+    given higher priority than compatible type matches, and if more than one serializer
+
+    can support a given type based on compatible type match, then one will be chosen
+
+    arbitrarily to support the deserialization.
+  example: []
+  syntax:
+    content: Type[] SupportedTypesForSerialization { get; }
+    parameters: []
+    return:
+      type: System.Type[]
+    content.vb: ReadOnly Property SupportedTypesForSerialization As Type()
+  overload: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization*
+references:
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializer
+  commentId: T:Xunit.Sdk.IXunitSerializer
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializer.html
+  name: IXunitSerializer
+  nameWithType: IXunitSerializer
+  fullName: Xunit.Sdk.IXunitSerializer
+- uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType*
+  commentId: Overload:Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+  href: Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType.html#Xunit_Sdk_IRegisterXunitSerializerAttribute_SerializerType
+  name: SerializerType
+  nameWithType: IRegisterXunitSerializerAttribute.SerializerType
+  fullName: Xunit.Sdk.IRegisterXunitSerializerAttribute.SerializerType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization*
+  commentId: Overload:Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  href: Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization.html#Xunit_Sdk_IRegisterXunitSerializerAttribute_SupportedTypesForSerialization
+  name: SupportedTypesForSerialization
+  nameWithType: IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+  fullName: Xunit.Sdk.IRegisterXunitSerializerAttribute.SupportedTypesForSerialization
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+memberLayout: SeparatePages

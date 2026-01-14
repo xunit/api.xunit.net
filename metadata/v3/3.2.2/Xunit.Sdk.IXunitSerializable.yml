@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  commentId: T:Xunit.Sdk.IXunitSerializable
+  id: IXunitSerializable
+  parent: v3.3.2.2:Xunit.Sdk
+  children:
+  - v3.3.2.2:Xunit.Sdk.IXunitSerializable.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  - v3.3.2.2:Xunit.Sdk.IXunitSerializable.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  langs:
+  - csharp
+  - vb
+  name: IXunitSerializable
+  nameWithType: IXunitSerializable
+  fullName: Xunit.Sdk.IXunitSerializable
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: IXunitSerializable
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    This interface should be implemented by any custom object which requires serialization.
+
+    In addition to implementing this interface, objects must also offer a parameterless
+
+    public constructor so that an empty object can be created to be deserialized into.
+  example: []
+  syntax:
+    content: public interface IXunitSerializable
+    content.vb: Public Interface IXunitSerializable
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  commentId: M:Xunit.Sdk.IXunitSerializable.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  id: Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  parent: v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(IXunitSerializationInfo)
+  nameWithType: IXunitSerializable.Deserialize(IXunitSerializationInfo)
+  fullName: Xunit.Sdk.IXunitSerializable.Deserialize(Xunit.Sdk.IXunitSerializationInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Called when the object should populate itself with data from the serialization info.
+  example: []
+  syntax:
+    content: void Deserialize(IXunitSerializationInfo info)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: The info to get the object data from
+    content.vb: Sub Deserialize(info As IXunitSerializationInfo)
+  overload: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Deserialize*
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  commentId: M:Xunit.Sdk.IXunitSerializable.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  id: Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  parent: v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  langs:
+  - csharp
+  - vb
+  name: Serialize(IXunitSerializationInfo)
+  nameWithType: IXunitSerializable.Serialize(IXunitSerializationInfo)
+  fullName: Xunit.Sdk.IXunitSerializable.Serialize(Xunit.Sdk.IXunitSerializationInfo)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/xunit.v3.common/Abstractions/Serialization/IXunitSerializable.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Called when the object should store its serialized values into the serialization info.
+  example: []
+  syntax:
+    content: void Serialize(IXunitSerializationInfo info)
+    parameters:
+    - id: info
+      type: Xunit.Sdk.IXunitSerializationInfo
+      description: The info to store the object data into
+    content.vb: Sub Serialize(info As IXunitSerializationInfo)
+  overload: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Serialize*
+references:
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Deserialize*
+  commentId: Overload:Xunit.Sdk.IXunitSerializable.Deserialize
+  href: Xunit.Sdk.IXunitSerializable.Deserialize.html#Xunit_Sdk_IXunitSerializable_Deserialize_Xunit_Sdk_IXunitSerializationInfo_
+  name: Deserialize
+  nameWithType: IXunitSerializable.Deserialize
+  fullName: Xunit.Sdk.IXunitSerializable.Deserialize
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializationInfo
+  commentId: T:Xunit.Sdk.IXunitSerializationInfo
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializationInfo.html
+  name: IXunitSerializationInfo
+  nameWithType: IXunitSerializationInfo
+  fullName: Xunit.Sdk.IXunitSerializationInfo
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable.Serialize*
+  commentId: Overload:Xunit.Sdk.IXunitSerializable.Serialize
+  href: Xunit.Sdk.IXunitSerializable.Serialize.html#Xunit_Sdk_IXunitSerializable_Serialize_Xunit_Sdk_IXunitSerializationInfo_
+  name: Serialize
+  nameWithType: IXunitSerializable.Serialize
+  fullName: Xunit.Sdk.IXunitSerializable.Serialize
+memberLayout: SeparatePages

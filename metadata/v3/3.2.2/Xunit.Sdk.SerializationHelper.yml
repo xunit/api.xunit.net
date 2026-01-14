@@ -1,0 +1,1199 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  commentId: T:Xunit.Sdk.SerializationHelper
+  id: SerializationHelper
+  parent: v3.3.2.2:Xunit.Sdk
+  children:
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.#ctor
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers(System.Reflection.Assembly,System.Collections.Generic.List{System.String})
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.AddSerializers(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute},System.Collections.Generic.List{System.String})
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize(System.String)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize``1(System.String)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.FindXunitSerializer(System.Type)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.Instance
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.ResetInstance
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.Serialize(System.Object,System.Type)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType(System.String)
+  - v3.3.2.2:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: SerializationHelper
+  nameWithType: SerializationHelper
+  fullName: Xunit.Sdk.SerializationHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SerializationHelper
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Serializes and de-serializes objects. It supports a limited set of built-in types,
+
+    as well as anything which implements <xref href="v3.3.2.2:Xunit.Sdk.IXunitSerializable" data-throw-if-not-resolved="false"></xref>. Custom serializers
+
+    can implement <xref href="v3.3.2.2:Xunit.Sdk.IXunitSerializer" data-throw-if-not-resolved="false"></xref> and register by decorating the test
+
+    assembly with <xref href="v3.3.2.2:Xunit.Sdk.RegisterXunitSerializerAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public class SerializationHelper
+    content.vb: Public Class SerializationHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.#ctor
+  commentId: M:Xunit.Sdk.SerializationHelper.#ctor
+  id: '#ctor'
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: SerializationHelper()
+  nameWithType: SerializationHelper.SerializationHelper()
+  fullName: Xunit.Sdk.SerializationHelper.SerializationHelper()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 88
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Initializes a new instance of the <xref href="v3.3.2.2:Xunit.Sdk.SerializationHelper" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected SerializationHelper()
+    content.vb: Protected Sub New()
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.#ctor*
+  nameWithType.vb: SerializationHelper.New()
+  fullName.vb: Xunit.Sdk.SerializationHelper.New()
+  name.vb: New()
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Instance
+  commentId: P:Xunit.Sdk.SerializationHelper.Instance
+  id: Instance
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: SerializationHelper.Instance
+  fullName: Xunit.Sdk.SerializationHelper.Instance
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Instance
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 184
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets the singleton instance of <xref href="v3.3.2.2:Xunit.Sdk.SerializationHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static SerializationHelper Instance { get; }
+    parameters: []
+    return:
+      type: Xunit.Sdk.SerializationHelper
+    content.vb: Public Shared Property Instance As SerializationHelper
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.Instance*
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers(System.Reflection.Assembly,System.Collections.Generic.List{System.String})
+  commentId: M:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers(System.Reflection.Assembly,System.Collections.Generic.List{System.String})
+  id: AddRegisteredSerializers(System.Reflection.Assembly,System.Collections.Generic.List{System.String})
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: AddRegisteredSerializers(Assembly, List<string>?)
+  nameWithType: SerializationHelper.AddRegisteredSerializers(Assembly, List<string>?)
+  fullName: Xunit.Sdk.SerializationHelper.AddRegisteredSerializers(System.Reflection.Assembly, System.Collections.Generic.List<string>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: AddRegisteredSerializers
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 199
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Add serializers that have been registered in the given assembly.
+  remarks: >-
+    The warnings collection will include warnings in the following circumstances:<br />
+
+    * When the serializer type that does not implement <xref href="v3.3.2.2:Xunit.Sdk.IXunitSerializer" data-throw-if-not-resolved="false"></xref><br />
+
+    * When the registration contains no support types to serialize<br />
+
+    * When a supported type to serialize is duplicated with another serializer<br />
+
+    * When a supported type is covered by a built-in serializer<br />
+
+    * An exception is thrown while creating the serializer
+  example: []
+  syntax:
+    content: public void AddRegisteredSerializers(Assembly assembly, List<string>? warnings = null)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to get registrations from
+    - id: warnings
+      type: System.Collections.Generic.List{System.String}
+      description: An optional collection to receive warnings generated during the registration
+    content.vb: Public Sub AddRegisteredSerializers(assembly As Assembly, warnings As List(Of String) = Nothing)
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers*
+  nameWithType.vb: SerializationHelper.AddRegisteredSerializers(Assembly, List(Of String))
+  fullName.vb: Xunit.Sdk.SerializationHelper.AddRegisteredSerializers(System.Reflection.Assembly, System.Collections.Generic.List(Of String))
+  name.vb: AddRegisteredSerializers(Assembly, List(Of String))
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddSerializers(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute},System.Collections.Generic.List{System.String})
+  commentId: M:Xunit.Sdk.SerializationHelper.AddSerializers(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute},System.Collections.Generic.List{System.String})
+  id: AddSerializers(System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute},System.Collections.Generic.List{System.String})
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: AddSerializers(IReadOnlyCollection<IRegisterXunitSerializerAttribute>, List<string>?)
+  nameWithType: SerializationHelper.AddSerializers(IReadOnlyCollection<IRegisterXunitSerializerAttribute>, List<string>?)
+  fullName: Xunit.Sdk.SerializationHelper.AddSerializers(System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.IRegisterXunitSerializerAttribute>, System.Collections.Generic.List<string>?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: AddSerializers
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 224
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Add serializers to the supported serializer list.
+  remarks: >-
+    The warnings collection will include warnings in the following circumstances:<br />
+
+    * When the serializer type that does not implement <xref href="v3.3.2.2:Xunit.Sdk.IXunitSerializer" data-throw-if-not-resolved="false"></xref><br />
+
+    * When the registration contains no support types to serialize<br />
+
+    * When a supported type to serialize is duplicated with another serializer<br />
+
+    * When a supported type is covered by a built-in serializer<br />
+
+    * An exception is thrown while creating the serializer
+  example: []
+  syntax:
+    content: protected void AddSerializers(IReadOnlyCollection<IRegisterXunitSerializerAttribute> registrations, List<string>? warnings = null)
+    parameters:
+    - id: registrations
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute}
+      description: The serialization registrations
+    - id: warnings
+      type: System.Collections.Generic.List{System.String}
+      description: An optional collection to receive warnings generated during the registration
+    content.vb: Protected Sub AddSerializers(registrations As IReadOnlyCollection(Of IRegisterXunitSerializerAttribute), warnings As List(Of String) = Nothing)
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddSerializers*
+  nameWithType.vb: SerializationHelper.AddSerializers(IReadOnlyCollection(Of IRegisterXunitSerializerAttribute), List(Of String))
+  fullName.vb: Xunit.Sdk.SerializationHelper.AddSerializers(System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.IRegisterXunitSerializerAttribute), System.Collections.Generic.List(Of String))
+  name.vb: AddSerializers(IReadOnlyCollection(Of IRegisterXunitSerializerAttribute), List(Of String))
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize``1(System.String)
+  commentId: M:Xunit.Sdk.SerializationHelper.Deserialize``1(System.String)
+  id: Deserialize``1(System.String)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(string)
+  nameWithType: SerializationHelper.Deserialize<T>(string)
+  fullName: Xunit.Sdk.SerializationHelper.Deserialize<T>(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 302
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: De-serializes an object.
+  example: []
+  syntax:
+    content: public T? Deserialize<T>(string serializedValue)
+    parameters:
+    - id: serializedValue
+      type: System.String
+      description: The object's serialized value
+    typeParameters:
+    - id: T
+      description: The type of the object
+    return:
+      type: '{T}'
+      description: The de-serialized object
+    content.vb: Public Function Deserialize(Of T)(serializedValue As String) As T
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize*
+  nameWithType.vb: SerializationHelper.Deserialize(Of T)(String)
+  fullName.vb: Xunit.Sdk.SerializationHelper.Deserialize(Of T)(String)
+  name.vb: Deserialize(Of T)(String)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize(System.String)
+  commentId: M:Xunit.Sdk.SerializationHelper.Deserialize(System.String)
+  id: Deserialize(System.String)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(string)
+  nameWithType: SerializationHelper.Deserialize(string)
+  fullName: Xunit.Sdk.SerializationHelper.Deserialize(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Deserialize
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 310
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: De-serializes an object.
+  example: []
+  syntax:
+    content: public object? Deserialize(string serializedValue)
+    parameters:
+    - id: serializedValue
+      type: System.String
+      description: The serialized value
+    return:
+      type: System.Object
+      description: The de-serialized object
+    content.vb: Public Function Deserialize(serializedValue As String) As Object
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize*
+  nameWithType.vb: SerializationHelper.Deserialize(String)
+  fullName.vb: Xunit.Sdk.SerializationHelper.Deserialize(String)
+  name.vb: Deserialize(String)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.FindXunitSerializer(System.Type)
+  commentId: M:Xunit.Sdk.SerializationHelper.FindXunitSerializer(System.Type)
+  id: FindXunitSerializer(System.Type)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: FindXunitSerializer(Type)
+  nameWithType: SerializationHelper.FindXunitSerializer(Type)
+  fullName: Xunit.Sdk.SerializationHelper.FindXunitSerializer(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: FindXunitSerializer
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 451
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: INTERNAL METHOD. DO NOT USE.
+  example: []
+  syntax:
+    content: protected IXunitSerializer? FindXunitSerializer(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: Xunit.Sdk.IXunitSerializer
+    content.vb: Protected Function FindXunitSerializer(type As Type) As IXunitSerializer
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.FindXunitSerializer*
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object)
+  commentId: M:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object)
+  id: IsSerializable(System.Object)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: IsSerializable(object?)
+  nameWithType: SerializationHelper.IsSerializable(object?)
+  fullName: Xunit.Sdk.SerializationHelper.IsSerializable(object?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: IsSerializable
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 479
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Determines if an object instance is serializable.
+  remarks: >-
+    As <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> values always return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, even if the underlying type (which is unknown)
+
+    might not be serializable, it's better to test via <xref href="v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object%2cSystem.Type)" data-throw-if-not-resolved="false"></xref>
+
+    whenever possible.
+  example: []
+  syntax:
+    content: public bool IsSerializable(object? value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to test for serializability.
+    return:
+      type: System.Boolean
+      description: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object can be serialized; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, otherwise.
+    content.vb: Public Function IsSerializable(value As Object) As Boolean
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable*
+  nameWithType.vb: SerializationHelper.IsSerializable(Object)
+  fullName.vb: Xunit.Sdk.SerializationHelper.IsSerializable(Object)
+  name.vb: IsSerializable(Object)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+  commentId: M:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+  id: IsSerializable(System.Object,System.Type)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: IsSerializable(object?, Type?)
+  nameWithType: SerializationHelper.IsSerializable(object?, Type?)
+  fullName: Xunit.Sdk.SerializationHelper.IsSerializable(object?, System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: IsSerializable
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 488
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Determines if a given type supports serialization.
+  example: []
+  syntax:
+    content: public bool IsSerializable(object? value, Type? type)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to test for serializability.
+    - id: type
+      type: System.Type
+      description: The type to test for serializability.
+    return:
+      type: System.Boolean
+      description: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if objects of the given type can be serialized; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, otherwise.
+    content.vb: Public Function IsSerializable(value As Object, type As Type) As Boolean
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable*
+  nameWithType.vb: SerializationHelper.IsSerializable(Object, Type)
+  fullName.vb: Xunit.Sdk.SerializationHelper.IsSerializable(Object, System.Type)
+  name.vb: IsSerializable(Object, Type)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.ResetInstance
+  commentId: M:Xunit.Sdk.SerializationHelper.ResetInstance
+  id: ResetInstance
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: ResetInstance()
+  nameWithType: SerializationHelper.ResetInstance()
+  fullName: Xunit.Sdk.SerializationHelper.ResetInstance()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ResetInstance
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 530
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: THIS METHOD IS FOR INTERNAL PURPOSES ONLY. DO NOT CALL.
+  example: []
+  syntax:
+    content: public static void ResetInstance()
+    content.vb: Public Shared Sub ResetInstance()
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.ResetInstance*
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Serialize(System.Object,System.Type)
+  commentId: M:Xunit.Sdk.SerializationHelper.Serialize(System.Object,System.Type)
+  id: Serialize(System.Object,System.Type)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: Serialize(object?, Type?)
+  nameWithType: SerializationHelper.Serialize(object?, Type?)
+  fullName: Xunit.Sdk.SerializationHelper.Serialize(object?, System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Serialize
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 539
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Serializes an object.
+  example: []
+  syntax:
+    content: public string Serialize(object? value, Type? type = null)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to be serialized
+    - id: type
+      type: System.Type
+      description: The type of the value to be serialized (cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>)
+    return:
+      type: System.String
+      description: The serialized object
+    content.vb: Public Function Serialize(value As Object, type As Type = Nothing) As String
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.Serialize*
+  nameWithType.vb: SerializationHelper.Serialize(Object, Type)
+  fullName.vb: Xunit.Sdk.SerializationHelper.Serialize(Object, System.Type)
+  name.vb: Serialize(Object, Type)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType(System.String)
+  commentId: M:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType(System.String)
+  id: SerializedTypeNameToType(System.String)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: SerializedTypeNameToType(string)
+  nameWithType: SerializationHelper.SerializedTypeNameToType(string)
+  fullName: Xunit.Sdk.SerializationHelper.SerializedTypeNameToType(string)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SerializedTypeNameToType
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 633
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: >-
+    Converts a type name (in "TypeName" format for mscorlib types, or "TypeName,AssemblyName" format for
+
+    all others) into a <xref href="System.Type" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: public static Type? SerializedTypeNameToType(string assemblyQualifiedTypeName)
+    parameters:
+    - id: assemblyQualifiedTypeName
+      type: System.String
+      description: The assembly qualified type name ("TypeName,AssemblyName")
+    return:
+      type: System.Type
+      description: The instance of the <xref href="System.Type" data-throw-if-not-resolved="false"></xref>, if available; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, otherwise.
+    content.vb: Public Shared Function SerializedTypeNameToType(assemblyQualifiedTypeName As String) As Type
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType*
+  nameWithType.vb: SerializationHelper.SerializedTypeNameToType(String)
+  fullName.vb: Xunit.Sdk.SerializationHelper.SerializedTypeNameToType(String)
+  name.vb: SerializedTypeNameToType(String)
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName(System.Type)
+  commentId: M:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName(System.Type)
+  id: TypeToSerializedTypeName(System.Type)
+  parent: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: TypeToSerializedTypeName(Type)
+  nameWithType: SerializationHelper.TypeToSerializedTypeName(Type)
+  fullName: Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.common/Serialization/SerializationHelper.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TypeToSerializedTypeName
+    path: ../src/xunit.v3.common/Serialization/SerializationHelper.cs
+    startLine: 646
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Gets an assembly qualified type name for serialization.
+  example: []
+  syntax:
+    content: public static string TypeToSerializedTypeName(Type value)
+    parameters:
+    - id: value
+      type: System.Type
+      description: The type to get the name for
+    return:
+      type: System.String
+      description: A string in "TypeName" format (for mscorlib types) or "TypeName,AssemblyName" format (for all others)
+    content.vb: Public Shared Function TypeToSerializedTypeName(value As Type) As String
+  overload: v3.3.2.2:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName*
+references:
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializable
+  commentId: T:Xunit.Sdk.IXunitSerializable
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializable.html
+  name: IXunitSerializable
+  nameWithType: IXunitSerializable
+  fullName: Xunit.Sdk.IXunitSerializable
+- uid: v3.3.2.2:Xunit.Sdk.IXunitSerializer
+  commentId: T:Xunit.Sdk.IXunitSerializer
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IXunitSerializer.html
+  name: IXunitSerializer
+  nameWithType: IXunitSerializer
+  fullName: Xunit.Sdk.IXunitSerializer
+- uid: v3.3.2.2:Xunit.Sdk.RegisterXunitSerializerAttribute
+  commentId: T:Xunit.Sdk.RegisterXunitSerializerAttribute
+  href: Xunit.Sdk.RegisterXunitSerializerAttribute.html
+  name: RegisterXunitSerializerAttribute
+  nameWithType: RegisterXunitSerializerAttribute
+  fullName: Xunit.Sdk.RegisterXunitSerializerAttribute
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper
+  commentId: T:Xunit.Sdk.SerializationHelper
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.SerializationHelper.html
+  name: SerializationHelper
+  nameWithType: SerializationHelper
+  fullName: Xunit.Sdk.SerializationHelper
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.#ctor*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.#ctor
+  href: Xunit.Sdk.SerializationHelper.-ctor.html#Xunit_Sdk_SerializationHelper__ctor
+  name: SerializationHelper
+  nameWithType: SerializationHelper.SerializationHelper
+  fullName: Xunit.Sdk.SerializationHelper.SerializationHelper
+  nameWithType.vb: SerializationHelper.New
+  fullName.vb: Xunit.Sdk.SerializationHelper.New
+  name.vb: New
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Instance*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.Instance
+  href: Xunit.Sdk.SerializationHelper.Instance.html#Xunit_Sdk_SerializationHelper_Instance
+  name: Instance
+  nameWithType: SerializationHelper.Instance
+  fullName: Xunit.Sdk.SerializationHelper.Instance
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.AddRegisteredSerializers
+  href: Xunit.Sdk.SerializationHelper.AddRegisteredSerializers.html#Xunit_Sdk_SerializationHelper_AddRegisteredSerializers_System_Reflection_Assembly_System_Collections_Generic_List_System_String__
+  name: AddRegisteredSerializers
+  nameWithType: SerializationHelper.AddRegisteredSerializers
+  fullName: Xunit.Sdk.SerializationHelper.AddRegisteredSerializers
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.AddSerializers*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.AddSerializers
+  href: Xunit.Sdk.SerializationHelper.AddSerializers.html#Xunit_Sdk_SerializationHelper_AddSerializers_System_Collections_Generic_IReadOnlyCollection_Xunit_Sdk_IRegisterXunitSerializerAttribute__System_Collections_Generic_List_System_String__
+  name: AddSerializers
+  nameWithType: SerializationHelper.AddSerializers
+  fullName: Xunit.Sdk.SerializationHelper.AddSerializers
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.Sdk.IRegisterXunitSerializerAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<IRegisterXunitSerializerAttribute>
+  nameWithType: IReadOnlyCollection<IRegisterXunitSerializerAttribute>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.Sdk.IRegisterXunitSerializerAttribute>
+  nameWithType.vb: IReadOnlyCollection(Of IRegisterXunitSerializerAttribute)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.Sdk.IRegisterXunitSerializerAttribute)
+  name.vb: IReadOnlyCollection(Of IRegisterXunitSerializerAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute
+    name: IRegisterXunitSerializerAttribute
+    href: Xunit.Sdk.IRegisterXunitSerializerAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3.3.2.2:Xunit.Sdk.IRegisterXunitSerializerAttribute
+    name: IRegisterXunitSerializerAttribute
+    href: Xunit.Sdk.IRegisterXunitSerializerAttribute.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Deserialize*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.Deserialize
+  href: Xunit.Sdk.SerializationHelper.Deserialize.html#Xunit_Sdk_SerializationHelper_Deserialize__1_System_String_
+  name: Deserialize
+  nameWithType: SerializationHelper.Deserialize
+  fullName: Xunit.Sdk.SerializationHelper.Deserialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.FindXunitSerializer*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.FindXunitSerializer
+  href: Xunit.Sdk.SerializationHelper.FindXunitSerializer.html#Xunit_Sdk_SerializationHelper_FindXunitSerializer_System_Type_
+  name: FindXunitSerializer
+  nameWithType: SerializationHelper.FindXunitSerializer
+  fullName: Xunit.Sdk.SerializationHelper.FindXunitSerializer
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+  commentId: M:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+  isExternal: true
+  href: Xunit.Sdk.SerializationHelper.IsSerializable.html#Xunit_Sdk_SerializationHelper_IsSerializable_System_Object_System_Type_
+  name: IsSerializable(object, Type)
+  nameWithType: SerializationHelper.IsSerializable(object, Type)
+  fullName: Xunit.Sdk.SerializationHelper.IsSerializable(object, System.Type)
+  nameWithType.vb: SerializationHelper.IsSerializable(Object, Type)
+  fullName.vb: Xunit.Sdk.SerializationHelper.IsSerializable(Object, System.Type)
+  name.vb: IsSerializable(Object, Type)
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+    name: IsSerializable
+    href: Xunit.Sdk.SerializationHelper.IsSerializable.html#Xunit_Sdk_SerializationHelper_IsSerializable_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable(System.Object,System.Type)
+    name: IsSerializable
+    href: Xunit.Sdk.SerializationHelper.IsSerializable.html#Xunit_Sdk_SerializationHelper_IsSerializable_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.IsSerializable*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.IsSerializable
+  href: Xunit.Sdk.SerializationHelper.IsSerializable.html#Xunit_Sdk_SerializationHelper_IsSerializable_System_Object_
+  name: IsSerializable
+  nameWithType: SerializationHelper.IsSerializable
+  fullName: Xunit.Sdk.SerializationHelper.IsSerializable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.ResetInstance*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.ResetInstance
+  href: Xunit.Sdk.SerializationHelper.ResetInstance.html#Xunit_Sdk_SerializationHelper_ResetInstance
+  name: ResetInstance
+  nameWithType: SerializationHelper.ResetInstance
+  fullName: Xunit.Sdk.SerializationHelper.ResetInstance
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.Serialize*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.Serialize
+  href: Xunit.Sdk.SerializationHelper.Serialize.html#Xunit_Sdk_SerializationHelper_Serialize_System_Object_System_Type_
+  name: Serialize
+  nameWithType: SerializationHelper.Serialize
+  fullName: Xunit.Sdk.SerializationHelper.Serialize
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.SerializedTypeNameToType
+  href: Xunit.Sdk.SerializationHelper.SerializedTypeNameToType.html#Xunit_Sdk_SerializationHelper_SerializedTypeNameToType_System_String_
+  name: SerializedTypeNameToType
+  nameWithType: SerializationHelper.SerializedTypeNameToType
+  fullName: Xunit.Sdk.SerializationHelper.SerializedTypeNameToType
+- uid: v3.3.2.2:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName*
+  commentId: Overload:Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName
+  href: Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName.html#Xunit_Sdk_SerializationHelper_TypeToSerializedTypeName_System_Type_
+  name: TypeToSerializedTypeName
+  nameWithType: SerializationHelper.TypeToSerializedTypeName
+  fullName: Xunit.Sdk.SerializationHelper.TypeToSerializedTypeName
+memberLayout: SeparatePages

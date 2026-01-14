@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.v3.ITestFramework
+  commentId: T:Xunit.v3.ITestFramework
+  id: ITestFramework
+  parent: v3.3.2.2:Xunit.v3
+  children:
+  - v3.3.2.2:Xunit.v3.ITestFramework.GetDiscoverer(System.Reflection.Assembly)
+  - v3.3.2.2:Xunit.v3.ITestFramework.GetExecutor(System.Reflection.Assembly)
+  - v3.3.2.2:Xunit.v3.ITestFramework.SetTestPipelineStartup(Xunit.v3.ITestPipelineStartup)
+  - v3.3.2.2:Xunit.v3.ITestFramework.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: ITestFramework
+  nameWithType: ITestFramework
+  fullName: Xunit.v3.ITestFramework
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ITestFramework
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Represents a test framework. There are two pieces to test frameworks: discovery and
+
+    execution. The two factory methods represent these two pieces. Test frameworks may optionally
+
+    implement either <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> or <xref href="System.IAsyncDisposable" data-throw-if-not-resolved="false"></xref>. They may
+
+    implement a constructor which is either empty, or takes a single <xref href="v3.3.2.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref>
+
+    for diagnostic messages, or takes two instances of <xref href="v3.3.2.2:Xunit.Sdk.IMessageSink" data-throw-if-not-resolved="false"></xref> for diagnostic
+
+    messages and internal diagnostic messages, respectively.
+  example: []
+  syntax:
+    content: public interface ITestFramework
+    content.vb: Public Interface ITestFramework
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.TestFrameworkDisplayName
+  commentId: P:Xunit.v3.ITestFramework.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.3.2.2:Xunit.v3.ITestFramework
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: ITestFramework.TestFrameworkDisplayName
+  fullName: Xunit.v3.ITestFramework.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Returns the display name of the test framework that this discoverer is running tests for.
+  example: []
+  syntax:
+    content: string TestFrameworkDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestFrameworkDisplayName As String
+  overload: v3.3.2.2:Xunit.v3.ITestFramework.TestFrameworkDisplayName*
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.SetTestPipelineStartup(Xunit.v3.ITestPipelineStartup)
+  commentId: M:Xunit.v3.ITestFramework.SetTestPipelineStartup(Xunit.v3.ITestPipelineStartup)
+  id: SetTestPipelineStartup(Xunit.v3.ITestPipelineStartup)
+  parent: v3.3.2.2:Xunit.v3.ITestFramework
+  langs:
+  - csharp
+  - vb
+  name: SetTestPipelineStartup(ITestPipelineStartup)
+  nameWithType: ITestFramework.SetTestPipelineStartup(ITestPipelineStartup)
+  fullName: Xunit.v3.ITestFramework.SetTestPipelineStartup(Xunit.v3.ITestPipelineStartup)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: SetTestPipelineStartup
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+    startLine: 26
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Will be invoked by the test pipeline when the user has provided a startup class. Test frameworks may
+
+    choose to use this in any way they see fit.
+  example: []
+  syntax:
+    content: void SetTestPipelineStartup(ITestPipelineStartup pipelineStartup)
+    parameters:
+    - id: pipelineStartup
+      type: Xunit.v3.ITestPipelineStartup
+    content.vb: Sub SetTestPipelineStartup(pipelineStartup As ITestPipelineStartup)
+  overload: v3.3.2.2:Xunit.v3.ITestFramework.SetTestPipelineStartup*
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.GetDiscoverer(System.Reflection.Assembly)
+  commentId: M:Xunit.v3.ITestFramework.GetDiscoverer(System.Reflection.Assembly)
+  id: GetDiscoverer(System.Reflection.Assembly)
+  parent: v3.3.2.2:Xunit.v3.ITestFramework
+  langs:
+  - csharp
+  - vb
+  name: GetDiscoverer(Assembly)
+  nameWithType: ITestFramework.GetDiscoverer(Assembly)
+  fullName: Xunit.v3.ITestFramework.GetDiscoverer(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: GetDiscoverer
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Get a test discoverer.
+  example: []
+  syntax:
+    content: ITestFrameworkDiscoverer GetDiscoverer(Assembly assembly)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to discover tests from.
+    return:
+      type: Xunit.v3.ITestFrameworkDiscoverer
+      description: The test discoverer.
+    content.vb: Function GetDiscoverer(assembly As Assembly) As ITestFrameworkDiscoverer
+  overload: v3.3.2.2:Xunit.v3.ITestFramework.GetDiscoverer*
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.GetExecutor(System.Reflection.Assembly)
+  commentId: M:Xunit.v3.ITestFramework.GetExecutor(System.Reflection.Assembly)
+  id: GetExecutor(System.Reflection.Assembly)
+  parent: v3.3.2.2:Xunit.v3.ITestFramework
+  langs:
+  - csharp
+  - vb
+  name: GetExecutor(Assembly)
+  nameWithType: ITestFramework.GetExecutor(Assembly)
+  fullName: Xunit.v3.ITestFramework.GetExecutor(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: GetExecutor
+    path: ../src/xunit.v3.core/Abstractions/Framework/ITestFramework.cs
+    startLine: 40
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Get a test executor.
+  example: []
+  syntax:
+    content: ITestFrameworkExecutor GetExecutor(Assembly assembly)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to run tests from.
+    return:
+      type: Xunit.v3.ITestFrameworkExecutor
+      description: The test executor.
+    content.vb: Function GetExecutor(assembly As Assembly) As ITestFrameworkExecutor
+  overload: v3.3.2.2:Xunit.v3.ITestFramework.GetExecutor*
+references:
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.3.2.2:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.3.2.2:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: v3.3.2.2:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.v3.ITestFramework.TestFrameworkDisplayName
+  href: Xunit.v3.ITestFramework.TestFrameworkDisplayName.html#Xunit_v3_ITestFramework_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: ITestFramework.TestFrameworkDisplayName
+  fullName: Xunit.v3.ITestFramework.TestFrameworkDisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.SetTestPipelineStartup*
+  commentId: Overload:Xunit.v3.ITestFramework.SetTestPipelineStartup
+  href: Xunit.v3.ITestFramework.SetTestPipelineStartup.html#Xunit_v3_ITestFramework_SetTestPipelineStartup_Xunit_v3_ITestPipelineStartup_
+  name: SetTestPipelineStartup
+  nameWithType: ITestFramework.SetTestPipelineStartup
+  fullName: Xunit.v3.ITestFramework.SetTestPipelineStartup
+- uid: v3.3.2.2:Xunit.v3.ITestPipelineStartup
+  commentId: T:Xunit.v3.ITestPipelineStartup
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.ITestPipelineStartup.html
+  name: ITestPipelineStartup
+  nameWithType: ITestPipelineStartup
+  fullName: Xunit.v3.ITestPipelineStartup
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.GetDiscoverer*
+  commentId: Overload:Xunit.v3.ITestFramework.GetDiscoverer
+  href: Xunit.v3.ITestFramework.GetDiscoverer.html#Xunit_v3_ITestFramework_GetDiscoverer_System_Reflection_Assembly_
+  name: GetDiscoverer
+  nameWithType: ITestFramework.GetDiscoverer
+  fullName: Xunit.v3.ITestFramework.GetDiscoverer
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkDiscoverer
+  commentId: T:Xunit.v3.ITestFrameworkDiscoverer
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.ITestFrameworkDiscoverer.html
+  name: ITestFrameworkDiscoverer
+  nameWithType: ITestFrameworkDiscoverer
+  fullName: Xunit.v3.ITestFrameworkDiscoverer
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: v3.3.2.2:Xunit.v3.ITestFramework.GetExecutor*
+  commentId: Overload:Xunit.v3.ITestFramework.GetExecutor
+  href: Xunit.v3.ITestFramework.GetExecutor.html#Xunit_v3_ITestFramework_GetExecutor_System_Reflection_Assembly_
+  name: GetExecutor
+  nameWithType: ITestFramework.GetExecutor
+  fullName: Xunit.v3.ITestFramework.GetExecutor
+- uid: v3.3.2.2:Xunit.v3.ITestFrameworkExecutor
+  commentId: T:Xunit.v3.ITestFrameworkExecutor
+  parent: v3.3.2.2:Xunit.v3
+  href: Xunit.v3.ITestFrameworkExecutor.html
+  name: ITestFrameworkExecutor
+  nameWithType: ITestFrameworkExecutor
+  fullName: Xunit.v3.ITestFrameworkExecutor
+memberLayout: SeparatePages

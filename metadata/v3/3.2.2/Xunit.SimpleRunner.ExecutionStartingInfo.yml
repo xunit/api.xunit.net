@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  commentId: T:Xunit.SimpleRunner.ExecutionStartingInfo
+  id: ExecutionStartingInfo
+  parent: v3.3.2.2:Xunit.SimpleRunner
+  children:
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+  langs:
+  - csharp
+  - vb
+  name: ExecutionStartingInfo
+  nameWithType: ExecutionStartingInfo
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: ExecutionStartingInfo
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: Indicates that test execution has started.
+  example: []
+  syntax:
+    content: public class ExecutionStartingInfo
+    content.vb: Public Class ExecutionStartingInfo
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - v3.3.2.2:Xunit.SimpleRunner.ExecutionCompleteInfo
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+  commentId: P:Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+  id: Seed
+  parent: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: ExecutionStartingInfo.Seed
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: Seed
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: Gets the seed value used for randomization.
+  remarks: >-
+    For v1 and v2 test projects, this value will be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, as they do not support custom seeds.<br />
+
+    For v3 test projects, this value will usually not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.<br />
+
+    There is no guarantee that custom test frameworks will support custom seeds.
+  example: []
+  syntax:
+    content: public required int? Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Seed As Integer?
+  overload: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.Seed*
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+  commentId: P:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+  id: StartTime
+  parent: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: ExecutionStartingInfo.StartTime
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: StartTime
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: Gets the date and time when the test assembly execution started.
+  example: []
+  syntax:
+    content: public required DateTimeOffset StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property StartTime As DateTimeOffset
+  overload: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime*
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+  commentId: P:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+  id: TargetFramework
+  parent: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  langs:
+  - csharp
+  - vb
+  name: TargetFramework
+  nameWithType: ExecutionStartingInfo.TargetFramework
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TargetFramework
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: >-
+    Gets the target framework that the assembly was compiled against.<br />
+
+    Examples:<br />
+
+    * <code>.NETFramework,Version=v4.7.2</code><br />
+
+    * <code>.NETCoreApp,Version=v8.0</code>
+  remarks: >-
+    This information is read from <xref href="System.Runtime.Versioning.TargetFrameworkAttribute" data-throw-if-not-resolved="false"></xref> on the test assembly, which
+
+    is normally auto-generated by the compiler (but could be missing or empty).
+  example: []
+  syntax:
+    content: public required string? TargetFramework { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TargetFramework As String
+  overload: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework*
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+  commentId: P:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+  id: TestEnvironment
+  parent: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  langs:
+  - csharp
+  - vb
+  name: TestEnvironment
+  nameWithType: ExecutionStartingInfo.TestEnvironment
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestEnvironment
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: >-
+    Gets a display string that describes the test execution environment.<br />
+
+    Examples: <br />
+
+    * <code>32-bit .NET Framework 4.8.9300.0</code><br />
+
+    * <code>64-bit .NET 8.0.16</code>
+  example: []
+  syntax:
+    content: public required string TestEnvironment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TestEnvironment As String
+  overload: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment*
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+  commentId: P:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+  id: TestFrameworkDisplayName
+  parent: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkDisplayName
+  nameWithType: ExecutionStartingInfo.TestFrameworkDisplayName
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+      branch: 728c1dce012cd82193035dddfeaba184baaa88c6
+      repo: https://github.com/xunit/xunit
+    id: TestFrameworkDisplayName
+    path: ../src/xunit.v3.runner.utility/SimpleRunner/ExecutionStartingInfo.cs
+    startLine: 49
+  assemblies:
+  - xunit.v3.runner.utility.netfx
+  namespace: Xunit.SimpleRunner
+  summary: >-
+    Gets a display string which describes the test framework and version number.
+
+    Examples: "xUnit.net v3 0.1.0-pre.15", "xUnit.net 2.4.1"
+  example: []
+  syntax:
+    content: public required string TestFrameworkDisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TestFrameworkDisplayName As String
+  overload: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName*
+references:
+- uid: v3.3.2.2:Xunit.SimpleRunner
+  commentId: N:Xunit.SimpleRunner
+  href: Xunit.html
+  name: Xunit.SimpleRunner
+  nameWithType: Xunit.SimpleRunner
+  fullName: Xunit.SimpleRunner
+  spec.csharp:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.SimpleRunner
+    name: SimpleRunner
+    href: Xunit.SimpleRunner.html
+  spec.vb:
+  - uid: v3.3.2.2:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.3.2.2:Xunit.SimpleRunner
+    name: SimpleRunner
+    href: Xunit.SimpleRunner.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.Seed*
+  commentId: Overload:Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+  href: Xunit.SimpleRunner.ExecutionStartingInfo.Seed.html#Xunit_SimpleRunner_ExecutionStartingInfo_Seed
+  name: Seed
+  nameWithType: ExecutionStartingInfo.Seed
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.Seed
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime*
+  commentId: Overload:Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+  href: Xunit.SimpleRunner.ExecutionStartingInfo.StartTime.html#Xunit_SimpleRunner_ExecutionStartingInfo_StartTime
+  name: StartTime
+  nameWithType: ExecutionStartingInfo.StartTime
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.StartTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Runtime.Versioning.TargetFrameworkAttribute
+  commentId: T:System.Runtime.Versioning.TargetFrameworkAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute
+  name: TargetFrameworkAttribute
+  nameWithType: TargetFrameworkAttribute
+  fullName: System.Runtime.Versioning.TargetFrameworkAttribute
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework*
+  commentId: Overload:Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+  href: Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework.html#Xunit_SimpleRunner_ExecutionStartingInfo_TargetFramework
+  name: TargetFramework
+  nameWithType: ExecutionStartingInfo.TargetFramework
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TargetFramework
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment*
+  commentId: Overload:Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+  href: Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment.html#Xunit_SimpleRunner_ExecutionStartingInfo_TestEnvironment
+  name: TestEnvironment
+  nameWithType: ExecutionStartingInfo.TestEnvironment
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TestEnvironment
+- uid: v3.3.2.2:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName*
+  commentId: Overload:Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+  href: Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName.html#Xunit_SimpleRunner_ExecutionStartingInfo_TestFrameworkDisplayName
+  name: TestFrameworkDisplayName
+  nameWithType: ExecutionStartingInfo.TestFrameworkDisplayName
+  fullName: Xunit.SimpleRunner.ExecutionStartingInfo.TestFrameworkDisplayName
+memberLayout: SeparatePages
