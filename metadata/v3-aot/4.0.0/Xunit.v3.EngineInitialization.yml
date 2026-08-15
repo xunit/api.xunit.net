@@ -1,0 +1,743 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  commentId: T:Xunit.v3.EngineInitialization
+  id: EngineInitialization
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.EngineInitialization.#ctor(System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute},System.Exception)
+  - v3-aot.4.0.0:Xunit.v3.EngineInitialization.DisposeAsync
+  - v3-aot.4.0.0:Xunit.v3.EngineInitialization.InitException
+  - v3-aot.4.0.0:Xunit.v3.EngineInitialization.Start(System.Reflection.Assembly)
+  langs:
+  - csharp
+  - vb
+  name: EngineInitialization
+  nameWithType: EngineInitialization
+  fullName: Xunit.v3.EngineInitialization
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: EngineInitialization
+    path: ../src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    This class is used by the test engine to ensure everything created by the Native AOT generators is
+
+    registered before the engine attempts to perform any activities.
+  example: []
+  syntax:
+    content: 'public sealed class EngineInitialization : IAsyncDisposable'
+    content.vb: Public NotInheritable Class EngineInitialization Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.#ctor(System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute},System.Exception)
+  commentId: M:Xunit.v3.EngineInitialization.#ctor(System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute},System.Exception)
+  id: '#ctor(System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute},System.Exception)'
+  parent: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  langs:
+  - csharp
+  - vb
+  name: EngineInitialization(Stack<EngineInitializationAttribute>, Exception?)
+  nameWithType: EngineInitialization.EngineInitialization(Stack<EngineInitializationAttribute>, Exception?)
+  fullName: Xunit.v3.EngineInitialization.EngineInitialization(System.Collections.Generic.Stack<Xunit.v3.EngineInitializationAttribute>, System.Exception?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    This class is used by the test engine to ensure everything created by the Native AOT generators is
+
+    registered before the engine attempts to perform any activities.
+  example: []
+  syntax:
+    content: public EngineInitialization(Stack<EngineInitializationAttribute> initializedAttributes, Exception? initException = null)
+    parameters:
+    - id: initializedAttributes
+      type: System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute}
+      description: >-
+        The attributes that were initialized, and thus need to be
+            cleaned up in disposal.
+    - id: initException
+      type: System.Exception
+      description: The exception that happened during initialization, if any.
+    content.vb: Public Sub New(initializedAttributes As Stack(Of EngineInitializationAttribute), initException As Exception = Nothing)
+  overload: v3-aot.4.0.0:Xunit.v3.EngineInitialization.#ctor*
+  nameWithType.vb: EngineInitialization.New(Stack(Of EngineInitializationAttribute), Exception)
+  fullName.vb: Xunit.v3.EngineInitialization.New(System.Collections.Generic.Stack(Of Xunit.v3.EngineInitializationAttribute), System.Exception)
+  name.vb: New(Stack(Of EngineInitializationAttribute), Exception)
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.InitException
+  commentId: P:Xunit.v3.EngineInitialization.InitException
+  id: InitException
+  parent: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  langs:
+  - csharp
+  - vb
+  name: InitException
+  nameWithType: EngineInitialization.InitException
+  fullName: Xunit.v3.EngineInitialization.InitException
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: InitException
+    path: ../src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the exception that was thrown during initialization, if any.
+  example: []
+  syntax:
+    content: public Exception? InitException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property InitException As Exception
+  overload: v3-aot.4.0.0:Xunit.v3.EngineInitialization.InitException*
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.DisposeAsync
+  commentId: M:Xunit.v3.EngineInitialization.DisposeAsync
+  id: DisposeAsync
+  parent: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: EngineInitialization.DisposeAsync()
+  fullName: Xunit.v3.EngineInitialization.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3-aot.4.0.0:Xunit.v3.EngineInitialization.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.Start(System.Reflection.Assembly)
+  commentId: M:Xunit.v3.EngineInitialization.Start(System.Reflection.Assembly)
+  id: Start(System.Reflection.Assembly)
+  parent: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  langs:
+  - csharp
+  - vb
+  name: Start(Assembly?)
+  nameWithType: EngineInitialization.Start(Assembly?)
+  fullName: Xunit.v3.EngineInitialization.Start(System.Reflection.Assembly?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Start
+    path: ../src/xunit.v3.core.aot/Configuration/EngineInitialization_aot.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Starts engine initialization.
+  example: []
+  syntax:
+    content: public static ValueTask<EngineInitialization> Start(Assembly? assembly)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The test assembly
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.EngineInitialization}
+      description: The <xref href="v3-aot.4.0.0:Xunit.v3.EngineInitialization" data-throw-if-not-resolved="false"></xref> object which must be disposed during shutdown
+    content.vb: Public Shared Function Start(assembly As Assembly) As ValueTask(Of EngineInitialization)
+  overload: v3-aot.4.0.0:Xunit.v3.EngineInitialization.Start*
+  nameWithType.vb: EngineInitialization.Start(Assembly)
+  fullName.vb: Xunit.v3.EngineInitialization.Start(System.Reflection.Assembly)
+  name.vb: Start(Assembly)
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.#ctor*
+  commentId: Overload:Xunit.v3.EngineInitialization.#ctor
+  href: Xunit.v3.EngineInitialization.-ctor.html#Xunit_v3_EngineInitialization__ctor_System_Collections_Generic_Stack_Xunit_v3_EngineInitializationAttribute__System_Exception_
+  name: EngineInitialization
+  nameWithType: EngineInitialization.EngineInitialization
+  fullName: Xunit.v3.EngineInitialization.EngineInitialization
+  nameWithType.vb: EngineInitialization.New
+  fullName.vb: Xunit.v3.EngineInitialization.New
+  name.vb: New
+- uid: System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute}
+  commentId: T:System.Collections.Generic.Stack{Xunit.v3.EngineInitializationAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Stack`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  name: Stack<EngineInitializationAttribute>
+  nameWithType: Stack<EngineInitializationAttribute>
+  fullName: System.Collections.Generic.Stack<Xunit.v3.EngineInitializationAttribute>
+  nameWithType.vb: Stack(Of EngineInitializationAttribute)
+  fullName.vb: System.Collections.Generic.Stack(Of Xunit.v3.EngineInitializationAttribute)
+  name.vb: Stack(Of EngineInitializationAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.EngineInitializationAttribute
+    name: EngineInitializationAttribute
+    href: Xunit.v3.EngineInitializationAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.EngineInitializationAttribute
+    name: EngineInitializationAttribute
+    href: Xunit.v3.EngineInitializationAttribute.html
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Collections.Generic.Stack`1
+  commentId: T:System.Collections.Generic.Stack`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  name: Stack<T>
+  nameWithType: Stack<T>
+  fullName: System.Collections.Generic.Stack<T>
+  nameWithType.vb: Stack(Of T)
+  fullName.vb: System.Collections.Generic.Stack(Of T)
+  name.vb: Stack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.InitException*
+  commentId: Overload:Xunit.v3.EngineInitialization.InitException
+  href: Xunit.v3.EngineInitialization.InitException.html#Xunit_v3_EngineInitialization_InitException
+  name: InitException
+  nameWithType: EngineInitialization.InitException
+  fullName: Xunit.v3.EngineInitialization.InitException
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.DisposeAsync*
+  commentId: Overload:Xunit.v3.EngineInitialization.DisposeAsync
+  href: Xunit.v3.EngineInitialization.DisposeAsync.html#Xunit_v3_EngineInitialization_DisposeAsync
+  name: DisposeAsync
+  nameWithType: EngineInitialization.DisposeAsync
+  fullName: Xunit.v3.EngineInitialization.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+  commentId: T:Xunit.v3.EngineInitialization
+  href: Xunit.v3.EngineInitialization.html
+  name: EngineInitialization
+  nameWithType: EngineInitialization
+  fullName: Xunit.v3.EngineInitialization
+- uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization.Start*
+  commentId: Overload:Xunit.v3.EngineInitialization.Start
+  href: Xunit.v3.EngineInitialization.Start.html#Xunit_v3_EngineInitialization_Start_System_Reflection_Assembly_
+  name: Start
+  nameWithType: EngineInitialization.Start
+  fullName: Xunit.v3.EngineInitialization.Start
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.EngineInitialization}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.EngineInitialization}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<EngineInitialization>
+  nameWithType: ValueTask<EngineInitialization>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.EngineInitialization>
+  nameWithType.vb: ValueTask(Of EngineInitialization)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.EngineInitialization)
+  name.vb: ValueTask(Of EngineInitialization)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+    name: EngineInitialization
+    href: Xunit.v3.EngineInitialization.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.EngineInitialization
+    name: EngineInitialization
+    href: Xunit.v3.EngineInitialization.html
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+memberLayout: SeparatePages

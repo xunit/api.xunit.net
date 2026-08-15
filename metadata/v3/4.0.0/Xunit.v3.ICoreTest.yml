@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.v3.ICoreTest
+  commentId: T:Xunit.v3.ICoreTest
+  id: ICoreTest
+  parent: v3.4.0.0:Xunit.v3
+  children:
+  - v3.4.0.0:Xunit.v3.ICoreTest.DisableParallelization
+  - v3.4.0.0:Xunit.v3.ICoreTest.Explicit
+  - v3.4.0.0:Xunit.v3.ICoreTest.TestCase
+  - v3.4.0.0:Xunit.v3.ICoreTest.Timeout
+  langs:
+  - csharp
+  - vb
+  name: ICoreTest
+  nameWithType: ICoreTest
+  fullName: Xunit.v3.ICoreTest
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ICoreTest
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Represents a test from xUnit.net v3.
+  remarks: This interface is shared between reflection-based and code generation-based tests.
+  example: []
+  syntax:
+    content: 'public interface ICoreTest : ITest, ITestMetadata'
+    content.vb: Public Interface ICoreTest Inherits ITest, ITestMetadata
+  derivedClasses:
+  - v3.4.0.0:Xunit.v3.XunitTest
+  inheritedMembers:
+  - v3.4.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  - v3.4.0.0:Xunit.Sdk.ITestMetadata.TestLabel
+  - v3.4.0.0:Xunit.Sdk.ITestMetadata.Traits
+  - v3.4.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.DisableParallelization
+  commentId: P:Xunit.v3.ICoreTest.DisableParallelization
+  id: DisableParallelization
+  parent: v3.4.0.0:Xunit.v3.ICoreTest
+  langs:
+  - csharp
+  - vb
+  name: DisableParallelization
+  nameWithType: ICoreTest.DisableParallelization
+  fullName: Xunit.v3.ICoreTest.DisableParallelization
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DisableParallelization
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Determines whether this test can run in parallel against any other parallelizable tests.
+  example: []
+  syntax:
+    content: bool DisableParallelization { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DisableParallelization As Boolean
+  overload: v3.4.0.0:Xunit.v3.ICoreTest.DisableParallelization*
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.Explicit
+  commentId: P:Xunit.v3.ICoreTest.Explicit
+  id: Explicit
+  parent: v3.4.0.0:Xunit.v3.ICoreTest
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: ICoreTest.Explicit
+  fullName: Xunit.v3.ICoreTest.Explicit
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Explicit
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets a flag indicating whether this test was marked as explicit or not.
+  example: []
+  syntax:
+    content: bool Explicit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Explicit As Boolean
+  overload: v3.4.0.0:Xunit.v3.ICoreTest.Explicit*
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.TestCase
+  commentId: P:Xunit.v3.ICoreTest.TestCase
+  id: TestCase
+  parent: v3.4.0.0:Xunit.v3.ICoreTest
+  langs:
+  - csharp
+  - vb
+  name: TestCase
+  nameWithType: ICoreTest.TestCase
+  fullName: Xunit.v3.ICoreTest.TestCase
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: TestCase
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+    startLine: 25
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the test case this test belongs to.
+  example: []
+  syntax:
+    content: ICoreTestCase TestCase { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ICoreTestCase
+    content.vb: ReadOnly Property TestCase As ICoreTestCase
+  overload: v3.4.0.0:Xunit.v3.ICoreTest.TestCase*
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.Timeout
+  commentId: P:Xunit.v3.ICoreTest.Timeout
+  id: Timeout
+  parent: v3.4.0.0:Xunit.v3.ICoreTest
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: ICoreTest.Timeout
+  fullName: Xunit.v3.ICoreTest.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Timeout
+    path: ../src/xunit.v3.core/Abstractions/ObjectModel/ICoreTest.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the timeout for the test, in milliseconds; if <code>0</code>, there is no timeout.
+  remarks: >-
+    WARNING: Using this with <xref href="v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Aggressive" data-throw-if-not-resolved="false"></xref> will result
+
+    in undefined behavior. Timeout is only supported by <xref href="v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative" data-throw-if-not-resolved="false"></xref>
+
+    (or when parallelization is disabled completely).
+  example: []
+  syntax:
+    content: int Timeout { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Timeout As Integer
+  overload: v3.4.0.0:Xunit.v3.ICoreTest.Timeout*
+references:
+- uid: v3.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.4.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  commentId: P:Xunit.Sdk.ITestMetadata.TestDisplayName
+  parent: v3.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestDisplayName.html#Xunit_Sdk_ITestMetadata_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+- uid: v3.4.0.0:Xunit.Sdk.ITestMetadata.TestLabel
+  commentId: P:Xunit.Sdk.ITestMetadata.TestLabel
+  parent: v3.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestLabel.html#Xunit_Sdk_ITestMetadata_TestLabel
+  name: TestLabel
+  nameWithType: ITestMetadata.TestLabel
+  fullName: Xunit.Sdk.ITestMetadata.TestLabel
+- uid: v3.4.0.0:Xunit.Sdk.ITestMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMetadata.Traits
+  parent: v3.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.Traits.html#Xunit_Sdk_ITestMetadata_Traits
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+- uid: v3.4.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMetadata.UniqueID
+  parent: v3.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.UniqueID.html#Xunit_Sdk_ITestMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3.4.0.0:Xunit.Sdk.ITestMetadata
+  commentId: T:Xunit.Sdk.ITestMetadata
+  parent: v3.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMetadata.html
+  name: ITestMetadata
+  nameWithType: ITestMetadata
+  fullName: Xunit.Sdk.ITestMetadata
+- uid: v3.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.DisableParallelization*
+  commentId: Overload:Xunit.v3.ICoreTest.DisableParallelization
+  href: Xunit.v3.ICoreTest.DisableParallelization.html#Xunit_v3_ICoreTest_DisableParallelization
+  name: DisableParallelization
+  nameWithType: ICoreTest.DisableParallelization
+  fullName: Xunit.v3.ICoreTest.DisableParallelization
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.Explicit*
+  commentId: Overload:Xunit.v3.ICoreTest.Explicit
+  href: Xunit.v3.ICoreTest.Explicit.html#Xunit_v3_ICoreTest_Explicit
+  name: Explicit
+  nameWithType: ICoreTest.Explicit
+  fullName: Xunit.v3.ICoreTest.Explicit
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.TestCase*
+  commentId: Overload:Xunit.v3.ICoreTest.TestCase
+  href: Xunit.v3.ICoreTest.TestCase.html#Xunit_v3_ICoreTest_TestCase
+  name: TestCase
+  nameWithType: ICoreTest.TestCase
+  fullName: Xunit.v3.ICoreTest.TestCase
+- uid: v3.4.0.0:Xunit.v3.ICoreTestCase
+  commentId: T:Xunit.v3.ICoreTestCase
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestCase.html
+  name: ICoreTestCase
+  nameWithType: ICoreTestCase
+  fullName: Xunit.v3.ICoreTestCase
+- uid: v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  name: Aggressive
+  nameWithType: ParallelAlgorithm.Aggressive
+  fullName: Xunit.Sdk.ParallelAlgorithm.Aggressive
+- uid: v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Conservative
+  name: Conservative
+  nameWithType: ParallelAlgorithm.Conservative
+  fullName: Xunit.Sdk.ParallelAlgorithm.Conservative
+- uid: v3.4.0.0:Xunit.v3.ICoreTest.Timeout*
+  commentId: Overload:Xunit.v3.ICoreTest.Timeout
+  href: Xunit.v3.ICoreTest.Timeout.html#Xunit_v3_ICoreTest_Timeout
+  name: Timeout
+  nameWithType: ICoreTest.Timeout
+  fullName: Xunit.v3.ICoreTest.Timeout
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+memberLayout: SeparatePages

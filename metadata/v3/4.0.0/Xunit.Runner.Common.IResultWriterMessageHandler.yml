@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.Runner.Common.IResultWriterMessageHandler
+  commentId: T:Xunit.Runner.Common.IResultWriterMessageHandler
+  id: IResultWriterMessageHandler
+  parent: v3.4.0.0:Xunit.Runner.Common
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IResultWriterMessageHandler
+  nameWithType: IResultWriterMessageHandler
+  fullName: Xunit.Runner.Common.IResultWriterMessageHandler
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Results/IResultWriterMessageHandler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: IResultWriterMessageHandler
+    path: ../src/xunit.v3.runner.common/Abstractions/Results/IResultWriterMessageHandler.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.runner.common
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Represents a message handler that will receive realtime messages during test execution
+
+    to collect for reporting. The call to <xref href="System.IAsyncDisposable.DisposeAsync" data-throw-if-not-resolved="false"></xref> will
+
+    be the signal that the execution is complete, and any final file operations should be
+
+    performed before disposal is complete.
+  example: []
+  syntax:
+    content: 'public interface IResultWriterMessageHandler : IMessageSink, IAsyncDisposable'
+    content.vb: Public Interface IResultWriterMessageHandler Inherits IMessageSink, IAsyncDisposable
+  derivedClasses:
+  - v3.4.0.0:Xunit.Runner.Common.CtrfResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.HtmlResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.JUnitResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.NUnitResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.TrxResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.XmlV1ResultWriterMessageHandler
+  - v3.4.0.0:Xunit.Runner.Common.XmlV2ResultWriterMessageHandler
+  inheritedMembers:
+  - v3.4.0.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3.4.0.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  commentId: M:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  parent: v3.4.0.0:Xunit.Sdk.IMessageSink
+  href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  name: OnMessage(IMessageSinkMessage)
+  nameWithType: IMessageSink.OnMessage(IMessageSinkMessage)
+  fullName: Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink.OnMessage(Xunit.Sdk.IMessageSinkMessage)
+    name: OnMessage
+    href: Xunit.Sdk.IMessageSink.OnMessage.html#Xunit_Sdk_IMessageSink_OnMessage_Xunit_Sdk_IMessageSinkMessage_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.4.0.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+memberLayout: SeparatePages

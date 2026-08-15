@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  commentId: T:Xunit.v3.ICodeGenTest
+  id: ICodeGenTest
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTest.MethodInvoker
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipReason
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTest.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ICodeGenTest
+  nameWithType: ICodeGenTest
+  fullName: Xunit.v3.ICodeGenTest
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ICodeGenTest
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Represents a test from xUnit.net v3.
+  remarks: This interface is used for code generation-based tests.
+  example: []
+  syntax:
+    content: 'public interface ICodeGenTest : ICoreTest, ITest, ITestMetadata'
+    content.vb: Public Interface ICodeGenTest Inherits ICoreTest, ITest, ITestMetadata
+  derivedClasses:
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTest
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.v3.ICoreTest.DisableParallelization
+  - v3-aot.4.0.0:Xunit.v3.ICoreTest.Explicit
+  - v3-aot.4.0.0:Xunit.v3.ICoreTest.Timeout
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.TestLabel
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.Traits
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.MethodInvoker
+  commentId: P:Xunit.v3.ICodeGenTest.MethodInvoker
+  id: MethodInvoker
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  langs:
+  - csharp
+  - vb
+  name: MethodInvoker
+  nameWithType: ICodeGenTest.MethodInvoker
+  fullName: Xunit.v3.ICodeGenTest.MethodInvoker
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: MethodInvoker
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 13
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the invoker which will call the test method.
+  example: []
+  syntax:
+    content: Func<object?, ValueTask> MethodInvoker { get; }
+    parameters: []
+    return:
+      type: System.Func{System.Object,System.Threading.Tasks.ValueTask}
+    content.vb: ReadOnly Property MethodInvoker As Func(Of Object, ValueTask)
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.MethodInvoker*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipReason
+  commentId: P:Xunit.v3.ICodeGenTest.SkipReason
+  id: SkipReason
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  langs:
+  - csharp
+  - vb
+  name: SkipReason
+  nameWithType: ICodeGenTest.SkipReason
+  fullName: Xunit.v3.ICodeGenTest.SkipReason
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SkipReason
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets a skip reason for this test.
+  remarks: >-
+    This value may not line up the with <xref href="v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipReason" data-throw-if-not-resolved="false"></xref>, as you can skip
+
+    individual data rows during delay enumeration.
+  example: []
+  syntax:
+    content: string? SkipReason { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SkipReason As String
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipReason*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless
+  commentId: P:Xunit.v3.ICodeGenTest.SkipUnless
+  id: SkipUnless
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  langs:
+  - csharp
+  - vb
+  name: SkipUnless
+  nameWithType: ICodeGenTest.SkipUnless
+  fullName: Xunit.v3.ICodeGenTest.SkipUnless
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SkipUnless
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 31
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: If this is set and it returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, the test will be skipped.
+  remarks: >-
+    Note: It is an error condition for both <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless" data-throw-if-not-resolved="false"></xref> and <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen" data-throw-if-not-resolved="false"></xref>
+
+    to return a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value.
+  example: []
+  syntax:
+    content: Func<bool>? SkipUnless { get; }
+    parameters: []
+    return:
+      type: System.Func{System.Boolean}
+    content.vb: ReadOnly Property SkipUnless As Func(Of Boolean)
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen
+  commentId: P:Xunit.v3.ICodeGenTest.SkipWhen
+  id: SkipWhen
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  langs:
+  - csharp
+  - vb
+  name: SkipWhen
+  nameWithType: ICodeGenTest.SkipWhen
+  fullName: Xunit.v3.ICodeGenTest.SkipWhen
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SkipWhen
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 40
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: If this is set and it returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the test will be skipped.
+  remarks: >-
+    Note: It is an error condition for both <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless" data-throw-if-not-resolved="false"></xref> and <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen" data-throw-if-not-resolved="false"></xref>
+
+    to return a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value.
+  example: []
+  syntax:
+    content: Func<bool>? SkipWhen { get; }
+    parameters: []
+    return:
+      type: System.Func{System.Boolean}
+    content.vb: ReadOnly Property SkipWhen As Func(Of Boolean)
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.TestCase
+  commentId: P:Xunit.v3.ICodeGenTest.TestCase
+  id: TestCase
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  langs:
+  - csharp
+  - vb
+  name: TestCase
+  nameWithType: ICodeGenTest.TestCase
+  fullName: Xunit.v3.ICodeGenTest.TestCase
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: TestCase
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTest_aot.cs
+    startLine: 45
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the test case this test belongs to.
+  example: []
+  syntax:
+    content: ICodeGenTestCase TestCase { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ICodeGenTestCase
+    content.vb: ReadOnly Property TestCase As ICodeGenTestCase
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.TestCase*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTest.DisableParallelization
+  commentId: P:Xunit.v3.ICoreTest.DisableParallelization
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTest
+  href: Xunit.v3.ICoreTest.DisableParallelization.html#Xunit_v3_ICoreTest_DisableParallelization
+  name: DisableParallelization
+  nameWithType: ICoreTest.DisableParallelization
+  fullName: Xunit.v3.ICoreTest.DisableParallelization
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTest.Explicit
+  commentId: P:Xunit.v3.ICoreTest.Explicit
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTest
+  href: Xunit.v3.ICoreTest.Explicit.html#Xunit_v3_ICoreTest_Explicit
+  name: Explicit
+  nameWithType: ICoreTest.Explicit
+  fullName: Xunit.v3.ICoreTest.Explicit
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTest.Timeout
+  commentId: P:Xunit.v3.ICoreTest.Timeout
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTest
+  href: Xunit.v3.ICoreTest.Timeout.html#Xunit_v3_ICoreTest_Timeout
+  name: Timeout
+  nameWithType: ICoreTest.Timeout
+  fullName: Xunit.v3.ICoreTest.Timeout
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.TestDisplayName
+  commentId: P:Xunit.Sdk.ITestMetadata.TestDisplayName
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestDisplayName.html#Xunit_Sdk_ITestMetadata_TestDisplayName
+  name: TestDisplayName
+  nameWithType: ITestMetadata.TestDisplayName
+  fullName: Xunit.Sdk.ITestMetadata.TestDisplayName
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.TestLabel
+  commentId: P:Xunit.Sdk.ITestMetadata.TestLabel
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.TestLabel.html#Xunit_Sdk_ITestMetadata_TestLabel
+  name: TestLabel
+  nameWithType: ITestMetadata.TestLabel
+  fullName: Xunit.Sdk.ITestMetadata.TestLabel
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMetadata.Traits
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.Traits.html#Xunit_Sdk_ITestMetadata_Traits
+  name: Traits
+  nameWithType: ITestMetadata.Traits
+  fullName: Xunit.Sdk.ITestMetadata.Traits
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMetadata.UniqueID
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata
+  href: Xunit.Sdk.ITestMetadata.UniqueID.html#Xunit_Sdk_ITestMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMetadata.UniqueID
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTest
+  commentId: T:Xunit.v3.ICoreTest
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTest.html
+  name: ICoreTest
+  nameWithType: ICoreTest
+  fullName: Xunit.v3.ICoreTest
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMetadata
+  commentId: T:Xunit.Sdk.ITestMetadata
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMetadata.html
+  name: ITestMetadata
+  nameWithType: ITestMetadata
+  fullName: Xunit.Sdk.ITestMetadata
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.MethodInvoker*
+  commentId: Overload:Xunit.v3.ICodeGenTest.MethodInvoker
+  href: Xunit.v3.ICodeGenTest.MethodInvoker.html#Xunit_v3_ICodeGenTest_MethodInvoker
+  name: MethodInvoker
+  nameWithType: ICodeGenTest.MethodInvoker
+  fullName: Xunit.v3.ICodeGenTest.MethodInvoker
+- uid: System.Func{System.Object,System.Threading.Tasks.ValueTask}
+  commentId: T:System.Func{System.Object,System.Threading.Tasks.ValueTask}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object, ValueTask>
+  nameWithType: Func<object, ValueTask>
+  fullName: System.Func<object, System.Threading.Tasks.ValueTask>
+  nameWithType.vb: Func(Of Object, ValueTask)
+  fullName.vb: System.Func(Of Object, System.Threading.Tasks.ValueTask)
+  name.vb: Func(Of Object, ValueTask)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipReason
+  commentId: P:Xunit.v3.ICoreTestCase.SkipReason
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.SkipReason.html#Xunit_v3_ICoreTestCase_SkipReason
+  name: SkipReason
+  nameWithType: ICoreTestCase.SkipReason
+  fullName: Xunit.v3.ICoreTestCase.SkipReason
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipReason*
+  commentId: Overload:Xunit.v3.ICodeGenTest.SkipReason
+  href: Xunit.v3.ICodeGenTest.SkipReason.html#Xunit_v3_ICodeGenTest_SkipReason
+  name: SkipReason
+  nameWithType: ICodeGenTest.SkipReason
+  fullName: Xunit.v3.ICodeGenTest.SkipReason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  commentId: T:Xunit.v3.ICoreTestCase
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestCase.html
+  name: ICoreTestCase
+  nameWithType: ICoreTestCase
+  fullName: Xunit.v3.ICoreTestCase
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless
+  commentId: P:Xunit.v3.ICodeGenTest.SkipUnless
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  href: Xunit.v3.ICodeGenTest.SkipUnless.html#Xunit_v3_ICodeGenTest_SkipUnless
+  name: SkipUnless
+  nameWithType: ICodeGenTest.SkipUnless
+  fullName: Xunit.v3.ICodeGenTest.SkipUnless
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen
+  commentId: P:Xunit.v3.ICodeGenTest.SkipWhen
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  href: Xunit.v3.ICodeGenTest.SkipWhen.html#Xunit_v3_ICodeGenTest_SkipWhen
+  name: SkipWhen
+  nameWithType: ICodeGenTest.SkipWhen
+  fullName: Xunit.v3.ICodeGenTest.SkipWhen
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipUnless*
+  commentId: Overload:Xunit.v3.ICodeGenTest.SkipUnless
+  href: Xunit.v3.ICodeGenTest.SkipUnless.html#Xunit_v3_ICodeGenTest_SkipUnless
+  name: SkipUnless
+  nameWithType: ICodeGenTest.SkipUnless
+  fullName: Xunit.v3.ICodeGenTest.SkipUnless
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<bool>
+  nameWithType: Func<bool>
+  fullName: System.Func<bool>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest
+  commentId: T:Xunit.v3.ICodeGenTest
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTest.html
+  name: ICodeGenTest
+  nameWithType: ICodeGenTest
+  fullName: Xunit.v3.ICodeGenTest
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.SkipWhen*
+  commentId: Overload:Xunit.v3.ICodeGenTest.SkipWhen
+  href: Xunit.v3.ICodeGenTest.SkipWhen.html#Xunit_v3_ICodeGenTest_SkipWhen
+  name: SkipWhen
+  nameWithType: ICodeGenTest.SkipWhen
+  fullName: Xunit.v3.ICodeGenTest.SkipWhen
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTest.TestCase*
+  commentId: Overload:Xunit.v3.ICodeGenTest.TestCase
+  href: Xunit.v3.ICodeGenTest.TestCase.html#Xunit_v3_ICodeGenTest_TestCase
+  name: TestCase
+  nameWithType: ICodeGenTest.TestCase
+  fullName: Xunit.v3.ICodeGenTest.TestCase
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  commentId: T:Xunit.v3.ICodeGenTestCase
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestCase.html
+  name: ICodeGenTestCase
+  nameWithType: ICodeGenTestCase
+  fullName: Xunit.v3.ICodeGenTestCase
+memberLayout: SeparatePages

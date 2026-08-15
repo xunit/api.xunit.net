@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  commentId: T:Xunit.v3.ICodeGenTestMethod
+  id: ICodeGenTestMethod
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.IsStatic
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.TestClass
+  langs:
+  - csharp
+  - vb
+  name: ICodeGenTestMethod
+  nameWithType: ICodeGenTestMethod
+  fullName: Xunit.v3.ICodeGenTestMethod
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ICodeGenTestMethod
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Represents a test method from xUnit.net v3.
+  remarks: This interface is used for code generation-based tests.
+  example: []
+  syntax:
+    content: 'public interface ICodeGenTestMethod : ICoreTestMethod, ITestMethod, ITestMethodMetadata'
+    content.vb: Public Interface ICodeGenTestMethod Inherits ICoreTestMethod, ITestMethod, ITestMethodMetadata
+  derivedClasses:
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethod
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.DisableParallelization
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.MethodArity
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.TestCaseOrderer
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.MethodName
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.Traits
+  - v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.UniqueID
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+  commentId: P:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+  id: BeforeAfterTestAttributes
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: BeforeAfterTestAttributes
+  nameWithType: ICodeGenTestMethod.BeforeAfterTestAttributes
+  fullName: Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: BeforeAfterTestAttributes
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Gets the <xref href="v3-aot.4.0.0:Xunit.v3.BeforeAfterTestAttribute" data-throw-if-not-resolved="false"></xref>s attached to the test method (and the test class,
+
+    test collection, and test assembly).
+  example: []
+  syntax:
+    content: IReadOnlyCollection<BeforeAfterTestAttribute> BeforeAfterTestAttributes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.BeforeAfterTestAttribute}
+    content.vb: ReadOnly Property BeforeAfterTestAttributes As IReadOnlyCollection(Of BeforeAfterTestAttribute)
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+  commentId: P:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+  id: DeclaredTypeIndex
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: DeclaredTypeIndex
+  nameWithType: ICodeGenTestMethod.DeclaredTypeIndex
+  fullName: Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DeclaredTypeIndex
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Gets the declared type index for the test method. Will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the test
+
+    method resides on the same type as the test class.
+  example: []
+  syntax:
+    content: string? DeclaredTypeIndex { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DeclaredTypeIndex As String
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.IsStatic
+  commentId: P:Xunit.v3.ICodeGenTestMethod.IsStatic
+  id: IsStatic
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: IsStatic
+  nameWithType: ICodeGenTestMethod.IsStatic
+  fullName: Xunit.v3.ICodeGenTestMethod.IsStatic
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: IsStatic
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets a flag which indicates if the test method is static.
+  remarks: When this returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, creation of the test class will be skipped.
+  example: []
+  syntax:
+    content: bool IsStatic { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStatic As Boolean
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.IsStatic*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  commentId: P:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  id: SourceFilePath
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: SourceFilePath
+  nameWithType: ICodeGenTestMethod.SourceFilePath
+  fullName: Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SourceFilePath
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the source file where the method lives, if known.
+  example: []
+  syntax:
+    content: string? SourceFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SourceFilePath As String
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+  commentId: P:Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+  id: SourceLineNumber
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: SourceLineNumber
+  nameWithType: ICodeGenTestMethod.SourceLineNumber
+  fullName: Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SourceLineNumber
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 38
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the line number in <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath" data-throw-if-not-resolved="false"></xref> where the method lives, if known.
+  example: []
+  syntax:
+    content: int? SourceLineNumber { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: ReadOnly Property SourceLineNumber As Integer?
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceLineNumber*
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.TestClass
+  commentId: P:Xunit.v3.ICodeGenTestMethod.TestClass
+  id: TestClass
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  langs:
+  - csharp
+  - vb
+  name: TestClass
+  nameWithType: ICodeGenTestMethod.TestClass
+  fullName: Xunit.v3.ICodeGenTestMethod.TestClass
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: TestClass
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestMethod.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the test class that this test method belongs to.
+  example: []
+  syntax:
+    content: ICodeGenTestClass TestClass { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.ICodeGenTestClass
+    content.vb: ReadOnly Property TestClass As ICodeGenTestClass
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.TestClass*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.DisableParallelization
+  commentId: P:Xunit.v3.ICoreTestMethod.DisableParallelization
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod
+  href: Xunit.v3.ICoreTestMethod.DisableParallelization.html#Xunit_v3_ICoreTestMethod_DisableParallelization
+  name: DisableParallelization
+  nameWithType: ICoreTestMethod.DisableParallelization
+  fullName: Xunit.v3.ICoreTestMethod.DisableParallelization
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.MethodArity
+  commentId: P:Xunit.v3.ICoreTestMethod.MethodArity
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod
+  href: Xunit.v3.ICoreTestMethod.MethodArity.html#Xunit_v3_ICoreTestMethod_MethodArity
+  name: MethodArity
+  nameWithType: ICoreTestMethod.MethodArity
+  fullName: Xunit.v3.ICoreTestMethod.MethodArity
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod.TestCaseOrderer
+  commentId: P:Xunit.v3.ICoreTestMethod.TestCaseOrderer
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod
+  href: Xunit.v3.ICoreTestMethod.TestCaseOrderer.html#Xunit_v3_ICoreTestMethod_TestCaseOrderer
+  name: TestCaseOrderer
+  nameWithType: ICoreTestMethod.TestCaseOrderer
+  fullName: Xunit.v3.ICoreTestMethod.TestCaseOrderer
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.MethodName
+  commentId: P:Xunit.Sdk.ITestMethodMetadata.MethodName
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata
+  href: Xunit.Sdk.ITestMethodMetadata.MethodName.html#Xunit_Sdk_ITestMethodMetadata_MethodName
+  name: MethodName
+  nameWithType: ITestMethodMetadata.MethodName
+  fullName: Xunit.Sdk.ITestMethodMetadata.MethodName
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestMethodMetadata.Traits
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata
+  href: Xunit.Sdk.ITestMethodMetadata.Traits.html#Xunit_Sdk_ITestMethodMetadata_Traits
+  name: Traits
+  nameWithType: ITestMethodMetadata.Traits
+  fullName: Xunit.Sdk.ITestMethodMetadata.Traits
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestMethodMetadata.UniqueID
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata
+  href: Xunit.Sdk.ITestMethodMetadata.UniqueID.html#Xunit_Sdk_ITestMethodMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestMethodMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestMethodMetadata.UniqueID
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestMethod
+  commentId: T:Xunit.v3.ICoreTestMethod
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestMethod.html
+  name: ICoreTestMethod
+  nameWithType: ICoreTestMethod
+  fullName: Xunit.v3.ICoreTestMethod
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestMethodMetadata
+  commentId: T:Xunit.Sdk.ITestMethodMetadata
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestMethodMetadata.html
+  name: ITestMethodMetadata
+  nameWithType: ITestMethodMetadata
+  fullName: Xunit.Sdk.ITestMethodMetadata
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3-aot.4.0.0:Xunit.v3.BeforeAfterTestAttribute
+  commentId: T:Xunit.v3.BeforeAfterTestAttribute
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.BeforeAfterTestAttribute.html
+  name: BeforeAfterTestAttribute
+  nameWithType: BeforeAfterTestAttribute
+  fullName: Xunit.v3.BeforeAfterTestAttribute
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+  href: Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes.html#Xunit_v3_ICodeGenTestMethod_BeforeAfterTestAttributes
+  name: BeforeAfterTestAttributes
+  nameWithType: ICodeGenTestMethod.BeforeAfterTestAttributes
+  fullName: Xunit.v3.ICodeGenTestMethod.BeforeAfterTestAttributes
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.BeforeAfterTestAttribute}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.v3.BeforeAfterTestAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<BeforeAfterTestAttribute>
+  nameWithType: IReadOnlyCollection<BeforeAfterTestAttribute>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.v3.BeforeAfterTestAttribute>
+  nameWithType.vb: IReadOnlyCollection(Of BeforeAfterTestAttribute)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.BeforeAfterTestAttribute)
+  name.vb: IReadOnlyCollection(Of BeforeAfterTestAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.BeforeAfterTestAttribute
+    name: BeforeAfterTestAttribute
+    href: Xunit.v3.BeforeAfterTestAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.BeforeAfterTestAttribute
+    name: BeforeAfterTestAttribute
+    href: Xunit.v3.BeforeAfterTestAttribute.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+  href: Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex.html#Xunit_v3_ICodeGenTestMethod_DeclaredTypeIndex
+  name: DeclaredTypeIndex
+  nameWithType: ICodeGenTestMethod.DeclaredTypeIndex
+  fullName: Xunit.v3.ICodeGenTestMethod.DeclaredTypeIndex
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.IsStatic*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.IsStatic
+  href: Xunit.v3.ICodeGenTestMethod.IsStatic.html#Xunit_v3_ICodeGenTestMethod_IsStatic
+  name: IsStatic
+  nameWithType: ICodeGenTestMethod.IsStatic
+  fullName: Xunit.v3.ICodeGenTestMethod.IsStatic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  href: Xunit.v3.ICodeGenTestMethod.SourceFilePath.html#Xunit_v3_ICodeGenTestMethod_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ICodeGenTestMethod.SourceFilePath
+  fullName: Xunit.v3.ICodeGenTestMethod.SourceFilePath
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  commentId: P:Xunit.v3.ICodeGenTestMethod.SourceFilePath
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  href: Xunit.v3.ICodeGenTestMethod.SourceFilePath.html#Xunit_v3_ICodeGenTestMethod_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ICodeGenTestMethod.SourceFilePath
+  fullName: Xunit.v3.ICodeGenTestMethod.SourceFilePath
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.SourceLineNumber*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+  href: Xunit.v3.ICodeGenTestMethod.SourceLineNumber.html#Xunit_v3_ICodeGenTestMethod_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: ICodeGenTestMethod.SourceLineNumber
+  fullName: Xunit.v3.ICodeGenTestMethod.SourceLineNumber
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  commentId: T:Xunit.v3.ICodeGenTestMethod
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestMethod.html
+  name: ICodeGenTestMethod
+  nameWithType: ICodeGenTestMethod
+  fullName: Xunit.v3.ICodeGenTestMethod
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod.TestClass*
+  commentId: Overload:Xunit.v3.ICodeGenTestMethod.TestClass
+  href: Xunit.v3.ICodeGenTestMethod.TestClass.html#Xunit_v3_ICodeGenTestMethod_TestClass
+  name: TestClass
+  nameWithType: ICodeGenTestMethod.TestClass
+  fullName: Xunit.v3.ICodeGenTestMethod.TestClass
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestClass
+  commentId: T:Xunit.v3.ICodeGenTestClass
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestClass.html
+  name: ICodeGenTestClass
+  nameWithType: ICodeGenTestClass
+  fullName: Xunit.v3.ICodeGenTestClass
+memberLayout: SeparatePages

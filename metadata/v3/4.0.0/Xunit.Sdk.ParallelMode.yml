@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+  commentId: T:Xunit.Sdk.ParallelMode
+  id: ParallelMode
+  parent: v3.4.0.0:Xunit.Sdk
+  children:
+  - v3.4.0.0:Xunit.Sdk.ParallelMode.All
+  - v3.4.0.0:Xunit.Sdk.ParallelMode.Collections
+  - v3.4.0.0:Xunit.Sdk.ParallelMode.None
+  langs:
+  - csharp
+  - vb
+  name: ParallelMode
+  nameWithType: ParallelMode
+  fullName: Xunit.Sdk.ParallelMode
+  type: Enum
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelMode.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ParallelMode
+    path: ../src/xunit.v3.common/Options/ParallelMode.cs
+    startLine: 5
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Indicates the mode of parallelism used within a single test assembly.
+  example: []
+  syntax:
+    content: public enum ParallelMode
+    content.vb: Public Enum ParallelMode
+  extensionMethods:
+  - v3.4.0.0:Xunit.Sdk.ParallelMode.Xunit.Sdk.ParallelModeExtensions.IsValid
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.None
+  commentId: F:Xunit.Sdk.ParallelMode.None
+  id: None
+  parent: v3.4.0.0:Xunit.Sdk.ParallelMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ParallelMode.None
+  fullName: Xunit.Sdk.ParallelMode.None
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelMode.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: None
+    path: ../src/xunit.v3.common/Options/ParallelMode.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Disables all parallelism within the test assembly.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Xunit.Sdk.ParallelMode
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.Collections
+  commentId: F:Xunit.Sdk.ParallelMode.Collections
+  id: Collections
+  parent: v3.4.0.0:Xunit.Sdk.ParallelMode
+  langs:
+  - csharp
+  - vb
+  name: Collections
+  nameWithType: ParallelMode.Collections
+  fullName: Xunit.Sdk.ParallelMode.Collections
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelMode.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Collections
+    path: ../src/xunit.v3.common/Options/ParallelMode.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Enables parallelism at the test collection level.
+  remarks: >-
+    Test collections will be run in parallel against one another, but tests within
+
+    the same test collection will be run serially.
+  example: []
+  syntax:
+    content: Collections = 1
+    return:
+      type: Xunit.Sdk.ParallelMode
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.All
+  commentId: F:Xunit.Sdk.ParallelMode.All
+  id: All
+  parent: v3.4.0.0:Xunit.Sdk.ParallelMode
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: ParallelMode.All
+  fullName: Xunit.Sdk.ParallelMode.All
+  type: Field
+  source:
+    remote:
+      path: src/xunit.v3.common/Options/ParallelMode.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: All
+    path: ../src/xunit.v3.common/Options/ParallelMode.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.common
+  namespace: Xunit.Sdk
+  summary: Enables full test parallelism.
+  remarks: >-
+    Tests will be run in parallel against one another by default, regardless of test
+
+    collection.
+  example: []
+  syntax:
+    content: All = 255
+    return:
+      type: Xunit.Sdk.ParallelMode
+references:
+- uid: v3.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.Xunit.Sdk.ParallelModeExtensions.IsValid
+  commentId: M:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  parent: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions
+  definition: Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  name: IsValid(ParallelMode)
+  nameWithType: ParallelModeExtensions.IsValid(ParallelMode)
+  fullName: Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+    name: IsValid
+    href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+    href: Xunit.Sdk.ParallelMode.html
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+    name: IsValid
+    href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+    href: Xunit.Sdk.ParallelMode.html
+  - name: )
+- uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  commentId: M:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  name: IsValid(ParallelMode)
+  nameWithType: ParallelModeExtensions.IsValid(ParallelMode)
+  fullName: Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+    name: IsValid
+    href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+    href: Xunit.Sdk.ParallelMode.html
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions.IsValid(Xunit.Sdk.ParallelMode)
+    name: IsValid
+    href: Xunit.Sdk.ParallelModeExtensions.IsValid.html#Xunit_Sdk_ParallelModeExtensions_IsValid_Xunit_Sdk_ParallelMode_
+  - name: (
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+    href: Xunit.Sdk.ParallelMode.html
+  - name: )
+- uid: v3.4.0.0:Xunit.Sdk.ParallelModeExtensions
+  commentId: T:Xunit.Sdk.ParallelModeExtensions
+  parent: v3.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelModeExtensions.html
+  name: ParallelModeExtensions
+  nameWithType: ParallelModeExtensions
+  fullName: Xunit.Sdk.ParallelModeExtensions
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+  commentId: T:Xunit.Sdk.ParallelMode
+  parent: v3.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelMode.html
+  name: ParallelMode
+  nameWithType: ParallelMode
+  fullName: Xunit.Sdk.ParallelMode
+memberLayout: SeparatePages

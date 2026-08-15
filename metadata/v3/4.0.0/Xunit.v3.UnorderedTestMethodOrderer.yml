@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer
+  commentId: T:Xunit.v3.UnorderedTestMethodOrderer
+  id: UnorderedTestMethodOrderer
+  parent: v3.4.0.0:Xunit.v3
+  children:
+  - v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.Instance
+  - v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  langs:
+  - csharp
+  - vb
+  name: UnorderedTestMethodOrderer
+  nameWithType: UnorderedTestMethodOrderer
+  fullName: Xunit.v3.UnorderedTestMethodOrderer
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: UnorderedTestMethodOrderer
+    path: ../src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: An implementation of <xref href="v3.4.0.0:Xunit.v3.ITestMethodOrderer" data-throw-if-not-resolved="false"></xref> that does not change the order.
+  example: []
+  syntax:
+    content: 'public class UnorderedTestMethodOrderer : ITestMethodOrderer'
+    content.vb: Public Class UnorderedTestMethodOrderer Implements ITestMethodOrderer
+  inheritance:
+  - System.Object
+  implements:
+  - v3.4.0.0:Xunit.v3.ITestMethodOrderer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.Instance
+  commentId: P:Xunit.v3.UnorderedTestMethodOrderer.Instance
+  id: Instance
+  parent: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: UnorderedTestMethodOrderer.Instance
+  fullName: Xunit.v3.UnorderedTestMethodOrderer.Instance
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Instance
+    path: ../src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+    startLine: 16
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Get the singleton instance of <xref href="v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static UnorderedTestMethodOrderer Instance { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.UnorderedTestMethodOrderer
+    content.vb: Public Shared ReadOnly Property Instance As UnorderedTestMethodOrderer
+  overload: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.Instance*
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  commentId: M:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  id: OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  parent: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer
+  langs:
+  - csharp
+  - vb
+  name: OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod?>)
+  nameWithType: UnorderedTestMethodOrderer.OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod?>)
+  fullName: Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods<TTestMethod>(System.Collections.Generic.IReadOnlyCollection<TTestMethod?>)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: OrderTestMethods
+    path: ../src/xunit.v3.core/Framework/UnorderedTestMethodOrderer.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Orders test methods for execution.
+  example: []
+  syntax:
+    content: 'public IReadOnlyCollection<TTestMethod?> OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod?> testMethods) where TTestMethod : notnull, ITestMethod'
+    parameters:
+    - id: testMethods
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestMethod}}
+      description: The test methods to be ordered.
+    typeParameters:
+    - id: TTestMethod
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{{TTestMethod}}
+      description: The test methods in the order to be run.
+    content.vb: Public Function OrderTestMethods(Of TTestMethod As ITestMethod)(testMethods As IReadOnlyCollection(Of TTestMethod)) As IReadOnlyCollection(Of TTestMethod)
+  overload: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods*
+  implements:
+  - v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{{TTestMethod}})
+  nameWithType.vb: UnorderedTestMethodOrderer.OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+  fullName.vb: Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods(Of TTestMethod)(System.Collections.Generic.IReadOnlyCollection(Of TTestMethod))
+  name.vb: OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+references:
+- uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer
+  commentId: T:Xunit.v3.ITestMethodOrderer
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.ITestMethodOrderer.html
+  name: ITestMethodOrderer
+  nameWithType: ITestMethodOrderer
+  fullName: Xunit.v3.ITestMethodOrderer
+- uid: v3.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer
+  commentId: T:Xunit.v3.UnorderedTestMethodOrderer
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.UnorderedTestMethodOrderer.html
+  name: UnorderedTestMethodOrderer
+  nameWithType: UnorderedTestMethodOrderer
+  fullName: Xunit.v3.UnorderedTestMethodOrderer
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.Instance*
+  commentId: Overload:Xunit.v3.UnorderedTestMethodOrderer.Instance
+  href: Xunit.v3.UnorderedTestMethodOrderer.Instance.html#Xunit_v3_UnorderedTestMethodOrderer_Instance
+  name: Instance
+  nameWithType: UnorderedTestMethodOrderer.Instance
+  fullName: Xunit.v3.UnorderedTestMethodOrderer.Instance
+- uid: v3.4.0.0:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods*
+  commentId: Overload:Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods
+  href: Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods.html#Xunit_v3_UnorderedTestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  name: OrderTestMethods
+  nameWithType: UnorderedTestMethodOrderer.OrderTestMethods
+  fullName: Xunit.v3.UnorderedTestMethodOrderer.OrderTestMethods
+- uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{{TTestMethod}})
+  commentId: M:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  parent: v3.4.0.0:Xunit.v3.ITestMethodOrderer
+  definition: Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  name: OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod>)
+  nameWithType: ITestMethodOrderer.OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod>)
+  fullName: Xunit.v3.ITestMethodOrderer.OrderTestMethods<TTestMethod>(System.Collections.Generic.IReadOnlyCollection<TTestMethod>)
+  nameWithType.vb: ITestMethodOrderer.OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+  fullName.vb: Xunit.v3.ITestMethodOrderer.OrderTestMethods(Of TTestMethod)(System.Collections.Generic.IReadOnlyCollection(Of TTestMethod))
+  name.vb: OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+    name: OrderTestMethods
+    href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  - name: <
+  - name: TTestMethod
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestMethod
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+    name: OrderTestMethods
+    href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestMethod
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestMethod
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{{TTestMethod}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TTestMethod>
+  nameWithType: IReadOnlyCollection<TTestMethod>
+  fullName: System.Collections.Generic.IReadOnlyCollection<TTestMethod>
+  nameWithType.vb: IReadOnlyCollection(Of TTestMethod)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of TTestMethod)
+  name.vb: IReadOnlyCollection(Of TTestMethod)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestMethod
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestMethod
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  commentId: M:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+  isExternal: true
+  href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  name: OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod>)
+  nameWithType: ITestMethodOrderer.OrderTestMethods<TTestMethod>(IReadOnlyCollection<TTestMethod>)
+  fullName: Xunit.v3.ITestMethodOrderer.OrderTestMethods<TTestMethod>(System.Collections.Generic.IReadOnlyCollection<TTestMethod>)
+  nameWithType.vb: ITestMethodOrderer.OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+  fullName.vb: Xunit.v3.ITestMethodOrderer.OrderTestMethods(Of TTestMethod)(System.Collections.Generic.IReadOnlyCollection(Of TTestMethod))
+  name.vb: OrderTestMethods(Of TTestMethod)(IReadOnlyCollection(Of TTestMethod))
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+    name: OrderTestMethods
+    href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  - name: <
+  - name: TTestMethod
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestMethod
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.ITestMethodOrderer.OrderTestMethods``1(System.Collections.Generic.IReadOnlyCollection{``0})
+    name: OrderTestMethods
+    href: Xunit.v3.ITestMethodOrderer.OrderTestMethods.html#Xunit_v3_ITestMethodOrderer_OrderTestMethods__1_System_Collections_Generic_IReadOnlyCollection___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestMethod
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestMethod
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

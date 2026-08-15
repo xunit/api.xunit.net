@@ -1,0 +1,751 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  commentId: T:Xunit.Runner.Common.RunnerInitialization
+  id: RunnerInitialization
+  parent: v3-aot.4.0.0:Xunit.Runner.Common
+  children:
+  - v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.#ctor(System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute},System.Exception)
+  - v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.DisposeAsync
+  - v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.InitException
+  - v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.Start(System.Reflection.Assembly)
+  langs:
+  - csharp
+  - vb
+  name: RunnerInitialization
+  nameWithType: RunnerInitialization
+  fullName: Xunit.Runner.Common.RunnerInitialization
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: RunnerInitialization
+    path: ../src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    This class is used by runners to ensure everything created by the Native AOT generators is
+
+    registered before the runner attempts to run anything.
+  example: []
+  syntax:
+    content: 'public sealed class RunnerInitialization : IAsyncDisposable'
+    content.vb: Public NotInheritable Class RunnerInitialization Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.#ctor(System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute},System.Exception)
+  commentId: M:Xunit.Runner.Common.RunnerInitialization.#ctor(System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute},System.Exception)
+  id: '#ctor(System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute},System.Exception)'
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  langs:
+  - csharp
+  - vb
+  name: RunnerInitialization(Stack<RunnerInitializationAttribute>, Exception?)
+  nameWithType: RunnerInitialization.RunnerInitialization(Stack<RunnerInitializationAttribute>, Exception?)
+  fullName: Xunit.Runner.Common.RunnerInitialization.RunnerInitialization(System.Collections.Generic.Stack<Xunit.Runner.Common.RunnerInitializationAttribute>, System.Exception?)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    This class is used by runners to ensure everything created by the Native AOT generators is
+
+    registered before the runner attempts to run anything.
+  example: []
+  syntax:
+    content: public RunnerInitialization(Stack<RunnerInitializationAttribute> initializedAttributes, Exception? initException = null)
+    parameters:
+    - id: initializedAttributes
+      type: System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute}
+      description: >-
+        The attributes that were initialized, and thus need to be
+            cleaned up in disposal.
+    - id: initException
+      type: System.Exception
+      description: The exception that happened during initialization, if any.
+    content.vb: Public Sub New(initializedAttributes As Stack(Of RunnerInitializationAttribute), initException As Exception = Nothing)
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.#ctor*
+  nameWithType.vb: RunnerInitialization.New(Stack(Of RunnerInitializationAttribute), Exception)
+  fullName.vb: Xunit.Runner.Common.RunnerInitialization.New(System.Collections.Generic.Stack(Of Xunit.Runner.Common.RunnerInitializationAttribute), System.Exception)
+  name.vb: New(Stack(Of RunnerInitializationAttribute), Exception)
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.InitException
+  commentId: P:Xunit.Runner.Common.RunnerInitialization.InitException
+  id: InitException
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  langs:
+  - csharp
+  - vb
+  name: InitException
+  nameWithType: RunnerInitialization.InitException
+  fullName: Xunit.Runner.Common.RunnerInitialization.InitException
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: InitException
+    path: ../src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+    startLine: 19
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: Gets the exception that was thrown during initialization, if any.
+  example: []
+  syntax:
+    content: public Exception? InitException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property InitException As Exception
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.InitException*
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.DisposeAsync
+  commentId: M:Xunit.Runner.Common.RunnerInitialization.DisposeAsync
+  id: DisposeAsync
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: RunnerInitialization.DisposeAsync()
+  fullName: Xunit.Runner.Common.RunnerInitialization.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.Start(System.Reflection.Assembly)
+  commentId: M:Xunit.Runner.Common.RunnerInitialization.Start(System.Reflection.Assembly)
+  id: Start(System.Reflection.Assembly)
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  langs:
+  - csharp
+  - vb
+  name: Start(Assembly?)
+  nameWithType: RunnerInitialization.Start(Assembly?)
+  fullName: Xunit.Runner.Common.RunnerInitialization.Start(System.Reflection.Assembly?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Start
+    path: ../src/xunit.v3.runner.common.aot/Configuration/RunnerInitialization_aot.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: Starts runner initialization.
+  example: []
+  syntax:
+    content: public static ValueTask<RunnerInitialization> Start(Assembly? assembly)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The test assembly
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.Runner.Common.RunnerInitialization}
+      description: The <xref href="v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization" data-throw-if-not-resolved="false"></xref> object which must be disposed during shutdown
+    content.vb: Public Shared Function Start(assembly As Assembly) As ValueTask(Of RunnerInitialization)
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.Start*
+  nameWithType.vb: RunnerInitialization.Start(Assembly)
+  fullName.vb: Xunit.Runner.Common.RunnerInitialization.Start(System.Reflection.Assembly)
+  name.vb: Start(Assembly)
+references:
+- uid: v3-aot.4.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.#ctor*
+  commentId: Overload:Xunit.Runner.Common.RunnerInitialization.#ctor
+  href: Xunit.Runner.Common.RunnerInitialization.-ctor.html#Xunit_Runner_Common_RunnerInitialization__ctor_System_Collections_Generic_Stack_Xunit_Runner_Common_RunnerInitializationAttribute__System_Exception_
+  name: RunnerInitialization
+  nameWithType: RunnerInitialization.RunnerInitialization
+  fullName: Xunit.Runner.Common.RunnerInitialization.RunnerInitialization
+  nameWithType.vb: RunnerInitialization.New
+  fullName.vb: Xunit.Runner.Common.RunnerInitialization.New
+  name.vb: New
+- uid: System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute}
+  commentId: T:System.Collections.Generic.Stack{Xunit.Runner.Common.RunnerInitializationAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Stack`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  name: Stack<RunnerInitializationAttribute>
+  nameWithType: Stack<RunnerInitializationAttribute>
+  fullName: System.Collections.Generic.Stack<Xunit.Runner.Common.RunnerInitializationAttribute>
+  nameWithType.vb: Stack(Of RunnerInitializationAttribute)
+  fullName.vb: System.Collections.Generic.Stack(Of Xunit.Runner.Common.RunnerInitializationAttribute)
+  name.vb: Stack(Of RunnerInitializationAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitializationAttribute
+    name: RunnerInitializationAttribute
+    href: Xunit.Runner.Common.RunnerInitializationAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitializationAttribute
+    name: RunnerInitializationAttribute
+    href: Xunit.Runner.Common.RunnerInitializationAttribute.html
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Collections.Generic.Stack`1
+  commentId: T:System.Collections.Generic.Stack`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  name: Stack<T>
+  nameWithType: Stack<T>
+  fullName: System.Collections.Generic.Stack<T>
+  nameWithType.vb: Stack(Of T)
+  fullName.vb: System.Collections.Generic.Stack(Of T)
+  name.vb: Stack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.InitException*
+  commentId: Overload:Xunit.Runner.Common.RunnerInitialization.InitException
+  href: Xunit.Runner.Common.RunnerInitialization.InitException.html#Xunit_Runner_Common_RunnerInitialization_InitException
+  name: InitException
+  nameWithType: RunnerInitialization.InitException
+  fullName: Xunit.Runner.Common.RunnerInitialization.InitException
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.DisposeAsync*
+  commentId: Overload:Xunit.Runner.Common.RunnerInitialization.DisposeAsync
+  href: Xunit.Runner.Common.RunnerInitialization.DisposeAsync.html#Xunit_Runner_Common_RunnerInitialization_DisposeAsync
+  name: DisposeAsync
+  nameWithType: RunnerInitialization.DisposeAsync
+  fullName: Xunit.Runner.Common.RunnerInitialization.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+  commentId: T:Xunit.Runner.Common.RunnerInitialization
+  href: Xunit.Runner.Common.RunnerInitialization.html
+  name: RunnerInitialization
+  nameWithType: RunnerInitialization
+  fullName: Xunit.Runner.Common.RunnerInitialization
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization.Start*
+  commentId: Overload:Xunit.Runner.Common.RunnerInitialization.Start
+  href: Xunit.Runner.Common.RunnerInitialization.Start.html#Xunit_Runner_Common_RunnerInitialization_Start_System_Reflection_Assembly_
+  name: Start
+  nameWithType: RunnerInitialization.Start
+  fullName: Xunit.Runner.Common.RunnerInitialization.Start
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Threading.Tasks.ValueTask{Xunit.Runner.Common.RunnerInitialization}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.Runner.Common.RunnerInitialization}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<RunnerInitialization>
+  nameWithType: ValueTask<RunnerInitialization>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.Runner.Common.RunnerInitialization>
+  nameWithType.vb: ValueTask(Of RunnerInitialization)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.Runner.Common.RunnerInitialization)
+  name.vb: ValueTask(Of RunnerInitialization)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+    name: RunnerInitialization
+    href: Xunit.Runner.Common.RunnerInitialization.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.RunnerInitialization
+    name: RunnerInitialization
+    href: Xunit.Runner.Common.RunnerInitialization.html
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+memberLayout: SeparatePages

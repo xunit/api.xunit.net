@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase
+  commentId: T:Xunit.v3.ISelfExecutingCodeGenTestCase
+  id: ISelfExecutingCodeGenTestCase
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase.Run(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  langs:
+  - csharp
+  - vb
+  name: ISelfExecutingCodeGenTestCase
+  nameWithType: ISelfExecutingCodeGenTestCase
+  fullName: Xunit.v3.ISelfExecutingCodeGenTestCase
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Abstractions/ObjectModel/ISelfExecutingCodeGenTestCase_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ISelfExecutingCodeGenTestCase
+    path: ../src/xunit.v3.core.aot/Abstractions/ObjectModel/ISelfExecutingCodeGenTestCase_aot.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Represents an implementation of <xref href="v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase" data-throw-if-not-resolved="false"></xref> that is self-executing. This allows
+
+    the test case to opt into the middle of the test execution pipeline without implementing
+
+    everything that comes before it.
+  example: []
+  syntax:
+    content: 'public interface ISelfExecutingCodeGenTestCase : ICodeGenTestCase, ICoreTestCase, ITestCase, ITestCaseMetadata'
+    content.vb: Public Interface ISelfExecutingCodeGenTestCase Inherits ICodeGenTestCase, ICoreTestCase, ITestCase, ITestCaseMetadata
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.SkipUnless
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.SkipWhen
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestClass
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestCollection
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestMethod
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.CreateTests
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.DisableParallelization
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestMethodArity
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipExceptions
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipReason
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestClassName
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestClassSimpleName
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestMethodName
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.Timeout
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PostInvoke
+  - v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PreInvoke
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.Explicit
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.Traits
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  extensionMethods:
+  - v3-aot.4.0.0:Xunit.Sdk.ITestCase.Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+- uid: v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase.Run(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  commentId: M:Xunit.v3.ISelfExecutingCodeGenTestCase.Run(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  id: Run(Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  parent: v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase
+  langs:
+  - csharp
+  - vb
+  name: Run(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+  nameWithType: ISelfExecutingCodeGenTestCase.Run(ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+  fullName: Xunit.v3.ISelfExecutingCodeGenTestCase.Run(Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource, Xunit.Sdk.ParallelMode, Xunit.v3.ExecutionScheduler, Xunit.v3.FixtureMappingManager)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Abstractions/ObjectModel/ISelfExecutingCodeGenTestCase_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.core.aot/Abstractions/ObjectModel/ISelfExecutingCodeGenTestCase_aot.cs
+    startLine: 22
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Executes the test case, returning 0 or more result messages through the message sink.
+  example: []
+  syntax:
+    content: ValueTask<RunSummary> Run(ExplicitOption explicitOption, IMessageBus messageBus, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource, ParallelMode parallelMode, ExecutionScheduler scheduler, FixtureMappingManager methodFixtureMappings)
+    parameters:
+    - id: explicitOption
+      type: Xunit.Sdk.ExplicitOption
+      description: A flag to indicate how explicit tests should be treated.
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to report results to.
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The error aggregator to use for catching exception.
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source that indicates whether cancellation has been requested.
+    - id: parallelMode
+      type: Xunit.Sdk.ParallelMode
+      description: The parallel mode for the test case
+    - id: scheduler
+      type: Xunit.v3.ExecutionScheduler
+      description: The scheduler used for task/test scheduling
+    - id: methodFixtureMappings
+      type: Xunit.v3.FixtureMappingManager
+      description: The fixtures attached to the test method.
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+      description: Returns the summary of the test case run.
+    content.vb: Function Run(explicitOption As ExplicitOption, messageBus As IMessageBus, aggregator As ExceptionAggregator, cancellationTokenSource As CancellationTokenSource, parallelMode As ParallelMode, scheduler As ExecutionScheduler, methodFixtureMappings As FixtureMappingManager) As ValueTask(Of RunSummary)
+  overload: v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase.Run*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  commentId: T:Xunit.v3.ICodeGenTestCase
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestCase.html
+  name: ICodeGenTestCase
+  nameWithType: ICodeGenTestCase
+  fullName: Xunit.v3.ICodeGenTestCase
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.SkipUnless
+  commentId: P:Xunit.v3.ICodeGenTestCase.SkipUnless
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.SkipUnless.html#Xunit_v3_ICodeGenTestCase_SkipUnless
+  name: SkipUnless
+  nameWithType: ICodeGenTestCase.SkipUnless
+  fullName: Xunit.v3.ICodeGenTestCase.SkipUnless
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.SkipWhen
+  commentId: P:Xunit.v3.ICodeGenTestCase.SkipWhen
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.SkipWhen.html#Xunit_v3_ICodeGenTestCase_SkipWhen
+  name: SkipWhen
+  nameWithType: ICodeGenTestCase.SkipWhen
+  fullName: Xunit.v3.ICodeGenTestCase.SkipWhen
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestClass
+  commentId: P:Xunit.v3.ICodeGenTestCase.TestClass
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.TestClass.html#Xunit_v3_ICodeGenTestCase_TestClass
+  name: TestClass
+  nameWithType: ICodeGenTestCase.TestClass
+  fullName: Xunit.v3.ICodeGenTestCase.TestClass
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestCollection
+  commentId: P:Xunit.v3.ICodeGenTestCase.TestCollection
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.TestCollection.html#Xunit_v3_ICodeGenTestCase_TestCollection
+  name: TestCollection
+  nameWithType: ICodeGenTestCase.TestCollection
+  fullName: Xunit.v3.ICodeGenTestCase.TestCollection
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.TestMethod
+  commentId: P:Xunit.v3.ICodeGenTestCase.TestMethod
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.TestMethod.html#Xunit_v3_ICodeGenTestCase_TestMethod
+  name: TestMethod
+  nameWithType: ICodeGenTestCase.TestMethod
+  fullName: Xunit.v3.ICodeGenTestCase.TestMethod
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.CreateTests
+  commentId: M:Xunit.v3.ICodeGenTestCase.CreateTests
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+  href: Xunit.v3.ICodeGenTestCase.CreateTests.html#Xunit_v3_ICodeGenTestCase_CreateTests
+  name: CreateTests()
+  nameWithType: ICodeGenTestCase.CreateTests()
+  fullName: Xunit.v3.ICodeGenTestCase.CreateTests()
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.ICodeGenTestCase.CreateTests.html#Xunit_v3_ICodeGenTestCase_CreateTests
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase.CreateTests
+    name: CreateTests
+    href: Xunit.v3.ICodeGenTestCase.CreateTests.html#Xunit_v3_ICodeGenTestCase_CreateTests
+  - name: (
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.DisableParallelization
+  commentId: P:Xunit.v3.ICoreTestCase.DisableParallelization
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.DisableParallelization.html#Xunit_v3_ICoreTestCase_DisableParallelization
+  name: DisableParallelization
+  nameWithType: ICoreTestCase.DisableParallelization
+  fullName: Xunit.v3.ICoreTestCase.DisableParallelization
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestMethodArity
+  commentId: P:Xunit.v3.ICoreTestCase.TestMethodArity
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.TestMethodArity.html#Xunit_v3_ICoreTestCase_TestMethodArity
+  name: TestMethodArity
+  nameWithType: ICoreTestCase.TestMethodArity
+  fullName: Xunit.v3.ICoreTestCase.TestMethodArity
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipExceptions
+  commentId: P:Xunit.v3.ICoreTestCase.SkipExceptions
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.SkipExceptions.html#Xunit_v3_ICoreTestCase_SkipExceptions
+  name: SkipExceptions
+  nameWithType: ICoreTestCase.SkipExceptions
+  fullName: Xunit.v3.ICoreTestCase.SkipExceptions
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.SkipReason
+  commentId: P:Xunit.v3.ICoreTestCase.SkipReason
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.SkipReason.html#Xunit_v3_ICoreTestCase_SkipReason
+  name: SkipReason
+  nameWithType: ICoreTestCase.SkipReason
+  fullName: Xunit.v3.ICoreTestCase.SkipReason
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestClassName
+  commentId: P:Xunit.v3.ICoreTestCase.TestClassName
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.TestClassName.html#Xunit_v3_ICoreTestCase_TestClassName
+  name: TestClassName
+  nameWithType: ICoreTestCase.TestClassName
+  fullName: Xunit.v3.ICoreTestCase.TestClassName
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestClassSimpleName
+  commentId: P:Xunit.v3.ICoreTestCase.TestClassSimpleName
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.TestClassSimpleName.html#Xunit_v3_ICoreTestCase_TestClassSimpleName
+  name: TestClassSimpleName
+  nameWithType: ICoreTestCase.TestClassSimpleName
+  fullName: Xunit.v3.ICoreTestCase.TestClassSimpleName
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.TestMethodName
+  commentId: P:Xunit.v3.ICoreTestCase.TestMethodName
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.TestMethodName.html#Xunit_v3_ICoreTestCase_TestMethodName
+  name: TestMethodName
+  nameWithType: ICoreTestCase.TestMethodName
+  fullName: Xunit.v3.ICoreTestCase.TestMethodName
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.Timeout
+  commentId: P:Xunit.v3.ICoreTestCase.Timeout
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.Timeout.html#Xunit_v3_ICoreTestCase_Timeout
+  name: Timeout
+  nameWithType: ICoreTestCase.Timeout
+  fullName: Xunit.v3.ICoreTestCase.Timeout
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PostInvoke
+  commentId: M:Xunit.v3.ICoreTestCase.PostInvoke
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.PostInvoke.html#Xunit_v3_ICoreTestCase_PostInvoke
+  name: PostInvoke()
+  nameWithType: ICoreTestCase.PostInvoke()
+  fullName: Xunit.v3.ICoreTestCase.PostInvoke()
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.ICoreTestCase.PostInvoke.html#Xunit_v3_ICoreTestCase_PostInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PostInvoke
+    name: PostInvoke
+    href: Xunit.v3.ICoreTestCase.PostInvoke.html#Xunit_v3_ICoreTestCase_PostInvoke
+  - name: (
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PreInvoke
+  commentId: M:Xunit.v3.ICoreTestCase.PreInvoke
+  parent: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  href: Xunit.v3.ICoreTestCase.PreInvoke.html#Xunit_v3_ICoreTestCase_PreInvoke
+  name: PreInvoke()
+  nameWithType: ICoreTestCase.PreInvoke()
+  fullName: Xunit.v3.ICoreTestCase.PreInvoke()
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.ICoreTestCase.PreInvoke.html#Xunit_v3_ICoreTestCase_PreInvoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase.PreInvoke
+    name: PreInvoke
+    href: Xunit.v3.ICoreTestCase.PreInvoke.html#Xunit_v3_ICoreTestCase_PreInvoke
+  - name: (
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.Explicit
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Explicit
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Explicit.html#Xunit_Sdk_ITestCaseMetadata_Explicit
+  name: Explicit
+  nameWithType: ITestCaseMetadata.Explicit
+  fullName: Xunit.Sdk.ITestCaseMetadata.Explicit
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceFilePath.html#Xunit_Sdk_ITestCaseMetadata_SourceFilePath
+  name: SourceFilePath
+  nameWithType: ITestCaseMetadata.SourceFilePath
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceFilePath
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber.html#Xunit_Sdk_ITestCaseMetadata_SourceLineNumber
+  name: SourceLineNumber
+  nameWithType: ITestCaseMetadata.SourceLineNumber
+  fullName: Xunit.Sdk.ITestCaseMetadata.SourceLineNumber
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName.html#Xunit_Sdk_ITestCaseMetadata_TestCaseDisplayName
+  name: TestCaseDisplayName
+  nameWithType: ITestCaseMetadata.TestCaseDisplayName
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestCaseDisplayName
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken.html#Xunit_Sdk_ITestCaseMetadata_TestClassMetadataToken
+  name: TestClassMetadataToken
+  nameWithType: ITestCaseMetadata.TestClassMetadataToken
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassMetadataToken
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace.html#Xunit_Sdk_ITestCaseMetadata_TestClassNamespace
+  name: TestClassNamespace
+  nameWithType: ITestCaseMetadata.TestClassNamespace
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestClassNamespace
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken.html#Xunit_Sdk_ITestCaseMetadata_TestMethodMetadataToken
+  name: TestMethodMetadataToken
+  nameWithType: ITestCaseMetadata.TestMethodMetadataToken
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodMetadataToken
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodParameterTypesVSTest
+  name: TestMethodParameterTypesVSTest
+  nameWithType: ITestCaseMetadata.TestMethodParameterTypesVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodParameterTypesVSTest
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest.html#Xunit_Sdk_ITestCaseMetadata_TestMethodReturnTypeVSTest
+  name: TestMethodReturnTypeVSTest
+  nameWithType: ITestCaseMetadata.TestMethodReturnTypeVSTest
+  fullName: Xunit.Sdk.ITestCaseMetadata.TestMethodReturnTypeVSTest
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.Traits
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.Traits
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.Traits.html#Xunit_Sdk_ITestCaseMetadata_Traits
+  name: Traits
+  nameWithType: ITestCaseMetadata.Traits
+  fullName: Xunit.Sdk.ITestCaseMetadata.Traits
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  commentId: P:Xunit.Sdk.ITestCaseMetadata.UniqueID
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  href: Xunit.Sdk.ITestCaseMetadata.UniqueID.html#Xunit_Sdk_ITestCaseMetadata_UniqueID
+  name: UniqueID
+  nameWithType: ITestCaseMetadata.UniqueID
+  fullName: Xunit.Sdk.ITestCaseMetadata.UniqueID
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCase.Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  parent: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions
+  definition: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  name: ToTestCaseDiscovered(ITestCase)
+  nameWithType: MessageSinkMessageExtensions.ToTestCaseDiscovered(ITestCase)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+    name: ToTestCaseDiscovered
+    href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+    href: Xunit.Sdk.ITestCase.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+    name: ToTestCaseDiscovered
+    href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+    href: Xunit.Sdk.ITestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ICoreTestCase
+  commentId: T:Xunit.v3.ICoreTestCase
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestCase.html
+  name: ICoreTestCase
+  nameWithType: ICoreTestCase
+  fullName: Xunit.v3.ICoreTestCase
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestCaseMetadata
+  commentId: T:Xunit.Sdk.ITestCaseMetadata
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestCaseMetadata.html
+  name: ITestCaseMetadata
+  nameWithType: ITestCaseMetadata
+  fullName: Xunit.Sdk.ITestCaseMetadata
+- uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  name: ToTestCaseDiscovered(ITestCase)
+  nameWithType: MessageSinkMessageExtensions.ToTestCaseDiscovered(ITestCase)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+    name: ToTestCaseDiscovered
+    href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+    href: Xunit.Sdk.ITestCase.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered(Xunit.Sdk.ITestCase)
+    name: ToTestCaseDiscovered
+    href: Xunit.Sdk.MessageSinkMessageExtensions.ToTestCaseDiscovered.html#Xunit_Sdk_MessageSinkMessageExtensions_ToTestCaseDiscovered_Xunit_Sdk_ITestCase_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.ITestCase
+    name: ITestCase
+    href: Xunit.Sdk.ITestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions
+  commentId: T:Xunit.Sdk.MessageSinkMessageExtensions
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.MessageSinkMessageExtensions.html
+  name: MessageSinkMessageExtensions
+  nameWithType: MessageSinkMessageExtensions
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3-aot.4.0.0:Xunit.v3.ISelfExecutingCodeGenTestCase.Run*
+  commentId: Overload:Xunit.v3.ISelfExecutingCodeGenTestCase.Run
+  href: Xunit.v3.ISelfExecutingCodeGenTestCase.Run.html#Xunit_v3_ISelfExecutingCodeGenTestCase_Run_Xunit_Sdk_ExplicitOption_Xunit_v3_IMessageBus_Xunit_v3_ExceptionAggregator_System_Threading_CancellationTokenSource_Xunit_Sdk_ParallelMode_Xunit_v3_ExecutionScheduler_Xunit_v3_FixtureMappingManager_
+  name: Run
+  nameWithType: ISelfExecutingCodeGenTestCase.Run
+  fullName: Xunit.v3.ISelfExecutingCodeGenTestCase.Run
+- uid: v3-aot.4.0.0:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: v3-aot.4.0.0:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: v3-aot.4.0.0:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelMode
+  commentId: T:Xunit.Sdk.ParallelMode
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelMode.html
+  name: ParallelMode
+  nameWithType: ParallelMode
+  fullName: Xunit.Sdk.ParallelMode
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  commentId: T:Xunit.v3.ExecutionScheduler
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ExecutionScheduler.html
+  name: ExecutionScheduler
+  nameWithType: ExecutionScheduler
+  fullName: Xunit.v3.ExecutionScheduler
+- uid: v3-aot.4.0.0:Xunit.v3.FixtureMappingManager
+  commentId: T:Xunit.v3.FixtureMappingManager
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.FixtureMappingManager.html
+  name: FixtureMappingManager
+  nameWithType: FixtureMappingManager
+  fullName: Xunit.v3.FixtureMappingManager
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<RunSummary>
+  nameWithType: ValueTask<RunSummary>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.RunSummary>
+  nameWithType.vb: ValueTask(Of RunSummary)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.RunSummary)
+  name.vb: ValueTask(Of RunSummary)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

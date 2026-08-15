@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync
+  commentId: T:Xunit.v3.INotifyTestAssemblyLifecycleAsync
+  id: INotifyTestAssemblyLifecycleAsync
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync(Xunit.v3.ICodeGenTestAssembly)
+  - v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync(Xunit.v3.ICodeGenTestAssembly)
+  langs:
+  - csharp
+  - vb
+  name: INotifyTestAssemblyLifecycleAsync
+  nameWithType: INotifyTestAssemblyLifecycleAsync
+  fullName: Xunit.v3.INotifyTestAssemblyLifecycleAsync
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: INotifyTestAssemblyLifecycleAsync
+    path: ../src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Allows a fixture to be notified about test assembly lifecycle events (async).
+  remarks: Only assembly-level fixtures are eligible to be notified of this event.
+  example: []
+  syntax:
+    content: 'public interface INotifyTestAssemblyLifecycleAsync : INotifyLifecycle'
+    content.vb: Public Interface INotifyTestAssemblyLifecycleAsync Inherits INotifyLifecycle
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync(Xunit.v3.ICodeGenTestAssembly)
+  commentId: M:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync(Xunit.v3.ICodeGenTestAssembly)
+  id: OnTestAssemblyFinishedAsync(Xunit.v3.ICodeGenTestAssembly)
+  parent: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync
+  langs:
+  - csharp
+  - vb
+  name: OnTestAssemblyFinishedAsync(ICodeGenTestAssembly)
+  nameWithType: INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync(ICodeGenTestAssembly)
+  fullName: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync(Xunit.v3.ICodeGenTestAssembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: OnTestAssemblyFinishedAsync
+    path: ../src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+    startLine: 14
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Called when the test assembly is finished.
+  example: []
+  syntax:
+    content: ValueTask OnTestAssemblyFinishedAsync(ICodeGenTestAssembly testAssembly)
+    parameters:
+    - id: testAssembly
+      type: Xunit.v3.ICodeGenTestAssembly
+      description: The test assembly
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function OnTestAssemblyFinishedAsync(testAssembly As ICodeGenTestAssembly) As ValueTask
+  overload: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync*
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync(Xunit.v3.ICodeGenTestAssembly)
+  commentId: M:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync(Xunit.v3.ICodeGenTestAssembly)
+  id: OnTestAssemblyStartingAsync(Xunit.v3.ICodeGenTestAssembly)
+  parent: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync
+  langs:
+  - csharp
+  - vb
+  name: OnTestAssemblyStartingAsync(ICodeGenTestAssembly)
+  nameWithType: INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync(ICodeGenTestAssembly)
+  fullName: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync(Xunit.v3.ICodeGenTestAssembly)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: OnTestAssemblyStartingAsync
+    path: ../src/xunit.v3.core.aot/FixtureEvents/INotifyTestAssemblyLifecycleAsync_aot.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Called when the test assembly is starting.
+  example: []
+  syntax:
+    content: ValueTask OnTestAssemblyStartingAsync(ICodeGenTestAssembly testAssembly)
+    parameters:
+    - id: testAssembly
+      type: Xunit.v3.ICodeGenTestAssembly
+      description: The test assembly
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Function OnTestAssemblyStartingAsync(testAssembly As ICodeGenTestAssembly) As ValueTask
+  overload: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync*
+  commentId: Overload:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync
+  href: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync.html#Xunit_v3_INotifyTestAssemblyLifecycleAsync_OnTestAssemblyFinishedAsync_Xunit_v3_ICodeGenTestAssembly_
+  name: OnTestAssemblyFinishedAsync
+  nameWithType: INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync
+  fullName: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyFinishedAsync
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestAssembly
+  commentId: T:Xunit.v3.ICodeGenTestAssembly
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestAssembly.html
+  name: ICodeGenTestAssembly
+  nameWithType: ICodeGenTestAssembly
+  fullName: Xunit.v3.ICodeGenTestAssembly
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync*
+  commentId: Overload:Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync
+  href: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync.html#Xunit_v3_INotifyTestAssemblyLifecycleAsync_OnTestAssemblyStartingAsync_Xunit_v3_ICodeGenTestAssembly_
+  name: OnTestAssemblyStartingAsync
+  nameWithType: INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync
+  fullName: Xunit.v3.INotifyTestAssemblyLifecycleAsync.OnTestAssemblyStartingAsync
+memberLayout: SeparatePages

@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory
+  commentId: T:Xunit.v3.ICodeGenTestCaseFactory
+  id: ICodeGenTestCaseFactory
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory.Generate(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.ICodeGenTestMethod,Xunit.Sdk.DisposalTracker)
+  langs:
+  - csharp
+  - vb
+  name: ICodeGenTestCaseFactory
+  nameWithType: ICodeGenTestCaseFactory
+  fullName: Xunit.v3.ICodeGenTestCaseFactory
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestCaseFactory_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ICodeGenTestCaseFactory
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestCaseFactory_aot.cs
+    startLine: 7
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Represents a class which can generate test cases.
+  example: []
+  syntax:
+    content: public interface ICodeGenTestCaseFactory
+    content.vb: Public Interface ICodeGenTestCaseFactory
+  derivedClasses:
+  - v3-aot.4.0.0:Xunit.v3.CulturedFactTestCaseFactory
+  - v3-aot.4.0.0:Xunit.v3.CulturedTheoryTestCaseFactory
+  - v3-aot.4.0.0:Xunit.v3.FactTestCaseFactory
+  - v3-aot.4.0.0:Xunit.v3.TestCaseFactoryBase
+  - v3-aot.4.0.0:Xunit.v3.TheoryTestCaseFactory
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory.Generate(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.ICodeGenTestMethod,Xunit.Sdk.DisposalTracker)
+  commentId: M:Xunit.v3.ICodeGenTestCaseFactory.Generate(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.ICodeGenTestMethod,Xunit.Sdk.DisposalTracker)
+  id: Generate(Xunit.Sdk.ITestFrameworkDiscoveryOptions,Xunit.v3.ICodeGenTestMethod,Xunit.Sdk.DisposalTracker)
+  parent: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory
+  langs:
+  - csharp
+  - vb
+  name: Generate(ITestFrameworkDiscoveryOptions, ICodeGenTestMethod, DisposalTracker)
+  nameWithType: ICodeGenTestCaseFactory.Generate(ITestFrameworkDiscoveryOptions, ICodeGenTestMethod, DisposalTracker)
+  fullName: Xunit.v3.ICodeGenTestCaseFactory.Generate(Xunit.Sdk.ITestFrameworkDiscoveryOptions, Xunit.v3.ICodeGenTestMethod, Xunit.Sdk.DisposalTracker)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestCaseFactory_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Generate
+    path: ../src/xunit.v3.core.aot/ObjectModel/CodeGen/ICodeGenTestCaseFactory_aot.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Generate test cases.
+  example: []
+  syntax:
+    content: ValueTask<IReadOnlyCollection<ICodeGenTestCase>> Generate(ITestFrameworkDiscoveryOptions discoveryOptions, ICodeGenTestMethod testMethod, DisposalTracker disposalTracker)
+    parameters:
+    - id: discoveryOptions
+      type: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+      description: The discovery options, which may influence test case metadata
+    - id: testMethod
+      type: Xunit.v3.ICodeGenTestMethod
+      description: The test method that this test case belongs to
+    - id: disposalTracker
+      type: Xunit.Sdk.DisposalTracker
+      description: The disposal tracker (typically used for class data instances and data in test rows)
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}}
+    content.vb: Function Generate(discoveryOptions As ITestFrameworkDiscoveryOptions, testMethod As ICodeGenTestMethod, disposalTracker As DisposalTracker) As ValueTask(Of IReadOnlyCollection(Of ICodeGenTestCase))
+  overload: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory.Generate*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCaseFactory.Generate*
+  commentId: Overload:Xunit.v3.ICodeGenTestCaseFactory.Generate
+  href: Xunit.v3.ICodeGenTestCaseFactory.Generate.html#Xunit_v3_ICodeGenTestCaseFactory_Generate_Xunit_Sdk_ITestFrameworkDiscoveryOptions_Xunit_v3_ICodeGenTestMethod_Xunit_Sdk_DisposalTracker_
+  name: Generate
+  nameWithType: ICodeGenTestCaseFactory.Generate
+  fullName: Xunit.v3.ICodeGenTestCaseFactory.Generate
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  commentId: T:Xunit.Sdk.ITestFrameworkDiscoveryOptions
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestFrameworkDiscoveryOptions.html
+  name: ITestFrameworkDiscoveryOptions
+  nameWithType: ITestFrameworkDiscoveryOptions
+  fullName: Xunit.Sdk.ITestFrameworkDiscoveryOptions
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  commentId: T:Xunit.v3.ICodeGenTestMethod
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestMethod.html
+  name: ICodeGenTestMethod
+  nameWithType: ICodeGenTestMethod
+  fullName: Xunit.v3.ICodeGenTestMethod
+- uid: v3-aot.4.0.0:Xunit.Sdk.DisposalTracker
+  commentId: T:Xunit.Sdk.DisposalTracker
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.DisposalTracker.html
+  name: DisposalTracker
+  nameWithType: DisposalTracker
+  fullName: Xunit.Sdk.DisposalTracker
+- uid: System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<IReadOnlyCollection<ICodeGenTestCase>>
+  nameWithType: ValueTask<IReadOnlyCollection<ICodeGenTestCase>>
+  fullName: System.Threading.Tasks.ValueTask<System.Collections.Generic.IReadOnlyCollection<Xunit.v3.ICodeGenTestCase>>
+  nameWithType.vb: ValueTask(Of IReadOnlyCollection(Of ICodeGenTestCase))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.ICodeGenTestCase))
+  name.vb: ValueTask(Of IReadOnlyCollection(Of ICodeGenTestCase))
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

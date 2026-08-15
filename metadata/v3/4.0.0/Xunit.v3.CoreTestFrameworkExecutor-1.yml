@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1
+  commentId: T:Xunit.v3.CoreTestFrameworkExecutor`1
+  id: CoreTestFrameworkExecutor`1
+  parent: v3.4.0.0:Xunit.v3
+  children:
+  - v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor(Xunit.v3.ICoreTestAssembly)
+  langs:
+  - csharp
+  - vb
+  name: CoreTestFrameworkExecutor<TTestCase>
+  nameWithType: CoreTestFrameworkExecutor<TTestCase>
+  fullName: Xunit.v3.CoreTestFrameworkExecutor<TTestCase>
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/CoreTestFrameworkExecutor.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: CoreTestFrameworkExecutor
+    path: ../src/xunit.v3.core/Framework/CoreTestFrameworkExecutor.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    A base implementation derived from <xref href="v3.4.0.0:Xunit.v3.TestFrameworkExecutor%601" data-throw-if-not-resolved="false"></xref> which contains common
+
+    code used for both reflection and native AOT test execution.
+  example: []
+  syntax:
+    content: 'public abstract class CoreTestFrameworkExecutor<TTestCase> : TestFrameworkExecutor<TTestCase>, ITestFrameworkExecutor, IAsyncDisposable where TTestCase : ICoreTestCase'
+    typeParameters:
+    - id: TTestCase
+      description: >-
+        The type of the test case used by the test framework. Must
+            derive from <xref href="v3.4.0.0:Xunit.v3.ICoreTestCase" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public MustInherit Class CoreTestFrameworkExecutor(Of TTestCase As ICoreTestCase) Inherits TestFrameworkExecutor(Of TTestCase) Implements ITestFrameworkExecutor, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  derivedClasses:
+  - v3.4.0.0:Xunit.v3.XunitTestFrameworkExecutor
+  implements:
+  - v3.4.0.0:Xunit.v3.ITestFrameworkExecutor
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.DisposalTracker
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.TestAssembly
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.CreateDiscoverer
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.DisposeAsync
+  - v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.RunTestCases(System.Collections.Generic.IReadOnlyCollection{{TTestCase}},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: CoreTestFrameworkExecutor(Of TTestCase)
+  fullName.vb: Xunit.v3.CoreTestFrameworkExecutor(Of TTestCase)
+  name.vb: CoreTestFrameworkExecutor(Of TTestCase)
+- uid: v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor(Xunit.v3.ICoreTestAssembly)
+  commentId: M:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor(Xunit.v3.ICoreTestAssembly)
+  id: '#ctor(Xunit.v3.ICoreTestAssembly)'
+  parent: v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1
+  langs:
+  - csharp
+  - vb
+  name: CoreTestFrameworkExecutor(ICoreTestAssembly)
+  nameWithType: CoreTestFrameworkExecutor<TTestCase>.CoreTestFrameworkExecutor(ICoreTestAssembly)
+  fullName: Xunit.v3.CoreTestFrameworkExecutor<TTestCase>.CoreTestFrameworkExecutor(Xunit.v3.ICoreTestAssembly)
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/CoreTestFrameworkExecutor.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core/Framework/CoreTestFrameworkExecutor.cs
+    startLine: 11
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    A base implementation derived from <xref href="v3.4.0.0:Xunit.v3.TestFrameworkExecutor%601" data-throw-if-not-resolved="false"></xref> which contains common
+
+    code used for both reflection and native AOT test execution.
+  example: []
+  syntax:
+    content: protected CoreTestFrameworkExecutor(ICoreTestAssembly testAssembly)
+    parameters:
+    - id: testAssembly
+      type: Xunit.v3.ICoreTestAssembly
+      description: The test assembly.
+    content.vb: Protected Sub New(testAssembly As ICoreTestAssembly)
+  overload: v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor*
+  nameWithType.vb: CoreTestFrameworkExecutor(Of TTestCase).New(ICoreTestAssembly)
+  fullName.vb: Xunit.v3.CoreTestFrameworkExecutor(Of TTestCase).New(Xunit.v3.ICoreTestAssembly)
+  name.vb: New(ICoreTestAssembly)
+references:
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1
+  commentId: T:Xunit.v3.TestFrameworkExecutor`1
+  href: Xunit.v3.TestFrameworkExecutor-1.html
+  name: TestFrameworkExecutor<TTestCase>
+  nameWithType: TestFrameworkExecutor<TTestCase>
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase)
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase)
+  name.vb: TestFrameworkExecutor(Of TTestCase)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1
+    name: TestFrameworkExecutor
+    href: Xunit.v3.TestFrameworkExecutor-1.html
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1
+    name: TestFrameworkExecutor
+    href: Xunit.v3.TestFrameworkExecutor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.ICoreTestCase
+  commentId: T:Xunit.v3.ICoreTestCase
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestCase.html
+  name: ICoreTestCase
+  nameWithType: ICoreTestCase
+  fullName: Xunit.v3.ICoreTestCase
+- uid: v3.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  commentId: T:Xunit.v3.TestFrameworkExecutor{`0}
+  parent: v3.4.0.0:Xunit.v3
+  definition: Xunit.v3.TestFrameworkExecutor`1
+  href: Xunit.v3.TestFrameworkExecutor-1.html
+  name: TestFrameworkExecutor<TTestCase>
+  nameWithType: TestFrameworkExecutor<TTestCase>
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase)
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase)
+  name.vb: TestFrameworkExecutor(Of TTestCase)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1
+    name: TestFrameworkExecutor
+    href: Xunit.v3.TestFrameworkExecutor-1.html
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1
+    name: TestFrameworkExecutor
+    href: Xunit.v3.TestFrameworkExecutor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.ITestFrameworkExecutor
+  commentId: T:Xunit.v3.ITestFrameworkExecutor
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.ITestFrameworkExecutor.html
+  name: ITestFrameworkExecutor
+  nameWithType: ITestFrameworkExecutor
+  fullName: Xunit.v3.ITestFrameworkExecutor
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.DisposalTracker
+  commentId: P:Xunit.v3.TestFrameworkExecutor{`0}.DisposalTracker
+  parent: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  definition: Xunit.v3.TestFrameworkExecutor`1.DisposalTracker
+  href: Xunit.v3.TestFrameworkExecutor-1.DisposalTracker.html#Xunit_v3_TestFrameworkExecutor_1_DisposalTracker
+  name: DisposalTracker
+  nameWithType: TestFrameworkExecutor<TTestCase>.DisposalTracker
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.DisposalTracker
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).DisposalTracker
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).DisposalTracker
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.TestAssembly
+  commentId: P:Xunit.v3.TestFrameworkExecutor{`0}.TestAssembly
+  parent: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  definition: Xunit.v3.TestFrameworkExecutor`1.TestAssembly
+  href: Xunit.v3.TestFrameworkExecutor-1.TestAssembly.html#Xunit_v3_TestFrameworkExecutor_1_TestAssembly
+  name: TestAssembly
+  nameWithType: TestFrameworkExecutor<TTestCase>.TestAssembly
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.TestAssembly
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).TestAssembly
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.CreateDiscoverer
+  commentId: M:Xunit.v3.TestFrameworkExecutor{`0}.CreateDiscoverer
+  parent: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  definition: Xunit.v3.TestFrameworkExecutor`1.CreateDiscoverer
+  href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  name: CreateDiscoverer()
+  nameWithType: TestFrameworkExecutor<TTestCase>.CreateDiscoverer()
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.CreateDiscoverer()
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).CreateDiscoverer()
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).CreateDiscoverer()
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.CreateDiscoverer
+    name: CreateDiscoverer
+    href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.CreateDiscoverer
+    name: CreateDiscoverer
+    href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.DisposeAsync
+  commentId: M:Xunit.v3.TestFrameworkExecutor{`0}.DisposeAsync
+  parent: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  definition: Xunit.v3.TestFrameworkExecutor`1.DisposeAsync
+  href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestFrameworkExecutor<TTestCase>.DisposeAsync()
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.DisposeAsync()
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).DisposeAsync()
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).DisposeAsync()
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}.RunTestCases(System.Collections.Generic.IReadOnlyCollection{{TTestCase}},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.TestFrameworkExecutor{`0}.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  parent: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{{TTestCase}}
+  definition: Xunit.v3.TestFrameworkExecutor`1.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  name: RunTestCases(IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  nameWithType: TestFrameworkExecutor<TTestCase>.RunTestCases(IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.RunTestCases(System.Collections.Generic.IReadOnlyCollection<TTestCase>, Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).RunTestCases(IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).RunTestCases(System.Collections.Generic.IReadOnlyCollection(Of TTestCase), Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  name.vb: RunTestCases(IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+    name: RunTestCases
+    href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor{`0}.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+    name: RunTestCases
+    href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.DisposalTracker
+  commentId: P:Xunit.v3.TestFrameworkExecutor`1.DisposalTracker
+  href: Xunit.v3.TestFrameworkExecutor-1.DisposalTracker.html#Xunit_v3_TestFrameworkExecutor_1_DisposalTracker
+  name: DisposalTracker
+  nameWithType: TestFrameworkExecutor<TTestCase>.DisposalTracker
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.DisposalTracker
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).DisposalTracker
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).DisposalTracker
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.TestAssembly
+  commentId: P:Xunit.v3.TestFrameworkExecutor`1.TestAssembly
+  href: Xunit.v3.TestFrameworkExecutor-1.TestAssembly.html#Xunit_v3_TestFrameworkExecutor_1_TestAssembly
+  name: TestAssembly
+  nameWithType: TestFrameworkExecutor<TTestCase>.TestAssembly
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.TestAssembly
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).TestAssembly
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).TestAssembly
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.CreateDiscoverer
+  commentId: M:Xunit.v3.TestFrameworkExecutor`1.CreateDiscoverer
+  href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  name: CreateDiscoverer()
+  nameWithType: TestFrameworkExecutor<TTestCase>.CreateDiscoverer()
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.CreateDiscoverer()
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).CreateDiscoverer()
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).CreateDiscoverer()
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.CreateDiscoverer
+    name: CreateDiscoverer
+    href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.CreateDiscoverer
+    name: CreateDiscoverer
+    href: Xunit.v3.TestFrameworkExecutor-1.CreateDiscoverer.html#Xunit_v3_TestFrameworkExecutor_1_CreateDiscoverer
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.DisposeAsync
+  commentId: M:Xunit.v3.TestFrameworkExecutor`1.DisposeAsync
+  href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: TestFrameworkExecutor<TTestCase>.DisposeAsync()
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.DisposeAsync()
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).DisposeAsync()
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).DisposeAsync()
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.DisposeAsync
+    name: DisposeAsync
+    href: Xunit.v3.TestFrameworkExecutor-1.DisposeAsync.html#Xunit_v3_TestFrameworkExecutor_1_DisposeAsync
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.TestFrameworkExecutor`1.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+  isExternal: true
+  href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  name: RunTestCases(IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  nameWithType: TestFrameworkExecutor<TTestCase>.RunTestCases(IReadOnlyCollection<TTestCase>, IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName: Xunit.v3.TestFrameworkExecutor<TTestCase>.RunTestCases(System.Collections.Generic.IReadOnlyCollection<TTestCase>, Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  nameWithType.vb: TestFrameworkExecutor(Of TTestCase).RunTestCases(IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  fullName.vb: Xunit.v3.TestFrameworkExecutor(Of TTestCase).RunTestCases(System.Collections.Generic.IReadOnlyCollection(Of TTestCase), Xunit.Sdk.IMessageSink, Xunit.Sdk.ITestFrameworkExecutionOptions, System.Threading.CancellationToken)
+  name.vb: RunTestCases(IReadOnlyCollection(Of TTestCase), IMessageSink, ITestFrameworkExecutionOptions, CancellationToken)
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+    name: RunTestCases
+    href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TTestCase
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.TestFrameworkExecutor`1.RunTestCases(System.Collections.Generic.IReadOnlyCollection{`0},Xunit.Sdk.IMessageSink,Xunit.Sdk.ITestFrameworkExecutionOptions,System.Threading.CancellationToken)
+    name: RunTestCases
+    href: Xunit.v3.TestFrameworkExecutor-1.RunTestCases.html#Xunit_v3_TestFrameworkExecutor_1_RunTestCases_System_Collections_Generic_IReadOnlyCollection__0__Xunit_Sdk_IMessageSink_Xunit_Sdk_ITestFrameworkExecutionOptions_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTestCase
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+  - name: ','
+  - name: " "
+  - uid: v3.4.0.0:Xunit.Sdk.ITestFrameworkExecutionOptions
+    name: ITestFrameworkExecutionOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: v3.4.0.0:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor*
+  commentId: Overload:Xunit.v3.CoreTestFrameworkExecutor`1.#ctor
+  href: Xunit.v3.CoreTestFrameworkExecutor-1.-ctor.html#Xunit_v3_CoreTestFrameworkExecutor_1__ctor_Xunit_v3_ICoreTestAssembly_
+  name: CoreTestFrameworkExecutor
+  nameWithType: CoreTestFrameworkExecutor<TTestCase>.CoreTestFrameworkExecutor
+  fullName: Xunit.v3.CoreTestFrameworkExecutor<TTestCase>.CoreTestFrameworkExecutor
+  nameWithType.vb: CoreTestFrameworkExecutor(Of TTestCase).New
+  fullName.vb: Xunit.v3.CoreTestFrameworkExecutor(Of TTestCase).New
+  name.vb: New
+- uid: v3.4.0.0:Xunit.v3.ICoreTestAssembly
+  commentId: T:Xunit.v3.ICoreTestAssembly
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.ICoreTestAssembly.html
+  name: ICoreTestAssembly
+  nameWithType: ICoreTestAssembly
+  fullName: Xunit.v3.ICoreTestAssembly
+memberLayout: SeparatePages

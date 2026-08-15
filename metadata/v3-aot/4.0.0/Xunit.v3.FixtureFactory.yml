@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.FixtureFactory
+  commentId: T:Xunit.v3.FixtureFactory
+  id: FixtureFactory
+  parent: v3-aot.4.0.0:Xunit.v3
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FixtureFactory
+  nameWithType: FixtureFactory
+  fullName: Xunit.v3.FixtureFactory
+  type: Delegate
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Utility/FixtureFactory_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: FixtureFactory
+    path: ../src/xunit.v3.core.aot/Utility/FixtureFactory_aot.cs
+    startLine: 20
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Describes a fixture factory function.
+  remarks: >-
+    The <code class="paramref">forceCreation</code> flag is used to indicate that the fixture should always be
+
+    created; this will be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> during initialization if fixture pre-creation is
+
+    requested, and during any call to <xref href="v3-aot.4.0.0:Xunit.v3.FixtureMappingManager" data-throw-if-not-resolved="false"></xref> to get the actual fixture
+
+    value. The factory should use a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> value to determine whether to create the
+
+    fixture based on whether it's decorated with <xref href="v3-aot.4.0.0:Xunit.v3.INotifyLifecycle" data-throw-if-not-resolved="false"></xref>, in which case we need
+
+    to ensure the fixture gets created even for cases where it wouldn't normally get created (for example,
+
+    when used in a static test class) so that the fixture can subscribe to test lifecycle events.<br />
+
+    <br />
+
+    This logic is left to the fixture factory, since the source generator should be able to make this
+
+    decision without resorting to reflection.<br />
+  example: []
+  syntax:
+    content: public delegate ValueTask<object?> FixtureFactory(FixtureMappingManager? parentMappingManager, bool forceCreation)
+    parameters:
+    - id: parentMappingManager
+      type: Xunit.v3.FixtureMappingManager
+      description: The parent mapping manager, if there is one
+    - id: forceCreation
+      type: System.Boolean
+      description: A flag to indicate creation should be forced
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Object}
+      description: The fixture if it was created, or else returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Delegate Function FixtureFactory(parentMappingManager As FixtureMappingManager, forceCreation As Boolean) As ValueTask(Of Object)
+references:
+- uid: v3-aot.4.0.0:Xunit.v3.FixtureMappingManager
+  commentId: T:Xunit.v3.FixtureMappingManager
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.FixtureMappingManager.html
+  name: FixtureMappingManager
+  nameWithType: FixtureMappingManager
+  fullName: Xunit.v3.FixtureMappingManager
+- uid: v3-aot.4.0.0:Xunit.v3.INotifyLifecycle
+  commentId: T:Xunit.v3.INotifyLifecycle
+  href: Xunit.v3.INotifyLifecycle.html
+  name: INotifyLifecycle
+  nameWithType: INotifyLifecycle
+  fullName: Xunit.v3.INotifyLifecycle
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.ValueTask{System.Object}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Object}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<object>
+  nameWithType: ValueTask<object>
+  fullName: System.Threading.Tasks.ValueTask<object>
+  nameWithType.vb: ValueTask(Of Object)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Object)
+  name.vb: ValueTask(Of Object)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

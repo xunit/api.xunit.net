@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  commentId: T:Xunit.v3.IParallelizationAttribute
+  id: IParallelizationAttribute
+  parent: v3.4.0.0:Xunit.v3
+  children:
+  - v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetAlgorithm
+  - v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMaxThreads
+  - v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode
+  langs:
+  - csharp
+  - vb
+  name: IParallelizationAttribute
+  nameWithType: IParallelizationAttribute
+  fullName: Xunit.v3.IParallelizationAttribute
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: IParallelizationAttribute
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: >-
+    Used to decorate xUnit.net test assemblies to indicate parallelization options for
+
+    the test assembly.
+  remarks: This is only valid at the assembly level, and there can be only one.
+  example: []
+  syntax:
+    content: public interface IParallelizationAttribute
+    content.vb: Public Interface IParallelizationAttribute
+  derivedClasses:
+  - v3.4.0.0:Xunit.v3.ParallelizationAttribute
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetAlgorithm
+  commentId: M:Xunit.v3.IParallelizationAttribute.GetAlgorithm
+  id: GetAlgorithm
+  parent: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  langs:
+  - csharp
+  - vb
+  name: GetAlgorithm()
+  nameWithType: IParallelizationAttribute.GetAlgorithm()
+  fullName: Xunit.v3.IParallelizationAttribute.GetAlgorithm()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: GetAlgorithm
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+    startLine: 18
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the algorithm used for test parallelization.
+  remarks: >-
+    If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the system will use <xref href="v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative" data-throw-if-not-resolved="false"></xref>. This value
+
+    will be ignored if <xref href="v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode" data-throw-if-not-resolved="false"></xref> returns <xref href="v3.4.0.0:Xunit.Sdk.ParallelMode.None" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: ParallelAlgorithm? GetAlgorithm()
+    return:
+      type: System.Nullable{Xunit.Sdk.ParallelAlgorithm}
+    content.vb: Function GetAlgorithm() As ParallelAlgorithm?
+  overload: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetAlgorithm*
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMaxThreads
+  commentId: M:Xunit.v3.IParallelizationAttribute.GetMaxThreads
+  id: GetMaxThreads
+  parent: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  langs:
+  - csharp
+  - vb
+  name: GetMaxThreads()
+  nameWithType: IParallelizationAttribute.GetMaxThreads()
+  fullName: Xunit.v3.IParallelizationAttribute.GetMaxThreads()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: GetMaxThreads
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Determines how many tests can run in parallel with each other.
+  remarks: >-
+    If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or <code>0</code>, the system will use <xref href="System.Environment.ProcessorCount" data-throw-if-not-resolved="false"></xref>; if
+
+    a negative number, then there will be no limit to the number of threads (meaning, it uses the default
+
+    thread pool). This value will be ignored if <xref href="v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode" data-throw-if-not-resolved="false"></xref> returns <xref href="v3.4.0.0:Xunit.Sdk.ParallelMode.None" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: int? GetMaxThreads()
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Function GetMaxThreads() As Integer?
+  overload: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMaxThreads*
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode
+  commentId: M:Xunit.v3.IParallelizationAttribute.GetMode
+  id: GetMode
+  parent: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  langs:
+  - csharp
+  - vb
+  name: GetMode()
+  nameWithType: IParallelizationAttribute.GetMode()
+  fullName: Xunit.v3.IParallelizationAttribute.GetMode()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: GetMode
+    path: ../src/xunit.v3.core/Abstractions/Attributes/IParallelizationAttribute_reflection.cs
+    startLine: 36
+  assemblies:
+  - xunit.v3.core
+  namespace: Xunit.v3
+  summary: Gets the default parallelism mode for the test assembly.
+  remarks: If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the system will use <xref href="v3.4.0.0:Xunit.Sdk.ParallelMode.Collections" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: ParallelMode? GetMode()
+    return:
+      type: System.Nullable{Xunit.Sdk.ParallelMode}
+    content.vb: Function GetMode() As ParallelMode?
+  overload: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode*
+references:
+- uid: v3.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: v3.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Conservative
+  name: Conservative
+  nameWithType: ParallelAlgorithm.Conservative
+  fullName: Xunit.Sdk.ParallelAlgorithm.Conservative
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode
+  commentId: M:Xunit.v3.IParallelizationAttribute.GetMode
+  parent: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  href: Xunit.v3.IParallelizationAttribute.GetMode.html#Xunit_v3_IParallelizationAttribute_GetMode
+  name: GetMode()
+  nameWithType: IParallelizationAttribute.GetMode()
+  fullName: Xunit.v3.IParallelizationAttribute.GetMode()
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode
+    name: GetMode
+    href: Xunit.v3.IParallelizationAttribute.GetMode.html#Xunit_v3_IParallelizationAttribute_GetMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode
+    name: GetMode
+    href: Xunit.v3.IParallelizationAttribute.GetMode.html#Xunit_v3_IParallelizationAttribute_GetMode
+  - name: (
+  - name: )
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.None
+  commentId: F:Xunit.Sdk.ParallelMode.None
+  name: None
+  nameWithType: ParallelMode.None
+  fullName: Xunit.Sdk.ParallelMode.None
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetAlgorithm*
+  commentId: Overload:Xunit.v3.IParallelizationAttribute.GetAlgorithm
+  href: Xunit.v3.IParallelizationAttribute.GetAlgorithm.html#Xunit_v3_IParallelizationAttribute_GetAlgorithm
+  name: GetAlgorithm
+  nameWithType: IParallelizationAttribute.GetAlgorithm
+  fullName: Xunit.v3.IParallelizationAttribute.GetAlgorithm
+- uid: System.Nullable{Xunit.Sdk.ParallelAlgorithm}
+  commentId: T:System.Nullable{Xunit.Sdk.ParallelAlgorithm}
+  parent: System
+  definition: System.Nullable`1
+  name: ParallelAlgorithm?
+  nameWithType: ParallelAlgorithm?
+  fullName: Xunit.Sdk.ParallelAlgorithm?
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelAlgorithm
+    name: ParallelAlgorithm
+  - name: '?'
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelAlgorithm
+    name: ParallelAlgorithm
+  - name: '?'
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute
+  commentId: T:Xunit.v3.IParallelizationAttribute
+  parent: v3.4.0.0:Xunit.v3
+  href: Xunit.v3.IParallelizationAttribute.html
+  name: IParallelizationAttribute
+  nameWithType: IParallelizationAttribute
+  fullName: Xunit.v3.IParallelizationAttribute
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Environment.ProcessorCount
+  commentId: P:System.Environment.ProcessorCount
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.processorcount
+  name: ProcessorCount
+  nameWithType: Environment.ProcessorCount
+  fullName: System.Environment.ProcessorCount
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMaxThreads*
+  commentId: Overload:Xunit.v3.IParallelizationAttribute.GetMaxThreads
+  href: Xunit.v3.IParallelizationAttribute.GetMaxThreads.html#Xunit_v3_IParallelizationAttribute_GetMaxThreads
+  name: GetMaxThreads
+  nameWithType: IParallelizationAttribute.GetMaxThreads
+  fullName: Xunit.v3.IParallelizationAttribute.GetMaxThreads
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: v3.4.0.0:Xunit.Sdk.ParallelMode.Collections
+  commentId: F:Xunit.Sdk.ParallelMode.Collections
+  name: Collections
+  nameWithType: ParallelMode.Collections
+  fullName: Xunit.Sdk.ParallelMode.Collections
+- uid: v3.4.0.0:Xunit.v3.IParallelizationAttribute.GetMode*
+  commentId: Overload:Xunit.v3.IParallelizationAttribute.GetMode
+  href: Xunit.v3.IParallelizationAttribute.GetMode.html#Xunit_v3_IParallelizationAttribute_GetMode
+  name: GetMode
+  nameWithType: IParallelizationAttribute.GetMode
+  fullName: Xunit.v3.IParallelizationAttribute.GetMode
+- uid: System.Nullable{Xunit.Sdk.ParallelMode}
+  commentId: T:System.Nullable{Xunit.Sdk.ParallelMode}
+  parent: System
+  definition: System.Nullable`1
+  name: ParallelMode?
+  nameWithType: ParallelMode?
+  fullName: Xunit.Sdk.ParallelMode?
+  spec.csharp:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+  - name: '?'
+  spec.vb:
+  - uid: v3.4.0.0:Xunit.Sdk.ParallelMode
+    name: ParallelMode
+  - name: '?'
+memberLayout: SeparatePages

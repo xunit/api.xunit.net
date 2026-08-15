@@ -1,0 +1,1397 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  commentId: T:Xunit.v3.ExecutionScheduler
+  id: ExecutionScheduler
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.Create(System.Int32,Xunit.Sdk.ParallelAlgorithm)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateAggressive(System.Int32)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateConservative(System.Int32)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateUnlimited
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.DisposeAsync
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  - v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.ThrowIfDisposed
+  langs:
+  - csharp
+  - vb
+  name: ExecutionScheduler
+  nameWithType: ExecutionScheduler
+  fullName: Xunit.v3.ExecutionScheduler
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ExecutionScheduler
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 8
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Base class for scheduling parallel and sequential execution.
+  example: []
+  syntax:
+    content: 'public abstract class ExecutionScheduler : IAsyncDisposable'
+    content.vb: Public MustInherit Class ExecutionScheduler Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.Create(System.Int32,Xunit.Sdk.ParallelAlgorithm)
+  commentId: M:Xunit.v3.ExecutionScheduler.Create(System.Int32,Xunit.Sdk.ParallelAlgorithm)
+  id: Create(System.Int32,Xunit.Sdk.ParallelAlgorithm)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: Create(int, ParallelAlgorithm)
+  nameWithType: ExecutionScheduler.Create(int, ParallelAlgorithm)
+  fullName: Xunit.v3.ExecutionScheduler.Create(int, Xunit.Sdk.ParallelAlgorithm)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Create
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Create the execution scheduler appropriate for the given parameters.
+  remarks: >-
+    <p>The scheduler is chosen using the following rules:</p>
+
+    <ul><li>If <code class="paramref">maxParallelThreads</code> is less than <code>0</code>, use the unlimited scheduler</li><li>If <code class="paramref">parallelAlgorithm</code> is <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelAlgorithm.Aggressive" data-throw-if-not-resolved="false"></xref>, use the aggressive scheduler</li><li>If <code class="paramref">parallelAlgorithm</code> is <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative" data-throw-if-not-resolved="false"></xref>, use the conservative scheduler</li></ul>
+
+    <p>Passing <code>0</code> for <code class="paramref">maxParallelThreads</code> will use <xref href="System.Environment.ProcessorCount" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
+  syntax:
+    content: public static ExecutionScheduler Create(int maxParallelThreads, ParallelAlgorithm parallelAlgorithm)
+    parameters:
+    - id: maxParallelThreads
+      type: System.Int32
+      description: The maximum number of parallel tasks
+    - id: parallelAlgorithm
+      type: Xunit.Sdk.ParallelAlgorithm
+      description: The parallel algorithm used to limit the parallel tasks
+    return:
+      type: Xunit.v3.ExecutionScheduler
+    content.vb: Public Shared Function Create(maxParallelThreads As Integer, parallelAlgorithm As ParallelAlgorithm) As ExecutionScheduler
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.Create*
+  nameWithType.vb: ExecutionScheduler.Create(Integer, ParallelAlgorithm)
+  fullName.vb: Xunit.v3.ExecutionScheduler.Create(Integer, Xunit.Sdk.ParallelAlgorithm)
+  name.vb: Create(Integer, ParallelAlgorithm)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateAggressive(System.Int32)
+  commentId: M:Xunit.v3.ExecutionScheduler.CreateAggressive(System.Int32)
+  id: CreateAggressive(System.Int32)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: CreateAggressive(int)
+  nameWithType: ExecutionScheduler.CreateAggressive(int)
+  fullName: Xunit.v3.ExecutionScheduler.CreateAggressive(int)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: CreateAggressive
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 51
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Create an execution scheduler for the aggressive parallelism algorithm.
+  remarks: Passing <code>0</code> for <code class="paramref">maxParallelThreads</code> will use <xref href="System.Environment.ProcessorCount" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ExecutionScheduler CreateAggressive(int maxParallelThreads)
+    parameters:
+    - id: maxParallelThreads
+      type: System.Int32
+      description: The maximum number of permitted parallel tasks
+    return:
+      type: Xunit.v3.ExecutionScheduler
+    content.vb: Public Shared Function CreateAggressive(maxParallelThreads As Integer) As ExecutionScheduler
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateAggressive*
+  nameWithType.vb: ExecutionScheduler.CreateAggressive(Integer)
+  fullName.vb: Xunit.v3.ExecutionScheduler.CreateAggressive(Integer)
+  name.vb: CreateAggressive(Integer)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateConservative(System.Int32)
+  commentId: M:Xunit.v3.ExecutionScheduler.CreateConservative(System.Int32)
+  id: CreateConservative(System.Int32)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: CreateConservative(int)
+  nameWithType: ExecutionScheduler.CreateConservative(int)
+  fullName: Xunit.v3.ExecutionScheduler.CreateConservative(int)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: CreateConservative
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 61
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Create an execution scheduler for the conversative parallelism algorithm.
+  remarks: Passing <code>0</code> for <code class="paramref">maxParallelThreads</code> will use <xref href="System.Environment.ProcessorCount" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ExecutionScheduler CreateConservative(int maxParallelThreads)
+    parameters:
+    - id: maxParallelThreads
+      type: System.Int32
+      description: The maximum number of permitted parallel tasks
+    return:
+      type: Xunit.v3.ExecutionScheduler
+    content.vb: Public Shared Function CreateConservative(maxParallelThreads As Integer) As ExecutionScheduler
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateConservative*
+  nameWithType.vb: ExecutionScheduler.CreateConservative(Integer)
+  fullName.vb: Xunit.v3.ExecutionScheduler.CreateConservative(Integer)
+  name.vb: CreateConservative(Integer)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateUnlimited
+  commentId: M:Xunit.v3.ExecutionScheduler.CreateUnlimited
+  id: CreateUnlimited
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: CreateUnlimited()
+  nameWithType: ExecutionScheduler.CreateUnlimited()
+  fullName: Xunit.v3.ExecutionScheduler.CreateUnlimited()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: CreateUnlimited
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 67
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Create an execution scheduler for unlimited parallel tasks.
+  example: []
+  syntax:
+    content: public static ExecutionScheduler CreateUnlimited()
+    return:
+      type: Xunit.v3.ExecutionScheduler
+    content.vb: Public Shared Function CreateUnlimited() As ExecutionScheduler
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateUnlimited*
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.DisposeAsync
+  commentId: M:Xunit.v3.ExecutionScheduler.DisposeAsync
+  id: DisposeAsync
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: ExecutionScheduler.DisposeAsync()
+  fullName: Xunit.v3.ExecutionScheduler.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DisposeAsync
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 71
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public virtual ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Overridable Function DisposeAsync() As ValueTask
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  id: EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: EnsureParallel<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.EnsureParallel<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.EnsureParallel<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: EnsureParallel
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 91
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Ensures that a new task starts in the background.
+  remarks: >-
+    This uses either <xref href="System.Threading.Tasks.Task.Run(System.Func%7bSystem.Threading.Tasks.Task%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> or <xref href="System.Threading.Tasks.TaskFactory%601.StartNew(System.Func%7b%600%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>
+
+    to ensure that the task starts immediately backgrounded. Typically tasks will run on the caller's thread and won't return
+
+    until the first time an <code>await</code> statement would cause them to sleep.
+  example: []
+  syntax:
+    content: public static ValueTask<T> EnsureParallel<T>(Func<ValueTask<T>> taskFactory, CancellationToken cancellationToken)
+    parameters:
+    - id: taskFactory
+      type: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+      description: The function that starts the task
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token to run tasks with
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{{T}}
+    content.vb: Public Shared Function EnsureParallel(Of T)(taskFactory As Func(Of ValueTask(Of T)), cancellationToken As CancellationToken) As ValueTask(Of T)
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel*
+  nameWithType.vb: ExecutionScheduler.EnsureParallel(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.EnsureParallel(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: EnsureParallel(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  id: RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: RunParallelTask<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.RunParallelTask<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.RunParallelTask<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: RunParallelTask
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 154
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Runs a task in parallel (that is, it can run in parallel with other tasks started via this function,
+
+    but not against any other task started with <xref href="v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask%60%601(System.Func%7bSystem.Threading.Tasks.ValueTask%7b%60%600%7d%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    <p>The specific implementation of this method will depend on the scheduler algorithm, and is used to
+
+    limit the number of outstanding tasks. It should use <xref href="v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel%60%601(System.Func%7bSystem.Threading.Tasks.ValueTask%7b%60%600%7d%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> to guarantee that the
+
+    parallel task is immediately launched into the background.</p>
+
+    <p>This should only be invoked at the bottom level of parallelism; that is, in the test assembly runner when
+
+    parallelizing test collections for <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelMode.Collections" data-throw-if-not-resolved="false"></xref>, or in the test runner when parallelizing
+
+    tests for <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelMode.All" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
+  syntax:
+    content: public abstract ValueTask<T> RunParallelTask<T>(Func<ValueTask<T>> taskFactory, CancellationToken cancellationToken)
+    parameters:
+    - id: taskFactory
+      type: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+      description: The parallel operation task
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token to run tasks with
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{{T}}
+    content.vb: Public MustOverride Function RunParallelTask(Of T)(taskFactory As Func(Of ValueTask(Of T)), cancellationToken As CancellationToken) As ValueTask(Of T)
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask*
+  nameWithType.vb: ExecutionScheduler.RunParallelTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.RunParallelTask(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: RunParallelTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  id: RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: RunSequentialTask<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.RunSequentialTask<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.RunSequentialTask<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: RunSequentialTask
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 171
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: >-
+    Runs a task in sequence (that is, it will not be run at the same time as any other parallel or sequential
+
+    task).
+  remarks: >-
+    This should only be invoked at the point where sequentialization has been requested; that is, anywhere
+
+    that has been decorated with <code>DisableParallelization</code>, when the parallel mode is not <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelMode.None" data-throw-if-not-resolved="false"></xref>.
+
+    When code is running in <xref href="v3-aot.4.0.0:Xunit.Sdk.ParallelMode.None" data-throw-if-not-resolved="false"></xref>, it is assumed that something <em>above this</em> in the stack
+
+    has already put it into sequential mode (or the entire test assembly has disable parallelism, in which case there
+
+    is no need to ever call this or <xref href="v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask%60%601(System.Func%7bSystem.Threading.Tasks.ValueTask%7b%60%600%7d%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public virtual ValueTask<T> RunSequentialTask<T>(Func<ValueTask<T>> taskFactory, CancellationToken cancellationToken)
+    parameters:
+    - id: taskFactory
+      type: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+      description: The sequential operation task
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token to run tasks with
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{{T}}
+    content.vb: Public Overridable Function RunSequentialTask(Of T)(taskFactory As Func(Of ValueTask(Of T)), cancellationToken As CancellationToken) As ValueTask(Of T)
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask*
+  nameWithType.vb: ExecutionScheduler.RunSequentialTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.RunSequentialTask(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: RunSequentialTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.ThrowIfDisposed
+  commentId: M:Xunit.v3.ExecutionScheduler.ThrowIfDisposed
+  id: ThrowIfDisposed
+  parent: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDisposed()
+  nameWithType: ExecutionScheduler.ThrowIfDisposed()
+  fullName: Xunit.v3.ExecutionScheduler.ThrowIfDisposed()
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core/Framework/ExecutionScheduler.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ThrowIfDisposed
+    path: ../src/xunit.v3.core/Framework/ExecutionScheduler.cs
+    startLine: 182
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Throws <xref href="System.ObjectDisposedException" data-throw-if-not-resolved="false"></xref> if this class has already been disposed.
+  example: []
+  syntax:
+    content: protected void ThrowIfDisposed()
+    content.vb: Protected Sub ThrowIfDisposed()
+  overload: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.ThrowIfDisposed*
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Aggressive
+  href: Xunit.Sdk.ParallelAlgorithm.html#Xunit_Sdk_ParallelAlgorithm_Aggressive
+  name: Aggressive
+  nameWithType: ParallelAlgorithm.Aggressive
+  fullName: Xunit.Sdk.ParallelAlgorithm.Aggressive
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelAlgorithm.Conservative
+  commentId: F:Xunit.Sdk.ParallelAlgorithm.Conservative
+  href: Xunit.Sdk.ParallelAlgorithm.html#Xunit_Sdk_ParallelAlgorithm_Conservative
+  name: Conservative
+  nameWithType: ParallelAlgorithm.Conservative
+  fullName: Xunit.Sdk.ParallelAlgorithm.Conservative
+- uid: System.Environment.ProcessorCount
+  commentId: P:System.Environment.ProcessorCount
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.processorcount
+  name: ProcessorCount
+  nameWithType: Environment.ProcessorCount
+  fullName: System.Environment.ProcessorCount
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.Create*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.Create
+  href: Xunit.v3.ExecutionScheduler.Create.html#Xunit_v3_ExecutionScheduler_Create_System_Int32_Xunit_Sdk_ParallelAlgorithm_
+  name: Create
+  nameWithType: ExecutionScheduler.Create
+  fullName: Xunit.v3.ExecutionScheduler.Create
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelAlgorithm
+  commentId: T:Xunit.Sdk.ParallelAlgorithm
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelAlgorithm.html
+  name: ParallelAlgorithm
+  nameWithType: ParallelAlgorithm
+  fullName: Xunit.Sdk.ParallelAlgorithm
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  commentId: T:Xunit.v3.ExecutionScheduler
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ExecutionScheduler.html
+  name: ExecutionScheduler
+  nameWithType: ExecutionScheduler
+  fullName: Xunit.v3.ExecutionScheduler
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateAggressive*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.CreateAggressive
+  href: Xunit.v3.ExecutionScheduler.CreateAggressive.html#Xunit_v3_ExecutionScheduler_CreateAggressive_System_Int32_
+  name: CreateAggressive
+  nameWithType: ExecutionScheduler.CreateAggressive
+  fullName: Xunit.v3.ExecutionScheduler.CreateAggressive
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateConservative*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.CreateConservative
+  href: Xunit.v3.ExecutionScheduler.CreateConservative.html#Xunit_v3_ExecutionScheduler_CreateConservative_System_Int32_
+  name: CreateConservative
+  nameWithType: ExecutionScheduler.CreateConservative
+  fullName: Xunit.v3.ExecutionScheduler.CreateConservative
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.CreateUnlimited*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.CreateUnlimited
+  href: Xunit.v3.ExecutionScheduler.CreateUnlimited.html#Xunit_v3_ExecutionScheduler_CreateUnlimited
+  name: CreateUnlimited
+  nameWithType: ExecutionScheduler.CreateUnlimited
+  fullName: Xunit.v3.ExecutionScheduler.CreateUnlimited
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.DisposeAsync*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.DisposeAsync
+  href: Xunit.v3.ExecutionScheduler.DisposeAsync.html#Xunit_v3_ExecutionScheduler_DisposeAsync
+  name: DisposeAsync
+  nameWithType: ExecutionScheduler.DisposeAsync
+  fullName: Xunit.v3.ExecutionScheduler.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.run#system-threading-tasks-task-run(system-func((system-threading-tasks-task))-system-threading-cancellationtoken)
+  name: Run(Func<Task>, CancellationToken)
+  nameWithType: Task.Run(Func<Task>, CancellationToken)
+  fullName: System.Threading.Tasks.Task.Run(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  nameWithType.vb: Task.Run(Func(Of Task), CancellationToken)
+  fullName.vb: System.Threading.Tasks.Task.Run(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: Run(Func(Of Task), CancellationToken)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.run#system-threading-tasks-task-run(system-func((system-threading-tasks-task))-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.run#system-threading-tasks-task-run(system-func((system-threading-tasks-task))-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken)
+  commentId: M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskfactory-1.startnew#system-threading-tasks-taskfactory-1-startnew(system-func((-0))-system-threading-cancellationtoken)
+  name: StartNew(Func<TResult>, CancellationToken)
+  nameWithType: TaskFactory<TResult>.StartNew(Func<TResult>, CancellationToken)
+  fullName: System.Threading.Tasks.TaskFactory<TResult>.StartNew(System.Func<TResult>, System.Threading.CancellationToken)
+  nameWithType.vb: TaskFactory(Of TResult).StartNew(Func(Of TResult), CancellationToken)
+  fullName.vb: System.Threading.Tasks.TaskFactory(Of TResult).StartNew(System.Func(Of TResult), System.Threading.CancellationToken)
+  name.vb: StartNew(Func(Of TResult), CancellationToken)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken)
+    name: StartNew
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskfactory-1.startnew#system-threading-tasks-taskfactory-1-startnew(system-func((-0))-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken)
+    name: StartNew
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskfactory-1.startnew#system-threading-tasks-taskfactory-1-startnew(system-func((-0))-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.EnsureParallel
+  href: Xunit.v3.ExecutionScheduler.EnsureParallel.html#Xunit_v3_ExecutionScheduler_EnsureParallel__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: EnsureParallel
+  nameWithType: ExecutionScheduler.EnsureParallel
+  fullName: Xunit.v3.ExecutionScheduler.EnsureParallel
+- uid: System.Func{System.Threading.Tasks.ValueTask{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.ValueTask{``0}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ValueTask<T>>
+  nameWithType: Func<ValueTask<T>>
+  fullName: System.Func<System.Threading.Tasks.ValueTask<T>>
+  nameWithType.vb: Func(Of ValueTask(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.ValueTask(Of T))
+  name.vb: Func(Of ValueTask(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask{{T}}
+  commentId: T:System.Threading.Tasks.ValueTask{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<T>
+  nameWithType: ValueTask<T>
+  fullName: System.Threading.Tasks.ValueTask<T>
+  nameWithType.vb: ValueTask(Of T)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of T)
+  name.vb: ValueTask(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  isExternal: true
+  href: Xunit.v3.ExecutionScheduler.RunSequentialTask.html#Xunit_v3_ExecutionScheduler_RunSequentialTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: RunSequentialTask<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.RunSequentialTask<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.RunSequentialTask<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  nameWithType.vb: ExecutionScheduler.RunSequentialTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.RunSequentialTask(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: RunSequentialTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: RunSequentialTask
+    href: Xunit.v3.ExecutionScheduler.RunSequentialTask.html#Xunit_v3_ExecutionScheduler_RunSequentialTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: RunSequentialTask
+    href: Xunit.v3.ExecutionScheduler.RunSequentialTask.html#Xunit_v3_ExecutionScheduler_RunSequentialTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  isExternal: true
+  href: Xunit.v3.ExecutionScheduler.EnsureParallel.html#Xunit_v3_ExecutionScheduler_EnsureParallel__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: EnsureParallel<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.EnsureParallel<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.EnsureParallel<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  nameWithType.vb: ExecutionScheduler.EnsureParallel(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.EnsureParallel(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: EnsureParallel(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: EnsureParallel
+    href: Xunit.v3.ExecutionScheduler.EnsureParallel.html#Xunit_v3_ExecutionScheduler_EnsureParallel__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.EnsureParallel``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: EnsureParallel
+    href: Xunit.v3.ExecutionScheduler.EnsureParallel.html#Xunit_v3_ExecutionScheduler_EnsureParallel__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelMode.Collections
+  commentId: F:Xunit.Sdk.ParallelMode.Collections
+  href: Xunit.Sdk.ParallelMode.html#Xunit_Sdk_ParallelMode_Collections
+  name: Collections
+  nameWithType: ParallelMode.Collections
+  fullName: Xunit.Sdk.ParallelMode.Collections
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelMode.All
+  commentId: F:Xunit.Sdk.ParallelMode.All
+  href: Xunit.Sdk.ParallelMode.html#Xunit_Sdk_ParallelMode_All
+  name: All
+  nameWithType: ParallelMode.All
+  fullName: Xunit.Sdk.ParallelMode.All
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.RunParallelTask
+  href: Xunit.v3.ExecutionScheduler.RunParallelTask.html#Xunit_v3_ExecutionScheduler_RunParallelTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: RunParallelTask
+  nameWithType: ExecutionScheduler.RunParallelTask
+  fullName: Xunit.v3.ExecutionScheduler.RunParallelTask
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelMode.None
+  commentId: F:Xunit.Sdk.ParallelMode.None
+  href: Xunit.Sdk.ParallelMode.html#Xunit_Sdk_ParallelMode_None
+  name: None
+  nameWithType: ParallelMode.None
+  fullName: Xunit.Sdk.ParallelMode.None
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  commentId: M:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+  isExternal: true
+  href: Xunit.v3.ExecutionScheduler.RunParallelTask.html#Xunit_v3_ExecutionScheduler_RunParallelTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: RunParallelTask<T>(Func<ValueTask<T>>, CancellationToken)
+  nameWithType: ExecutionScheduler.RunParallelTask<T>(Func<ValueTask<T>>, CancellationToken)
+  fullName: Xunit.v3.ExecutionScheduler.RunParallelTask<T>(System.Func<System.Threading.Tasks.ValueTask<T>>, System.Threading.CancellationToken)
+  nameWithType.vb: ExecutionScheduler.RunParallelTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  fullName.vb: Xunit.v3.ExecutionScheduler.RunParallelTask(Of T)(System.Func(Of System.Threading.Tasks.ValueTask(Of T)), System.Threading.CancellationToken)
+  name.vb: RunParallelTask(Of T)(Func(Of ValueTask(Of T)), CancellationToken)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: RunParallelTask
+    href: Xunit.v3.ExecutionScheduler.RunParallelTask.html#Xunit_v3_ExecutionScheduler_RunParallelTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunParallelTask``1(System.Func{System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
+    name: RunParallelTask
+    href: Xunit.v3.ExecutionScheduler.RunParallelTask.html#Xunit_v3_ExecutionScheduler_RunParallelTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.RunSequentialTask*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.RunSequentialTask
+  href: Xunit.v3.ExecutionScheduler.RunSequentialTask.html#Xunit_v3_ExecutionScheduler_RunSequentialTask__1_System_Func_System_Threading_Tasks_ValueTask___0___System_Threading_CancellationToken_
+  name: RunSequentialTask
+  nameWithType: ExecutionScheduler.RunSequentialTask
+  fullName: Xunit.v3.ExecutionScheduler.RunSequentialTask
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler.ThrowIfDisposed*
+  commentId: Overload:Xunit.v3.ExecutionScheduler.ThrowIfDisposed
+  href: Xunit.v3.ExecutionScheduler.ThrowIfDisposed.html#Xunit_v3_ExecutionScheduler_ThrowIfDisposed
+  name: ThrowIfDisposed
+  nameWithType: ExecutionScheduler.ThrowIfDisposed
+  fullName: Xunit.v3.ExecutionScheduler.ThrowIfDisposed
+memberLayout: SeparatePages

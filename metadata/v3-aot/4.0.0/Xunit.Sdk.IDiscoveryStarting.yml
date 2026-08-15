@@ -1,0 +1,373 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting
+  commentId: T:Xunit.Sdk.IDiscoveryStarting
+  id: IDiscoveryStarting
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  children:
+  - v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  - v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  - v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  langs:
+  - csharp
+  - vb
+  name: IDiscoveryStarting
+  nameWithType: IDiscoveryStarting
+  fullName: Xunit.Sdk.IDiscoveryStarting
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: IDiscoveryStarting
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.common.aot
+  namespace: Xunit.Sdk
+  summary: >-
+    This message indicates that the discovery process is starting for
+
+    the requested assembly.
+  example: []
+  syntax:
+    content: 'public interface IDiscoveryStarting : ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IStartingMessage'
+    content.vb: Public Interface IDiscoveryStarting Inherits ITestAssemblyMessage, IMessageSinkMessage, IJsonSerializable, IStartingMessage
+  derivedClasses:
+  - v3-aot.4.0.0:Xunit.Runner.Common.DiscoveryStarting
+  - v3-aot.4.0.0:Xunit.v3.DiscoveryStarting
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  - v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+  - v3-aot.4.0.0:Xunit.Sdk.IStartingMessage.StartTime
+  extensionMethods:
+  - v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage.Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Runner.Common.MessageHandler{{TMessage}})
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  id: AssemblyName
+  parent: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: AssemblyName
+  nameWithType: IDiscoveryStarting.AssemblyName
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: AssemblyName
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 12
+  assemblies:
+  - xunit.v3.common.aot
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the assembly name. May return a simple assembly name (i.e., "mscorlib"), or may return a
+
+    fully qualified name (i.e., "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089").
+  example: []
+  syntax:
+    content: string AssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyName As String
+  overload: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyName*
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  id: AssemblyPath
+  parent: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: AssemblyPath
+  nameWithType: IDiscoveryStarting.AssemblyPath
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: AssemblyPath
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.common.aot
+  namespace: Xunit.Sdk
+  summary: Gets the on-disk location of the assembly under test.
+  example: []
+  syntax:
+    content: string AssemblyPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AssemblyPath As String
+  overload: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyPath*
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  commentId: P:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  id: ConfigFilePath
+  parent: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting
+  langs:
+  - csharp
+  - vb
+  name: ConfigFilePath
+  nameWithType: IDiscoveryStarting.ConfigFilePath
+  fullName: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: ConfigFilePath
+    path: ../src/xunit.v3.common/Abstractions/Messages/IDiscoveryStarting.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.common.aot
+  namespace: Xunit.Sdk
+  summary: >-
+    Gets the full path of the configuration file name, if one is present.
+
+    May be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if there is no configuration file.
+  example: []
+  syntax:
+    content: string? ConfigFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ConfigFilePath As String
+  overload: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath*
+references:
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  commentId: P:Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+  parent: v3-aot.4.0.0:Xunit.Sdk.ITestAssemblyMessage
+  href: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID.html#Xunit_Sdk_ITestAssemblyMessage_AssemblyUniqueID
+  name: AssemblyUniqueID
+  nameWithType: ITestAssemblyMessage.AssemblyUniqueID
+  fullName: Xunit.Sdk.ITestAssemblyMessage.AssemblyUniqueID
+- uid: v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+  commentId: M:Xunit.Sdk.IJsonSerializable.ToJson
+  parent: v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable
+  href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  name: ToJson()
+  nameWithType: IJsonSerializable.ToJson()
+  fullName: Xunit.Sdk.IJsonSerializable.ToJson()
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable.ToJson
+    name: ToJson
+    href: Xunit.Sdk.IJsonSerializable.ToJson.html#Xunit_Sdk_IJsonSerializable_ToJson
+  - name: (
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.IStartingMessage.StartTime
+  commentId: P:Xunit.Sdk.IStartingMessage.StartTime
+  parent: v3-aot.4.0.0:Xunit.Sdk.IStartingMessage
+  href: Xunit.Sdk.IStartingMessage.StartTime.html#Xunit_Sdk_IStartingMessage_StartTime
+  name: StartTime
+  nameWithType: IStartingMessage.StartTime
+  fullName: Xunit.Sdk.IStartingMessage.StartTime
+- uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage.Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Runner.Common.MessageHandler{{TMessage}})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  parent: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions
+  definition: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  name: DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen<TMessage>(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler<TMessage>)
+  nameWithType.vb: MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler(Of TMessage))
+  name.vb: DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.ITestAssemblyMessage
+  commentId: T:Xunit.Sdk.ITestAssemblyMessage
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ITestAssemblyMessage.html
+  name: ITestAssemblyMessage
+  nameWithType: ITestAssemblyMessage
+  fullName: Xunit.Sdk.ITestAssemblyMessage
+- uid: v3-aot.4.0.0:Xunit.Sdk.IJsonSerializable
+  commentId: T:Xunit.Sdk.IJsonSerializable
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: Xunit.Sdk.IJsonSerializable
+- uid: v3-aot.4.0.0:Xunit.Sdk.IStartingMessage
+  commentId: T:Xunit.Sdk.IStartingMessage
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IStartingMessage.html
+  name: IStartingMessage
+  nameWithType: IStartingMessage
+  fullName: Xunit.Sdk.IStartingMessage
+- uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  commentId: M:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+  href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  name: DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  nameWithType: MessageSinkMessageExtensions.DispatchWhen<TMessage>(IMessageSinkMessage, MessageHandler<TMessage>)
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen<TMessage>(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler<TMessage>)
+  nameWithType.vb: MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  fullName.vb: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen(Of TMessage)(Xunit.Sdk.IMessageSinkMessage, Xunit.Runner.Common.MessageHandler(Of TMessage))
+  name.vb: DispatchWhen(Of TMessage)(IMessageSinkMessage, MessageHandler(Of TMessage))
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen``1(Xunit.Sdk.IMessageSinkMessage,Xunit.Runner.Common.MessageHandler{``0})
+    name: DispatchWhen
+    href: Xunit.Sdk.MessageSinkMessageExtensions.DispatchWhen.html#Xunit_Sdk_MessageSinkMessageExtensions_DispatchWhen__1_Xunit_Sdk_IMessageSinkMessage_Xunit_Runner_Common_MessageHandler___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSinkMessage
+    name: IMessageSinkMessage
+    href: Xunit.Sdk.IMessageSinkMessage.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.MessageHandler`1
+    name: MessageHandler
+    href: Xunit.Runner.Common.MessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.MessageSinkMessageExtensions
+  commentId: T:Xunit.Sdk.MessageSinkMessageExtensions
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.MessageSinkMessageExtensions.html
+  name: MessageSinkMessageExtensions
+  nameWithType: MessageSinkMessageExtensions
+  fullName: Xunit.Sdk.MessageSinkMessageExtensions
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyName*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.AssemblyName
+  href: Xunit.Sdk.IDiscoveryStarting.AssemblyName.html#Xunit_Sdk_IDiscoveryStarting_AssemblyName
+  name: AssemblyName
+  nameWithType: IDiscoveryStarting.AssemblyName
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.AssemblyPath*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+  href: Xunit.Sdk.IDiscoveryStarting.AssemblyPath.html#Xunit_Sdk_IDiscoveryStarting_AssemblyPath
+  name: AssemblyPath
+  nameWithType: IDiscoveryStarting.AssemblyPath
+  fullName: Xunit.Sdk.IDiscoveryStarting.AssemblyPath
+- uid: v3-aot.4.0.0:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath*
+  commentId: Overload:Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+  href: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath.html#Xunit_Sdk_IDiscoveryStarting_ConfigFilePath
+  name: ConfigFilePath
+  nameWithType: IDiscoveryStarting.ConfigFilePath
+  fullName: Xunit.Sdk.IDiscoveryStarting.ConfigFilePath
+memberLayout: SeparatePages

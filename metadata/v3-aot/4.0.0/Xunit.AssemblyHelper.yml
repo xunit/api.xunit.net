@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.AssemblyHelper
+  commentId: T:Xunit.AssemblyHelper
+  id: AssemblyHelper
+  parent: v3-aot.4.0.0:Xunit
+  children:
+  - v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  - v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  langs:
+  - csharp
+  - vb
+  name: AssemblyHelper
+  nameWithType: AssemblyHelper
+  fullName: Xunit.AssemblyHelper
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: AssemblyHelper
+    path: ../src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+    startLine: 9
+  assemblies:
+  - xunit.v3.runner.utility.aot
+  namespace: Xunit
+  summary: This class provides assistance with assembly resolution for missing assemblies.
+  example: []
+  syntax:
+    content: public static class AssemblyHelper
+    content.vb: Public Module AssemblyHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  id: SubscribeResolveForAssembly(System.String,Xunit.Sdk.IMessageSink)
+  parent: v3-aot.4.0.0:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: SubscribeResolveForAssembly(string, IMessageSink?)
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly(string, IMessageSink?)
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly(string, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SubscribeResolveForAssembly
+    path: ../src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+    startLine: 17
+  assemblies:
+  - xunit.v3.runner.utility.aot
+  namespace: Xunit
+  summary: >-
+    Subscribes to the appropriate assembly resolution event, to provide automatic assembly resolution for
+
+    an assembly and any of its dependencies. Depending on the target platform, this may include the use
+
+    of the .deps.json file generated during the build process.
+  example: []
+  syntax:
+    content: public static IDisposable? SubscribeResolveForAssembly(string assemblyFileName, IMessageSink? diagnosticMessageSink = null)
+    parameters:
+    - id: assemblyFileName
+      type: System.String
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+    return:
+      type: System.IDisposable
+      description: An object which, when disposed, un-subscribes.
+    content.vb: Public Shared Function SubscribeResolveForAssembly(assemblyFileName As String, diagnosticMessageSink As IMessageSink = Nothing) As IDisposable
+  overload: v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  nameWithType.vb: AssemblyHelper.SubscribeResolveForAssembly(String, IMessageSink)
+  fullName.vb: Xunit.AssemblyHelper.SubscribeResolveForAssembly(String, Xunit.Sdk.IMessageSink)
+  name.vb: SubscribeResolveForAssembly(String, IMessageSink)
+- uid: v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  id: SubscribeResolveForAssembly(System.Type,Xunit.Sdk.IMessageSink)
+  parent: v3-aot.4.0.0:Xunit.AssemblyHelper
+  langs:
+  - csharp
+  - vb
+  name: SubscribeResolveForAssembly(Type, IMessageSink?)
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly(Type, IMessageSink?)
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type, Xunit.Sdk.IMessageSink?)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: SubscribeResolveForAssembly
+    path: ../src/xunit.v3.runner.utility.aot/AssemblyResolution/AssemblyHelper_aot.cs
+    startLine: 28
+  assemblies:
+  - xunit.v3.runner.utility.aot
+  namespace: Xunit
+  summary: >-
+    Subscribes to the appropriate assembly resolution event, to provide automatic assembly resolution for
+
+    an assembly and any of its dependencies. Depending on the target platform, this may include the use
+
+    of the .deps.json file generated during the build process.
+  example: []
+  syntax:
+    content: public static IDisposable? SubscribeResolveForAssembly(Type typeInAssembly, IMessageSink? diagnosticMessageSink = null)
+    parameters:
+    - id: typeInAssembly
+      type: System.Type
+    - id: diagnosticMessageSink
+      type: Xunit.Sdk.IMessageSink
+    return:
+      type: System.IDisposable
+      description: An object which, when disposed, un-subscribes.
+    content.vb: Public Shared Function SubscribeResolveForAssembly(typeInAssembly As Type, diagnosticMessageSink As IMessageSink = Nothing) As IDisposable
+  overload: v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  nameWithType.vb: AssemblyHelper.SubscribeResolveForAssembly(Type, IMessageSink)
+  fullName.vb: Xunit.AssemblyHelper.SubscribeResolveForAssembly(System.Type, Xunit.Sdk.IMessageSink)
+  name.vb: SubscribeResolveForAssembly(Type, IMessageSink)
+references:
+- uid: v3-aot.4.0.0:Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.AssemblyHelper.SubscribeResolveForAssembly*
+  commentId: Overload:Xunit.AssemblyHelper.SubscribeResolveForAssembly
+  href: Xunit.AssemblyHelper.SubscribeResolveForAssembly.html#Xunit_AssemblyHelper_SubscribeResolveForAssembly_System_String_Xunit_Sdk_IMessageSink_
+  name: SubscribeResolveForAssembly
+  nameWithType: AssemblyHelper.SubscribeResolveForAssembly
+  fullName: Xunit.AssemblyHelper.SubscribeResolveForAssembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSink
+  commentId: T:Xunit.Sdk.IMessageSink
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.IMessageSink.html
+  name: IMessageSink
+  nameWithType: IMessageSink
+  fullName: Xunit.Sdk.IMessageSink
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+memberLayout: SeparatePages

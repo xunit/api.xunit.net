@@ -1,0 +1,1707 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner
+  commentId: T:Xunit.v3.CodeGenTestMethodRunner
+  id: CodeGenTestMethodRunner
+  parent: v3-aot.4.0.0:Xunit.v3
+  children:
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.#ctor
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Instance
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Run(Xunit.v3.ICodeGenTestMethod,System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  langs:
+  - csharp
+  - vb
+  name: CodeGenTestMethodRunner
+  nameWithType: CodeGenTestMethodRunner
+  fullName: Xunit.v3.CodeGenTestMethodRunner
+  type: Class
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: CodeGenTestMethodRunner
+    path: ../src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+    startLine: 10
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: The test method runner for xUnit.net v3 tests.
+  remarks: This class is used for code generation-based tests.
+  example: []
+  syntax:
+    content: 'public class CodeGenTestMethodRunner : CodeGenTestMethodRunnerBase<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>'
+    content.vb: Public Class CodeGenTestMethodRunner Inherits CodeGenTestMethodRunnerBase(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  inheritance:
+  - System.Object
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  - v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  - v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+  - v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase,System.Exception)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnError(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.RunSummary)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+  - v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.TestEngineStatus)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.#ctor
+  commentId: M:Xunit.v3.CodeGenTestMethodRunner.#ctor
+  id: '#ctor'
+  parent: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner
+  langs:
+  - csharp
+  - vb
+  name: CodeGenTestMethodRunner()
+  nameWithType: CodeGenTestMethodRunner.CodeGenTestMethodRunner()
+  fullName: Xunit.v3.CodeGenTestMethodRunner.CodeGenTestMethodRunner()
+  type: Constructor
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: .ctor
+    path: ../src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+    startLine: 15
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Initializes a new instance of the <xref href="v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected CodeGenTestMethodRunner()
+    content.vb: Protected Sub New()
+  overload: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.#ctor*
+  nameWithType.vb: CodeGenTestMethodRunner.New()
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunner.New()
+  name.vb: New()
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Instance
+  commentId: P:Xunit.v3.CodeGenTestMethodRunner.Instance
+  id: Instance
+  parent: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: CodeGenTestMethodRunner.Instance
+  fullName: Xunit.v3.CodeGenTestMethodRunner.Instance
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Instance
+    path: ../src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+    startLine: 21
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Gets the singleton instance of the <xref href="v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static CodeGenTestMethodRunner Instance { get; }
+    parameters: []
+    return:
+      type: Xunit.v3.CodeGenTestMethodRunner
+    content.vb: Public Shared ReadOnly Property Instance As CodeGenTestMethodRunner
+  overload: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Instance*
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Run(Xunit.v3.ICodeGenTestMethod,System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  commentId: M:Xunit.v3.CodeGenTestMethodRunner.Run(Xunit.v3.ICodeGenTestMethod,System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  id: Run(Xunit.v3.ICodeGenTestMethod,System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase},Xunit.Sdk.ExplicitOption,Xunit.v3.IMessageBus,Xunit.v3.ExceptionAggregator,System.Threading.CancellationTokenSource,Xunit.Sdk.ParallelMode,Xunit.v3.ExecutionScheduler,Xunit.v3.FixtureMappingManager)
+  parent: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner
+  langs:
+  - csharp
+  - vb
+  name: Run(ICodeGenTestMethod, IReadOnlyCollection<ICodeGenTestCase>, ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+  nameWithType: CodeGenTestMethodRunner.Run(ICodeGenTestMethod, IReadOnlyCollection<ICodeGenTestCase>, ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+  fullName: Xunit.v3.CodeGenTestMethodRunner.Run(Xunit.v3.ICodeGenTestMethod, System.Collections.Generic.IReadOnlyCollection<Xunit.v3.ICodeGenTestCase>, Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource, Xunit.Sdk.ParallelMode, Xunit.v3.ExecutionScheduler, Xunit.v3.FixtureMappingManager)
+  type: Method
+  source:
+    remote:
+      path: src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Run
+    path: ../src/xunit.v3.core.aot/Runners/CodeGen/CodeGenTestMethodRunner_aot.cs
+    startLine: 35
+  assemblies:
+  - xunit.v3.core.aot
+  namespace: Xunit.v3
+  summary: Runs the test test method.
+  example: []
+  syntax:
+    content: public ValueTask<RunSummary> Run(ICodeGenTestMethod testMethod, IReadOnlyCollection<ICodeGenTestCase> testCases, ExplicitOption explicitOption, IMessageBus messageBus, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource, ParallelMode parallelMode, ExecutionScheduler scheduler, FixtureMappingManager classFixtureMappings)
+    parameters:
+    - id: testMethod
+      type: Xunit.v3.ICodeGenTestMethod
+      description: The test method to be run.
+    - id: testCases
+      type: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}
+      description: The test cases to be run. Cannot be empty.
+    - id: explicitOption
+      type: Xunit.Sdk.ExplicitOption
+      description: A flag to indicate how explicit tests should be treated.
+    - id: messageBus
+      type: Xunit.v3.IMessageBus
+      description: The message bus to report run status to.
+    - id: aggregator
+      type: Xunit.v3.ExceptionAggregator
+      description: The exception aggregator used to run code and collect exceptions.
+    - id: cancellationTokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The task cancellation token source, used to cancel the test run.
+    - id: parallelMode
+      type: Xunit.Sdk.ParallelMode
+      description: The parallel mode for the test method
+    - id: scheduler
+      type: Xunit.v3.ExecutionScheduler
+      description: The scheduler used for task/test scheduling
+    - id: classFixtureMappings
+      type: Xunit.v3.FixtureMappingManager
+      description: The mapping of class fixture types to fixtures.
+    return:
+      type: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+    content.vb: Public Function Run(testMethod As ICodeGenTestMethod, testCases As IReadOnlyCollection(Of ICodeGenTestCase), explicitOption As ExplicitOption, messageBus As IMessageBus, aggregator As ExceptionAggregator, cancellationTokenSource As CancellationTokenSource, parallelMode As ParallelMode, scheduler As ExecutionScheduler, classFixtureMappings As FixtureMappingManager) As ValueTask(Of RunSummary)
+  overload: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Run*
+  nameWithType.vb: CodeGenTestMethodRunner.Run(ICodeGenTestMethod, IReadOnlyCollection(Of ICodeGenTestCase), ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunner.Run(Xunit.v3.ICodeGenTestMethod, System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.ICodeGenTestCase), Xunit.Sdk.ExplicitOption, Xunit.v3.IMessageBus, Xunit.v3.ExceptionAggregator, System.Threading.CancellationTokenSource, Xunit.Sdk.ParallelMode, Xunit.v3.ExecutionScheduler, Xunit.v3.FixtureMappingManager)
+  name.vb: Run(ICodeGenTestMethod, IReadOnlyCollection(Of ICodeGenTestCase), ExplicitOption, IMessageBus, ExceptionAggregator, CancellationTokenSource, ParallelMode, ExecutionScheduler, FixtureMappingManager)
+references:
+- uid: v3-aot.4.0.0:Xunit.v3
+  commentId: N:Xunit.v3
+  href: Xunit.html
+  name: Xunit.v3
+  nameWithType: Xunit.v3
+  fullName: Xunit.v3
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.v3
+    name: v3
+    href: Xunit.v3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  commentId: T:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  parent: v3-aot.4.0.0:Xunit.v3
+  definition: Xunit.v3.TestMethodRunner`3
+  href: Xunit.v3.TestMethodRunner-3.html
+  name: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase)
+  name.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3
+    name: TestMethodRunner
+    href: Xunit.v3.TestMethodRunner-3.html
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3
+    name: TestMethodRunner
+    href: Xunit.v3.TestMethodRunner-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  commentId: T:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  parent: v3-aot.4.0.0:Xunit.v3
+  definition: Xunit.v3.CoreTestMethodRunner`3
+  href: Xunit.v3.CoreTestMethodRunner-3.html
+  name: CoreTestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  nameWithType: CoreTestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  fullName: Xunit.v3.CoreTestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>
+  nameWithType.vb: CoreTestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase)
+  name.vb: CoreTestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3
+    name: CoreTestMethodRunner
+    href: Xunit.v3.CoreTestMethodRunner-3.html
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3
+    name: CoreTestMethodRunner
+    href: Xunit.v3.CoreTestMethodRunner-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  commentId: T:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  parent: v3-aot.4.0.0:Xunit.v3
+  definition: Xunit.v3.CodeGenTestMethodRunnerBase`3
+  href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  name: CodeGenTestMethodRunnerBase<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  nameWithType: CodeGenTestMethodRunnerBase<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>
+  fullName: Xunit.v3.CodeGenTestMethodRunnerBase<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>
+  nameWithType.vb: CodeGenTestMethodRunnerBase(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunnerBase(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase)
+  name.vb: CodeGenTestMethodRunnerBase(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3
+    name: CodeGenTestMethodRunnerBase
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3
+    name: CodeGenTestMethodRunnerBase
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+    name: ICodeGenTestMethod
+    href: Xunit.v3.ICodeGenTestMethod.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  commentId: M:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  parent: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.CodeGenTestMethodRunnerBase`3.RunTestCases(`0,System.Exception)
+  href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  name: RunTestCases(CodeGenTestMethodRunnerContext, Exception)
+  nameWithType: CodeGenTestMethodRunnerBase<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.RunTestCases(CodeGenTestMethodRunnerContext, Exception)
+  fullName: Xunit.v3.CodeGenTestMethodRunnerBase<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  nameWithType.vb: CodeGenTestMethodRunnerBase(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).RunTestCases(CodeGenTestMethodRunnerContext, Exception)
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunnerBase(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: RunTestCases
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCases(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: RunTestCases
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+  commentId: M:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+  parent: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.CoreTestMethodRunner`3.OrderTestCases(`0)
+  href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  name: OrderTestCases(CodeGenTestMethodRunnerContext)
+  nameWithType: CoreTestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.OrderTestCases(CodeGenTestMethodRunnerContext)
+  fullName: Xunit.v3.CoreTestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+  nameWithType.vb: CoreTestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).OrderTestCases(CodeGenTestMethodRunnerContext)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: OrderTestCases
+    href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OrderTestCases(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: OrderTestCases
+    href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase)
+  commentId: M:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase)
+  parent: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.CoreTestMethodRunner`3.RunTestCase(`0,`2)
+  href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  name: RunTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase)
+  nameWithType: CoreTestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.RunTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase)
+  fullName: Xunit.v3.CoreTestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestCase)
+  nameWithType.vb: CoreTestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).RunTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase)
+    name: RunTestCase
+    href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.RunTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase)
+    name: RunTestCase
+    href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase,System.Exception)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.FailTestCase(`0,`2,System.Exception)
+  href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  name: FailTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase, Exception)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.FailTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase, Exception)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestCase, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).FailTestCase(CodeGenTestMethodRunnerContext, ICodeGenTestCase, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestCase, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase,System.Exception)
+    name: FailTestCase
+    href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.FailTestCase(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestCase,System.Exception)
+    name: FailTestCase
+    href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnError(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnError(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.OnError(`0,System.Exception)
+  href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  name: OnError(CodeGenTestMethodRunnerContext, Exception)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.OnError(CodeGenTestMethodRunnerContext, Exception)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.OnError(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).OnError(CodeGenTestMethodRunnerContext, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).OnError(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnError(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: OnError
+    href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnError(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: OnError
+    href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.OnTestMethodCleanupFailure(`0,System.Exception)
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  name: OnTestMethodCleanupFailure(CodeGenTestMethodRunnerContext, Exception)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.OnTestMethodCleanupFailure(CodeGenTestMethodRunnerContext, Exception)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).OnTestMethodCleanupFailure(CodeGenTestMethodRunnerContext, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: OnTestMethodCleanupFailure
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodCleanupFailure(Xunit.v3.CodeGenTestMethodRunnerContext,System.Exception)
+    name: OnTestMethodCleanupFailure
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.RunSummary)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.RunSummary)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.OnTestMethodFinished(`0,Xunit.v3.RunSummary)
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  name: OnTestMethodFinished(CodeGenTestMethodRunnerContext, RunSummary)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.OnTestMethodFinished(CodeGenTestMethodRunnerContext, RunSummary)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.RunSummary)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).OnTestMethodFinished(CodeGenTestMethodRunnerContext, RunSummary)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.RunSummary)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.RunSummary)
+    name: OnTestMethodFinished
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodFinished(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.RunSummary)
+    name: OnTestMethodFinished
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.OnTestMethodStarting(`0)
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  name: OnTestMethodStarting(CodeGenTestMethodRunnerContext)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.OnTestMethodStarting(CodeGenTestMethodRunnerContext)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).OnTestMethodStarting(CodeGenTestMethodRunnerContext)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: OnTestMethodStarting
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.OnTestMethodStarting(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: OnTestMethodStarting
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.Run(`0)
+  href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  name: Run(CodeGenTestMethodRunnerContext)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.Run(CodeGenTestMethodRunnerContext)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).Run(CodeGenTestMethodRunnerContext)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: Run
+    href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.Run(Xunit.v3.CodeGenTestMethodRunnerContext)
+    name: Run
+    href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.TestEngineStatus)
+  commentId: M:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.TestEngineStatus)
+  parent: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}
+  definition: Xunit.v3.TestMethodRunner`3.SetTestContext(`0,Xunit.TestEngineStatus)
+  href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  name: SetTestContext(CodeGenTestMethodRunnerContext, TestEngineStatus)
+  nameWithType: TestMethodRunner<CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase>.SetTestContext(CodeGenTestMethodRunnerContext, TestEngineStatus)
+  fullName: Xunit.v3.TestMethodRunner<Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase>.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.TestEngineStatus)
+  nameWithType.vb: TestMethodRunner(Of CodeGenTestMethodRunnerContext, ICodeGenTestMethod, ICodeGenTestCase).SetTestContext(CodeGenTestMethodRunnerContext, TestEngineStatus)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.v3.ICodeGenTestMethod, Xunit.v3.ICodeGenTestCase).SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext, Xunit.TestEngineStatus)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.TestEngineStatus)
+    name: SetTestContext
+    href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner{Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.v3.ICodeGenTestMethod,Xunit.v3.ICodeGenTestCase}.SetTestContext(Xunit.v3.CodeGenTestMethodRunnerContext,Xunit.TestEngineStatus)
+    name: SetTestContext
+    href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  - name: (
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerContext
+    name: CodeGenTestMethodRunnerContext
+    href: Xunit.v3.CodeGenTestMethodRunnerContext.html
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3
+  commentId: T:Xunit.v3.TestMethodRunner`3
+  href: Xunit.v3.TestMethodRunner-3.html
+  name: TestMethodRunner<TContext, TTestMethod, TTestCase>
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  name.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3
+    name: TestMethodRunner
+    href: Xunit.v3.TestMethodRunner-3.html
+  - name: <
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3
+    name: TestMethodRunner
+    href: Xunit.v3.TestMethodRunner-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3
+  commentId: T:Xunit.v3.CoreTestMethodRunner`3
+  href: Xunit.v3.CoreTestMethodRunner-3.html
+  name: CoreTestMethodRunner<TContext, TTestMethod, TTestCase>
+  nameWithType: CoreTestMethodRunner<TContext, TTestMethod, TTestCase>
+  fullName: Xunit.v3.CoreTestMethodRunner<TContext, TTestMethod, TTestCase>
+  nameWithType.vb: CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  name.vb: CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3
+    name: CoreTestMethodRunner
+    href: Xunit.v3.CoreTestMethodRunner-3.html
+  - name: <
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3
+    name: CoreTestMethodRunner
+    href: Xunit.v3.CoreTestMethodRunner-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3
+  commentId: T:Xunit.v3.CodeGenTestMethodRunnerBase`3
+  href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  name: CodeGenTestMethodRunnerBase<TContext, TTestMethod, TTestCase>
+  nameWithType: CodeGenTestMethodRunnerBase<TContext, TTestMethod, TTestCase>
+  fullName: Xunit.v3.CodeGenTestMethodRunnerBase<TContext, TTestMethod, TTestCase>
+  nameWithType.vb: CodeGenTestMethodRunnerBase(Of TContext, TTestMethod, TTestCase)
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunnerBase(Of TContext, TTestMethod, TTestCase)
+  name.vb: CodeGenTestMethodRunnerBase(Of TContext, TTestMethod, TTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3
+    name: CodeGenTestMethodRunnerBase
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  - name: <
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: '>'
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3
+    name: CodeGenTestMethodRunnerBase
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestMethod
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3.RunTestCases(`0,System.Exception)
+  commentId: M:Xunit.v3.CodeGenTestMethodRunnerBase`3.RunTestCases(`0,System.Exception)
+  isExternal: true
+  href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  name: RunTestCases(TContext, Exception)
+  nameWithType: CodeGenTestMethodRunnerBase<TContext, TTestMethod, TTestCase>.RunTestCases(TContext, Exception)
+  fullName: Xunit.v3.CodeGenTestMethodRunnerBase<TContext, TTestMethod, TTestCase>.RunTestCases(TContext, System.Exception)
+  nameWithType.vb: CodeGenTestMethodRunnerBase(Of TContext, TTestMethod, TTestCase).RunTestCases(TContext, Exception)
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunnerBase(Of TContext, TTestMethod, TTestCase).RunTestCases(TContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3.RunTestCases(`0,System.Exception)
+    name: RunTestCases
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunnerBase`3.RunTestCases(`0,System.Exception)
+    name: RunTestCases
+    href: Xunit.v3.CodeGenTestMethodRunnerBase-3.RunTestCases.html#Xunit_v3_CodeGenTestMethodRunnerBase_3_RunTestCases__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.OrderTestCases(`0)
+  commentId: M:Xunit.v3.CoreTestMethodRunner`3.OrderTestCases(`0)
+  href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  name: OrderTestCases(TContext)
+  nameWithType: CoreTestMethodRunner<TContext, TTestMethod, TTestCase>.OrderTestCases(TContext)
+  fullName: Xunit.v3.CoreTestMethodRunner<TContext, TTestMethod, TTestCase>.OrderTestCases(TContext)
+  nameWithType.vb: CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase).OrderTestCases(TContext)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase).OrderTestCases(TContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.OrderTestCases(`0)
+    name: OrderTestCases
+    href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  - name: (
+  - name: TContext
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.OrderTestCases(`0)
+    name: OrderTestCases
+    href: Xunit.v3.CoreTestMethodRunner-3.OrderTestCases.html#Xunit_v3_CoreTestMethodRunner_3_OrderTestCases__0_
+  - name: (
+  - name: TContext
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.RunTestCase(`0,`2)
+  commentId: M:Xunit.v3.CoreTestMethodRunner`3.RunTestCase(`0,`2)
+  href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  name: RunTestCase(TContext, TTestCase)
+  nameWithType: CoreTestMethodRunner<TContext, TTestMethod, TTestCase>.RunTestCase(TContext, TTestCase)
+  fullName: Xunit.v3.CoreTestMethodRunner<TContext, TTestMethod, TTestCase>.RunTestCase(TContext, TTestCase)
+  nameWithType.vb: CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase).RunTestCase(TContext, TTestCase)
+  fullName.vb: Xunit.v3.CoreTestMethodRunner(Of TContext, TTestMethod, TTestCase).RunTestCase(TContext, TTestCase)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.RunTestCase(`0,`2)
+    name: RunTestCase
+    href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.CoreTestMethodRunner`3.RunTestCase(`0,`2)
+    name: RunTestCase
+    href: Xunit.v3.CoreTestMethodRunner-3.RunTestCase.html#Xunit_v3_CoreTestMethodRunner_3_RunTestCase__0__2_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.FailTestCase(`0,`2,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner`3.FailTestCase(`0,`2,System.Exception)
+  isExternal: true
+  href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  name: FailTestCase(TContext, TTestCase, Exception)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.FailTestCase(TContext, TTestCase, Exception)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.FailTestCase(TContext, TTestCase, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).FailTestCase(TContext, TTestCase, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).FailTestCase(TContext, TTestCase, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.FailTestCase(`0,`2,System.Exception)
+    name: FailTestCase
+    href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.FailTestCase(`0,`2,System.Exception)
+    name: FailTestCase
+    href: Xunit.v3.TestMethodRunner-3.FailTestCase.html#Xunit_v3_TestMethodRunner_3_FailTestCase__0__2_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - name: TTestCase
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnError(`0,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner`3.OnError(`0,System.Exception)
+  isExternal: true
+  href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  name: OnError(TContext, Exception)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.OnError(TContext, Exception)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.OnError(TContext, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnError(TContext, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnError(TContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnError(`0,System.Exception)
+    name: OnError
+    href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnError(`0,System.Exception)
+    name: OnError
+    href: Xunit.v3.TestMethodRunner-3.OnError.html#Xunit_v3_TestMethodRunner_3_OnError__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodCleanupFailure(`0,System.Exception)
+  commentId: M:Xunit.v3.TestMethodRunner`3.OnTestMethodCleanupFailure(`0,System.Exception)
+  isExternal: true
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  name: OnTestMethodCleanupFailure(TContext, Exception)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodCleanupFailure(TContext, Exception)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodCleanupFailure(TContext, System.Exception)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodCleanupFailure(TContext, Exception)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodCleanupFailure(TContext, System.Exception)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodCleanupFailure(`0,System.Exception)
+    name: OnTestMethodCleanupFailure
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodCleanupFailure(`0,System.Exception)
+    name: OnTestMethodCleanupFailure
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodCleanupFailure.html#Xunit_v3_TestMethodRunner_3_OnTestMethodCleanupFailure__0_System_Exception_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodFinished(`0,Xunit.v3.RunSummary)
+  commentId: M:Xunit.v3.TestMethodRunner`3.OnTestMethodFinished(`0,Xunit.v3.RunSummary)
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  name: OnTestMethodFinished(TContext, RunSummary)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodFinished(TContext, RunSummary)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodFinished(TContext, Xunit.v3.RunSummary)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodFinished(TContext, RunSummary)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodFinished(TContext, Xunit.v3.RunSummary)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodFinished(`0,Xunit.v3.RunSummary)
+    name: OnTestMethodFinished
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodFinished(`0,Xunit.v3.RunSummary)
+    name: OnTestMethodFinished
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodFinished.html#Xunit_v3_TestMethodRunner_3_OnTestMethodFinished__0_Xunit_v3_RunSummary_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodStarting(`0)
+  commentId: M:Xunit.v3.TestMethodRunner`3.OnTestMethodStarting(`0)
+  href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  name: OnTestMethodStarting(TContext)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodStarting(TContext)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.OnTestMethodStarting(TContext)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodStarting(TContext)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).OnTestMethodStarting(TContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodStarting(`0)
+    name: OnTestMethodStarting
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  - name: (
+  - name: TContext
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.OnTestMethodStarting(`0)
+    name: OnTestMethodStarting
+    href: Xunit.v3.TestMethodRunner-3.OnTestMethodStarting.html#Xunit_v3_TestMethodRunner_3_OnTestMethodStarting__0_
+  - name: (
+  - name: TContext
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.Run(`0)
+  commentId: M:Xunit.v3.TestMethodRunner`3.Run(`0)
+  href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  name: Run(TContext)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.Run(TContext)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.Run(TContext)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).Run(TContext)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).Run(TContext)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.Run(`0)
+    name: Run
+    href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  - name: (
+  - name: TContext
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.Run(`0)
+    name: Run
+    href: Xunit.v3.TestMethodRunner-3.Run.html#Xunit_v3_TestMethodRunner_3_Run__0_
+  - name: (
+  - name: TContext
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.SetTestContext(`0,Xunit.TestEngineStatus)
+  commentId: M:Xunit.v3.TestMethodRunner`3.SetTestContext(`0,Xunit.TestEngineStatus)
+  href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  name: SetTestContext(TContext, TestEngineStatus)
+  nameWithType: TestMethodRunner<TContext, TTestMethod, TTestCase>.SetTestContext(TContext, TestEngineStatus)
+  fullName: Xunit.v3.TestMethodRunner<TContext, TTestMethod, TTestCase>.SetTestContext(TContext, Xunit.TestEngineStatus)
+  nameWithType.vb: TestMethodRunner(Of TContext, TTestMethod, TTestCase).SetTestContext(TContext, TestEngineStatus)
+  fullName.vb: Xunit.v3.TestMethodRunner(Of TContext, TTestMethod, TTestCase).SetTestContext(TContext, Xunit.TestEngineStatus)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.SetTestContext(`0,Xunit.TestEngineStatus)
+    name: SetTestContext
+    href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.v3.TestMethodRunner`3.SetTestContext(`0,Xunit.TestEngineStatus)
+    name: SetTestContext
+    href: Xunit.v3.TestMethodRunner-3.SetTestContext.html#Xunit_v3_TestMethodRunner_3_SetTestContext__0_Xunit_TestEngineStatus_
+  - name: (
+  - name: TContext
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.TestEngineStatus
+    name: TestEngineStatus
+    href: Xunit.TestEngineStatus.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner
+  commentId: T:Xunit.v3.CodeGenTestMethodRunner
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.CodeGenTestMethodRunner.html
+  name: CodeGenTestMethodRunner
+  nameWithType: CodeGenTestMethodRunner
+  fullName: Xunit.v3.CodeGenTestMethodRunner
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.#ctor*
+  commentId: Overload:Xunit.v3.CodeGenTestMethodRunner.#ctor
+  href: Xunit.v3.CodeGenTestMethodRunner.-ctor.html#Xunit_v3_CodeGenTestMethodRunner__ctor
+  name: CodeGenTestMethodRunner
+  nameWithType: CodeGenTestMethodRunner.CodeGenTestMethodRunner
+  fullName: Xunit.v3.CodeGenTestMethodRunner.CodeGenTestMethodRunner
+  nameWithType.vb: CodeGenTestMethodRunner.New
+  fullName.vb: Xunit.v3.CodeGenTestMethodRunner.New
+  name.vb: New
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Instance*
+  commentId: Overload:Xunit.v3.CodeGenTestMethodRunner.Instance
+  href: Xunit.v3.CodeGenTestMethodRunner.Instance.html#Xunit_v3_CodeGenTestMethodRunner_Instance
+  name: Instance
+  nameWithType: CodeGenTestMethodRunner.Instance
+  fullName: Xunit.v3.CodeGenTestMethodRunner.Instance
+- uid: v3-aot.4.0.0:Xunit.v3.CodeGenTestMethodRunner.Run*
+  commentId: Overload:Xunit.v3.CodeGenTestMethodRunner.Run
+  href: Xunit.v3.CodeGenTestMethodRunner.Run.html#Xunit_v3_CodeGenTestMethodRunner_Run_Xunit_v3_ICodeGenTestMethod_System_Collections_Generic_IReadOnlyCollection_Xunit_v3_ICodeGenTestCase__Xunit_Sdk_ExplicitOption_Xunit_v3_IMessageBus_Xunit_v3_ExceptionAggregator_System_Threading_CancellationTokenSource_Xunit_Sdk_ParallelMode_Xunit_v3_ExecutionScheduler_Xunit_v3_FixtureMappingManager_
+  name: Run
+  nameWithType: CodeGenTestMethodRunner.Run
+  fullName: Xunit.v3.CodeGenTestMethodRunner.Run
+- uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestMethod
+  commentId: T:Xunit.v3.ICodeGenTestMethod
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ICodeGenTestMethod.html
+  name: ICodeGenTestMethod
+  nameWithType: ICodeGenTestMethod
+  fullName: Xunit.v3.ICodeGenTestMethod
+- uid: System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Xunit.v3.ICodeGenTestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ICodeGenTestCase>
+  nameWithType: IReadOnlyCollection<ICodeGenTestCase>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Xunit.v3.ICodeGenTestCase>
+  nameWithType.vb: IReadOnlyCollection(Of ICodeGenTestCase)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Xunit.v3.ICodeGenTestCase)
+  name.vb: IReadOnlyCollection(Of ICodeGenTestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.ICodeGenTestCase
+    name: ICodeGenTestCase
+    href: Xunit.v3.ICodeGenTestCase.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Sdk.ExplicitOption
+  commentId: T:Xunit.Sdk.ExplicitOption
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ExplicitOption.html
+  name: ExplicitOption
+  nameWithType: ExplicitOption
+  fullName: Xunit.Sdk.ExplicitOption
+- uid: v3-aot.4.0.0:Xunit.v3.IMessageBus
+  commentId: T:Xunit.v3.IMessageBus
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Xunit.v3.IMessageBus
+- uid: v3-aot.4.0.0:Xunit.v3.ExceptionAggregator
+  commentId: T:Xunit.v3.ExceptionAggregator
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ExceptionAggregator.html
+  name: ExceptionAggregator
+  nameWithType: ExceptionAggregator
+  fullName: Xunit.v3.ExceptionAggregator
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: v3-aot.4.0.0:Xunit.Sdk.ParallelMode
+  commentId: T:Xunit.Sdk.ParallelMode
+  parent: v3-aot.4.0.0:Xunit.Sdk
+  href: Xunit.Sdk.ParallelMode.html
+  name: ParallelMode
+  nameWithType: ParallelMode
+  fullName: Xunit.Sdk.ParallelMode
+- uid: v3-aot.4.0.0:Xunit.v3.ExecutionScheduler
+  commentId: T:Xunit.v3.ExecutionScheduler
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.ExecutionScheduler.html
+  name: ExecutionScheduler
+  nameWithType: ExecutionScheduler
+  fullName: Xunit.v3.ExecutionScheduler
+- uid: v3-aot.4.0.0:Xunit.v3.FixtureMappingManager
+  commentId: T:Xunit.v3.FixtureMappingManager
+  parent: v3-aot.4.0.0:Xunit.v3
+  href: Xunit.v3.FixtureMappingManager.html
+  name: FixtureMappingManager
+  nameWithType: FixtureMappingManager
+  fullName: Xunit.v3.FixtureMappingManager
+- uid: System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  commentId: T:System.Threading.Tasks.ValueTask{Xunit.v3.RunSummary}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<RunSummary>
+  nameWithType: ValueTask<RunSummary>
+  fullName: System.Threading.Tasks.ValueTask<Xunit.v3.RunSummary>
+  nameWithType.vb: ValueTask(Of RunSummary)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Xunit.v3.RunSummary)
+  name.vb: ValueTask(Of RunSummary)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.v3.RunSummary
+    name: RunSummary
+    href: Xunit.v3.RunSummary.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: v3-aot.4.0.0:Xunit.Sdk
+  commentId: N:Xunit.Sdk
+  href: Xunit.html
+  name: Xunit.Sdk
+  nameWithType: Xunit.Sdk
+  fullName: Xunit.Sdk
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Sdk
+    name: Sdk
+    href: Xunit.Sdk.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

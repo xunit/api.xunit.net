@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  commentId: T:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  id: IMicrosoftTestingPlatformResultWriter
+  parent: v3-aot.4.0.0:Xunit.Runner.Common
+  children:
+  - v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  - v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+  - v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  langs:
+  - csharp
+  - vb
+  name: IMicrosoftTestingPlatformResultWriter
+  nameWithType: IMicrosoftTestingPlatformResultWriter
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  type: Interface
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: IMicrosoftTestingPlatformResultWriter
+    path: ../src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+    startLine: 6
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Represents a result writer that can run in Microsoft Testing Platform mode, and report
+
+    results to an output file of the user's choosing.
+  example: []
+  syntax:
+    content: 'public interface IMicrosoftTestingPlatformResultWriter : IResultWriter'
+    content.vb: Public Interface IMicrosoftTestingPlatformResultWriter Inherits IResultWriter
+  derivedClasses:
+  - v3-aot.4.0.0:Xunit.Runner.Common.CtrfResultWriter
+  - v3-aot.4.0.0:Xunit.Runner.Common.HtmlResultWriter
+  - v3-aot.4.0.0:Xunit.Runner.Common.JUnitResultWriter
+  - v3-aot.4.0.0:Xunit.Runner.Common.NUnitResultWriter
+  - v3-aot.4.0.0:Xunit.Runner.Common.TrxResultWriter
+  - v3-aot.4.0.0:Xunit.Runner.Common.XmlV2ResultWriter
+  inheritedMembers:
+  - v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter.CreateMessageHandler(System.String,Xunit.Sdk.IMessageSink)
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  commentId: P:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  id: DefaultFileExtension
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  langs:
+  - csharp
+  - vb
+  name: DefaultFileExtension
+  nameWithType: IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: DefaultFileExtension
+    path: ../src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+    startLine: 23
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the default file extension used when the user did not provide a report filename.
+
+    This should be returned in <code>"ext"</code> form.
+  remarks: >-
+    Note that default file extensions should be descriptive and unique, since they will
+
+    be how users will know which result file came from which result writer when there
+
+    are multiple writers when the user has not chosen custom filenames.<br />
+
+    <br />
+
+    Example:
+
+
+    <ul><li>Good = <code>"xunit"</code></li><li>Bad = <code>"xml"</code></li></ul>
+  example: []
+  syntax:
+    content: string DefaultFileExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DefaultFileExtension As String
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension*
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+  commentId: P:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+  id: Description
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IMicrosoftTestingPlatformResultWriter.Description
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: Description
+    path: ../src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+    startLine: 33
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the description of the result that's presented to the user when they
+
+    ask for command line help. This will be used for the <code>--xunit-result-{id}</code>
+
+    help text.
+  remarks: 'Example: <code>"Enable generating xUnit.net (v2+ XML) report"</code>'
+  example: []
+  syntax:
+    content: string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Description As String
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description*
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  commentId: P:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  id: FileNameDescription
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter
+  langs:
+  - csharp
+  - vb
+  name: FileNameDescription
+  nameWithType: IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  type: Property
+  source:
+    remote:
+      path: src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+      branch: 8bf043c053fc133ad9da67709942e1dfb18583ea
+      repo: https://github.com/xunit/xunit
+    id: FileNameDescription
+    path: ../src/xunit.v3.runner.common/Abstractions/Results/IMicrosoftTestingPlatformResultWriter.cs
+    startLine: 43
+  assemblies:
+  - xunit.v3.runner.common.aot
+  namespace: Xunit.Runner.Common
+  summary: >-
+    Gets the description of the result file that's presented to the user when they
+
+    ask for command line help. This will be used for the <code>--xunit-result-{id}-filename</code>
+
+    help text.
+  remarks: 'Example: <code>"The name of the generated xUnit.net (v2+ XML) report"</code>'
+  example: []
+  syntax:
+    content: string FileNameDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property FileNameDescription As String
+  overload: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription*
+references:
+- uid: v3-aot.4.0.0:Xunit.Runner.Common
+  commentId: N:Xunit.Runner.Common
+  href: Xunit.html
+  name: Xunit.Runner.Common
+  nameWithType: Xunit.Runner.Common
+  fullName: Xunit.Runner.Common
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit
+    name: Xunit
+    href: Xunit.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner
+    name: Runner
+    href: Xunit.Runner.html
+  - name: .
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common
+    name: Common
+    href: Xunit.Runner.Common.html
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter.CreateMessageHandler(System.String,Xunit.Sdk.IMessageSink)
+  commentId: M:Xunit.Runner.Common.IResultWriter.CreateMessageHandler(System.String,Xunit.Sdk.IMessageSink)
+  parent: v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter
+  isExternal: true
+  href: Xunit.Runner.Common.IResultWriter.CreateMessageHandler.html#Xunit_Runner_Common_IResultWriter_CreateMessageHandler_System_String_Xunit_Sdk_IMessageSink_
+  name: CreateMessageHandler(string, IMessageSink)
+  nameWithType: IResultWriter.CreateMessageHandler(string, IMessageSink)
+  fullName: Xunit.Runner.Common.IResultWriter.CreateMessageHandler(string, Xunit.Sdk.IMessageSink)
+  nameWithType.vb: IResultWriter.CreateMessageHandler(String, IMessageSink)
+  fullName.vb: Xunit.Runner.Common.IResultWriter.CreateMessageHandler(String, Xunit.Sdk.IMessageSink)
+  name.vb: CreateMessageHandler(String, IMessageSink)
+  spec.csharp:
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter.CreateMessageHandler(System.String,Xunit.Sdk.IMessageSink)
+    name: CreateMessageHandler
+    href: Xunit.Runner.Common.IResultWriter.CreateMessageHandler.html#Xunit_Runner_Common_IResultWriter_CreateMessageHandler_System_String_Xunit_Sdk_IMessageSink_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+    href: Xunit.Sdk.IMessageSink.html
+  - name: )
+  spec.vb:
+  - uid: v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter.CreateMessageHandler(System.String,Xunit.Sdk.IMessageSink)
+    name: CreateMessageHandler
+    href: Xunit.Runner.Common.IResultWriter.CreateMessageHandler.html#Xunit_Runner_Common_IResultWriter_CreateMessageHandler_System_String_Xunit_Sdk_IMessageSink_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: v3-aot.4.0.0:Xunit.Sdk.IMessageSink
+    name: IMessageSink
+    href: Xunit.Sdk.IMessageSink.html
+  - name: )
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IResultWriter
+  commentId: T:Xunit.Runner.Common.IResultWriter
+  parent: v3-aot.4.0.0:Xunit.Runner.Common
+  href: Xunit.Runner.Common.IResultWriter.html
+  name: IResultWriter
+  nameWithType: IResultWriter
+  fullName: Xunit.Runner.Common.IResultWriter
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension*
+  commentId: Overload:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  href: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension.html#Xunit_Runner_Common_IMicrosoftTestingPlatformResultWriter_DefaultFileExtension
+  name: DefaultFileExtension
+  nameWithType: IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.DefaultFileExtension
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description*
+  commentId: Overload:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+  href: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description.html#Xunit_Runner_Common_IMicrosoftTestingPlatformResultWriter_Description
+  name: Description
+  nameWithType: IMicrosoftTestingPlatformResultWriter.Description
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.Description
+- uid: v3-aot.4.0.0:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription*
+  commentId: Overload:Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  href: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription.html#Xunit_Runner_Common_IMicrosoftTestingPlatformResultWriter_FileNameDescription
+  name: FileNameDescription
+  nameWithType: IMicrosoftTestingPlatformResultWriter.FileNameDescription
+  fullName: Xunit.Runner.Common.IMicrosoftTestingPlatformResultWriter.FileNameDescription
+memberLayout: SeparatePages

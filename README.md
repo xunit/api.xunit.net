@@ -12,7 +12,7 @@ This site is built with DocFX. We use a C#-based build system.
 
 In order to successfully view the content locally, you will need the following pre-requisites:
 
-* [.NET SDK 9.0](https://dotnet.microsoft.com/download/dotnet/9.0)
+* [.NET SDK 10.0](https://dotnet.microsoft.com/download/dotnet/10.0)
 * [Docker](https://docs.docker.com/engine/install/) to host nginx for serving built content locally
 
 We have verified this works using both Windows and Linux.
